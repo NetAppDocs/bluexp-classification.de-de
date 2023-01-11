@@ -29,7 +29,7 @@ Standardmäßig zeigen die Cloud Data Sense Dashboards Compliance- und Governanc
 
 == Datenschutzrisiko-Assessment-Bericht
 
-Der Datenschutzrisiko-Assessment-Bericht bietet einen Überblick über den Datenschutzrisikostatus Ihres Unternehmens, wie dies durch Datenschutzvorschriften wie DSGVO und CCPA erforderlich ist. Der Bericht enthält die folgenden Informationen:
+Der Datenschutzrisiko-Assessment-Bericht bietet einen Überblick über den Datenschutz-Risikostatus Ihres Unternehmens, wie durch Datenschutzvorschriften wie DSGVO und CCPA erforderlich. Der Bericht enthält die folgenden Informationen:
 
 Compliance-Status:: A <<Schweregrad,Schweregrad>> Und die Verteilung von Daten, ganz gleich, ob es sich um unempfindliche, personenbezogene oder sensible Daten handelt.
 Assessment-Übersicht:: Eine Aufschlüsselung der gefundenen Arten von personenbezogenen Daten sowie der Kategorien von Daten.
@@ -137,7 +137,7 @@ Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an 
 
 == HIPAA-Bericht
 
-Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Es wurde entwickelt, um die Anforderung Ihres Unternehmens zu unterstützen, die HIPAA-Datenschutzgesetze einzuhalten. Die Information Cloud Data Sense Looks umfasst:
+Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Er unterstützt Ihr Unternehmen bei der Einhaltung der HIPAA-Datenschutzgesetze. Die Information Cloud Data Sense Looks umfasst:
 
 * Zustandsreferenzmuster
 * ICD-10 CM medizinischer Code
@@ -203,6 +203,8 @@ image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des G
 .Ergebnis
 Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
+Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und dann auf *Firmenname ändern* klicken.
+
 
 
 == Bericht Zur Datenuntersuchung
@@ -235,7 +237,7 @@ Sie können den Fortschritt der JSON-Berichterstellung in anzeigen link:task-vie
 
 
 
-=== Was ist in jedem Datenuntersuchungs-Bericht enthalten
+=== Was ist in den einzelnen Datenuntersuchungs-Berichten enthalten
 
 Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ihren Dateien:
 

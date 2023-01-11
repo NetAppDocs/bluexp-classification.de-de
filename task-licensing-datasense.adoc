@@ -14,7 +14,7 @@ summary: Die ersten 1 TB an Daten, die Cloud Data Sense in einem BlueXP-Arbeitsb
 
 
 [role="lead"]
-Die ersten 1 TB an Daten, die Cloud Data Sense in einem BlueXP-Arbeitsbereich scannt, sind kostenlos. Für den weiteren Scan der Daten ist eine BYOL-Lizenz von NetApp oder ein Abonnement vom Marketplace Ihres Cloud-Providers erforderlich.
+Die ersten 1 TB an Daten, die Cloud Data Sense in einem BlueXP-Arbeitsbereich scannt, sind 30 Tage lang kostenlos. Für den weiteren Scan der Daten ist eine BYOL-Lizenz von NetApp oder ein Abonnement vom Marketplace Ihres Cloud-Providers erforderlich.
 
 Ein paar Notizen, bevor Sie weitere lesen:
 
@@ -30,7 +30,7 @@ link:concept-cloud-compliance.html#cost["Informieren Sie sich über die Lizenzie
 
 Mit Pay-as-you-go-Abonnements auf dem Markt Ihres Cloud-Providers können Sie die Nutzung von Cloud Volumes ONTAP Systemen und vielen Cloud-Datenservices wie Cloud Data Sense lizenzieren.
 
-Sie können sich jederzeit für eine Anmeldung anmelden. Die Abrechnung erfolgt erst, wenn die Datenmenge mehr als 1 TB beträgt. Sie können immer die Gesamtmenge der Daten anzeigen, die über das Data Sense Dashboard gescannt werden. Und die Schaltfläche _Jetzt abonnieren_ erleichtert die Anmeldung, wenn Sie bereit sind.
+Sie können sich jederzeit anmelden und zahlen erst nach Ablauf der 30-Tage-Testsoftware oder nach mehr als 1 TB. Sie können immer die Gesamtmenge der Daten anzeigen, die über das Data Sense Dashboard gescannt werden. Und die Schaltfläche _Jetzt abonnieren_ erleichtert die Anmeldung, wenn Sie bereit sind.
 
 image:screenshot_compliance_subscribe.png["Ein Screenshot, der zeigt, wie viele Daten gescannt werden, und die Schaltfläche Abonnieren, um den Service zu abonnieren."]
 

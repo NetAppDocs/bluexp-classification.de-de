@@ -44,7 +44,7 @@ Starten Sie den Installationsassistenten, um die Cloud Data Sense Instanz in der
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den Cloud Data Sense Service
 [role="quick-margin-para"]
-Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.
+Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.
 
 
 
@@ -191,4 +191,4 @@ BlueXP implementiert die Cloud Data Sense Instanz bei Ihrem Cloud-Provider.
 .Nächste Schritte
 Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
 
-Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für Cloud Data Sense einrichten"] Derzeit. Sie werden erst berechnet, wenn die Datenmenge mehr als 1 TB beträgt.
+Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für Cloud Data Sense einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.

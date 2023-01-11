@@ -311,7 +311,7 @@ Die folgenden Fragen beziehen sich auf Lizenzierung und Kosten für die Verwendu
 
 === Wie viel kostet Cloud-Daten?
 
-Die Kosten für die Verwendung von Cloud Data Sense hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB an Daten, die Data Sense in einem BlueXP-Arbeitsbereich scannt, sind kostenlos. Nach Erreichen dieser Obergrenze benötigen Sie einen der folgenden Methoden, um mit dem Scannen von Daten über 1 TB fortzufahren:
+Die Kosten für die Verwendung von Cloud Data Sense hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB Daten, die Data Sense in einem BlueXP-Arbeitsbereich scannt, sind 30 Tage lang kostenlos. Wenn Sie eine der beiden Grenzwerte erreicht haben, benötigen Sie eine der folgenden Optionen, um mit dem Scannen der Daten fortzufahren:
 
 * Ein Abonnement des BlueXP Marketplace-Abonnements von Ihrem Cloud-Provider oder
 * Byol-Modell (Bring-Your-Own-License) von NetApp
