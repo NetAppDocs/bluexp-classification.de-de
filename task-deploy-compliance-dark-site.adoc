@@ -255,7 +255,7 @@ Führen Sie diese Schritte aus, wenn Sie die Data Sense Software auf einem einze
 tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *DATASENSE-INSTALLER-V1.16.1.tar.gz*.
+Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *cc_onprem_Installer.tar.gz*.
 
 . Starten Sie BlueXP, und wählen Sie *Governance > Klassifizierung*.
 . Klicken Sie Auf *Datensense Aktivieren*.
@@ -274,7 +274,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["Ein Screenshot, wie die S
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 . Wenn Sie vom Installationsprogramm dazu aufgefordert werden, können Sie die erforderlichen Werte in eine Reihe von Eingabeaufforderungen eingeben oder Sie können die erforderlichen Parameter als Befehlszeilenargumente dem Installer angeben:
 +
@@ -374,7 +374,7 @@ Mit diesem Befehl werden beispielsweise 3 Scannerknoten hinzugefügt:
 
 . Auf * jedem Scanner-Knoten-Host:
 +
-.. Kopieren Sie die Data Sense Installer-Datei (*DATASENSE-INSTALLER-<Version>.tar.gz*) auf den Host-Rechner.
+.. Kopieren Sie die Data Sense Installer-Datei (*cc_onprem_Installer.tar.gz*) auf den Host-Rechner.
 .. Entpacken Sie die Installationsdatei.
 .. Fügen Sie den Befehl ein, den Sie in Schritt 3 kopiert haben, und führen Sie ihn aus.
 +
@@ -413,13 +413,13 @@ Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, 
 tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-Diese extrahiert die Installationsdatei *DATASENSE-INSTALLER-V1.16.1.tar.gz*.
+Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.
 
 . Entpacken Sie die Installationsdatei auf dem Host-Rechner, z. B.:
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 +
 Dadurch wird das Upgrade-Skript *Start_darchsite_Upgrade.sh* und jede erforderliche Software von Drittanbietern extrahiert.

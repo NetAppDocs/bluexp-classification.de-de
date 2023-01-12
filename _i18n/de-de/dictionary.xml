@@ -77,7 +77,6 @@
   <block id="a52e4cb36e71ec4390255e3ab7c8e576" category="list-text">Laden Sie auf einem internetkonfigurierten System die Cloud Data Sense-Software aus dem herunter<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>. Die ausgewählte Datei heißt *DataSense-offline-Bundle-&lt;Version&gt;.tar.gz*.</block>
   <block id="efa6f10157137475f11a46219066d662" category="list-text">Kopieren Sie das Installationspaket auf den Linux-Host, den Sie für die dunkle Seite verwenden möchten.</block>
   <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">Entpacken Sie das Installationspaket auf dem Hostcomputer, z. B.:</block>
-  <block id="2152258e1def6997a945ef8261b66bcc" category="paragraph">Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *DATASENSE-INSTALLER-V1.16.1.tar.gz*.</block>
   <block id="99bc31b68f8a295277219d11cfd94709" category="list-text">Starten Sie BlueXP, und wählen Sie *Governance &gt; Klassifizierung*.</block>
   <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">Klicken Sie Auf *Datensense Aktivieren*.</block>
   <block id="af9d594fa710dc13ae352e89ff99e6a8" category="inline-image-macro">Ein Screenshot, in dem die Schaltfläche zum Aktivieren von Cloud Data Sense ausgewählt wird.</block>
@@ -142,7 +141,6 @@
   <block id="743663a45dfd2f9237dfcf266bf499a6" category="list-text">Bevor die Installation des Manager-Node abgeschlossen ist, wird in einem Dialogfeld der für die Scanner-Knoten erforderliche Installationsbefehl angezeigt. Kopieren Sie den Befehl und speichern Sie ihn in einer Textdatei. Beispiel:</block>
   <block id="bb70d223e1e51328f09038d97ad81b07" category="paragraph"><block ref="2478484d96d8c17b7752fd15d3b26f12" prefix="" category="inline-code"></block></block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">Auf * jedem Scanner-Knoten-Host:</block>
-  <block id="7dcbe0be3e8e2a9fd658d871499bd050" category="list-text">Kopieren Sie die Data Sense Installer-Datei (*DATASENSE-INSTALLER-&lt;Version&gt;.tar.gz*) auf den Host-Rechner.</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">Entpacken Sie die Installationsdatei.</block>
   <block id="05c158c3674b19417f2abea1a13ea2f3" category="list-text">Fügen Sie den Befehl ein, den Sie in Schritt 3 kopiert haben, und führen Sie ihn aus.</block>
   <block id="184b6c7c3567a8ecd4dd8971fff94bfa" category="paragraph">Wenn die Installation auf allen Scanner-Knoten abgeschlossen ist und sie mit dem Manager-Knoten verbunden wurden, wird auch die Installation des Manager-Knotens abgeschlossen.</block>
@@ -156,7 +154,6 @@
   <block id="1512503c318779a183367c2326a24f21" category="list-text">Stellen Sie sicher, dass Ihre On-Prem Connector-Software auf die neueste verfügbare Version aktualisiert wurde.<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>.</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">Kopieren Sie das Software-Bundle auf den Linux-Host, auf dem Data Sense im dunklen Ort installiert ist.</block>
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">Entpacken Sie das Software-Bundle auf dem Host-Rechner, zum Beispiel:</block>
-  <block id="eb2cb5912ef10d2dcff7761bde0a5ace" category="paragraph">Diese extrahiert die Installationsdatei *DATASENSE-INSTALLER-V1.16.1.tar.gz*.</block>
   <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">Dadurch wird das Upgrade-Skript *Start_darchsite_Upgrade.sh* und jede erforderliche Software von Drittanbietern extrahiert.</block>
   <block id="85455891651214d50e704a4b3e9dde66" category="list-text">Führen Sie das Upgrade-Skript auf dem Hostcomputer aus, z. B.:</block>
   <block id="f9a54a028ecb31a5408553dd45e64952" category="paragraph">Die Software Data Sense wird auf Ihrem Host aktualisiert. Die Aktualisierung kann 5 bis 10 Minuten dauern.</block>
@@ -3044,4 +3041,7 @@
   <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">Das können Sie auch <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.</block>
   <block id="68b93206d7f113e3a7eb3b6c41df6f6e" category="paragraph">Das können Sie <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.</block>
   <block id="4836df02e5a10e2b5f7369a02cc815e2" category="paragraph">Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *cc_onprem_Installer.tar.gz*.</block>
+  <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">Kopieren Sie die Data Sense Installer-Datei (*cc_onprem_Installer.tar.gz*) auf den Host-Rechner.</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.</block>
 </blocks>
