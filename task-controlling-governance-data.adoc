@@ -16,7 +16,7 @@ summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten a
 [role="lead"]
 Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Cloud Data Sense identifiziert die Menge der veralteten Daten, nicht Geschäftsdaten, duplizierten Dateien und sehr großen Dateien in Ihren Systemen. Somit können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigerem Objekt-Storage aufstellen möchten.
 
-Wenn Sie Daten von On-Premises-Standorten in die Cloud migrieren möchten, können Sie vor der Verschiebung prüfen, ob alle Daten vertrauliche Informationen beinhalten.
+Wenn Sie Daten von On-Premises-Standorten in die Cloud migrieren möchten, können Sie vor der Verschiebung prüfen, ob einige der Daten vertrauliche Informationen beinhalten.
 
 
 
@@ -51,7 +51,7 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 
 === Politik mit der größten Anzahl von Ergebnissen
 
-Klicken Sie auf den Namen einer Richtlinie im Bereich _Policy_, um die Ergebnisse auf der Untersuchungsseite anzuzeigen. Klicken Sie auf *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.
+Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt. Klicken Sie auf den Namen einer Richtlinie, um die Ergebnisse auf der Untersuchungsseite anzuzeigen. Klicken Sie auf *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.
 
 Klicken Sie Auf link:task-org-private-data.html#controlling-your-data-using-policies["Hier"] Um mehr über Richtlinien zu erfahren.
 
@@ -59,15 +59,15 @@ Klicken Sie Auf link:task-org-private-data.html#controlling-your-data-using-poli
 
 === Datenüberblick
 
-Ein kurzer Überblick über alle Daten, die gescannt werden. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Größe der Daten und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe link:task-generating-compliance-reports.html#data-mapping-report["Datenzuordnungsbericht"] Vollständige Angaben.
+Der Abschnitt _Data Overview_ bietet einen schnellen Überblick über alle zu scannenden Daten. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Datengröße und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe link:task-generating-compliance-reports.html#data-mapping-report["Datenzuordnungsbericht"^] Alle Details zu diesem Bericht.
 
 
 
 === Die wichtigsten Daten-Repositorys, die nach Sensibilität aufgeführt sind
 
-Der Bereich _Top Data Repositories by Sensitivity Level_ enthält bis zu den vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen), die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
+Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgeführt, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
 
-* Nicht personenbezogene Daten
+* Nicht-sensible Daten
 * Persönliche Daten
 * Sensible personenbezogene Daten
 
@@ -78,11 +78,28 @@ Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Un
 
 
 
+=== Daten, die nach Sensitivität und breiten Berechtigungen aufgelistet sind
+
+Der Bereich _sensible Daten und Wide Permissions_ bietet eine Heatmap von Dateien, die sensible Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben.
+
+Die Dateien werden anhand der Anzahl der Benutzer bewertet, die berechtigt sind, auf die Dateien auf der X-Achse (niedrigste bis höchste) zuzugreifen, und die Anzahl der sensiblen Kennungen innerhalb der Dateien auf der Y-Achse (niedrigste bis höchste). Die Blöcke stellen die Anzahl der Dateien dar, die mit den Elementen der X- und Y-Achsen übereinstimmen. Der hellere Block ist gut, da weniger Benutzer auf die Dateien zugreifen können und weniger sensible Kennungen pro Datei. Die dunkleren Blöcke sind die Elemente, die Sie untersuchen möchten. Auf dem folgenden Bildschirm wird beispielsweise der Mauszeiger für den dunkelblauen Block angezeigt. Es zeigt, dass Sie 1,500 Dateien haben, auf die 751-100 Benutzer zugreifen können und wo es 501-100 sensible Kennungen pro Datei gibt.
+
+image:screenshot_compliance_sensitive_data.png["Ein Screenshot, in dem die Daten angezeigt werden, wenn Sie den Cursor über ein Element in diesem Fenster platzieren."]
+
+Sie können auf den Block klicken, für den Sie sich interessieren, um die gefilterten Ergebnisse der betroffenen Dateien auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen durchführen können.
+
+In diesem Fenster werden keine Daten angezeigt, wenn Sie keinen Identitätsdienst mit Data Sense integriert haben. link:task-add-active-directory-datasense.html["Erfahren Sie, wie Sie Ihren Active Directory-Dienst in Data Sense integrieren"^].
+
+
+TIP: Dieses Fenster unterstützt Dateien in CIFS-Freigaben, OneDrive und SharePoint-Datenquellen. Derzeit werden Datenbanken, Google Drive, Amazon S3 und generischer Objektspeicher nicht unterstützt.
+
+
+
 === Daten, die nach Typen der offenen Berechtigungen aufgeführt sind
 
 Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
 
-* Kein Offener Zugriff
+* Keine Offenen Berechtigungen
 * Steht Unternehmen offen
 * Öffentlich zugänglich
 * Unbekannter Zugriff
@@ -112,7 +129,7 @@ Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizier
 
 ==== Kategorien
 
-Kategorien können Ihnen dabei helfen, zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen, die Sie haben, zeigen. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
+Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
 Siehe link:task-controlling-private-data.html#viewing-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
 

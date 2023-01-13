@@ -27,7 +27,7 @@ Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbez
 
 Die Artikel in dieser Kategorie können in jeder Sprache erkannt werden.
 
-Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können, wenn Sie einen Datenbank-Server scannen. Mit der Funktion _Data Fusion_ können Sie die zusätzlichen Kennungen auswählen, die Cloud Data Sense bei seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Siehe link:task-managing-data-fusion.html["Hinzufügen von ID-Kennungen unter Verwendung von Data Fusion"^] Entsprechende Details.
+Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ die zusätzlichen Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten Kennungen zu Ihren Daten Sense-Scans"^] Entsprechende Details.
 
 [cols="20,50,18"]
 |===
@@ -52,7 +52,7 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Passwort | Ja. 
 
 
-.50+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. 
+.51+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. 
 
 
 | Australische Führerschein | Ja. 
@@ -137,6 +137,9 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 
 
 | Italienische Steuernummer | Ja. 
+
+
+| Japanische Personal Identification Number (Privat- und Firmennummer) | Ja. 
 
 
 | Lettischer Ausweis | Ja. 

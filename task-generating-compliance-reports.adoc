@@ -203,7 +203,7 @@ image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des G
 .Ergebnis
 Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
-Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und dann auf *Firmenname ändern* klicken.
+Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.
 
 
 

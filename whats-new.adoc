@@ -22,6 +22,12 @@ Was ist neu im Bereich Cloud Data Sense.
 
 
 
+=== Möglichkeit, ein Diagramm von Dateien anzuzeigen, die sensible Daten enthalten und die übermäßig permissiv sind
+
+Das Governance Dashboard hat einen neuen Bereich mit „_sensitiven Daten“ und „Wide Permissions_“ hinzugefügt, der eine Heatmap mit Dateien enthält, die vertrauliche Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und die zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["Weitere Informationen ."].
+
+
+
 === Auf der Seite „Datenuntersuchung“ stehen drei neue Filter zur Verfügung
 
 Es stehen neue Filter zur Verfügung, um die Ergebnisse zu verfeinern, die auf der Seite „Datenuntersuchung“ angezeigt werden:
@@ -32,6 +38,12 @@ Es stehen neue Filter zur Verfügung, um die Ergebnisse zu verfeinern, die auf d
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
+
+
+
+=== Data Sense kann die japanische Einzelnummer identifizieren
+
+Data Sense kann Dateien identifizieren und kategorisieren, die die japanische Einzelnummer enthalten (auch Meine Nummer genannt). Dazu gehört sowohl die persönliche als auch die Firmennummer. https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Sehen Sie alle Arten von personenbezogenen Daten an, die Data Sense in Ihren Daten identifizieren kann"].
 
 
 
@@ -267,7 +279,7 @@ Im Rahmen der Data Sense-Berechtigungsfunktionen können Sie jetzt die Liste der
 === Auf der Seite „Datenuntersuchung“ wurden zwei neue Filter hinzugefügt
 
 * Mit dem Filter „Directory type“ können Sie Ihre Daten so verfeinern, dass nur Ordner oder Freigaben angezeigt werden. Die Ergebnisse werden auf der neuen Registerkarte *Directories* angezeigt.
-* Mit dem Filter „Benutzer-/Gruppenberechtigungen“ können Sie die Dateien, Ordner und Freigaben auflisten, auf die ein bestimmter Benutzer oder eine Gruppe Lese- und/oder Schreibberechtigungen besitzt. Sie können mehrere Benutzer und/oder Gruppennamen auswählen oder einen Teilnamen eingeben. T
+* Mit dem Filter „Benutzer-/Gruppenberechtigungen“ können Sie die Dateien, Ordner und Freigaben auflisten, auf die ein bestimmter Benutzer oder eine Gruppe Lese- und/oder Schreibberechtigungen besitzt. Sie können mehrere Benutzer und/oder Gruppennamen auswählen oder einen Teilnamen eingeben.
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
@@ -280,7 +292,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 === Vier neue Arten von australischen personenbezogenen Daten können durch Data Sense identifiziert werden
 
-Data Sense kann Dateien identifizieren und kategorisieren, die die Australian TFN (Tax File Number), Australian Driver's License Number, Australian Medicare Number und Australian Passport Number enthalten. link:reference-private-data-categories.html#types-of-personal-data["Sehen Sie alle Arten von personenbezogenen Daten an, die Data Sense in Ihren Daten identifizieren kann"].
+Data Sense kann Dateien identifizieren und kategorisieren, die die Australian TFN (Tax File Number), die Australian Driver's License Number, die Australian Medicare Number und die Australian Passport Number enthalten. link:reference-private-data-categories.html#types-of-personal-data["Sehen Sie alle Arten von personenbezogenen Daten an, die Data Sense in Ihren Daten identifizieren kann"].
 
 
 
@@ -316,7 +328,7 @@ Data Sense kann die Berechtigungen für Dateien lesen, die jetzt in OneDrive-Kon
 
 === Unterstützung für das Scannen von OneDrive- und SharePoint-Daten bei Bereitstellung in einem dunklen Standort
 
-Wenn Sie Cloud Data Sense auf einem Host in einer On-Premises-Website bereitgestellt haben, die keinen Internetzugang hat, können Sie jetzt lokale Daten von OneDrive-Konten oder SharePoint-Konten scannen. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Sie müssen den Zugriff auf die folgenden Endpunkte zulassen."]
+Wenn Sie Cloud Data Sense auf einem Host in einem On-Premises-Standort implementiert haben, der keinen Internetzugang hat, können Sie jetzt lokale Daten von OneDrive- oder SharePoint-Konten scannen. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Sie müssen den Zugriff auf die folgenden Endpunkte zulassen."]
 
 
 

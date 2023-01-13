@@ -17,8 +17,8 @@ summary: Cloud Data Sense bietet viele Möglichkeiten für das Management von pr
 Cloud Data Sense bietet viele Möglichkeiten für das Management von privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten.
 
 * Sie können Dateien in eine Ziel-NFS-Freigabe kopieren, wenn Sie eine Kopie bestimmter Daten erstellen und sie an einen anderen NFS-Speicherort verschieben möchten.
-* Sie können ein ONTAP Volume auf einem neuen Volume klonen und dabei nur ausgewählte Dateien aus dem Quell-Volume im neuen geklonten Volume eingeschlossen. Dies ist nützlich für Situationen, in denen Sie Daten migrieren und Sie bestimmte Dateien vom ursprünglichen Volume ausschließen möchten.
-* Sie können Dateien aus einem Quell-Repository in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren und synchronisieren. Dies ist nützlich für Situationen, in denen Sie Daten von einem Quellsystem zu einem anderen migrieren, während es noch einige letzte Aktivität auf den Quelldateien gibt.
+* Sie können ein ONTAP Volume auf einem neuen Volume klonen und dabei nur ausgewählte Dateien aus dem Quell-Volume im neuen geklonten Volume eingeschlossen. Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten.
+* Sie können Dateien aus einem Quell-Repository in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren und synchronisieren. Dies ist nützlich in Situationen, in denen Sie Daten von einem Quellsystem zu einem anderen migrieren, während noch einige letzte Aktivitäten in den Quelldateien vorliegen.
 * Sie können Quelldateien verschieben, die Data Sense auf jede NFS-Freigabe scannt.
 * Sie können Dateien löschen, die als unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder die Sie als Duplikat identifiziert haben.
 
@@ -42,7 +42,7 @@ Dies ist nützlich, wenn Sie eine Kopie bestimmter Daten erstellen und sie an ei
 
 * *Ein ONTAP-Volume* zu einem neuen Volume im selben Aggregat klonen, aber nur ausgewählte Dateien aus dem Quell-Volume in das neue geklonte Volume einbeziehen.
 +
-Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten. Diese Aktion verwendet das link:https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] Funktionalität zum schnellen Duplizieren des Volumes und dann entfernen Sie die Dateien, die Sie *nicht* ausgewählt haben.
+Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten. Diese Aktion verwendet das https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] Funktionalität zum schnellen Duplizieren des Volumes und dann entfernen Sie die Dateien, die Sie *nicht* ausgewählt haben.
 
 * *Kopieren und Synchronisieren von Dateien* aus einem Quell-Repository (ONTAP-Volume, S3-Bucket, NFS-Freigabe usw.) zu einem Verzeichnis in einem bestimmten Ziel-Speicherort (Ziel).
 +
@@ -73,7 +73,7 @@ image:screenshot_compliance_copy_multi_files.png["Ein Screenshot, in dem die zu 
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
-** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
+** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png["Über die Auswahl aller Dateien"]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
 
 
 . Wählen Sie im Dialogfeld „ Dateien kopieren “ die Registerkarte *normale Kopie* aus.
@@ -124,7 +124,7 @@ image:screenshot_compliance_copy_multi_files.png["Ein Screenshot, in dem die zu 
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
-** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
+** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png["Über die Auswahl aller Dateien"]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
 
 
 . Wählen Sie im Dialogfeld _Dateien kopieren_ die Registerkarte *FlexClone* aus. Diese Seite zeigt die Gesamtzahl der Dateien, die aus dem Volume geklont werden (die von Ihnen ausgewählten Dateien) und die Anzahl der Dateien, die nicht enthalten bzw. gelöscht sind (die Dateien, die Sie nicht ausgewählt haben), aus dem geklonten Volume.
@@ -172,7 +172,7 @@ image:screenshot_compliance_filter_1_repo.png["Ein Screenshot, wie ein Filter er
 +
 Wenden Sie alle anderen Filter an, sodass nur die Dateien zu sehen sind, die Sie kopieren und mit dem Zielsystem synchronisieren möchten.
 
-. Wählen Sie im Bereich Untersuchungsergebnisse alle Dateien auf allen Seiten aus, indem Sie das Kästchen in der Titelzeile ( aktivierenimage:button_select_all_files.png[""]), dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""] Klicken Sie auf *Wählen Sie alle Elemente aus der Liste aus (xxx Elemente)*, und klicken Sie dann auf *Kopieren*.
+. Wählen Sie im Bereich Untersuchungsergebnisse alle Dateien auf allen Seiten aus, indem Sie das Kästchen in der Titelzeile ( aktivierenimage:button_select_all_files.png[""]), dann in der Pop-up-Nachricht image:screenshot_select_all_items.png["Über die Auswahl aller Dateien"] Klicken Sie auf *Wählen Sie alle Elemente aus der Liste aus (xxx Elemente)*, und klicken Sie dann auf *Kopieren*.
 +
 image:screenshot_compliance_sync_multi_files.png["Ein Screenshot, in dem die zu kopierenden Dateien und die Schaltfläche Kopieren auf der Seite Datenuntersuchung angezeigt werden."]
 
@@ -187,7 +187,7 @@ Die Cloud Sync-Benutzeroberfläche wird in BlueXP geöffnet.
 +
 Sie werden aufgefordert, die Synchronisierungsbeziehung zu definieren. Das Quellsystem ist auf der Grundlage des Repositorys und der Dateien, die Sie bereits in Data Sense ausgewählt haben, vorbelegt.
 
-. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die Cloud Sync-Anforderungen, die mit dem beginnen link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["Kurzanleitung"^].
+. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die Cloud Sync-Anforderungen, die mit dem beginnen link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
 
 
 .Ergebnis
@@ -227,7 +227,7 @@ image:screenshot_compliance_move_multi_files.png["Ein Screenshot, in dem die zu 
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
-** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
+** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png["Über die Auswahl aller Dateien"]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
 
 
 . Klicken Sie in der Tastenleiste auf *Move*.
@@ -278,7 +278,7 @@ image:screenshot_compliance_delete_multi_files.png["Ein Screenshot, in dem die z
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
-** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
+** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png["Über die Auswahl aller Dateien"]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
 
 
 . Klicken Sie in der Tastenleiste auf *Löschen*.

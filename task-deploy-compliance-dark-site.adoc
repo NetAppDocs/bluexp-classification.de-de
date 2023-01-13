@@ -359,7 +359,7 @@ Führen Sie die folgenden Schritte aus, wenn Sie Data Sense Software auf mehrere
 
 
 .Schritte
-. Befolgen Sie die Schritte 1 bis 8 vom link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["Installation über einen Host"] Auf dem Knoten Manager.
+. Befolgen Sie die Schritte 1 bis 8 vom link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["Installation über einen Host"] Auf dem Knoten Manager.
 . Wie in Schritt 9 gezeigt, können Sie bei Aufforderung durch das Installationsprogramm die erforderlichen Werte in eine Reihe von Eingabeaufforderungen eingeben oder die erforderlichen Parameter als Befehlszeilenargumente für das Installationsprogramm bereitstellen.
 +
 Zusätzlich zu den Variablen, die für eine Installation mit einem Host verfügbar sind, wird eine neue Option *-n <Node_ip>* verwendet, um die IP-Adressen der Scannerknoten anzugeben. Mehrere Knoten-IPs werden durch Komma getrennt.
@@ -399,7 +399,7 @@ Das können Sie auch link:task-licensing-datasense.html#use-a-cloud-data-sense-b
 Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, sollten Sie sich regelmäßig auf eine neue Version verlassen, um sicherzustellen, dass Sie die neueste Software und Funktionen verwenden. Sie müssen die Software Data Sense manuell aktualisieren, da keine Internetverbindung vorhanden ist, um das Upgrade automatisch durchzuführen.
 
 .Bevor Sie beginnen
-* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.15.x installiert ist, können Sie nur auf 1.16.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
+* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.17.x installiert ist, können Sie nur auf 1.18.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
 * Stellen Sie sicher, dass Ihre On-Prem Connector-Software auf die neueste verfügbare Version aktualisiert wurde. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Siehe die Schritte zur Aktualisierung des Connectors"^].
 
 
