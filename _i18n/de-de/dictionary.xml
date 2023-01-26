@@ -861,7 +861,6 @@
   <block id="2f548b9a1e6e69aa1914a6a893db7f50" category="list-text">Verwenden Sie _Policies_, um das Sicherheitspersonal automatisch über neue Sicherheitsprobleme zu informieren, damit sie sofort reagieren können.</block>
   <block id="629fc635e3b0007019bd6fe0cb5a386c" category="list-text">Fügen Sie benutzerdefinierte Tags zu Dateien hinzu (z. B. „muss verschoben werden“) und weisen Sie einen BlueXP-Benutzer zu, damit diese Person Updates für die Dateien besitzen kann.</block>
   <block id="30085eb68cdb8a51af49b0a08058bacd" category="inline-link-macro">Azure Information Protection (AIP)-Etiketten</block>
-  <block id="1d6cf8f9413aa74ccb67dc25a0cd30f6" category="list-text">Anzeigen und ändern Sie <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> In Ihren Dateien.</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="section-title">Optimieren Sie die Storage-Auslastung</block>
   <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">Data Sense bietet Tools, die Sie bei den Storage-Gesamtbetriebskosten (TCO) unterstützen. Mit Data Sense können Sie:</block>
   <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">Erhöhte Storage-Effizienz durch Identifizierung doppelter oder nicht geschäftlicher Daten Mit diesen Informationen können Sie entscheiden, ob Sie bestimmte Dateien verschieben oder löschen möchten.</block>
@@ -925,7 +924,6 @@
   <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">In Regionen, in denen n2-Standard-16 nicht verfügbar ist, wird Data Sense stattdessen auf einer n2d-Standard-16- oder n1-Standard-16-VM ausgeführt.</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="list-text">Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">Pro Connector wird nur eine Datensense-Instanz bereitgestellt.</block>
-  <block id="96087d5776ba4bf8ffcadbc67f69905c" category="list-text">Upgrades der Software Data Sense sind automatisiert, solange die Instanz einen Internetzugang hat.</block>
   <block id="37b7293831ce40b655b7cce97556550c" category="admonition">Die Instanz sollte jederzeit ausgeführt werden, da Cloud Data Sense die Daten kontinuierlich scannt.</block>
   <block id="5bce28fa8820f7bebc8473b0aaa42f72" category="paragraph">Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereitstellen, aber es gibt einige Einschränkungen beim Einsatz dieser weniger leistungsstarken Systeme.</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">Systemgröße</block>
@@ -995,10 +993,8 @@
   <block id="a596c8a5fca6f5403662e33b92d475a7" category="list-text">Cloud Data Sense verwendet die gescannten Daten und werden nach Dateityp unterteilt. <block ref="7a0e9af4a23944c56398184b71788414" category="inline-link-macro-rx"></block>.</block>
   <block id="999ab1f0dcc560a0944b54ec5ef461c0" category="list-text">Name der Entität Anerkennung</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen</block>
-  <block id="9816543e530fddede751b52325d3679a" category="list-text">Cloud Data Sense verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>.</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">Netzwerkübersicht</block>
   <block id="7b8407f88948038fa5832e4ef1655ec3" category="paragraph">BlueXP implementiert die Cloud Data Sense-Instanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.</block>
-  <block id="7f60df85905efef37e6ae9a727f03e7a" category="paragraph">Bei der Verwendung von BlueXP im SaaS-Modus wird die Verbindung zu BlueXP über HTTPS bedient, und die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten Daten sind mit End-to-End-Verschlüsselung gesichert, was bedeutet, dass NetApp und Dritte es nicht lesen können.</block>
   <block id="6134fb19f2424f157bd88b36e40dcf10" category="paragraph">Ausgehende Regeln sind vollständig geöffnet. Zur Installation und Aktualisierung der Data Sense Software und zum Senden von Nutzungsmetriken ist Internetzugang erforderlich.</block>
   <block id="12d39974306420354fffe75c7f15e621" category="inline-link-macro">Erfahren Sie mehr über die Endpunkte, die Cloud Data Sense-Kontakte haben</block>
   <block id="10d127f1d0ce294ce4f4f8e7ebf6106b" category="paragraph">Wenn Sie strenge Netzwerkanforderungen erfüllen, <block ref="8ee644766673e1cde7b0c260d7a4e2e0" category="inline-link-macro-rx"></block>.</block>
@@ -1856,8 +1852,6 @@
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">Wenn Sie Cloud Data Sense zur Identifizierung anderer privater Datentypen benötigen, z. B. zusätzliche nationale ID-Nummern oder Kennungen des Gesundheitswesens, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com mit Ihrer Anfrage.</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">Arten personenbezogener Daten</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">Prüfung der Nähe</block>
-  <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte wird bestimmt, ob Cloud Data Sense verwendet wird <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> Zum Validieren seiner Ergebnisse für die Kennung.</block>
-  <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">Die Artikel in dieser Kategorie können in jeder Sprache erkannt werden.</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">Hinzufügen von ID-Kennungen unter Verwendung von Data Fusion</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">Typ</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">Kennung</block>
@@ -1918,7 +1912,6 @@
   <block id="3b5f87032b5dd0beea89f73c7f8f64c0" category="cell">GROSSBRITANNIEN ID (NINO)</block>
   <block id="f5817b4cc67ee41de01a4a19fc33ef7d" category="cell">USA Sozialversicherungsnummer (SSN)</block>
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">Arten sensibler personenbezogener Daten</block>
-  <block id="b14a1801297548a365efb89c7bd8874b" category="paragraph">Die sensiblen personenbezogenen Daten, die Cloud Data Sense in Dateien finden kann, umfassen die folgende Liste: Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.</block>
   <block id="98d51623eb7c03f43fa0678301f5efd4" category="list-text">Referenz Für Kriminelle Verfahren</block>
   <block id="369810982fcd806bbde0147f11c0364d" category="list-text">Ethnische Referenz</block>
   <block id="4d0838c277b16e4c72ecafbaf587b10f" category="list-text">Systemzustand</block>
@@ -1930,7 +1923,6 @@
   <block id="9c816fac79e497eaa62bbb4a3adddfc1" category="list-text">Religiöse Überzeugungen Referenz</block>
   <block id="1126ae684e7f83d7ad03320e3339f2e4" category="list-text">Sexualleben oder Orientierung Referenz</block>
   <block id="3b59f947bb18be76ff03ca45ee9db241" category="section-title">Arten von Kategorien</block>
-  <block id="82355eab158a61a75b39fa1ecb5f9d01" category="paragraph">Cloud Data Sense kategorisiert Ihre Daten wie folgt. Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkannt werden.</block>
   <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">Kategorie</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="cell">Englisch</block>
   <block id="86bc3115eb4e9873ac96904a4a68e19e" category="cell">Deutsch</block>
@@ -3055,7 +3047,6 @@
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">Mit dem Filter „Benutzer-/Gruppenberechtigungen“ können Sie die Dateien, Ordner und Freigaben auflisten, auf die ein bestimmter Benutzer oder eine Gruppe Lese- und/oder Schreibberechtigungen besitzt. Sie können mehrere Benutzer und/oder Gruppennamen auswählen oder einen Teilnamen eingeben.</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">Data Sense kann Dateien identifizieren und kategorisieren, die die Australian TFN (Tax File Number), die Australian Driver's License Number, die Australian Medicare Number und die Australian Passport Number enthalten. <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>.</block>
   <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">Wenn Sie Cloud Data Sense auf einem Host in einem On-Premises-Standort implementiert haben, der keinen Internetzugang hat, können Sie jetzt lokale Daten von OneDrive- oder SharePoint-Konten scannen. <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
-  <block id="0e91e4dc71e9acf8654f7179d48b5ccd" category="paragraph">Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ die zusätzlichen Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">Japanische Personal Identification Number (Privat- und Firmennummer)</block>
   <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">Stellen Sie sicher, dass Ihre Umgebung die Voraussetzungen erfüllen kann. Dazu gehören Outbound-Internetzugang für die Instanz, Konnektivität zwischen Connector und Cloud Data Sense über Port 443 und mehr. <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>.</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR – Kategorie Gesundheit</block>
@@ -3063,4 +3054,27 @@
   <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">Befolgen Sie die Schritte 1 bis 8 vom <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> Auf dem Knoten Manager.</block>
   <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.17.x installiert ist, können Sie nur auf 1.18.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Technische Unterstützung für die folgenden Lösungen von Cloud-Providern, die Sie in BlueXP integriert haben, finden Sie in der BlueXP-Dokumentation zu diesem Produkt unter „Hilfe“.</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">Alle diese Mechanismen zum Hinzufügen benutzerdefinierter Scankriterien werden in allen Sprachen unterstützt.</block>
+  <block id="966065b551c0c5d33146e32380dffc54" category="paragraph">Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der unten stehenden Tabelle wird bestimmt, ob Cloud Data Sense verwendet wird <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> Zum Validieren seiner Ergebnisse für die Kennung.</block>
+  <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.</block>
+  <block id="7a8c2ce1750465ec6bf270edb025f14f" category="paragraph">Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="ad225f707802ba118c22987186dd38e8" category="cell">Französisch</block>
+  <block id="f32ced6a9ba164c4b3c047fd1d7c882e" category="cell">Japanisch</block>
+  <block id="4ef37c8218042a526e063ddcb7f99e4e" category="paragraph">Die sensiblen personenbezogenen Daten, die Cloud Data Sense in Dateien finden kann, umfassen die folgende Liste:</block>
+  <block id="3b3e3761409ec91318d55527674759e3" category="paragraph">Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.</block>
+  <block id="d28ebbcb60fdecb8e44508f82867ad79" category="paragraph">Cloud Data Sense kategorisiert Ihre Daten wie folgt.</block>
+  <block id="5ad8ae17298ed454e6b4639368851b62" category="paragraph">Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkannt werden.</block>
+  <block id="db58ba41843c3976a8e9932df76277ec" category="list-text">Anzeigen und ändern Sie<block ref="59692f28ce49bb83d818eeb4f17b5a14" category="inline-link-rx"></block> In Ihren Dateien.</block>
+  <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">Data Sense kann auch auf einem Linux-Host vor Ort oder auf einem Host bei einem bevorzugten Cloud-Provider implementiert werden. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der Software Data Sense sind automatisiert, solange die Instanz einen Internetzugang hat.</block>
+  <block id="dc59914806276092072d36ab9d88436a" category="section-title">Wie schnell scannt Data Sense Daten</block>
+  <block id="de07b97b8f1edf6b3a5e144748a45572" category="paragraph">„Data Sense“ kann zwischen 15-40 TB Daten pro Tag und Scannerknoten scannen. Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.</block>
+  <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten</block>
+  <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>.</block>
+  <block id="d5e0083566ed8d85ca68105bf8cfd38e" category="list-text">Cloud Data Sense verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>.</block>
+  <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">Bei Verwendung von BlueXP im SaaS-Modus wird die Verbindung zu BlueXP über HTTPS bedient, und die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten Daten sind durch End-to-End-Verschlüsselung gesichert, das bedeutet, dass NetApp und Dritte diese nicht lesen können.</block>
 </blocks>

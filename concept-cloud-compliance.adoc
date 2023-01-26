@@ -48,7 +48,7 @@ Der Datensinn kann Daten identifizieren, die potenziell gefährdet sind, wenn si
 * Einhaltung von Richtlinien zur Datenaufbewahrung.
 * Verwenden Sie _Policies_, um das Sicherheitspersonal automatisch über neue Sicherheitsprobleme zu informieren, damit sie sofort reagieren können.
 * Fügen Sie benutzerdefinierte Tags zu Dateien hinzu (z. B. „muss verschoben werden“) und weisen Sie einen BlueXP-Benutzer zu, damit diese Person Updates für die Dateien besitzen kann.
-* Anzeigen und ändern Sie link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)-Etiketten"^] In Ihren Dateien.
+* Anzeigen und ändern Sie https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)-Etiketten"^] In Ihren Dateien.
 
 
 
@@ -165,8 +165,9 @@ In Regionen, in denen n2-Standard-16 nicht verfügbar ist, wird Data Sense statt
 
 * Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Pro Connector wird nur eine Datensense-Instanz bereitgestellt.
-* Upgrades der Software Data Sense sind automatisiert, solange die Instanz einen Internetzugang hat.
 
+
+Data Sense kann auch auf einem Linux-Host vor Ort oder auf einem Host bei einem bevorzugten Cloud-Provider implementiert werden. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der Software Data Sense sind automatisiert, solange die Instanz einen Internetzugang hat.
 
 
 TIP: Die Instanz sollte jederzeit ausgeführt werden, da Cloud Data Sense die Daten kontinuierlich scannt.
@@ -269,6 +270,14 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 |===
 
 
+=== Wie schnell scannt Data Sense Daten
+
+„Data Sense“ kann zwischen 15-40 TB Daten pro Tag und Scannerknoten scannen. Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
+
+link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten"^].
+
+
+
 == Information, die Cloud Data Sense Indizes erstellt
 
 Data Sense erfasst, indiziert und weist Kategorien zu Ihren Daten (Dateien) zu. Die Daten, die Data Sense indiziert werden, umfassen Folgendes:
@@ -287,7 +296,7 @@ Name der Entität Anerkennung:: Cloud Data Sense verwendet KI, um Namen natürli
 
 BlueXP implementiert die Cloud Data Sense-Instanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.
 
-Bei der Verwendung von BlueXP im SaaS-Modus wird die Verbindung zu BlueXP über HTTPS bedient, und die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten Daten sind mit End-to-End-Verschlüsselung gesichert, was bedeutet, dass NetApp und Dritte es nicht lesen können.
+Bei Verwendung von BlueXP im SaaS-Modus wird die Verbindung zu BlueXP über HTTPS bedient, und die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten Daten sind durch End-to-End-Verschlüsselung gesichert, das bedeutet, dass NetApp und Dritte diese nicht lesen können.
 
 Ausgehende Regeln sind vollständig geöffnet. Zur Installation und Aktualisierung der Data Sense Software und zum Senden von Nutzungsmetriken ist Internetzugang erforderlich.
 

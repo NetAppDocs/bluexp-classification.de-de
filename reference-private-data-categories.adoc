@@ -23,192 +23,194 @@ TIP: Wenn Sie Cloud Data Sense zur Identifizierung anderer privater Datentypen b
 
 == Arten personenbezogener Daten
 
-Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte wird bestimmt, ob Cloud Data Sense verwendet wird link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
+Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der unten stehenden Tabelle wird bestimmt, ob Cloud Data Sense verwendet wird link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
 
-Die Artikel in dieser Kategorie können in jeder Sprache erkannt werden.
+Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
 
-Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ die zusätzlichen Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten Kennungen zu Ihren Daten Sense-Scans"^] Entsprechende Details.
+Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten Kennungen zu Ihren Daten Sense-Scans"^] Entsprechende Details.
 
-[cols="20,50,18"]
+[cols="13,37,10,8,8,8,8,8"]
 |===
-| Typ | Kennung | Näherungsvalidierung? 
+| Typ | Kennung | Näherungsvalidierung? | Englisch | Deutsch | Spanisch | Französisch | Japanisch 
 
 
-.6+| Allgemein | E-Mail-Adresse | Nein 
+.6+| Allgemein | E-Mail-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Kreditkartennummer | Nein 
+| Kreditkartennummer | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Betroffenen | Nein 
+| Betroffenen | Nein | ✓ | ✓ | ✓ |  |  
 
 
-| IBAN-Nummer (International Bank Account Number) | Nein 
+| IBAN-Nummer (International Bank Account Number) | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| IP-Adresse | Nein 
+| IP-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Passwort | Ja. 
+| Passwort | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.51+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. 
+.51+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Australische Führerschein | Ja. 
+| Australische Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Australian Medicare Number | Ja. 
+| Australian Medicare Number | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Australian Passport Number | Ja. 
+| Australian Passport Number | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Österreichische SSN | Ja. 
+| Österreichische SSN | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Belgischer Ausweis (Numero National) | Ja. 
+| Belgischer Ausweis (Numero National) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Brasilianischer Ausweis (CPF) | Ja. 
+| Brasilianischer Ausweis (CPF) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| British Passport | Ja. 
+| British Passport | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Bulgarische ID (UCN) | Ja. 
+| Bulgarische ID (UCN) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| California Driver's License | Ja. 
+| California Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Kroatische ID (OIB) | Ja. 
+| Kroatische ID (OIB) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Zypern Steuernummer (TIC) | Ja. 
+| Zypern Steuernummer (TIC) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Tschechische/Slowakische Ausweisnummer | Ja. 
+| Tschechische/Slowakische Ausweisnummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Dänische ID (HLW) | Ja. 
+| Dänische ID (HLW) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Niederländische ID (BSN) | Ja. 
+| Niederländische ID (BSN) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Estnische ID | Ja. 
+| Estnische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Finnische ID (HETU) | Ja. 
+| Finnische ID (HETU) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Französische Führerschein | Ja. 
+| Französische Führerschein | Ja. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Französische ID | Ja. 
+| Französische ID | Ja. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Französisch INSEE | Ja. 
+| Französisch INSEE | Ja. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Französische Sozialversicherungsnummer | Ja. 
+| Französische Sozialversicherungsnummer | Ja. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Französische Steuernummer (SPI) | Ja. 
+| Französische Steuernummer (SPI) | Ja. | ✓ | ✓ | ✓ | ✓ |  
 
 
-| Steuernummer (Steuerliche Identifikationsnummer) | Ja. 
+| Steuernummer (Steuerliche Identifikationsnummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Griechische ID | Ja. 
+| Griechische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Ungarische Steuernummer | Ja. 
+| Ungarische Steuernummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Indiana Driver's License | Ja. 
+| Indiana Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Irish ID (PPS) | Ja. 
+| Irish ID (PPS) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Israelische ID | Ja. 
+| Israelische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Italienische Steuernummer | Ja. 
+| Italienische Steuernummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Japanische Personal Identification Number (Privat- und Firmennummer) | Ja. 
+| Japanische Personal Identification Number (Privat- und Firmennummer) | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| Lettischer Ausweis | Ja. 
+| Lettischer Ausweis | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Litauische ID | Ja. 
+| Litauische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Luxemburg-ID | Ja. 
+| Luxemburg-ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Maltesische ID | Ja. 
+| Maltesische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| NHS-Nummer (National Health Service) | Ja. 
+| NHS-Nummer (National Health Service) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| New York Führerschein | Ja. 
+| New York Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Konto Einer Neuseeländischen Bank | Ja. 
+| Konto Einer Neuseeländischen Bank | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Führerschein in Neuseeland | Ja. 
+| Führerschein in Neuseeland | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Neuseeland-IRD-Nummer (Steuernummer) | Ja. 
+| Neuseeland-IRD-Nummer (Steuernummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Neuseeland NHI (National Health Index) Nummer | Ja. 
+| Neuseeland NHI (National Health Index) Nummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Neuseeländische Passnummer | Ja. 
+| Neuseeländische Passnummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Polish ID (PESEL) | Ja. 
+| Polish ID (PESEL) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Portugiesische Steuernummer (NIF) | Ja. 
+| Portugiesische Steuernummer (NIF) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Rumänische ID (CNP) | Ja. 
+| Rumänische ID (CNP) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Slowenische ID (EMSO) | Ja. 
+| Slowenische ID (EMSO) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Südafrikanischer Ausweis | Ja. 
+| Südafrikanischer Ausweis | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Spanische Steuernummer | Ja. 
+| Spanische Steuernummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Schwedische ID | Ja. 
+| Schwedische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Texas Driver's License | Ja. 
+| Texas Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| GROSSBRITANNIEN ID (NINO) | Ja. 
+| GROSSBRITANNIEN ID (NINO) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| USA Sozialversicherungsnummer (SSN) | Ja. 
+| USA Sozialversicherungsnummer (SSN) | Ja. | ✓ | ✓ | ✓ |  |  
 |===
 
 
 == Arten sensibler personenbezogener Daten
 
-Die sensiblen personenbezogenen Daten, die Cloud Data Sense in Dateien finden kann, umfassen die folgende Liste: Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.
+Die sensiblen personenbezogenen Daten, die Cloud Data Sense in Dateien finden kann, umfassen die folgende Liste:
+
+Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.
 
 Referenz Für Kriminelle Verfahren:: Daten zu strafrechtlichen Überzeugungen und Straftaten einer natürlichen Person.
 Ethnische Referenz:: Daten über die rassische oder ethnische Herkunft einer natürlichen Person.
@@ -225,7 +227,9 @@ Sexualleben oder Orientierung Referenz:: Daten über das Sexualleben einer natü
 
 == Arten von Kategorien
 
-Cloud Data Sense kategorisiert Ihre Daten wie folgt. Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkannt werden.
+Cloud Data Sense kategorisiert Ihre Daten wie folgt.
+
+Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkannt werden.
 
 [cols="25,25,15,15,15"]
 |===

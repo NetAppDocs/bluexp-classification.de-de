@@ -21,6 +21,8 @@ summary: „Data Sense“ bietet Ihnen viele Möglichkeiten, eine benutzerdefini
 * Sie können ein persönliches Muster mit einem regulären Ausdruck (regex) hinzufügen -- der Regex wird den bestehenden vordefinierten Mustern hinzugefügt.
 
 
+Alle diese Mechanismen zum Hinzufügen benutzerdefinierter Scankriterien werden in allen Sprachen unterstützt.
+
 
 NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
 
