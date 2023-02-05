@@ -83,6 +83,72 @@ image:screenshot_compliance_delete_data_fusion.png["Ein Screenshot zeigt, wie ei
 
 
 
+== Fügen Sie mithilfe eines Regex benutzerdefinierte Kennungen für persönliche Daten hinzu
+
+Mit einem benutzerdefinierten regulären Ausdruck (regex) können Sie ein persönliches Muster hinzufügen, um bestimmte Informationen in Ihren Daten zu identifizieren. Auf diese Weise können Sie ein neues benutzerdefiniertes Regex erstellen, um neue persönliche Informationselemente zu identifizieren, die noch nicht im System vorhanden sind. Das Regex wird den bereits vorhandenen vordefinierten Mustern hinzugefügt, die Data Sense bereits verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ sichtbar sein.
+
+Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien erwähnt werden. Wenn die Produkt-ID z. B. eine klare Struktur hat, ist es eine 12-stellige Nummer, die mit 201 beginnt, können Sie die benutzerdefinierte regex-Funktion verwenden, um sie in Ihren Dateien zu suchen. Der reguläre Ausdruck für dieses Beispiel lautet *\b201\d{9}\b*.
+
+Nach dem Hinzufügen des Regex startet Data Sense das Scannen aller Datenquellen neu. Nach Abschluss des Scans werden die neuen Ergebnisse im Data Sense Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
+
+.Schritte
+. Klicken Sie auf der Registerkarte _Custom Classifiers_ auf *Neuen Klassifikator hinzufügen*, um den Assistenten _Custom Classifier_ zu starten.
++
+image:screenshot_compliance_add_classifier_button.png["Ein Screenshot, in dem der Assistent zum Hinzufügen von benutzerdefinierten Klassifikatoren angezeigt wird."]
+
+. Geben Sie auf der Seite _Typ auswählen_ den Namen des Klassifikators ein, geben Sie eine kurze Beschreibung ein, wählen Sie *Persönliche Kennung* aus und klicken Sie dann auf *Weiter*.
++
+Der von Ihnen eingegebene Name wird in der Data Sense-Benutzeroberfläche als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen. Sie können das Kontrollkästchen auch aktivieren, um „erkannte Ergebnisse im System maskieren“ zu aktivieren, damit das vollständige Ergebnis nicht in der Benutzeroberfläche angezeigt wird. Sie können dies beispielsweise tun, um vollständige Kreditkartennummern oder ähnliche persönliche Daten zu verbergen.
+
++
+image:screenshot_select_classifier_type.png["Ein Screenshot mit dem Namen des Klassifikators und der Auswahl des Klassifikators."]
+
+. Wählen Sie auf der Seite Datenanalyse-Tool_ *Benutzerdefinierter regulärer Ausdruck* als Methode, mit der Sie den Klassifikator definieren möchten, und klicken Sie dann auf *Weiter*.
++
+image:screenshot_select_classifier_tool.png["Ein Screenshot, in dem die Auswahl des benutzerdefinierten regulären Ausdrucks als Werkzeug angezeigt wird, mit dem Data Sense das Muster erstellt."]
+
+. Geben Sie auf der Seite _Create Logic_ den regulären Ausdruck und beliebige Annäherungswörter ein, und klicken Sie auf *Fertig*.
++
+.. Sie können jeden beliebigen regulären Ausdruck eingeben. Klicken Sie auf die Schaltfläche *Validieren*, damit Data Sense die Gültigkeit des regulären Ausdrucks bestätigt und dass er nicht zu breit ist. Das bedeutet, dass es zu viele Ergebnisse gibt.
+.. Optional können Sie einige Annäherungsworte eingeben, um die Genauigkeit der Ergebnisse zu verbessern. Das sind Wörter, die in der Regel innerhalb von 300 Zeichen des Musters gefunden werden, nach dem Sie suchen (entweder vor oder nach dem gefundenen Muster). Geben Sie jedes Wort oder jede Phrase in eine separate Zeile ein.
++
+image:screenshot_select_classifier_create_logic.png["Ein Screenshot der Eingabe der Regex- und Proximity-Wörter für Ihren Kunden Klassifikator."]
+
+
+
+
+
+.Ergebnis
+Der Klassifikator wird hinzugefügt und Data Sense beginnt, alle Datenquellen erneut zu scannen. Sie gelangen zurück zur Seite Benutzerdefinierte Klassifizierungsmerkmale, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrem neuen Klassifikator entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.
+
+image:screenshot_personal_info_regex_added.png["Ein Screenshot mit den Ergebnissen eines neuen Regex-Klassifikators, der dem System hinzugefügt wird und das Scannen läuft."]
+
+
+
+=== Ergebnisse von Ihren benutzerdefinierten Klassifikatoren anzeigen
+
+Sie können die Ergebnisse von einem Ihrer benutzerdefinierten Klassifikatoren im Compliance Dashboard und auf der Untersuchungsseite anzeigen. In diesem Screenshot werden beispielsweise die übereinstimmenden Informationen im Compliance-Dashboard im Abschnitt „Persönliche Ergebnisse“ angezeigt.
+
+image:screenshot_add_regex_result.png["Ein Screenshot, der ein Beispiel für ein benutzerdefiniertes Regex zeigt, führt im Bereich Untersuchungsergebnisse."]
+
+Klicken Sie auf das image:button_arrow_investigate.png["Kreis mit einem Pfeil"] Um die detaillierten Ergebnisse auf der Untersuchungsseite anzuzeigen.
+
+Darüber hinaus werden alle benutzerdefinierten Klassifikatorergebnisse auf der Registerkarte Benutzerdefinierte Klassifikatoren angezeigt, und die oberen 6 benutzerdefinierten Klassifikatorergebnisse werden wie unten gezeigt im Compliance Dashboard angezeigt.
+
+image:screenshot_custom_classifier_top_5.png["Ein Screenshot mit den Top 3 benutzerdefinierten Klassifizierungsmerkmale, die auf den zurückgegebenen Ergebnissen basieren."]
+
+
+
+=== Benutzerdefinierte Klassifikatoren verwalten
+
+Sie können alle benutzerdefinierten Klassifikatoren ändern, die Sie mit der Schaltfläche *Klassifikator bearbeiten* erstellt haben.
+
+Und wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie Data Sense nicht benötigen, um die benutzerdefinierten Muster zu identifizieren, die Sie hinzugefügt haben, können Sie die Schaltfläche *Klassifikator löschen* verwenden, um jedes Element zu entfernen.
+
+image:screenshot_custom_classifiers_manage.png["Ein Screenshot der Seite „Benutzerdefinierte Klassifikatoren“ mit den Schaltflächen zum Bearbeiten und Löschen eines Klassifikators."]
+
+
+
 == Fügen Sie benutzerdefinierte Schlüsselwörter aus einer Textdatei hinzu
 
 Sie können dem Data Sense benutzerdefinierte Schlüsselwörter hinzufügen, damit es bestimmte Informationen in Ihren Daten identifiziert. Sie fügen die Schlüsselwörter aus einer von Ihnen definierten Textdatei hinzu. Die Schlüsselwörter werden den bereits vorhandenen vordefinierten Schlüsselwörtern hinzugefügt, die Data Sense verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ angezeigt.
@@ -117,7 +183,7 @@ Beachten Sie die folgenden Anforderungen:
 
 
 
-=== Zugriff auf die Befehlszeile
+=== Öffnen Sie die Befehlszeile
 
 Sie müssen auf das Data Sense System zugreifen, um den Befehl zum Hinzufügen benutzerdefinierter Schlüsselwörter zu starten.
 
@@ -193,73 +259,3 @@ Zum Beispiel, um die in der Datei *internal_Product_Names.txt definierten Schlü
 [user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
-
-
-== Fügen Sie mithilfe eines Regex benutzerdefinierte Kennungen für persönliche Daten hinzu
-
-Mit einem benutzerdefinierten regulären Ausdruck (regex) können Sie ein persönliches Muster hinzufügen, um bestimmte Informationen in Ihren Daten zu identifizieren. Das Regex wird den bereits vorhandenen vordefinierten Mustern hinzugefügt, die Data Sense bereits verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ sichtbar sein.
-
-Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien erwähnt werden. Wenn die Produkt-ID z. B. eine klare Struktur hat, ist es eine 12-stellige Nummer, die mit 201 beginnt, können Sie die benutzerdefinierte regex-Funktion verwenden, um sie in Ihren Dateien zu suchen.
-
-Nach dem Hinzufügen des Regex startet Data Sense das Scannen aller Datenquellen neu - die neuen Ergebnisse erscheinen in Data Sense, nachdem der Scan abgeschlossen ist.
-
-
-
-=== Befehlssyntax zum Hinzufügen des Regex
-
-Sie müssen auf das Data Sense System zugreifen, um die Datei hinzuzufügen, die die benutzerdefinierten Schlüsselwortmuster enthält, und um den Befehl zu initiieren, um die benutzerdefinierten Schlüsselwörter hinzuzufügen. <<Zugriff auf die Befehlszeile,Erfahren Sie, wie Sie auf die Befehlszeile zugreifen>> Unabhängig davon, ob sich Daten für Ihre lokale Umgebung eignen oder in der Cloud implementiert haben.
-
-Die Befehlssyntax zum Hinzufügen eines benutzerdefinierten Regex ist:
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
-* <pattern_Name> = Dies ist der Name, der in der Datensense-Benutzeroberfläche angezeigt wird. Stellen Sie sicher, dass der Name identifiziert, was der Regex entworfen wurde, um zu finden. Der Name muss mindestens einen Buchstaben enthalten und darf bis zu 70 Zeichen lang sein.
-* <Regular_Expression> = Dies kann jeder legale reguläre Ausdruck sein.
-* <proximity_words> = Wörter, die innerhalb von 300 Zeichen des Musters liegen, nach dem Sie suchen (entweder vor oder nach dem gefundenen Muster), um die Genauigkeit der Ergebnisse zu verfeinern. Jedes Wort wird durch ein Komma (,) getrennt.
-
-
-Sie führen den Befehl über den Pfad */opt/netapp/Datacense/* aus.
-
-Beachten Sie, dass wir jeden neuen Regex testen, um zu überprüfen, ob er zu breit ist und es würde zu viele Spiele zurückkehren. Wenn das der Fall ist, wird die folgende Protokollmeldung angezeigt:
-
- log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-Sie können die Option *-f* am Ende der Befehlszeile verwenden, wenn Sie den Regex nachdrücklich zu Data Sense hinzufügen möchten - auch wenn wir der Meinung sind, dass er zu breit ist. Alternativ können Sie mit der Option "-p" versuchen, die Suchergebnisse zu verfeinern.
-
-
-
-=== Beispiel
-
-Die Produkt-ID ist eine 12-stellige Nummer, die mit 201 beginnt, z. B. „201123456789“. Der reguläre Ausdruck lautet also *\b201\d{9}\b*. Und Sie möchten, dass der Text in der Data Sense-Benutzeroberfläche dieses Muster als *interne Produkt-ID* identifiziert. Und wir fügen die Proximity-Wörter „Produkt-id“ und „Bezeichner“ hinzu.
-
-Geben Sie die folgenden Befehle ein, um zu sehen, wo Ihre internen Produkt-IDs in Ihren Dateien erwähnt werden.
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
-----
-Die Ausgabe dieses Befehls lautet:
-
-....
-[+] Adding Custom Regex to Data Sense
-log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
-....
-.Ergebnisse
-Nach dem nächsten Scan werden diese neuen Informationen im Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
-
-image:screenshot_add_regex_result.png["Ein Screenshot, der ein Beispiel für ein benutzerdefiniertes Regex zeigt, führt im Bereich Untersuchungsergebnisse."]
-
-
-
-=== Deaktivieren eines benutzerdefinierten Regex
-
-Wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie Data Sense nicht benötigen, um die benutzerdefinierten Muster zu identifizieren, die Sie als Regex eingegeben haben, verwenden Sie die Option *deactivate* im Befehl, um jeden Regex zu entfernen.
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
-So entfernen Sie beispielsweise die *interne Produkt-ID* Regex:
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
-----
- log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

@@ -159,7 +159,7 @@ Beachten Sie Folgendes über die Standardinstanz:
 In Regionen, in denen m5.4xlarge nicht verfügbar ist, läuft Data Sense stattdessen auf einer m4.4xlarge-Instanz.
 
 * In Azure wird Cloud Data Sense ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Mit einer 512-GB-Festplatte. Das Betriebssystem-Image ist CentOS 7.8.
-* In GCP wird Cloud Data Sense ausgeführt link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["n2-Standard-16-VM"^] Mit einer persistenten 512-GB-Standardfestplatte. Das Betriebssystem-Image ist CentOS 7.9.
+* In GCP wird Cloud Data Sense ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten 512-GB-Standardfestplatte. Das Betriebssystem-Image ist CentOS 7.9.
 +
 In Regionen, in denen n2-Standard-16 nicht verfügbar ist, wird Data Sense stattdessen auf einer n2d-Standard-16- oder n1-Standard-16-VM ausgeführt.
 
@@ -272,7 +272,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
 === Wie schnell scannt Data Sense Daten
 
-„Data Sense“ kann zwischen 15-40 TB Daten pro Tag und Scannerknoten scannen. Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
+Der Datensense kann zwischen 15-40 TIBS Daten pro Tag und pro Scannerknoten scannen. Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten"^].
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. 
+summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. Die Data Sense Instanz wird im gleichen Cloud-Provider-Netzwerk wie der BlueXP Connector bereitgestellt. 
 ---
 = Cloud-Daten sinnvoll in der Cloud implementieren
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu 
 
 
 [role="lead"]
-Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren.
+Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. Die Data Sense Instanz wird im gleichen Cloud-Provider-Netzwerk wie der BlueXP Connector bereitgestellt.
 
-Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Stellen Sie Data Sense auf einem Linux-Host mit Internetzugang bereit"]. Die Art der Installation ist möglicherweise eine gute Option, wenn Sie lieber On-Premises-ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet -- dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
+Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Stellen Sie Data Sense auf einem Linux-Host mit Internetzugang bereit"]. Diese Art der Installation kann eine gute Option sein, wenn Sie lieber On-Premises-ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
 
 
 
@@ -174,7 +174,7 @@ Führen Sie diese Schritte aus, um eine Instanz von Cloud Data Sense in der Clou
 +
 image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot, in dem die Schaltfläche zum Aktivieren von Cloud Data Sense ausgewählt wird."]
 
-. Klicken Sie auf *Activate Data Sense*, um den Assistenten zur Cloud-Bereitstellung zu starten.
+. Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot, wie die Schaltfläche zum Implementieren von Cloud Data Sense in der Cloud ausgewählt wird"]
 

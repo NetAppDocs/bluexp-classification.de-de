@@ -106,7 +106,7 @@ Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger
 
 * *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie Data Sense installieren:
 +
-** Docker Engine Version 19 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
+** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
 ** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
@@ -266,7 +266,7 @@ image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot, in dem die S
 +
 image:screenshot_cloud_compliance_deploy_darksite.png["Ein Screenshot, wie die Schaltfläche zum Implementieren von Cloud Data Sense vor Ort ausgewählt wird"]
 
-. Kopieren Sie im Dialogfeld _Deploy Data Sense on premise_ den angegebenen Befehl und fügen Sie ihn in eine Textdatei ein, damit Sie ihn später verwenden können, und klicken Sie auf *Schließen*. Beispiel:
+. Das Dialogfeld _Deploy Data Sense on premise_ wird angezeigt. Kopieren Sie den angegebenen Befehl und fügen Sie ihn in eine Textdatei ein, damit Sie ihn später verwenden können, und klicken Sie auf *Schließen*. Beispiel:
 +
 `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`
 
@@ -399,7 +399,7 @@ Das können Sie auch link:task-licensing-datasense.html#use-a-cloud-data-sense-b
 Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, sollten Sie sich regelmäßig auf eine neue Version verlassen, um sicherzustellen, dass Sie die neueste Software und Funktionen verwenden. Sie müssen die Software Data Sense manuell aktualisieren, da keine Internetverbindung vorhanden ist, um das Upgrade automatisch durchzuführen.
 
 .Bevor Sie beginnen
-* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.17.x installiert ist, können Sie nur auf 1.18.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
+* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.18.x installiert ist, können Sie nur auf 1.19.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
 * Stellen Sie sicher, dass Ihre On-Prem Connector-Software auf die neueste verfügbare Version aktualisiert wurde. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Siehe die Schritte zur Aktualisierung des Connectors"^].
 
 
@@ -410,7 +410,7 @@ Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, 
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
 ----
 +
 Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.

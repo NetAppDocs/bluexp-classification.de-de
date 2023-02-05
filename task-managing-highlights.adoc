@@ -216,7 +216,7 @@ TIP: Sie können keine Dateien verschieben, die sich in Datenbanken befinden.
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen, um Dateien zu verschieben.
 * Die Quelldateien lassen sich in den folgenden Datenquellen befinden: On-Premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, File Shares und SharePoint Online.
 * Beim Verschieben von Dateien muss die NFS-Freigabe den Zugriff über die IP-Adresse der Datensense-Instanz ermöglichen.
-* Sie können maximal 100,000 Dateien gleichzeitig verschieben.
+* Sie können maximal 15 Millionen Dateien gleichzeitig verschieben.
 
 
 .Schritte

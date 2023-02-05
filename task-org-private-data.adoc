@@ -16,7 +16,7 @@ summary: Cloud Data Sense bietet zahlreiche Möglichkeiten für das Management u
 [role="lead"]
 Cloud Data Sense bietet zahlreiche Möglichkeiten für das Management und die Organisation von privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen.
 
-* Wenn Sie abonniert sind link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^] Zum Klassifizieren und Schützen Ihrer Dateien können Sie Cloud Data Sense verwenden, um diese AIP-Etiketten zu verwalten.
+* Wenn Sie abonniert sind https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^] Zum Klassifizieren und Schützen Ihrer Dateien können Sie Cloud Data Sense verwenden, um diese AIP-Etiketten zu verwalten.
 * Sie können Tags zu Dateien hinzufügen, die Sie als Organisation oder für eine Art von Follow-up markieren möchten.
 * Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, sodass diese Person für das Management der Datei verantwortlich ist.
 * Mit der "Policy"-Funktion können Sie Ihre eigenen individuellen Suchanfragen erstellen, so dass Sie die Ergebnisse einfach durch Klicken auf eine Schaltfläche sehen können.
@@ -55,7 +55,7 @@ Nachfolgend sehen Sie einen Vergleich zwischen Data Sense Tagging und Azure Info
 
 == Kategorisieren Sie Ihre Daten mit AIP-Etiketten
 
-Sie können AIP-Etiketten in den Dateien verwalten, die Cloud Data Sense scannt, wenn Sie abonniert haben link:https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Mit AIP können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Etiketten auf Inhalte anwenden. Mit „Data Sense“ können Sie die bereits zugewiesenen Beschriftungen anzeigen, Dateien Beschriftungen hinzufügen und Etiketten ändern, wenn bereits eine Bezeichnung vorhanden ist.
+Sie können AIP-Etiketten in den Dateien verwalten, die Cloud Data Sense scannt, wenn Sie abonniert haben https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Mit AIP können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Etiketten auf Inhalte anwenden. Mit „Data Sense“ können Sie die bereits zugewiesenen Beschriftungen anzeigen, Dateien Beschriftungen hinzufügen und Etiketten ändern, wenn bereits eine Bezeichnung vorhanden ist.
 
 Cloud Data Sense unterstützt AIP-Etiketten in den folgenden Dateitypen: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX
 
@@ -356,7 +356,7 @@ Richtlinien bieten folgende Funktionen:
 * <<Liste der vordefinierten Richtlinien,Vordefinierte Richtlinien>> Von NetApp basierend auf Benutzeranfragen
 * Möglichkeit, eigene benutzerdefinierte Richtlinien zu erstellen
 * Starten Sie die Untersuchungsseite mit den Ergebnissen Ihrer Richtlinien mit nur einem Klick
-* Senden Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer, wenn bestimmte kritische Richtlinien Ergebnisse zurückgeben, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können
+* Senden Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer oder andere E-Mail-Adressen, wenn bestimmte kritische Richtlinien Ergebnisse liefern, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können
 * Weisen Sie AIP-Etiketten (Azure Information Protection) automatisch allen Dateien zu, die den in einer Richtlinie definierten Kriterien entsprechen
 * Löschen Sie Dateien automatisch (einmal pro Tag), wenn bestimmte Richtlinien Ergebnisse zurückgeben, damit Sie Ihre Daten automatisch schützen können
 
@@ -394,6 +394,7 @@ image:screenshot_compliance_save_as_highlight.png["Ein Screenshot zeigt, wie ein
 .. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
 .. Aktivieren Sie optional das Kontrollkästchen, um Dateien automatisch zu löschen, die mit den Richtlinieparametern übereinstimmen. Weitere Informationen zu link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["Quelldateien mit einer Richtlinie löschen"].
 .. Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungen-E-Mails an BlueXP-Benutzer in Ihrem Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird. Weitere Informationen zu link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["Senden von E-Mail-Warnmeldungen anhand von Richtlinienergebnissen"].
+.. Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungs-E-Mails an andere Benutzer senden möchten, geben Sie bis zu 20 E-Mail-Adressen ein und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird.
 .. Aktivieren Sie optional das Kontrollkästchen, um Dateien, die den Richtlinieparametern entsprechen, automatisch AIP-Etiketten zuzuweisen, und wählen Sie die Beschriftung aus. (Nur wenn Sie bereits AIP-Etiketten integriert haben. Weitere Informationen zu link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"].)
 .. Klicken Sie Auf *Create Policy*.
 +
@@ -410,7 +411,7 @@ Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.
 
 === Senden von E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
 
-Cloud Data Sense kann E-Mail-Benachrichtigungen an BlueXP-Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden.
+Cloud Data Sense kann E-Mail-Benachrichtigungen an BlueXP-Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden. Sie können auch E-Mail-Benachrichtigungen an eine andere E-Mail-Adresse senden - bis zu 20 E-Mail-Adressen - nicht in Ihrem BlueXP-Konto.
 
 Sie können diese Einstellung beim Erstellen der Richtlinie oder beim Bearbeiten einer Richtlinie konfigurieren.
 
@@ -424,6 +425,7 @@ image:screenshot_compliance_add_email_alert_1.png["Ein Screenshot zeigt, wie ein
 . Auf der Seite Richtlinie bearbeiten:
 +
 .. Aktivieren Sie das Kontrollkästchen „E-Mail all the users in this Account“, wenn Sie Benachrichtigungen-E-Mails an Benutzer in Ihrem BlueXP-Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird (z. B. *every Day*).
+.. Aktivieren Sie das Kontrollkästchen „E-Mail senden“, wenn Sie Benachrichtigungs-E-Mails an weitere Benutzer senden möchten, wählen Sie das Intervall aus, in dem die E-Mail gesendet wird, und geben Sie bis zu 20 E-Mail-Adressen ein.
 +
 image:screenshot_compliance_add_email_alert_2.png["Ein Screenshot, in dem gezeigt wird, wie die E-Mail-Kriterien für die Richtlinie ausgewählt werden."]
 

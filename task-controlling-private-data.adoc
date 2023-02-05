@@ -217,7 +217,7 @@ image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verf�
 * Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.
 * Mit den Filtern im linken Fensterbereich können Sie die Ergebnisse verfeinern, indem Sie aus den folgenden Attributen auswählen:
 +
-[cols="35,65"]
+[cols="30,65"]
 |===
 | Filtern | Details 
 
