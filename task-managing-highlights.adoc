@@ -249,7 +249,7 @@ image:screenshot_compliance_move_file.png["Ein Screenshot, in dem die Auswahl de
 
 Sie können Quelldateien dauerhaft entfernen, die unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder dass Sie als Duplikat identifiziert haben. Diese Aktion ist permanent und es gibt kein Rückgängigmachen oder Wiederherstellen.
 
-Sie können Dateien manuell aus dem Untersuchungsbereich oder automatisch mit Richtlinien löschen.
+Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder link:task-using-policies.html#deleting-source-files-automatically-using-policies["Automatische Verwendung von Richtlinien"^].
 
 
 TIP: Sie können keine Dateien löschen, die sich in Datenbanken befinden.
@@ -290,34 +290,3 @@ Sie können den Fortschritt des Löschvorgangs in der anzeigen link:task-view-co
 Beachten Sie, dass Sie auch eine einzelne Datei löschen können, wenn Sie sich die Metadatendetails für eine Datei ansehen. Klicken Sie einfach auf *Datei löschen*.
 
 image:screenshot_compliance_delete_file.png["Ein Screenshot, in dem die Auswahl der Schaltfläche Datei löschen aus den Metadatendetails für eine Datei auf der Seite Datenuntersuchung angezeigt wird."]
-
-
-
-=== Quelldateien werden automatisch mithilfe von Richtlinien gelöscht
-
-Sie können eine benutzerdefinierte Richtlinie erstellen, um Dateien zu löschen, die der Richtlinie entsprechen. Sie können beispielsweise Dateien löschen, die vertrauliche Informationen enthalten und von Data Sense in den letzten 30 Tagen entdeckt wurden.
-
-Nur Kontoadministratoren können eine Richtlinie zum automatischen Löschen von Dateien erstellen.
-
-
-NOTE: Alle Dateien, die der Richtlinie entsprechen, werden einmal am Tag dauerhaft gelöscht.
-
-.Schritte
-. Definieren Sie auf der Seite „Untersuchung von Daten“ die Suche, indem Sie alle Filter auswählen, die Sie verwenden möchten. Siehe link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Filtern von Daten auf der Seite „Datenuntersuchung“"^] Entsprechende Details.
-. Wenn Sie alle Filtereigenschaften genau so haben, wie Sie sie wollen, klicken Sie auf *Create Policy von dieser Suche*.
-. Benennen Sie die Richtlinie, und wählen Sie andere Aktionen aus, die von der Richtlinie ausgeführt werden können:
-+
-.. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
-.. Aktivieren Sie das Kontrollkästchen "Dateien, die dieser Richtlinie entsprechen automatisch löschen" und geben Sie *dauerhaft löschen* ein, um zu bestätigen, dass Dateien dauerhaft von dieser Richtlinie gelöscht werden sollen.
-.. Klicken Sie Auf *Create Policy*.
-+
-image:screenshot_compliance_delete_files_using_policies.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
-
-
-
-
-
-.Ergebnis
-Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt. Dateien, die der Richtlinie entsprechen, werden einmal pro Tag gelöscht, wenn die Richtlinie ausgeführt wird.
-
-Sie können die Liste der Dateien anzeigen, die im gelöscht wurden link:task-view-compliance-actions.html["Statusbereich Aktionen"].

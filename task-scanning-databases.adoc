@@ -73,7 +73,7 @@ Jede Datenbank mit Anbindung an die Cloud Data Sense Instanz kann unabhängig vo
 * Dienstname (nur für den Zugriff auf Oracle-Datenbanken)
 * Anmeldeinformationen, die einen Lesezugriff auf die Schemas ermöglichen
 +
-Bei der Auswahl eines Benutzernamens und Kennworts ist es wichtig, einen zu wählen, der volle Lese-Berechtigungen für alle Schemas und Tabellen, die Sie scannen möchten. Es wird empfohlen, einen dedizierten Benutzer für das Cloud Data Sense System mit allen erforderlichen Berechtigungen zu erstellen.
+Bei der Auswahl eines Benutzernamens und Passworts ist es wichtig, einen zu wählen, der über vollständige Leseberechtigungen für alle Schemas und Tabellen verfügt, die Sie scannen möchten. Es wird empfohlen, einen dedizierten Benutzer für das Cloud Data Sense System mit allen erforderlichen Berechtigungen zu erstellen.
 
 
 
@@ -137,4 +137,4 @@ image:screenshot_compliance_select_schemas.png["Ein Screenshot der Seite Scankon
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen des von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie in der Spalte Status angezeigt, neben der erforderlichen Aktion, um den Fehler zu beheben.
+Cloud Data Sense beginnt mit dem Scannen des von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.

@@ -83,7 +83,7 @@ Konnektivität von Cloud Data Sense zu Amazon S3:: Cloud Data Sense benötigt ei
 --
 Wenn Sie den VPC-Endpunkt erstellen, müssen Sie die Region, die VPC und die Routing-Tabelle auswählen, die der Cloud Data Sense Instanz entspricht. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann Data Sense keine Verbindung zum S3-Service herstellen.
 
-Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich mich nicht über einen Gateway VPC Endpunkt mit einem S3-Bucket verbinden?"^]
+Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich keine Verbindung zu einem S3-Bucket über einen Gateway-VPC-Endpunkt herstellen?"^]
 
 Eine Alternative besteht darin, die Verbindung über ein NAT Gateway bereitzustellen.
 
@@ -182,7 +182,7 @@ Sie können S3-Buckets scannen, die sich unter einem anderen AWS-Konto befinden,
 .Schritte
 . Gehen Sie zum AWS Ziel-Konto, in dem Sie S3 Buckets scannen und eine IAM-Rolle erstellen möchten, indem Sie *ein weiteres AWS-Konto* auswählen.
 +
-image:screenshot_iam_create_role.gif[""]
+image:screenshot_iam_create_role.gif["Ein Screenshot der AWS Seite, in dem eine IAM-Rolle erstellt wird"]
 
 +
 Gehen Sie wie folgt vor:

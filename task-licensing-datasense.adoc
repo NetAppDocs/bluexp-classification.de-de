@@ -95,7 +95,7 @@ Sie verwenden die Seite „Digital Wallet“ in BlueXP, um Cloud Data Sense-Lize
 
 Nachdem Sie Ihre Cloud Data Sense Lizenz erworben haben, aktivieren Sie die Lizenz in BlueXP, indem Sie die Seriennummer und das NSS-Konto von Cloud Data Sense eingeben oder die Lizenzdatei NLF hochladen. Die folgenden Schritte zeigen, wie Sie die Lizenzdatei NLF abrufen können, wenn Sie diese Methode verwenden möchten.
 
-Wenn Sie Cloud Data Sense auf einem Host in einer On-Premises-Website, die keinen Internetzugang hat, bereitgestellt haben, müssen Sie die Lizenzdatei von einem Internet-verbundenen System erhalten. Die Aktivierung der Lizenz unter Verwendung der Seriennummer und des NSS-Kontos ist für Installationen am dunklen Standort nicht verfügbar.
+Wenn Sie Cloud Data Sense auf einem Host auf einer lokalen Website implementiert haben, die keinen Internetzugang hat, müssen Sie die Lizenzdatei von einem internetverbundenen System beziehen. Die Aktivierung der Lizenz unter Verwendung der Seriennummer und des NSS-Kontos ist für Installationen am dunklen Standort nicht verfügbar.
 
 .Schritte
 . Melden Sie sich beim an https://mysupport.netapp.com["NetApp Support Website"^] Klicken Sie anschließend auf *Systeme > Softwarelizenzen*.
@@ -158,7 +158,7 @@ Sie können Ihre Cloud Data Sense Lizenz aktualisieren, bevor sie abläuft, dami
 +
 Nach der Zahlung für die Lizenz und der Registrierung auf der NetApp Support-Website aktualisiert BlueXP automatisch die Lizenz im Digital Wallet. Auf der Seite „Data Services Licenses“ wird die Änderung in 5 bis 10 Minuten dargestellt.
 
-. Wenn BlueXP die Lizenz nicht automatisch aktualisieren kann (zum Beispiel, wenn sie auf einer dunklen Seite installiert wird), müssen Sie die Lizenzdatei manuell hochladen.
+. Wenn BlueXP die Lizenz nicht automatisch aktualisieren kann (z. B. wenn sie auf einer dunklen Website installiert ist), müssen Sie die Lizenzdatei manuell hochladen.
 +
 .. Das können Sie <<Holen Sie sich Ihre Cloud Data Sense Lizenzdatei,Beziehen Sie die Lizenzdatei über die NetApp Support-Website>>.
 .. Klicken Sie auf der Seite Digital Wallet auf der Registerkarte „_Data Services Licenses_“ auf image:screenshot_horizontal_more_button.gif["Weitere Symbole"] Klicken Sie für die Serviceseriennummer, die Sie aktualisieren, auf *Lizenz aktualisieren*.

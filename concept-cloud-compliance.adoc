@@ -16,7 +16,7 @@ summary: Cloud Data Sense ist ein Data-Governance-Service für BlueXP, der Ihre 
 [role="lead"]
 Cloud Data Sense ist ein Data Governance Service für BlueXP (früher Cloud Manager), der On-Premises- und Cloud-Datenquellen Ihres Unternehmens scannt, um Daten zuzuordnen und zu klassifizieren, und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte.
 
-https://cloud.netapp.com/netapp-cloud-data-sense["Hier lernen Sie die Anwendungsfälle für Cloud-Datensinnvoll kennen"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["Hier lernen Sie die Anwendungsfälle für Cloud-Datensinnvoll kennen"^].
 
 
 
@@ -34,7 +34,7 @@ Data Sense bietet verschiedene Tools, die Sie bei Ihren Compliance-Bemühungen u
 * Vielzahl sensibler personenbezogener Daten gemäß den Datenschutzvorschriften des DSGVO, CCPA, PCI und HIPAA ermitteln.
 * Reagieren Sie auf Data Subject Access Requests (DSAR) basierend auf Name oder E-Mail-Adresse.
 * Identifizieren Sie, ob eindeutige Kennungen aus Ihren Datenbanken in Dateien in anderen Repositorys gefunden werden - stellen Sie im Grunde Ihre eigene Liste von „persönlichen Daten“ her, die in Daten-Sense-Scans identifiziert werden.
-* Bestimmte Benutzer per E-Mail benachrichtigen, wenn Dateien bestimmte PII enthalten (Sie definieren diese Kriterien mit link:task-org-private-data.html#controlling-your-data-using-policies["Richtlinien"^]) So können Sie über einen Aktionsplan entscheiden.
+* Bestimmte Benutzer per E-Mail benachrichtigen, wenn Dateien bestimmte PII enthalten (Sie definieren diese Kriterien mit link:task-using-policies.html["Richtlinien"^]) So können Sie über einen Aktionsplan entscheiden.
 
 
 
@@ -125,7 +125,7 @@ Data Sense unterstützt NFS-Versionen 3.x, 4.0 und 4.1 sowie CIFS Versionen 1.x,
 
 == Kosten
 
-* Die Kosten für die Verwendung von Cloud Data Sense hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB Daten, die Data Sense in einem BlueXP-Arbeitsbereich scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://cloud.netapp.com/netapp-cloud-data-sense["Preisgestaltung"^] Entsprechende Details.
+* Die Kosten für die Verwendung von Cloud Data Sense hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB Daten, die Data Sense in einem BlueXP-Arbeitsbereich scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://bluexp.netapp.com/netapp-cloud-data-sense["Preisgestaltung"^] Entsprechende Details.
 +
 link:task-licensing-datasense.html["Lernen Sie, Cloud Data Sense zu lizenzieren"^].
 
@@ -189,7 +189,7 @@ Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereits
 | Mittel | 8 CPUS, 32 GB RAM, 200 GB SSD | Langsamer Scan und kann nur bis zu 1 Million Dateien scannen. 
 
 
-| Klein | 8 CPUS, 16 GB RAM, 100 GB SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-responding-to-dsar.html["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
+| Klein | 8 CPUS, 16 GB RAM, 100 GB SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
 |===
 Wenn Sie Data Sense in der Cloud implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Hilfe zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.
 
@@ -248,7 +248,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Alter und Größe der Dateien | Ja. | Ja. 
 
 
-| Fähigkeit, ein auszuführen link:task-generating-compliance-reports.html#data-mapping-report["Datenzuordnungsbericht"] | Ja. | Ja. 
+| Fähigkeit, ein auszuführen link:task-controlling-governance-data.html#data-mapping-report["Datenzuordnungsbericht"] | Ja. | Ja. 
 
 
 | Datenuntersuchung, um Dateidetails anzuzeigen | Ja. | Nein 
@@ -257,7 +257,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Suche nach Namen in Dateien | Ja. | Nein 
 
 
-| Erstellen link:task-org-private-data.html#controlling-your-data-using-policies["Richtlinien"] Die benutzerdefinierte Suchergebnisse liefern | Ja. | Nein 
+| Erstellen link:task-using-policies.html["Richtlinien"] Die benutzerdefinierte Suchergebnisse liefern | Ja. | Nein 
 
 
 | Kategorisieren Sie Daten mit AIP-Etiketten und Status-Tags | Ja. | Nein 
@@ -272,7 +272,11 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
 === Wie schnell scannt Data Sense Daten
 
-Der Datensense kann zwischen 15-40 TIBS Daten pro Tag und pro Scannerknoten scannen. Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
+Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
+
+* Beim Durchführen von Mapping-Scans kann Data Sense zwischen 100-150 TIBS der Daten pro Tag und pro Scannerknoten scannen.
+* Bei der Durchführung von Klassifizierungsscans kann Data Sense zwischen 15-40 TIBS der Daten pro Tag und pro Scannerknoten scannen.
+
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten"^].
 
@@ -287,7 +291,7 @@ Persönliche Daten:: Personenbezogene Informationen wie E-Mail-Adressen, Identif
 Sensible persönliche Daten:: Besondere Arten sensibler Daten, wie etwa Gesundheitsdaten, ethnische Herkunft oder politische Ansichten, wie in der DSGVO und anderen Datenschutzvorschriften definiert link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
 Kategorien:: Cloud Data Sense verwendet die gescannten Daten und unterteilt sie in verschiedene Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#viewing-files-by-categories["Weitere Informationen zu Kategorien"^].
 Typen:: Cloud Data Sense verwendet die gescannten Daten und werden nach Dateityp unterteilt. link:task-controlling-private-data.html#viewing-files-by-file-types["Erfahren Sie mehr über Types"^].
-Name der Entität Anerkennung:: Cloud Data Sense verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. link:task-responding-to-dsar.html["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
+Name der Entität Anerkennung:: Cloud Data Sense verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
 
 
 

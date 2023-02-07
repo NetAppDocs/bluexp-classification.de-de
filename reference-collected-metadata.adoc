@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: reference-collected-metadata.html 
+keywords: compliance, metadata, permissions, time stamps, privacy 
+summary: Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können. 
+---
+= Metadaten, die aus Datenquellen erhoben werden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können.
+
+|===
+|  | *Metadaten* | *CIFS* | *NFS* 
+
+
+.3+| *Zeitstempel* | *Erstellungszeit* | Verfügbar | Nicht verfügbar (nicht unterstützt in Linux) 
+
+
+| *Letzte Zugriffszeit* | Verfügbar | Verfügbar 
+
+
+| *Letztes Ändern der Zeit* | Verfügbar | Verfügbar 
+
+
+.2+| *Berechtigungen* | *Berechtigungen öffnen* | Wenn die Gruppe „ALLE“ Zugriff auf die Datei hat, gilt sie als „für Organisation geöffnet“. | Wenn „andere“ Zugriff auf die Datei haben, gilt sie als „für Organisation geöffnet“. 
+
+
+| *Benutzer/Gruppenzugriff* | Benutzer- und Gruppeninformationen werden aus LDAP übernommen | Nicht verfügbar (NFS-Benutzer werden in der Regel lokal auf dem Server verwaltet, daher kann dieselbe Person eine andere UID auf jedem Server haben) 
+|===

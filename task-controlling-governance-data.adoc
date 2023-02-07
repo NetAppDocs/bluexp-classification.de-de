@@ -44,7 +44,7 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 ** Sonstiges (allgemeine Kategorie „Sonstige“)
 
 
-* *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-controlling-private-data.html#viewing-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
+* *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#viewing-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
 
 
 
@@ -53,13 +53,13 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 
 Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt. Klicken Sie auf den Namen einer Richtlinie, um die Ergebnisse auf der Untersuchungsseite anzuzeigen. Klicken Sie auf *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.
 
-Klicken Sie Auf link:task-org-private-data.html#controlling-your-data-using-policies["Hier"] Um mehr über Richtlinien zu erfahren.
+Klicken Sie Auf link:task-using-policies.html["Hier"] Um mehr über Richtlinien zu erfahren.
 
 
 
 === Datenüberblick
 
-Der Abschnitt _Data Overview_ bietet einen schnellen Überblick über alle zu scannenden Daten. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Datengröße und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe link:task-generating-compliance-reports.html#data-mapping-report["Datenzuordnungsbericht"^] Alle Details zu diesem Bericht.
+Der Abschnitt _Data Overview_ bietet einen schnellen Überblick über alle zu scannenden Daten. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Datengröße und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe <<Datenzuordnungsbericht,Datenzuordnungsbericht>> Alle Details zu diesem Bericht.
 
 
 
@@ -148,3 +148,36 @@ Siehe link:task-controlling-private-data.html#viewing-files-by-file-types["Anzei
 Wenn Sie den Azure Information Protection (AIP) abonniert haben, können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Inhaltsetiketten anwenden. Durch die Überprüfung der am häufigsten verwendeten AIP-Etiketten, die Dateien zugeordnet sind, können Sie feststellen, welche Etiketten am häufigsten in Ihren Dateien verwendet werden.
 
 Siehe link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"^] Finden Sie weitere Informationen.
+
+
+
+=== Datenzuordnungsbericht
+
+Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst einen Übersichtsbericht, der alle Arbeitsumgebungen und Datenquellen zusammenfasst und dann eine Aufschlüsselung der einzelnen Arbeitsumgebungen enthält.
+
+Der Bericht enthält die folgenden Informationen:
+
+Nutzung Von Kapazitäten:: Für alle Arbeitsumgebungen: Listet die Anzahl der Dateien und die genutzte Kapazität für jede Arbeitsumgebung. Für einzelne Arbeitsumgebungen: Listet die Dateien auf, die die größte Kapazität nutzen.
+Alter der Daten:: Bietet drei Diagramme und Diagramme für den Zeitpunkt, an dem Dateien erstellt, zuletzt geändert oder zuletzt aufgerufen wurden. Listet die Anzahl der Dateien und deren verwendete Kapazität auf der Grundlage bestimmter Datumsbereiche auf.
+Größe von Daten:: Führt die Anzahl der Dateien auf, die in bestimmten Größenbereichen in Ihren Arbeitsumgebungen vorhanden sind.
+Dateitypen:: Listet die Gesamtzahl der Dateien und die genutzte Kapazität für jeden Dateityp auf, der in Ihren Arbeitsumgebungen gespeichert ist.
+
+
+
+
+==== Datenzuordnungsbericht wird erstellt
+
+Rufen Sie die Registerkarte „Data Sense“ auf, um den Bericht zu erstellen.
+
+.Schritte
+. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
+. Klicken Sie auf *Governance*, und klicken Sie dann im Governance Dashboard auf die Schaltfläche *Bericht zur Übersicht über die vollständige Datenzuordnung*.
++
+image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird."]
+
+
+
+.Ergebnis
+Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+
+Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.

@@ -1,0 +1,349 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite über viele Bereiche der Data Sense UI aufrufen, einschließlich der Dashboards Governance und Compliance. 
+---
+= Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite über viele Bereiche der Data Sense UI aufrufen, einschließlich der Dashboards Governance und Compliance.
+
+
+NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
+
+
+
+== Filtern von Daten auf der Seite „Datenuntersuchung“
+
+Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten. Dies ist eine sehr leistungsstarke Funktion, denn nachdem Sie die Daten verfeinert haben, können Sie die Buttonleiste oben auf der Seite verwenden, um eine Vielzahl von Aktionen durchzuführen, wie das Kopieren von Dateien, Verschieben von Dateien, Hinzufügen eines Tags oder AIP-Label zu den Dateien und vieles mehr.
+
+Wenn Sie den Inhalt der Seite nach der Verarbeitung als Bericht herunterladen möchten, klicken Sie auf die Schaltfläche image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Bericht Zur Datenuntersuchung,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
+
+image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verfügbaren Filter, wenn die Ergebnisse auf der Untersuchungsseite verfeinert werden."]
+
+* Auf den Registerkarten der obersten Ebene können Sie Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder aus Datenbanken (strukturierte Daten) anzeigen.
+* Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.
+* Mit den Filtern im linken Fensterbereich können Sie die Ergebnisse verfeinern, indem Sie die in den nächsten Abschnitten beschriebenen Attribute auswählen.
+
+
+
+
+=== Filtern von Daten nach Sensitivität und Inhalt
+
+Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Informationen in Ihren Daten enthalten sind.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Kategorie | Wählen Sie die aus link:reference-private-data-categories.html#types-of-categories["Arten von Kategorien"^]. 
+
+
+| Empfindlichkeitsstufe | Wählen Sie die Empfindlichkeitsstufe aus: Persönlich, sensibel persönlich oder nicht empfindlich. 
+
+
+| Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen werden die Matches von allen Dateien in jedem Ordner (und Unterordnern) angezeigt. 
+
+
+| Persönliche Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-personal-data["Arten personenbezogener Daten"^]. 
+
+
+| Sensible Personenbezogene Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-sensitive-personal-data["Arten sensibler personenbezogener Daten"^]. 
+
+
+| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. 
+|===
+
+
+=== Filtern Sie Daten nach Benutzereigern und Benutzerberechtigungen
+
+Verwenden Sie die folgenden Filter, um Dateibesitzer und Berechtigungen für den Zugriff auf Ihre Daten anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Öffnen Sie Berechtigungen | Wählen Sie den Berechtigungstyp innerhalb der Daten und in Ordnern/Shares aus. 
+
+
+| Benutzer-/Gruppenberechtigungen | Wählen Sie einen oder mehrere Benutzernamen und/oder Gruppennamen aus, oder geben Sie einen Teilnamen ein. 
+
+
+| Dateieigentümer | Geben Sie den Namen des Dateieigentümers ein. 
+
+
+| Anzahl der Benutzer mit Zugriff | Wählen Sie einen oder mehrere Kategoriebereiche aus, um anzuzeigen, welche Dateien und Ordner für eine bestimmte Anzahl von Benutzern geöffnet sind. 
+|===
+
+
+=== Filtern Sie Daten nach Zeit
+
+Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Erstellungszeit | Wählen Sie einen Zeitbereich aus, in dem die Datei erstellt wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
+
+
+| Entdeckte Zeit | Wählen Sie einen Zeitbereich aus, in dem Data Sense die Datei erkannt hat. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
+
+
+| Zuletzt Geändert | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt geändert wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
+
+
+| Zuletzt Aufgerufen | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt aufgerufen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Bei den Dateitypen, die von Data Sense gescannt werden, ist dies das letzte Mal, wenn Data Sense die Datei gescannt hat. 
+|===
+
+
+=== Filtern Sie Daten nach Metadaten
+
+Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, Größe und Verzeichnis oder Dateityp anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. 
+
+
+| Verzeichnistyp | Wählen Sie den Verzeichnistyp aus, entweder „Share“ oder „Folder“. 
+
+
+| Dateityp | Wählen Sie die aus link:reference-private-data-categories.html#types-of-files["Dateitypen"^]. 
+
+
+| Dateigröße | Wählen Sie den Dateigrößenbereich aus. 
+
+
+| Datei-Hash | Geben Sie den Hash der Datei ein, um eine bestimmte Datei zu finden, selbst wenn der Name anders ist. 
+|===
+
+
+=== Filtern Sie Ihre Daten nach Storage-Typ
+
+Verwenden Sie die folgenden Filter, um Daten nach Speichertyp anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Art Der Arbeitsumgebung | Wählen Sie den Typ der Arbeitsumgebung aus. OneDrive, SharePoint und Google Drive sind unter „Apps“ kategorisiert. 
+
+
+| Name der Arbeitsumgebung | Wählen Sie spezielle Arbeitsumgebungen aus. 
+
+
+| Storage Repository | Wählen Sie das Speicher-Repository aus, z. B. ein Volume oder ein Schema. 
+|===
+
+
+=== Filtern Sie Daten nach Tags, Labels, zugewiesenen Benutzern und Richtlinien
+
+Verwenden Sie die folgenden Filter, um Daten nach AIP-Etiketten oder -Tags anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
+
+
+| Etikett | Wählen Sie link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"] Die Ihren Dateien zugewiesen sind. 
+
+
+| Tags | Wählen Sie link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Das Tag oder die Tags"] Die Ihren Dateien zugewiesen sind. 
+
+
+| Zugewiesen Zu | Wählen Sie den Namen der Person aus, der die Datei zugeordnet ist. 
+|===
+
+
+=== Filtern Sie Daten nach Analysestatus
+
+Verwenden Sie den folgenden Filter, um Daten nach dem Status „Data Sense Scan“ anzuzeigen.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Analysestatus | Wählen Sie eine Option aus, um die Liste der Dateien anzuzeigen, die den ersten Scan ausstehend, den Scanvorgang abgeschlossen haben, den ausstehenden Rescan oder die nicht gescannt wurden. 
+|===
+
+
+=== Filtern Sie Daten nach Duplikaten
+
+Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupliziert wurden.
+
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Duplikate | Wählen Sie aus, ob die Datei in den Repositorys dupliziert wird. 
+|===
+
+
+== Anzeigen von Dateimetadaten
+
+Klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für jede einzelne Datei, um die Dateimetadaten anzuzeigen.
+
+image:screenshot_compliance_file_details.png["Ein Screenshot mit den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“."]
+
+Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Integrierte AIP in Cloud Data Sense"^]). Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#creating-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
+
+Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Volume-Name, die Berechtigungen und AIP-Labels nicht für Datenbankdateien relevant.
+
+Wenn Sie die Details für eine einzelne Datei anzeigen, gibt es einige Aktionen, die Sie für die Datei ergreifen können:
+
+* Sie können die Datei verschieben oder in eine beliebige NFS-Freigabe kopieren. Siehe link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["Quelldateien werden in eine NFS-Freigabe verschoben"] Und link:task-managing-highlights.html#copying-source-files["Quelldateien werden in eine NFS-Freigabe kopiert"] Entsprechende Details.
+* Sie können die Datei löschen. Siehe link:task-managing-highlights.html#deleting-source-files["Quelldateien werden gelöscht"] Entsprechende Details.
+* Sie können der Datei einen bestimmten Status zuweisen. Siehe link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Tags werden angewendet"] Entsprechende Details.
+* Sie können die Datei einem BlueXP-Benutzer zuweisen, damit er für alle Follow-up-Aktionen verantwortlich ist, die in der Datei ausgeführt werden müssen. Siehe link:task-org-private-data.html#assigning-users-to-manage-certain-files["Zuweisen von Benutzern zu einer Datei"] Entsprechende Details.
+* Wenn Sie AIP-Etiketten mit Cloud Data Sense integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder zu einer anderen Bezeichnung wechseln, wenn sie bereits vorhanden ist. Siehe link:task-org-private-data.html#assigning-aip-labels-manually["Manuelles Zuweisen von AIP-Beschriftungen"] Entsprechende Details.
+
+
+
+
+== Anzeigen von Berechtigungen für Dateien und Verzeichnisse
+
+Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche gilt nur für Daten in CIFS Shares, SharePoint Online, SharePoint On-Premises und OneDrive.
+
+Beachten Sie, dass Sie Active Directory in Data Sense integrieren sollten, wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen. link:task-add-active-directory-datasense.html["So geht's"].
+
+image:screenshot_compliance_permissions.png["Ein Screenshot mit detaillierten Dateiberechtigungen."]
+
+Klicken Sie auf image:button_down_caret.png["Vorsicht"] Für jede Gruppe, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.
+
+Darüber Hinaus Sie können auf den Namen eines Benutzers oder einer Gruppe klicken und die Untersuchungsseite wird mit dem Namen dieses Benutzers oder dieser Gruppe angezeigt, der im Filter „Benutzer-/Gruppenberechtigungen“ ausgefüllt ist, sodass Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.
+
+
+
+== In den Storage-Systemen werden nach doppelten Dateien gesucht
+
+Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.
+
+Data Sense verwendet Hashing-Technologie zur Bestimmung doppelter Dateien. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
+
+Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können link:task-managing-highlights.html#deleting-source-files["Löschen Sie die Datei"] Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.
+
+
+
+=== Anzeigen aller duplizierten Dateien
+
+Wenn Sie eine Liste aller Dateien wünschen, die in den Arbeitsumgebungen und Datenquellen, die Sie scannen, dupliziert werden, können Sie den Filter *Duplicates > has Dubletten* auf der Seite Data Investigation verwenden.
+
+Alle Dateien mit Duplikaten aus allen Dateitypen (ohne Datenbanken), mit einer Mindestgröße von 50 MB und/oder mit persönlichen oder sensiblen persönlichen Informationen, werden auf der Ergebnisseite angezeigt.
+
+
+
+=== Anzeigen, ob eine bestimmte Datei doppelt vorhanden ist
+
+Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für jede einzelne Datei, um die Dateimetadaten anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.
+
+Klicken Sie auf *Details anzeigen*, um die Liste der duplizierten Dateien anzuzeigen und wo sie sich befinden. Klicken Sie auf der nächsten Seite auf *Duplicates anzeigen*, um die Dateien auf der Untersuchungsseite anzuzeigen.
+
+image:screenshot_compliance_duplicate_file.png["Ein Screenshot zeigt, wo sich doppelte Dateien befinden."]
+
+
+TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden und direkt auf der Untersuchungsseite eingeben, um jederzeit nach einer bestimmten doppelten Datei zu suchen - oder Sie können sie in einer Richtlinie verwenden.
+
+
+
+== Bericht Zur Datenuntersuchung
+
+Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
+
+Sie können den Bericht als CSV-Datei (die bis zu 5,000 Datenzeilen enthalten kann) auf dem lokalen Rechner speichern oder als JSON-Datei, die Sie in eine NFS-Freigabe exportieren (die eine unbegrenzte Anzahl von Zeilen enthalten kann). Wenn Data Sense Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) scannt, können bis zu drei Berichtsdateien heruntergeladen werden.
+
+Beim Exportieren in eine Dateifreigabe stellen Sie sicher, dass Data Sense über die entsprechenden Berechtigungen für den Exportzugriff verfügt.
+
+
+
+=== Generieren des Datenuntersuchungsberichts
+
+.Schritte
+. Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
+. Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.
++
+image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
+
++
+Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll `<host_name>:/<share_path>`.
+
+
+
+.Ergebnis
+Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.
+
+Sie können den Fortschritt der JSON-Berichterstellung in anzeigen link:task-view-compliance-actions.html["Statusbereich Aktionen"].
+
+
+
+=== Was ist in den einzelnen Datenuntersuchungs-Berichten enthalten
+
+Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ihren Dateien:
+
+* Dateiname
+* Positionstyp
+* Name der Arbeitsumgebung
+* Storage-Repository (z. B. Volume, Bucket, Shares)
+* Art der Arbeitsumgebung
+* Dateipfad
+* Dateityp
+* Dateigröße
+* Erstellungszeit
+* Zuletzt geändert
+* Zuletzt aufgerufen
+* Dateibesitzer
+* Kategorie
+* Persönliche Angaben
+* Sensible persönliche Daten
+* Löscherkennung Datum
++
+Ein Löscherkennungsdatum gibt das Datum an, an dem die Datei gelöscht oder verschoben wurde. So können Sie feststellen, wann sensible Dateien verschoben wurden. Gelöschte Dateien sind nicht Teil der Anzahl der Dateinummern, die im Dashboard oder auf der Untersuchungsseite angezeigt wird. Die Dateien werden nur in den CSV-Berichten angezeigt.
+
+
+
+Der Datenbericht für unstrukturierte Verzeichnisse* enthält die folgenden Informationen zu Ihren Ordnern und Dateifreigaben:
+
+* Name der Arbeitsumgebung
+* Storage-Repository (beispielsweise ein Ordner oder Dateifreigaben)
+* Art der Arbeitsumgebung
+* Dateipfad (Verzeichnisname)
+* Dateibesitzer
+* Erstellungszeit
+* Entdeckte Zeit
+* Zuletzt geändert
+* Zuletzt aufgerufen
+* Berechtigungen öffnen
+* Verzeichnistyp
+
+
+Der *Structured Data Report* enthält die folgenden Informationen zu Ihren Datenbanktabellen:
+
+* DB-Tabellenname
+* Positionstyp
+* Name der Arbeitsumgebung
+* Storage-Repository (z. B. ein Schema)
+* Anzahl der Spalten
+* Zeilenanzahl
+* Persönliche Angaben
+* Sensible persönliche Daten
+

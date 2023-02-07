@@ -48,8 +48,8 @@ Jetzt, da Cloud Data Sense aktiviert ist, stellen Sie sicher, dass er auf alle V
 * Sicherheitsgruppen für Cloud Volumes ONTAP müssen eingehende Verbindungen aus der Datensense-Instanz zulassen.
 * Stellen Sie sicher, dass diese Ports für die Data Sense-Instanz offen sind:
 +
-** Für NFS – die Ports 111 und 2049.
-** Für CIFS – die Ports 139 und 445.
+** Für NFS - die Ports 111 und 2049.
+** Für CIFS - Ports 139 und 445.
 
 
 * NFS-Volume-Exportrichtlinien müssen den Zugriff aus der Data Sense Instanz zulassen.
@@ -123,8 +123,8 @@ Sie können entweder die Sicherheitsgruppe für den Datenverkehr von der IP-Adre
 
 . Stellen Sie sicher, dass die folgenden Ports für die Data Sense-Instanz offen sind:
 +
-** Für NFS – die Ports 111 und 2049.
-** Für CIFS – die Ports 139 und 445.
+** Für NFS - die Ports 111 und 2049.
+** Für CIFS - Ports 139 und 445.
 
 
 . Stellen Sie sicher, dass die NFS-Volume-Exportrichtlinien die IP-Adresse der Data Sense Instanz enthalten, damit sie auf die Daten auf jedem Volume zugreifen können.

@@ -20,8 +20,8 @@ Wenn Sie bestimmte Datenquellen einrichten (siehe unten), müssen Sie Active Dir
 
 Diese Integration bietet zusätzliche Informationen an den folgenden Orten in Data Sense:
 
-* Sie können den „Dateieigentümer“ verwenden. link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Filtern"] Und siehe Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.
-* Sie sehen link:task-controlling-private-data.html#viewing-permissions-for-files-and-directories["Volldateiberechtigungen"] Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.
+* Sie können den „Dateieigentümer“ verwenden. link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["Filtern"] Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.
+* Sie sehen link:task-investigate-data.html#viewing-permissions-for-files-and-directories["Volldateiberechtigungen"] Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.
 * Im link:task-controlling-governance-data.html["Governance-Dashboard"], Das Fenster „Offene Berechtigungen“ zeigt eine größere Detailebene über Ihre Daten an.
 
 
