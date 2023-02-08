@@ -73,7 +73,7 @@ sidebar:
       url: "/task-managing-highlights.html"
     - title: Scaneinstellungen ändern
       url: task-managing-repo-scanning.html
-    - title: Berichte generieren
+    - title: Erstellen von Compliance-Berichten
       url: "/task-generating-compliance-reports.html"
   - title: Cloud Data Sense Managen
     entries:
