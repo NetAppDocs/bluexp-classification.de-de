@@ -117,7 +117,7 @@ Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, 
 | Filtern | Details 
 
 
-| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. Beachten Sie, dass das Eingeben von „*“ in diesen Filter keine Wirkung hat; Sie müssen nach bestimmten Dateien und Unterordnern suchen, indem Sie vollständige Pfade verwenden. 
+| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. Beachten Sie, dass die Verwendung von "*" in diesem Filter keine Wirkung hat und dass Sie bestimmte Ordner nicht aus dem Scan ausschließen können - alle Verzeichnisse und Dateien unter einer konfigurierten Freigabe werden gescannt. 
 
 
 | Verzeichnistyp | Wählen Sie den Verzeichnistyp aus, entweder „Share“ oder „Folder“. 

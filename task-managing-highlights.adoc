@@ -62,7 +62,7 @@ TIP: Sie können keine Dateien kopieren, die sich in Datenbanken befinden.
 .Anforderungen
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen, um Dateien zu kopieren.
 * Das Kopieren von Dateien erfordert, dass die Ziel-NFS-Freigabe den Zugriff aus der Data Sense Instanz ermöglicht.
-* Sie können maximal 100,000 Dateien gleichzeitig kopieren.
+* Sie können zwischen 1 und 100,000 Dateien gleichzeitig kopieren.
 
 
 .Schritte
@@ -104,6 +104,7 @@ Das neue Volume wird im selben Aggregat erstellt wie das Quell-Volume. Stellen S
 
 .Anforderungen
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen, um Dateien zu kopieren.
+* Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen sich vom selben Volume befinden, und das Volume muss online sein.
 * Das Volume muss aus einem Cloud Volumes ONTAP oder einem lokalen ONTAP System stammen. Derzeit werden keine anderen Datenquellen unterstützt.
 * Die FlexClone Lizenz muss auf dem Cluster installiert sein. Diese Lizenz wird standardmäßig auf Cloud Volumes ONTAP-Systemen installiert.
@@ -157,6 +158,7 @@ TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten be
 
 .Anforderungen
 * Zum Kopieren und Synchronisieren von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen.
+* Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen aus demselben Quell-Repository stammen (ONTAP Volume, S3 Bucket, NFS oder CIFS-Freigabe usw.).
 * Sie müssen den Cloud Sync Service aktivieren und mindestens einen Daten-Broker konfigurieren, der zur Übertragung von Dateien zwischen Quell- und Zielsystemen genutzt werden kann. Prüfen Sie die Cloud Sync-Anforderungen, die mit dem beginnen https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
 +
