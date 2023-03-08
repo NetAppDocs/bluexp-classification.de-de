@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-audit-data-sense-actions.html 
-keywords: compliance, actions, view progress 
-summary: Data Sense protokolliert Managementaktivitäten, die auf Dateien aus allen Arbeitsumgebungen und Datenquellen, die Data Sense scannt. Sie können den Inhalt der Datensense-Audit-Protokolldateien anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen aufgetreten sind und wann. 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: Data Sense protokolliert Managementaktivitäten, die auf Dateien aus allen Arbeitsumgebungen und Datenquellen, die Data Sense scannt. Data Sense protokolliert außerdem die Aktivitäten bei der Implementierung einer Data Sense Instanz. 
 ---
 = Überprüfung der Historie von „Data Sense“-Aktionen
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Data Sense protokolliert Managementaktivitäten, die auf Dateien aus al
 
 
 [role="lead"]
-Data Sense protokolliert Managementaktivitäten, die auf Dateien aus allen Arbeitsumgebungen und Datenquellen, die Data Sense scannt. Sie können den Inhalt der Datensense-Audit-Protokolldateien anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen aufgetreten sind und wann.
+Data Sense protokolliert Managementaktivitäten, die auf Dateien aus allen Arbeitsumgebungen und Datenquellen, die Data Sense scannt. Data Sense protokolliert außerdem die Aktivitäten bei der Implementierung einer Data Sense Instanz.
 
-Beispielsweise können Sie sehen, welche Anfrage erstellt wurde, wann die Anfrage gestellt wurde, und Details wie den Quellspeicherort für das Löschen einer Datei oder den Quell- und Zielstandort, falls eine Datei verschoben wurde.
+Sie können den Inhalt der Datensense-Audit-Protokolldateien anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen aufgetreten sind und wann. Beispielsweise können Sie sehen, welche Anfrage erstellt wurde, wann die Anfrage gestellt wurde, und Details wie den Quellspeicherort für das Löschen einer Datei oder den Quell- und Zielstandort, falls eine Datei verschoben wurde.
 
 
 
@@ -52,7 +52,9 @@ Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgre
 
 == Zugriff auf die Protokolldatei
 
-Die Audit-Log-Dateien befinden sich auf dem Daten-SENSE-Rechner in: `/opt/netapp/audit_logs/`
+Die Management-Audit-Protokolldateien befinden sich auf dem Data Sense-Computer in: `/opt/netapp/audit_logs/`
+
+Die Audit-Protokolldateien für die Installation werden in geschrieben `/ops/netapp/install_logs`
 
 Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Maximal 100 Protokolldateien werden auf dem System gespeichert - alte Protokolldateien werden nach Erreichen des Maximalwerts automatisch gelöscht.
 

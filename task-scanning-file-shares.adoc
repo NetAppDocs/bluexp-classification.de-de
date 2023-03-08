@@ -55,7 +55,7 @@ Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine u
 * Sie benötigen die Liste der Freigaben, die Sie im Format hinzufügen möchten `<host_name>:/<share_path>`. Sie können die Freigaben einzeln eingeben oder eine Liste der Dateien, die Sie scannen möchten, mit einer Zeile angeben.
 * Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Active Directory-Anmeldeinformationen verfügen, die Lesezugriff auf die Freigaben bieten. Administratorberechtigungen sind bevorzugte Zugangsdaten für den Fall, dass Cloud Data Sense Daten scannen muss, die erhöhte Berechtigungen erfordern.
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien „letzte Zugriffszeiten“ durch Data Sense Klassifizierungsscans unverändert bleiben, empfehlen wir dem Benutzer die Berechtigung Schreibattribute zu besitzen. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
 
 
@@ -142,6 +142,9 @@ Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden k
 
 | Deaktivieren Sie das Scannen von Dateifreigaben | Klicken Sie Auf *Aus* 
 |===
++
+Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, wird das System die Dateien nicht scannen, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
+
 
 
 .Ergebnis

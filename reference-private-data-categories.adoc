@@ -34,13 +34,13 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Typ | Kennung | Näherungsvalidierung? | Englisch | Deutsch | Spanisch | Französisch | Japanisch 
 
 
-.6+| Allgemein | E-Mail-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 
-
-
-| Kreditkartennummer | Nein | ✓ | ✓ | ✓ |  | ✓ 
+.6+| Allgemein | Kreditkartennummer | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Betroffenen | Nein | ✓ | ✓ | ✓ |  |  
+
+
+| E-Mail-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | IBAN-Nummer (International Bank Account Number) | Nein | ✓ | ✓ | ✓ |  | ✓ 
@@ -52,7 +52,7 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Passwort | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.51+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
+.54+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | Australische Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
@@ -70,6 +70,12 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Belgischer Ausweis (Numero National) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
+| Botswana Identity Card (Omang)-Nummer | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| Botswana Passnummer | Ja. | ✓ | ✓ | ✓ |  |  
+
+
 | Brasilianischer Ausweis (CPF) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
@@ -77,9 +83,6 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 
 
 | Bulgarische ID (UCN) | Ja. | ✓ | ✓ | ✓ |  |  
-
-
-| California Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | Kroatische ID (OIB) | Ja. | ✓ | ✓ | ✓ |  |  
@@ -127,9 +130,6 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Ungarische Steuernummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Indiana Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
-
-
 | Irish ID (PPS) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
@@ -157,9 +157,6 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | NHS-Nummer (National Health Service) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| New York Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
-
-
 | Konto Einer Neuseeländischen Bank | Ja. | ✓ | ✓ | ✓ |  |  
 
 
@@ -184,6 +181,9 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Rumänische ID (CNP) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
+| Personalausweis für die nationale Registrierung in Singapur (NRIC) | Ja. | ✓ | ✓ | ✓ |  |  
+
+
 | Slowenische ID (EMSO) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
@@ -200,6 +200,15 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 
 
 | GROSSBRITANNIEN ID (NINO) | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| USA California Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| USA Indiana Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| USA New York Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | USA Sozialversicherungsnummer (SSN) | Ja. | ✓ | ✓ | ✓ |  |  

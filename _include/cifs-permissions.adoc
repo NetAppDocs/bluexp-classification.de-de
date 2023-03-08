@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-+ Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt zugegriffen Zeiten“ von Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer über die Berechtigung Schreibattribute verfügt. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
++ Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.

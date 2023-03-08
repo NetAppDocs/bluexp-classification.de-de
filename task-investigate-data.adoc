@@ -104,7 +104,7 @@ Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anz
 | Zuletzt Geändert | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt geändert wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
 
 
-| Zuletzt Aufgerufen | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt aufgerufen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Bei den Dateitypen, die von Data Sense gescannt werden, ist dies das letzte Mal, wenn Data Sense die Datei gescannt hat. 
+| Zuletzt Aufgerufen | Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Bei den Dateitypen, die von Data Sense gescannt werden, ist dies das letzte Mal, wenn Data Sense die Datei gescannt hat. 
 |===
 
 
@@ -117,7 +117,7 @@ Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, 
 | Filtern | Details 
 
 
-| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. 
+| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. Beachten Sie, dass das Eingeben von „*“ in diesen Filter keine Wirkung hat; Sie müssen nach bestimmten Dateien und Unterordnern suchen, indem Sie vollständige Pfade verwenden. 
 
 
 | Verzeichnistyp | Wählen Sie den Verzeichnistyp aus, entweder „Share“ oder „Folder“. 
@@ -184,7 +184,12 @@ Verwenden Sie den folgenden Filter, um Daten nach dem Status „Data Sense Scan�
 
 
 | Analysestatus | Wählen Sie eine Option aus, um die Liste der Dateien anzuzeigen, die den ersten Scan ausstehend, den Scanvorgang abgeschlossen haben, den ausstehenden Rescan oder die nicht gescannt wurden. 
+
+
+| Analyseereignis Scannen | Wählen Sie aus, ob Dateien angezeigt werden sollen, die nicht klassifiziert wurden, weil Data Sense die Uhrzeit des letzten Zugriffs nicht rückgängig machen konnte, oder Dateien, die klassifiziert wurden, obwohl Data Sense die Zeit des letzten Zugriffs nicht rückgängig machen konnte. 
 |===
+link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen zum Zeitstempel des letzten Zugriffs"] Weitere Informationen zu den Elementen, die beim Filtern mit dem Ereignis Scananalyse auf der Seite Untersuchung angezeigt werden.
+
 
 
 === Filtern Sie Daten nach Duplikaten

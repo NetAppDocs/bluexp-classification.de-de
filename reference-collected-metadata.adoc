@@ -34,3 +34,26 @@ Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierung
 
 | *Benutzer/Gruppenzugriff* | Benutzer- und Gruppeninformationen werden aus LDAP übernommen | Nicht verfügbar (NFS-Benutzer werden in der Regel lokal auf dem Server verwaltet, daher kann dieselbe Person eine andere UID auf jedem Server haben) 
 |===
+
+
+== Zeitstempel der letzten Zugriffszeit
+
+Wenn Data Sense Daten aus File Shares extrahiert, betrachtet das Betriebssystem sie als Zugriff auf die Daten und ändert entsprechend die „Zeit des letzten Zugriffs“. Nach dem Scannen versucht Data Sense, die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen. Wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, kann das System die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen.
+
+Wenn Data Sense diese Berechtigungen nicht hat, scannt das System standardmäßig diese Dateien in Ihren Volumes nicht, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen jedoch egal ist, ob die letzte Zugriffszeit in Ihren Dateien auf die ursprüngliche Zeit zurückgesetzt wird, können Sie auf den Schalter *Scan bei fehlenden Berechtigungen für "Schreibattribute"* unten auf der Konfigurationsseite klicken, so dass Data Sense die Volumes unabhängig von den Berechtigungen scannt.
+
+image:screenshot_scan_missing_permissions.png["Ein Screenshot, der den Switch zeigt, mit dem Data Sense Ihre Dateien scannen kann, selbst wenn er nicht über die richtigen Berechtigungen verfügt, um die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen."]
+
+Diese Funktionalität ist anwendbar auf On-Premises-ONTAP-Systeme, Cloud Volumes ONTAP, Azure NetApp Files, FSX for ONTAP und nicht-NetApp File Shares.
+
+Beachten Sie, dass es einen Filter auf der Seite Untersuchung mit dem Namen _Scan Analysis Event_ gibt, mit dem Sie entweder die Dateien anzeigen können, die nicht klassifiziert wurden, da Data Sense die letzte Zugriffszeit nicht zurücksetzen konnte. Oder die klassifizierten Dateien, obwohl Data Sense die letzte Zugriffszeit nicht zurücksetzen konnte.
+
+image:screenshot_scan_analysis_event_filter.png["Ein Screenshot des Filters, um zu sehen, welche Dateien gescannt und nicht gescannt wurden, basierend auf Schreibberechtigungen."]
+
+Folgende Filteroptionen stehen zur Auswahl:
+
+* „Nicht klassifiziert -- kann letzte Zugriffszeit nicht rückgängig machen“ – zeigt die Dateien an, die aufgrund fehlender Schreibberechtigungen nicht klassifiziert wurden.
+* „Zeitpunkt des letzten Zugriffs klassifiziert und aktualisiert“: Zeigt die klassifizierten Dateien an, und Data Sense konnte die letzte Zugriffszeit nicht auf das ursprüngliche Datum zurücksetzen. Dieser Filter ist nur für Umgebungen relevant, in denen Sie *Scan bei fehlenden Berechtigungen für "Schreibattribute"* AKTIVIERT haben.
+
+
+Bei Bedarf können Sie diese Ergebnisse in einen Bericht exportieren, damit Sie sehen können, welche Dateien aufgrund von Berechtigungen gescannt werden oder nicht. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["Erfahren Sie mehr über den Untersuchungsbericht"^].

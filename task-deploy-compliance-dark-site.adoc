@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: Führen Sie ein paar Schritte zu implementieren Cloud Data Sense auf einem Host in einer On-Premises-Website, die keinen Internetzugang hat. Diese Art der Installation ist perfekt für Ihre sicheren Standorte. 
+summary: Führen Sie einige Schritte durch, um Cloud Data Sense auf einem Host an einem lokalen Standort ohne Internetzugang zu implementieren. Diese Art der Installation ist perfekt für Ihre sicheren Standorte. 
 ---
-= Cloud-Daten lokal sinnvoll nutzen ohne Internetzugang
+= Implementieren Sie Cloud Data Sense auf einem Host ohne Internetzugang
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Führen Sie ein paar Schritte zu implementieren Cloud Data Sense auf ei
 
 
 [role="lead"]
-Führen Sie ein paar Schritte zu implementieren Cloud Data Sense auf einem Host in einer On-Premises-Website, die keinen Internetzugang hat. Diese Art der Installation ist perfekt für Ihre sicheren Standorte.
+Führen Sie einige Schritte durch, um Cloud Data Sense auf einem Host an einem lokalen Standort ohne Internetzugang zu implementieren. Diese Art der Installation ist perfekt für Ihre sicheren Standorte.
 
 Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Implementieren Sie Data Sense in einer lokalen Website mit Internetzugang"].
 
@@ -48,7 +48,7 @@ Die meisten Funktionen von Data Sense funktionieren, wenn sie in einer Site ohne
 * Benutzerfeedback wird empfangen
 * Automatisierte Software-Upgrades von BlueXP
 +
-Sowohl BlueXP Connector als auch Data Sense erfordern regelmäßige manuelle Upgrades, um neue Funktionen zu ermöglichen. Die Data Sense-Version finden Sie unten auf den Data Sense-UI-Seiten. Prüfen Sie die link:whats-new.html["Cloud Data Sense – Versionsinformationen"] Um sich die neuen Funktionen in jeder Version und deren Wunsch nach jenen Funktionen ansehen zu können. Anschließend können Sie die Schritte befolgen <<Upgrade von Data Sense Software,Aktualisieren Sie Ihre Data Sense Software>>.
+Sowohl BlueXP Connector als auch Data Sense erfordern regelmäßige manuelle Upgrades, um neue Funktionen zu ermöglichen. Die Data Sense-Version finden Sie unten auf den Data Sense-UI-Seiten. Prüfen Sie die link:whats-new.html["Cloud Data Sense – Versionsinformationen"] Um sich die neuen Funktionen in jeder Version und deren Wunsch nach jenen Funktionen ansehen zu können. Anschließend können Sie die Schritte befolgen https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Upgrade des BlueXP Connector"^] Und <<Upgrade von Data Sense Software,Aktualisieren Sie Ihre Data Sense Software>>.
 
 
 
@@ -88,6 +88,7 @@ Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betrie
 
 * *Betriebssystem*: Red hat Enterprise Linux oder CentOS Versionen 8.0 bis 8.7
 +
+** CentOS Stream 8 wird ebenfalls unterstützt
 ** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
 ** Das Betriebssystem muss in der Lage sein, die Docker Engine zu installieren
 
@@ -252,7 +253,7 @@ Führen Sie diese Schritte aus, wenn Sie die Data Sense Software auf einem einze
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *cc_onprem_Installer.tar.gz*.
@@ -410,7 +411,7 @@ Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, 
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
 ----
 +
 Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.

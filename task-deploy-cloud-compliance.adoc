@@ -188,6 +188,8 @@ image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des Cloud Dat
 .Ergebnis
 BlueXP implementiert die Cloud Data Sense Instanz bei Ihrem Cloud-Provider.
 
+Upgrades auf die BlueXP Connector- und Data Sense-Software werden automatisiert, solange die Instanzen über eine Internetverbindung verfügen.
+
 .Nächste Schritte
 Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
 

@@ -101,7 +101,10 @@ Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren 
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der Volumes, die Sie in der Arbeitsumgebung ausgewählt haben. Die Ergebnisse werden im Compliance-Dashboard verfügbar sein, sobald Cloud Data Sense die ersten Scans beendet hat. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
+Cloud Data Sense beginnt mit dem Scannen der Volumes, die Sie in der Arbeitsumgebung ausgewählt haben. Die Ergebnisse werden im Compliance-Dashboard verfügbar sein, sobald Data Sense die ersten Scans abgeschlossen hat. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
+
+
+NOTE: Wenn Data Sense keine Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, scannt das System standardmäßig nicht die Dateien in Ihren Volumes, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, klicken Sie auf *oder wählen Sie den Scantyp für jedes Volume* aus. Auf dieser Seite können Sie eine Einstellung aktivieren, sodass Data Sense die Volumes unabhängig von den Berechtigungen scannt.
 
 
 
@@ -133,7 +136,7 @@ image:screenshot_cifs_credentials.gif["Ein Screenshot der Registerkarte „Compl
 Die Anmeldedaten können schreibgeschützt sein. Durch die Admin-Berechtigungen wird jedoch sichergestellt, dass Data Sense alle Daten lesen kann, die erhöhte Berechtigungen benötigen. Die Anmeldedaten werden in der Cloud Data Sense Instanz gespeichert.
 
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien „letzte Zugriffszeiten“ durch Data Sense Klassifizierungsscans unverändert bleiben, empfehlen wir dem Benutzer die Berechtigung Schreibattribute zu besitzen. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
 +
 Nach Eingabe der Anmeldedaten sollte eine Meldung angezeigt werden, dass alle CIFS-Volumes erfolgreich authentifiziert wurden.
@@ -157,6 +160,8 @@ image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „Deta
 == Aktivieren und Deaktivieren von Compliance-Scans auf Volumes
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln. Wir empfehlen, alle Volumen zu scannen.
+
+Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, wird das System die Dateien nicht scannen, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 image:screenshot_volume_compliance_selection.png["Ein Screenshot der Konfigurationsseite, auf der Sie das Scannen einzelner Volumes aktivieren oder deaktivieren können."]
 
