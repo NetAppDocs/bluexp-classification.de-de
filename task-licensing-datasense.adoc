@@ -185,9 +185,9 @@ Bei Verwendung einer Cloud Data Sense BYOL-Lizenz zeigt BlueXP in der Data Sense
 
 Verwenden Sie das Chat-Symbol rechts unten in der BlueXP-Schnittstelle, um Ihre Lizenz zu verlängern, wenn diese Warnungen angezeigt werden.
 
-Wenn Ihre Lizenz abgelaufen ist, wird Data Sense weiterhin ausgeführt, der Zugriff auf die Dashboards ist jedoch blockiert, sodass Sie keine Informationen zu Ihren gescannten Daten anzeigen können. Nur die Seite _Configuration_ steht zur Verfügung, wenn Sie die Anzahl der eingescannten Volumes reduzieren möchten, um die Kapazitätsnutzung unter das Lizenzlimit zu bringen.
+Wenn Ihre Lizenz abläuft oder Sie das BYOL-Limit erreicht haben, wird Data Sense weiterhin ausgeführt, der Zugriff auf die Dashboards wird jedoch gesperrt, sodass Sie keine Informationen zu Ihren gescannten Daten anzeigen können. Nur die Seite _Configuration_ steht zur Verfügung, wenn Sie die Anzahl der eingescannten Volumes reduzieren möchten, um die Kapazitätsnutzung unter das Lizenzlimit zu bringen.
 
 Sobald Sie Ihre Byol-Lizenz erneuern, aktualisiert BlueXP die Lizenz automatisch im Digital Wallet und bietet vollständigen Zugriff auf alle Dashboards. Wenn BlueXP nicht über die sichere Internetverbindung auf die Lizenzdatei zugreifen kann (z. B. bei Installation in einer dunklen Site), können Sie die Datei selbst beziehen und sie manuell auf BlueXP hochladen. Anweisungen hierzu finden Sie unter <<Aktualisieren einer Cloud Data Sense BYOL-Lizenz,So aktualisieren Sie eine Cloud Data Sense Lizenz>>.
 
 
-TIP: Wenn das Konto, das Sie verwenden, sowohl eine BYOL-Lizenz als auch ein PAYGO-Abonnement hat, wird Data Sense _beim Ablauf der BYOL-Lizenz nicht_ in das PAYGO-Abonnement verschoben. Sie müssen die BYOL-Lizenz verlängern.
+NOTE: Wenn das Konto, das Sie verwenden, sowohl eine BYOL-Lizenz als auch ein PAYGO-Abonnement hat, wird Data Sense _beim Ablauf der BYOL-Lizenz nicht_ in das PAYGO-Abonnement verschoben. Sie müssen die BYOL-Lizenz verlängern.

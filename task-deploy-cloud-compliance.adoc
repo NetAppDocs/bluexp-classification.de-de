@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. Die Data Sense Instanz wird im gleichen Cloud-Provider-Netzwerk wie der BlueXP Connector bereitgestellt. 
+summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. BlueXP implementiert die Data Sense Instanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector. 
 ---
-= Cloud-Daten sinnvoll in der Cloud implementieren
+= Implementieren Sie Cloud Data Sense in der Cloud mit BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu 
 
 
 [role="lead"]
-Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. Die Data Sense Instanz wird im gleichen Cloud-Provider-Netzwerk wie der BlueXP Connector bereitgestellt.
+Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. BlueXP implementiert die Data Sense Instanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector.
 
-Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Stellen Sie Data Sense auf einem Linux-Host mit Internetzugang bereit"]. Diese Art der Installation kann eine gute Option sein, wenn Sie lieber On-Premises-ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
+Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Installieren Sie Data Sense auf einem Linux-Host mit Internetzugang"]. Diese Art der Installation kann eine gute Option sein, wenn Sie lieber On-Premises-ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
 
 
 
