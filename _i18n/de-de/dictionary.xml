@@ -35,9 +35,6 @@
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">Bereiten Sie das Linux-Hostsystem vor</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt. Data Sense wird auf einem Host, der für andere Anwendungen freigegeben ist, nicht unterstützt - der Host muss ein dedizierter Host sein.</block>
   <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein</block>
-  <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 gib verfügbar auf /opt</block>
-  <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">400 gib verfügbar auf /var</block>
-  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 gib auf /tmp</block>
   <block id="5da9cb7e92b520a48c2475de5ec9958c" category="inline-link-macro">Verwenden eines kleineren Instanztyps</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger RAM implementieren können, es gibt jedoch Einschränkungen bei der Verwendung dieser Systeme. Siehe <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">Installationsanweisungen anzeigen</block>
@@ -2560,9 +2557,6 @@
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Laden Sie Data Sense herunter und implementieren Sie es</block>
   <block id="dc557754b902711b46f03bde4f8cd281" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Abonnieren Sie den Cloud Data Sense Service</block>
   <block id="369bb58f2fbc4fcfb60a188e89ca29e3" category="list-text">Das Betriebssystem muss in der Lage sein, die Docker Engine zu installieren</block>
-  <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*Disk*: SSD mit 500 gib erhältlich auf /, oder</block>
-  <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">*RAM*: 64 GB (Swap-Speicher muss auf dem Host deaktiviert sein)</block>
-  <block id="1f810cefd66fa5d8c5990d6c051c53a7" category="list-text">*CPU*: 16 Kerne</block>
   <block id="7962e6ebf5c099feb974a40aed988873" category="list-text">*Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie Data Sense installieren:</block>
   <block id="72334fae14a444a21b5a6f8b702612c3" category="list-text">*Firewalld Überlegungen*: Wenn Sie planen zu verwenden<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>, Wir empfehlen, dass Sie es aktivieren, bevor Sie Data Sense installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Damit es mit Data Sense kompatibel ist:</block>
   <block id="c353e72a0df04595cb1fda2b9283bd9e" category="paragraph">Wenn Sie aktivieren<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Nach der Installation von Data Sense müssen Sie den Docker neu starten.</block>
@@ -2638,7 +2632,6 @@
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">Das Betriebssystem muss in der Lage sein, die Docker-Engine zu installieren</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">*Red hat Subscription Management*: Ein Red hat Enterprise Linux System muss mit Red hat Subscription Management registriert werden. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositories zugreifen, um die erforderliche Software von Drittanbietern zu aktualisieren.</block>
   <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">Wenn Sie mehrere Data Sense Hosts verwenden, um zusätzliche Verarbeitungsleistung für das Scannen Ihrer Datenquellen bereitzustellen, müssen Sie zusätzliche Ports/Protokolle aktivieren. <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>.</block>
-  <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">Wenn Sie einen Proxy verwenden und TLS abfangen, müssen Sie den Pfad auf dem Data Sense Linux-System kennen, auf dem die TLS CA-Zertifikate gespeichert werden.</block>
   <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">Befolgen Sie die Schritte, um die Software auf den Scanner-Knoten bereitzustellen (und optional eine „Scannergruppe“ für bestimmte Scanner-Knoten zu definieren).</block>
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">Führen Sie das folgende Skript aus, um diese Zuordnungsinformationen bei allen Scanner-Knoten zu registrieren:<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="868d9ff1d3a68b958d1cfc9f569a6cd9" category="list-text">Wenn Sie verwenden<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Auf Ihren Data Sense-Maschinen empfehlen wir Ihnen, diese vor der Installation von Data Sense zu aktivieren. Führen Sie die folgenden Befehle zum Konfigurieren aus<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> Damit es mit Data Sense kompatibel ist:</block>
@@ -3184,4 +3177,21 @@
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">Installation auf einem Linux-Host mit Internetzugang</block>
   <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">Installation vor Ort ohne Internetzugang</block>
   <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">Automatische Implementierung von Data Sense in der Cloud</block>
+  <block id="1b829a0b2a17806376d7530e7c1aa7d0" category="list-text">Abhängig von der Größe des Datensatzes, den Sie scannen möchten, kann das Hostsystem in drei Größen angegeben werden.</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
+  <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM (Swap-Speicher muss deaktiviert sein)</block>
+  <block id="380dbc8d9d2c8a17f6ebb0b2c62d3e85" category="cell">Festplatte</block>
+  <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">Groß</block>
+  <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 CPUs</block>
+  <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GB RAM</block>
+  <block id="d1dfcf68dd28742f6e8c1a149039f317" category="cell">500-GB-SSD auf / oder * 100 GB verfügbar auf /opt * 395 GB verfügbar auf /var * 5 GB auf /tmp</block>
+  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPUs</block>
+  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GB RAM</block>
+  <block id="03c4b3e038e1f3312ead503649c43953" category="cell">200-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 145 GB verfügbar auf /var * 5 GB auf /tmp</block>
+  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
+  <block id="ed04b9cefc3e8c7791055ad71b874777" category="cell">100-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 45 GB verfügbar auf /var * 5 GB auf /tmp</block>
+  <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">Wenn Sie einen Proxy für den Zugriff auf das Internet verwenden:</block>
+  <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">Sie benötigen die Proxy-Server-Informationen (IP-Adresse oder Hostname, Verbindungsport, Verbindungsschema: https oder http, Benutzername und Passwort).</block>
+  <block id="566740fad5c1ec59669bd6641875006e" category="list-text">Wenn der Proxy TLS abfängt, müssen Sie den Pfad auf dem Data Sense Linux-System kennen, auf dem die TLS CA-Zertifikate gespeichert sind.</block>
 </blocks>

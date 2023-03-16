@@ -86,24 +86,30 @@ Wenn Sie noch keinen BlueXP Connector an Ihrem lokalen Offline-Standort installi
 
 Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt. Data Sense wird auf einem Host, der für andere Anwendungen freigegeben ist, nicht unterstützt - der Host muss ein dedizierter Host sein.
 
+* Abhängig von der Größe des Datensatzes, den Sie scannen möchten, kann das Hostsystem in drei Größen angegeben werden.
++
+[cols="18,18,26,30"]
+|===
+| Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
+
+
+| Groß | 16 CPUs | 64 GB RAM | 500-GB-SSD auf / oder * 100 GB verfügbar auf /opt * 395 GB verfügbar auf /var * 5 GB auf /tmp 
+
+
+| Mittel | 8 CPUs | 32 GB RAM | 200-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 145 GB verfügbar auf /var * 5 GB auf /tmp 
+
+
+| Klein | 8 CPUs | 16 GB RAM | 100-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 45 GB verfügbar auf /var * 5 GB auf /tmp 
+|===
++
+Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+
 * *Betriebssystem*: Red hat Enterprise Linux oder CentOS Versionen 8.0 bis 8.7
 +
 ** CentOS Stream 8 wird ebenfalls unterstützt
 ** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
 ** Das Betriebssystem muss in der Lage sein, die Docker Engine zu installieren
 
-
-* *Disk*: SSD mit 500 gib erhältlich auf /, oder
-+
-** 100 gib verfügbar auf /opt
-** 400 gib verfügbar auf /var
-** 5 gib auf /tmp
-
-
-* *RAM*: 64 GB (Swap-Speicher muss auf dem Host deaktiviert sein)
-* *CPU*: 16 Kerne
-+
-Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger RAM implementieren können, es gibt jedoch Einschränkungen bei der Verwendung dieser Systeme. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
 * *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie Data Sense installieren:
 +

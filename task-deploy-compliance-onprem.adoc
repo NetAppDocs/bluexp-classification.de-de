@@ -92,19 +92,23 @@ Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betrie
 
 Sorgen Sie dafür, dass Cloud Data Sense ausgeführt wird. Die Cloud Data Sense Maschine muss kontinuierlich ausgeführt werden, um Ihre Daten kontinuierlich zu scannen.
 
-* *CPU*: 16 Kerne
-* *RAM*: 64 GB (Swap-Speicher muss auf dem Host deaktiviert sein)
-* *Disk*: SSD mit 500 gib erhältlich auf /, oder
+* Abhängig von der Größe des Datensatzes, den Sie scannen möchten, kann das Hostsystem in drei Größen angegeben werden.
 +
-** 100 gib verfügbar auf /opt
-** 400 gib verfügbar auf /var
-** 5 gib auf /tmp
+[cols="18,18,26,30"]
+|===
+| Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
+
+
+| Groß | 16 CPUs | 64 GB RAM | 500-GB-SSD auf / oder * 100 GB verfügbar auf /opt * 395 GB verfügbar auf /var * 5 GB auf /tmp 
+
+
+| Mittel | 8 CPUs | 32 GB RAM | 200-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 145 GB verfügbar auf /var * 5 GB auf /tmp 
+
+
+| Klein | 8 CPUs | 16 GB RAM | 100-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 45 GB verfügbar auf /var * 5 GB auf /tmp 
+|===
 +
-Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger RAM implementieren können, es gibt jedoch Einschränkungen bei der Verwendung dieser Systeme. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
-
-
-
-
+Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
 * *AWS EC2 Instanztyp*: Ein Instanztyp, der die oben genannten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen es https://aws.amazon.com/ec2/instance-types/m5/["M5.4xlarge"^].
 * *Azure VM Size*: Ein Instanztyp, der die oben genannten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen es https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^].
@@ -260,7 +264,12 @@ Führen Sie diese Schritte aus, wenn Sie Data Sense Software auf einem einzelnen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
 * Vergewissern Sie sich, dass auf dem System die beiden erforderlichen Softwarepakete installiert sind (Docker Engine und Python 3).
 * Stellen Sie sicher, dass Sie über Root-Rechte auf dem Linux-System verfügen.
-* Wenn Sie einen Proxy verwenden und TLS abfangen, müssen Sie den Pfad auf dem Data Sense Linux-System kennen, auf dem die TLS CA-Zertifikate gespeichert werden.
+* Wenn Sie einen Proxy für den Zugriff auf das Internet verwenden:
++
+** Sie benötigen die Proxy-Server-Informationen (IP-Adresse oder Hostname, Verbindungsport, Verbindungsschema: https oder http, Benutzername und Passwort).
+** Wenn der Proxy TLS abfängt, müssen Sie den Pfad auf dem Data Sense Linux-System kennen, auf dem die TLS CA-Zertifikate gespeichert sind.
+
+
 * Vergewissern Sie sich, dass die erforderliche Offline-Umgebung erfüllt ist <<Outbound-Internetzugang über Cloud Data Sense aktivieren,Berechtigungen und Konnektivität>>.
 
 
