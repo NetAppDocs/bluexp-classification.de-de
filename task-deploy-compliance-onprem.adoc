@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud mit Internetzugang zu implementieren. 
+summary: Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud mit Internetzugang zu installieren. Im Rahmen dieser Installation müssen Sie den Linux-Host manuell in Ihrem Netzwerk oder in der Cloud bereitstellen. 
 ---
 = Installieren Sie Data Sense auf einem Host mit Internetzugang
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host
 
 
 [role="lead"]
-Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud mit Internetzugang zu implementieren.
+Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud mit Internetzugang zu installieren. Im Rahmen dieser Installation müssen Sie den Linux-Host manuell in Ihrem Netzwerk oder in der Cloud bereitstellen.
 
 Die On-Premises-Installation kann eine gute Option sein, wenn Sie lieber lokale ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
 
-Die typische Installation auf einem Linux-Host in Ihrem Betrieb umfasst die folgenden Komponenten und Verbindungen.
+Die typische Installation auf einem Linux-Host _in your premises_ hat folgende Komponenten und Verbindungen.
 
 image:diagram_deploy_onprem_overview.png["Ein Diagramm der erforderlichen BlueXP- und Netzwerkkomponenten sowie der zugehörigen Verbindungen."]
 
-Die typische Installation auf einem Linux-Host in der Cloud hat die folgenden Komponenten und Verbindungen.
+Die typische Installation auf einem Linux-Host _in der Cloud_ hat die folgenden Komponenten und Verbindungen.
 
 image:diagram_deploy_onprem_cloud_instance.png["Ein Diagramm der erforderlichen BlueXP- und Netzwerkkomponenten sowie der zugehörigen Verbindungen."]
 

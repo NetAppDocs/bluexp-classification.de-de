@@ -467,21 +467,3 @@ Data Sense kann nun französische Sozialversicherungsnummern, französische IDs 
 === Der Port der Sicherheitsgruppe wurde geändert, um die Kommunikation mit dem Connector Data Sense zu ermöglichen
 
 Die Sicherheitsgruppe für den Cloud Manager Connector verwendet Port 443 statt Port 80 für ein- und ausgehenden Datenverkehr zur zusätzlichen Sicherheit an und aus der Instanz Data Sense. Beide Ports bleiben zu diesem Zeitpunkt offen, also sollten Sie keine Probleme sehen, aber Sie sollten die Sicherheitsgruppe in einer älteren Version des Connectors aktualisieren, da Port 80 in einer zukünftigen Version veraltet ist.
-
-
-
-== Januar 2022
-
-
-
-=== Integration eines globalen Active Directory zur Identifizierung von Dateieigentümern und Berechtigungen
-
-Sie können jetzt ein globales Active Directory in Cloud Data Sense integrieren, um die Ergebnisse zu verbessern, die Data Sense-Berichte über Dateibesitzer und welche Benutzer und Gruppen Zugriff auf Ihre Dateien haben.
-
-Zusätzlich zu den von Ihnen eingegebenen Active Directory-Anmeldeinformationen, damit Data Sense CIFS-Volumes aus bestimmten Datenquellen scannen kann, bietet diese neue Integration zusätzliche Integration für andere Benutzer und Systeme. Data Sense wird in allen integrierten Active-Verzeichnissen für Benutzer- und Berechtigungsdetails angezeigt. link:task-add-active-directory-datasense.html["Erfahren Sie, wie Sie Ihr globales Active Directory einrichten"].
-
-
-
-=== Der Datensinn "Richtlinien" kann jetzt zum Löschen von Dateien verwendet werden
-
-Datensense kann Dateien automatisch löschen, die mit der Abfrage übereinstimmen, die Sie in einer Richtlinie definieren. link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["Lesen Sie, wie Sie benutzerdefinierte Richtlinien erstellen"].
