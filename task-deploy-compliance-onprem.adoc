@@ -18,6 +18,8 @@ Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host in Ihrem
 
 Die On-Premises-Installation kann eine gute Option sein, wenn Sie lieber lokale ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
 
+Das Installationsskript von Data Sense wird gestartet, indem geprüft wird, ob das System und die Umgebung die erforderlichen Voraussetzungen erfüllen. Wenn alle Voraussetzungen erfüllt sind, wird die Installation gestartet. Wenn Sie die Voraussetzungen unabhängig vom Ausführen der Data Sense-Installation überprüfen möchten, steht Ihnen ein separates Softwarepaket zur Verfügung, das nur auf die Voraussetzungen überprüft. link:task-test-linux-system.html["Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist"].
+
 Die typische Installation auf einem Linux-Host _in your premises_ hat folgende Komponenten und Verbindungen.
 
 image:diagram_deploy_onprem_overview.png["Ein Diagramm der erforderlichen BlueXP- und Netzwerkkomponenten sowie der zugehörigen Verbindungen."]
@@ -38,10 +40,10 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Einen Konnektor erstellen
 [role="quick-margin-para"]
-Falls Sie noch keinen Connector haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud.
+Falls Sie noch keinen Connector haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud.
 
 [role="quick-margin-para"]
-Sie können auch einen Connector mit Ihrem Cloud-Provider erstellen. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Erstellen eines Konnektors in GCP"^].
+Sie können auch einen Connector mit Ihrem Cloud-Provider erstellen. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Voraussetzungen prüfen
 [role="quick-margin-para"]
@@ -64,7 +66,7 @@ Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage la
 
 Bevor Sie Data Sense installieren und verwenden können, ist ein BlueXP Connector erforderlich. In den meisten Fällen haben Sie wahrscheinlich einen Connector eingerichtet, bevor Sie versuchen, Cloud Data Sense zu aktivieren, da die meisten https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
 
-Informationen zum Erstellen einer Lösung in Ihrer Cloud-Provider-Umgebung finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Erstellen eines Konnektors in GCP"^].
+Informationen zum Erstellen einer Lösung in Ihrer Cloud-Provider-Umgebung finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
 
 Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der bei einem bestimmten Cloud-Provider implementiert wird:
 
@@ -78,9 +80,9 @@ Bei Azure NetApp Files muss sie in demselben Bereich bereitgestellt werden wie d
 
 On-Prem ONTAP Systeme, File Shares anderer Anbieter, generischer S3 Objekt-Storage, Datenbanken, OneDrive Ordner, SharePoint Konten und Google Drive Konten können über jeden dieser Cloud Connectors gescannt werden.
 
-Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
 
-Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Mehrere Anschlüsse"].
+Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
 
 Bei der Installation von Data Sense benötigen Sie die IP-Adresse oder den Hostnamen des Connector-Systems. Diese Informationen erhalten Sie, wenn Sie den Connector in Ihrem Haus installiert haben. Wenn der Connector in der Cloud bereitgestellt wird, finden Sie diese Informationen in der BlueXP-Konsole: Klicken Sie auf das Hilfesymbol, wählen Sie *Support* und klicken Sie auf *BlueXP Connector*.
 
@@ -92,27 +94,31 @@ Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betrie
 
 Sorgen Sie dafür, dass Cloud Data Sense ausgeführt wird. Die Cloud Data Sense Maschine muss kontinuierlich ausgeführt werden, um Ihre Daten kontinuierlich zu scannen.
 
-* Abhängig von der Größe des Datensatzes, den Sie scannen möchten, kann das Hostsystem in drei Größen angegeben werden.
+* Beim Erstellen eines Host-Systems vor Ort können Sie zwischen drei Systemgrößen wählen – je nach Größe des Datensatzes, den Sie mit Data Sense scannen möchten:
 +
 [cols="18,18,26,30"]
 |===
 | Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
 
 
-| Groß | 16 CPUs | 64 GB RAM | 500-GB-SSD auf / oder * 100 GB verfügbar auf /opt * 395 GB verfügbar auf /var * 5 GB auf /tmp 
+| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder - 100 gib verfügbar auf /opt - 395 gib verfügbar auf /var - 5 gib auf /tmp 
 
 
-| Mittel | 8 CPUs | 32 GB RAM | 200-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 145 GB verfügbar auf /var * 5 GB auf /tmp 
+| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 145 gib verfügbar auf /var - 5 gib auf /tmp 
 
 
-| Klein | 8 CPUs | 16 GB RAM | 100-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 45 GB verfügbar auf /var * 5 GB auf /tmp 
+| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 45 gib verfügbar auf /var - 5 gib auf /tmp 
 |===
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
-* *AWS EC2 Instanztyp*: Ein Instanztyp, der die oben genannten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen es https://aws.amazon.com/ec2/instance-types/m5/["M5.4xlarge"^].
-* *Azure VM Size*: Ein Instanztyp, der die oben genannten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen es https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^].
-* *GCP-Maschinentyp*: Ein Instanztyp, der die oben genannten CPU- und RAM-Anforderungen erfüllt. Wir empfehlen es https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^].
+* Bei der Bereitstellung einer Cloud-Instanz für Ihre Data Sense Installation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
++
+** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
+** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
+** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
+
+
 * *Betriebssystem*: Red hat Enterprise Linux oder CentOS Versionen 8.0 bis 8.7
 +
 ** CentOS Stream 8 wird ebenfalls unterstützt
@@ -252,7 +258,7 @@ Siehe <<Bereiten Sie das Linux-Hostsystem vor,Vorbereiten des Linux-Hostsystems>
 Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
-NOTE: Cloud Data Sense kann derzeit S3-Buckets, Azure NetApp Files oder FSX für ONTAP nicht scannen, wenn die Software vor Ort installiert ist. In diesen Fällen müssen Sie in der Cloud und darüber hinaus einen separaten Connector und Instanz der Daten implementieren https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-switch-between-connectors["Zwischen den Anschlüssen wechseln"^] Für Ihre unterschiedlichen Datenquellen.
+NOTE: Cloud Data Sense kann derzeit S3-Buckets, Azure NetApp Files oder FSX für ONTAP nicht scannen, wenn die Software vor Ort installiert ist. In diesen Fällen müssen Sie in der Cloud und darüber hinaus einen separaten Connector und Instanz der Daten implementieren https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Zwischen den Anschlüssen wechseln"^] Für Ihre unterschiedlichen Datenquellen.
 
 
 

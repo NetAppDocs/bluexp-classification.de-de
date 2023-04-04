@@ -1,0 +1,212 @@
+---
+sidebar: sidebar 
+permalink: task-test-linux-system.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, cloud compliance access, compliance, on-premises, linux, test linux system 
+summary: Vor der manuellen Installation von Data Sense auf einem Linux-Host können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation von Data Sense vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat. 
+---
+= Überprüfen Sie, ob Ihr Linux-Host bereit ist, Data Sense zu installieren
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie Data Sense manuell auf einem Linux-Host installieren, können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation von Data Sense vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat (eine „dunkle Seite“).
+
+Es gibt auch ein Voraussetzungstest-Skript, das Teil des Data Sense Installationsskripts ist. Das hier beschriebene Skript wurde speziell für Benutzer entwickelt, die den Linux-Host unabhängig vom Ausführen des Data Sense-Installationsskripts überprüfen möchten.
+
+
+
+== Erste Schritte
+
+Sie führen die folgenden Aufgaben aus.
+
+. Optional Installieren Sie einen BlueXP Connector, falls noch keiner installiert ist. Sie können das Testskript ohne Installation eines Connectors ausführen, aber das Skript prüft die Verbindung zwischen dem Connector und dem Data Sense Host-Rechner. Es wird daher empfohlen, einen Connector zu verwenden.
+. Bereiten Sie den Host-Rechner vor und überprüfen Sie, ob er alle Anforderungen erfüllt.
+. Aktivieren Sie den ausgehenden Internetzugang über den Data Sense-Hostcomputer.
+. Vergewissern Sie sich, dass alle erforderlichen Ports auf allen Systemen aktiviert sind.
+. Laden Sie das Skript für den Voraussetzungstest herunter, und führen Sie es aus.
+
+
+
+
+== Einen Konnektor erstellen
+
+Bevor Sie Data Sense installieren und verwenden können, ist ein BlueXP Connector erforderlich. Sie können jedoch das Skript Voraussetzungen ohne Connector ausführen.
+
+Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+
+Informationen zum Erstellen eines Connectors in der Umgebung Ihres Cloud-Providers finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
+
+Sie benötigen die IP-Adresse oder den Hostnamen des Connector-Systems, wenn Sie das Skript Voraussetzungen ausführen. Diese Informationen erhalten Sie, wenn Sie den Connector in Ihrem Haus installiert haben. Wenn der Connector in der Cloud bereitgestellt wird, finden Sie diese Informationen in der BlueXP-Konsole: Klicken Sie auf das Hilfesymbol, wählen Sie *Support* und klicken Sie auf *BlueXP Connector*.
+
+
+
+== Host-Anforderungen prüfen
+
+Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt.
+
+* Data Sense wird auf einem Host, der für andere Anwendungen freigegeben ist, nicht unterstützt - der Host muss ein dedizierter Host sein.
+
+
+* Beim Erstellen des Host-Systems vor Ort können Sie zwischen drei Systemgrößen wählen – je nach Größe des Datensatzes, den Sie in Data Sense scannen möchten.
++
+[cols="18,18,26,30"]
+|===
+| Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
+
+
+| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder - 100 gib verfügbar auf /opt - 395 gib verfügbar auf /var - 5 gib auf /tmp 
+
+
+| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 145 gib verfügbar auf /var - 5 gib auf /tmp 
+
+
+| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 45 gib verfügbar auf /var - 5 gib auf /tmp 
+|===
++
+Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+
+* Bei der Bereitstellung einer Cloud-Instanz für Ihre Data Sense Installation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
++
+** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
+** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
+** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
+
+
+* *Betriebssystem*: Red hat Enterprise Linux oder CentOS Versionen 8.0 bis 8.7
++
+** CentOS Stream 8 wird ebenfalls unterstützt
+** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
+** Das Betriebssystem muss in der Lage sein, die Docker-Engine zu installieren
+
+
+* *Red hat Subscription Management*: Ein Red hat Enterprise Linux System muss mit Red hat Subscription Management registriert werden. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositories zugreifen, um die erforderliche Software von Drittanbietern zu aktualisieren.
+* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie Data Sense installieren:
++
+** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
+** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
+
+
+* *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie Data Sense installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit Data Sense kompatibel ist:
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+Wenn Sie planen, zusätzliche Data Sense-Hosts als Scanner-Nodes zu verwenden (in einem verteilten Modell), fügen Sie diese Regeln zu diesem Zeitpunkt Ihrem primären System hinzu:
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+Wenn Sie aktivieren `firewalld` Nach der Installation von Data Sense müssen Sie den Docker neu starten.
+
+
+
+
+
+== Aktivieren Sie ausgehenden Internetzugang über Data Sense
+
+Für Data Sense ist Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxyserver für den Internetzugriff verwendet, stellen Sie sicher, dass die Datensense-Instanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren.
+
+TIPP:: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetverbindung installiert sind, nicht erforderlich.
+
+
+[cols="43,57"]
+|===
+| Endpunkte | Zweck 
+
+
+| \https://api.bluexp.netapp.com | Kommunikation mit dem BlueXP Service, einschl. NetApp Accounts 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | Kommunikation mit der BlueXP-Website zur zentralen Benutzerauthentifizierung. 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | Bietet Zugriff auf Software-Images, Manifeste, Vorlagen und die Möglichkeit, Protokolle und Metriken zu senden. 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
+
+
+| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Enthält die für die Installation erforderlichen Pakete. 
+|===
+
+
+== Vergewissern Sie sich, dass alle erforderlichen Ports aktiviert sind
+
+Sie müssen sicherstellen, dass alle erforderlichen Ports für die Kommunikation zwischen Connector, Data Sense, Active Directory und Ihren Datenquellen offen sind.
+
+[cols="25,25,50"]
+|===
+| Verbindungstyp | Ports | Beschreibung 
+
+
+| Connector <> Data Sense | 8080 (TCP), 443 (TCP) und 80 | Die Firewall- oder Routing-Regeln für den Connector müssen ein- und ausgehenden Datenverkehr über Port 443 zu und aus der Instanz Data Sense ermöglichen. Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können. 
+
+
+| Connector <> ONTAP-Cluster (NAS) | 443 (TCP)  a| 
+BlueXP erkennt ONTAP-Cluster mithilfe von HTTPS. Wenn Sie benutzerdefinierte Firewallrichtlinien verwenden, muss der Connector-Host ausgehenden HTTPS-Zugriff über Port 443 zulassen. Wenn sich der Connector in der Cloud befindet, ist die gesamte ausgehende Kommunikation durch vordefinierte Firewall- oder Routingregeln zulässig.
+
+|===
+
+
+== Führen Sie das Skript Data Sense Voraussetzungen aus
+
+Führen Sie die folgenden Schritte aus, um das Skript Data Sense Voraussetzungen auszuführen.
+
+.Was Sie benötigen
+* Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Host-Anforderungen prüfen,Host-Anforderungen erfüllt>>.
+* Vergewissern Sie sich, dass auf dem System die beiden erforderlichen Softwarepakete installiert sind (Docker Engine und Python 3).
+* Stellen Sie sicher, dass Sie über Root-Rechte auf dem Linux-System verfügen.
+
+
+.Schritte
+. Laden Sie das Skript für Data Sense Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Test_Datasense_Prerequisites_<version>*.
+. Kopieren Sie die Datei auf den Linux-Host, den Sie verwenden möchten (mit `scp` Oder eine andere Methode).
+. Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
++
+[source, cli]
+----
+chmod +x test_datasense_prerequisites_1_0
+----
+. Führen Sie das Skript mit dem folgenden Befehl aus.
++
+./Test_Data_Prerequisites_1_0 &#8592;-darksite>
+[source, cli]
+----
+Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+----
+. Das Skript fordert Sie zur Eingabe der IP-Adresse des Data Sense Host-Computers auf.
++
+** Geben Sie die IP-Adresse oder den Hostnamen ein.
+
+
+. Das Skript fordert Sie auf, zu fragen, ob Sie einen BlueXP Connector installiert haben.
++
+** Geben Sie *N* ein, wenn kein Connector installiert ist.
+** Geben Sie *Y* ein, wenn Sie einen Connector installiert haben. Geben Sie dann die IP-Adresse oder den Hostnamen des BlueXP Connector ein, damit das Testskript diese Konnektivität testen kann.
+
+
+. Das Skript führt eine Vielzahl von Tests auf dem System aus und zeigt die Ergebnisse im weiteren Verlauf an. Nach Abschluss der Sitzung wird ein Protokoll der Sitzung in eine Datei geschrieben.
+
+
+.Ergebnis
+Wenn alle Prerequisites Tests erfolgreich durchgeführt wurden, können Sie Data Sense auf dem Host installieren, wenn Sie bereit sind.
+
+Wenn Probleme entdeckt wurden, werden sie als „empfohlen“ oder „erforderlich“ kategorisiert, um behoben zu werden. Empfohlene Probleme sind in der Regel Elemente, die das Scannen und Kategorisieren von Data Sense verlangsamen würden. Diese Elemente müssen nicht korrigiert werden - aber Sie können sie ansprechen.
+
+Wenn Sie „erforderliche“ Probleme haben, sollten Sie die Probleme beheben und das Testskript „Voraussetzungen“ erneut ausführen.

@@ -254,7 +254,7 @@ Sie können Quelldateien dauerhaft entfernen, die unsicher oder zu riskant ersch
 Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder link:task-using-policies.html#deleting-source-files-automatically-using-policies["Automatische Verwendung von Richtlinien"^].
 
 
-TIP: Sie können keine Dateien löschen, die sich in Datenbanken befinden.
+TIP: Sie können keine Dateien löschen, die sich in Datenbanken befinden. Alle anderen Datenquellen werden unterstützt.
 
 Das Löschen von Dateien erfordert die folgenden Berechtigungen:
 

@@ -79,7 +79,7 @@ Implementieren Sie Cloud-Daten sinnvoll, wenn noch keine Instanz implementiert i
 
 Wenn Sie Cloud Volumes ONTAP und lokale ONTAP Systeme scannen, die über das Internet zugänglich sind, können Sie diese ausführen link:task-deploy-cloud-compliance.html["Cloud-Daten sinnvoll in der Cloud implementieren"^] Oder link:task-deploy-compliance-onprem.html["In einer Anlage mit Internetzugang"^].
 
-Wenn Sie lokale ONTAP-Systeme scannen, die in einer dunklen Site installiert wurden und über keinen Internetzugang verfügen, müssen Sie sie überprüfen link:task-deploy-compliance-dark-site.html["Cloud Data Sense implementieren – auf demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
+Wenn Sie lokale ONTAP-Systeme scannen, die in einer dunklen Site installiert wurden und über keinen Internetzugang verfügen, müssen Sie sie überprüfen link:task-deploy-compliance-dark-site.html["Implementieren Sie Data Sense am selben On-Premises-Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
 
 Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 

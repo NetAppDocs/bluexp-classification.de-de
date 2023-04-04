@@ -50,7 +50,7 @@ Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgre
 ....
 
 
-== Zugriff auf die Protokolldatei
+== Greifen Sie auf die Protokolldatei zu
 
 Die Management-Audit-Protokolldateien befinden sich auf dem Data Sense-Computer in: `/opt/netapp/audit_logs/`
 
@@ -58,7 +58,7 @@ Die Audit-Protokolldateien für die Installation werden in geschrieben `/ops/net
 
 Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Maximal 100 Protokolldateien werden auf dem System gespeichert - alte Protokolldateien werden nach Erreichen des Maximalwerts automatisch gelöscht.
 
-Wenn Data Sense auf Ihrem Gelände installiert ist, können Sie direkt zur Protokolldatei navigieren.
+Wenn Data Sense auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert ist, die Sie in der Cloud implementiert haben, können Sie direkt zur Protokolldatei navigieren.
 
 Wenn Data Sense in der Cloud implementiert wird, muss SSH in der Data Sense Instanz verwendet werden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
 

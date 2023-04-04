@@ -29,14 +29,11 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 Wenn Sie noch keinen Konnektor haben, erstellen Sie jetzt einen Konnektor. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Erstellen eines Konnektors in GCP"^].
 
 [role="quick-margin-para"]
-Das können Sie auch https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud.
+Das können Sie auch https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Voraussetzungen prüfen
 [role="quick-margin-para"]
 Stellen Sie sicher, dass Ihre Umgebung die Voraussetzungen erfüllen kann. Dazu gehören Outbound-Internetzugang für die Instanz, Konnektivität zwischen Connector und Cloud Data Sense über Port 443 und mehr. <<Voraussetzungen prüfen,Eine vollständige Liste finden Sie hier>>.
-
-[role="quick-margin-para"]
-Die Standardkonfiguration benötigt 16 vCPUs für die Cloud Data Sense Instanz. Siehe link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Weitere Details zum Instanztyp"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Sinnvolle Implementierung Von Cloud-Daten
 [role="quick-margin-para"]
@@ -65,9 +62,9 @@ Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der be
 
 On-Prem-ONTAP-Systeme, File Shares anderer Anbieter, generischer S3-Objekt-Storage, Datenbanken, OneDrive-Ordner, SharePoint-Konten und Google Drive-Konten können bei der Verwendung eines dieser Cloud-Connectors gescannt werden.
 
-Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
 
-Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Mehrere Anschlüsse"].
+Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
 
 
 
@@ -78,6 +75,8 @@ Cloud Data Sense wird unterstützt, wenn der Connector in einer Regierungsregion
 * OneDrive-Konten, SharePoint-Konten und Google-Laufwerk Konten können nicht gescannt werden.
 * Die Funktionalität der Microsoft Azure Information Protection (AIP)-Etiketten kann nicht integriert werden.
 
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-mode.html["Weitere Informationen zur Bereitstellung des Connectors in einer Regierungsregion finden Sie unter"^].
 
 
 
@@ -90,8 +89,13 @@ Outbound-Internetzugang über Cloud Data Sense aktivieren:: Für Cloud Data Sens
 --
 Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, können Sie die unten stehende Tabelle durchlesen.
 
-*Erforderliche Endpunkte für AWS Implementierungen:*
+--
 
+
+[role="tabbed-block"]
+====
+.Erforderliche Endpunkte für AWS-Implementierungen
+--
 [cols="43,57"]
 |===
 | Endpunkte | Zweck 
@@ -111,8 +115,9 @@ Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, könn
 
 | \https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | Cloud Data Sense kann auf Manifeste und Vorlagen zugreifen und diese herunterladen sowie Protokolle und Kennzahlen senden. 
 |===
-*Erforderliche Endpunkte für Azure- und GCP-Bereitstellungen:*
-
+--
+.Erforderliche Endpunkte für Azure-Implementierungen
+--
 [cols="43,57"]
 |===
 | Endpunkte | Zweck 
@@ -130,21 +135,27 @@ Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, könn
 | \https://support.compliance.api.bluexp.netapp.com/ | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
 |===
 --
+.Erforderliche Endpunkte für GCP-Implementierungen
+--
+[cols="43,57"]
+|===
+| Endpunkte | Zweck 
+
+
+| \https://api.bluexp.netapp.com | Kommunikation mit dem BlueXP Service, einschl. NetApp Accounts 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | Kommunikation mit der BlueXP-Website zur zentralen Benutzerauthentifizierung. 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | Bietet Zugriff auf Software-Images, Manifeste, Vorlagen und die Möglichkeit, Protokolle und Metriken zu senden. 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
+|===
+--
+====
 Stellen Sie sicher, dass BlueXP über die erforderlichen Berechtigungen verfügt:: Stellen Sie sicher, dass BlueXP über die Berechtigungen zum Bereitstellen von Ressourcen verfügt und Sicherheitsgruppen für die Cloud Data Sense Instanz erstellt. Die neuesten BlueXP-Berechtigungen finden Sie in https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Die von NetApp bereitgestellten Richtlinien"^].
-Überprüfen Sie Ihre vCPU-Limits:: Stellen Sie sicher, dass das vCPU-Limit Ihres Cloud-Providers die Bereitstellung einer Instanz mit 16 Cores ermöglicht. Sie müssen das vCPU-Limit für die jeweilige Instanzfamilie in der Region, in der BlueXP ausgeführt wird, überprüfen. link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Siehe die erforderlichen Instanztypen"].
-+
---
-Weitere Informationen zu vCPU Limits finden Sie in den folgenden Links:
-
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS Dokumentation: Amazon EC2 Service Quotas"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure Dokumentation: VCPU Kontingente von Virtual Machines"^]
-* https://cloud.google.com/compute/quotas["Google Cloud Dokumentation: Ressourcenkontingente"^]
-+
-Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger RAM implementieren können, es gibt jedoch Einschränkungen bei der Verwendung dieser Systeme. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
-
-
-
---
 Stellen Sie sicher, dass der BlueXP Connector auf Cloud Data Sense zugreifen kann:: Stellen Sie die Verbindung zwischen dem Connector und der Cloud Data Sense Instanz sicher. Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über Port 443 zu und aus der Instanz Data Sense zulassen. Diese Verbindung ermöglicht die Bereitstellung der Data Sense-Instanz und ermöglicht die Anzeige von Informationen auf den Registerkarten Compliance und Governance. Cloud Data Sense wird in Regierungsregionen in AWS und Azure unterstützt.
 +
 --
@@ -160,31 +171,101 @@ Stellen Sie sicher, dass Webbrowser mit Cloud Data Sense verbunden ist:: Wenn Cl
 Die Instanz Data Sense verwendet eine private IP-Adresse, um sicherzustellen, dass die indizierten Daten nicht für das Internet verfügbar sind. Daher muss der Webbrowser, den Sie für den Zugriff auf BlueXP verwenden, über eine Verbindung mit dieser privaten IP-Adresse verfügen. Die Verbindung kann über eine direkte Verbindung zu Ihrem Cloud-Provider (z. B. einem VPN) oder von einem Host im selben Netzwerk wie die Data Sense Instanz erfolgen.
 
 --
+Überprüfen Sie Ihre vCPU-Limits:: Stellen Sie sicher, dass die vCPU-Begrenzung Ihres Cloud-Providers die Bereitstellung einer Instanz mit der erforderlichen Anzahl an Kernen ermöglicht. Sie müssen das vCPU-Limit für die jeweilige Instanzfamilie in der Region, in der BlueXP ausgeführt wird, überprüfen. link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Siehe die erforderlichen Instanztypen"].
++
+--
+Weitere Informationen zu vCPU Limits finden Sie in den folgenden Links:
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS Dokumentation: Amazon EC2 Service Quotas"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure Dokumentation: VCPU Kontingente von Virtual Machines"^]
+* https://cloud.google.com/compute/quotas["Google Cloud Dokumentation: Ressourcenkontingente"^]
+
+
+Hinweis: Sie können Data Sense auf einer Instanz in AWS-Cloud-Umgebungen mit weniger CPUs und weniger RAM implementieren, jedoch gibt es bei der Verwendung dieser Systeme Einschränkungen. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+
+--
 
 
 
 
 == Implementieren Sie Daten sinnvoll in der Cloud
 
-Führen Sie diese Schritte aus, um eine Instanz von Cloud Data Sense in der Cloud zu implementieren.
+Führen Sie diese Schritte aus, um eine Instanz von Cloud Data Sense in der Cloud zu implementieren. Connector implementiert die Instanz in der Cloud und installiert dann die Data Sense Software auf dieser Instanz.
 
+Zu beachten ist, dass Sie bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen können. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"].
+
+[role="tabbed-block"]
+====
+.Implementieren in AWS
+--
+.Schritte
+. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
++
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
+
+. Klicken Sie Auf *Datensense Aktivieren*.
++
+image:screenshot_cloud_compliance_deploy_cloud_aws.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
+
+. Klicken Sie auf der Seite _Installation_ auf *Deploy > Deploy*, um die „große“ Instanzgröße zu verwenden und den Cloud-Bereitstellungsassistenten zu starten.
++
+Sie können auch auf *Deploy > Configuration* klicken, um aus zwei kleineren Instanztypen auszuwählen, wenn Sie nicht über viele Daten zum Scannen verfügen. Wenn eine kleinere Instanz verwendet wird, können dadurch einige Cloud-Kosten eingespart werden. Unten wird eine „mittlere“ Ressourcengröße angezeigt.
+
++
+Klicken Sie dann auf *deploy*, um den Cloud-Bereitstellungsassistenten zu starten.
+
++
+image:screenshot_cloud_deploy_resource_size.png["Ein Screenshot der Bereitstellungsseite, um die Größe der Instanz auszuwählen, auf der Data Sense implementiert wird."]
+
+. Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
++
+image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
+
+. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+
+
+--
+.Implementieren in Azure
+--
 .Schritte
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
 . Klicken Sie Auf *Datensense Aktivieren*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot, in dem die Schaltfläche zum Aktivieren von Cloud Data Sense ausgewählt wird."]
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
 
 . Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
-image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot, wie die Schaltfläche zum Implementieren von Cloud Data Sense in der Cloud ausgewählt wird"]
+image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
 
-. Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Er wird angehalten und um Informationen gebeten, wenn es zu Problemen kommt.
+. Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
-image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des Cloud Data Sense Assistenten zur Bereitstellung einer neuen Instanz."]
+image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt wird, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Konfiguration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
 
 
+--
+.Implementieren in Google Cloud
+--
+.Schritte
+. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
+. Klicken Sie Auf *Datensense Aktivieren*.
++
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
+
+. Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
++
+image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
+
+. Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
++
+image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
+
+. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+
+
+--
+====
 .Ergebnis
 BlueXP implementiert die Cloud Data Sense Instanz bei Ihrem Cloud-Provider.
 

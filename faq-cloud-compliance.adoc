@@ -119,6 +119,7 @@ Bericht für Anforderung von Datenfachzugriff:: Ermöglicht Ihnen, einen Bericht
 PCI DSS-Bericht:: Unterstützt Sie bei der Identifizierung der Verteilung von Kreditkarteninformationen über Ihre Dateien. link:task-generating-compliance-reports.html#pci-dss-report["Weitere Informationen ."^].
 HIPAA-Bericht:: Hilft Ihnen dabei, die Verteilung von Gesundheitsinformationen über Ihre Dateien hinweg zu identifizieren. link:task-generating-compliance-reports.html#hipaa-report["Weitere Informationen ."^].
 Datenzuordnungsbericht:: Stellt Informationen zur Größe und Anzahl der Dateien in Ihren Arbeitsumgebungen bereit. Dazu zählen Nutzungskapazität, Alter der Daten, Größe der Daten und Dateitypen. link:task-controlling-governance-data.html#data-mapping-report["Weitere Informationen ."^].
+Data Discovery Assessment-Bericht:: Bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. link:task-controlling-governance-data.html#data-discovery-assessment-report["Lernmodus"^].
 Berichte zu einem bestimmten Informationstyp:: Es stehen Berichte zur Verfügung, die Details zu den identifizierten Dateien enthalten, die personenbezogene Daten und sensible personenbezogene Daten enthalten. Sie können auch Dateien nach Kategorie und Dateityp aufgeschlüsselt sehen. link:task-controlling-private-data.html["Weitere Informationen ."^].
 
 
@@ -353,7 +354,7 @@ Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuel
 
 === Kann ich den Connector auf meinem eigenen Host bereitstellen?
 
-Ja. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Wenn Sie planen, Data Sense vor Ort zu implementieren, sollten Sie möglicherweise auch den Connector vor Ort installieren, dieser ist jedoch nicht erforderlich.
+Ja. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie planen, Data Sense vor Ort zu implementieren, sollten Sie möglicherweise auch den Connector vor Ort installieren, dieser ist jedoch nicht erforderlich.
 
 
 
@@ -379,9 +380,9 @@ Mit BlueXP können Benutzer Systeme praktisch überall scannen und protokolliere
 
 Wenn link:task-deploy-cloud-compliance.html["In der Cloud implementiert"]:
 
-* In AWS läuft Cloud Data Sense auf einer m5.4xlarge-Instanz mit einer 500-GB-GP2-Festplatte.
-* In Azure wird Cloud Data Sense auf einer Standard_D16s_v3 VM mit einer 512-GB-Festplatte ausgeführt.
-* In GCP läuft Cloud Data Sense auf einer n2-Standard-16-VM mit einem persistenten 512-GB-Standard-Laufwerk.
+* In AWS wird Cloud Data Sense auf einer m6i.4xlarge-Instanz mit einer GP2-Festplatte mit 500 gib ausgeführt. Sie können während der Bereitstellung einen kleineren Instanztyp auswählen.
+* In Azure wird Cloud Data Sense auf einer Standard_D16s_v3 VM mit einer Festplatte von 500 gib ausgeführt.
+* In GCP wird Cloud Data Sense auf einer VM gemäß n2-Standard-16 mit einer persistenten Standard-Festplatte mit 500 gib ausgeführt.
 
 
 Beachten Sie, dass Sie Daten Sense auf einem System mit weniger CPUs und weniger RAM implementieren können, es gibt jedoch Einschränkungen bei der Verwendung dieser Systeme. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.

@@ -18,6 +18,34 @@ Was ist neu im Bereich Cloud Data Sense.
 
 
 
+== 3. April 2023 (Version 1.22)
+
+
+
+=== Neuer Data Discovery Assessment Report
+
+Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Erfahren Sie, wie Sie den Data Discovery Assessment Report erstellen und verwenden"].
+
+
+
+=== Möglichkeit zur Implementierung von Data Sense auf kleineren Instanzen in der Cloud
+
+Bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun aus zwei kleineren Instanztypen wählen, als bei der Standardinstanz verfügbar ist. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"].
+
+
+
+=== Eigenständiges Skript steht jetzt zur Verfügung, um zu testen, ob Ihr Linux-System für die Installation von Data Sense qualifiziert ist
+
+Wenn Sie unabhängig vom Ausführen der Data Sense-Installation prüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, können Sie ein separates Skript herunterladen, das nur die Voraussetzungen prüft. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist"].
+
+
+
+=== Data Sense BYOL-Lizenzen werden nun in Dark Sites unterstützt
+
+Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet hochladen, da Sie über eine Dark Site informiert werden, sobald Ihre Lizenz nicht mehr verfügbar ist. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Hier erfahren Sie, wie Sie Ihre Data Sense BYOL-Lizenz erwerben und hochladen"].
+
+
+
 == 7. März 2023 (Version 1.21)
 
 

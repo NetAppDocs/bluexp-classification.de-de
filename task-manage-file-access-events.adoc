@@ -1,0 +1,157 @@
+---
+sidebar: sidebar 
+permalink: task-manage-file-access-events.html 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: 'Sie können Data Sense so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, sobald auf eine der Dateien zugegriffen oder geändert wurde, die Sie scannen. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.' 
+---
+= Überwachen und managen Sie Dateizugriffsereignisse
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Data Sense so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, sobald auf eine der Dateien zugegriffen oder geändert wurde, die Sie scannen. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
+
+Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensiblen Personalakten oder Gehaltsabrechnungsdateien vorgenommen werden, können Sie diese Funktion auf den Volumes aktivieren, auf denen sich diese Dateien befinden. Anschließend können Sie das Audit-Protokoll für den Dateizugriff anzeigen, um zu sehen, ob diese Dateien geändert wurden. Wenn sie geändert wurden, können Sie den Namen der Person sehen, die die Änderung vorgenommen hat, und wann die Änderung vorgenommen wurde.
+
+Sie können diese Funktion für alle kritischen Volumes in Ihren ONTAP-Arbeitsumgebungen aktivieren. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen aus und nutzt Ihr Data Sense System als FPolicy Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
+
+Data Sense erfasst derzeit Ereignisse für die folgenden Aktionen auf Ihren Dateien und Verzeichnissen:
+
+* Erstellen
+* Lesen
+* Schreiben
+* Umbenennen
+* Löschen
+* Eigentümer/Berechtigungen ändern
+* SACL/DACL ändern (ACL-Änderungen)
+
+
+BlueXP Benutzer mit den Rollen „Account-Administrator“ oder „Workspace-Administrator“ können Volumes für die Protokollierung von Dateizugriffen konfigurieren und die Prüfprotokolle anzeigen und herunterladen. Benutzer mit der Rolle „Compliance Viewer“ können nur die Audit-Protokolle anzeigen und herunterladen.
+
+
+
+== Unterstützte Datenquellen
+
+Data Sense kann Dateizugriffsereignisse für Dateien protokollieren, die sich auf den folgenden Datenquellen befinden:
+
+* On-Premises-ONTAP
+* Cloud Volumes ONTAP
+* Azure NetApp Dateien
+* FSX für ONTAP
+
+
+Für diese Datenquellen muss Active Directory konfiguriert sein, damit Data Sense den Namen der Person identifizieren kann, die auf die Dateien zugegriffen hat.
+
+
+
+== Konfigurieren Sie Volumes für die Audit-Protokollierung des Dateizugriffs
+
+Sie können die Audit-Protokollierung für den Dateizugriff bei einzelnen Volumes aktivieren, um Änderungen an Dateien und Verzeichnissen nachzuverfolgen.
+
+TIPP:: Sie können die Dateizugriffsüberwachung für maximal 5 Volumes auf jedem ONTAP-System konfigurieren.
+
+
+.Schritte
+. Klicken Sie auf der Seite _Scan Configuration_ für die Datenquelle auf image:screenshot_horizontal_more_button.gif["Weitere Symbole"] Wählen Sie für das Volume *Configure File Access Audit*.
++
+image:screenshot_compliance_file_access_audit_button.png["Ein Screenshot der Auswahl eines Volumes, auf dem Sie die Dateizugriffsprotokollierung aktivieren möchten."]
+
+. Klicken Sie im Dialogfeld _Configure File Access Audit_ auf das Kontrollkästchen *Enable Logging of file Access Events* und klicken Sie auf *Save*.
++
+Beachten Sie derzeit, dass alle potenziellen Protokollierungsaktionen standardmäßig ausgewählt sind – sie können nicht bearbeitet werden.
+
++
+image:screenshot_compliance_file_access_audit_dialog.png["Ein Screenshot des Dialogfelds zum Aktivieren und Deaktivieren der Protokollierung für ein Volume und zum Auswählen der zu protokollierenden Aktionen."]
+
+. Sie werden sehen, dass die Prüfung des Dateizugriffs für dieses Volume jetzt aktiviert ist.
++
+image:screenshot_compliance_file_access_audit_done.png["Ein Screenshot, der zeigt, dass die Protokollierung des Dateizugriffs für ein bestimmtes Volume aktiviert ist."]
+
+
+
+.Ergebnis
+Alle Dateizugriffsereignisse, die für Dateien auf den aktivierten Volumes generiert werden, werden der Protokolldatei hinzugefügt. Überprüfen Sie gelegentlich die Protokolldatei, um die von Ihnen empfangenen Ereignistypen anzuzeigen.
+
+
+
+== Inhalt der Protokolldatei protokollieren
+
+Für jedes Volume, das Sie für die Nachverfolgung von Dateizugriffsereignissen konfiguriert haben, wird eine Protokolldatei erstellt. Jede Zeile im Auditprotokoll enthält Informationen in diesem Format:
+
+`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+
+* Timestamp: Datum und Uhrzeit des Ereignisses
+* Volume Name: Name des Volumes
+* Ereignistyp - Erstellen, Lesen, Schreiben, Umbenennen, Löschen, Eigentümer/Berechtigungen ändern und SACL/DACL ändern
+* Dateiname: Vollständiger Pfad und Dateiname
+* Benutzername (oder ID): Name oder ID der Person, die die Aktion ausgeführt hat
+* Ergebnis der Aktion – ob die Aktion erfolgreich war oder nicht, und der Grund für Erfolg/Misserfolg
+* Details zur Aktion - was getan wurde: Hängt von der Aktion ab
+
+
+Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgreichen Kopiervorgang und einen fehlerhaften Kopiervorgang an.
+
+....
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== Greifen Sie auf die Datei Access Audit Log-Dateien zu
+
+Die File Access Audit Log-Dateien befinden sich auf dem Data Sense-Computer in: `/opt/netapp/audit_logs/`
+
+Die Protokolldateien heißen „File_Access_Audit_<volume_name>_<timestamp>.log“, zum Beispiel „DateizugriffAudit_MedicalData_20230205092321.log“. Der <timestamp> ist die Zeit, zu der Data Sense das erste Protokoll in die Datei geschrieben hat. Jede Datei ist standardmäßig so konfiguriert, dass sie maximal 50,000 Ereignisse enthält. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel.
+
+Die Gesamtgröße aller Protokolldateien im Verzeichnis ist auf den Standardwert 50 GB festgelegt. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien automatisch gelöscht.
+
+Wenn Data Sense auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert ist, die Sie in der Cloud implementiert haben, können Sie direkt zu den Protokolldateien navigieren.
+
+Wenn Data Sense in der Cloud implementiert wird, müssen Sie SSH zur Data Sense Instanz benötigen. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh_key> = Speicherort der ssh-Authentifizierungsschlüssel
+* <machine_user>:
++
+** Für AWS: Verwenden Sie <ec2-user>
+** Für Azure: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
+** Für GCP: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
+
+
+* <dataense_ip> = IP-Adresse der virtuellen Maschineninstanz
+
+
+Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen, um auf das System in der Cloud zuzugreifen. Weitere Informationen finden Sie unter:
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
+
+
+
+
+== Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff
+
+Es gibt drei Optionen, die Sie für die Dateizugriffsprotokolle konfigurieren können. Diese Einstellungen gelten für alle Datenquellen, die die Protokollierung des Dateizugriffs auf dieser Data Sense Instanz konfiguriert haben. Sie konfigurieren diese Einstellungen im Abschnitt _File Access Audit Log_ der Seite Data Sense _Configuration_.
+
+image:screenshot_compliance_file_access_audit_config.png["Ein Screenshot mit den Konfigurationseinstellungen für die Überwachungsprotokolle auf der Seite Data Sense Configuration."]
+
+[cols="30,50"]
+|===
+| Option Überwachungsprotokoll | Beschreibung 
+
+
+| Speicherort der Protokolldatei | Der Speicherort ist derzeit fest codiert, um die Protokolldateien in zu schreiben `/opt/netapp/audit_logs/` 
+
+
+| Maximale Storage-Zuweisung für Prüfprotokolle | Die Gesamtgröße aller Protokolldateien im Verzeichnis ist derzeit auf einen Standardwert von 50 GB hardcodiert. Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien automatisch gelöscht. 
+
+
+| Maximale Anzahl von Überwachungsereignissen pro Überwachungsdatei | Jede Datei ist derzeit so programmiert, dass sie maximal 50,000 Ereignisse enthält. Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel. 
+|===
+Beachten Sie, dass diese Einstellungen derzeit auf die Standardeinstellungen hartcodiert sind. Sie können nicht geändert werden.

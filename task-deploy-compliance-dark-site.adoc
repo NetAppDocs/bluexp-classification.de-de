@@ -18,6 +18,8 @@ Führen Sie ein paar Schritte durch, um Data Sense auf einem Linux-Host an einem
 
 Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Implementieren Sie Data Sense in einer lokalen Website mit Internetzugang"].
 
+Das Installationsskript von Data Sense wird gestartet, indem geprüft wird, ob das System und die Umgebung die erforderlichen Voraussetzungen erfüllen. Wenn alle Voraussetzungen erfüllt sind, wird die Installation gestartet. Wenn Sie die Voraussetzungen unabhängig vom Ausführen der Data Sense-Installation überprüfen möchten, steht Ihnen ein separates Softwarepaket zur Verfügung, das nur auf die Voraussetzungen überprüft. link:task-test-linux-system.html["Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist"].
+
 
 
 == Unterstützte Datenquellen
@@ -48,7 +50,7 @@ Die meisten Funktionen von Data Sense funktionieren, wenn sie in einer Site ohne
 * Benutzerfeedback wird empfangen
 * Automatisierte Software-Upgrades von BlueXP
 +
-Sowohl BlueXP Connector als auch Data Sense erfordern regelmäßige manuelle Upgrades, um neue Funktionen zu ermöglichen. Die Data Sense-Version finden Sie unten auf den Data Sense-UI-Seiten. Prüfen Sie die link:whats-new.html["Cloud Data Sense – Versionsinformationen"] Um sich die neuen Funktionen in jeder Version und deren Wunsch nach jenen Funktionen ansehen zu können. Anschließend können Sie die Schritte befolgen https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Upgrade des BlueXP Connector"^] Und <<Upgrade von Data Sense Software,Aktualisieren Sie Ihre Data Sense Software>>.
+Sowohl BlueXP Connector als auch Data Sense erfordern regelmäßige manuelle Upgrades, um neue Funktionen zu ermöglichen. Die Data Sense-Version finden Sie unten auf den Data Sense-UI-Seiten. Prüfen Sie die link:whats-new.html["Cloud Data Sense – Versionsinformationen"] Um sich die neuen Funktionen in jeder Version und deren Wunsch nach jenen Funktionen ansehen zu können. Anschließend können Sie die Schritte befolgen https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Upgrade des BlueXP Connector"^] Und <<Upgrade von Data Sense Software,Aktualisieren Sie Ihre Data Sense Software>>.
 
 
 
@@ -60,7 +62,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Installieren Sie den BlueXP-Anschluss
 [role="quick-margin-para"]
-Wenn Sie noch keinen Connector an Ihrem Offline-Standort installiert haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Den Stecker einsetzen"^] Jetzt auf einem Linux-Host.
+Wenn Sie noch keinen Connector an Ihrem Offline-Standort installiert haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Den Stecker einsetzen"^] Jetzt auf einem Linux-Host.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Prüfen Sie die Voraussetzungen für den Data Sense
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage la
 
 == Installieren Sie den BlueXP-Anschluss
 
-Wenn Sie noch keinen BlueXP Connector an Ihrem lokalen Offline-Standort installiert haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Den Stecker einsetzen"^] Auf einem Linux-Host in Ihrer Offline-Site.
+Wenn Sie noch keinen BlueXP Connector an Ihrem lokalen Offline-Standort installiert haben, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Den Stecker einsetzen"^] Auf einem Linux-Host in Ihrer Offline-Site.
 
 
 
@@ -93,13 +95,15 @@ Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betrie
 | Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
 
 
-| Groß | 16 CPUs | 64 GB RAM | 500-GB-SSD auf / oder * 100 GB verfügbar auf /opt * 395 GB verfügbar auf /var * 5 GB auf /tmp 
+ a| 
+*Groß*
+| 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder * 100 gib verfügbar auf /opt * 395 gib verfügbar auf /var * 5 gib auf /tmp 
 
 
-| Mittel | 8 CPUs | 32 GB RAM | 200-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 145 GB verfügbar auf /var * 5 GB auf /tmp 
+| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 145 gib verfügbar auf /var - 5 gib auf /tmp 
 
 
-| Klein | 8 CPUs | 16 GB RAM | 100-GB-SSD auf / oder * 50 GB verfügbar auf /opt * 45 GB verfügbar auf /var * 5 GB auf /tmp 
+| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 45 gib verfügbar auf /var - 5 gib auf /tmp 
 |===
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
@@ -122,12 +126,9 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 ....
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-service=mysql
 firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=555/tcp
-firewall-cmd --permanent --add-port=3306/tcp
 firewall-cmd --reload
 ....
 +
@@ -400,8 +401,8 @@ Das können Sie auch link:task-licensing-datasense.html#use-a-cloud-data-sense-b
 Da die Software Data Sense regelmäßig mit neuen Funktionen aktualisiert wird, sollten Sie sich regelmäßig auf eine neue Version verlassen, um sicherzustellen, dass Sie die neueste Software und Funktionen verwenden. Sie müssen die Software Data Sense manuell aktualisieren, da keine Internetverbindung vorhanden ist, um das Upgrade automatisch durchzuführen.
 
 .Bevor Sie beginnen
-* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn beispielsweise Version 1.18.x installiert ist, können Sie nur auf 1.19.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
-* Stellen Sie sicher, dass Ihre On-Prem Connector-Software auf die neueste verfügbare Version aktualisiert wurde. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Siehe die Schritte zur Aktualisierung des Connectors"^].
+* Die Software Data Sense kann jeweils eine Hauptversion aktualisiert werden. Wenn Sie beispielsweise Version 1.20.x installiert haben, können Sie nur auf 1.21.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
+* Stellen Sie sicher, dass Ihre On-Prem Connector-Software auf die neueste verfügbare Version aktualisiert wurde. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["Siehe die Schritte zur Aktualisierung des Connectors"^].
 
 
 .Schritte

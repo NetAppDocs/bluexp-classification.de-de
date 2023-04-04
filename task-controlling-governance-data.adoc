@@ -151,33 +151,88 @@ Siehe link:task-org-private-data.html#categorizing-your-data-using-aip-labels["A
 
 
 
-=== Datenzuordnungsbericht
+== Datenzuordnungsbericht
 
-Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst einen Übersichtsbericht, der alle Arbeitsumgebungen und Datenquellen zusammenfasst und dann eine Aufschlüsselung der einzelnen Arbeitsumgebungen enthält.
+Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und enthält dann eine Aufschlüsselung für jede Arbeitsumgebung.
 
 Der Bericht enthält die folgenden Informationen:
 
-Nutzung Von Kapazitäten:: Für alle Arbeitsumgebungen: Listet die Anzahl der Dateien und die genutzte Kapazität für jede Arbeitsumgebung. Für einzelne Arbeitsumgebungen: Listet die Dateien auf, die die größte Kapazität nutzen.
-Alter der Daten:: Bietet drei Diagramme und Diagramme für den Zeitpunkt, an dem Dateien erstellt, zuletzt geändert oder zuletzt aufgerufen wurden. Listet die Anzahl der Dateien und deren verwendete Kapazität auf der Grundlage bestimmter Datumsbereiche auf.
-Größe von Daten:: Führt die Anzahl der Dateien auf, die in bestimmten Größenbereichen in Ihren Arbeitsumgebungen vorhanden sind.
-Dateitypen:: Listet die Gesamtzahl der Dateien und die genutzte Kapazität für jeden Dateityp auf, der in Ihren Arbeitsumgebungen gespeichert ist.
+[cols="25,65"]
+|===
+| Kategorie | Beschreibung 
 
 
+| Nutzung Von Kapazitäten | Für alle Arbeitsumgebungen: Listet die Anzahl der Dateien und die genutzte Kapazität für jede Arbeitsumgebung. Für einzelne Arbeitsumgebungen: Listet die Dateien auf, die die größte Kapazität nutzen. 
 
 
-==== Datenzuordnungsbericht wird erstellt
+| Alter der Daten | Bietet drei Diagramme und Diagramme für den Zeitpunkt, an dem Dateien erstellt, zuletzt geändert oder zuletzt aufgerufen wurden. Listet die Anzahl der Dateien und deren verwendete Kapazität auf der Grundlage bestimmter Datumsbereiche auf. 
 
-Rufen Sie die Registerkarte „Data Sense“ auf, um den Bericht zu erstellen.
+
+| Größe von Daten | Führt die Anzahl der Dateien auf, die in bestimmten Größenbereichen in Ihren Arbeitsumgebungen vorhanden sind. 
+
+
+| Dateitypen | Listet die Gesamtzahl der Dateien und die genutzte Kapazität für jeden Dateityp auf, der in Ihren Arbeitsumgebungen gespeichert ist. 
+|===
+
+
+=== Datenzuordnungsbericht wird erstellt
+
+Sie generieren diesen Bericht über die Registerkarte Governance in Data Sense.
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Governance*, und klicken Sie dann im Governance Dashboard auf die Schaltfläche *Bericht zur Übersicht über die vollständige Datenzuordnung*.
+. Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Mapping Report*.
 +
 image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird."]
 
 
 
 .Ergebnis
-Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+
+Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.
+
+
+
+== Data Discovery Assessment-Bericht
+
+Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:
+
+[cols="25,65"]
+|===
+| Merkmal | Beschreibung 
+
+
+| Bedenken hinsichtlich der Daten-Governance | Ein detaillierter Überblick über alle Daten, die Sie besitzen, und Bereiche, in denen Sie die Datenmenge möglicherweise reduzieren und Kosten einsparen können. 
+
+
+| Risiken im Hinblick auf die Datensicherheit | Bereiche, in denen Daten aufgrund umfassender Zugriffsberechtigungen für interne oder externe Angriffe verfügbar sind. 
+
+
+| Lücken in der Daten-Compliance | Ihre personenbezogenen oder sensiblen personenbezogenen Daten sind sowohl aus Sicherheitsgründen als auch für DSLR-Zwecke (Zugriffsanfragen von Betroffenen) gespeichert. 
+|===
+Nach der Bewertung enthält dieser Bericht Bereiche, in denen Sie:
+
+* Senkung der Storage-Kosten durch Ändern der Aufbewahrungsrichtlinie oder durch Verschieben oder Löschen bestimmter Daten (veraltete, doppelte oder nicht geschäftsfremde Daten)
+* Schützen Sie Ihre berechtigen Daten durch eine Überarbeitung der globalen Richtlinien für das Gruppenmanagement
+* Schützen Sie Ihre persönlichen oder sensiblen Daten, indem Sie personenbezogene Daten in sicherere Datenspeicher verlagern
+
+
+
+
+=== Generieren des Data Discovery Assessment-Berichts
+
+Sie generieren diesen Bericht über die Registerkarte Governance in Data Sense.
+
+.Schritte
+. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
+. Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Discovery Assessment Report*.
++
+image:screenshot_compliance_data_discovery_report_button.png["Ein Screenshot des Governance Dashboards zeigt, wie der Data Discovery Assessment Report gestartet wird."]
+
+
+
+.Ergebnis
+Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
 Sie können den Firmennamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der Seite „Data Sense“ anpassen, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.

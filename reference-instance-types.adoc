@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: data sense, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt. Bei der Implementierung von Data Sense in der Cloud sollten Sie ein System mit den „großen“ Merkmalen verwenden, um den vollen Funktionsumfang zu erhalten. 
+---
+= Unterstützte Data Sense Instanztypen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt. Bei der Implementierung von Data Sense in der Cloud sollten Sie ein System mit den „großen“ Merkmalen verwenden, um den vollen Funktionsumfang zu erhalten.
+
+Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereitstellen, aber es gibt einige Einschränkungen beim Einsatz dieser weniger leistungsstarken Systeme. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Informieren Sie sich über diese Einschränkungen"^].
+
+Wenn das als „Standard“ markierte System in der Region, in der Data Sense installiert wird, in den folgenden Tabellen nicht verfügbar ist, wird das nächste System in der Tabelle bereitgestellt.
+
+
+
+== AWS-Instanztypen
+
+[cols="20,30,25"]
+|===
+| Systemgröße | Spezifikationen | Instanztyp 
+
+
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge"^] (Standard) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| Mittel | 8 CPUs, 32 GB RAM, 200 gib SSD | https://aws.amazon.com/ec2/instance-types/m6i/["M6i.2xlarge"^] (Standard) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] (Standard) c5a.2xlarge c5.2xlarge c4.2xlarge 
+|===
+
+
+== Azure Instanztypen
+
+[cols="20,30,25"]
+|===
+| Systemgröße | Spezifikationen | Instanztyp 
+
+
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (Standard) 
+|===
+
+
+== GCP-Instanztypen
+
+[cols="20,30,25"]
+|===
+| Systemgröße | Spezifikationen | Instanztyp 
+
+
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^] (Standard) n2d-Standard-16 n1-Standard-16 
+|===

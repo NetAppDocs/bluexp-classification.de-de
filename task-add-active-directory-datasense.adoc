@@ -39,9 +39,11 @@ Eine Active Directory-Integration mit Cloud Data Sense kann Daten aus den folgen
 * Azure NetApp Dateien
 * FSX für ONTAP
 * CIFS-File-Shares von anderen Anbietern (keine NFS-File-Shares)
+* OneDrive Accounts
+* SharePoint Konten
 
 
-Die Identifizierung von Benutzer- und Berechtigungsinformationen aus Datenbankschemas, OneDrive-Konten, SharePoint-Konten, Google-Drive-Konten, Amazon S3-Konten, Oder Objekt-Storage, der das Simple Storage Service (S3)-Protokoll nutzt.
+Es wird keine Unterstützung für das Identifizieren von Benutzer- und Berechtigungsinformationen aus Datenbankschemas, Google Drive-Konten, Amazon S3-Konten oder Objekt-Storage mit dem S3-Protokoll (Simple Storage Service) angeboten.
 
 
 

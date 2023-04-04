@@ -138,3 +138,5 @@ image:screenshot_compliance_select_schemas.png["Ein Screenshot der Seite Scankon
 
 .Ergebnis
 Cloud Data Sense beginnt mit dem Scannen des von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
+
+Beachten Sie, dass Data Sense Ihre Datenbanken einmal täglich scannt – Datenbanken werden nicht wie andere Datenquellen kontinuierlich gescannt.

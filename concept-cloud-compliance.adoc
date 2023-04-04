@@ -154,15 +154,10 @@ image:diagram_cloud_compliance_instance.png["Ein Diagramm mit einer BlueXP-Insta
 
 Beachten Sie Folgendes über die Standardinstanz:
 
-* In AWS läuft Cloud Data Sense auf einem link:https://aws.amazon.com/ec2/instance-types/m5/["M5.4xlarge-Instanz"^] Mit einer 500-GB-GP2-Festplatte. Das Betriebssystem-Image ist Amazon Linux 2 (Red hat 7.3.1).
-+
-In Regionen, in denen m5.4xlarge nicht verfügbar ist, läuft Data Sense stattdessen auf einer m4.4xlarge-Instanz.
-
-* In Azure wird Cloud Data Sense ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Mit einer 512-GB-Festplatte. Das Betriebssystem-Image ist CentOS 7.8.
-* In GCP wird Cloud Data Sense ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten 512-GB-Standardfestplatte. Das Betriebssystem-Image ist CentOS 7.9.
-+
-In Regionen, in denen n2-Standard-16 nicht verfügbar ist, wird Data Sense stattdessen auf einer n2d-Standard-16- oder n1-Standard-16-VM ausgeführt.
-
+* In AWS läuft Cloud Data Sense auf einem https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2.
+* In Azure wird Cloud Data Sense ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Auf einer Festplatte mit 500 gib. Das Betriebssystem-Image ist CentOS 7.9.
+* In GCP wird Cloud Data Sense ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten Festplatte mit 500 gib Standard. Das Betriebssystem-Image ist CentOS 7.9.
+* In Regionen, in denen die Standardinstanz nicht verfügbar ist, wird Data Sense auf einer alternativen Instanz ausgeführt. link:reference-instance-types.html["Sehen Sie sich die alternativen Instanztypen an"].
 * Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Pro Connector wird nur eine Datensense-Instanz bereitgestellt.
 
@@ -183,15 +178,15 @@ Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereits
 | Systemgröße | Spezifikationen | Einschränkungen 
 
 
-| Groß (Standard) | 16 CPUS, 64 GB RAM, 500 GB SSD | Keine 
+| Groß (Standard) | 16 CPUs, 64 GB RAM, 500 gib SSD | Keine 
 
 
-| Mittel | 8 CPUS, 32 GB RAM, 200 GB SSD | Langsamer Scan und kann nur bis zu 1 Million Dateien scannen. 
+| Mittel | 8 CPUs, 32 GB RAM, 200 gib SSD | Langsamer Scan und kann nur bis zu 1 Million Dateien scannen. 
 
 
-| Klein | 8 CPUS, 16 GB RAM, 100 GB SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
+| Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
 |===
-Wenn Sie Data Sense in der Cloud implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Hilfe zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.
+Bei der Implementierung von Data Sense in der Cloud auf AWS können Sie sich für eine große/mittelgroße/kleine Instanz entscheiden. Wenn Sie Data Sense in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.
 
 Verwenden Sie bei der Implementierung von Data Sense vor Ort einfach einen Linux-Host mit den kleineren Spezifikationen. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.
 
