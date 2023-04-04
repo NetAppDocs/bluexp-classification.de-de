@@ -26,7 +26,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Einen Konnektor erstellen
 [role="quick-margin-para"]
-Wenn Sie noch keinen Konnektor haben, erstellen Sie jetzt einen Konnektor. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Erstellen eines Konnektors in GCP"^].
+Wenn Sie noch keinen Konnektor haben, erstellen Sie jetzt einen Konnektor. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
 
 [role="quick-margin-para"]
 Das können Sie auch https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud.
@@ -47,7 +47,7 @@ Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage la
 
 == Einen Konnektor erstellen
 
-Falls Sie noch keinen Connector haben, erstellen Sie bei Ihrem Cloud-Provider einen Connector. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Erstellen eines Konnektors in AWS"^] Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Erstellen eines Konnektors in GCP"^]. In den meisten Fällen werden Sie wahrscheinlich einen Connector eingerichtet haben, bevor Sie versuchen, Cloud Data Sense zu aktivieren, weil die meisten https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
+Falls Sie noch keinen Connector haben, erstellen Sie bei Ihrem Cloud-Provider einen Connector. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^] Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^]. In den meisten Fällen werden Sie wahrscheinlich einen Connector eingerichtet haben, bevor Sie versuchen, Cloud Data Sense zu aktivieren, weil die meisten https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
 
 Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der bei einem bestimmten Cloud-Provider implementiert wird:
 
@@ -62,7 +62,7 @@ Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der be
 
 On-Prem-ONTAP-Systeme, File Shares anderer Anbieter, generischer S3-Objekt-Storage, Datenbanken, OneDrive-Ordner, SharePoint-Konten und Google Drive-Konten können bei der Verwendung eines dieser Cloud-Connectors gescannt werden.
 
-Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
 
 Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
 
@@ -192,7 +192,7 @@ Hinweis: Sie können Data Sense auf einer Instanz in AWS-Cloud-Umgebungen mit we
 
 Führen Sie diese Schritte aus, um eine Instanz von Cloud Data Sense in der Cloud zu implementieren. Connector implementiert die Instanz in der Cloud und installiert dann die Data Sense Software auf dieser Instanz.
 
-Zu beachten ist, dass Sie bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen können. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"].
+Zu beachten ist, dass Sie bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen können. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"]. In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird Data Sense auf einem ausgeführt link:reference-instance-types.html["Alternativer Instanztyp"].
 
 [role="tabbed-block"]
 ====

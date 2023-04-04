@@ -40,12 +40,6 @@ Wenn Sie unabhängig vom Ausführen der Data Sense-Installation prüfen möchten
 
 
 
-=== Data Sense BYOL-Lizenzen werden nun in Dark Sites unterstützt
-
-Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet hochladen, da Sie über eine Dark Site informiert werden, sobald Ihre Lizenz nicht mehr verfügbar ist. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["Hier erfahren Sie, wie Sie Ihre Data Sense BYOL-Lizenz erwerben und hochladen"].
-
-
-
 == 7. März 2023 (Version 1.21)
 
 
