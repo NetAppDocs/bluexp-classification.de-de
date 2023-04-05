@@ -59,14 +59,11 @@ Prüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass Sie Cloud Da
 
 Implementieren Sie Cloud-Daten sinnvoll, wenn noch keine Instanz implementiert ist.
 
-* Für SharePoint Online kann Data Sense verwendet werden link:task-deploy-cloud-compliance.html["In der Cloud implementiert"^] Oder link:task-deploy-compliance-onprem.html["An einem lokalen Standort mit Internetzugang installiert"^].
-+
-Auch der Datensinn kann sein link:task-deploy-compliance-dark-site.html["Die Implementierung erfolgt an einem lokalen Standort ohne Internetzugang"^]. Sie müssen jedoch einige ausgewählte Endpunkte im Internet öffnen, um Ihre SharePoint Online-Dateien zu scannen. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Hier finden Sie die Liste der erforderlichen Endpunkte"].
-
+* Für SharePoint Online kann Data Sense verwendet werden link:task-deploy-cloud-compliance.html["In der Cloud implementiert"^].
 * Für SharePoint On-Premises-Systeme kann Data Sense installiert werden link:task-deploy-compliance-onprem.html["In einer Anlage mit Internetzugang"^] Oder link:task-deploy-compliance-dark-site.html["In einem Hotel, das keinen Internetzugang hat"^].
 
 
-Wenn Data Sense auf einer Website ohne Internetzugang installiert wird, muss der BlueXP Connector auch ohne Internetzugang auf derselben Website installiert sein. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Weitere Informationen ."^].
+Wenn Data Sense auf einer Website ohne Internetzugang installiert wird, muss der BlueXP Connector auch ohne Internetzugang auf derselben Website installiert sein. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Weitere Informationen ."^].
 
 Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 

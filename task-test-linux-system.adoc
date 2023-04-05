@@ -24,7 +24,7 @@ Es gibt auch ein Voraussetzungstest-Skript, das Teil des Data Sense Installation
 
 Sie führen die folgenden Aufgaben aus.
 
-. Optional Installieren Sie einen BlueXP Connector, falls noch keiner installiert ist. Sie können das Testskript ohne Installation eines Connectors ausführen, aber das Skript prüft die Verbindung zwischen dem Connector und dem Data Sense Host-Rechner. Es wird daher empfohlen, einen Connector zu verwenden.
+. Optional können Sie einen BlueXP Connector installieren, wenn noch keiner installiert ist. Sie können das Testskript ohne Installation eines Connectors ausführen, aber das Skript prüft die Verbindung zwischen dem Connector und dem Data Sense Host-Rechner. Es wird daher empfohlen, einen Connector zu verwenden.
 . Bereiten Sie den Host-Rechner vor und überprüfen Sie, ob er alle Anforderungen erfüllt.
 . Aktivieren Sie den ausgehenden Internetzugang über den Data Sense-Hostcomputer.
 . Vergewissern Sie sich, dass alle erforderlichen Ports auf allen Systemen aktiviert sind.
@@ -175,21 +175,23 @@ Führen Sie die folgenden Schritte aus, um das Skript Data Sense Voraussetzungen
 
 
 .Schritte
-. Laden Sie das Skript für Data Sense Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Test_Datasense_Prerequisites_<version>*.
+. Laden Sie das Skript für Data Sense Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Standalone-pre-requisite-Tester-<version>*.
 . Kopieren Sie die Datei auf den Linux-Host, den Sie verwenden möchten (mit `scp` Oder eine andere Methode).
 . Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
 +
 [source, cli]
 ----
-chmod +x test_datasense_prerequisites_1_0
+chmod +x standalone-pre-requisite-tester-v1.21.0
 ----
 . Führen Sie das Skript mit dem folgenden Befehl aus.
 +
-./Test_Data_Prerequisites_1_0 &#8592;-darksite>
 [source, cli]
 ----
-Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+ ./standalone-pre-requisite-tester-v1.21.0 <--darksite>
 ----
++
+Fügen Sie die Option "--darksite" nur hinzu, wenn Sie das Skript auf einem Host ausführen, der keinen Internetzugang hat. Bestimmte Voraussetzungstests werden übersprungen, wenn der Host nicht mit dem Internet verbunden ist.
+
 . Das Skript fordert Sie zur Eingabe der IP-Adresse des Data Sense Host-Computers auf.
 +
 ** Geben Sie die IP-Adresse oder den Hostnamen ein.
@@ -201,7 +203,7 @@ Add the option "--darksite" only if you are running the script on a host that do
 ** Geben Sie *Y* ein, wenn Sie einen Connector installiert haben. Geben Sie dann die IP-Adresse oder den Hostnamen des BlueXP Connector ein, damit das Testskript diese Konnektivität testen kann.
 
 
-. Das Skript führt eine Vielzahl von Tests auf dem System aus und zeigt die Ergebnisse im weiteren Verlauf an. Nach Abschluss der Sitzung wird ein Protokoll der Sitzung in eine Datei geschrieben.
+. Das Skript führt eine Vielzahl von Tests auf dem System aus und zeigt die Ergebnisse im weiteren Verlauf an. Nach Abschluss der Sitzung wird ein Protokoll der Sitzung in eine Datei mit dem Namen geschrieben `prerequisites-test-<timestamp>.log` Im Verzeichnis `/opt/netapp/install_logs`.
 
 
 .Ergebnis

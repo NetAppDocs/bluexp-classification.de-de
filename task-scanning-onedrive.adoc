@@ -58,8 +58,6 @@ Der Sinn für Daten kann sein link:task-deploy-cloud-compliance.html["In der Clo
 
 Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
-Auch der Datensinn kann sein link:task-deploy-compliance-dark-site.html["Die Implementierung erfolgt an einem lokalen Standort ohne Internetzugang"^]. Allerdings müssen Sie einen Internetzugang für einige ausgewählte Endpunkte zur Verfügung stellen, um Ihre lokalen OneDrive-Dateien zu scannen. link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["Hier finden Sie die Liste der erforderlichen Endpunkte"].
-
 
 
 == Hinzufügen des OneDrive Kontos
