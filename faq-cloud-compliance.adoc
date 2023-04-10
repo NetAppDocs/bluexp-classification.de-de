@@ -354,13 +354,13 @@ Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuel
 
 === Kann ich den Connector auf meinem eigenen Host bereitstellen?
 
-Ja. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie planen, Data Sense vor Ort zu implementieren, sollten Sie möglicherweise auch den Connector vor Ort installieren, dieser ist jedoch nicht erforderlich.
+Ja. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie planen, Data Sense vor Ort zu implementieren, sollten Sie möglicherweise auch den Connector vor Ort installieren, dieser ist jedoch nicht erforderlich.
 
 
 
 === Wie sieht es mit sicheren Websites ohne Internetzugang aus?
 
-Ja, das wird auch unterstützt. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Stellen Sie den Connector auf einem lokalen Linux-Host bereit, der keinen Internetzugang hat"^]. Anschließend können Sie ONTAP Cluster vor Ort und andere lokale Datenquellen erkennen und die Daten mit Data Sense durchsuchen.
+Ja, das wird auch unterstützt. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Stellen Sie den Connector auf einem lokalen Linux-Host bereit, der keinen Internetzugang hat"^]. Anschließend können Sie ONTAP Cluster vor Ort und andere lokale Datenquellen erkennen und die Daten mit Data Sense durchsuchen.
 
 
 
