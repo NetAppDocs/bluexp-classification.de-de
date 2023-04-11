@@ -34,7 +34,7 @@ Bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-U
 
 
 
-=== Eigenständiges Skript steht jetzt zur Verfügung, um zu testen, ob Ihr Linux-System für die Installation von Data Sense qualifiziert ist
+=== Eigenständiges Skript ist jetzt verfügbar, um Ihr Linux-System vor der Installation von Data Sense zu qualifizieren
 
 Wenn Sie unabhängig vom Ausführen der Data Sense-Installation prüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, können Sie ein separates Skript herunterladen, das nur die Voraussetzungen prüft. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Hier erfahren Sie, ob Ihr Linux-Host für die Installation von Data Sense bereit ist"].
 
@@ -419,27 +419,3 @@ Data Sense kann Dateien identifizieren und kategorisieren, die die Australian TF
 === Der globale Active Directory-Server kann jetzt ein LDAP-Server sein
 
 Der globale Active Directory-Server, den Sie mit Data Sense integrieren, kann jetzt zusätzlich zu dem zuvor unterstützten DNS-Server ein LDAP-Server sein. link:task-add-active-directory-datasense.html["Weitere Informationen finden Sie hier"].
-
-
-
-== 15. März 2022 (Version 1.10.0)
-
-
-
-=== Neuer Filter, um die Dateien anzuzeigen, für die ein bestimmter Benutzer oder eine Gruppe Lese- oder Schreibberechtigungen besitzt
-
-Es wurde ein neuer Filter mit dem Namen „Benutzer-/Gruppenberechtigungen“ hinzugefügt, sodass Sie die Dateien auflisten können, auf die ein bestimmter Benutzer oder eine Gruppe Lese- und/oder Schreibberechtigungen besitzt. Sie können einen oder mehrere Benutzer- und/oder Gruppennamen auswählen oder einen Teilnamen eingeben. Diese Funktion ist für Volumes auf Cloud Volumes ONTAP, On-Premises-ONTAP, Azure NetApp Files, Amazon FSX für ONTAP und File Shares verfügbar.
-
-
-
-=== Data Sense kann die Berechtigungen für Dateien in SharePoint- und OneDrive-Konten bestimmen
-
-Data Sense kann die Berechtigungen für Dateien lesen, die jetzt in OneDrive-Konten und SharePoint-Konten gescannt werden. Diese Informationen werden im Untersuchungsfenster für Dateien und im Bereich Offene Berechtigungen im Governance Dashboard angezeigt.
-
-
-
-=== Zwei weitere Arten von personenbezogenen Daten können durch Data Sense identifiziert werden
-
-* French INSEE - der INSEE-Code ist ein numerischer Code, der vom französischen National Institute for Statistics and Economic Studies (INSEE) zur Identifizierung verschiedener Entitäten verwendet wird.
-* Passwörter: Diese Informationen werden mittels Näherungsüberprüfung identifiziert, indem Sie neben einem alphanumerischen String nach Permutationen des Wortes „Passwort“ suchen. Die Anzahl der gefundenen Elemente wird unter „Persönliche Ergebnisse“ im Compliance Dashboard aufgelistet. Mit dem Filter *Persönliche Daten > Passwort* können Sie im Untersuchungsfenster nach Dateien suchen, die Passwörter enthalten.
-

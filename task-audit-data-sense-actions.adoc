@@ -54,7 +54,7 @@ Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgre
 
 Die Management-Audit-Protokolldateien befinden sich auf dem Data Sense-Computer in: `/opt/netapp/audit_logs/`
 
-Die Audit-Protokolldateien für die Installation werden in geschrieben `/ops/netapp/install_logs`
+Die Audit-Protokolldateien für die Installation werden in geschrieben `/opt/netapp/install_logs/`
 
 Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Maximal 100 Protokolldateien werden auf dem System gespeichert - alte Protokolldateien werden nach Erreichen des Maximalwerts automatisch gelöscht.
 
