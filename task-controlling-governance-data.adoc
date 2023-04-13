@@ -45,6 +45,10 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 
 
 * *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#viewing-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
++
+HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, werden alte Daten, die sich bereits im Objektspeicher befinden, möglicherweise in der Kategorie „veraltete Daten“ identifiziert.
+
+
 
 
 
@@ -117,6 +121,10 @@ Sie können den Mauszeiger über einen Punkt in den Diagrammen bewegen, um Detai
 
 * *Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.
 * *Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.
++
+HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagramm „_Age of Data“ alte Daten, die sich bereits im Objektspeicher befinden, identifiziert werden.
+
+
 
 
 

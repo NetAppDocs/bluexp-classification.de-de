@@ -34,7 +34,7 @@ link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Date
 [role="quick-margin-para"]
 Die Gruppe ist ein Container für die Dateifreigaben, die Sie scannen möchten, und er wird als Name der Arbeitsumgebung für diese Dateifreigaben verwendet.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Fügen Sie die Dateifreigaben hinzu und wählen Sie die zu scannenden Freigaben aus
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Fügen Sie die Dateifreigaben der Gruppe hinzu
 [role="quick-margin-para"]
 Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den Scantyp aus. Sie können bis zu 100 Dateifreigaben gleichzeitig hinzufügen.
 
@@ -44,7 +44,10 @@ Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den 
 
 Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine unterstützte Konfiguration verfügen, bevor Sie Cloud Data Sense aktivieren.
 
-* Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. Es handelt sich dabei um File Shares, die auf Storage-Systemen anderer Anbieter residieren.
+* Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. In den meisten Fällen handelt es sich hierbei um File Shares, die auf Storage-Systemen anderer Anbieter residieren. CIFS-Freigaben von älteren NetApp 7-Mode Storage-Systemen können jedoch als Dateifreigaben gescannt werden.
++
+Data Sense kann keine Berechtigungen oder letzten Zugriffszeiten aus 7-Mode Systemen extrahieren. Darüber hinaus gibt es ein bekanntes Problem, bei dem das Mounten von CIFS-Freigaben auf SMB Version 2 für Linux nicht unterstützt wird.
+
 * Es muss eine Netzwerkverbindung zwischen der Instanz Data Sense und den Freigaben bestehen.
 * Stellen Sie sicher, dass diese Ports für die Data Sense-Instanz offen sind:
 +

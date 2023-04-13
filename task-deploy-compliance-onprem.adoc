@@ -466,7 +466,8 @@ image:screenshot_work_env_id.png["Ein Screenshot der Arbeitsumgebung-ID von der 
 +
 image:screenshot_client_access_token.png["Ein Screenshot der Seite API-Dokumentation mit einem Link zu Authentifizierungsanweisungen."]
 
-. Befolgen Sie die Authentifizierungsanweisungen, und kopieren Sie das Token _Access_ aus der Antwort.
+. Befolgen Sie die Authentifizierungsanweisungen, indem Sie den Benutzernamen und das Passwort des Kontoadministrators in den Parametern „Benutzername“ und „Passwort“ verwenden.
+. Kopieren Sie dann das _Access-Token_ aus der Antwort.
 
 
 .Schritte

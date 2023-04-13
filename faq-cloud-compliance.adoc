@@ -194,9 +194,9 @@ Nein Die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten D
 
 === Was geschieht, wenn das Daten-Tiering auf Ihren ONTAP Volumes aktiviert ist?
 
-Vielleicht möchten Sie Cloud Data Sense auf ONTAP Systemen aktivieren, die selten genutzte Daten auf Objekt-Storage verschieben. Wenn das Daten-Tiering aktiviert ist, scannt Data Sense alle Daten - Daten, die sich auf Festplatten befinden, und kalte Daten werden auf Objekt-Storage verschoben.
+Wenn Data Sense Volumes scannt, bei denen kalte Daten in Objekt-Storage verschoben wurden, scannt es alle Daten, die auf lokalen Festplatten sind, und kalte Daten, die in Objekt-Storage verschoben werden. Dies gilt auch für Produkte, die nicht von NetApp stammen und Tiering implementieren.
 
-Der Compliance-Scan erhitzt die nicht kalten Daten – es bleibt kalt und führt zu Objekt-Storage.
+Der Scan heizt die kalten Daten nicht auf – sie bleiben kalt und verbleiben im Objekt-Storage.
 
 
 

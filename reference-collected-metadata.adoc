@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy 
+keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können. 
 ---
 = Metadaten, die aus Datenquellen erhoben werden
@@ -16,6 +16,7 @@ summary: Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassi
 [role="lead"]
 Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können.
 
+[cols="15,25,25,25"]
 |===
 |  | *Metadaten* | *CIFS* | *NFS* 
 
@@ -38,7 +39,7 @@ Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierung
 
 == Zeitstempel der letzten Zugriffszeit
 
-Wenn Data Sense Daten aus File Shares extrahiert, betrachtet das Betriebssystem sie als Zugriff auf die Daten und ändert entsprechend die „Zeit des letzten Zugriffs“. Nach dem Scannen versucht Data Sense, die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen. Wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, kann das System die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen.
+Wenn Data Sense Daten aus File Shares extrahiert, betrachtet das Betriebssystem sie als Zugriff auf die Daten und ändert entsprechend die „Zeit des letzten Zugriffs“. Nach dem Scannen versucht Data Sense, die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen. Wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, kann das System die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen. ONTAP Volumes, die mit SnapLock konfiguriert sind, haben schreibgeschützte Berechtigungen und können auch die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen.
 
 Wenn Data Sense diese Berechtigungen nicht hat, scannt das System standardmäßig diese Dateien in Ihren Volumes nicht, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen jedoch egal ist, ob die letzte Zugriffszeit in Ihren Dateien auf die ursprüngliche Zeit zurückgesetzt wird, können Sie auf den Schalter *Scan bei fehlenden Berechtigungen für "Schreibattribute"* unten auf der Konfigurationsseite klicken, so dass Data Sense die Volumes unabhängig von den Berechtigungen scannt.
 
