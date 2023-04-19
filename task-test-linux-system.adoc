@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, cloud compliance access, compliance, on-premises, linux, test linux system 
-summary: Vor der manuellen Installation von Data Sense auf einem Linux-Host können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation von Data Sense vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat. 
+keywords: cloud compliance, data sense, get started, deploy cloud BlueXP classification, cloud compliance access, compliance, on-premises, linux, test linux system 
+summary: Vor der manuellen Installation der BlueXP Klassifizierung auf einem Linux-Host können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation der BlueXP Klassifizierung vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat. 
 ---
-= Überprüfen Sie, ob Ihr Linux-Host bereit ist, Data Sense zu installieren
+= Stellen Sie sicher, dass Ihr Linux Host bereit ist, die BlueXP Klassifizierung zu installieren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Vor der manuellen Installation von Data Sense auf einem Linux-Host kön
 
 
 [role="lead"]
-Bevor Sie Data Sense manuell auf einem Linux-Host installieren, können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation von Data Sense vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat (eine „dunkle Seite“).
+Bevor Sie die BlueXP-Klassifizierung manuell auf einem Linux-Host installieren, können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation der BlueXP Klassifizierung vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat (eine „dunkle Seite“).
 
-Es gibt auch ein Voraussetzungstest-Skript, das Teil des Data Sense Installationsskripts ist. Das hier beschriebene Skript wurde speziell für Benutzer entwickelt, die den Linux-Host unabhängig vom Ausführen des Data Sense-Installationsskripts überprüfen möchten.
+Es gibt auch ein Test-Skript mit Voraussetzung, das Teil des BlueXP Klassifizierungsskripts für die Installation ist. Das hier beschriebene Skript wurde speziell für Benutzer entwickelt, die den Linux-Host unabhängig von der Ausführung des BlueXP Klassifizierungsskripts überprüfen möchten.
 
 
 
@@ -24,9 +24,9 @@ Es gibt auch ein Voraussetzungstest-Skript, das Teil des Data Sense Installation
 
 Sie führen die folgenden Aufgaben aus.
 
-. Optional können Sie einen BlueXP Connector installieren, wenn noch keiner installiert ist. Sie können das Testskript ohne Installation eines Connectors ausführen, aber das Skript prüft die Verbindung zwischen dem Connector und dem Data Sense Host-Rechner. Es wird daher empfohlen, einen Connector zu verwenden.
+. Optional können Sie einen BlueXP Connector installieren, wenn noch keiner installiert ist. Sie können das Testskript ausführen, ohne einen Connector installiert zu haben, aber das Skript überprüft die Verbindung zwischen dem Connector und der BlueXP-Klassifikationshost-Maschine - daher wird empfohlen, dass Sie einen Connector haben.
 . Bereiten Sie den Host-Rechner vor und überprüfen Sie, ob er alle Anforderungen erfüllt.
-. Aktivieren Sie den ausgehenden Internetzugang über den Data Sense-Hostcomputer.
+. Aktivieren Sie Outbound-Internetzugriff über die Host-Maschine der BlueXP Klassifizierung.
 . Vergewissern Sie sich, dass alle erforderlichen Ports auf allen Systemen aktiviert sind.
 . Laden Sie das Skript für den Voraussetzungstest herunter, und führen Sie es aus.
 
@@ -35,9 +35,9 @@ Sie führen die folgenden Aufgaben aus.
 
 == Einen Konnektor erstellen
 
-Bevor Sie Data Sense installieren und verwenden können, ist ein BlueXP Connector erforderlich. Sie können jedoch das Skript Voraussetzungen ohne Connector ausführen.
+Ein BlueXP Connector ist erforderlich, bevor Sie die BlueXP Klassifizierung installieren und verwenden können. Sie können jedoch das Skript Voraussetzungen ohne Connector ausführen.
 
-Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 
 Informationen zum Erstellen eines Connectors in der Umgebung Ihres Cloud-Providers finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
 
@@ -47,12 +47,12 @@ Sie benötigen die IP-Adresse oder den Hostnamen des Connector-Systems, wenn Sie
 
 == Host-Anforderungen prüfen
 
-Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Softwareanforderungen usw. erfüllt.
+Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Software-Anforderungen usw. erfüllt.
 
-* Data Sense wird auf einem Host, der für andere Anwendungen freigegeben ist, nicht unterstützt - der Host muss ein dedizierter Host sein.
+* Die BlueXP Klassifizierung wird auf einem Host, der mit anderen Applikationen gemeinsam genutzt wird, nicht unterstützt – der Host muss ein dedizierter Host sein.
 
 
-* Beim Erstellen des Host-Systems vor Ort können Sie zwischen drei Systemgrößen wählen – je nach Größe des Datensatzes, den Sie in Data Sense scannen möchten.
+* Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.
 +
 [cols="18,18,26,30"]
 |===
@@ -70,28 +70,29 @@ Data Sense Software muss auf einem Host ausgeführt werden, der bestimmte Betrie
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
-* Bei der Bereitstellung einer Cloud-Instanz für Ihre Data Sense Installation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
+* Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +
 ** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
 ** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
 ** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
 
 
-* *Betriebssystem*: Red hat Enterprise Linux oder CentOS Versionen 8.0 bis 8.7
+* *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
 +
-** CentOS Stream 8 wird ebenfalls unterstützt
+** Red hat Enterprise Linux Versionen 8.0 bis 8.7
+** CentOS-Versionen 8.0 bis 8.7
+** CentOS Stream 8
 ** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
-** Das Betriebssystem muss in der Lage sein, die Docker-Engine zu installieren
 
 
-* *Red hat Subscription Management*: Ein Red hat Enterprise Linux System muss mit Red hat Subscription Management registriert werden. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositories zugreifen, um die erforderliche Software von Drittanbietern zu aktualisieren.
-* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie Data Sense installieren:
+* *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 +
 ** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
 ** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
-* *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie Data Sense installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit Data Sense kompatibel ist:
+* *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -102,7 +103,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-Wenn Sie planen, zusätzliche Data Sense-Hosts als Scanner-Nodes zu verwenden (in einem verteilten Modell), fügen Sie diese Regeln zu diesem Zeitpunkt Ihrem primären System hinzu:
+Wenn Sie planen, zusätzliche BlueXP Klassifizierungs-Hosts als Scanner-Nodes (in einem verteilten Modell) zu verwenden, fügen Sie derzeit diese Regeln Ihrem Primärsystem hinzu:
 
 +
 ....
@@ -112,15 +113,15 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Wenn Sie aktivieren `firewalld` Nach der Installation von Data Sense müssen Sie den Docker neu starten.
+Wenn Sie aktivieren `firewalld` Nach der Installation der BlueXP Klassifizierung müssen Sie Docker neu starten.
 
 
 
 
 
-== Aktivieren Sie ausgehenden Internetzugang über Data Sense
+== Ermöglichen Sie Outbound-Internetzugriff aus der BlueXP Klassifizierung
 
-Für Data Sense ist Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxyserver für den Internetzugriff verwendet, stellen Sie sicher, dass die Datensense-Instanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren.
+Für die BlueXP Klassifizierung ist Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxy-Server für den Internetzugang verwendet, stellen Sie sicher, dass die BlueXP Klassifizierungsinstanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren.
 
 TIPP:: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetverbindung installiert sind, nicht erforderlich.
 
@@ -148,14 +149,14 @@ TIPP:: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetver
 
 == Vergewissern Sie sich, dass alle erforderlichen Ports aktiviert sind
 
-Sie müssen sicherstellen, dass alle erforderlichen Ports für die Kommunikation zwischen Connector, Data Sense, Active Directory und Ihren Datenquellen offen sind.
+Sie müssen sicherstellen, dass alle erforderlichen Ports für die Kommunikation zwischen Connector, BlueXP Klassifizierung, Active Directory und Ihren Datenquellen offen sind.
 
 [cols="25,25,50"]
 |===
 | Verbindungstyp | Ports | Beschreibung 
 
 
-| Connector <> Data Sense | 8080 (TCP), 443 (TCP) und 80 | Die Firewall- oder Routing-Regeln für den Connector müssen ein- und ausgehenden Datenverkehr über Port 443 zu und aus der Instanz Data Sense ermöglichen. Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können. 
+| Connector <> BlueXP Klassifizierung | 8080 (TCP), 443 (TCP) und 80 | Die Firewall- oder Routing-Regeln für den Connector müssen ein- und ausgehenden Datenverkehr über Port 443 zur und von der BlueXP Klassifizierungsinstanz ermöglichen. Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können. 
 
 
 | Connector <> ONTAP-Cluster (NAS) | 443 (TCP)  a| 
@@ -164,9 +165,9 @@ BlueXP erkennt ONTAP-Cluster mithilfe von HTTPS. Wenn Sie benutzerdefinierte Fir
 |===
 
 
-== Führen Sie das Skript Data Sense Voraussetzungen aus
+== Führen Sie das Skript für die Klassifizierungsvoraussetzungen von BlueXP aus
 
-Führen Sie die folgenden Schritte aus, um das Skript Data Sense Voraussetzungen auszuführen.
+Führen Sie diese Schritte aus, um das Skript für die Voraussetzungen der BlueXP Klassifizierung auszuführen.
 
 .Was Sie benötigen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Host-Anforderungen prüfen,Host-Anforderungen erfüllt>>.
@@ -175,7 +176,7 @@ Führen Sie die folgenden Schritte aus, um das Skript Data Sense Voraussetzungen
 
 
 .Schritte
-. Laden Sie das Skript für Data Sense Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Standalone-pre-requisite-Tester-<version>*.
+. Laden Sie das Skript für die BlueXP Klassifizierungs-Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Standalone-pre-requisite-Tester-<version>*.
 . Kopieren Sie die Datei auf den Linux-Host, den Sie verwenden möchten (mit `scp` Oder eine andere Methode).
 . Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
 +
@@ -192,7 +193,7 @@ chmod +x standalone-pre-requisite-tester-v1.21.0
 +
 Fügen Sie die Option "--darksite" nur hinzu, wenn Sie das Skript auf einem Host ausführen, der keinen Internetzugang hat. Bestimmte Voraussetzungstests werden übersprungen, wenn der Host nicht mit dem Internet verbunden ist.
 
-. Das Skript fordert Sie zur Eingabe der IP-Adresse des Data Sense Host-Computers auf.
+. Das Skript fordert Sie zur Eingabe der IP-Adresse der BlueXP Klassifizierungs-Host-Maschine auf.
 +
 ** Geben Sie die IP-Adresse oder den Hostnamen ein.
 
@@ -207,8 +208,8 @@ Fügen Sie die Option "--darksite" nur hinzu, wenn Sie das Skript auf einem Host
 
 
 .Ergebnis
-Wenn alle Prerequisites Tests erfolgreich durchgeführt wurden, können Sie Data Sense auf dem Host installieren, wenn Sie bereit sind.
+Wenn alle Voraussetzungstests erfolgreich durchgeführt wurden, können Sie die BlueXP Klassifizierung auf dem Host installieren, wenn Sie bereit sind.
 
-Wenn Probleme entdeckt wurden, werden sie als „empfohlen“ oder „erforderlich“ kategorisiert, um behoben zu werden. Empfohlene Probleme sind in der Regel Elemente, die das Scannen und Kategorisieren von Data Sense verlangsamen würden. Diese Elemente müssen nicht korrigiert werden - aber Sie können sie ansprechen.
+Wenn Probleme entdeckt wurden, werden sie als „empfohlen“ oder „erforderlich“ kategorisiert, um behoben zu werden. Empfohlene Probleme sind in der Regel Elemente, die das Scannen und Kategorisieren von BlueXP verlangsamen würden. Diese Elemente müssen nicht korrigiert werden - aber Sie können sie ansprechen.
 
 Wenn Sie „erforderliche“ Probleme haben, sollten Sie die Probleme beheben und das Testskript „Voraussetzungen“ erneut ausführen.

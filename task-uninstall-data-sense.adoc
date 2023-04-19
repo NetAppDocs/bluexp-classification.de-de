@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-uninstall-data-sense.html 
 keywords: remove, delete, stop, stop scans, stop scanning, cloud data sense, delete cloud data sense, terminate, deactivate, data sense 
-summary: Sie können die Software Data Sense deinstallieren, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Durch das Löschen der Instanz werden auch die zugeordneten Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die der Sinn für Daten gescannt hat, werden dauerhaft gelöscht. 
+summary: Sie können die BlueXP Klassifizierungssoftware deinstallieren, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Wenn Sie die Instanz löschen, werden auch die zugehörigen Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die die BlueXP Klassifizierung gescannt hat, werden dauerhaft gelöscht. 
 ---
-= Deinstallieren Von Cloud Data Sense
+= BlueXP Klassifizierung wird deinstalliert
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,34 +14,34 @@ summary: Sie können die Software Data Sense deinstallieren, um Probleme zu behe
 
 
 [role="lead"]
-Sie können die Software Data Sense deinstallieren, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Durch das Löschen der Instanz werden auch die zugeordneten Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die der Sinn für Daten gescannt hat, werden dauerhaft gelöscht.
+Sie können die BlueXP Klassifizierungssoftware deinstallieren, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Wenn Sie die Instanz löschen, werden auch die zugehörigen Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die die BlueXP Klassifizierung gescannt hat, werden dauerhaft gelöscht.
 
-Die erforderlichen Schritte hängen davon ab, ob Daten Sense in der Cloud oder auf einem lokalen Host implementiert wurde.
+Die erforderlichen Schritte hängen davon ab, ob Sie die BlueXP Klassifizierung in der Cloud oder auf einem lokalen Host implementiert haben.
 
 
 
-== Deinstallieren Sie Data Sense aus einer Cloud-Implementierung
+== Deinstallieren der BlueXP Klassifizierung aus einer Cloud-Implementierung
 
-Sie können die Cloud Data Sense Instanz beim Cloud Provider deinstallieren und löschen, wenn Sie Data Sense nicht mehr verwenden möchten.
+Wenn Sie die BlueXP Klassifizierungsinstanz nicht mehr verwenden möchten, können Sie die BlueXP Klassifizierungsinstanz deinstallieren oder vom Cloud-Provider löschen.
 
-. Klicken Sie oben auf der Seite Data Sense auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und klicken Sie dann auf *Data Sense deinstallieren*.
+. Klicken Sie oben auf der BlueXP Klassifizierungsseite auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und klicken Sie dann auf *Data Sense deinstallieren*.
 +
-image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche, um die Software Data Sense zu deinstallieren."]
+image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche zum Deinstallieren der BlueXP Klassifizierungssoftware"]
 
 . Geben Sie im Dialogfeld _Uninstall Data Sense_ *uninstall* ein, um zu bestätigen, dass Sie die Instanz und alle zugehörigen Daten löschen möchten, und klicken Sie dann auf *Uninstall*.
 
 
-Beachten Sie, dass Sie die Konsole Ihres Cloud-Providers aufrufen und von dort aus die Instanz Cloud Data Sense löschen können. Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+Beachten Sie, dass Sie die BlueXP Klassifizierungsinstanz von Ihrem Cloud-Provider löschen können. Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 
 
 
-== Deinstallieren Sie Data Sense aus einer lokalen Implementierung
+== Deinstallieren der BlueXP Klassifizierung aus einer lokalen Implementierung
 
-Sie können Data Sense von einem Host deinstallieren, wenn Sie Data Sense nicht mehr verwenden möchten oder wenn ein Problem auftritt, das eine Neuinstallation erfordert.
+Sie können die BlueXP Klassifizierung von einem Host deinstallieren, wenn Sie nicht mehr die BlueXP Klassifizierung verwenden möchten oder wenn ein Problem aufgetreten ist, das eine Neuinstallation erfordert.
 
-. Klicken Sie oben auf der Seite Data Sense auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und klicken Sie dann auf *Data Sense deinstallieren*.
+. Klicken Sie oben auf der BlueXP Klassifizierungsseite auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und klicken Sie dann auf *Data Sense deinstallieren*.
 +
-image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche, um die Software Data Sense zu deinstallieren."]
+image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche zum Deinstallieren der BlueXP Klassifizierungssoftware"]
 
 . Geben Sie im Dialogfeld _Uninstall Data Sense_ die Option *uninstall* ein, um zu bestätigen, dass Sie alle Konfigurationsinformationen löschen möchten, und klicken Sie dann auf *Uninstall*.
 . Um die Deinstallation vom Host abzuschließen, führen Sie das Deinstallationsskript auf dem Hostcomputer aus, zum Beispiel:

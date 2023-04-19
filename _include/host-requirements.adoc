@@ -1,0 +1,48 @@
+= 
+:allow-uri-read: 
+
+
+* Die BlueXP Klassifizierung wird auf einem Host, der mit anderen Applikationen gemeinsam genutzt wird, nicht unterstützt – der Host muss ein dedizierter Host sein.
+
+
+* Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.
++
+[cols="18,18,26,30"]
+|===
+| Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
+
+
+| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder - 100 gib verfügbar auf /opt - 395 gib verfügbar auf /var - 5 gib auf /tmp 
+
+
+| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 145 gib verfügbar auf /var - 5 gib auf /tmp 
+
+
+| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 45 gib verfügbar auf /var - 5 gib auf /tmp 
+|===
++
+Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+
+* Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
++
+** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
+** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
+** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
+
+
+* *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
++
+** Red hat Enterprise Linux Versionen 8.0 bis 8.7
+** CentOS-Versionen 8.0 bis 8.7
+** CentOS Stream 8
+** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
+
+
+* *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
++
+** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
+** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
+
+
+

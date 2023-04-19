@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-highlights.html 
 keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
-summary: Cloud Data Sense bietet viele Möglichkeiten für das Management von privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten. 
+summary: Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten für das Management Ihrer privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten. 
 ---
 = Management privater Daten
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: Cloud Data Sense bietet viele Möglichkeiten für das Management von pr
 
 
 [role="lead"]
-Cloud Data Sense bietet viele Möglichkeiten für das Management von privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten.
+Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten für das Management Ihrer privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten.
 
 * Sie können Dateien in eine Ziel-NFS-Freigabe kopieren, wenn Sie eine Kopie bestimmter Daten erstellen und sie an einen anderen NFS-Speicherort verschieben möchten.
 * Sie können ein ONTAP Volume auf einem neuen Volume klonen und dabei nur ausgewählte Dateien aus dem Quell-Volume im neuen geklonten Volume eingeschlossen. Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten.
 * Sie können Dateien aus einem Quell-Repository in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren und synchronisieren. Dies ist nützlich in Situationen, in denen Sie Daten von einem Quellsystem zu einem anderen migrieren, während noch einige letzte Aktivitäten in den Quelldateien vorliegen.
-* Sie können Quelldateien verschieben, die Data Sense auf jede NFS-Freigabe scannt.
+* Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben.
 * Sie können Dateien löschen, die als unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder die Sie als Duplikat identifiziert haben.
 
 
@@ -34,7 +34,7 @@ Cloud Data Sense bietet viele Möglichkeiten für das Management von privaten Da
 
 == Quelldateien werden kopiert
 
-Sie können alle Quelldateien kopieren, die von Data Sense gescannt werden. Es gibt drei Arten von Kopiervorgängen, je nachdem, was Sie erreichen möchten:
+Sie können beliebige Quelldateien kopieren, die von der BlueXP Klassifizierung gescannt werden. Es gibt drei Arten von Kopiervorgängen, je nachdem, was Sie erreichen möchten:
 
 * *Kopieren Sie Dateien* aus den gleichen oder anderen Volumes oder Datenquellen in eine Ziel-NFS-Freigabe.
 +
@@ -46,7 +46,7 @@ Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte 
 
 * *Kopieren und Synchronisieren von Dateien* aus einem Quell-Repository (ONTAP-Volume, S3-Bucket, NFS-Freigabe usw.) zu einem Verzeichnis in einem bestimmten Ziel-Speicherort (Ziel).
 +
-Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Nach der ersten Kopie synchronisiert der Service alle geänderten Daten auf der Grundlage des von Ihnen festgelegten Zeitplans. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
+Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Nach der ersten Kopie synchronisiert der Service alle geänderten Daten auf der Grundlage des von Ihnen festgelegten Zeitplans. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
 
 
 
@@ -54,14 +54,14 @@ Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem ande
 
 === Quelldateien werden in eine NFS-Freigabe kopiert
 
-Sie können Quelldateien kopieren, die Data Sense auf jede NFS-Freigabe scannt. Die NFS-Freigabe muss nicht in Data Sense integriert werden, Sie müssen nur den Namen der NFS-Freigabe kennen, wo alle ausgewählten Dateien in das Format kopiert werden `<host_name>:/<share_path>`.
+Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf eine beliebige NFS-Freigabe kopieren. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden – Sie müssen nur den Namen der NFS-Freigabe kennen, von der alle ausgewählten Dateien im Format kopiert werden `<host_name>:/<share_path>`.
 
 
 TIP: Sie können keine Dateien kopieren, die sich in Datenbanken befinden.
 
 .Anforderungen
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen, um Dateien zu kopieren.
-* Das Kopieren von Dateien erfordert, dass die Ziel-NFS-Freigabe den Zugriff aus der Data Sense Instanz ermöglicht.
+* Für das Kopieren von Dateien muss die NFS-Zielfreigabe den Zugriff über die BlueXP Klassifizierungsinstanz ermöglichen.
 * Sie können zwischen 1 und 100,000 Dateien gleichzeitig kopieren.
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_copy_file.png["Ein Screenshot, in dem die Auswahl de
 
 === Klonen von Volume-Daten auf einem neuen Volume
 
-Sie können ein vorhandenes ONTAP Volume klonen, das Data Sense mithilfe der NetApp _FlexClone_ Funktion scannt. So können Sie das Volume schnell duplizieren, während nur die von Ihnen ausgewählten Dateien enthalten sind. Dies ist nützlich, wenn Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten oder wenn Sie eine Kopie eines Volumes zu Testzwecken erstellen möchten.
+Sie können ein vorhandenes ONTAP Volume klonen, das von der BlueXP Klassifizierung gescannt wird, mit der NetApp _FlexClone_ Funktion. So können Sie das Volume schnell duplizieren, während nur die von Ihnen ausgewählten Dateien enthalten sind. Dies ist nützlich, wenn Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten oder wenn Sie eine Kopie eines Volumes zu Testzwecken erstellen möchten.
 
 Das neue Volume wird im selben Aggregat erstellt wie das Quell-Volume. Stellen Sie vor Beginn dieser Aufgabe sicher, dass genügend Platz für dieses neue Volume im Aggregat vorhanden ist. Wenden Sie sich bei Bedarf an Ihren Storage-Administrator.
 
@@ -143,15 +143,15 @@ Das neue geklonte Volume wird in demselben Aggregat erstellt wie das Quell-Volum
 
 Sie können den Status des Klonvorgangs in anzeigen link:task-view-compliance-actions.html["Statusbereich Aktionen"].
 
-Wenn Sie ursprünglich *Alle Volumes* oder *Karte & Klassifizieren alle Volumen* ausgewählt haben, wenn Sie Data Sense für die Arbeitsumgebung aktiviert haben, in der sich das Quellvolume befindet, wird Data Sense das neue geklonte Volume automatisch scannen. Wenn Sie eine dieser Optionen zunächst nicht verwendet haben, müssen Sie dieses neue Volume scannen link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["Aktivieren Sie manuell das Scannen auf dem Volumen"].
+Wenn Sie zunächst *Alle Volumes zuweisen* oder *alle Volumes zuordnen und klassifizieren* ausgewählt haben, wenn Sie die BlueXP-Klassifizierung für die Arbeitsumgebung aktiviert haben, in der sich das Quell-Volume befindet, wird die BlueXP-Klassifizierung das neue geklonte Volume automatisch scannen. Wenn Sie eine dieser Optionen zunächst nicht verwendet haben, müssen Sie dieses neue Volume scannen link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["Aktivieren Sie manuell das Scannen auf dem Volumen"].
 
 
 
 === Kopieren und Synchronisieren von Quelldateien auf ein Zielsystem
 
-Sie können Quelldateien kopieren, die Data Sense von jeder unterstützten unstrukturierten Datenquelle in ein Verzeichnis an einem bestimmten Zielspeicherort scannt (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Zielorte, die von Cloud Sync unterstützt werden"^]). Nach der ersten Kopie werden alle geänderten Daten in den Dateien gemäß dem von Ihnen konfigurierten Zeitplan synchronisiert.
+Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, von einer unterstützten unstrukturierten Datenquelle in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Zielorte, die von der BlueXP Kopier- und Synchronisierungsfunktion unterstützt werden"^]). Nach der ersten Kopie werden alle geänderten Daten in den Dateien gemäß dem von Ihnen konfigurierten Zeitplan synchronisiert.
 
-Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
+Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
 
 
 TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten befinden, können nicht kopiert und synchronisiert werden.
@@ -160,9 +160,9 @@ TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten be
 * Zum Kopieren und Synchronisieren von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen.
 * Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen aus demselben Quell-Repository stammen (ONTAP Volume, S3 Bucket, NFS oder CIFS-Freigabe usw.).
-* Sie müssen den Cloud Sync Service aktivieren und mindestens einen Daten-Broker konfigurieren, der zur Übertragung von Dateien zwischen Quell- und Zielsystemen genutzt werden kann. Prüfen Sie die Cloud Sync-Anforderungen, die mit dem beginnen https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
+* Sie müssen den BlueXP Kopier- und Synchronisierungsservice aktivieren und mindestens einen Daten-Broker konfigurieren, mit dem Dateien zwischen Quell- und Zielsystemen übertragen werden können. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
 +
-Beachten Cloud Sync Sie, dass für Ihre Synchronisierungsbeziehungen separate Servicegebühren anfallen und bei der Bereitstellung des Daten-Brokers in der Cloud Gebühren anfallen.
+Beachten Sie, dass für den BlueXP Kopier- und Synchronisierungsservice unterschiedliche Servicegebühren für Ihre Synchronisierungsbeziehungen anfallen und Ressourcengebühren anfallen, wenn Sie den Daten-Broker in der Cloud implementieren.
 
 
 
@@ -184,18 +184,18 @@ image:screenshot_compliance_sync_files_dialog.png["Ein Screenshot mit dem Dialog
 
 . Wenn Sie sicher sind, dass Sie die ausgewählten Dateien mit einem Zielort synchronisieren möchten, klicken Sie auf *OK*.
 +
-Die Cloud Sync-Benutzeroberfläche wird in BlueXP geöffnet.
+Die BlueXP Kopier- und Synchronisierungs-UI wird in BlueXP geöffnet.
 
 +
-Sie werden aufgefordert, die Synchronisierungsbeziehung zu definieren. Das Quellsystem ist auf der Grundlage des Repositorys und der Dateien, die Sie bereits in Data Sense ausgewählt haben, vorbelegt.
+Sie werden aufgefordert, die Synchronisierungsbeziehung zu definieren. Das Quellsystem basiert auf dem Repository und den Dateien, die Sie bereits in der BlueXP Klassifizierung ausgewählt haben, und wird entsprechend vorausgefüllt.
 
-. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die Cloud Sync-Anforderungen, die mit dem beginnen link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
+. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
 
 
 .Ergebnis
 Die Dateien werden in das Zielsystem kopiert und auf der Grundlage des von Ihnen definierten Zeitplans synchronisiert. Wenn Sie eine einmalige Synchronisierung auswählen, werden die Dateien nur einmal kopiert und synchronisiert. Wenn Sie eine regelmäßige Synchronisierung auswählen, werden die Dateien auf Grundlage des Zeitplans synchronisiert. Beachten Sie, dass wenn das Quellsystem neue Dateien hinzufügt, die mit der Abfrage übereinstimmen, die Sie mit Filtern erstellt haben, diese _neuen_-Dateien in das Ziel kopiert und in Zukunft synchronisiert werden.
 
-Beachten Sie, dass einige der üblichen Cloud Sync-Vorgänge beim Aufruf von Data Sense deaktiviert sind:
+Beachten Sie, dass einige der üblichen BlueXP Kopier- und Synchronisierungsvorgänge deaktiviert sind, wenn sie aus der BlueXP Klassifizierung aufgerufen werden:
 
 * Sie können die Schaltflächen *Dateien auf Quelle löschen* oder *Dateien auf Ziel* löschen nicht verwenden.
 * Ausführen eines Berichts ist deaktiviert.
@@ -205,7 +205,7 @@ Beachten Sie, dass einige der üblichen Cloud Sync-Vorgänge beim Aufruf von Dat
 
 == Quelldateien werden in eine NFS-Freigabe verschoben
 
-Sie können Quelldateien verschieben, die Data Sense auf jede NFS-Freigabe scannt. Die NFS-Freigabe muss nicht mit Data Sense integriert werden (siehe link:task-scanning-file-shares.html["Scannen von Dateifreigaben"]).
+Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden (siehe link:task-scanning-file-shares.html["Scannen von Dateifreigaben"]).
 
 Optional können Sie eine Breadcrumb-Datei am Speicherort der verschobenen Datei belassen. Eine Breadcrumb-Datei hilft Ihren Benutzern zu verstehen, warum eine Datei vom ursprünglichen Speicherort verschoben wurde. Für jede verschobene Datei erstellt das System eine Breadcrumb-Datei im Quellspeicherort mit dem Namen `<filename>-breadcrumb-<date>.txt`. Sie können Text in das Dialogfeld einfügen, das der Breadcrumb-Datei hinzugefügt wird, um den Speicherort anzugeben, an dem die Datei verschoben wurde, und den Benutzer, der die Datei verschoben hat.
 
@@ -217,7 +217,7 @@ TIP: Sie können keine Dateien verschieben, die sich in Datenbanken befinden.
 .Anforderungen
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen, um Dateien zu verschieben.
 * Die Quelldateien lassen sich in den folgenden Datenquellen befinden: On-Premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, File Shares und SharePoint Online.
-* Beim Verschieben von Dateien muss die NFS-Freigabe den Zugriff über die IP-Adresse der Datensense-Instanz ermöglichen.
+* Für das Verschieben von Dateien muss die NFS-Freigabe den Zugriff über die IP-Adresse der BlueXP Klassifizierungsinstanz ermöglichen.
 * Sie können maximal 15 Millionen Dateien gleichzeitig verschieben.
 
 

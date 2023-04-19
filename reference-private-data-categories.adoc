@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-private-data-categories.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
-summary: Es gibt viele Arten von privaten Daten, die Cloud Data Sense in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive Ordnern, SharePoint Konten, Und Google Drive Konten. 
+summary: Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten. 
 ---
 = Kategorien von privaten Daten
 :hardbreaks:
@@ -14,20 +14,20 @@ summary: Es gibt viele Arten von privaten Daten, die Cloud Data Sense in Ihren V
 
 
 [role="lead"]
-Es gibt viele Arten von privaten Daten, die Cloud Data Sense in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive Ordnern, SharePoint Konten, Und Google Drive Konten. Sehen Sie sich die folgenden Kategorien an.
+Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten. Sehen Sie sich die folgenden Kategorien an.
 
 
-TIP: Wenn Sie Cloud Data Sense zur Identifizierung anderer privater Datentypen benötigen, z. B. zusätzliche nationale ID-Nummern oder Kennungen des Gesundheitswesens, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com mit Ihrer Anfrage.
+TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierung von BlueXP benötigen, z. B. zusätzliche nationale ID-Nummern oder Identifikatoren in Ihrem Gesundheitswesen, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com.
 
 
 
 == Arten personenbezogener Daten
 
-Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der unten stehenden Tabelle wird bestimmt, ob Cloud Data Sense verwendet wird link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
+Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
 
 Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
 
-Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen Cloud Data Sense in seinen Scans sucht, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten Kennungen zu Ihren Daten Sense-Scans"^] Entsprechende Details.
+Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen die BlueXP-Klassifizierung in ihren Scans suchen wird, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten-IDs zu Ihren BlueXP Klassifizierungs-Scans"^] Entsprechende Details.
 
 [cols="13,37,10,8,8,8,8,8"]
 |===
@@ -217,7 +217,7 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 
 == Arten sensibler personenbezogener Daten
 
-Die sensiblen personenbezogenen Daten, die Cloud Data Sense in Dateien finden kann, umfassen die folgende Liste:
+Die sensiblen personenbezogenen Daten, die die BlueXP Klassifizierung in Dateien finden kann, enthalten die folgende Liste.
 
 Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.
 
@@ -236,7 +236,7 @@ Sexualleben oder Orientierung Referenz:: Daten über das Sexualleben einer natü
 
 == Arten von Kategorien
 
-Cloud Data Sense kategorisiert Ihre Daten wie folgt.
+Die BlueXP Klassifizierung kategorisiert Ihre Daten wie folgt.
 
 Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkannt werden.
 
@@ -317,7 +317,7 @@ Die folgenden Metadaten werden ebenfalls kategorisiert und in den gleichen unter
 * Codieren
 * Beschädigt
 * Datenbank- und Indexdateien
-* Daten Spüren Breadcrumbs
+* BlueXP Klassifizierungs-Breadcrumbs
 * Design-Dateien
 * E-Mail-Anwendungsdaten
 * Verschlüsselt (Dateien mit hohem Entropie-Wert)
@@ -340,9 +340,9 @@ Die folgenden Metadaten werden ebenfalls kategorisiert und in den gleichen unter
 
 == Dateitypen
 
-Cloud Data Sense scannt alle Dateien nach Informationen zu Kategorie und Metadaten und zeigt alle Dateitypen im Abschnitt Dateitypen des Dashboards an.
+Die BlueXP Klassifizierung scannt alle Dateien nach Kategorien- und Metadaten und zeigt alle Dateitypen im Abschnitt „Dateitypen“ des Dashboards an.
 
-Wenn Data Sense jedoch personenbezogene Daten (PII) erkennt oder eine DSAR-Suche durchführt, werden nur die folgenden Dateiformate unterstützt:
+Wenn jedoch die BlueXP Klassifizierung personenbezogene Daten erkennt oder eine DSAR-Suche durchführt, werden nur die folgenden Dateiformate unterstützt:
 
 `+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
@@ -350,15 +350,15 @@ Wenn Data Sense jedoch personenbezogene Daten (PII) erkennt oder eine DSAR-Suche
 
 == Genauigkeit der gefundenen Informationen
 
-NetApp kann keine Garantie für 100 % der Genauigkeit persönlicher Daten und sensibler personenbezogener Daten, die Cloud Data Sense identifiziert. Überprüfen Sie die Informationen immer, indem Sie die Daten überprüfen.
+NetApp kann die Genauigkeit der personenbezogenen Daten und sensiblen personenbezogenen Daten, die durch die BlueXP Klassifizierung identifiziert werden, nicht zu 100 % garantieren. Überprüfen Sie die Informationen immer, indem Sie die Daten überprüfen.
 
-Auf der Grundlage unserer Tests zeigt die folgende Tabelle die Genauigkeit der Informationen, die Data Sense findet. Wir brechen es durch _Precision_ und _Recall_ ab:
+Basierend auf unseren Tests zeigt die folgende Tabelle die Genauigkeit der Informationen, die bei der BlueXP Klassifizierung als Ergebnis zu finden sind. Wir brechen es durch _Precision_ und _Recall_ ab:
 
-Präzision:: Die Wahrscheinlichkeit, dass das, was Data Sense findet, korrekt identifiziert wurde. Beispielsweise bedeutet eine Datengenauigkeit von 90% für personenbezogene Daten, dass 9 von 10 Dateien, die als personenbezogene Daten identifiziert werden, tatsächlich personenbezogene Daten enthalten. 1 von 10 Dateien wäre falsch positiv.
-Rückruf:: Die Wahrscheinlichkeit, dass Daten sinnvoll zu finden, was sie sollten. Beispielsweise bedeutet eine Rückrufquote von 70 % für personenbezogene Daten, dass Data Sense 7 von 10 Dateien identifizieren kann, die tatsächlich personenbezogene Daten in Ihrem Unternehmen enthalten. „Data Sense“ würde 30 % der Daten vermissen und werden nicht im Dashboard angezeigt.
+Präzision:: Die Wahrscheinlichkeit, dass die gefundenen Elemente der BlueXP Klassifizierung korrekt identifiziert wurden. Beispielsweise bedeutet eine Datengenauigkeit von 90% für personenbezogene Daten, dass 9 von 10 Dateien, die als personenbezogene Daten identifiziert werden, tatsächlich personenbezogene Daten enthalten. 1 von 10 Dateien wäre falsch positiv.
+Rückruf:: Die Wahrscheinlichkeit, dass die BlueXP Klassifizierung ihre Inhalte findet. Beispielsweise bedeutet eine Rückrufrate von 70 % für personenbezogene Daten, dass die BlueXP Klassifizierung 7 von 10 Dateien identifizieren kann, die tatsächlich personenbezogene Daten in Ihrem Unternehmen enthalten. Die BlueXP Klassifizierung würde 30 % der Daten verfehlen und wird dann nicht im Dashboard angezeigt.
 
 
-Wir verbessern die Genauigkeit unserer Ergebnisse ständig. Diese Verbesserungen werden in zukünftigen Data Sense Versionen automatisch verfügbar sein.
+Wir verbessern die Genauigkeit unserer Ergebnisse ständig. Diese Verbesserungen werden in zukünftigen BlueXP Klassifizierungs-Releases automatisch zur Verfügung stehen.
 
 [cols="25,20,20"]
 |===

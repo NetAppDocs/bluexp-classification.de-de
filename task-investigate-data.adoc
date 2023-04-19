@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-investigate-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite über viele Bereiche der Data Sense UI aufrufen, einschließlich der Dashboards Governance und Compliance. 
+summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. 
 ---
 = Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details
 
 
 [role="lead"]
-Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite über viele Bereiche der Data Sense UI aufrufen, einschließlich der Dashboards Governance und Compliance.
+Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards.
 
 
 NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
@@ -51,7 +51,7 @@ Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Infor
 | Empfindlichkeitsstufe | Wählen Sie die Empfindlichkeitsstufe aus: Persönlich, sensibel persönlich oder nicht empfindlich. 
 
 
-| Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen werden die Matches von allen Dateien in jedem Ordner (und Unterordnern) angezeigt. 
+| Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern). 
 
 
 | Persönliche Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-personal-data["Arten personenbezogener Daten"^]. 
@@ -98,13 +98,13 @@ Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anz
 | Erstellungszeit | Wählen Sie einen Zeitbereich aus, in dem die Datei erstellt wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
 
 
-| Entdeckte Zeit | Wählen Sie einen Zeitbereich aus, in dem Data Sense die Datei erkannt hat. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
+| Entdeckte Zeit | Wählen Sie einen Zeitraum aus, in dem die BlueXP Klassifizierung die Datei erkannt hat. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
 
 
 | Zuletzt Geändert | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt geändert wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
 
 
-| Zuletzt Aufgerufen | Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Bei den Dateitypen, die von Data Sense gescannt werden, ist dies das letzte Mal, wenn Data Sense die Datei gescannt hat. 
+| Zuletzt Aufgerufen | Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Für die Dateitypen, die die BlueXP Klassifizierung scannt, wurde die Datei zuletzt durch die BlueXP Klassifizierung gescannt. 
 |===
 
 
@@ -117,7 +117,7 @@ Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, 
 | Filtern | Details 
 
 
-| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Pfade einschließen und Pfade ausschließen eingeben, findet Data Sense zuerst alle Dateien in den enthaltenen Pfaden, dann werden Dateien von ausgeschlossenen Pfaden entfernt und die Ergebnisse angezeigt. Beachten Sie, dass die Verwendung von "*" in diesem Filter keine Wirkung hat und dass Sie bestimmte Ordner nicht aus dem Scan ausschließen können - alle Verzeichnisse und Dateien unter einer konfigurierten Freigabe werden gescannt. 
+| Dateipfad | Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Einschlusspfade eingeben und Pfade ausschließen, werden bei der BlueXP Klassifizierung zuerst alle Dateien in den eingeschlossenen Pfaden gefunden. Anschließend werden Dateien aus ausgeschlossenen Pfaden entfernt, und die Ergebnisse werden angezeigt. Beachten Sie, dass die Verwendung von "*" in diesem Filter keine Wirkung hat und dass Sie bestimmte Ordner nicht aus dem Scan ausschließen können - alle Verzeichnisse und Dateien unter einer konfigurierten Freigabe werden gescannt. 
 
 
 | Verzeichnistyp | Wählen Sie den Verzeichnistyp aus, entweder „Share“ oder „Folder“. 
@@ -176,7 +176,7 @@ Verwenden Sie die folgenden Filter, um Daten nach AIP-Etiketten oder -Tags anzuz
 
 === Filtern Sie Daten nach Analysestatus
 
-Verwenden Sie den folgenden Filter, um Daten nach dem Status „Data Sense Scan“ anzuzeigen.
+Verwenden Sie den folgenden Filter, um Daten nach dem BlueXP Klassifizierungs-Scan-Status anzuzeigen.
 
 [cols="30,60"]
 |===
@@ -186,7 +186,7 @@ Verwenden Sie den folgenden Filter, um Daten nach dem Status „Data Sense Scan�
 | Analysestatus | Wählen Sie eine Option aus, um die Liste der Dateien anzuzeigen, die den ersten Scan ausstehend, den Scanvorgang abgeschlossen haben, den ausstehenden Rescan oder die nicht gescannt wurden. 
 
 
-| Analyseereignis Scannen | Wählen Sie aus, ob Dateien angezeigt werden sollen, die nicht klassifiziert wurden, weil Data Sense die Uhrzeit des letzten Zugriffs nicht rückgängig machen konnte, oder Dateien, die klassifiziert wurden, obwohl Data Sense die Zeit des letzten Zugriffs nicht rückgängig machen konnte. 
+| Analyseereignis Scannen | Wählen Sie aus, ob Dateien angezeigt werden sollen, die nicht klassifiziert wurden, weil die BlueXP-Klassifizierung die Uhrzeit des letzten Zugriffs nicht rückgängig machen konnte, oder Dateien, die klassifiziert wurden, obwohl die BlueXP-Klassifizierung die Zeit des letzten Zugriffs nicht rückgängig machen konnte. 
 |===
 link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen zum Zeitstempel des letzten Zugriffs"] Weitere Informationen zu den Elementen, die beim Filtern mit dem Ereignis Scananalyse auf der Seite Untersuchung angezeigt werden.
 
@@ -211,7 +211,7 @@ Klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret
 
 image:screenshot_compliance_file_details.png["Ein Screenshot mit den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“."]
 
-Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Integrierte AIP in Cloud Data Sense"^]). Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#creating-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
+Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Integrierte AIP in BlueXP Klassifizierung"^]). Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#creating-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
 
 Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Volume-Name, die Berechtigungen und AIP-Labels nicht für Datenbankdateien relevant.
 
@@ -221,7 +221,7 @@ Wenn Sie die Details für eine einzelne Datei anzeigen, gibt es einige Aktionen,
 * Sie können die Datei löschen. Siehe link:task-managing-highlights.html#deleting-source-files["Quelldateien werden gelöscht"] Entsprechende Details.
 * Sie können der Datei einen bestimmten Status zuweisen. Siehe link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["Tags werden angewendet"] Entsprechende Details.
 * Sie können die Datei einem BlueXP-Benutzer zuweisen, damit er für alle Follow-up-Aktionen verantwortlich ist, die in der Datei ausgeführt werden müssen. Siehe link:task-org-private-data.html#assigning-users-to-manage-certain-files["Zuweisen von Benutzern zu einer Datei"] Entsprechende Details.
-* Wenn Sie AIP-Etiketten mit Cloud Data Sense integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder zu einer anderen Bezeichnung wechseln, wenn sie bereits vorhanden ist. Siehe link:task-org-private-data.html#assigning-aip-labels-manually["Manuelles Zuweisen von AIP-Beschriftungen"] Entsprechende Details.
+* Wenn Sie AIP-Labels mit der BlueXP-Klassifizierung integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder, sofern vorhanden, zu einer anderen Bezeichnung wechseln. Siehe link:task-org-private-data.html#assigning-aip-labels-manually["Manuelles Zuweisen von AIP-Beschriftungen"] Entsprechende Details.
 
 
 
@@ -230,7 +230,7 @@ Wenn Sie die Details für eine einzelne Datei anzeigen, gibt es einige Aktionen,
 
 Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche gilt nur für Daten in CIFS Shares, SharePoint Online, SharePoint On-Premises und OneDrive.
 
-Beachten Sie, dass Sie Active Directory in Data Sense integrieren sollten, wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen. link:task-add-active-directory-datasense.html["So geht's"].
+Wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen, sollten Sie Ihr Active Directory in die BlueXP Klassifizierung integrieren. link:task-add-active-directory-datasense.html["So geht's"].
 
 image:screenshot_compliance_permissions.png["Ein Screenshot mit detaillierten Dateiberechtigungen."]
 
@@ -244,7 +244,7 @@ Darüber Hinaus Sie können auf den Namen eines Benutzers oder einer Gruppe klic
 
 Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.
 
-Data Sense verwendet Hashing-Technologie zur Bestimmung doppelter Dateien. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
+Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
 
 Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können link:task-managing-highlights.html#deleting-source-files["Löschen Sie die Datei"] Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.
 
@@ -275,9 +275,9 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Sie können den Bericht als CSV-Datei (die bis zu 5,000 Datenzeilen enthalten kann) auf dem lokalen Rechner speichern oder als JSON-Datei, die Sie in eine NFS-Freigabe exportieren (die eine unbegrenzte Anzahl von Zeilen enthalten kann). Wenn Data Sense Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) scannt, können bis zu drei Berichtsdateien heruntergeladen werden.
+Sie können den Bericht als CSV-Datei (die bis zu 5,000 Datenzeilen enthalten kann) auf dem lokalen Rechner speichern oder als JSON-Datei, die Sie in eine NFS-Freigabe exportieren (die eine unbegrenzte Anzahl von Zeilen enthalten kann). Wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) scannt, können bis zu drei Berichtsdateien heruntergeladen werden.
 
-Beim Exportieren in eine Dateifreigabe stellen Sie sicher, dass Data Sense über die entsprechenden Berechtigungen für den Exportzugriff verfügt.
+Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
 
 
 

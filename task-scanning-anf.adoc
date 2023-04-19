@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
-summary: In wenigen Schritten zum Einstieg in Cloud Data Sense for Azure NetApp Files. 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
+summary: Führen Sie einige Schritte für den Einstieg in die BlueXP Klassifizierung für Azure NetApp Files durch. 
 ---
-= Erste Schritte mit Cloud Data Sense für Azure NetApp Files
+= Erste Schritte mit der BlueXP Klassifizierung für Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: In wenigen Schritten zum Einstieg in Cloud Data Sense for Azure NetApp 
 
 
 [role="lead"]
-In wenigen Schritten zum Einstieg in Cloud Data Sense for Azure NetApp Files.
+Führen Sie einige Schritte für den Einstieg in die BlueXP Klassifizierung für Azure NetApp Files durch.
 
 
 
@@ -26,28 +26,28 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 [role="quick-margin-para"]
 Vor dem Scannen von Azure NetApp Files-Volumes https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["BlueXP muss eingerichtet sein, um die Konfiguration zu ermitteln"^].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie die Cloud Data Sense Instanz
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementieren Sie Cloud Data Sense in BlueXP"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in BlueXP"^] Falls noch keine Instanz implementiert wurde.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Aktivieren Sie Cloud Data Sense und wählen Sie die zu scannenden Volumes aus
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Aktivieren Sie die BlueXP Klassifizierung und wählen Sie die zu scannenden Volumes aus
 [role="quick-margin-para"]
 Klicken Sie auf *Compliance*, wählen Sie die Registerkarte *Konfiguration* und aktivieren Sie Compliance-Scans für Volumes in bestimmten Arbeitsumgebungen.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Zugriff auf Volumes sicherstellen
 [role="quick-margin-para"]
-Jetzt, da Cloud Data Sense aktiviert ist, stellen Sie sicher, dass er auf alle Volumes zugreifen kann.
+Nachdem die BlueXP Klassifizierung aktiviert ist, vergewissern Sie sich jetzt, dass sie auf alle Volumes zugreifen kann.
 
 [role="quick-margin-list"]
-* Die Cloud Data Sense Instanz benötigt eine Netzwerkverbindung zu jedem Azure NetApp Files Subnetz.
-* Stellen Sie sicher, dass diese Ports für die Data Sense-Instanz offen sind:
+* Die BlueXP Klassifizierungsinstanz benötigt eine Netzwerkverbindung zu jedem Azure NetApp Files Subnetz.
+* Stellen Sie sicher, dass die Ports für die BlueXP Klassifizierungsinstanz offen sind:
 +
 ** Für NFS – die Ports 111 und 2049.
 ** Für CIFS – die Ports 139 und 445.
 
 
-* NFS-Volume-Exportrichtlinien müssen den Zugriff aus der Data Sense Instanz zulassen.
-* Data Sense benötigt Active Directory-Anmeldeinformationen zum Scannen von CIFS-Volumes.
+* NFS-Volume-Exportrichtlinien müssen den Zugriff von der BlueXP Klassifizierungsinstanz ermöglichen.
+* Die BlueXP Klassifizierung erfordert Active Directory Zugangsdaten, um CIFS-Volumes zu scannen.
 +
 Klicken Sie auf *Compliance* > *Konfiguration* > *CIFS-Anmeldeinformationen bearbeiten* und geben Sie die Anmeldeinformationen an.
 
@@ -55,7 +55,7 @@ Klicken Sie auf *Compliance* > *Konfiguration* > *CIFS-Anmeldeinformationen bear
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Verwalten Sie die Volumes, die Sie scannen möchten
 [role="quick-margin-para"]
-Wählen oder deaktivieren Sie die Volumes, die Sie scannen möchten, und Cloud Data Sense startet oder beendet den Scanvorgang.
+Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie. Die BlueXP Klassifizierung startet bzw. stoppt die Suche.
 
 
 
@@ -67,25 +67,25 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.
 
 
 
-== Bereitstellen der Cloud Data Sense Instanz
+== Implementieren der BlueXP Klassifizierungsinstanz
 
-link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Daten"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
-Beim Scannen von Azure NetApp Files Volumes muss der Einsatz von Datensense in der Cloud stattfinden. Er muss in demselben Bereich wie die Volumes eingesetzt werden, die Sie scannen möchten.
+Die BlueXP Klassifizierung muss bei der Überprüfung von Azure NetApp Files Volumes in der Cloud bereitgestellt werden und muss in derselben Region wie die Volumes bereitgestellt werden, die Sie scannen möchten.
 
-*Hinweis:* die Bereitstellung von Cloud Data Sense an einem lokalen Speicherort wird derzeit beim Scannen von Azure NetApp Files Volumes nicht unterstützt.
+*Hinweis:* die Implementierung der BlueXP Klassifizierung an einem lokalen Standort wird derzeit beim Scannen von Azure NetApp Files Volumes nicht unterstützt.
 
-Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
-== Cloud-Daten sinnvoll in Ihren Arbeitsumgebungen einsetzen
+== Ermöglichen der BlueXP Klassifizierung in Ihren Arbeitsumgebungen
 
-Sie können den Einsatz von Cloud-Daten in Ihren Azure NetApp Files Volumes sinnvoll aktivieren.
+Die BlueXP Klassifizierung für Ihre Azure NetApp Files Volumes kann aktiviert werden.
 
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung* und dann auf die Registerkarte *Konfiguration*.
 +
-image:screenshot_cloud_compliance_anf_scan_config.png["Ein Screenshot der Registerkarte Configuration, unmittelbar nach der Bereitstellung der Cloud Data Sense-Instanz."]
+image:screenshot_cloud_compliance_anf_scan_config.png["Ein Screenshot der Registerkarte Konfiguration unmittelbar nach der Implementierung der BlueXP Klassifizierungsinstanz."]
 
 . Wählen Sie aus, wie die Volumes in den einzelnen Arbeitsumgebungen gescannt werden sollen. link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Hier erfahren Sie mehr über Mapping und Klassifizierungsmessungen"]:
 +
@@ -97,46 +97,46 @@ Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren 
 
 
 
-. Klicken Sie im Bestätigungsdialogfeld auf *Genehmigen*, damit Data Sense Ihre Volumes scannen kann.
+. Klicken Sie im Bestätigungsdialogfeld auf *approve*, damit die BlueXP Klassifizierung mit dem Scannen Ihrer Volumes beginnt.
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der Volumes, die Sie in der Arbeitsumgebung ausgewählt haben. Die Ergebnisse werden im Compliance-Dashboard verfügbar sein, sobald Data Sense die ersten Scans abgeschlossen hat. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsumgebung ausgewählten Volumes. Sobald die ersten Scans durch die BlueXP-Klassifizierung abgeschlossen sind, werden die Ergebnisse im Compliance-Dashboard verfügbar sein. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
 
 
-NOTE: Wenn Data Sense keine Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, scannt das System standardmäßig nicht die Dateien in Ihren Volumes, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, klicken Sie auf *oder wählen Sie den Scantyp für jedes Volume* aus. Auf dieser Seite können Sie eine Einstellung aktivieren, sodass Data Sense die Volumes unabhängig von den Berechtigungen scannt.
+NOTE: Wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, scannt das System standardmäßig nicht die Dateien in Ihren Volumes, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, klicken Sie auf *oder wählen Sie den Scantyp für jedes Volume* aus. Auf dieser Seite können Sie eine Einstellung aktivieren, sodass die BlueXP Klassifizierung die Volumes unabhängig von ihren Berechtigungen scannt.
 
 
 
-== Es wird sichergestellt, dass Cloud Data Sense Zugriff auf Volumes hat
+== Überprüfung, ob die BlueXP Klassifizierung Zugriff auf Volumes hat
 
-Stellen Sie sicher, dass Cloud Data Sense auf Volumes zugreifen kann, indem Sie Ihre Netzwerk-, Sicherheitsgruppen- und Exportrichtlinien prüfen. Sie müssen Data Sense mit CIFS Credentials bereitstellen, um auf CIFS Volumes zugreifen zu können.
+Vergewissern Sie sich, dass die BlueXP Klassifizierung auf Volumes zugreifen kann, indem Sie Ihre Netzwerk-, Sicherheitsgruppen und Exportrichtlinien prüfen. Sie müssen BlueXP mit CIFS-Anmeldedaten klassifizieren, um auf CIFS Volumes zugreifen zu können.
 
 .Schritte
-. Stellen Sie sicher, dass es eine Netzwerkverbindung zwischen Cloud Data Sense Instanz und jedem Netzwerk gibt, das Volumes für Azure NetApp Files enthält.
+. Stellen Sie sicher, dass eine Netzwerkverbindung zwischen der BlueXP Klassifizierungsinstanz und jedem Netzwerk, das Volumes für Azure NetApp Files umfasst, besteht.
 +
 
-NOTE: Bei Azure NetApp Files kann Cloud Data Sense nur Volumes scannen, die sich in derselben Region wie BlueXP befinden.
+NOTE: Bei Azure NetApp Files kann die BlueXP Klassifizierung nur Volumes scannen, die sich in derselben Region wie BlueXP befinden.
 
-. Stellen Sie sicher, dass die folgenden Ports für die Data Sense-Instanz offen sind:
+. Stellen Sie sicher, dass die folgenden Ports für die BlueXP Klassifizierungsinstanz offen sind:
 +
 ** Für NFS – die Ports 111 und 2049.
 ** Für CIFS – die Ports 139 und 445.
 
 
-. Stellen Sie sicher, dass die NFS-Volume-Exportrichtlinien die IP-Adresse der Data Sense Instanz enthalten, damit sie auf die Daten auf jedem Volume zugreifen können.
-. Wenn Sie CIFS verwenden, geben Sie Data Sense mit Active Directory Anmeldeinformationen ein, damit CIFS Volumes gescannt werden können.
+. Vergewissern Sie sich, dass die Richtlinien für den Export von NFS Volumes die IP-Adresse der BlueXP Klassifizierungsinstanz enthalten, damit sie auf die Daten auf jedem Volume zugreifen können.
+. Wenn Sie CIFS verwenden, bieten Sie BlueXP Klassifizierung mit Active Directory Anmeldeinformationen, um CIFS Volumes zu scannen.
 +
 .. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung* und dann auf die Registerkarte *Konfiguration*.
 +
 image:screenshot_cifs_credentials.gif["Ein Screenshot der Registerkarte „Compliance“ mit der Schaltfläche „Scanstatus“, die oben rechts im Inhaltsfenster verfügbar ist."]
 
-.. Klicken Sie für jede Arbeitsumgebung auf *CIFS-Anmeldeinformationen bearbeiten* und geben Sie den Benutzernamen und das Kennwort ein, die Data Sense für den Zugriff auf CIFS-Volumes auf dem System benötigt.
+.. Klicken Sie für jede Arbeitsumgebung auf *Edit CIFS Credentials* und geben Sie den Benutzernamen und das Passwort ein, die die BlueXP Klassifizierung für den Zugriff auf CIFS Volumes auf dem System benötigt.
 +
-Die Anmeldedaten können schreibgeschützt sein. Durch die Admin-Berechtigungen wird jedoch sichergestellt, dass Data Sense alle Daten lesen kann, die erhöhte Berechtigungen benötigen. Die Anmeldedaten werden in der Cloud Data Sense Instanz gespeichert.
+Die Zugangsdaten können schreibgeschützt sein, aber durch die Angabe von Administratorberechtigungen wird sichergestellt, dass die BlueXP Klassifizierung alle Daten lesen kann, die erhöhte Berechtigungen erfordern. Die Zugangsdaten werden in der BlueXP Klassifizierungsinstanz gespeichert.
 
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Wenn Sie sicherstellen möchten, dass Ihre Dateien durch die BlueXP Klassifizierungsklassifizierungs-Scans nicht zuletzt zugegriffen werden, empfehlen wir, dass der Benutzer über Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS verfügt. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
 +
 Nach Eingabe der Anmeldedaten sollte eine Meldung angezeigt werden, dass alle CIFS-Volumes erfolgreich authentifiziert wurden.
@@ -148,10 +148,10 @@ image:screenshot_cifs_status.gif["Ein Screenshot, der die Konfigurationsseite un
 
 . Klicken Sie auf der Seite _Configuration_ auf *Details anzeigen*, um den Status für jedes CIFS- und NFS-Volume zu überprüfen und eventuelle Fehler zu beheben.
 +
-Das folgende Bild zeigt beispielsweise vier Volumes, von denen Cloud Data Sense aufgrund von Netzwerkverbindungsproblemen zwischen der Data Sense Instanz und dem Volume nicht scannen kann.
+Das folgende Bild zeigt beispielsweise vier Volumes. Eine davon kann aufgrund von Netzwerkverbindungsproblemen zwischen der BlueXP Klassifizierungsinstanz und dem Volume nicht mit der BlueXP Klassifizierung gescannt werden.
 
 +
-image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „Details anzeigen“ in der Scankonfiguration mit vier Volumes, von denen einer aufgrund der Netzwerkverbindung zwischen Data Sense und Volume nicht gescannt wird."]
+image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „View Details“ in der Scankonfiguration zeigt vier Volumes. Eines davon wird wegen der Netzwerkkonnektivität zwischen der BlueXP Klassifizierung und dem Volume nicht gescannt."]
 
 
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „Deta
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln. Wir empfehlen, alle Volumen zu scannen.
 
-Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, wird das System die Dateien nicht scannen, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
+Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 image:screenshot_volume_compliance_selection.png["Ein Screenshot der Konfigurationsseite, auf der Sie das Scannen einzelner Volumes aktivieren oder deaktivieren können."]
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Sie können Data Sense so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, sobald auf eine der Dateien zugegriffen oder geändert wurde, die Sie scannen. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.' 
+summary: 'Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.' 
 ---
 = Überwachen und managen Sie Dateizugriffsereignisse
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 'Sie können Data Sense so konfigurieren, dass Ereignisse in einer Date
 
 
 [role="lead"]
-Sie können Data Sense so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, sobald auf eine der Dateien zugegriffen oder geändert wurde, die Sie scannen. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
+Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
 
 Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensiblen Personalakten oder Gehaltsabrechnungsdateien vorgenommen werden, können Sie diese Funktion auf den Volumes aktivieren, auf denen sich diese Dateien befinden. Anschließend können Sie das Audit-Protokoll für den Dateizugriff anzeigen, um zu sehen, ob diese Dateien geändert wurden. Wenn sie geändert wurden, können Sie den Namen der Person sehen, die die Änderung vorgenommen hat, und wann die Änderung vorgenommen wurde.
 
-Sie können diese Funktion für alle kritischen Volumes in Ihren ONTAP-Arbeitsumgebungen aktivieren. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen aus und nutzt Ihr Data Sense System als FPolicy Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
+Sie können diese Funktion für alle kritischen Volumes in Ihren ONTAP-Arbeitsumgebungen aktivieren. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
 
-Data Sense erfasst derzeit Ereignisse für die folgenden Aktionen auf Ihren Dateien und Verzeichnissen:
+Die BlueXP Klassifizierung erfasst derzeit Ereignisse für folgende Aktionen Ihrer Dateien und Verzeichnisse:
 
 * Erstellen
 * Lesen
@@ -37,7 +37,7 @@ BlueXP Benutzer mit den Rollen „Account-Administrator“ oder „Workspace-Adm
 
 == Unterstützte Datenquellen
 
-Data Sense kann Dateizugriffsereignisse für Dateien protokollieren, die sich auf den folgenden Datenquellen befinden:
+Die BlueXP Klassifizierung kann Dateizugriffsereignisse für Dateien protokollieren, die sich auf den folgenden Datenquellen befinden:
 
 * On-Premises-ONTAP
 * Cloud Volumes ONTAP
@@ -45,7 +45,7 @@ Data Sense kann Dateizugriffsereignisse für Dateien protokollieren, die sich au
 * FSX für ONTAP
 
 
-Für diese Datenquellen muss Active Directory konfiguriert sein, damit Data Sense den Namen der Person identifizieren kann, die auf die Dateien zugegriffen hat.
+Für diese Datenquellen muss Active Directory konfiguriert sein, damit die BlueXP Klassifizierung den Namen der Person ermitteln kann, die auf die Dateien zugegriffen hat.
 
 
 
@@ -104,15 +104,15 @@ Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgre
 
 == Greifen Sie auf die Datei Access Audit Log-Dateien zu
 
-Die File Access Audit Log-Dateien befinden sich auf dem Data Sense-Computer in: `/opt/netapp/audit_logs/`
+Die File Access Audit Log-Dateien befinden sich auf der BlueXP Klassifizierungs-Machine in: `/opt/netapp/audit_logs/`
 
-Die Protokolldateien heißen „File_Access_Audit_<volume_name>_<timestamp>.log“, zum Beispiel „DateizugriffAudit_MedicalData_20230205092321.log“. Der <timestamp> ist die Zeit, zu der Data Sense das erste Protokoll in die Datei geschrieben hat. Jede Datei ist standardmäßig so konfiguriert, dass sie maximal 50,000 Ereignisse enthält. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel.
+Die Protokolldateien heißen „File_Access_Audit_<volume_name>_<timestamp>.log“, zum Beispiel „DateizugriffAudit_MedicalData_20230205092321.log“. Die <timestamp> ist der Zeitpunkt, zu dem die BlueXP Klassifizierung das erste Protokoll in die Datei geschrieben hat. Jede Datei ist standardmäßig so konfiguriert, dass sie maximal 50,000 Ereignisse enthält. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel.
 
 Die Gesamtgröße aller Protokolldateien im Verzeichnis ist auf den Standardwert 50 GB festgelegt. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien automatisch gelöscht.
 
-Wenn Data Sense auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert ist, die Sie in der Cloud implementiert haben, können Sie direkt zu den Protokolldateien navigieren.
+Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert wird, die Sie in der Cloud implementiert haben, können Sie direkt zu den Protokolldateien navigieren.
 
-Wenn Data Sense in der Cloud implementiert wird, müssen Sie SSH zur Data Sense Instanz benötigen. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
+Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path_to_the_ssh_key> = Speicherort der ssh-Authentifizierungsschlüssel
@@ -137,9 +137,9 @@ Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen,
 
 == Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff
 
-Es gibt drei Optionen, die Sie für die Dateizugriffsprotokolle konfigurieren können. Diese Einstellungen gelten für alle Datenquellen, die die Protokollierung des Dateizugriffs auf dieser Data Sense Instanz konfiguriert haben. Sie konfigurieren diese Einstellungen im Abschnitt _File Access Audit Log_ der Seite Data Sense _Configuration_.
+Es gibt drei Optionen, die Sie für die Dateizugriffsprotokolle konfigurieren können. Diese Einstellungen gelten für alle Datenquellen, die für die Audit-Protokollierung des Dateizugriffs auf diese BlueXP Klassifizierungsinstanz konfiguriert haben. Sie konfigurieren diese Einstellungen im Abschnitt _File Access Audit Log_ der Seite BlueXP classification _Configuration_.
 
-image:screenshot_compliance_file_access_audit_config.png["Ein Screenshot mit den Konfigurationseinstellungen für die Überwachungsprotokolle auf der Seite Data Sense Configuration."]
+image:screenshot_compliance_file_access_audit_config.png["Ein Screenshot mit der Konfigurationseinstellung für die Audit-Protokolle auf der Seite BlueXP Classification Configuration."]
 
 [cols="30,50"]
 |===

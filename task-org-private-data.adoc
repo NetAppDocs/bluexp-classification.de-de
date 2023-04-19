@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-org-private-data.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Cloud Data Sense bietet zahlreiche Möglichkeiten für das Management und die Organisation von privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen. 
+summary: Die BlueXP Klassifizierung bietet Ihnen zahlreiche Möglichkeiten zum Managen und Organisieren Ihrer privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen. 
 ---
 = Organisieren von privaten Daten
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Cloud Data Sense bietet zahlreiche Möglichkeiten für das Management u
 
 
 [role="lead"]
-Cloud Data Sense bietet zahlreiche Möglichkeiten für das Management und die Organisation von privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen.
+Die BlueXP Klassifizierung bietet Ihnen zahlreiche Möglichkeiten zum Managen und Organisieren Ihrer privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen.
 
-* Wenn Sie abonniert sind https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^] Zum Klassifizieren und Schützen Ihrer Dateien können Sie Cloud Data Sense verwenden, um diese AIP-Etiketten zu verwalten.
+* Wenn Sie abonniert sind https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^] Um Ihre Dateien zu klassifizieren und zu schützen, können Sie diese AIP-Labels mit der BlueXP Klassifizierung managen.
 * Sie können Tags zu Dateien hinzufügen, die Sie als Organisation oder für eine Art von Follow-up markieren möchten.
 * Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, sodass diese Person für das Management der Datei verantwortlich ist.
 * Mit der "Policy"-Funktion können Sie Ihre eigenen individuellen Suchanfragen erstellen, so dass Sie die Ergebnisse einfach durch Klicken auf eine Schaltfläche sehen können.
@@ -30,23 +30,23 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 == Sollte ich Etiketten oder Etiketten verwenden?
 
-Nachfolgend sehen Sie einen Vergleich zwischen Data Sense Tagging und Azure Information Protection Labeling.
+Unten finden Sie einen Vergleich zwischen BlueXP Klassifizierungs-Tagging und Azure Information Protection Labelling.
 
 [cols="50,50"]
 |===
 | Tags | Etiketten 
 
 
-| Datei-Tags sind ein integrierter Bestandteil von Data Sense. | Voraussetzung ist, dass Sie den Azure Information Protection (AIP) abonniert haben. 
+| Datei-Tags sind ein integrierter Teil der BlueXP Klassifizierung. | Voraussetzung ist, dass Sie den Azure Information Protection (AIP) abonniert haben. 
 
 
-| Das Tag wird nur in der Data Sense Datenbank gespeichert - es wird nicht in die Datei geschrieben. Die Datei oder die abgerufene oder geänderte Datei werden nicht geändert. | Die Bezeichnung ist Teil der Datei, und wenn sich die Bezeichnung ändert, ändert sich die Datei. Diese Änderung ändert auch die Zeiten, auf die zugegriffen wurde und die geändert wurden. 
+| Das Tag wird nur in der BlueXP Klassifizierungs-Datenbank aufbewahrt - es wird nicht in die Datei geschrieben. Die Datei oder die abgerufene oder geänderte Datei werden nicht geändert. | Die Bezeichnung ist Teil der Datei, und wenn sich die Bezeichnung ändert, ändert sich die Datei. Diese Änderung ändert auch die Zeiten, auf die zugegriffen wurde und die geändert wurden. 
 
 
 | Sie können mehrere Tags für eine einzelne Datei haben. | Sie können eine Bezeichnung auf einer einzelnen Datei haben. 
 
 
-| Das Tag kann für interne Datensense-Aktion verwendet werden, z. B. Kopieren, Verschieben, Löschen, Ausführen einer Richtlinie, Usw. | Andere Systeme, die die Datei lesen können, können das Etikett sehen - welches für zusätzliche Automatisierung verwendet werden kann. 
+| Das Tag kann für interne BlueXP-Klassifizierungsaktionen wie Kopieren, Verschieben, Löschen, Ausführen einer Richtlinie Usw. | Andere Systeme, die die Datei lesen können, können das Etikett sehen - welches für zusätzliche Automatisierung verwendet werden kann. 
 
 
 | Nur ein einzelner API-Aufruf wird verwendet, um zu sehen, ob eine Datei ein Tag hat. |  
@@ -55,15 +55,15 @@ Nachfolgend sehen Sie einen Vergleich zwischen Data Sense Tagging und Azure Info
 
 == Kategorisieren Sie Ihre Daten mit AIP-Etiketten
 
-Sie können AIP-Etiketten in den Dateien verwalten, die Cloud Data Sense scannt, wenn Sie abonniert haben https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Mit AIP können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Etiketten auf Inhalte anwenden. Mit „Data Sense“ können Sie die bereits zugewiesenen Beschriftungen anzeigen, Dateien Beschriftungen hinzufügen und Etiketten ändern, wenn bereits eine Bezeichnung vorhanden ist.
+Sie können AIP-Etiketten in den Dateien managen, die die BlueXP Klassifizierung scannt, wenn Sie abonniert haben https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Mit AIP können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Etiketten auf Inhalte anwenden. Mit der BlueXP Klassifizierung können Sie die Labels anzeigen, die bereits Dateien zugewiesen sind, Labels zu Dateien hinzufügen und Labels ändern, wenn bereits eine Labels vorhanden sind.
 
-Cloud Data Sense unterstützt AIP-Etiketten in den folgenden Dateitypen: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX
+Die BlueXP Klassifizierung unterstützt AIP-Labels innerhalb der folgenden Dateitypen: .DOC, .DOCX, .PDF, .PPTX, .XLS, .XLSX:
 
 [NOTE]
 ====
 * Sie können zurzeit keine Etiketten in Dateien ändern, die größer als 30 MB sind. Für OneDrive, SharePoint und Google Drive Konten die maximale Dateigröße beträgt 4 MB.
-* Wenn eine Datei einen Namen hat, der in AIP nicht mehr vorhanden ist, wird Cloud Data Sense als Datei ohne Etikett betrachtet.
-* Wenn Sie Data Sense in einer Regierungsregion oder an einem lokalen Standort bereitgestellt haben, der keinen Internetzugang hat (auch als dunkle Site bezeichnet), ist die AIP-Label-Funktion nicht verfügbar.
+* Wenn eine Datei ein Label hat, das in AIP nicht mehr existiert, betrachtet die BlueXP Klassifizierung dieses Label als Datei ohne Label.
+* Wenn Sie die BlueXP Klassifizierung in einer Regierungsregion oder an einem lokalen Standort ohne Internetzugang (auch als Dark Site bezeichnet) implementiert haben, ist die AIP-Label-Funktion nicht verfügbar.
 
 
 ====
@@ -71,7 +71,7 @@ Cloud Data Sense unterstützt AIP-Etiketten in den folgenden Dateitypen: .DOC, .
 
 === Integrieren von AIP-Etiketten in Ihren Arbeitsbereich
 
-Bevor Sie AIP-Etiketten verwalten können, müssen Sie die AIP-Label-Funktion in Cloud Data Sense integrieren, indem Sie sich in Ihrem bestehenden Azure-Konto anmelden. Nach der Aktivierung können Sie AIP-Beschriftungen in Dateien für alle verwalten link:concept-cloud-compliance.html#supported-data-sources["Datenquellen"^] In Ihrem BlueXP Workspace.
+Bevor Sie AIP-Labels managen können, müssen Sie die AIP-Label-Funktionalität in die BlueXP Klassifizierung integrieren, indem Sie sich in Ihr bestehendes Azure Konto anmelden. Nach der Aktivierung können Sie AIP-Beschriftungen in Dateien für alle verwalten link:concept-cloud-compliance.html#supported-data-sources["Datenquellen"^] In Ihrem BlueXP Workspace.
 
 .Anforderungen
 * Sie benötigen ein Konto und eine Azure Information Protection-Lizenz.
@@ -80,13 +80,13 @@ Bevor Sie AIP-Etiketten verwalten können, müssen Sie die AIP-Label-Funktion in
 
 
 .Schritte
-. Klicken Sie auf der Seite Cloud Data Sense Configuration auf *AIP Labels integrieren*.
+. Klicken Sie auf der Seite BlueXP classification Configuration auf *Integration AIP Labels*.
 +
-image:screenshot_compliance_integrate_aip_labels.png["Ein Screenshot, der das Klicken auf die Schaltfläche zeigt, um die AIP-Beschriftungsfunktion in Cloud Data Sense zu integrieren."]
+image:screenshot_compliance_integrate_aip_labels.png["Ein Screenshot, der durch Klicken auf die Schaltfläche angezeigt wird, um die AIP-Beschriftungsfunktion in die BlueXP Klassifizierung zu integrieren."]
 
 . Klicken Sie im Dialogfeld AIP-Etiketten integrieren auf *in Azure anmelden*.
 . Wählen Sie auf der angezeigten Microsoft-Seite das Konto aus, und geben Sie die erforderlichen Anmeldedaten ein.
-. Kehren Sie zur Registerkarte Cloud Data Sense zurück, und Sie sehen die Meldung "_AIP-Labels wurden erfolgreich in das Konto <Account_Name>_ integriert.
+. Kehren Sie zur Registerkarte BlueXP Klassifizierung zurück und Sie sehen die Meldung "_AIP-Labels was successfully integrated with the Account <account_name>_".
 . Klicken Sie auf *Schließen* und Sie sehen den Text _AIP Labels integriert_ oben auf der Seite.
 +
 image:screenshot_compliance_aip_labels_int.png["Ein Screenshot mit AIP-Etiketten wurde erfolgreich integriert."]
@@ -110,7 +110,7 @@ image:screenshot_compliance_show_label.png["Ein Screenshot mit den Metadatendeta
 
 === Manuelles Zuweisen von AIP-Beschriftungen
 
-Mit Cloud Data Sense können Sie AIP-Etiketten aus Ihren Dateien hinzufügen, ändern und entfernen.
+Mit der BlueXP Klassifizierung können Sie AIP-Labels zu Ihren Dateien hinzufügen, ändern und entfernen.
 
 Führen Sie diese Schritte aus, um einer einzelnen Datei eine AIP-Bezeichnung zuzuweisen.
 
@@ -150,14 +150,14 @@ Die AIP-Bezeichnung wird den Metadaten für alle ausgewählten Dateien hinzugef�
 
 === Entfernen der AIP-Integration
 
-Wenn Sie AIP-Beschriftungen in Dateien nicht mehr verwalten möchten, können Sie das AIP-Konto aus der Cloud Data Sense Schnittstelle entfernen.
+Wenn Sie AIP-Labels in Dateien nicht mehr verwalten möchten, können Sie das AIP-Konto von der BlueXP Klassifizierungs-Schnittstelle entfernen.
 
-Beachten Sie, dass die Etiketten, die Sie mit Data Sense hinzugefügt haben, nicht geändert werden. Die in Dateien vorhandenen Beschriftungen bleiben so, wie sie derzeit vorhanden sind.
+Beachten Sie, dass an den Labels, die Sie mit der BlueXP Klassifizierung hinzugefügt haben, keine Änderungen vorgenommen werden. Die in Dateien vorhandenen Beschriftungen bleiben so, wie sie derzeit vorhanden sind.
 
 .Schritte
 . Klicken Sie auf der Seite _Configuration_ auf *AIP Labels integriert > Integration entfernen*.
 +
-image:screenshot_compliance_un_integrate_aip_labels.png["Ein Screenshot, der zeigt, wie man AIP Integrationen mit Cloud Data Sense entfernt."]
+image:screenshot_compliance_un_integrate_aip_labels.png["Ein Screenshot, der zeigt, wie AIP-Integrationen mit BlueXP Klassifizierung entfernt werden."]
 
 . Klicken Sie im Bestätigungsdialogfeld auf *Integration entfernen*.
 
@@ -168,12 +168,12 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Ein Screenshot, der zei
 
 Sie können Dateien, die Sie für eine Art von Follow-up markieren möchten, ein Tag hinzufügen. Sie haben z. B. einige doppelte Dateien gefunden und möchten eine davon löschen, müssen aber überprüfen, welche Dateien gelöscht werden sollen. Sie könnten der Datei einen Tag mit "Prüfen zum Löschen" hinzufügen, damit Sie wissen, dass diese Datei eine Recherche und eine Art von zukünftigen Aktionen erfordert.
 
-Mit „Data Sense“ können Sie die Tags anzeigen, die Dateien zugewiesen sind, Tags hinzufügen oder aus Dateien entfernen und den Namen ändern oder ein vorhandenes Tag löschen.
+Mit der BlueXP Klassifizierung können Sie die Tags anzeigen, die Dateien zugewiesen sind, Tags aus Dateien hinzufügen oder entfernen sowie den Namen ändern oder ein vorhandenes Tag löschen.
 
-Beachten Sie, dass das Tag der Datei nicht auf die gleiche Weise hinzugefügt wird wie AIP-Etiketten Teil der Dateimetadaten sind. Das Tag wird gerade von BlueXP-Benutzern mit Cloud Data Sense angezeigt, so dass Sie sehen können, ob eine Datei gelöscht oder für eine Art von Follow-up überprüft werden muss.
+Beachten Sie, dass das Tag der Datei nicht auf die gleiche Weise hinzugefügt wird wie AIP-Etiketten Teil der Dateimetadaten sind. Das Tag wird gerade von BlueXP Benutzern angezeigt, die die BlueXP Klassifizierung verwenden. Sie können also erkennen, ob eine Datei gelöscht oder auf eine bestimmte Art von Follow-up überprüft werden muss.
 
 
-TIP: Tags, die Dateien in Cloud Data Sense zugewiesen wurden, stehen nicht in Verbindung mit den Tags, die Sie Ressourcen hinzufügen können, wie Volumes oder Instanzen von virtuellen Maschinen. Auf Dateiebene werden Daten-SENSE-Tags angewendet.
+TIP: Die Tags, die Dateien in der BlueXP Klassifizierung zugewiesen sind, stehen nicht mit den Tags zusammen, die Sie zu Ressourcen wie Volumes oder Instanzen von Virtual Machines hinzufügen können. BlueXP Klassifizierungs-Tags werden auf Dateiebene angewendet.
 
 
 
@@ -181,7 +181,7 @@ TIP: Tags, die Dateien in Cloud Data Sense zugewiesen wurden, stehen nicht in Ve
 
 Sie können alle Dateien anzeigen, denen bestimmte Tags zugewiesen sind.
 
-. Klicken Sie in Cloud Data Sense auf die Registerkarte *Untersuchung*.
+. Klicken Sie in der BlueXP-Klassifizierung auf die Registerkarte *Investigation*.
 . Klicken Sie auf der Seite Datenuntersuchung im Bereich Filter auf *Tags* und wählen Sie die gewünschten Tags aus.
 +
 image:screenshot_compliance_filter_status.png["Ein Screenshot, in dem die Auswahl von Tags im Fensterbereich Filter angezeigt wird."]
@@ -261,7 +261,7 @@ Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien z
 
 Sie können beispielsweise eine Datei mit bestimmten personenbezogenen Daten haben, die zu vielen Benutzern Lese- und Schreibzugriff (offene Berechtigungen) ermöglicht. Sie können also das Status-Tag "Berechtigungen ändern" zuweisen und diese Datei dem Benutzer "Joan Smith" zuweisen, damit er entscheiden kann, wie das Problem behoben werden kann. Wenn sie das Problem behoben haben, könnten sie die Status-Tag-Nummer auf „Abgeschlossen“ ändern.
 
-Beachten Sie, dass der Benutzername der Datei nicht als Teil der Dateimetadaten hinzugefügt wird - er wird gerade von BlueXP Benutzern bei der Verwendung von Cloud Data Sense angezeigt.
+Beachten Sie, dass der Benutzername nicht als Teil der Datei-Metadaten zur Datei hinzugefügt wird. Er wird gerade von BlueXP Benutzern bei der Nutzung der BlueXP Klassifizierung gesehen.
 
 Mit einem neuen Filter auf der Untersuchungsseite können Sie problemlos alle Dateien anzeigen, die dieselbe Person im Feld „Assigned to“ haben.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
 keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
-summary: Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können. 
+summary: Die BlueXP Klassifizierung erfasst bestimmte Metadaten, wenn Klassifizierungs-Scans für Daten aus Datenquellen und Arbeitsumgebungen durchgeführt werden. Die BlueXP Klassifizierung kann auf die meisten Metadaten zugreifen, die wir für die Klassifizierung Ihrer Daten benötigen. Es gibt jedoch einige Quellen, aus denen wir nicht auf die von uns benötigten Daten zugreifen können. 
 ---
 = Metadaten, die aus Datenquellen erhoben werden
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassi
 
 
 [role="lead"]
-Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierungsprüfungen der Daten aus Ihren Datenquellen und Arbeitsumgebungen. Der „Data Sense“ kann auf die meisten Metadaten zugreifen, die für die Klassifizierung Ihrer Daten erforderlich sind. Es gibt jedoch einige Quellen, aus denen wir nicht auf die erforderlichen Daten zugreifen können.
+Die BlueXP Klassifizierung erfasst bestimmte Metadaten, wenn Klassifizierungs-Scans für Daten aus Datenquellen und Arbeitsumgebungen durchgeführt werden. Die BlueXP Klassifizierung kann auf die meisten Metadaten zugreifen, die wir für die Klassifizierung Ihrer Daten benötigen. Es gibt jedoch einige Quellen, aus denen wir nicht auf die von uns benötigten Daten zugreifen können.
 
 [cols="15,25,25,25"]
 |===
@@ -39,22 +39,22 @@ Data Sense erfasst bestimmte Metadaten bei der Durchführung von Klassifizierung
 
 == Zeitstempel der letzten Zugriffszeit
 
-Wenn Data Sense Daten aus File Shares extrahiert, betrachtet das Betriebssystem sie als Zugriff auf die Daten und ändert entsprechend die „Zeit des letzten Zugriffs“. Nach dem Scannen versucht Data Sense, die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen. Wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, kann das System die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen. ONTAP Volumes, die mit SnapLock konfiguriert sind, haben schreibgeschützte Berechtigungen und können auch die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen.
+Wenn die BlueXP Klassifizierung Daten aus File Shares extrahiert, berücksichtigt das Betriebssystem sie als Zugriff auf die Daten und ändert entsprechend den Zeitpunkt des letzten Zugriffs. Nach dem Scannen versucht die BlueXP Klassifizierung, die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen. Wenn die BlueXP Klassifizierung keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, kann das System die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen. ONTAP Volumes, die mit SnapLock konfiguriert sind, haben schreibgeschützte Berechtigungen und können auch die letzte Zugriffszeit nicht auf den ursprünglichen Zeitstempel zurücksetzen.
 
-Wenn Data Sense diese Berechtigungen nicht hat, scannt das System standardmäßig diese Dateien in Ihren Volumes nicht, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen jedoch egal ist, ob die letzte Zugriffszeit in Ihren Dateien auf die ursprüngliche Zeit zurückgesetzt wird, können Sie auf den Schalter *Scan bei fehlenden Berechtigungen für "Schreibattribute"* unten auf der Konfigurationsseite klicken, so dass Data Sense die Volumes unabhängig von den Berechtigungen scannt.
+Wenn die BlueXP Klassifizierung diese Berechtigungen nicht besitzt, scannt das System standardmäßig diese Dateien in Ihren Volumes nicht, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen jedoch egal ist, ob die letzte Zugriffszeit in Ihren Dateien auf die ursprüngliche Zeit zurückgesetzt wird, können Sie unten auf der Konfigurationsseite auf den Schalter *Scan bei fehlenden Berechtigungen für "Schreibattribute"* klicken, damit die BlueXP-Klassifizierung die Volumes unabhängig von den Berechtigungen scannt.
 
-image:screenshot_scan_missing_permissions.png["Ein Screenshot, der den Switch zeigt, mit dem Data Sense Ihre Dateien scannen kann, selbst wenn er nicht über die richtigen Berechtigungen verfügt, um die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen."]
+image:screenshot_scan_missing_permissions.png["Ein Screenshot mit dem Switch, mit dem Sie die BlueXP Klassifizierung Ihre Dateien scannen lassen können, selbst wenn sie nicht über die richtigen Berechtigungen verfügt, um die letzte Zugriffszeit auf den ursprünglichen Zeitstempel zurückzusetzen."]
 
 Diese Funktionalität ist anwendbar auf On-Premises-ONTAP-Systeme, Cloud Volumes ONTAP, Azure NetApp Files, FSX for ONTAP und nicht-NetApp File Shares.
 
-Beachten Sie, dass es einen Filter auf der Seite Untersuchung mit dem Namen _Scan Analysis Event_ gibt, mit dem Sie entweder die Dateien anzeigen können, die nicht klassifiziert wurden, da Data Sense die letzte Zugriffszeit nicht zurücksetzen konnte. Oder die klassifizierten Dateien, obwohl Data Sense die letzte Zugriffszeit nicht zurücksetzen konnte.
+Beachten Sie, dass es einen Filter auf der Seite Untersuchung mit dem Namen _Scan Analysis Event_ gibt, mit dem Sie entweder die Dateien anzeigen können, die nicht klassifiziert wurden, da die BlueXP-Klassifikation die letzte Zugriffszeit nicht rückgängig machen konnte. Oder die klassifizierten Dateien, auch wenn die BlueXP Klassifizierung den Zeitpunkt des letzten Zugriffs nicht zurücksetzen konnte.
 
 image:screenshot_scan_analysis_event_filter.png["Ein Screenshot des Filters, um zu sehen, welche Dateien gescannt und nicht gescannt wurden, basierend auf Schreibberechtigungen."]
 
 Folgende Filteroptionen stehen zur Auswahl:
 
 * „Nicht klassifiziert -- kann letzte Zugriffszeit nicht rückgängig machen“ – zeigt die Dateien an, die aufgrund fehlender Schreibberechtigungen nicht klassifiziert wurden.
-* „Zeitpunkt des letzten Zugriffs klassifiziert und aktualisiert“: Zeigt die klassifizierten Dateien an, und Data Sense konnte die letzte Zugriffszeit nicht auf das ursprüngliche Datum zurücksetzen. Dieser Filter ist nur für Umgebungen relevant, in denen Sie *Scan bei fehlenden Berechtigungen für "Schreibattribute"* AKTIVIERT haben.
+* „Zeitpunkt des letzten Zugriffs klassifiziert und aktualisiert“ – Hier werden die Dateien angezeigt, die klassifiziert wurden und die BlueXP-Klassifizierung konnte den Zeitpunkt des letzten Zugriffs nicht auf das ursprüngliche Datum zurücksetzen. Dieser Filter ist nur für Umgebungen relevant, in denen Sie *Scan bei fehlenden Berechtigungen für "Schreibattribute"* AKTIVIERT haben.
 
 
 Bei Bedarf können Sie diese Ergebnisse in einen Bericht exportieren, damit Sie sehen können, welche Dateien aufgrund von Berechtigungen gescannt werden oder nicht. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["Erfahren Sie mehr über den Untersuchungsbericht"^].

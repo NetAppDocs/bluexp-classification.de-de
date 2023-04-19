@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-onedrive.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
-summary: Führen Sie einige Schritte aus, um mit Cloud Data Sense Dateien in OneDrive Ordnern Ihres Benutzers zu scannen. 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
+summary: Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung von Dateien in den OneDrive Ordnern eines Benutzers zu scannen. 
 ---
 = OneDrive-Konten werden gescannt
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Führen Sie einige Schritte aus, um mit Cloud Data Sense Dateien in One
 
 
 [role="lead"]
-Führen Sie einige Schritte aus, um mit Cloud Data Sense Dateien in OneDrive Ordnern Ihres Benutzers zu scannen.
+Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung von Dateien in den OneDrive Ordnern eines Benutzers zu scannen.
 
 
 
@@ -26,9 +26,9 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 [role="quick-margin-para"]
 Stellen Sie sicher, dass Sie über die Administratoranmeldeinformationen verfügen, um sich beim OneDrive-Konto anzumelden.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie die Cloud Data Sense Instanz
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Daten"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie das OneDrive Konto hinzu
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ Fügen Sie die Liste der Benutzer aus dem OneDrive-Konto hinzu, das Sie scannen 
 
 == OneDrive Anforderungen können Sie überprüfen
 
-Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine unterstützte Konfiguration verfügen, bevor Sie Cloud Data Sense aktivieren.
+Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
 * Sie müssen über die Admin-Anmeldeinformationen für das OneDrive for Business-Konto verfügen, das Lesezugriff auf die Dateien des Benutzers bietet.
 * Für alle Benutzer, deren OneDrive-Ordner Sie scannen möchten, benötigen Sie eine Liste mit den E-Mail-Adressen, die in einer Zeile getrennt sind.
@@ -50,13 +50,13 @@ Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine u
 
 
 
-== Bereitstellen der Cloud Data Sense Instanz
+== Implementieren der BlueXP Klassifizierungsinstanz
 
-Implementieren Sie Cloud-Daten sinnvoll, wenn noch keine Instanz implementiert ist.
+Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
-Der Sinn für Daten kann sein link:task-deploy-cloud-compliance.html["In der Cloud implementiert"^] Oder link:task-deploy-compliance-onprem.html["In einer Anlage mit Internetzugang"^].
+Die BlueXP Klassifizierung kann dies sein link:task-deploy-cloud-compliance.html["In der Cloud implementiert"^] Oder link:task-deploy-compliance-onprem.html["In einer Anlage mit Internetzugang"^].
 
-Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
@@ -70,7 +70,7 @@ Fügen Sie das OneDrive-Konto hinzu, in dem sich die Benutzerdateien befinden.
 image:screenshot_compliance_add_onedrive_button.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie auf die Schaltfläche OneDrive hinzufügen klicken können."]
 
 . Klicken Sie im Dialogfeld „OneDrive-Konto hinzufügen“ auf *Anmelden bei OneDrive*.
-. Wählen Sie auf der angezeigten Microsoft-Seite das OneDrive-Konto aus und geben Sie den erforderlichen Admin-Benutzer und das entsprechende Passwort ein. Klicken Sie dann auf *Akzeptieren*, damit Cloud Data Sense Daten aus diesem Konto lesen kann.
+. Wählen Sie auf der angezeigten Microsoft-Seite das OneDrive-Konto aus, geben Sie den erforderlichen Admin-Benutzer und das Passwort ein, und klicken Sie dann auf *Accept*, damit die BlueXP-Klassifizierung Daten von diesem Konto lesen kann.
 
 
 Das OneDrive-Konto wird der Liste der Arbeitsumgebungen hinzugefügt.
@@ -79,7 +79,7 @@ Das OneDrive-Konto wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 == Hinzufügen von OneDrive Benutzern zu Compliance-Scans
 
-Sie können einzelne OneDrive-Benutzer oder alle OneDrive-Benutzer hinzufügen, damit ihre Dateien nach Cloud Data Sense gescannt werden.
+Sie können einzelne OneDrive Benutzer oder alle OneDrive Benutzer hinzufügen, damit ihre Dateien durch die BlueXP Klassifizierung gescannt werden.
 
 .Schritte
 . Klicken Sie auf der Seite _Configuration_ auf die Schaltfläche *Configuration* für das OneDrive-Konto.
@@ -124,7 +124,7 @@ Wenn im Dialogfeld Benutzer aufgeführt werden, die nicht hinzugefügt werden ko
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der Dateien für die Benutzer, die Sie hinzugefügt haben, und die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien für die Benutzer, die Sie hinzugefügt haben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
 
 
 
@@ -134,4 +134,4 @@ Wenn Benutzer das Unternehmen verlassen oder sich ihre E-Mail-Adresse ändert, k
 
 image:screenshot_compliance_onedrive_remove_user.png["Ein Screenshot zeigt, wie ein einzelner Benutzer die gescannten Dateien entfernen kann."]
 
-Beachten Sie, dass Sie können link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["Löschen Sie das gesamte OneDrive-Konto aus Data Sense"] Wenn Sie keine Benutzerdaten mehr aus dem OneDrive-Konto scannen möchten.
+Beachten Sie, dass Sie können link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Löschen Sie das gesamte OneDrive Konto aus der BlueXP Klassifizierung"] Wenn Sie keine Benutzerdaten mehr aus dem OneDrive-Konto scannen möchten.

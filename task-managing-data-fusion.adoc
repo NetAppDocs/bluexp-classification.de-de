@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-data-fusion.html 
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
-summary: „Data Sense“ bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste „personenbezogener Daten“ hinzuzufügen, die Data Sense bei zukünftigen Scans erkennen kann, und Sie erhalten das vollständige Bild darüber, wo sich möglicherweise vertrauliche Daten in allen Dateien Ihres Unternehmens befinden. 
+summary: Die BlueXP Klassifizierung bietet Ihnen verschiedene Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung bei zukünftigen Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich möglicherweise sensible Daten in allen Dateien Ihres Unternehmens befinden. 
 ---
-= Hinzufügen persönlicher Daten Kennungen zu Ihren Daten Sense-Scans
+= Hinzufügen persönlicher Daten-IDs zu Ihren BlueXP Klassifizierungs-Scans
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: „Data Sense“ bietet Ihnen viele Möglichkeiten, eine benutzerdefini
 
 
 [role="lead"]
-„Data Sense“ bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste „personenbezogener Daten“ hinzuzufügen, die Data Sense bei zukünftigen Scans erkennen kann. So erhalten Sie ein vollständiges Bild darüber, wo sich möglicherweise vertrauliche Daten in Dateien _all_ Ihrer Unternehmen befinden.
+Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung bei zukünftigen Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich möglicherweise sensible Daten in den Dateien Ihrer Unternehmen befinden.
 
 * Sie können eindeutige Kennungen basierend auf bestimmten Spalten in Datenbanken hinzufügen, die Sie scannen.
 * Sie können benutzerdefinierte Schlüsselwörter aus einer Textdatei hinzufügen - diese Wörter werden in Ihren Daten identifiziert.
@@ -31,16 +31,16 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 == Fügen Sie benutzerdefinierte ID-Daten aus Ihren Datenbanken hinzu
 
-Eine Funktion, die wir _Data Fusion_ nennen, ermöglicht Ihnen, die Daten Ihres Unternehmens zu überprüfen, um zu ermitteln, ob eindeutige IDs aus Ihren Datenbanken in einer Ihrer anderen Datenquellen gefunden werden. Sie können die zusätzlichen Kennungen auswählen, nach denen Data Sense in seinen Scans sucht, indem Sie eine bestimmte Spalte oder Spalten in einer Datenbanktabelle auswählen. Das folgende Diagramm zeigt beispielsweise, wie Daten-Fusion zur Überprüfung von Volumes, Buckets und Datenbanken eingesetzt wird, um vor allen Kunden-IDs aus der Oracle Datenbank zu kommen.
+Eine Funktion, die wir _Data Fusion_ nennen, ermöglicht Ihnen, die Daten Ihres Unternehmens zu überprüfen, um zu ermitteln, ob eindeutige IDs aus Ihren Datenbanken in einer Ihrer anderen Datenquellen gefunden werden. Sie können die zusätzlichen Identifikatoren auswählen, nach denen die BlueXP Klassifizierung in ihren Scans suchen soll, indem Sie eine bestimmte Spalte oder Spalte in einer Datenbanktabelle auswählen. Das folgende Diagramm zeigt beispielsweise, wie Daten-Fusion zur Überprüfung von Volumes, Buckets und Datenbanken eingesetzt wird, um vor allen Kunden-IDs aus der Oracle Datenbank zu kommen.
 
 image:diagram_compliance_data_fusion.png["Ein Diagramm, das zeigt, wie Inhalte aus Ihren Datenbanken als Quelle verwendet werden können, um Dateien zu identifizieren, die dieselben Daten enthalten."]
 
 Wie Sie sehen, wurden in zwei Volumes und in einem S3-Bucket zwei eindeutige Kunden-IDs gefunden. Alle Übereinstimmungen in Datenbanktabellen werden ebenfalls identifiziert.
 
-Beachten Sie, dass Sie Ihre eigenen Datenbanken scannen, in welcher Sprache Ihre Daten gespeichert sind, zur Identifizierung von Daten in zukünftigen Daten-Sense-Scans verwendet werden.
+Da Sie Ihre eigenen Datenbanken scannen, können Sie mit jeder Sprache, in der Ihre Daten gespeichert sind, Daten bei zukünftigen BlueXP Klassifizierungs-Scans erkennen.
 
 .Schritte
-Dieser muss unbedingt vorhanden sein link:task-scanning-databases.html#adding-the-database-server["Hat mindestens einen Datenbankserver hinzugefügt"^] Zu Data Sense, bevor Sie Daten-Fusion-Quellen hinzufügen können.
+Dieser muss unbedingt vorhanden sein link:task-scanning-databases.html#adding-the-database-server["Hat mindestens einen Datenbankserver hinzugefügt"^] Bis zur BlueXP Klassifizierung vor dem Hinzufügen von Fusion-Datenquellen
 
 . Klicken Sie auf der Konfigurationsseite in der Datenbank, in der sich die Quelldaten befinden, auf *Daten-Fusion verwalten*.
 +
@@ -62,7 +62,7 @@ image:screenshot_compliance_add_data_fusion.png["Ein Screenshot zur Identifizier
 
 . Klicken Sie Auf *Data Fusion-Quelle Hinzufügen*.
 +
-Auf der Seite Data Fusion Inventory werden die Spalten für die Datenbankquelle angezeigt, die Sie für das Scannen von Daten Sense konfiguriert haben.
+Auf der Seite Data Fusion Inventory werden die Datenbankquellspalten angezeigt, die Sie für die Überprüfung der BlueXP Klassifizierung konfiguriert haben.
 
 +
 image:screenshot_compliance_data_fusion_list.png["Ein Screenshot aller Datenquellenreferenzen, die Sie mit Data Fusion konfiguriert haben"]
@@ -86,11 +86,11 @@ image:screenshot_compliance_delete_data_fusion.png["Ein Screenshot zeigt, wie ei
 
 == Fügen Sie benutzerdefinierte Schlüsselwörter aus einer Wortliste hinzu
 
-Sie können Data Sense mit benutzerdefinierten Stichwörtern versehen, um den Speicherort der Daten zu ermitteln. Sie fügen die Schlüsselwörter einfach ein, indem Sie jedes Wort eingeben, das Data Sense erkennen soll. Die Schlüsselwörter werden den bereits vorhandenen vordefinierten Schlüsselwörtern hinzugefügt, die Data Sense verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ angezeigt.
+Sie können der BlueXP Klassifizierung benutzerdefinierte Schlüsselwörter hinzufügen, um den Speicherort der Daten bestimmen zu können. Fügen Sie die Schlüsselwörter einfach ein, indem Sie jedes Wort eingeben, das die BlueXP Klassifizierung wiedererkennen soll. Die Schlüsselwörter werden zu den vorhandenen vordefinierten Schlüsselwörtern hinzugefügt, die bereits von der BlueXP-Klassifizierung verwendet werden, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ angezeigt.
 
 Sie können z. B. sehen, wo interne Produktnamen in allen Dateien erwähnt werden, um sicherzustellen, dass diese Namen nicht an Orten zugänglich sind, die nicht sicher sind.
 
-Nach der Aktualisierung der benutzerdefinierten Schlüsselwörter startet Data Sense das Scannen aller Datenquellen neu. Nach Abschluss des Scans werden die neuen Ergebnisse im Data Sense Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
+Nach der Aktualisierung der benutzerdefinierten Schlüsselwörter wird die BlueXP Klassifizierung neu gestartet und alle Datenquellen werden gescannt. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
 
 .Schritte
 . Klicken Sie auf der Registerkarte _Classification settings_ auf *Add New Classifier*, um den Assistenten _Add Custom Classifier_ zu starten.
@@ -99,7 +99,7 @@ image:screenshot_compliance_add_classifier_button.png["Ein Screenshot, in dem de
 
 . Geben Sie auf der Seite _Typ auswählen_ den Namen des Klassifikators ein, geben Sie eine kurze Beschreibung ein, wählen Sie *Persönliche Kennung* aus und klicken Sie dann auf *Weiter*.
 +
-Der eingegebene Name wird in der Data Sense-Benutzeroberfläche als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen, und als Name des Filters auf der Seite Untersuchung.
+Der eingegebene Name wird in der BlueXP-Klassifizierungs-UI als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen, und als Name des Filters auf der Seite Untersuchung.
 
 +
 Sie können das Kontrollkästchen auch aktivieren, um „erkannte Ergebnisse im System maskieren“ zu aktivieren, damit das vollständige Ergebnis nicht in der Benutzeroberfläche angezeigt wird. So können Sie beispielsweise vollständige Kreditkartennummern oder ähnliche persönliche Daten ausblenden (die Maske erscheint in der Benutzeroberfläche wie folgt: "Pass:[****] Pass:[****] Pass:[****] Pass:[****]" 3434).
@@ -109,16 +109,16 @@ image:screenshot_select_classifier_type2.png["Ein Screenshot mit dem Namen des K
 
 . Wählen Sie auf der _Select Data Analysis Tool_ -Seite *Custom Keywords* als Methode aus, mit der Sie den Klassifikator definieren möchten, und klicken Sie dann auf *Next*.
 +
-image:screenshot_select_classifier_tool_keywords.png["Ein Screenshot zeigt die Auswahl von benutzerdefinierten Schlüsselwörtern als Werkzeug, mit dem Data Sense das Muster erstellen wird."]
+image:screenshot_select_classifier_tool_keywords.png["Ein Screenshot mit der Auswahl der benutzerdefinierten Schlüsselwörter als Tool, mit dem die BlueXP Klassifizierung dieses Muster erstellen soll."]
 
 . Geben Sie auf der Seite _Create Logic_ die Schlüsselwörter ein, die Sie erkennen möchten - jedes Wort in einer separaten Zeile - und klicken Sie auf *Validate*.
 +
-Die Abbildung unten zeigt interne Produktnamen (verschiedene Arten von Eulen). Die Suche nach den gewünschten Daten-Sense nach diesen Elementen ist nicht zwischen Groß- und Kleinschreibung zu wählen.
+Die Abbildung unten zeigt interne Produktnamen (verschiedene Arten von Eulen). Bei der BlueXP Klassifizierungssuche für diese Elemente wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
 +
 image:screenshot_select_classifier_create_logic_keyword.png["Ein Screenshot der Eingabe der Schlüsselwörter für Ihren Kunden-Klassifikator."]
 
-. Klicken Sie auf *Fertig* und Data Sense beginnt, Ihre Daten erneut zu scannen.
+. Klicken Sie auf *done* und die BlueXP Klassifizierung beginnt mit der erneuten Überprüfung Ihrer Daten.
 
 
 .Ergebnisse
@@ -132,11 +132,11 @@ Wie Sie sehen, wird der Name des Klassifikators als Name im Fenster „Persönli
 
 == Fügen Sie mithilfe eines Regex benutzerdefinierte Kennungen für persönliche Daten hinzu
 
-Mit einem benutzerdefinierten regulären Ausdruck (regex) können Sie ein persönliches Muster hinzufügen, um bestimmte Informationen in Ihren Daten zu identifizieren. Auf diese Weise können Sie ein neues benutzerdefiniertes Regex erstellen, um neue persönliche Informationselemente zu identifizieren, die noch nicht im System vorhanden sind. Das Regex wird den bereits vorhandenen vordefinierten Mustern hinzugefügt, die Data Sense bereits verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ sichtbar sein.
+Mit einem benutzerdefinierten regulären Ausdruck (regex) können Sie ein persönliches Muster hinzufügen, um bestimmte Informationen in Ihren Daten zu identifizieren. Auf diese Weise können Sie ein neues benutzerdefiniertes Regex erstellen, um neue persönliche Informationselemente zu identifizieren, die noch nicht im System vorhanden sind. Der regex wird zu den vorhandenen vordefinierten Mustern hinzugefügt, die die BlueXP-Klassifizierung bereits verwendet, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ angezeigt.
 
 Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien erwähnt werden. Wenn die Produkt-ID z. B. eine klare Struktur hat, ist es eine 12-stellige Nummer, die mit 201 beginnt, können Sie die benutzerdefinierte regex-Funktion verwenden, um sie in Ihren Dateien zu suchen. Der reguläre Ausdruck für dieses Beispiel lautet *\b201\d{9}\b*.
 
-Nach dem Hinzufügen des Regex startet Data Sense das Scannen aller Datenquellen neu. Nach Abschluss des Scans werden die neuen Ergebnisse im Data Sense Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
+Nach Hinzufügen des regex wird die BlueXP Klassifizierung neu gestartet und scannt alle Datenquellen. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
 
 Siehe https://regex101.com/[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie.
 
@@ -147,18 +147,18 @@ image:screenshot_compliance_add_classifier_button.png["Ein Screenshot, in dem de
 
 . Geben Sie auf der Seite _Typ auswählen_ den Namen des Klassifikators ein, geben Sie eine kurze Beschreibung ein, wählen Sie *Persönliche Kennung* aus und klicken Sie dann auf *Weiter*.
 +
-Der eingegebene Name wird in der Data Sense-Benutzeroberfläche als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen, und als Name des Filters auf der Seite Untersuchung. Sie können das Kontrollkästchen auch aktivieren, um „erkannte Ergebnisse im System maskieren“ zu aktivieren, damit das vollständige Ergebnis nicht in der Benutzeroberfläche angezeigt wird. Sie können dies beispielsweise tun, um vollständige Kreditkartennummern oder ähnliche persönliche Daten zu verbergen.
+Der eingegebene Name wird in der BlueXP-Klassifizierungs-UI als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen, und als Name des Filters auf der Seite Untersuchung. Sie können das Kontrollkästchen auch aktivieren, um „erkannte Ergebnisse im System maskieren“ zu aktivieren, damit das vollständige Ergebnis nicht in der Benutzeroberfläche angezeigt wird. Sie können dies beispielsweise tun, um vollständige Kreditkartennummern oder ähnliche persönliche Daten zu verbergen.
 
 +
 image:screenshot_select_classifier_type.png["Ein Screenshot mit dem Namen des Klassifikators und der Auswahl des Klassifikators."]
 
 . Wählen Sie auf der Seite Datenanalyse-Tool_ *Benutzerdefinierter regulärer Ausdruck* als Methode, mit der Sie den Klassifikator definieren möchten, und klicken Sie dann auf *Weiter*.
 +
-image:screenshot_select_classifier_tool_regex.png["Ein Screenshot, in dem die Auswahl des benutzerdefinierten regulären Ausdrucks als Werkzeug angezeigt wird, mit dem Data Sense das Muster erstellt."]
+image:screenshot_select_classifier_tool_regex.png["Ein Screenshot, der die Auswahl von Custom Regular Expression als Tool zeigt, mit dem die BlueXP-Klassifizierung das Muster erstellt."]
 
 . Geben Sie auf der Seite _Create Logic_ den regulären Ausdruck und beliebige Annäherungswörter ein, und klicken Sie auf *Fertig*.
 +
-.. Sie können jeden beliebigen regulären Ausdruck eingeben. Klicken Sie auf die Schaltfläche *Validieren*, damit Data Sense die Gültigkeit des regulären Ausdrucks bestätigt und dass er nicht zu breit ist. Das bedeutet, dass es zu viele Ergebnisse gibt.
+.. Sie können jeden beliebigen regulären Ausdruck eingeben. Klicken Sie auf die Schaltfläche *Validieren*, um die BlueXP-Klassifizierung zu überprüfen, ob der reguläre Ausdruck gültig ist und nicht zu breit ist -- das bedeutet, dass zu viele Ergebnisse zurückgegeben werden.
 .. Optional können Sie einige Annäherungsworte eingeben, um die Genauigkeit der Ergebnisse zu verbessern. Das sind Wörter, die in der Regel innerhalb von 300 Zeichen des Musters gefunden werden, nach dem Sie suchen (entweder vor oder nach dem gefundenen Muster). Geben Sie jedes Wort oder jede Phrase in eine separate Zeile ein.
 +
 image:screenshot_select_classifier_create_logic_regex.png["Ein Screenshot der Eingabe der Regex- und Proximity-Wörter für Ihren Kunden Klassifikator."]
@@ -168,7 +168,7 @@ image:screenshot_select_classifier_create_logic_regex.png["Ein Screenshot der Ei
 
 
 .Ergebnisse
-Der Klassifikator wird hinzugefügt und Data Sense beginnt, alle Datenquellen erneut zu scannen. Sie gelangen zurück zur Seite Benutzerdefinierte Klassifizierungsmerkmale, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrem neuen Klassifikator entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.
+Der Klassifikator wird hinzugefügt, und die BlueXP Klassifizierung beginnt, alle Datenquellen erneut zu scannen. Sie gelangen zurück zur Seite Benutzerdefinierte Klassifizierungsmerkmale, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrem neuen Klassifikator entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.
 
 image:screenshot_personal_info_regex_added.png["Ein Screenshot mit den Ergebnissen eines neuen Regex-Klassifikators, der dem System hinzugefügt wird und das Scannen läuft."]
 
@@ -176,22 +176,22 @@ image:screenshot_personal_info_regex_added.png["Ein Screenshot mit den Ergebniss
 
 == Benutzerdefinierte Kategorien hinzufügen
 
-Data Sense unterteilt die gescannten Daten in verschiedene Kategorien. Kategorien sind Themenbereiche, die auf der künstlichen Intelligenz Analyse der Inhalte und Metadaten der einzelnen Dateien basieren. link:reference-private-data-categories.html#types-of-categories["Sehen Sie sich die Liste der vordefinierten Kategorien an"].
+Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themenbereiche, die auf der künstlichen Intelligenz Analyse der Inhalte und Metadaten der einzelnen Dateien basieren. link:reference-private-data-categories.html#types-of-categories["Sehen Sie sich die Liste der vordefinierten Kategorien an"].
 
 Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie _Lebensläufe_ oder _Mitarbeiterverträge_ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
-Sie können Data Sense mit individuellen Kategorien ergänzen, damit Sie erkennen, in welchen Kategorien von Informationen Sie Ihre Daten finden, die speziell für Ihren Datenbestand sind. Zudem fügen Sie jede Kategorie hinzu, indem Sie „Trainingsdateien“ erstellen, die die Datenkategorien enthalten, die Sie identifizieren möchten. Anschließend lässt Data Sense diese Dateien scannen, um sie über KI zu „lernen“, damit die IT die Daten in Ihren Datenquellen identifizieren kann. Die Kategorien werden den vorhandenen vordefinierten Kategorien hinzugefügt, die Data Sense bereits identifiziert hat, und die Ergebnisse werden im Abschnitt „Kategorien“ angezeigt.
+Sie können der BlueXP Klassifizierung benutzerdefinierte Kategorien hinzufügen, damit Sie erkennen können, in welchen Kategorien von Informationen Sie Ihre Daten finden, die speziell für Ihren Datenbestand sind. Jede Kategorie fügen Sie hinzu, indem Sie „Trainingsdateien“ erstellen, die die Datenkategorien enthalten, die Sie identifizieren möchten. Anschließend lässt die BlueXP Klassifizierung diese Dateien scannen, um sie über KI zu „lernen“, damit die Daten in Ihren Datenquellen identifiziert werden können. Die Kategorien werden zu den vorhandenen vordefinierten Kategorien hinzugefügt, die durch die BlueXP Klassifizierung bereits identifiziert werden. Die Ergebnisse sind im Abschnitt „Kategorien“ sichtbar.
 
 Sie können beispielsweise sehen, wo sich komprimierte Installationsdateien im .gz-Format in Ihren Dateien befinden, damit Sie sie bei Bedarf entfernen können.
 
-Nach der Aktualisierung der benutzerdefinierten Kategorien startet Data Sense das Scannen aller Datenquellen neu. Nach Abschluss des Scans werden die neuen Ergebnisse im Data Sense Compliance Dashboard im Abschnitt „Kategorien“ und auf der Seite „Untersuchung“ im Filter „Kategorie“ angezeigt. link:task-controlling-private-data.html#viewing-files-by-categories["Lesen Sie, wie Sie Dateien nach Kategorien anzeigen"].
+Nach der Aktualisierung der benutzerdefinierten Kategorien wird die BlueXP Klassifizierung alle Datenquellen neu gescannt. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Klassifizierungs-Compliance-Dashboard im Abschnitt „Kategorien“ und auf der Untersuchungsseite im Filter „Kategorie“ angezeigt. link:task-controlling-private-data.html#viewing-files-by-categories["Lesen Sie, wie Sie Dateien nach Kategorien anzeigen"].
 
 .Was Sie benötigen
-Sie müssen mindestens 25 Trainingsdateien erstellen, die Beispiele für die Datenkategorien enthalten, die Data Sense erkennen soll. Die folgenden Dateitypen werden unterstützt:
+Sie müssen mindestens 25 Trainingsdateien erstellen, die Beispiele für die Datenkategorien enthalten, die von der BlueXP Klassifizierung erkannt werden sollen. Die folgenden Dateitypen werden unterstützt:
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
-Die Dateien müssen mindestens 100 Byte groß sein und sich in einem Ordner befinden, auf den Data Sense zugreifen kann.
+Die Dateien müssen mindestens 100 Byte groß sein und sich in einem Ordner befinden, auf den BlueXP Zugriff bietet.
 
 .Schritte
 . Klicken Sie auf der Registerkarte _Classification settings_ auf *Add New Classifier*, um den Assistenten _Add Custom Classifier_ zu starten.
@@ -200,27 +200,27 @@ image:screenshot_compliance_add_classifier_button.png["Ein Screenshot, in dem de
 
 . Geben Sie auf der Seite _Select type_ den Namen des Klassifikators ein, geben Sie eine kurze Beschreibung ein, wählen Sie *Category* aus und klicken Sie dann auf *Next*.
 +
-Der von Ihnen eingegebene Name wird in der Data Sense-Benutzeroberfläche als Überschrift für gescannte Dateien angezeigt, die der von Ihnen definierten Datenkategorie entsprechen, und als Name des Filters auf der Seite Untersuchung.
+Der eingegebene Name wird in der BlueXP Klassifizierungs-UI als Überschrift für gescannte Dateien angezeigt, die der von Ihnen definierten Datenkategorie entsprechen, und als Name des Filters auf der Seite Untersuchung.
 
 +
 image:screenshot_select_classifier_category.png["Ein Screenshot mit dem Namen des Klassifikators und der Auswahl des Klassifikators."]
 
 . Stellen Sie auf der Seite _Create Logic_ sicher, dass Sie die Lerndateien vorbereitet haben, und klicken Sie dann auf *Select files*.
 +
-image:screenshot_category_create_logic.png["Ein Screenshot der Seite Create Logic, auf der Sie die Dateien hinzufügen, die Daten enthalten, von denen Data Sense lernen soll."]
+image:screenshot_category_create_logic.png["Ein Screenshot der Seite „Create Logic“, auf der Sie die Dateien mit Daten hinzufügen, von denen die BlueXP Klassifizierung lernen soll."]
 
 . Geben Sie die IP-Adresse des Volumes und den Pfad ein, in dem sich die Trainingsdateien befinden, und klicken Sie auf *Hinzufügen*.
 +
 image:screenshot_category_add_files.png["Ein Screenshot, der zeigt, wie Sie den Speicherort der Trainingsdateien eingeben."]
 
-. Überprüfen Sie, ob die Trainingsdateien von Data Sense erkannt wurden. Klicken Sie auf *x*, um alle Trainingsdateien zu entfernen, die nicht den Anforderungen entsprechen. Klicken Sie dann auf *Fertig*.
+. Überprüfen Sie, ob die Trainingsdateien von der BlueXP Klassifizierung erkannt wurden. Klicken Sie auf *x*, um alle Trainingsdateien zu entfernen, die nicht den Anforderungen entsprechen. Klicken Sie dann auf *Fertig*.
 +
-image:screenshot_category_files_added.png["Ein Screenshot mit den Dateien, die Data Sense als Trainingsdateien zur Definition der neuen Kategorie verwendet."]
+image:screenshot_category_files_added.png["Ein Screenshot mit den Dateien, die die BlueXP Klassifizierung als Trainingsdateien nutzt, um die neue Kategorie zu definieren."]
 
 
 
 .Ergebnisse
-Die neue Kategorie wird gemäß den Trainingsdateien erstellt und zu Data Sense hinzugefügt. Anschließend durchsucht Data Sense alle Datenquellen neu, um Dateien zu identifizieren, die in diese neue Kategorie passen. Sie kehren zur Seite Benutzerdefinierte Klassifikatoren zurück, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrer neuen Kategorie entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.
+Die neue Kategorie wird gemäß den Trainingsdateien erstellt und der BlueXP Klassifizierung hinzugefügt. Die BlueXP Klassifizierung beginnt dann, alle Datenquellen neu zu scannen, um Dateien zu identifizieren, die in diese neue Kategorie passen. Sie kehren zur Seite Benutzerdefinierte Klassifikatoren zurück, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrer neuen Kategorie entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.
 
 
 
@@ -242,6 +242,6 @@ image:screenshot_custom_classifier_top_5.png["Ein Screenshot mit den Top 3 benut
 
 Sie können alle benutzerdefinierten Klassifikatoren ändern, die Sie mit der Schaltfläche *Klassifikator bearbeiten* erstellt haben.
 
-Und wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie Data Sense nicht benötigen, um die benutzerdefinierten Muster zu identifizieren, die Sie hinzugefügt haben, können Sie die Schaltfläche *Klassifikator löschen* verwenden, um jedes Element zu entfernen.
+Und wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie keine BlueXP-Klassifizierung benötigen, um die von Ihnen hinzugefügten benutzerdefinierten Muster zu identifizieren, können Sie die Schaltfläche *Klassifikator löschen* verwenden, um jedes Element zu entfernen.
 
 image:screenshot_custom_classifiers_manage.png["Ein Screenshot der Seite „Benutzerdefinierte Klassifikatoren“ mit den Schaltflächen zum Bearbeiten und Löschen eines Klassifikators."]

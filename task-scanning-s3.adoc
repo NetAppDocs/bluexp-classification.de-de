@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-s3.html 
 keywords: cloud compliance, amazon s3, s3 buckets, amazon s3 buckets, scan s3 buckets, scan amazon s3 buckets, enable compliance s3, enable compliance on s3, s3 working environment, data sense 
-summary: Cloud Data Sense kann Ihre Amazon S3 Buckets scannen, um die persönlichen und sensiblen Daten zu identifizieren, die sich im S3 Objekt-Storage befinden. Cloud Data Sense kann jeden Bucket im Konto scannen, unabhängig davon, ob er für eine NetApp Lösung erstellt wurde. 
+summary: Die BlueXP Klassifizierung kann Ihre Amazon S3 Buckets scannen, um die persönlichen und sensiblen Daten im S3 Objekt-Storage zu identifizieren. Die BlueXP Klassifizierung kann beliebige Buckets im Konto scannen, unabhängig davon, ob sie für eine NetApp Lösung erstellt wurden. 
 ---
-= Erste Schritte mit Cloud Data Sense für Amazon S3
+= Erste Schritte mit der BlueXP Klassifizierung für Amazon S3
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Data Sense kann Ihre Amazon S3 Buckets scannen, um die persönlic
 
 
 [role="lead"]
-Cloud Data Sense kann Ihre Amazon S3 Buckets scannen, um die persönlichen und sensiblen Daten zu identifizieren, die sich im S3 Objekt-Storage befinden. Cloud Data Sense kann jeden Bucket im Konto scannen, unabhängig davon, ob er für eine NetApp Lösung erstellt wurde.
+Die BlueXP Klassifizierung kann Ihre Amazon S3 Buckets scannen, um die persönlichen und sensiblen Daten im S3 Objekt-Storage zu identifizieren. Die BlueXP Klassifizierung kann beliebige Buckets im Konto scannen, unabhängig davon, ob sie für eine NetApp Lösung erstellt wurden.
 
 
 
@@ -24,19 +24,19 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] S3-Anforderungen in Ihrer Cloud-Umgebung einrichten
 [role="quick-margin-para"]
-Stellen Sie sicher, dass Ihre Cloud-Umgebung die Anforderungen für Cloud Data Sense erfüllen kann, einschließlich der Vorbereitung einer IAM-Rolle und der Einrichtung der Konnektivität von Data Sense bis S3. <<Überprüfen der S3-Voraussetzungen,Eine vollständige Liste finden Sie hier>>.
+Stellen Sie sicher, dass Ihre Cloud-Umgebung die Anforderungen für die BlueXP Klassifizierung erfüllen kann. Bereiten Sie dazu eine IAM-Rolle vor und richten Sie die Konnektivität von der BlueXP Klassifizierung zu S3 ein. <<Überprüfen der S3-Voraussetzungen,Eine vollständige Liste finden Sie hier>>.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie die Cloud Data Sense Instanz
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Daten"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Aktivieren Sie Data Sense in Ihrer S3-Arbeitsumgebung
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] BlueXP-Klassifizierung in Ihrer S3-Arbeitsumgebung aktivieren
 [role="quick-margin-para"]
 Wählen Sie die Amazon S3-Arbeitsumgebung aus, klicken Sie auf *Aktivieren* und wählen Sie eine IAM-Rolle aus, die die erforderlichen Berechtigungen enthält.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Wählen Sie die zu scannenden Buckets aus
 [role="quick-margin-para"]
-Wählen Sie die Buckets aus, die Sie scannen möchten, und Cloud Data Sense beginnt mit dem Scannen.
+Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierung beginnt mit dem Scannen.
 
 
 
@@ -45,7 +45,7 @@ Wählen Sie die Buckets aus, die Sie scannen möchten, und Cloud Data Sense begi
 Die folgenden Anforderungen gelten insbesondere für das Scannen von S3-Buckets.
 
 [[policy-requirements]]
-Einrichten einer IAM-Rolle für die Cloud Data Sense Instanz:: Cloud Data Sense benötigt Berechtigungen, um sich mit den S3 Buckets Ihres Kontos zu verbinden und zu scannen. Richten Sie eine IAM-Rolle ein, die die unten aufgeführten Berechtigungen enthält. BlueXP fordert Sie auf, eine IAM-Rolle auszuwählen, wenn Sie „Data Sense“ in der Amazon S3-Arbeitsumgebung aktivieren.
+Richten Sie eine IAM-Rolle für die BlueXP Klassifizierungsinstanz ein:: Die BlueXP Klassifizierung erfordert Berechtigungen, um eine Verbindung zu den S3 Buckets in Ihrem Konto herzustellen und sie zu scannen. Richten Sie eine IAM-Rolle ein, die die unten aufgeführten Berechtigungen enthält. BlueXP fordert Sie zur Auswahl einer IAM-Rolle auf, wenn Sie die BlueXP-Klassifizierung in der Amazon S3 Arbeitsumgebung aktivieren.
 +
 --
 [source, json]
@@ -78,10 +78,10 @@ Einrichten einer IAM-Rolle für die Cloud Data Sense Instanz:: Cloud Data Sense 
 }
 ----
 --
-Konnektivität von Cloud Data Sense zu Amazon S3:: Cloud Data Sense benötigt eine Verbindung zu Amazon S3. Die beste Möglichkeit, eine solche Verbindung bereitzustellen, ist über einen VPC Endpunkt zum S3-Service. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
+Konnektivität von der BlueXP Klassifizierung bis zu Amazon S3:: Die Klassifizierung von BlueXP erfordert eine Verbindung zu Amazon S3. Die beste Möglichkeit, eine solche Verbindung bereitzustellen, ist über einen VPC Endpunkt zum S3-Service. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
 +
 --
-Wenn Sie den VPC-Endpunkt erstellen, müssen Sie die Region, die VPC und die Routing-Tabelle auswählen, die der Cloud Data Sense Instanz entspricht. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann Data Sense keine Verbindung zum S3-Service herstellen.
+Wenn Sie den VPC-Endpunkt erstellen, müssen Sie die Region, die VPC und die Routetabelle auswählen, die der BlueXP Klassifizierungsinstanz entsprechen. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann die BlueXP Klassifizierung keine Verbindung zum S3-Service herstellen.
 
 Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich keine Verbindung zu einem S3-Bucket über einen Gateway-VPC-Endpunkt herstellen?"^]
 
@@ -95,21 +95,21 @@ NOTE: Sie können keinen Proxy verwenden, um über das Internet nach S3 zu gelan
 
 
 
-== Bereitstellen der Cloud Data Sense Instanz
+== Implementieren der BlueXP Klassifizierungsinstanz
 
-link:task-deploy-cloud-compliance.html["Implementieren Sie Cloud Data Sense in BlueXP"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in BlueXP"^] Falls noch keine Instanz implementiert wurde.
 
 Sie müssen die Instanz mithilfe eines in AWS bereitgestellten Connectors implementieren, damit BlueXP die S3-Buckets in diesem AWS-Konto automatisch erkennt und diese in einer Amazon S3-Arbeitsumgebung anzeigt.
 
-*Hinweis:* beim Scannen von S3 Buckets wird derzeit nicht die Bereitstellung von Cloud Data Sense an einem lokalen Speicherort unterstützt.
+*Hinweis:* die Implementierung der BlueXP Klassifizierung an einem lokalen Speicherort wird derzeit beim Scannen von S3-Buckets nicht unterstützt.
 
-Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
-== Aktivieren von Data Sense in Ihrer S3-Arbeitsumgebung
+== Aktivierung der BlueXP Klassifizierung in Ihrer S3-Arbeitsumgebung
 
-Aktivieren Sie Cloud Data Sense auf Amazon S3, nachdem Sie die Voraussetzungen überprüft haben.
+Aktivieren Sie die BlueXP Klassifizierung für Amazon S3, nachdem Sie die Voraussetzungen überprüft haben.
 
 .Schritte
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Speicherung > Leinwand*.
@@ -119,17 +119,17 @@ image:screenshot_s3_we.gif["Ein Screenshot eines Amazon S3 Arbeitsumgebungssymbo
 
 . Klicken Sie im Bereich Services rechts neben *Classification* auf *enable*.
 +
-image:screenshot_s3_enable_compliance.png["Ein Screenshot der Aktivierung des Cloud Data Sense Service über das Fenster „Services“"]
+image:screenshot_s3_enable_compliance.png["Ein Screenshot, wie der BlueXP Klassifizierungsservice über das Bedienfeld „Services“ aktiviert wird"]
 
-. Wenn Sie dazu aufgefordert werden, weisen Sie der Cloud Data Sense Instanz eine IAM-Rolle zu <<Überprüfen der S3-Voraussetzungen,Die erforderlichen Berechtigungen>>.
+. Weisen Sie der BlueXP Klassifizierungsinstanz eine IAM-Rolle zu, wenn Sie dazu aufgefordert werden <<Überprüfen der S3-Voraussetzungen,Die erforderlichen Berechtigungen>>.
 +
-image:screenshot_s3_compliance_iam_role.png["Screenshot zur Eingabe der AWS IAM-Rolle für Cloud Data Sense"]
+image:screenshot_s3_compliance_iam_role.png["Ein Screenshot der Eingabe der AWS IAM-Rolle für die BlueXP-Klassifizierung"]
 
 . Klicken Sie Auf *Aktivieren*.
 
 
 
-TIP: Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken image:screenshot_gallery_options.gif[""] Und wählen Sie *Datensense aktivieren*.
+TIP: Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken image:screenshot_gallery_options.gif[""] Und dann *BlueXP Klassifizierung aktivieren*.
 
 .Ergebnis
 BlueXP weist der Instanz die IAM-Rolle zu.
@@ -138,11 +138,11 @@ BlueXP weist der Instanz die IAM-Rolle zu.
 
 == Aktivieren und Deaktivieren von Compliance-Scans auf S3-Buckets
 
-Nachdem BlueXP Cloud Data Sense in Amazon S3 aktiviert hat, müssen im nächsten Schritt die Buckets konfiguriert werden, die gescannt werden sollen.
+Nachdem BlueXP die BlueXP Klassifizierung für Amazon S3 aktiviert hat, müssen die zu scannenden Buckets konfiguriert werden.
 
 Wenn BlueXP im AWS Konto ausgeführt wird, das über die S3-Buckets verfügt, die Sie scannen möchten, erkennt es diese Buckets und zeigt sie in einer Amazon S3-Arbeitsumgebung an.
 
-Cloud Data Sense kann es auch <<Scannen von Buckets für weitere AWS Konten,Scannen von S3-Buckets, die in unterschiedlichen AWS Konten vorhanden sind>>.
+Die BlueXP Klassifizierung kann Sie ebenfalls <<Scannen von Buckets für weitere AWS Konten,Scannen von S3-Buckets, die in unterschiedlichen AWS Konten vorhanden sind>>.
 
 .Schritte
 . Wählen Sie die Amazon S3-Arbeitsumgebung aus.
@@ -171,13 +171,13 @@ image:screenshot_s3_select_buckets.png["Ein Screenshot zur Auswahl der S3-Bucket
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der aktivierten S3 Buckets. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten S3-Buckets. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
 
 
 
 == Scannen von Buckets für weitere AWS Konten
 
-Sie können S3-Buckets scannen, die sich unter einem anderen AWS-Konto befinden, indem Sie über dieses Konto eine Rolle zuweisen, um auf die vorhandene Cloud Data Sense Instanz zuzugreifen.
+Sie können S3-Buckets, die sich unter einem anderen AWS-Konto befinden, scannen, indem Sie eine Rolle von diesem Konto zuweisen, um auf die bestehende BlueXP Klassifizierungsinstanz zuzugreifen.
 
 .Schritte
 . Gehen Sie zum AWS Ziel-Konto, in dem Sie S3 Buckets scannen und eine IAM-Rolle erstellen möchten, indem Sie *ein weiteres AWS-Konto* auswählen.
@@ -188,9 +188,9 @@ image:screenshot_iam_create_role.gif["Ein Screenshot der AWS Seite, in dem eine 
 Gehen Sie wie folgt vor:
 
 +
-** Geben Sie die ID des Kontos ein, auf dem sich die Cloud Data Sense Instanz befindet.
+** Geben Sie die ID des Kontos ein, unter dem sich die BlueXP Klassifizierungsinstanz befindet.
 ** Ändern Sie die maximale CLI/API-Sitzungsdauer* von 1 Stunde auf 12 Stunden und speichern Sie diese Änderung.
-** Hängen Sie die Cloud Data Sense IAM-Richtlinie an. Stellen Sie sicher, dass es über die erforderlichen Berechtigungen verfügt.
+** Hängen Sie die BlueXP Klassifizierungs-IAM-Richtlinie an. Stellen Sie sicher, dass es über die erforderlichen Berechtigungen verfügt.
 +
 [source, json]
 ----
@@ -211,7 +211,7 @@ Gehen Sie wie folgt vor:
 ----
 
 
-. Gehen Sie zum AWS-Quellkonto, in dem sich die Datensense-Instanz befindet, und wählen Sie die IAM-Rolle aus, die mit der Instanz verbunden ist.
+. Wechseln Sie zum AWS-Quellkonto, in dem sich die BlueXP Klassifizierungsinstanz befindet, und wählen Sie die mit der Instanz verbundene IAM-Rolle aus.
 +
 .. Ändern Sie die maximale CLI/API-Sitzungsdauer* von 1 Stunde auf 12 Stunden und speichern Sie diese Änderung.
 .. Klicken Sie auf *Richtlinien anhängen* und dann auf *Richtlinien erstellen*.
@@ -243,16 +243,16 @@ Gehen Sie wie folgt vor:
 }
 ----
 +
-Das Cloud Data Sense Instanzprofil hat nun Zugriff auf das zusätzliche AWS Konto.
+Das BlueXP Profil für Klassifizierungsinstanzen hat jetzt Zugriff auf das zusätzliche AWS-Konto.
 
 
 
-. Gehen Sie auf die Seite *Amazon S3 Configuration* und das neue AWS-Konto wird angezeigt. Beachten Sie, dass es einige Minuten dauern kann, bis Cloud Data Sense die Arbeitsumgebung des neuen Kontos synchronisiert und diese Informationen anzeigt.
+. Gehen Sie auf die Seite *Amazon S3 Configuration* und das neue AWS-Konto wird angezeigt. Beachten Sie, dass es ein paar Minuten für die BlueXP Klassifizierung dauern kann, bis die Arbeitsumgebung des neuen Kunden synchronisiert und diese Informationen angezeigt werden.
 +
-image:screenshot_activate_and_select_buckets.png["Ein Screenshot, in dem die Aktivierung von Data Sense angezeigt wird."]
+image:screenshot_activate_and_select_buckets.png["Ein Screenshot, der zeigt, wie die BlueXP Klassifizierung aktiviert wird."]
 
-. Klicken Sie auf *Daten aktivieren Sense & Buckets auswählen* und wählen Sie die Eimer aus, die Sie scannen möchten.
+. Klicken Sie auf *BlueXP classification & Select Buckets* aktivieren und wählen Sie die Buckets aus, die Sie scannen möchten.
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der neuen aktivierten S3 Buckets.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der neuen S3-Buckets, die Sie aktiviert haben.

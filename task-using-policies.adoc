@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Cloud Data Sense bietet einen Satz vordefinierter Richtlinien, die auf gängigen Kundenanfragen basieren. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
+summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
 ---
 = Zuweisen von Richtlinien zu Ihren Daten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filter
 
 
 [role="lead"]
-Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Cloud Data Sense bietet einen Satz vordefinierter Richtlinien, die auf gängigen Kundenanfragen basieren. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind.
+Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind.
 
 Richtlinien bieten folgende Funktionen:
 
@@ -26,9 +26,9 @@ Richtlinien bieten folgende Funktionen:
 * Löschen Sie Dateien automatisch (einmal pro Tag), wenn bestimmte Richtlinien Ergebnisse zurückgeben, damit Sie Ihre Daten automatisch schützen können
 
 
-Auf der Registerkarte *Richtlinien* im Compliance Dashboard werden alle vordefinierten und benutzerdefinierten Richtlinien aufgelistet, die auf dieser Instanz von Cloud Data Sense verfügbar sind.
+Auf der Registerkarte *Policies* im Compliance Dashboard werden alle vordefinierten und benutzerdefinierten Richtlinien aufgelistet, die auf dieser Instanz der BlueXP-Klassifizierung verfügbar sind.
 
-image:screenshot_compliance_highlights_tab.png["Einen Screenshot der Registerkarte Policies im Cloud Data Sense Dashboard."]
+image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte „Richtlinien“ im BlueXP Klassifizierungs-Dashboard"]
 
 Darüber hinaus werden Richtlinien in der Liste der Filter auf der Untersuchungsseite angezeigt.
 
@@ -76,7 +76,7 @@ Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.
 
 == Senden von E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
 
-Cloud Data Sense kann E-Mail-Benachrichtigungen an BlueXP-Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden. Sie können auch E-Mail-Benachrichtigungen an eine andere E-Mail-Adresse senden - bis zu 20 E-Mail-Adressen - nicht in Ihrem BlueXP-Konto.
+Die BlueXP Klassifizierung kann E-Mail-Benachrichtigungen an BlueXP Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, sodass Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden. Sie können auch E-Mail-Benachrichtigungen an eine andere E-Mail-Adresse senden - bis zu 20 E-Mail-Adressen - nicht in Ihrem BlueXP-Konto.
 
 Sie können diese Einstellung beim Erstellen der Richtlinie oder beim Bearbeiten einer Richtlinie konfigurieren.
 
@@ -106,7 +106,7 @@ Die erste E-Mail wird jetzt gesendet, wenn Ergebnisse aus der Richtlinie vorlieg
 
 == Quelldateien werden automatisch mithilfe von Richtlinien gelöscht
 
-Sie können eine benutzerdefinierte Richtlinie erstellen, um Dateien zu löschen, die der Richtlinie entsprechen. Sie können beispielsweise Dateien löschen, die vertrauliche Informationen enthalten und von Data Sense in den letzten 30 Tagen entdeckt wurden.
+Sie können eine benutzerdefinierte Richtlinie erstellen, um Dateien zu löschen, die der Richtlinie entsprechen. Beispielsweise können Sie Dateien löschen, die sensible Informationen enthalten und von der BlueXP Klassifizierung in den letzten 30 Tagen erkannt wurden.
 
 Nur Kontoadministratoren können eine Richtlinie zum automatischen Löschen von Dateien erstellen.
 
@@ -139,7 +139,7 @@ Sie können die Liste der Dateien anzeigen, die im gelöscht wurden link:task-vi
 
 Sie können allen Dateien, die die Kriterien der Richtlinie erfüllen, eine AIP-Beschriftung zuweisen. Sie können beim Erstellen der Richtlinie das AIP-Etikett angeben oder die Beschriftung beim Bearbeiten einer Richtlinie hinzufügen.
 
-Etiketten werden kontinuierlich in Dateien hinzugefügt oder aktualisiert, wenn Cloud Data Sense Ihre Dateien scannt.
+Während die BlueXP Klassifizierung Ihre Dateien scannt, werden Labels fortlaufend in Dateien hinzugefügt oder aktualisiert.
 
 Je nachdem, ob bereits ein Label auf eine Datei und die Klassifizierungsstufe des Etiketts angewendet wurde, werden beim Ändern einer Bezeichnung folgende Aktionen ausgeführt:
 
@@ -220,7 +220,7 @@ Zum Löschen einer Richtlinie klicken Sie auf das image:screenshot_gallery_optio
 
 == Liste der vordefinierten Richtlinien
 
-Cloud Data Sense bietet die folgenden systemdefinierten Richtlinien:
+Die BlueXP Klassifizierung bietet die folgenden systemdefinierten Richtlinien:
 
 [cols="25,40,40"]
 |===

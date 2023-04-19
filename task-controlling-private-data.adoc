@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Mehr Kontrolle über Ihre persönlichen Daten durch die Anzeige von Details zu den personenbezogenen Daten und vertraulichen personenbezogenen Daten in Ihrem Unternehmen. Lesen Sie auch die Kategorien und Dateitypen, die Cloud Data Sense in Ihren Daten finden, um für sich zu sorgen. 
+summary: Mehr Kontrolle über Ihre persönlichen Daten durch die Anzeige von Details zu den personenbezogenen Daten und vertraulichen personenbezogenen Daten in Ihrem Unternehmen. Zusätzlich können Sie sich Sichtbarkeit verschaffen, indem Sie die Kategorien und Dateitypen überprüfen, die in Ihren Daten für die BlueXP Klassifizierung gefunden wurden. 
 ---
 = Anzeigen von Compliance-Details zu den in Ihrem Unternehmen gespeicherten Daten
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Mehr Kontrolle über Ihre persönlichen Daten durch die Anzeige von Det
 
 
 [role="lead"]
-Mehr Kontrolle über Ihre persönlichen Daten durch die Anzeige von Details zu den personenbezogenen Daten und vertraulichen personenbezogenen Daten in Ihrem Unternehmen. Lesen Sie auch die Kategorien und Dateitypen, die Cloud Data Sense in Ihren Daten finden, um für sich zu sorgen.
+Mehr Kontrolle über Ihre persönlichen Daten durch die Anzeige von Details zu den personenbezogenen Daten und vertraulichen personenbezogenen Daten in Ihrem Unternehmen. Zusätzlich können Sie sich Sichtbarkeit verschaffen, indem Sie die Kategorien und Dateitypen überprüfen, die in Ihren Daten für die BlueXP Klassifizierung gefunden wurden.
 
 
 NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
 
-Standardmäßig werden im Cloud Data Sense Dashboard Compliance-Daten für alle Arbeitsumgebungen und Datenbanken angezeigt.
+Im BlueXP Klassifizierungs-Dashboard werden standardmäßig Compliance-Daten für alle Arbeitsumgebungen und Datenbanken angezeigt.
 
-image:screenshot_compliance_dashboard.png["Screenshot aus dem Cloud Data Sense Dashboard"]
+image:screenshot_compliance_dashboard.png["Ein Screenshot des BlueXP Klassifizierungs-Dashboards"]
 
 Wenn Sie Daten nur für einige der Arbeitsumgebungen sehen möchten, <<Anzeigen von Dashboard-Daten für bestimmte Arbeitsumgebungen,Wählen Sie diese Arbeitsumgebungen aus>>.
 
@@ -31,11 +31,11 @@ Sie können die Ergebnisse auch auf der Seite Datenuntersuchung filtern und eine
 
 == Anzeigen von Dateien mit persönlichen Daten
 
-Cloud Data Sense identifiziert automatisch bestimmte Wörter, Strings und Muster (Regex) in den Daten. Beispielsweise personenbezogene Daten (Personal Identification Information, PII), Kreditkartennummern, Sozialversicherungsnummern, Kontonummern, Passwörter, Und vieles mehr. link:reference-private-data-categories.html#types-of-personal-data["Die vollständige Liste finden Sie hier"^]. Data Sense identifiziert diese Art von Informationen in einzelnen Dateien, in Dateien innerhalb von Verzeichnissen (Freigaben und Ordnern) und in Datenbanktabellen.
+Durch die BlueXP Klassifizierung werden automatisch bestimmte Wörter, Strings und Muster (Regex) innerhalb der Daten identifiziert. Beispielsweise personenbezogene Daten (Personal Identification Information, PII), Kreditkartennummern, Sozialversicherungsnummern, Kontonummern, Passwörter, Und vieles mehr. link:reference-private-data-categories.html#types-of-personal-data["Die vollständige Liste finden Sie hier"^]. Durch die BlueXP Klassifizierung wird diese Art von Informationen in einzelnen Dateien, in Dateien innerhalb von Verzeichnissen (Freigaben und Ordner) oder in Datenbanktabellen identifiziert.
 
 Wenn Sie außerdem einen zu scannenden Datenbankserver hinzugefügt haben, können Sie mit der Funktion _Data Fusion_ Ihre Dateien scannen, um festzustellen, ob eindeutige Identifikatoren aus Ihren Datenbanken in diesen Dateien oder anderen Datenbanken gefunden werden. Siehe link:task-managing-data-fusion.html["Hinzufügen von ID-Kennungen unter Verwendung von Data Fusion"^] Entsprechende Details.
 
-Für einige Arten von persönlichen Daten verwendet Data Sense _Proximity Validation_, um seine Ergebnisse zu validieren. Die Validierung erfolgt, indem ein oder mehrere vordefinierte Schlüsselwörter in der Nähe der gefundenen personenbezogenen Daten gesucht werden. Data Sense identifiziert zum Beispiel ein US-amerikanisches Sozialversicherungsnummer (SSN) als SSN, wenn sie neben ihr ein Näherungswort sieht - zum Beispiel _SSN_ oder _Sozialversicherung_. link:reference-private-data-categories.html#types-of-personal-data["Der Tisch der personenbezogenen Daten"^] Zeigt an, wenn Data Sense die Näherungsüberprüfung verwendet.
+Für einige Arten von personenbezogenen Daten verwendet die BlueXP Klassifizierung _Proximity Validation_, um ihre Ergebnisse zu validieren. Die Validierung erfolgt, indem ein oder mehrere vordefinierte Schlüsselwörter in der Nähe der gefundenen personenbezogenen Daten gesucht werden. Beispielsweise identifiziert die BlueXP Klassifizierung eine US Sozialversicherungsnummer (SSN) als SSN, wenn sie neben ihr ein Näherungswort sieht - zum Beispiel _SSN_ oder _Sozialversicherung_. link:reference-private-data-categories.html#types-of-personal-data["Der Tisch der personenbezogenen Daten"^] Zeigt an, wann die BlueXP Klassifizierung die Validierung der Nähe verwendet.
 
 .Schritte
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung* und dann auf die Registerkarte *Compliance*.
@@ -63,11 +63,11 @@ image:screenshot_compliance_investigation_page_directory.png["Ein Screenshot mit
 
 == Anzeigen von Dateien mit vertraulichen persönlichen Daten
 
-Cloud Data Sense identifiziert automatisch spezielle Arten von sensiblen personenbezogenen Daten, wie sie in Datenschutzvorschriften wie z. B. definiert sind https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artikel 9 und 10 der DSGVO"^]. Beispielsweise Informationen über die Gesundheit einer Person, ethnische Herkunft oder sexuelle Orientierung. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Die vollständige Liste finden Sie hier"^]. Data Sense identifiziert diese Art von Informationen in einzelnen Dateien, in Dateien innerhalb von Verzeichnissen (Freigaben und Ordnern) und in Datenbanktabellen.
+Die BlueXP Klassifizierung identifiziert automatisch besondere Arten von sensiblen personenbezogenen Daten, wie sie beispielsweise durch Datenschutzvorschriften definiert sind https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["Artikel 9 und 10 der DSGVO"^]. Beispielsweise Informationen über die Gesundheit einer Person, ethnische Herkunft oder sexuelle Orientierung. link:reference-private-data-categories.html#types-of-sensitive-personal-data["Die vollständige Liste finden Sie hier"^]. Durch die BlueXP Klassifizierung wird diese Art von Informationen in einzelnen Dateien, in Dateien innerhalb von Verzeichnissen (Freigaben und Ordner) oder in Datenbanktabellen identifiziert.
 
-Cloud Data Sense verwendet künstliche Intelligenz (KI), NLP (Natural Language Processing), maschinelles Lernen (ML) und Cognitive Computing (CC), um die Bedeutung des Inhalts, den es scannt, zu verstehen, um Entitäten zu extrahieren und entsprechend zu kategorisieren.
+Die BlueXP Klassifizierung verwendet künstliche Intelligenz (KI), Natural Language Processing (NLP), Machine Learning (ML) und Cognitive Computing (CC), um die Bedeutung des gescannten Inhalts zu verstehen. Anhand dessen werden Entitäten extrahiert und entsprechend kategorisiert.
 
-Beispielsweise ist eine sensitive DSGVO-Datenkategorie ethnisch Ursprungs. Aufgrund seiner NLP-Fähigkeiten kann Data Sense den Unterschied zwischen einem Satz unterscheiden, der "George ist Mexican" (mit vertraulichen Daten wie in Artikel 9 der DSGVO angegeben), und "George isst mexikanische Lebensmittel".
+Beispielsweise ist eine sensitive DSGVO-Datenkategorie ethnisch Ursprungs. Aufgrund der NLP-Fähigkeiten kann die BlueXP Klassifizierung den Unterschied zwischen einem Satz unterscheiden: „George ist Mexikaner“ (sensible sensible sensible Daten gemäß DSGVO, Artikel 9) und „George isst Mexikanisch“.
 
 
 NOTE: Nur Englisch wird beim Scannen sensibler personenbezogener Daten unterstützt. Support für weitere Sprachen wird später hinzugefügt.
@@ -89,7 +89,7 @@ image:screenshot_sensitive_personal_files.gif["Ein Screenshot des Dialogfelds se
 
 == Anzeigen von Dateien nach Kategorien
 
-Cloud Data Sense verwendet die gescannten Daten und unterteilt sie in verschiedene Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:reference-private-data-categories.html#types-of-categories["Siehe die Liste der Kategorien"^].
+Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:reference-private-data-categories.html#types-of-categories["Siehe die Liste der Kategorien"^].
 
 Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie Lebensläufe oder Mitarbeiterverträge sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
@@ -109,7 +109,7 @@ image:screenshot_categories.gif["Ein Screenshot des Dialogfelds „Kategorien“
 
 == Anzeigen von Dateien nach Dateitypen
 
-Cloud Data Sense verwendet die gescannten Daten und werden nach Dateityp unterteilt. Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind. link:reference-private-data-categories.html#types-of-files["Siehe die Liste der Dateitypen"^].
+Die BlueXP Klassifizierung unterteilt die gescannten Daten nach Dateityp. Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind. link:reference-private-data-categories.html#types-of-files["Siehe die Liste der Dateitypen"^].
 
 Sie können beispielsweise CAD-Dateien speichern, die sehr sensible Informationen über Ihr Unternehmen enthalten. Wenn diese nicht gesichert sind, können Sie die Kontrolle über vertrauliche Daten übernehmen, indem Sie Berechtigungen beschränken oder Dateien an einen anderen Speicherort verschieben.
 
@@ -126,9 +126,9 @@ image:screenshot_file_types.gif["Ein Screenshot des Dialogfelds Dateitypen, in d
 
 == Anzeigen von Dashboard-Daten für bestimmte Arbeitsumgebungen
 
-Sie können die Inhalte des Cloud Data Sense Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur bestimmte Arbeitsumgebungen anzuzeigen.
+Sie können die Inhalte des BlueXP Klassifizierungs-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.
 
-Wenn Sie das Dashboard filtern, können Sie mit Data Sense die Compliance-Daten und -Berichte genau auf die von Ihnen ausgewählten Arbeitsumgebungen anwenden.
+Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.
 
 .Schritte
 . Klicken Sie auf das Dropdown-Menü Filter, wählen Sie die Arbeitsumgebungen aus, für die Sie Daten anzeigen möchten, und klicken Sie auf *Ansicht*.

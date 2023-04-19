@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
-summary: Cloud Data Sense bietet Berichte, anhand deren Sie den Status des Datenschutzprogramms Ihres Unternehmens besser verstehen können. 
+summary: Die BlueXP Klassifizierung bietet Berichte, die Sie verwenden können, um besseren Einblick in den Status Ihres Unternehmenskonzepts zum Datenschutz zu erhalten. 
 ---
 = Anzeigen von Compliance-Berichten
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Cloud Data Sense bietet Berichte, anhand deren Sie den Status des Daten
 
 
 [role="lead"]
-Cloud Data Sense bietet Berichte, anhand deren Sie den Status des Datenschutzprogramms Ihres Unternehmens besser verstehen können.
+Die BlueXP Klassifizierung bietet Berichte, die Sie verwenden können, um besseren Einblick in den Status Ihres Unternehmenskonzepts zum Datenschutz zu erhalten.
 
-Standardmäßig zeigen die Cloud Data Sense Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <<Auswählen der Arbeitsumgebungen für Berichte,Wählen Sie diese Arbeitsumgebungen aus>>.
+Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <<Auswählen der Arbeitsumgebungen für Berichte,Wählen Sie diese Arbeitsumgebungen aus>>.
 
 [NOTE]
 ====
 * Die in diesem Abschnitt beschriebenen Berichte sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan durchgeführt wurde, können nur den Daten-Mapping-Bericht generieren.
-* NetApp kann keine Garantie für 100 % der Genauigkeit persönlicher Daten und sensibler personenbezogener Daten, die Cloud Data Sense identifiziert. Überprüfen Sie die Informationen immer, indem Sie die Daten überprüfen.
+* NetApp kann die Genauigkeit der personenbezogenen Daten und sensiblen personenbezogenen Daten, die durch die BlueXP Klassifizierung identifiziert werden, nicht zu 100 % garantieren. Überprüfen Sie die Informationen immer, indem Sie die Daten überprüfen.
 
 
 ====
@@ -40,7 +40,7 @@ Betroffene in dieser Beurteilung:: Die Anzahl der Personen, nach Ort, für die n
 
 === Generieren des Datenschutzrisikobewertungsberichts
 
-Rufen Sie die Registerkarte „Data Sense“ auf, um den Bericht zu erstellen.
+Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
@@ -51,13 +51,13 @@ image:screenshot_privacy_risk_assessment.gif["Ein Screenshot der Registerkarte C
 
 
 .Ergebnis
-Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
 
 
 === Schweregrad
 
-Cloud Data Sense berechnet den Schweregrad für den Privacy Risk Assessment-Bericht auf der Grundlage von drei Variablen:
+Die BlueXP Klassifizierung berechnet die Bewertung des Schweregrads für den Bericht zur Risikoanalyse personenbezogener Daten auf der Basis von drei Variablen:
 
 * Der Prozentsatz der personenbezogenen Daten aus allen Daten.
 * Der Prozentsatz sensibler personenbezogener Daten aus allen Daten.
@@ -120,7 +120,7 @@ Verteilung der Kreditkarteninformationen:: Die Arbeitsumgebungen, in denen Kredi
 
 === PCI DSS-Bericht wird erstellt
 
-Rufen Sie die Registerkarte „Data Sense“ auf, um den Bericht zu erstellen.
+Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
@@ -131,13 +131,13 @@ image:screenshot_pci_dss.gif["Ein Screenshot der Registerkarte Compliance in Blu
 
 
 .Ergebnis
-Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
 
 
 == HIPAA-Bericht
 
-Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Er unterstützt Ihr Unternehmen bei der Einhaltung der HIPAA-Datenschutzgesetze. Die Information Cloud Data Sense Looks umfasst:
+Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Er unterstützt Ihr Unternehmen bei der Einhaltung der HIPAA-Datenschutzgesetze. Die Informationen, für die die BlueXP Klassifizierung geeignet ist, umfassen:
 
 * Zustandsreferenzmuster
 * ICD-10 CM medizinischer Code
@@ -159,7 +159,7 @@ Verteilung von Gesundheitsinformationen:: In den Arbeitsumgebungen, in denen die
 
 === HIPAA-Bericht wird erstellt
 
-Rufen Sie die Registerkarte „Data Sense“ auf, um den Bericht zu erstellen.
+Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
@@ -170,7 +170,7 @@ image:screenshot_hipaa.gif["Ein Screenshot der Registerkarte Compliance in BlueX
 
 
 .Ergebnis
-Cloud Data Sense erstellt einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
 
 
@@ -182,9 +182,9 @@ Sie können auf einen DSAR antworten, indem Sie nach dem vollständigen Namen ei
 
 
 
-=== Wie kann Cloud Data Sense Ihnen dabei helfen, auf einen DSAR zu reagieren?
+=== Wie kann die BlueXP Klassifizierung Ihnen helfen, auf eine DSAR zu reagieren?
 
-Wenn Sie eine Suche für den Betroffenen durchführen, findet Cloud Data Sense alle Dateien, Buckets, OneDrive und SharePoint Konten, die darin ihren Namen oder ihr Kennung enthalten. Data Sense prüft die neuesten vorindizierten Daten auf den Namen oder die Kennung. Es wird kein neuer Scan gestartet.
+Wenn Sie eine Suche nach einer bestimmten Person durchführen, findet die BlueXP Klassifizierung alle Dateien, Buckets, OneDrive und SharePoint Konten, die den Namen oder die Kennung dieser Person enthalten. Die BlueXP Klassifizierung überprüft die aktuellsten vorab indizierten Daten nach dem Namen oder der Kennung. Es wird kein neuer Scan gestartet.
 
 Nachdem die Suche abgeschlossen ist, können Sie die Liste der Dateien für einen Bericht für die Anforderung von Datensubjekten herunterladen. Der Bericht sammelt Erkenntnisse aus den Daten und stellt die Daten zu rechtlichen Bedingungen bereit, die Sie an die Person zurücksenden können.
 
@@ -212,7 +212,7 @@ image:screenshot_dsar_search.gif["Ein Screenshot, der eine Suche nach dem Namen 
 
 . Wählen Sie eine der folgenden Optionen:
 +
-** *Download DSAR Report*: Eine formelle Antwort auf die Zugriffsanfrage, die Sie an den Betroffenen senden können. Dieser Bericht enthält automatisch generierte Informationen auf der Grundlage von Daten, die Cloud Data Sense auf der betroffenen Person gefunden hat und als Vorlage verwendet werden können. Füllen Sie das Formular aus und überprüfen Sie es intern, bevor Sie es an den Betroffenen senden.
+** *Download DSAR Report*: Eine formelle Antwort auf die Zugriffsanfrage, die Sie an den Betroffenen senden können. Dieser Bericht enthält automatisch generierte Informationen, die auf Daten basieren, deren BlueXP-Klassifizierung für den Betroffenen gefunden wurde und als Vorlage dienen. Füllen Sie das Formular aus und überprüfen Sie es intern, bevor Sie es an den Betroffenen senden.
 ** *Ergebnisse untersuchen*: Eine Seite, auf der Sie die Daten untersuchen können, indem Sie nach einer bestimmten Datei suchen, sortieren, Details erweitern und die Dateiliste herunterladen.
 +
 
@@ -226,9 +226,9 @@ NOTE: Wenn es mehr als 10,000 Ergebnisse gibt, werden nur die Top 10,000 in der 
 
 == Auswählen der Arbeitsumgebungen für Berichte
 
-Sie können die Inhalte des Cloud Data Sense Compliance Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur bestimmte Arbeitsumgebungen anzuzeigen.
+Sie können die Inhalte des BlueXP Klassifizierungs-Compliance-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.
 
-Wenn Sie das Dashboard filtern, können Sie mit Data Sense die Compliance-Daten und -Berichte genau auf die von Ihnen ausgewählten Arbeitsumgebungen anwenden.
+Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.
 
 .Schritte
 . Klicken Sie auf das Dropdown-Menü Filter, wählen Sie die Arbeitsumgebungen aus, für die Sie Daten anzeigen möchten, und klicken Sie auf *Ansicht*.

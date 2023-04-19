@@ -20,8 +20,8 @@ Auf diese Weise können Sie die Aktionen sehen, die erfolgreich abgeschlossen wu
 
 Der Status kann lauten:
 
-* Erfolg: Eine Aktion für den Datensinn ist abgeschlossen und alle Elemente erfolgreich.
-* Partieller Erfolg: Eine Aktion „Data Sense“ ist beendet und einige Elemente sind fehlgeschlagen und einige sind erfolgreich.
+* Erfolg – Eine BlueXP Klassifizierungsaktion wurde abgeschlossen und alle Elemente erfolgreich abgeschlossen.
+* Teilweiser Erfolg: Eine BlueXP-Klassifizierungsaktion ist abgeschlossen, einige Elemente sind fehlgeschlagen, einige erfolgreich.
 * In Bearbeitung – die Aktion läuft noch.
 * Warteschlange: Die Aktion wurde nicht gestartet.
 * Storniert: Die Aktion wurde abgebrochen.
@@ -31,7 +31,7 @@ Der Status kann lauten:
 Beachten Sie, dass Sie alle Aktionen mit dem Status „in Bearbeitung“ oder „in Bearbeitung“ abbrechen können.
 
 .Schritte
-. Rechts unten in der Data Sense Benutzeroberfläche sehen Sie die Schaltfläche *Actions Status* image:button_actions_status.png[""].
+. Rechts unten auf der BlueXP-Klassifikations-UI sehen Sie die Schaltfläche *Actions Status* image:button_actions_status.png[""].
 . Klicken Sie auf diese Schaltfläche, und die letzten 20 Aktionen werden aufgelistet.
 +
 image:screenshot_compliance_action_status.png["Ein Screenshot, der die letzten 20 Aktionen und ihren Status auf der Konfigurationsseite anzeigt."]

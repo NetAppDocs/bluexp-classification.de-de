@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-file-shares.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
-summary: Führen Sie einige Schritte durch, um die direkten Scans von NFS- oder CIFS-Dateifreigaben anderer Anbieter mit Cloud Data Sense zu starten. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden. 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetApp NFS- oder CIFS-Dateifreigaben direkt mit der BlueXP Klassifizierung zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden. 
 ---
 = Scannen von Dateifreigaben
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Führen Sie einige Schritte durch, um die direkten Scans von NFS- oder 
 
 
 [role="lead"]
-Führen Sie einige Schritte durch, um die direkten Scans von NFS- oder CIFS-Dateifreigaben anderer Anbieter mit Cloud Data Sense zu starten. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden.
+Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetApp NFS- oder CIFS-Dateifreigaben direkt mit der BlueXP Klassifizierung zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden.
 
 
 
@@ -26,9 +26,9 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 [role="quick-margin-para"]
 Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Anmeldeinformationen für den Zugriff auf Freigaben verfügen.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie die Cloud Data Sense Instanz
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Daten"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Erstellen Sie eine Gruppe, um die Dateifreigaben zu halten
 [role="quick-margin-para"]
@@ -42,37 +42,37 @@ Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den 
 
 == Prüfen der Anforderungen für die Dateifreigabe
 
-Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine unterstützte Konfiguration verfügen, bevor Sie Cloud Data Sense aktivieren.
+Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
 * Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. In den meisten Fällen handelt es sich hierbei um File Shares, die auf Storage-Systemen anderer Anbieter residieren. CIFS-Freigaben von älteren NetApp 7-Mode Storage-Systemen können jedoch als Dateifreigaben gescannt werden.
 +
-Data Sense kann keine Berechtigungen oder letzten Zugriffszeiten aus 7-Mode Systemen extrahieren. Darüber hinaus gibt es ein bekanntes Problem, bei dem das Mounten von CIFS-Freigaben auf SMB Version 2 für Linux nicht unterstützt wird.
+Beachten Sie, dass die BlueXP Klassifizierung keine Berechtigungen oder die „Zeit des letzten Zugriffs“ aus 7-Mode Systemen extrahieren kann. Aufgrund eines bekannten Problems zwischen einigen Linux-Versionen und CIFS-Freigaben auf 7-Mode-Systemen müssen Sie die Freigabe zudem so konfigurieren, dass nur SMB v1 mit aktivierter NTLM-Authentifizierung verwendet wird.
 
-* Es muss eine Netzwerkverbindung zwischen der Instanz Data Sense und den Freigaben bestehen.
-* Stellen Sie sicher, dass diese Ports für die Data Sense-Instanz offen sind:
+* Zwischen der BlueXP Klassifizierungsinstanz und den Freigaben muss eine Netzwerkverbindung bestehen.
+* Stellen Sie sicher, dass die Ports für die BlueXP Klassifizierungsinstanz offen sind:
 +
 ** Für NFS – die Ports 111 und 2049.
 ** Für CIFS – die Ports 139 und 445.
 
 
 * Sie benötigen die Liste der Freigaben, die Sie im Format hinzufügen möchten `<host_name>:/<share_path>`. Sie können die Freigaben einzeln eingeben oder eine Liste der Dateien, die Sie scannen möchten, mit einer Zeile angeben.
-* Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Active Directory-Anmeldeinformationen verfügen, die Lesezugriff auf die Freigaben bieten. Administratorberechtigungen sind bevorzugte Zugangsdaten für den Fall, dass Cloud Data Sense Daten scannen muss, die erhöhte Berechtigungen erfordern.
+* Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Active Directory-Anmeldeinformationen verfügen, die Lesezugriff auf die Freigaben bieten. Anmeldedaten als Administrator sind bevorzugt, wenn die BlueXP Klassifizierung alle Daten scannt, die erhöhte Berechtigungen erfordern.
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch Data Sense Klassifizierungsscans unverändert sind, empfehlen wir, dass der Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Wenn Sie sicherstellen möchten, dass Ihre Dateien durch die BlueXP Klassifizierungsklassifizierungs-Scans nicht zuletzt zugegriffen werden, empfehlen wir, dass der Benutzer über Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS verfügt. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
 
 
 
 
-== Bereitstellen der Cloud Data Sense Instanz
+== Implementieren der BlueXP Klassifizierungsinstanz
 
-Implementieren Sie Cloud-Daten sinnvoll, wenn noch keine Instanz implementiert ist.
+Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
-Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die über das Internet zugänglich sind, können Sie sie ausführen link:task-deploy-cloud-compliance.html["Cloud-Daten sinnvoll in der Cloud implementieren"^] Oder link:task-deploy-compliance-onprem.html["Implementieren Sie Data Sense in einem lokalen Standort mit Internetzugang"^].
+Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die über das Internet zugänglich sind, können Sie sie ausführen link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in der Cloud"^] Oder link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung an einem lokalen Standort mit Internetzugang"^].
 
-Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die in einer dunklen Site installiert wurden und über keinen Internetzugang verfügen, müssen Sie sie verwenden link:task-deploy-compliance-dark-site.html["Cloud Data Sense implementieren – auf demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
+Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die in einer dunklen Site installiert wurden und über keinen Internetzugang verfügen, müssen Sie sie verwenden link:task-deploy-compliance-dark-site.html["Implementieren Sie die BlueXP Klassifizierung an demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
 
-Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
@@ -96,7 +96,7 @@ Die neue File Shares-Gruppe wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 == Hinzufügen von Dateifreigaben zu einer Gruppe
 
-Sie fügen der File Shares-Gruppe Dateifreigaben hinzu, damit die Dateien in diesen Freigaben nach Cloud Data Sense gescannt werden. Sie fügen die Freigaben im Format hinzu `<host_name>:/<share_path>`.
+Sie fügen der Dateifreigaben-Gruppe Dateifreigaben hinzu, damit die Dateien in diesen Freigaben durch die BlueXP-Klassifizierung gescannt werden. Sie fügen die Freigaben im Format hinzu `<host_name>:/<share_path>`.
 
 Sie können einzelne Dateifreigaben hinzufügen, oder Sie können eine Liste der Dateien, die Sie scannen möchten, mit einer Zeile eingeben. Sie können bis zu 100 Shares gleichzeitig hinzufügen.
 
@@ -146,12 +146,12 @@ Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden k
 | Deaktivieren Sie das Scannen von Dateifreigaben | Klicken Sie Auf *Aus* 
 |===
 +
-Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn Data Sense keine Schreibattributberechtigungen in CIFS oder Schreibberechtigungen in NFS hat, wird das System die Dateien nicht scannen, da Data Sense die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
+Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen der Dateien in den hinzugefügten Dateifreigaben und die Ergebnisse werden im Dashboard und an anderen Speicherorten angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
 
 
 

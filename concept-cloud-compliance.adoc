@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
-summary: Cloud Data Sense ist ein Data-Governance-Service für BlueXP, der Ihre lokalen und Cloud-Datenquellen im Unternehmen scannt, um Daten zuzuordnen und zu klassifizieren, und private Informationen zu erkennen. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte. 
+summary: Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte. 
 ---
-= Cloud Data Sense nutzen
+= Mehr zur BlueXP Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,26 +14,26 @@ summary: Cloud Data Sense ist ein Data-Governance-Service für BlueXP, der Ihre 
 
 
 [role="lead"]
-Cloud Data Sense ist ein Data Governance Service für BlueXP (früher Cloud Manager), der On-Premises- und Cloud-Datenquellen Ihres Unternehmens scannt, um Daten zuzuordnen und zu klassifizieren, und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte.
+Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte.
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["Hier lernen Sie die Anwendungsfälle für Cloud-Datensinnvoll kennen"^].
+https://bluexp.netapp.com/netapp-cloud-data-sense["Sehen Sie sich die Anwendungsfälle für die BlueXP Klassifizierung an"^].
 
 
 
 == Funktionen
 
-Cloud Data Sense verwendet künstliche Intelligenz (KI), NLP (Natural Language Processing) und Machine Learning (ML), um die von ihm gescannten Inhalte zu verstehen, um Entitäten zu extrahieren und den Inhalt entsprechend zu kategorisieren. Dadurch kann Data Sense folgende Funktionsbereiche bereitstellen.
+Die BlueXP Klassifizierung verwendet künstliche Intelligenz (KI), Natural Language Processing (NLP) und Machine Learning (ML), um den gescannten Inhalt zu verstehen. Anhand dessen werden Entitäten extrahiert und die Inhalte entsprechend kategorisiert. Dadurch kann die BlueXP Klassifizierung folgende Funktionsbereiche bieten.
 
 
 
 === Einhaltung von Compliance-Vorschriften
 
-Data Sense bietet verschiedene Tools, die Sie bei Ihren Compliance-Bemühungen unterstützen können. Mit Data Sense können Sie:
+Die BlueXP Klassifizierung bietet verschiedene Tools, die Sie bei Ihren Compliance-Bemühungen unterstützen können. Die BlueXP Klassifizierung ermöglicht Ihnen:
 
 * Ermitteln von personenbezogenen Daten
 * Vielzahl sensibler personenbezogener Daten gemäß den Datenschutzvorschriften des DSGVO, CCPA, PCI und HIPAA ermitteln.
 * Reagieren Sie auf Data Subject Access Requests (DSAR) basierend auf Name oder E-Mail-Adresse.
-* Identifizieren Sie, ob eindeutige Kennungen aus Ihren Datenbanken in Dateien in anderen Repositorys gefunden werden - stellen Sie im Grunde Ihre eigene Liste von „persönlichen Daten“ her, die in Daten-Sense-Scans identifiziert werden.
+* Ermitteln Sie, ob eindeutige IDs Ihrer Datenbanken in Dateien in anderen Repositorys gefunden werden. Erstellen Sie also Ihre eigene Liste mit „persönlichen Daten“, die in BlueXP Klassifizierungs-Scans identifiziert werden.
 * Bestimmte Benutzer per E-Mail benachrichtigen, wenn Dateien bestimmte PII enthalten (Sie definieren diese Kriterien mit link:task-using-policies.html["Richtlinien"^]) So können Sie über einen Aktionsplan entscheiden.
 
 
@@ -41,7 +41,7 @@ Data Sense bietet verschiedene Tools, die Sie bei Ihren Compliance-Bemühungen u
 
 === Erhöhte Sicherheit
 
-Der Datensinn kann Daten identifizieren, die potenziell gefährdet sind, wenn sie für kriminelle Zwecke genutzt werden. Mit Data Sense können Sie:
+Mit der BlueXP Klassifizierung können Daten identifiziert werden, die potenziell gefährdet sind, aus strafrechtlichen Gründen auf sie zugegriffen zu werden. Die BlueXP Klassifizierung ermöglicht Ihnen:
 
 * Ermitteln Sie alle Dateien und Verzeichnisse (Shares und Ordner) mit offenen Berechtigungen, die Ihrem gesamten Unternehmen oder der Öffentlichkeit zugänglich sind.
 * Identifizieren Sie sensible Daten, die sich außerhalb des ursprünglichen dedizierten Standorts befinden.
@@ -55,7 +55,7 @@ Der Datensinn kann Daten identifizieren, die potenziell gefährdet sind, wenn si
 
 === Optimieren Sie die Storage-Auslastung
 
-Data Sense bietet Tools, die Sie bei den Storage-Gesamtbetriebskosten (TCO) unterstützen. Mit Data Sense können Sie:
+Die BlueXP Klassifizierung bietet Tools, die Sie bei Ihren Storage-Gesamtbetriebskosten (TCO) unterstützen. Die BlueXP Klassifizierung ermöglicht Ihnen:
 
 * Erhöhte Storage-Effizienz durch Identifizierung doppelter oder nicht geschäftlicher Daten Mit diesen Informationen können Sie entscheiden, ob Sie bestimmte Dateien verschieben oder löschen möchten.
 * Löschen Sie Dateien, die unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu belassen, oder die Sie als Duplikat identifiziert haben. Mit _Policies_ können Dateien, die bestimmten Kriterien entsprechen, automatisch gelöscht werden.
@@ -66,7 +66,7 @@ Data Sense bietet Tools, die Sie bei den Storage-Gesamtbetriebskosten (TCO) unte
 
 === Beschleunigte Datenmigration
 
-Mit Daten Sense können Sie Ihre On-Premises-Daten scannen, bevor Sie sie in die Public oder Private Cloud migrieren. Mit Data Sense können Sie:
+Mit der BlueXP Klassifizierung können Sie Ihre On-Premises-Daten scannen, bevor sie in die Public oder Private Cloud migrieren. Die BlueXP Klassifizierung ermöglicht Ihnen:
 
 * Zeigen Sie die Größe der Daten an und ob die Daten vertrauliche Informationen enthalten, bevor Sie sie verschieben.
 * Filtern Sie die Quelldaten (basierend auf über 25 Kriterientypen), damit Sie nur die erforderlichen Dateien in das Ziel verschieben können - unnötige Daten werden nicht verschoben.
@@ -77,7 +77,7 @@ Mit Daten Sense können Sie Ihre On-Premises-Daten scannen, bevor Sie sie in die
 
 == Unterstützte Datenquellen
 
-Cloud Data Sense kann strukturierte und unstrukturierte Daten aus folgenden Datenquellen scannen und analysieren:
+Die BlueXP Klassifizierung kann strukturierte und unstrukturierte Daten aus folgenden Datenquellen scannen und analysieren:
 
 *NetApp:*
 
@@ -119,25 +119,25 @@ Cloud Data Sense kann strukturierte und unstrukturierte Daten aus folgenden Date
 * SQL Server (MSSQL)
 
 
-Data Sense unterstützt NFS-Versionen 3.x, 4.0 und 4.1 sowie CIFS Versionen 1.x, 2.0, 2.1 und 3.0.
+Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x, 4.0 und 4.1 sowie CIFS-Versionen 1.x, 2.0, 2.1 und 3.0.
 
 
 
 == Kosten
 
-* Die Kosten für die Verwendung von Cloud Data Sense hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB Daten, die Data Sense in einem BlueXP-Arbeitsbereich scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://bluexp.netapp.com/netapp-cloud-data-sense["Preisgestaltung"^] Entsprechende Details.
+* Die Kosten der BlueXP Klassifizierung hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in einem BlueXP Workspace scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://bluexp.netapp.com/netapp-cloud-data-sense["Preisgestaltung"^] Entsprechende Details.
 +
-link:task-licensing-datasense.html["Lernen Sie, Cloud Data Sense zu lizenzieren"^].
+link:task-licensing-datasense.html["Informieren Sie sich über die Lizenzierung der BlueXP Klassifizierung"^].
 
-* Für die Installation von Cloud Data Sense in der Cloud ist die Implementierung einer Cloud-Instanz erforderlich, was beim Cloud-Provider zu Gebühren führt, wo sie implementiert wird. Siehe <<Die Instanz Cloud Data Sense,Der für jeden Cloud-Provider implementierte Instanztyp>>. Wenn Sie Daten Sense in einem lokalen System installieren, entstehen Ihnen keine Kosten.
-* Für Cloud Data Sense ist die Implementierung eines BlueXP Connectors erforderlich. In vielen Fällen haben Sie bereits einen Connector, weil Sie andere Speicher und Dienste in BlueXP verwenden. Die Connector-Instanz verursacht Gebühren bei dem Cloud-Provider, wo sie implementiert wird. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Für jeden Cloud-Provider implementierte Instanztyp"^]. Bei der Installation des Connectors in einem On-Premises-System entstehen keine Kosten.
+* Für die Installation der BlueXP Klassifizierung in der Cloud ist die Implementierung einer Cloud-Instanz erforderlich. Dies führt zu Gebühren beim Cloud-Provider, wo die Klassifizierung implementiert wird. Siehe <<Die BlueXP Klassifizierungsinstanz,Der für jeden Cloud-Provider implementierte Instanztyp>>. Die Installation der BlueXP Klassifizierung auf einem lokalen System kostet Sie nichts.
+* Für die Klassifizierung von BlueXP müssen Sie einen BlueXP Connector implementiert haben. In vielen Fällen haben Sie bereits einen Connector, weil Sie andere Speicher und Dienste in BlueXP verwenden. Die Connector-Instanz verursacht Gebühren bei dem Cloud-Provider, wo sie implementiert wird. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Für jeden Cloud-Provider implementierte Instanztyp"^]. Bei der Installation des Connectors in einem On-Premises-System entstehen keine Kosten.
 
 
 
 
 === Datentransferkosten
 
-Die Datentransferkosten hängen von Ihrer Einrichtung ab. Wenn sich die Instanz und Datenquelle Cloud Data Sense in derselben Verfügbarkeitszone und Region befinden, entstehen keine Datentransferkosten. Wenn sich die Datenquelle, beispielsweise ein Cloud Volumes ONTAP-System oder S3-Bucket, jedoch in einer _verschiedenen_ Verfügbarkeitszone oder -Region befindet, wird Ihr Cloud-Provider für Datentransferkosten berechnet. Weitere Informationen finden Sie unter diesen Links:
+Die Datentransferkosten hängen von Ihrer Einrichtung ab. Wenn sich die BlueXP Klassifizierungs-Instanz und Datenquelle in derselben Verfügbarkeitszone und -Region befinden, entstehen keine Kosten für Datentransfers. Wenn sich die Datenquelle, beispielsweise ein Cloud Volumes ONTAP-System oder S3-Bucket, jedoch in einer _verschiedenen_ Verfügbarkeitszone oder -Region befindet, wird Ihr Cloud-Provider für Datentransferkosten berechnet. Weitere Informationen finden Sie unter diesen Links:
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS: Amazon EC2-Preisgestaltung"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure: Preisangaben Für Die Bandbreite"^]
@@ -146,32 +146,32 @@ Die Datentransferkosten hängen von Ihrer Einrichtung ab. Wenn sich die Instanz 
 
 
 
-== Die Instanz Cloud Data Sense
+== Die BlueXP Klassifizierungsinstanz
 
-Wenn Sie Data Sense in der Cloud implementieren, stellt BlueXP die Instanz im selben Subnetz wie der Connector bereit. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder."^]
+Wenn Sie die BlueXP Klassifizierung in der Cloud implementieren, stellt BlueXP die Instanz im selben Subnetz bereit, in dem sich der Connector befindet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder."^]
 
-image:diagram_cloud_compliance_instance.png["Ein Diagramm mit einer BlueXP-Instanz und einer Cloud Data Sense Instanz, die in Ihrem Cloud-Provider ausgeführt wird."]
+image:diagram_cloud_compliance_instance.png["Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird."]
 
 Beachten Sie Folgendes über die Standardinstanz:
 
-* In AWS läuft Cloud Data Sense auf einem https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2.
-* In Azure wird Cloud Data Sense ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Auf einer Festplatte mit 500 gib. Das Betriebssystem-Image ist CentOS 7.9.
-* In GCP wird Cloud Data Sense ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten Festplatte mit 500 gib Standard. Das Betriebssystem-Image ist CentOS 7.9.
-* In Regionen, in denen die Standardinstanz nicht verfügbar ist, wird Data Sense auf einer alternativen Instanz ausgeführt. link:reference-instance-types.html["Sehen Sie sich die alternativen Instanztypen an"].
+* In AWS wird die BlueXP Klassifizierung auf einer ausgeführt https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2. Bei der Implementierung in AWS können Sie eine kleinere Instanzgröße wählen, wenn Sie eine kleine Datenmenge scannen.
+* In Azure wird die BlueXP Klassifizierung auf einer ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Auf einer Festplatte mit 500 gib. Das Betriebssystem-Image ist CentOS 7.9.
+* In GCP wird die BlueXP Klassifizierung auf einer ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten Festplatte mit 500 gib Standard. Das Betriebssystem-Image ist CentOS 7.9.
+* In Regionen, in denen die Standardinstanz nicht verfügbar ist, wird die BlueXP Klassifizierung auf einer alternativen Instanz ausgeführt. link:reference-instance-types.html["Sehen Sie sich die alternativen Instanztypen an"].
 * Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
-* Pro Connector wird nur eine Datensense-Instanz bereitgestellt.
+* Pro Connector wird nur eine BlueXP Klassifizierungsinstanz implementiert.
 
 
-Data Sense kann auch auf einem Linux-Host vor Ort oder auf einem Host bei einem bevorzugten Cloud-Provider implementiert werden. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der Software Data Sense sind automatisiert, solange die Instanz einen Internetzugang hat.
+Sie können die BlueXP Klassifizierung auch auf einem Linux-Host vor Ort oder auf einem Host in Ihrem bevorzugten Cloud-Provider implementieren. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der BlueXP Klassifizierungs-Software werden automatisiert, solange die Instanz einen Internetzugang hat.
 
 
-TIP: Die Instanz sollte jederzeit ausgeführt werden, da Cloud Data Sense die Daten kontinuierlich scannt.
+TIP: Die Instanz sollte immer ausgeführt werden, da die BlueXP Klassifizierung die Daten kontinuierlich scannt.
 
 
 
 === Verwenden eines kleineren Instanztyps
 
-Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereitstellen, aber es gibt einige Einschränkungen beim Einsatz dieser weniger leistungsstarken Systeme.
+Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen.
 
 [cols="18,26,56"]
 |===
@@ -186,19 +186,19 @@ Sie können Data Sense auf einem System mit weniger CPUs und weniger RAM bereits
 
 | Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
 |===
-Bei der Implementierung von Data Sense in der Cloud auf AWS können Sie sich für eine große/mittelgroße/kleine Instanz entscheiden. Wenn Sie Data Sense in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.
+Bei der Implementierung der BlueXP Klassifizierung in der Cloud auf AWS können Sie sich für eine große/mittlere/kleine Instanz entscheiden. Wenn Sie die BlueXP Klassifizierung in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.
 
-Verwenden Sie bei der Implementierung von Data Sense vor Ort einfach einen Linux-Host mit den kleineren Spezifikationen. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.
+Bei der lokalen Implementierung der BlueXP Klassifizierung sollten Sie einfach einen Linux-Host mit den kleineren Spezifikationen verwenden. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.
 
 
 
-== Funktionsweise von Cloud Data Sense
+== Funktionsweise der BlueXP Klassifizierung
 
-Cloud Data Sense funktioniert auf hoher Ebene wie folgt:
+Die allgemeine BlueXP Klassifizierung funktioniert wie folgt:
 
-. Sie stellen eine Instanz von Data Sense in BlueXP bereit.
+. Sie implementieren eine Instanz der BlueXP Klassifizierung in BlueXP.
 . Sie ermöglichen ein hohes Mapping oder tiefes Scannen auf einer oder mehreren Datenquellen.
-. Data Sense scannt die Daten mithilfe eines KI-Lernprozesses.
+. Bei der BlueXP Klassifizierung werden die Daten mithilfe eines KI-Lernprozesses gescannt.
 . Sie nutzen die bereitgestellten Dashboards und Berichterstellungs-Tools, um Ihre Compliance- und Governance-Bemühungen zu unterstützen.
 
 
@@ -206,13 +206,13 @@ Cloud Data Sense funktioniert auf hoher Ebene wie folgt:
 
 == Funktionsweise von Scans
 
-Nachdem Sie Cloud Data Sense aktiviert und die Volumes, Buckets, Datenbankschemas oder OneDrive oder SharePoint Benutzerdaten ausgewählt haben, die Sie scannen möchten, wird sofort mit dem Scannen der Daten begonnen, um persönliche und sensible Daten zu identifizieren. Es ordnet Ihre Organisationsdaten zu, kategorisiert jede Datei und identifiziert und extrahiert Entitäten und vordefinierte Muster in den Daten. Das Ergebnis des Scans ist ein Index von persönlichen Daten, sensiblen persönlichen Daten, Datenkategorien und Dateitypen.
+Nachdem Sie die BlueXP Klassifizierung aktiviert und die Volumes, Buckets, Datenbankschemas oder OneDrive- oder SharePoint Anwenderdaten ausgewählt haben, die Sie scannen möchten, beginnt der Service sofort mit der Suche nach persönlichen und sensiblen Daten. Es ordnet Ihre Organisationsdaten zu, kategorisiert jede Datei und identifiziert und extrahiert Entitäten und vordefinierte Muster in den Daten. Das Ergebnis des Scans ist ein Index von persönlichen Daten, sensiblen persönlichen Daten, Datenkategorien und Dateitypen.
 
-Durch das Mounten von NFS- und CIFS-Volumes stellt der Data Sense eine Verbindung zu den Daten wie jedem anderen Client her. NFS Volumes werden automatisch als schreibgeschützt abgerufen und müssen zur Überprüfung von CIFS Volumes Active Directory Anmeldeinformationen bereitstellen.
+Wie bei jedem anderen Client lässt sich die BlueXP Klassifizierung mit den Daten verbinden, indem NFS- und CIFS-Volumes gemountet werden. NFS Volumes werden automatisch als schreibgeschützt abgerufen und müssen zur Überprüfung von CIFS Volumes Active Directory Anmeldeinformationen bereitstellen.
 
-image:diagram_cloud_compliance_scan.png["Ein Diagramm mit einer BlueXP-Instanz und einer Cloud Data Sense Instanz, die in Ihrem Cloud-Provider ausgeführt wird. Die Data Sense Instanz ist mit NFS- und CIFS-Volumes, S3 Buckets, OneDrive-Konten und Datenbanken verbunden, um sie zu scannen."]
+image:diagram_cloud_compliance_scan.png["Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird. Die BlueXP Klassifizierungs-Instanz stellt eine Verbindung zu NFS- und CIFS-Volumes, S3 Buckets, OneDrive Konten und Datenbanken her, um sie zu scannen."]
 
-Nach dem ersten Scan scannt Data Sense Ihre Daten kontinuierlich, um inkrementelle Änderungen zu erkennen (deshalb ist es wichtig, die Instanz ausgeführt zu halten).
+Nach dem ersten Scan scannt die BlueXP Klassifizierung Ihre Daten fortlaufend, um inkrementelle Änderungen zu erkennen (daher ist es wichtig, die Instanz weiterhin aktiv zu halten).
 
 Sie können Scans auf Volume-Ebene, auf Bucket-Ebene, auf Datenbankschemaebene, auf OneDrive-Benutzerebene und auf SharePoint-Standortebene aktivieren und deaktivieren.
 
@@ -220,7 +220,7 @@ Sie können Scans auf Volume-Ebene, auf Bucket-Ebene, auf Datenbankschemaebene, 
 
 === Was ist der Unterschied zwischen Mapping und Classification Scans
 
-Cloud Data Sense ermöglicht es Ihnen, einen allgemeinen Scan mit „Mapping“ für ausgewählte Datenquellen durchzuführen. Das Mapping bietet nur einen Überblick über Ihre Daten auf hoher Ebene, während die Klassifizierung ein tiefes Scannen Ihrer Daten ermöglicht. Das Mapping kann auf Ihren Datenquellen sehr schnell durchgeführt werden, da es nicht auf Dateien zugegriffen wird, um die darin enthaltenen Daten zu sehen.
+Die BlueXP Klassifizierung ermöglicht Ihnen die Durchführung eines allgemeinen „Mapping“-Scans für ausgewählte Datenquellen. Das Mapping bietet nur einen Überblick über Ihre Daten auf hoher Ebene, während die Klassifizierung ein tiefes Scannen Ihrer Daten ermöglicht. Das Mapping kann auf Ihren Datenquellen sehr schnell durchgeführt werden, da es nicht auf Dateien zugegriffen wird, um die darin enthaltenen Daten zu sehen.
 
 Viele Benutzer mögen diese Funktionalität, weil sie ihre Daten schnell scannen möchten, um die Datenquellen zu identifizieren, die mehr Forschungsarbeiten benötigen. Sie können dann Scans nur auf die erforderlichen Datenquellen oder Volumes klassifizieren.
 
@@ -265,50 +265,50 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 |===
 
 
-=== Wie schnell scannt Data Sense Daten
+=== Wie schnell scannt die BlueXP Klassifizierung Daten
 
 Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
 
-* Beim Durchführen von Mapping-Scans kann Data Sense zwischen 100-150 TIBS der Daten pro Tag und pro Scannerknoten scannen.
-* Bei der Durchführung von Klassifizierungsscans kann Data Sense zwischen 15-40 TIBS der Daten pro Tag und pro Scannerknoten scannen.
+* Bei der Durchführung von Mapping-Scans kann die BlueXP Klassifizierung zwischen 100-150 TIBS Daten pro Tag und Scanner-Node scannen.
+* Bei der Durchführung von Classification Scans können mit der BlueXP Klassifizierung Daten pro Tag und Scanner-Node zwischen 15-40 TB gescannt werden.
 
 
-link:task-deploy-compliance-onprem.html#install-data-sense-on-the-linux-host["Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten"^].
+link:task-deploy-compliance-onprem.html#install-bluexp-classification-on-the-linux-host["Erfahren Sie mehr über die Implementierung mehrerer Scanner-Knoten zum Scannen Ihrer Daten"^].
 
 
 
-== Information, die Cloud Data Sense Indizes erstellt
+== Informationen, die die BlueXP Klassifizierung indexiert
 
-Data Sense erfasst, indiziert und weist Kategorien zu Ihren Daten (Dateien) zu. Die Daten, die Data Sense indiziert werden, umfassen Folgendes:
+Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Kategorien zu. Die Daten, die die BlueXP Klassifizierung indiziert, umfassen die folgenden:
 
-Standard-Metadaten:: Cloud Data Sense erfasst Standard-Metadaten zu Dateien: Dateityp, Größe, Erstellung und Änderung von Daten usw.
+Standard-Metadaten:: Die BlueXP Klassifizierung erfasst Standardmetadaten zu Dateien: Die Art der Datei, ihre Größe, das Erstellungsdatum und die Änderungsdaten usw.
 Persönliche Daten:: Personenbezogene Informationen wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
 Sensible persönliche Daten:: Besondere Arten sensibler Daten, wie etwa Gesundheitsdaten, ethnische Herkunft oder politische Ansichten, wie in der DSGVO und anderen Datenschutzvorschriften definiert link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
-Kategorien:: Cloud Data Sense verwendet die gescannten Daten und unterteilt sie in verschiedene Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#viewing-files-by-categories["Weitere Informationen zu Kategorien"^].
-Typen:: Cloud Data Sense verwendet die gescannten Daten und werden nach Dateityp unterteilt. link:task-controlling-private-data.html#viewing-files-by-file-types["Erfahren Sie mehr über Types"^].
-Name der Entität Anerkennung:: Cloud Data Sense verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
+Kategorien:: Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#viewing-files-by-categories["Weitere Informationen zu Kategorien"^].
+Typen:: Die BlueXP Klassifizierung unterteilt die gescannten Daten nach Dateityp. link:task-controlling-private-data.html#viewing-files-by-file-types["Erfahren Sie mehr über Types"^].
+Name der Entität Anerkennung:: Die BlueXP Klassifizierung verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
 
 
 
 
 == Netzwerkübersicht
 
-BlueXP implementiert die Cloud Data Sense-Instanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.
+BlueXP implementiert die BlueXP Klassifizierungsinstanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.
 
-Bei Verwendung von BlueXP im SaaS-Modus wird die Verbindung zu BlueXP über HTTPS bedient, und die zwischen Ihrem Browser und der Data Sense Instanz gesendeten privaten Daten sind durch End-to-End-Verschlüsselung gesichert, das bedeutet, dass NetApp und Dritte diese nicht lesen können.
+Wenn Sie BlueXP im SaaS-Modus verwenden, wird die Verbindung zu BlueXP über HTTPS hergestellt. Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz gesendet werden, sind durch End-to-End-Verschlüsselung geschützt, sodass NetApp und Drittanbieter die Daten nicht lesen können.
 
-Ausgehende Regeln sind vollständig geöffnet. Zur Installation und Aktualisierung der Data Sense Software und zum Senden von Nutzungsmetriken ist Internetzugang erforderlich.
+Ausgehende Regeln sind vollständig geöffnet. Zum Installieren und Aktualisieren der BlueXP Klassifizierungssoftware und zum Senden von Nutzungsmetriken ist ein Internetzugriff erforderlich.
 
-Wenn Sie strenge Netzwerkanforderungen erfüllen, link:task-deploy-cloud-compliance.html#review-prerequisites["Erfahren Sie mehr über die Endpunkte, die Cloud Data Sense-Kontakte haben"^].
+Wenn Sie strenge Netzwerkanforderungen erfüllen, link:task-deploy-cloud-compliance.html#review-prerequisites["Erfahren Sie mehr über die Endpunkte, auf die BlueXP Klassifizierungen setzt"^].
 
 
 
 == Zugriff des Benutzers auf Compliance-Informationen
 
-Die Rolle, der jedem Benutzer zugewiesen wurde, bietet unterschiedliche Funktionen in BlueXP und in Cloud Data Sense:
+Die Rolle, die jedem Benutzer zugewiesen wurde, bietet unterschiedliche Funktionen in BlueXP und innerhalb der BlueXP Klassifizierung:
 
 * Ein *Account Admin* kann Compliance-Einstellungen verwalten und Compliance-Informationen für alle Arbeitsumgebungen anzeigen.
-* Ein *Workspace Admin* kann Compliance-Einstellungen verwalten und Compliance-Informationen nur für Systeme anzeigen, auf die sie Zugriff haben. Wenn ein Workspace-Administrator nicht auf eine Arbeitsumgebung in BlueXP zugreifen kann, werden auf der Registerkarte Data Sense keine Compliance-Informationen für die Arbeitsumgebung angezeigt.
+* Ein *Workspace Admin* kann Compliance-Einstellungen verwalten und Compliance-Informationen nur für Systeme anzeigen, auf die sie Zugriff haben. Wenn ein Workspace-Administrator nicht auf eine Arbeitsumgebung in BlueXP zugreifen kann, werden keine Compliance-Informationen für die Arbeitsumgebung auf der Registerkarte BlueXP Klassifizierung angezeigt.
 * Benutzer mit der Rolle *Compliance Viewer* können Compliance-Informationen nur anzeigen und Berichte für Systeme erstellen, auf die sie zugreifen können. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemata nicht aktivieren/deaktivieren. Diese Benutzer können Dateien auch nicht kopieren, verschieben oder löschen.
 
 

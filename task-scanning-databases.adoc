@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-databases.html 
-keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, Data Sense 
-summary: Führen Sie einige Schritte durch, um den Scan des Datenbankschemas mit Cloud Data Sense zu beginnen. 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
+summary: Führen Sie ein paar Schritte durch, um mit dem Scannen Ihrer Datenbankschemas mit der BlueXP Klassifizierung zu beginnen. 
 ---
 = Datenbankschemas werden gescannt
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Führen Sie einige Schritte durch, um den Scan des Datenbankschemas mit
 
 
 [role="lead"]
-Führen Sie einige Schritte durch, um den Scan des Datenbankschemas mit Cloud Data Sense zu beginnen.
+Führen Sie ein paar Schritte durch, um mit dem Scannen Ihrer Datenbankschemas mit der BlueXP Klassifizierung zu beginnen.
 
 
 
@@ -26,9 +26,9 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 [role="quick-margin-para"]
 Stellen Sie sicher, dass Ihre Datenbank unterstützt wird und dass Sie über die erforderlichen Informationen verfügen, um eine Verbindung zur Datenbank herzustellen.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren Sie die Cloud Data Sense Instanz
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Sinnvolle Implementierung Von Cloud-Daten"^] Falls noch keine Instanz implementiert wurde.
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie den Datenbankserver hinzu
 [role="quick-margin-para"]
@@ -42,13 +42,13 @@ Wählen Sie die Schemata aus, die Sie scannen möchten.
 
 == Voraussetzungen prüfen
 
-Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine unterstützte Konfiguration verfügen, bevor Sie Cloud Data Sense aktivieren.
+Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
 
 
 === Unterstützte Datenbanken
 
-Cloud Data Sense kann Schemen aus den folgenden Datenbanken scannen:
+Die BlueXP Klassifizierung kann Schemata aus den folgenden Datenbanken scannen:
 
 * Amazon Relational Database Service (Amazon RDS)
 * MongoDB
@@ -66,14 +66,14 @@ CAUTION: Die Statistik-Sammelfunktion *muss in der Datenbank aktiviert sein.
 
 === Datenbankanforderungen erfüllt
 
-Jede Datenbank mit Anbindung an die Cloud Data Sense Instanz kann unabhängig vom gehosteten Speicherort gescannt werden. Sie benötigen lediglich die folgenden Informationen, um eine Verbindung zur Datenbank herzustellen:
+Jede Datenbank, die mit der BlueXP Klassifizierungsinstanz verbunden ist, kann unabhängig vom Hosting gescannt werden. Sie benötigen lediglich die folgenden Informationen, um eine Verbindung zur Datenbank herzustellen:
 
 * IP-Adresse oder Hostname
 * Port
 * Dienstname (nur für den Zugriff auf Oracle-Datenbanken)
 * Anmeldeinformationen, die einen Lesezugriff auf die Schemas ermöglichen
 +
-Bei der Auswahl eines Benutzernamens und Passworts ist es wichtig, einen zu wählen, der über vollständige Leseberechtigungen für alle Schemas und Tabellen verfügt, die Sie scannen möchten. Es wird empfohlen, einen dedizierten Benutzer für das Cloud Data Sense System mit allen erforderlichen Berechtigungen zu erstellen.
+Bei der Auswahl eines Benutzernamens und Passworts ist es wichtig, einen zu wählen, der über vollständige Leseberechtigungen für alle Schemas und Tabellen verfügt, die Sie scannen möchten. Wir empfehlen, einen dedizierten Benutzer für das BlueXP Klassifizierungssystem mit allen erforderlichen Berechtigungen zu erstellen.
 
 
 
@@ -81,15 +81,15 @@ Bei der Auswahl eines Benutzernamens und Passworts ist es wichtig, einen zu wäh
 
 
 
-== Bereitstellen der Cloud Data Sense Instanz
+== Implementieren der BlueXP Klassifizierungsinstanz
 
-Implementieren Sie Cloud-Daten sinnvoll, wenn noch keine Instanz implementiert ist.
+Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
-Wenn Sie Datenbankschemas scannen, die über das Internet zugänglich sind, können Sie dies tun link:task-deploy-cloud-compliance.html["Cloud-Daten sinnvoll in der Cloud implementieren"^] Oder link:task-deploy-compliance-onprem.html["Implementieren Sie Data Sense in einem lokalen Standort mit Internetzugang"^].
+Wenn Sie Datenbankschemas scannen, die über das Internet zugänglich sind, können Sie dies tun link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in der Cloud"^] Oder link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung an einem lokalen Standort mit Internetzugang"^].
 
-Wenn Sie Datenbankschemas scannen, die in einer dunklen Site installiert wurden, die keinen Internetzugang hat, müssen Sie dies tun link:task-deploy-compliance-dark-site.html["Cloud Data Sense implementieren – auf demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
+Wenn Sie Datenbankschemas scannen, die in einer dunklen Site installiert wurden, die keinen Internetzugang hat, müssen Sie dies tun link:task-deploy-compliance-dark-site.html["Implementieren Sie die BlueXP Klassifizierung an demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
 
-Upgrades auf die Software Data Sense werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
@@ -106,7 +106,7 @@ image:screenshot_compliance_add_db_server_button.png["Ein Screenshot der Seite S
 .. Wählen Sie den Datenbanktyp aus.
 .. Geben Sie den Port und den Hostnamen oder die IP-Adresse ein, um eine Verbindung zur Datenbank herzustellen.
 .. Geben Sie für Oracle-Datenbanken den Dienstnamen ein.
-.. Geben Sie die Anmeldeinformationen ein, damit Cloud Data Sense auf den Server zugreifen kann.
+.. Geben Sie die Zugangsdaten ein, damit die BlueXP Klassifizierung auf den Server zugreifen kann.
 .. Klicken Sie auf *DB-Server hinzufügen*.
 +
 image:screenshot_compliance_add_db_server_dialog.png["Ein Screenshot der Seite DB Server hinzufügen, sodass Sie die Datenbank identifizieren können."]
@@ -137,6 +137,6 @@ image:screenshot_compliance_select_schemas.png["Ein Screenshot der Seite Scankon
 
 
 .Ergebnis
-Cloud Data Sense beginnt mit dem Scannen des von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
 
-Beachten Sie, dass Data Sense Ihre Datenbanken einmal täglich scannt – Datenbanken werden nicht wie andere Datenquellen kontinuierlich gescannt.
+Die BlueXP Klassifizierung scannt Ihre Datenbanken einmal pro Tag – Datenbanken werden nicht wie andere Datenquellen fortlaufend gescannt.

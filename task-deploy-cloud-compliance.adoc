@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. BlueXP implementiert die Data Sense Instanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector. 
+summary: Führen Sie einige Schritte durch, um die BlueXP Klassifizierung in der Cloud zu implementieren. BlueXP implementiert die BlueXP Klassifizierungsinstanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector. 
 ---
-= Implementieren Sie Cloud Data Sense in der Cloud mit BlueXP
+= Implementieren Sie die BlueXP Klassifizierung in der Cloud mit BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu 
 
 
 [role="lead"]
-Führen Sie einige Schritte durch, um Cloud Data Sense in der Cloud zu implementieren. BlueXP implementiert die Data Sense Instanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector.
+Führen Sie einige Schritte durch, um die BlueXP Klassifizierung in der Cloud zu implementieren. BlueXP implementiert die BlueXP Klassifizierungsinstanz im selben Cloud-Provider-Netzwerk wie der BlueXP Connector.
 
-Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Installieren Sie Data Sense auf einem Linux-Host mit Internetzugang"]. Diese Art der Installation kann eine gute Option sein, wenn Sie lieber On-Premises-ONTAP-Systeme mit einer Data Sense Instanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Voraussetzung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
+Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Installieren Sie die BlueXP Klassifizierung auf einem Linux-Host mit Internetzugang"]. Diese Art der Installation ist möglicherweise eine gute Option, wenn Sie lokale ONTAP Systeme mit einer BlueXP Klassifizierungsinstanz scannen möchten, die sich auch vor Ort befindet. Das ist jedoch keine Anforderung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.
 
 
 
@@ -33,26 +33,26 @@ Das können Sie auch https://docs.netapp.com/us-en/cloud-manager-setup-admin/tas
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Voraussetzungen prüfen
 [role="quick-margin-para"]
-Stellen Sie sicher, dass Ihre Umgebung die Voraussetzungen erfüllen kann. Dazu gehören Outbound-Internetzugang für die Instanz, Konnektivität zwischen Connector und Cloud Data Sense über Port 443 und mehr. <<Voraussetzungen prüfen,Eine vollständige Liste finden Sie hier>>.
+Stellen Sie sicher, dass Ihre Umgebung die Voraussetzungen erfüllen kann. Dazu gehören abgehender Internetzugang für die Instanz, Konnektivität zwischen dem Connector und BlueXP Klassifizierung über Port 443 und mehr. <<Voraussetzungen prüfen,Eine vollständige Liste finden Sie hier>>.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Sinnvolle Implementierung Von Cloud-Daten
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Implementieren Sie die BlueXP Klassifizierung
 [role="quick-margin-para"]
-Starten Sie den Installationsassistenten, um die Cloud Data Sense Instanz in der Cloud zu implementieren.
+Starten Sie den Installationsassistenten, um die BlueXP Klassifizierungsinstanz in der Cloud zu implementieren.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den Cloud Data Sense Service
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den BlueXP Klassifizierungsservice
 [role="quick-margin-para"]
-Die ersten 1 TB an Daten, die Cloud Data Sense in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.
+Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.
 
 
 
 == Einen Konnektor erstellen
 
-Falls Sie noch keinen Connector haben, erstellen Sie bei Ihrem Cloud-Provider einen Connector. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^] Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^]. In den meisten Fällen werden Sie wahrscheinlich einen Connector eingerichtet haben, bevor Sie versuchen, Cloud Data Sense zu aktivieren, weil die meisten https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
+Falls Sie noch keinen Connector haben, erstellen Sie bei Ihrem Cloud-Provider einen Connector. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^] Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^]. In den meisten Fällen ist wahrscheinlich vor der Aktivierung der BlueXP Klassifizierung ein Connector eingerichtet https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
 
 Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der bei einem bestimmten Cloud-Provider implementiert wird:
 
-* Beim Scannen von Daten in Cloud Volumes ONTAP in AWS, Amazon FSX für ONTAP oder in AWS S3 Buckets wird in AWS ein Connector verwendet.
-* Beim Scannen von Daten in Cloud Volumes ONTAP in Azure oder in Azure NetApp Files verwenden Sie einen Konnektor in Azure.
+* Zum Scannen von Daten in Cloud Volumes ONTAP in AWS, Amazon FSX für ONTAP oder in AWS S3-Buckets verwenden Sie einen Connector in AWS.
+* Beim Scannen von Daten in Cloud Volumes ONTAP in Azure oder in Azure NetApp Files verwenden Sie einen Connector in Azure.
 +
 ** Bei Azure NetApp Files muss sie in demselben Bereich bereitgestellt werden wie die Volumes, die Sie scannen möchten.
 
@@ -62,7 +62,7 @@ Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der be
 
 On-Prem-ONTAP-Systeme, File Shares anderer Anbieter, generischer S3-Objekt-Storage, Datenbanken, OneDrive-Ordner, SharePoint-Konten und Google Drive-Konten können bei der Verwendung eines dieser Cloud-Connectors gescannt werden.
 
-Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Anwender planen, Data Sense On-Prem zu installieren, können auch wählen, den Connector on-Prem zu installieren.
+Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 
 Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
 
@@ -70,7 +70,7 @@ Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müsse
 
 === Unterstützung für Regierungsregionen
 
-Cloud Data Sense wird unterstützt, wenn der Connector in einer Regierungsregion bereitgestellt wird (AWS GovCloud, Azure Gov oder Azure DoD). Wenn Daten Sense auf diese Weise eingesetzt wird, gelten folgende Einschränkungen:
+Die BlueXP Klassifizierung wird unterstützt, wenn der Connector in einer Regierungsregion (AWS GovCloud, Azure Gov oder Azure DoD) implementiert wird. Bei einer solchen Implementierung unterliegt die BlueXP Klassifizierung folgenden Einschränkungen:
 
 * OneDrive-Konten, SharePoint-Konten und Google-Laufwerk Konten können nicht gescannt werden.
 * Die Funktionalität der Microsoft Azure Information Protection (AIP)-Etiketten kann nicht integriert werden.
@@ -82,19 +82,19 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-
 
 == Voraussetzungen prüfen
 
-Die folgenden Voraussetzungen prüfen, um sicherzustellen, dass Sie über eine unterstützte Konfiguration verfügen, bevor Sie Cloud Data Sense in der Cloud implementieren.
+Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung in der Cloud implementieren.
 
-Outbound-Internetzugang über Cloud Data Sense aktivieren:: Für Cloud Data Sense ist ein Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxyserver für den Internetzugriff verwendet, stellen Sie sicher, dass die Datensense-Instanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren. Wenn Daten sinnvoll in der Cloud implementiert werden, befinden sich die Daten im selben Subnetz wie der Connector.
+Ermöglichen Sie Outbound-Internetzugriff aus der BlueXP Klassifizierung:: Für die BlueXP Klassifizierung ist Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxy-Server für den Internetzugang verwendet, stellen Sie sicher, dass die BlueXP Klassifizierungsinstanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren. Wenn Sie die BlueXP Klassifizierung in der Cloud implementieren, befindet sich diese im selben Subnetz wie der Connector.
 +
 --
-Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, können Sie die unten stehende Tabelle durchlesen.
+Je nachdem, ob Sie die BlueXP Klassifizierung in AWS, Azure oder GCP implementieren, können Sie die entsprechende Tabelle unten durchsehen.
 
 --
 
 
 [role="tabbed-block"]
 ====
-.Erforderliche Endpunkte für AWS-Implementierungen
+.Erforderliche Endpunkte für AWS
 --
 [cols="43,57"]
 |===
@@ -113,10 +113,10 @@ Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, könn
 | \https://kinesis.us-east-1.amazonaws.com | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
 
 
-| \https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | Cloud Data Sense kann auf Manifeste und Vorlagen zugreifen und diese herunterladen sowie Protokolle und Kennzahlen senden. 
+| \https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | Die BlueXP Klassifizierung ermöglicht den Zugriff auf Manifeste und Vorlagen sowie das Senden von Protokollen und Kennzahlen. 
 |===
 --
-.Erforderliche Endpunkte für Azure-Implementierungen
+.Erforderliche Endpunkte für Azure
 --
 [cols="43,57"]
 |===
@@ -135,7 +135,7 @@ Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, könn
 | \https://support.compliance.api.bluexp.netapp.com/ | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
 |===
 --
-.Erforderliche Endpunkte für GCP-Implementierungen
+.Erforderliche Endpunkte für GCP
 --
 [cols="43,57"]
 |===
@@ -155,8 +155,8 @@ Je nachdem, ob Sie Cloud Data Sense in AWS, Azure oder GCP implementieren, könn
 |===
 --
 ====
-Stellen Sie sicher, dass BlueXP über die erforderlichen Berechtigungen verfügt:: Stellen Sie sicher, dass BlueXP über die Berechtigungen zum Bereitstellen von Ressourcen verfügt und Sicherheitsgruppen für die Cloud Data Sense Instanz erstellt. Die neuesten BlueXP-Berechtigungen finden Sie in https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Die von NetApp bereitgestellten Richtlinien"^].
-Stellen Sie sicher, dass der BlueXP Connector auf Cloud Data Sense zugreifen kann:: Stellen Sie die Verbindung zwischen dem Connector und der Cloud Data Sense Instanz sicher. Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über Port 443 zu und aus der Instanz Data Sense zulassen. Diese Verbindung ermöglicht die Bereitstellung der Data Sense-Instanz und ermöglicht die Anzeige von Informationen auf den Registerkarten Compliance und Governance. Cloud Data Sense wird in Regierungsregionen in AWS und Azure unterstützt.
+Stellen Sie sicher, dass BlueXP über die erforderlichen Berechtigungen verfügt:: Stellen Sie sicher, dass BlueXP über Berechtigungen zum Implementieren von Ressourcen und zum Erstellen von Sicherheitsgruppen für die BlueXP Klassifizierungsinstanz verfügt. Die neuesten BlueXP-Berechtigungen finden Sie in https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Die von NetApp bereitgestellten Richtlinien"^].
+Sicherstellen, dass der BlueXP Connector auf die BlueXP Klassifizierung zugreifen kann:: Stellen Sie die Konnektivität zwischen dem Connector und der BlueXP Klassifizierungsinstanz sicher. Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über Port 443 zur und von der BlueXP Klassifizierungsinstanz zulassen. Über diese Verbindung wird die Bereitstellung der BlueXP Klassifizierungsinstanz ermöglicht und Sie können Informationen auf der Registerkarte für Compliance und Governance einsehen. Die BlueXP Klassifizierung wird in Regierungsregionen in AWS und Azure unterstützt.
 +
 --
 Für AWS und AWS GovCloud Implementierungen sind zusätzliche Regeln für ein- und ausgehende Sicherheitsgruppen erforderlich. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Regeln für den Connector in AWS"^] Entsprechende Details.
@@ -164,14 +164,14 @@ Für AWS und AWS GovCloud Implementierungen sind zusätzliche Regeln für ein- u
 Für die Implementierung von Azure und Azure Government sind zusätzliche Regeln für ein- und ausgehende Sicherheitsgruppen erforderlich. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Regeln für den Connector in Azure"^] Entsprechende Details.
 
 --
-Sorgen Sie dafür, dass Cloud Data Sense ausgeführt wird:: Die Cloud Data Sense Instanz muss kontinuierlich ausgeführt werden, um Ihre Daten kontinuierlich zu scannen.
-Stellen Sie sicher, dass Webbrowser mit Cloud Data Sense verbunden ist:: Wenn Cloud Data Sense aktiviert ist, stellen Sie sicher, dass Benutzer von einem Host, der über eine Verbindung zur Data Sense Instanz verfügt, auf die BlueXP-Schnittstelle zugreifen.
+Sorgen Sie dafür, dass die BlueXP Klassifizierung weiter ausgeführt werden kann:: Die BlueXP Klassifizierungs-Instanz muss aktiviert bleiben, um Ihre Daten kontinuierlich zu scannen.
+Webbrowser-Konnektivität zur BlueXP Klassifizierung sicherstellen:: Nachdem die Klassifizierung von BlueXP aktiviert ist, stellen Sie sicher, dass Benutzer von einem Host, der über eine Verbindung zur BlueXP Klassifizierungsinstanz verfügt, auf die BlueXP Schnittstelle zugreifen.
 +
 --
-Die Instanz Data Sense verwendet eine private IP-Adresse, um sicherzustellen, dass die indizierten Daten nicht für das Internet verfügbar sind. Daher muss der Webbrowser, den Sie für den Zugriff auf BlueXP verwenden, über eine Verbindung mit dieser privaten IP-Adresse verfügen. Die Verbindung kann über eine direkte Verbindung zu Ihrem Cloud-Provider (z. B. einem VPN) oder von einem Host im selben Netzwerk wie die Data Sense Instanz erfolgen.
+Die BlueXP Klassifizierungs-Instanz verwendet eine private IP-Adresse, um sicherzustellen, dass die indizierten Daten nicht für das Internet zugänglich sind. Daher muss der Webbrowser, den Sie für den Zugriff auf BlueXP verwenden, über eine Verbindung mit dieser privaten IP-Adresse verfügen. Diese Verbindung kann aus einer direkten Verbindung zu Ihrem Cloud-Provider (z. B. einem VPN) oder von einem Host im selben Netzwerk wie die BlueXP Klassifizierungsinstanz stammen.
 
 --
-Überprüfen Sie Ihre vCPU-Limits:: Stellen Sie sicher, dass die vCPU-Begrenzung Ihres Cloud-Providers die Bereitstellung einer Instanz mit der erforderlichen Anzahl an Kernen ermöglicht. Sie müssen das vCPU-Limit für die jeweilige Instanzfamilie in der Region, in der BlueXP ausgeführt wird, überprüfen. link:concept-cloud-compliance.html#the-cloud-data-sense-instance["Siehe die erforderlichen Instanztypen"].
+Überprüfen Sie Ihre vCPU-Limits:: Stellen Sie sicher, dass die vCPU-Begrenzung Ihres Cloud-Providers die Bereitstellung einer Instanz mit der erforderlichen Anzahl an Kernen ermöglicht. Sie müssen das vCPU-Limit für die jeweilige Instanzfamilie in der Region, in der BlueXP ausgeführt wird, überprüfen. link:concept-cloud-compliance.html#the-bluexp-classification-instance["Siehe die erforderlichen Instanztypen"].
 +
 --
 Weitere Informationen zu vCPU Limits finden Sie in den folgenden Links:
@@ -181,18 +181,18 @@ Weitere Informationen zu vCPU Limits finden Sie in den folgenden Links:
 * https://cloud.google.com/compute/quotas["Google Cloud Dokumentation: Ressourcenkontingente"^]
 
 
-Hinweis: Sie können Data Sense auf einer Instanz in AWS-Cloud-Umgebungen mit weniger CPUs und weniger RAM implementieren, jedoch gibt es bei der Verwendung dieser Systeme Einschränkungen. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+Hinweis: Sie können die BlueXP Klassifizierung auf einer Instanz in AWS-Cloud-Umgebungen mit weniger CPUs und weniger RAM implementieren. Bei der Verwendung dieser Systeme bestehen jedoch Einschränkungen. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
 --
 
 
 
 
-== Implementieren Sie Daten sinnvoll in der Cloud
+== Implementieren Sie die BlueXP Klassifizierung in der Cloud
 
-Führen Sie diese Schritte aus, um eine Instanz von Cloud Data Sense in der Cloud zu implementieren. Connector implementiert die Instanz in der Cloud und installiert dann die Data Sense Software auf dieser Instanz.
+Führen Sie diese Schritte aus, um eine Instanz der BlueXP Klassifizierung in der Cloud zu implementieren. Der Connector implementiert die Instanz in der Cloud und installiert dann die BlueXP Klassifizierungssoftware auf dieser Instanz.
 
-Zu beachten ist, dass Sie bei der Implementierung von Data Sense aus einem BlueXP Connector in einer AWS-Umgebung die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen können. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"]. In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird Data Sense auf einem ausgeführt link:reference-instance-types.html["Alternativer Instanztyp"].
+Hinweis: Wenn Sie die BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung implementieren, können Sie die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"]. In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird die BlueXP Klassifizierung auf einem ausgeführt link:reference-instance-types.html["Alternativer Instanztyp"].
 
 [role="tabbed-block"]
 ====
@@ -201,11 +201,11 @@ Zu beachten ist, dass Sie bei der Implementierung von Data Sense aus einem BlueX
 .Schritte
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
 . Klicken Sie Auf *Datensense Aktivieren*.
 +
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
+image:screenshot_cloud_compliance_deploy_cloud_aws.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
 
 . Klicken Sie auf der Seite _Installation_ auf *Deploy > Deploy*, um die „große“ Instanzgröße zu verwenden und den Cloud-Bereitstellungsassistenten zu starten.
 +
@@ -215,13 +215,13 @@ Sie können auch auf *Deploy > Configuration* klicken, um aus zwei kleineren Ins
 Klicken Sie dann auf *deploy*, um den Cloud-Bereitstellungsassistenten zu starten.
 
 +
-image:screenshot_cloud_deploy_resource_size.png["Ein Screenshot der Bereitstellungsseite, um die Größe der Instanz auszuwählen, auf der Data Sense implementiert wird."]
+image:screenshot_cloud_deploy_resource_size.png["Ein Screenshot der Implementierungsseite zeigt die Größe der Instanz an, auf der die BlueXP Klassifizierung implementiert wird."]
 
 . Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
-image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
+image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
 
 
 --
@@ -231,17 +231,17 @@ image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense As
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
 . Klicken Sie Auf *Datensense Aktivieren*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
 . Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
-image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
+image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
 
 . Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
-image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
+image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
 
 
 --
@@ -251,27 +251,27 @@ image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense As
 . Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
 . Klicken Sie Auf *Datensense Aktivieren*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot der Auswahl der Schaltfläche zur Aktivierung von Data Sense."]
+image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
 . Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
-image:screenshot_cloud_compliance_deploy_cloud.png["Screenshot mit der Schaltfläche zur Implementierung von Data Sense in der Cloud"]
+image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
 
 . Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
-image:screenshot_cloud_compliance_wizard_start.png["Screenshot des Data Sense Assistenten zur Implementierung einer neuen Instanz"]
+image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und Data Sense installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
 
 
 --
 ====
 .Ergebnis
-BlueXP implementiert die Cloud Data Sense Instanz bei Ihrem Cloud-Provider.
+BlueXP implementiert die BlueXP Klassifizierungsinstanz in Ihrem Cloud-Provider.
 
-Upgrades auf die BlueXP Connector- und Data Sense-Software werden automatisiert, solange die Instanzen über eine Internetverbindung verfügen.
+Ein Upgrade der Klassifizierungs-Software BlueXP Connector und BlueXP wird automatisiert, solange die Instanzen über eine Internet-Konnektivität verfügen.
 
 .Nächste Schritte
 Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
 
-Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für Cloud Data Sense einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.
+Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.
