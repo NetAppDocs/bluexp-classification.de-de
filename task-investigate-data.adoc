@@ -104,7 +104,11 @@ Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anz
 | Zuletzt Geändert | Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt geändert wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. 
 
 
-| Zuletzt Aufgerufen | Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Für die Dateitypen, die die BlueXP Klassifizierung scannt, wurde die Datei zuletzt durch die BlueXP Klassifizierung gescannt. 
+| Zuletzt Aufgerufen  a| 
+Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Für die Dateitypen, die die BlueXP Klassifizierung scannt, wurde die Datei zuletzt durch die BlueXP Klassifizierung gescannt.
+
+Beachten Sie, dass die Klassifizierung durch BlueXP nicht zur Zeit des letzten Zugriffs aus den folgenden Datenquellen herangezogen wird: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.
+
 |===
 
 

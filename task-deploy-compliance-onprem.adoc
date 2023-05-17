@@ -141,21 +141,21 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
-
-
-* Red hat Enterprise Linux Versionen 8.0 bis 8.7
-* CentOS-Versionen 8.0 bis 8.7
-* CentOS Stream 8
-* RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 +
-** *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
-** *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
+** Red hat Enterprise Linux Versionen 8.0 bis 8.7
+** CentOS-Versionen 8.0 bis 8.7
+** CentOS Stream 8
+** RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 
 
-* Docker Engine Version 19.3.1 oder höher. https://["Installationsanweisungen anzeigen"^].
-* Python 3 Version 3.6 oder höher. https://["Installationsanweisungen anzeigen"^].
+* *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 +
-** *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
+** Docker Engine Version 19.3.1 oder höher. https://["Installationsanweisungen anzeigen"^].
+** Python 3 Version 3.6 oder höher. https://["Installationsanweisungen anzeigen"^].
+
+
+* *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -177,8 +177,6 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 Beachten Sie, dass Sie Docker immer dann neu starten müssen, wenn Sie diese aktivieren oder aktualisieren `firewalld` Einstellungen.
-
-
 
 
 
