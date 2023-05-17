@@ -24,19 +24,19 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 === Neuer Data Discovery Assessment Report
 
-Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Erfahren Sie, wie Sie den Data Discovery Assessment Report erstellen und verwenden"].
+Der Data Discovery Assessment Report bietet eine allgemeine Analyse Ihrer gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Ziel dieses Berichts ist es, ein Bewusstsein für Bedenken im Zusammenhang mit der Data Governance, Schwachstellen bei der Datensicherheit und Lücken in der Daten-Compliance in Ihrem Datensatz zu schaffen. https://["Erfahren Sie, wie Sie den Data Discovery Assessment Report erstellen und verwenden"].
 
 
 
 === Möglichkeit zur Implementierung der BlueXP Klassifizierung auf kleineren Instanzen in der Cloud
 
-Bei der Implementierung der BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun zwischen zwei kleineren Instanztypen wählen als bei der Standardinstanz. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"].
+Bei der Implementierung der BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung können Sie nun zwischen zwei kleineren Instanztypen wählen als bei der Standardinstanz. Wenn Sie eine kleine Umgebung scannen, können Sie hier Cloud-Kosten sparen. Allerdings gibt es einige Einschränkungen bei der Verwendung der kleineren Instanz. https://["Anzeigen der verfügbaren Instanztypen und Einschränkungen"].
 
 
 
 === Eigenständiges Skript steht jetzt zur Verfügung, um Ihr Linux-System vor der Installation der BlueXP Klassifizierung zu qualifizieren
 
-Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstallation überprüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, steht Ihnen ein separates Skript zur Verfügung, das nur die Voraussetzungen testet. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Erfahren Sie, wie Sie überprüfen können, ob Ihr Linux-Host bereit ist, die BlueXP Klassifizierung zu installieren"].
+Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstallation überprüfen möchten, ob Ihr Linux-System alle Voraussetzungen erfüllt, steht Ihnen ein separates Skript zur Verfügung, das nur die Voraussetzungen testet. https://["Erfahren Sie, wie Sie überprüfen können, ob Ihr Linux-Host bereit ist, die BlueXP Klassifizierung zu installieren"].
 
 
 
@@ -46,9 +46,9 @@ Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstal
 
 === Neue Funktionen, mit denen Sie Ihre eigenen benutzerdefinierten Kategorien von der BlueXP Klassifizierungs-UI hinzufügen können
 
-Mit der BlueXP Klassifizierung können Sie jetzt Ihre eigenen benutzerdefinierten Kategorien hinzufügen, sodass die Dateien nach der BlueXP Klassifizierung ermittelt werden, die zu diesen Kategorien passen. Die BlueXP Klassifizierung hat viele https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["Vordefinierte Kategorien"]Diese Funktion ermöglicht es Ihnen, benutzerdefinierte Kategorien hinzuzufügen, um zu ermitteln, wo Informationen, die für Ihre Organisation einzigartig sind, in Ihren Daten gefunden werden.
+Mit der BlueXP Klassifizierung können Sie jetzt Ihre eigenen benutzerdefinierten Kategorien hinzufügen, sodass die Dateien nach der BlueXP Klassifizierung ermittelt werden, die zu diesen Kategorien passen. Die BlueXP Klassifizierung hat viele https://["Vordefinierte Kategorien"]Diese Funktion ermöglicht es Ihnen, benutzerdefinierte Kategorien hinzuzufügen, um zu ermitteln, wo Informationen, die für Ihre Organisation einzigartig sind, in Ihren Daten gefunden werden.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["Weitere Informationen ."^].
+https://["Weitere Informationen ."^].
 
 
 
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 Mit der BlueXP Klassifizierung konnten benutzerdefinierte Schlüsselwörter hinzugefügt werden, die durch die BlueXP Klassifizierung bei zukünftigen Scans ab und an identifiziert werden. Sie mussten sich jedoch beim BlueXP Klassifizierungs-Linux-Host anmelden und eine Befehlszeilenschnittstelle verwenden, um die Schlüsselwörter hinzuzufügen. In dieser Version können benutzerdefinierte Schlüsselwörter in der BlueXP Klassifizierungs-UI hinzugefügt werden. Dies macht es sehr einfach, diese Schlüsselwörter hinzuzufügen und zu bearbeiten.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["Weitere Informationen zum Hinzufügen benutzerdefinierter Schlüsselwörter finden Sie in der BlueXP Klassifizierungs-UI"^].
+https://["Weitere Informationen zum Hinzufügen benutzerdefinierter Schlüsselwörter finden Sie in der BlueXP Klassifizierungs-UI"^].
 
 
 
@@ -66,7 +66,7 @@ Wenn die BlueXP Klassifizierung keine ausreichenden „Schreib“-Berechtigungen
 
 In Verbindung mit dieser Funktion steht nun ein neuer Filter namens „Scan Analysis Event“ zur Verfügung, mit dem Sie die Dateien anzeigen können, die nicht klassifiziert wurden, weil die BlueXP Klassifizierung den Zeitpunkt des letzten Zugriffs nicht rückgängig machen konnte, oder die Dateien, die klassifiziert wurden, obwohl die BlueXP Klassifizierung beim letzten Zugriff nicht rückgängig gemacht wurde.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["Erfahren Sie mehr über den „Zeitstempel des letzten Zugriffs“ und die Berechtigungen, die die BlueXP Klassifizierung erfordert"].
+https://["Erfahren Sie mehr über den „Zeitstempel des letzten Zugriffs“ und die Berechtigungen, die die BlueXP Klassifizierung erfordert"].
 
 
 
@@ -79,7 +79,7 @@ Mit der BlueXP Klassifizierung können Dateien identifiziert und kategorisiert w
 * Personalausweis für die nationale Registrierung in Singapur (NRIC)
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
+https://["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
 
 
 
@@ -108,7 +108,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-ca
 
 In früheren Versionen der BlueXP Klassifizierung können Sie E-Mail-Benachrichtigungen an die BlueXP Benutzer Ihres Kontos senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern. Mit dieser Funktion erhalten Sie Benachrichtigungen zum Schutz Ihrer Daten, wenn Sie nicht online sind. Jetzt können Sie auch E-Mail-Benachrichtigungen von Policies an andere Benutzer senden - bis zu 20 E-Mail-Adressen - die nicht in Ihrem BlueXP-Konto sind.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["Erfahren Sie mehr über das Senden von E-Mail-Benachrichtigungen basierend auf Policy-Ergebnissen"].
+https://["Erfahren Sie mehr über das Senden von E-Mail-Benachrichtigungen basierend auf Policy-Ergebnissen"].
 
 
 
@@ -116,13 +116,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 Mit der BlueXP Klassifizierung konnten individuelle „persönliche Daten“ hinzugefügt werden, die durch die BlueXP Klassifizierung in künftigen Scans schon seit einiger Zeit erkannt werden. Sie mussten sich jedoch beim BlueXP Klassifizierungs-Linux-Host anmelden und eine Befehlszeile verwenden, um die benutzerdefinierten Muster hinzuzufügen. In dieser Version besteht die Möglichkeit, persönliche Muster mit einem regex hinzuzufügen, indem sie die BlueXP Klassifizierungs-UI verwenden. Damit ist es sehr einfach, diese benutzerdefinierten Muster hinzuzufügen und zu bearbeiten.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["Weitere Informationen zum Hinzufügen benutzerdefinierter Muster erhalten Sie über die BlueXP Klassifizierungs-UI"^].
+https://["Weitere Informationen zum Hinzufügen benutzerdefinierter Muster erhalten Sie über die BlueXP Klassifizierungs-UI"^].
 
 
 
 === Möglichkeit zum Verschieben von 15 Millionen Dateien mithilfe der BlueXP Klassifizierung
 
-In der Vergangenheit können Sie durch die BlueXP Klassifizierung maximal 100,000 Quelldateien auf eine beliebige NFS-Freigabe verschieben. Sie können jetzt bis zu 15 Millionen Dateien gleichzeitig verschieben. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Weitere Informationen zum Verschieben von Quelldateien mithilfe der BlueXP Klassifizierung"].
+In der Vergangenheit können Sie durch die BlueXP Klassifizierung maximal 100,000 Quelldateien auf eine beliebige NFS-Freigabe verschieben. Sie können jetzt bis zu 15 Millionen Dateien gleichzeitig verschieben. https://["Weitere Informationen zum Verschieben von Quelldateien mithilfe der BlueXP Klassifizierung"].
 
 
 
@@ -134,7 +134,7 @@ Der Filter "Anzahl der Benutzer mit Zugriff" unterstützt nun Dateien, die in Sh
 
 === Der Aktionsstatus wurde um einen neuen Status „Teilerfolg“ erweitert
 
-Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsaktion abgeschlossen ist und einige Elemente fehlgeschlagen sind und einige Elemente erfolgreich waren, z. B. wenn Sie 100 Dateien verschieben oder löschen. Außerdem wurde der Status „Fertig“ in „Erfolg“ umbenannt. In der Vergangenheit können im Status „Fertig“ Aktionen aufgeführt werden, die erfolgreich waren und die fehlgeschlagen sind. Der Status „Erfolg“ bedeutet nun, dass alle Aktionen erfolgreich auf allen Elementen durchgeführt wurden. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["Lesen Sie, wie Sie das Fenster „Aktionsstatus“ anzeigen"].
+Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsaktion abgeschlossen ist und einige Elemente fehlgeschlagen sind und einige Elemente erfolgreich waren, z. B. wenn Sie 100 Dateien verschieben oder löschen. Außerdem wurde der Status „Fertig“ in „Erfolg“ umbenannt. In der Vergangenheit können im Status „Fertig“ Aktionen aufgeführt werden, die erfolgreich waren und die fehlgeschlagen sind. Der Status „Erfolg“ bedeutet nun, dass alle Aktionen erfolgreich auf allen Elementen durchgeführt wurden. https://["Lesen Sie, wie Sie das Fenster „Aktionsstatus“ anzeigen"].
 
 
 
@@ -144,7 +144,7 @@ Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsakt
 
 === Möglichkeit, ein Diagramm von Dateien anzuzeigen, die sensible Daten enthalten und die übermäßig permissiv sind
 
-Das Governance Dashboard hat einen neuen Bereich mit „_sensitiven Daten“ und „Wide Permissions_“ hinzugefügt, der eine Heatmap mit Dateien enthält, die vertrauliche Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und die zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["Weitere Informationen ."].
+Das Governance Dashboard hat einen neuen Bereich mit „_sensitiven Daten“ und „Wide Permissions_“ hinzugefügt, der eine Heatmap mit Dateien enthält, die vertrauliche Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und die zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben. https://["Weitere Informationen ."].
 
 
 
@@ -157,13 +157,13 @@ Es stehen neue Filter zur Verfügung, um die Ergebnisse zu verfeinern, die auf d
 * Mit dem Filter „Dateipfad“ können Sie nun Pfade festlegen, die Sie aus den gefilterten Abfrageergebnissen ausschließen möchten. Wenn Sie Pfade zum ein- und Ausschließen bestimmter Daten eingeben, findet die BlueXP Klassifizierung zuerst alle Dateien in den eingeschlossenen Pfaden, dann entfernt sie Dateien aus ausgeschlossenen Pfaden und zeigt dann die Ergebnisse an.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
+https://["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
 
 
 
 === Durch die BlueXP Klassifizierung kann die japanische individuelle Nummer identifiziert werden
 
-Durch die BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die japanische individuelle Nummer (auch „Meine Nummer“) enthalten. Dazu gehört sowohl die persönliche als auch die Firmennummer. https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
+Durch die BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die japanische individuelle Nummer (auch „Meine Nummer“) enthalten. Dazu gehört sowohl die persönliche als auch die Firmennummer. https://["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
 
 
 
@@ -185,7 +185,7 @@ Die folgenden Erweiterungen wurden für die On-Prem Data Sense Installation hinz
 * Außerdem zeigt ein neuer Abschnitt auf der Konfigurationsseite die Scannergruppen, die Sie eingerichtet haben, und die Scannerknoten, die sich in jeder Gruppe befinden.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["Erfahren Sie mehr über die Installation von Data Sense auf einem einzelnen Host-Server und auf mehreren Hosts"].
+https://["Erfahren Sie mehr über die Installation von Data Sense auf einem einzelnen Host-Server und auf mehreren Hosts"].
 
 
 
@@ -195,13 +195,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-on
 
 === Unterstützung für das Scannen von On-Premises-Konten von SharePoint
 
-Data Sense kann jetzt sowohl SharePoint Online-Konten als auch SharePoint On-Premises-Konten (SharePoint Server) scannen. Wenn Sie SharePoint auf Ihren eigenen Servern oder auf Websites ohne Internetzugang installieren müssen, können Sie jetzt Data Sense die Benutzerdateien in diesen Konten scannen lassen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["Weitere Informationen ."^].
+Data Sense kann jetzt sowohl SharePoint Online-Konten als auch SharePoint On-Premises-Konten (SharePoint Server) scannen. Wenn Sie SharePoint auf Ihren eigenen Servern oder auf Websites ohne Internetzugang installieren müssen, können Sie jetzt Data Sense die Benutzerdateien in diesen Konten scannen lassen. https://["Weitere Informationen ."^].
 
 
 
 === Möglichkeit zum erneuten Scannen mehrerer Verzeichnisse (Ordner oder Freigaben)
 
-Jetzt können Sie mehrere Verzeichnisse (Ordner oder Freigaben) sofort erneut scannen, sodass Änderungen im System berücksichtigt werden. So können Sie das erneute Scannen bestimmter Daten vor anderen Daten priorisieren. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Lesen Sie, wie Sie ein Verzeichnis erneut scannen"^].
+Jetzt können Sie mehrere Verzeichnisse (Ordner oder Freigaben) sofort erneut scannen, sodass Änderungen im System berücksichtigt werden. So können Sie das erneute Scannen bestimmter Daten vor anderen Daten priorisieren. https://["Lesen Sie, wie Sie ein Verzeichnis erneut scannen"^].
 
 
 
@@ -209,7 +209,7 @@ Jetzt können Sie mehrere Verzeichnisse (Ordner oder Freigaben) sofort erneut sc
 
 Wenn Sie Data Sense an einem lokalen Standort installiert haben und feststellen, dass Sie mehr Scanning Processing Power zum Scannen bestimmter Datenquellen benötigen, können Sie weitere „Scanner“-Knoten hinzufügen und diese zum Scannen dieser Datenquellen zuordnen. Sie können die Scanner-Knoten unmittelbar nach der Installation des Manager-Knotens hinzufügen oder später einen Scanner-Knoten hinzufügen.
 
-Bei Bedarf können die Scanner-Knoten auf Hostsystemen installiert werden, die sich physisch näher an den zu scannenden Datenquellen befinden. Je näher der Scanner-Knoten an den Daten liegt, desto besser, da er die Netzwerklatenz so weit wie möglich beim Scannen der Daten reduziert. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Lesen Sie, wie Scannerknoten installiert werden, um zusätzliche Datenquellen zu scannen"^].
+Bei Bedarf können die Scanner-Knoten auf Hostsystemen installiert werden, die sich physisch näher an den zu scannenden Datenquellen befinden. Je näher der Scanner-Knoten an den Daten liegt, desto besser, da er die Netzwerklatenz so weit wie möglich beim Scannen der Daten reduziert. https://["Lesen Sie, wie Scannerknoten installiert werden, um zusätzliche Datenquellen zu scannen"^].
 
 
 
@@ -225,7 +225,7 @@ Bei der Installation von Data Sense auf einem Linux-System überprüft der Insta
 
 === Fähigkeit, ein Repository sofort erneut zu scannen, um Änderungen in Dateien widerzuspiegeln
 
-Wenn Sie ein bestimmtes Repository sofort erneut scannen müssen, damit Änderungen im System angezeigt werden, können Sie das Repository auswählen und erneut scannen. So können Sie das erneute Scannen bestimmter Daten vor anderen Daten priorisieren. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Lesen Sie, wie Sie ein Verzeichnis erneut scannen"^].
+Wenn Sie ein bestimmtes Repository sofort erneut scannen müssen, damit Änderungen im System angezeigt werden, können Sie das Repository auswählen und erneut scannen. So können Sie das erneute Scannen bestimmter Daten vor anderen Daten priorisieren. https://["Lesen Sie, wie Sie ein Verzeichnis erneut scannen"^].
 
 
 
@@ -233,7 +233,7 @@ Wenn Sie ein bestimmtes Repository sofort erneut scannen müssen, damit Änderun
 
 Mit dem Filter „Analysestatus“ können Sie die Dateien auflisten, die sich in einer bestimmten Phase des Datensense-Scans befinden. Sie können eine Option auswählen, um die Liste der Dateien anzuzeigen, die *ausstehender erster Scan*, *Abgeschlossen* gescannt werden, *ausstehender Rescan* oder die *nicht erfolgreich* gescannt werden müssen.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"^].
+https://["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"^].
 
 
 
@@ -245,7 +245,7 @@ Data Sense erkennt nun Betroffenen als Teil der im Compliance Dashboard angezeig
 
 === Datensense-Breadcrumb-Dateien werden jetzt als Teil von "Kategorien" in Scans gefunden betrachtet
 
-Data Sense erkennt jetzt Breadcrumb-Dateien als Teil der Kategorien, die im Compliance Dashboard angezeigt werden. Dies sind Dateien, die Data Sense beim Verschieben von Dateien vom Quellspeicherort in eine NFS-Freigabe erstellt. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Erfahren Sie mehr darüber, wie Breadcrumb-Dateien erstellt werden"^].
+Data Sense erkennt jetzt Breadcrumb-Dateien als Teil der Kategorien, die im Compliance Dashboard angezeigt werden. Dies sind Dateien, die Data Sense beim Verschieben von Dateien vom Quellspeicherort in eine NFS-Freigabe erstellt. https://["Erfahren Sie mehr darüber, wie Breadcrumb-Dateien erstellt werden"^].
 
 Wenn Sie eine Suche auf der Untersuchungsseite durchführen, können Sie unter „Kategorie“ „Datensense Breadcrumbs“ „Data Sense Breadcrumb“ auswählen, um nur Daten Sense Breadcrumb-Dateien anzuzeigen.
 
@@ -272,19 +272,19 @@ link:reference-private-data-categories.html#types-of-personal-data["Sehen Sie al
 
 === Möglichkeit, eine Breadcrumb-Datei hinzuzufügen, um anzugeben, warum eine Datei verschoben wurde
 
-Wenn Sie die Funktion „Data Sense“ verwenden, um Quelldateien in eine NFS-Freigabe zu verschieben, können Sie nun eine Breadcrumb-Datei an dem Speicherort der verschobenen Datei belassen. Eine Breadcrumb-Datei hilft Ihren Benutzern zu verstehen, warum eine Datei vom ursprünglichen Speicherort verschoben wurde. Für jede verschobene Datei erstellt das System eine Breadcrumb-Datei im Quellspeicherort mit dem Namen `<filename>-breadcrumb-<date>.txt` Um den Speicherort anzuzeigen, an dem die Datei verschoben wurde, und den Benutzer, der die Datei verschoben hat. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Weitere Informationen ."^].
+Wenn Sie die Funktion „Data Sense“ verwenden, um Quelldateien in eine NFS-Freigabe zu verschieben, können Sie nun eine Breadcrumb-Datei an dem Speicherort der verschobenen Datei belassen. Eine Breadcrumb-Datei hilft Ihren Benutzern zu verstehen, warum eine Datei vom ursprünglichen Speicherort verschoben wurde. Für jede verschobene Datei erstellt das System eine Breadcrumb-Datei im Quellspeicherort mit dem Namen `<filename>-breadcrumb-<date>.txt` Um den Speicherort anzuzeigen, an dem die Datei verschoben wurde, und den Benutzer, der die Datei verschoben hat. https://["Weitere Informationen ."^].
 
 
 
 === Personenbezogene Daten und sensible personenbezogene Daten in Ihren Verzeichnissen werden in Untersuchungsergebnissen angezeigt
 
-Auf der Seite „Datenuntersuchung“ werden nun Ergebnisse für persönliche Daten und sensible personenbezogene Daten in Ihren Verzeichnissen (Ordner und Freigaben) angezeigt. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-files-that-contain-personal-data["Hier sehen Sie ein Beispiel"^].
+Auf der Seite „Datenuntersuchung“ werden nun Ergebnisse für persönliche Daten und sensible personenbezogene Daten in Ihren Verzeichnissen (Ordner und Freigaben) angezeigt. https://["Hier sehen Sie ein Beispiel"^].
 
 
 
 === Zeigen Sie den Status an, wie viele Volumes, Buckets usw. erfolgreich klassifiziert wurden
 
-Wenn Sie sich die einzelnen Repositorys ansehen, die Data Sense verwenden (Volumes, Buckets usw.), sehen Sie jetzt, wie viele Daten gescannt wurden und wie viele als „klassifiziert“ wurden. Die Klassifizierung dauert länger, wenn für alle Daten die vollständige KI-Identifizierung durchgeführt wird. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["Lesen Sie, wie Sie diese Informationen anzeigen"^].
+Wenn Sie sich die einzelnen Repositorys ansehen, die Data Sense verwenden (Volumes, Buckets usw.), sehen Sie jetzt, wie viele Daten gescannt wurden und wie viele als „klassifiziert“ wurden. Die Klassifizierung dauert länger, wenn für alle Daten die vollständige KI-Identifizierung durchgeführt wird. https://["Lesen Sie, wie Sie diese Informationen anzeigen"^].
 
 
 
@@ -296,7 +296,7 @@ Es gibt zwei Möglichkeiten, wie Sie benutzerdefinierte "persönliche Daten" hin
 * Sie können ein persönliches Muster mit einem regulären Ausdruck (regex) hinzufügen.
 
 
-Diese Schlüsselwörter und Muster werden den bereits vorhandenen vordefinierten Mustern hinzugefügt, die Data Sense verwendet. Die Ergebnisse werden im Abschnitt Persönliche Muster angezeigt. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html["Weitere Informationen ."^].
+Diese Schlüsselwörter und Muster werden den bereits vorhandenen vordefinierten Mustern hinzugefügt, die Data Sense verwendet. Die Ergebnisse werden im Abschnitt Persönliche Muster angezeigt. https://["Weitere Informationen ."^].
 
 
 
@@ -306,13 +306,13 @@ Diese Schlüsselwörter und Muster werden den bereits vorhandenen vordefinierten
 
 === Jetzt können Sie die Benutzer und Gruppen anzeigen, die Zugriff auf Ihre Verzeichnisse haben
 
-In der Vergangenheit können Sie die Arten von offenen Berechtigungen anzeigen, die für einzelne Dateien gewährt wurden. Jetzt können Sie eine Liste aller Benutzer oder Gruppen anzeigen, die Zugriff auf Verzeichnisse (Ordner und Dateifreigaben) haben, und die Arten von Berechtigungen, die sie haben. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["Lesen Sie, wie Sie die Benutzer und Gruppen anzeigen, die Zugriff auf Ihre Ordner und Dateifreigaben haben"].
+In der Vergangenheit können Sie die Arten von offenen Berechtigungen anzeigen, die für einzelne Dateien gewährt wurden. Jetzt können Sie eine Liste aller Benutzer oder Gruppen anzeigen, die Zugriff auf Verzeichnisse (Ordner und Dateifreigaben) haben, und die Arten von Berechtigungen, die sie haben. https://["Lesen Sie, wie Sie die Benutzer und Gruppen anzeigen, die Zugriff auf Ihre Ordner und Dateifreigaben haben"].
 
 
 
 === Sie können das Scannen eines Repository anhalten, um vorübergehend das Scannen bestimmter Inhalte zu beenden
 
-Wenn Sie das Scannen anhalten, führt Data Sense keinen zukünftigen Scan auf beliebigen Ergänzungen oder Änderungen an einem Volume oder Bucket durch, aber alle aktuellen Ergebnisse sind weiterhin im System verfügbar. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["Erfahren Sie, wie Sie den Scanvorgang anhalten und fortsetzen"].
+Wenn Sie das Scannen anhalten, führt Data Sense keinen zukünftigen Scan auf beliebigen Ergänzungen oder Änderungen an einem Volume oder Bucket durch, aber alle aktuellen Ergebnisse sind weiterhin im System verfügbar. https://["Erfahren Sie, wie Sie den Scanvorgang anhalten und fortsetzen"].
 
 
 
@@ -324,13 +324,13 @@ Data Sense kann Dateien identifizieren und kategorisieren, die die Lizenzdaten v
 
 === Richtlinien geben nun Verzeichnisse zurück, die den Suchkriterien entsprechen
 
-In der Vergangenheit, als Sie eine benutzerdefinierte Richtlinie erstellt haben, wurden die Dateien angezeigt, die den Suchkriterien entsprechen. Nun werden in den Ergebnissen auch die Verzeichnisse (Ordner und Dateifreigaben) angezeigt, die der Abfrage entsprechen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["Weitere Informationen zum Erstellen von Richtlinien"].
+In der Vergangenheit, als Sie eine benutzerdefinierte Richtlinie erstellt haben, wurden die Dateien angezeigt, die den Suchkriterien entsprechen. Nun werden in den Ergebnissen auch die Verzeichnisse (Ordner und Dateifreigaben) angezeigt, die der Abfrage entsprechen. https://["Weitere Informationen zum Erstellen von Richtlinien"].
 
 
 
 === „Data Sense“ kann jetzt bis zu 100,000 Dateien auf einmal verschieben
 
-Wenn Sie „Data Sense“ zum Verschieben von Dateien von einer gescannten Datenquelle in eine NFS-Freigabe verwenden möchten, wurde die maximale Anzahl von Dateien auf 100,000 Dateien erhöht. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Erfahren Sie, wie Sie Dateien mit Data Sense verschieben"].
+Wenn Sie „Data Sense“ zum Verschieben von Dateien von einer gescannten Datenquelle in eine NFS-Freigabe verwenden möchten, wurde die maximale Anzahl von Dateien auf 100,000 Dateien erhöht. https://["Erfahren Sie, wie Sie Dateien mit Data Sense verschieben"].
 
 
 
@@ -340,13 +340,13 @@ Wenn Sie „Data Sense“ zum Verschieben von Dateien von einer gescannten Daten
 
 === Jetzt können Sie die Ergebnisse von der Seite Datenuntersuchung als JSON-Bericht herunterladen
 
-Nachdem Sie die Daten auf der Seite „Datenuntersuchung“ gefiltert haben, können Sie die Daten nun als Bericht in einer JSON-Datei speichern, die Sie in eine NFS-Freigabe exportieren können, und die Daten zusätzlich in eine .CSV-Datei auf Ihrem lokalen System speichern. Stellen Sie sicher, dass Data Sense über die richtigen Berechtigungen für den Exportzugriff verfügt. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["Lesen Sie, wie Berichte von der Seite „Datenuntersuchung“ erstellt werden"].
+Nachdem Sie die Daten auf der Seite „Datenuntersuchung“ gefiltert haben, können Sie die Daten nun als Bericht in einer JSON-Datei speichern, die Sie in eine NFS-Freigabe exportieren können, und die Daten zusätzlich in eine .CSV-Datei auf Ihrem lokalen System speichern. Stellen Sie sicher, dass Data Sense über die richtigen Berechtigungen für den Exportzugriff verfügt. https://["Lesen Sie, wie Berichte von der Seite „Datenuntersuchung“ erstellt werden"].
 
 
 
 === Fähigkeit zum Deinstallieren von Data Sense von der Data Sense Benutzeroberfläche
 
-Sie können Data Sense deinstallieren, um die Software dauerhaft vom Host zu entfernen, und im Falle einer Cloud-Bereitstellung löschen Sie die virtuelle Maschine / Instanz, auf der Data Sense bereitgestellt wurde. Durch das Löschen der Instanz werden alle indizierten Informationen gelöscht, die von Data Sense gescannt wurden. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["Erfahren Sie, wie"].
+Sie können Data Sense deinstallieren, um die Software dauerhaft vom Host zu entfernen, und im Falle einer Cloud-Bereitstellung löschen Sie die virtuelle Maschine / Instanz, auf der Data Sense bereitgestellt wurde. Durch das Löschen der Instanz werden alle indizierten Informationen gelöscht, die von Data Sense gescannt wurden. https://["Erfahren Sie, wie"].
 
 
 
@@ -354,7 +354,7 @@ Sie können Data Sense deinstallieren, um die Software dauerhaft vom Host zu ent
 
 Das Prüfprotokoll verfolgt die Managementaktivitäten, die Data Sense auf Dateien aus allen Arbeitsumgebungen und Datenquellen durchgeführt hat, die von Data Sense gescannt werden. Die Aktivitäten können vom Benutzer generiert (eine Datei löschen, eine Richtlinie erstellen usw.) oder durch Richtlinien generiert werden (Dateien können automatisch Etiketten hinzugefügt, Dateien automatisch gelöscht usw.).
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["Weitere Informationen zum Audit-Protokoll finden Sie hier"].
+https://["Weitere Informationen zum Audit-Protokoll finden Sie hier"].
 
 
 
@@ -362,13 +362,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-act
 
 Mit dem Filter „Anzahl der Kennungen“ können Sie Dateien mit einer bestimmten Anzahl sensibler Kennungen auflisten, einschließlich persönlicher Daten und sensibler personenbezogener Daten. Sie können einen Bereich wie 1-10 oder 501-1000 auswählen, um nur die Dateien anzuzeigen, die die Anzahl der sensiblen Kennungen enthalten.
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
+https://["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
 
 
 
 === Jetzt können Sie vorhandene Richtlinien bearbeiten, die Sie erstellt haben
 
-Wenn Sie eine Änderung an einer benutzerdefinierten Richtlinie vornehmen müssen, die Sie in der Vergangenheit erstellt haben, können Sie jetzt die Richtlinie bearbeiten, anstatt eine neue Richtlinie zu erstellen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["Lesen Sie, wie eine Richtlinie bearbeitet wird"].
+Wenn Sie eine Änderung an einer benutzerdefinierten Richtlinie vornehmen müssen, die Sie in der Vergangenheit erstellt haben, können Sie jetzt die Richtlinie bearbeiten, anstatt eine neue Richtlinie zu erstellen. https://["Lesen Sie, wie eine Richtlinie bearbeitet wird"].
 
 
 
@@ -378,21 +378,21 @@ Wenn Sie eine Änderung an einer benutzerdefinierten Richtlinie vornehmen müsse
 
 === Unterstützung für das Scannen von Daten in Google Drive-Konten hinzugefügt
 
-Jetzt können Sie Ihre Google Drive-Konten zu Data Sense hinzufügen, um die Dokumente und Dateien von diesen Google Drive-Konten zu scannen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-google-drive.html["Lesen Sie, wie Sie Ihre Google Drive-Konten scannen"].
+Jetzt können Sie Ihre Google Drive-Konten zu Data Sense hinzufügen, um die Dokumente und Dateien von diesen Google Drive-Konten zu scannen. https://["Lesen Sie, wie Sie Ihre Google Drive-Konten scannen"].
 
-Data Sense kann personenbezogene Daten (PII) innerhalb der folgenden Google-Dateitypen aus der Google Docs-Suite identifizieren -- Docs, Tabellen und Folien -- zusätzlich zu dem https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-files["Vorhandene Dateitypen"].
+Data Sense kann personenbezogene Daten (PII) innerhalb der folgenden Google-Dateitypen aus der Google Docs-Suite identifizieren -- Docs, Tabellen und Folien -- zusätzlich zu dem https://["Vorhandene Dateitypen"].
 
 
 
 === Ansicht auf Verzeichnisebene zur Seite Datenuntersuchung hinzugefügt
 
-Neben dem Anzeigen und Filtern von Daten aus allen Dateien und Datenbanken können Sie jetzt auf der Seite „Datenuntersuchung“ Daten auf der Grundlage aller Daten in Ordnern und Freigaben anzeigen und filtern. Verzeichnisse werden für gescannte CIFS- und NFS-Freigaben sowie für OneDrive, SharePoint und Google Drive-Ordner indexiert. So können Sie nun Berechtigungen anzeigen und Ihre Daten auf der Verzeichnisebene verwalten. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Lesen Sie, wie Sie die Ansicht der Verzeichnisse Ihrer gescannten Daten auswählen"].
+Neben dem Anzeigen und Filtern von Daten aus allen Dateien und Datenbanken können Sie jetzt auf der Seite „Datenuntersuchung“ Daten auf der Grundlage aller Daten in Ordnern und Freigaben anzeigen und filtern. Verzeichnisse werden für gescannte CIFS- und NFS-Freigaben sowie für OneDrive, SharePoint und Google Drive-Ordner indexiert. So können Sie nun Berechtigungen anzeigen und Ihre Daten auf der Verzeichnisebene verwalten. https://["Lesen Sie, wie Sie die Ansicht der Verzeichnisse Ihrer gescannten Daten auswählen"].
 
 
 
 === Erweitern Sie Gruppen, um die Benutzer/Mitglieder anzuzeigen, die über Berechtigungen zum Zugriff auf eine Datei verfügen
 
-Im Rahmen der Data Sense-Berechtigungsfunktionen können Sie jetzt die Liste der Benutzer und Gruppen anzeigen, die Zugriff auf eine Datei haben. Jede Gruppe kann erweitert werden, um die Liste der Benutzer in der Gruppe anzuzeigen. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files["Lesen Sie, wie Sie Benutzer und Gruppen anzeigen, die Lese- und/oder Schreibberechtigungen für Ihre Dateien haben"].
+Im Rahmen der Data Sense-Berechtigungsfunktionen können Sie jetzt die Liste der Benutzer und Gruppen anzeigen, die Zugriff auf eine Datei haben. Jede Gruppe kann erweitert werden, um die Liste der Benutzer in der Gruppe anzuzeigen. https://["Lesen Sie, wie Sie Benutzer und Gruppen anzeigen, die Lese- und/oder Schreibberechtigungen für Ihre Dateien haben"].
 
 
 
@@ -402,7 +402,7 @@ Im Rahmen der Data Sense-Berechtigungsfunktionen können Sie jetzt die Liste der
 * Mit dem Filter „Benutzer-/Gruppenberechtigungen“ können Sie die Dateien, Ordner und Freigaben auflisten, auf die ein bestimmter Benutzer oder eine Gruppe Lese- und/oder Schreibberechtigungen besitzt. Sie können mehrere Benutzer und/oder Gruppennamen auswählen oder einen Teilnamen eingeben.
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
+https://["Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können"].
 
 
 

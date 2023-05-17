@@ -16,7 +16,7 @@ summary: Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP
 [role="lead"]
 Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte.
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["Sehen Sie sich die Anwendungsfälle für die BlueXP Klassifizierung an"^].
+https://["Sehen Sie sich die Anwendungsfälle für die BlueXP Klassifizierung an"^].
 
 
 
@@ -48,7 +48,7 @@ Mit der BlueXP Klassifizierung können Daten identifiziert werden, die potenziel
 * Einhaltung von Richtlinien zur Datenaufbewahrung.
 * Verwenden Sie _Policies_, um das Sicherheitspersonal automatisch über neue Sicherheitsprobleme zu informieren, damit sie sofort reagieren können.
 * Fügen Sie benutzerdefinierte Tags zu Dateien hinzu (z. B. „muss verschoben werden“) und weisen Sie einen BlueXP-Benutzer zu, damit diese Person Updates für die Dateien besitzen kann.
-* Anzeigen und ändern Sie https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)-Etiketten"^] In Ihren Dateien.
+* Anzeigen und ändern Sie https://["Azure Information Protection (AIP)-Etiketten"^] In Ihren Dateien.
 
 
 
@@ -59,7 +59,7 @@ Die BlueXP Klassifizierung bietet Tools, die Sie bei Ihren Storage-Gesamtbetrieb
 
 * Erhöhte Storage-Effizienz durch Identifizierung doppelter oder nicht geschäftlicher Daten Mit diesen Informationen können Sie entscheiden, ob Sie bestimmte Dateien verschieben oder löschen möchten.
 * Löschen Sie Dateien, die unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu belassen, oder die Sie als Duplikat identifiziert haben. Mit _Policies_ können Dateien, die bestimmten Kriterien entsprechen, automatisch gelöscht werden.
-* Sparen Sie Storage-Kosten, indem Sie inaktive Daten ermitteln, die auf kostengünstigeren Objektspeicher verschoben werden können. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["Weitere Informationen zum Tiering von Cloud Volumes ONTAP Systemen"^]. https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["Weitere Informationen zum Tiering von lokalen ONTAP Systemen"^].
+* Sparen Sie Storage-Kosten, indem Sie inaktive Daten ermitteln, die auf kostengünstigeren Objektspeicher verschoben werden können. https://["Weitere Informationen zum Tiering von Cloud Volumes ONTAP Systemen"^]. https://["Weitere Informationen zum Tiering von lokalen ONTAP Systemen"^].
 
 
 
@@ -100,7 +100,6 @@ Die BlueXP Klassifizierung kann strukturierte und unstrukturierte Daten aus folg
 *Wolke:*
 
 * Amazon S3
-* Azure Blob
 * Google Cloud Storage
 * OneDrive
 * SharePoint Online
@@ -125,12 +124,12 @@ Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x, 4.0 und 4.1 sowie CIF
 
 == Kosten
 
-* Die Kosten der BlueXP Klassifizierung hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in einem BlueXP Workspace scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://bluexp.netapp.com/netapp-cloud-data-sense["Preisgestaltung"^] Entsprechende Details.
+* Die Kosten der BlueXP Klassifizierung hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in einem BlueXP Workspace scannt, sind 30 Tage lang kostenlos. Dies umfasst alle Daten aus allen Arbeitsumgebungen und Datenquellen. Um mit dem Scannen von Daten nach diesem Zeitpunkt fortzufahren, müssen Sie auf AWS, Azure oder GCP Marketplace oder eine BYOL-Lizenz von NetApp abonnieren. Siehe https://["Preisgestaltung"^] Entsprechende Details.
 +
 link:task-licensing-datasense.html["Informieren Sie sich über die Lizenzierung der BlueXP Klassifizierung"^].
 
 * Für die Installation der BlueXP Klassifizierung in der Cloud ist die Implementierung einer Cloud-Instanz erforderlich. Dies führt zu Gebühren beim Cloud-Provider, wo die Klassifizierung implementiert wird. Siehe <<Die BlueXP Klassifizierungsinstanz,Der für jeden Cloud-Provider implementierte Instanztyp>>. Die Installation der BlueXP Klassifizierung auf einem lokalen System kostet Sie nichts.
-* Für die Klassifizierung von BlueXP müssen Sie einen BlueXP Connector implementiert haben. In vielen Fällen haben Sie bereits einen Connector, weil Sie andere Speicher und Dienste in BlueXP verwenden. Die Connector-Instanz verursacht Gebühren bei dem Cloud-Provider, wo sie implementiert wird. Siehe https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Für jeden Cloud-Provider implementierte Instanztyp"^]. Bei der Installation des Connectors in einem On-Premises-System entstehen keine Kosten.
+* Für die Klassifizierung von BlueXP müssen Sie einen BlueXP Connector implementiert haben. In vielen Fällen haben Sie bereits einen Connector, weil Sie andere Speicher und Dienste in BlueXP verwenden. Die Connector-Instanz verursacht Gebühren bei dem Cloud-Provider, wo sie implementiert wird. Siehe https://["Für jeden Cloud-Provider implementierte Instanztyp"^]. Bei der Installation des Connectors in einem On-Premises-System entstehen keine Kosten.
 
 
 
@@ -139,22 +138,22 @@ link:task-licensing-datasense.html["Informieren Sie sich über die Lizenzierung 
 
 Die Datentransferkosten hängen von Ihrer Einrichtung ab. Wenn sich die BlueXP Klassifizierungs-Instanz und Datenquelle in derselben Verfügbarkeitszone und -Region befinden, entstehen keine Kosten für Datentransfers. Wenn sich die Datenquelle, beispielsweise ein Cloud Volumes ONTAP-System oder S3-Bucket, jedoch in einer _verschiedenen_ Verfügbarkeitszone oder -Region befindet, wird Ihr Cloud-Provider für Datentransferkosten berechnet. Weitere Informationen finden Sie unter diesen Links:
 
-* https://aws.amazon.com/ec2/pricing/on-demand/["AWS: Amazon EC2-Preisgestaltung"^]
-* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure: Preisangaben Für Die Bandbreite"^]
-* https://cloud.google.com/storage-transfer/pricing["Google Cloud: Preis für Storage Transfer Service"^]
+* https://["AWS: Amazon EC2-Preisgestaltung"^]
+* https://["Microsoft Azure: Preisangaben Für Die Bandbreite"^]
+* https://["Google Cloud: Preis für Storage Transfer Service"^]
 
 
 
 
 == Die BlueXP Klassifizierungsinstanz
 
-Wenn Sie die BlueXP Klassifizierung in der Cloud implementieren, stellt BlueXP die Instanz im selben Subnetz bereit, in dem sich der Connector befindet. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Erfahren Sie mehr über Steckverbinder."^]
+Wenn Sie die BlueXP Klassifizierung in der Cloud implementieren, stellt BlueXP die Instanz im selben Subnetz bereit, in dem sich der Connector befindet. https://["Erfahren Sie mehr über Steckverbinder."^]
 
 image:diagram_cloud_compliance_instance.png["Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird."]
 
 Beachten Sie Folgendes über die Standardinstanz:
 
-* In AWS wird die BlueXP Klassifizierung auf einer ausgeführt https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2. Bei der Implementierung in AWS können Sie eine kleinere Instanzgröße wählen, wenn Sie eine kleine Datenmenge scannen.
+* In AWS wird die BlueXP Klassifizierung auf einer ausgeführt https://["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2. Bei der Implementierung in AWS können Sie eine kleinere Instanzgröße wählen, wenn Sie eine kleine Datenmenge scannen.
 * In Azure wird die BlueXP Klassifizierung auf einer ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Auf einer Festplatte mit 500 gib. Das Betriebssystem-Image ist CentOS 7.9.
 * In GCP wird die BlueXP Klassifizierung auf einer ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten Festplatte mit 500 gib Standard. Das Betriebssystem-Image ist CentOS 7.9.
 * In Regionen, in denen die Standardinstanz nicht verfügbar ist, wird die BlueXP Klassifizierung auf einer alternativen Instanz ausgeführt. link:reference-instance-types.html["Sehen Sie sich die alternativen Instanztypen an"].
@@ -173,7 +172,7 @@ TIP: Die Instanz sollte immer ausgeführt werden, da die BlueXP Klassifizierung 
 
 Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen.
 
-[cols="18,26,56"]
+[cols="18,31,51"]
 |===
 | Systemgröße | Spezifikationen | Einschränkungen 
 
@@ -226,7 +225,7 @@ Viele Benutzer mögen diese Funktionalität, weil sie ihre Daten schnell scannen
 
 In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
-[cols="50,20,20"]
+[cols="47,18,18"]
 |===
 | Merkmal | Klassifizierung | Zuordnung 
 
@@ -312,4 +311,4 @@ Die Rolle, die jedem Benutzer zugewiesen wurde, bietet unterschiedliche Funktion
 * Benutzer mit der Rolle *Compliance Viewer* können Compliance-Informationen nur anzeigen und Berichte für Systeme erstellen, auf die sie zugreifen können. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemata nicht aktivieren/deaktivieren. Diese Benutzer können Dateien auch nicht kopieren, verschieben oder löschen.
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["Erfahren Sie mehr über BlueXP-Rollen"^] Und wie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["Benutzer mit bestimmten Rollen hinzufügen"^].
+https://["Erfahren Sie mehr über BlueXP-Rollen"^] Und wie https://["Benutzer mit bestimmten Rollen hinzufügen"^].

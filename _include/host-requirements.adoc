@@ -23,6 +23,24 @@
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
+* *UNIX-Ordnerberechtigungen*: Folgende UNIX-Mindestberechtigungen sind erforderlich:
++
+[cols="25,25"]
+|===
+| Ordner | Mindestberechtigungen 
+
+
+| /Tmp | `rwxrwxrwt` 
+
+
+| /Opt | `rwxr-xr-x` 
+
+
+| /Var/lib/Docker | `rwx------` 
+
+
+| /User/lib/systemd/System | `rwxr-xr-x` 
+|===
 * Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +
 ** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
@@ -31,18 +49,17 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
+
+
+* Red hat Enterprise Linux Versionen 8.0 bis 8.7
+* CentOS-Versionen 8.0 bis 8.7
+* CentOS Stream 8
+* RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 +
-** Red hat Enterprise Linux Versionen 8.0 bis 8.7
-** CentOS-Versionen 8.0 bis 8.7
-** CentOS Stream 8
-** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
+** *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+** *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 
 
-* *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
-* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
-+
-** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
-** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
-
-
+* Docker Engine Version 19.3.1 oder höher. https://["Installationsanweisungen anzeigen"^].
+* Python 3 Version 3.6 oder höher. https://["Installationsanweisungen anzeigen"^].
 

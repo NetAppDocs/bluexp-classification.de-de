@@ -24,7 +24,7 @@ Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den ve
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Entdecken Sie die Azure NetApp Files-Systeme, die Sie scannen möchten
 [role="quick-margin-para"]
-Vor dem Scannen von Azure NetApp Files-Volumes https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["BlueXP muss eingerichtet sein, um die Konfiguration zu ermitteln"^].
+Vor dem Scannen von Azure NetApp Files-Volumes https://["BlueXP muss eingerichtet sein, um die Konfiguration zu ermitteln"^].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
 [role="quick-margin-para"]
@@ -63,7 +63,7 @@ Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie
 
 Wenn sich das zu scannenden Azure NetApp Files-System nicht bereits in BlueXP als Arbeitsumgebung befindet, können Sie es zu diesem Zeitpunkt der Arbeitsfläche hinzufügen.
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Erfahren Sie, wie Sie das Azure NetApp Files-System in BlueXP entdecken"^].
+https://["Erfahren Sie, wie Sie das Azure NetApp Files-System in BlueXP entdecken"^].
 
 
 
@@ -136,7 +136,7 @@ image:screenshot_cifs_credentials.gif["Ein Screenshot der Registerkarte „Compl
 Die Zugangsdaten können schreibgeschützt sein, aber durch die Angabe von Administratorberechtigungen wird sichergestellt, dass die BlueXP Klassifizierung alle Daten lesen kann, die erhöhte Berechtigungen erfordern. Die Zugangsdaten werden in der BlueXP Klassifizierungsinstanz gespeichert.
 
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien durch die BlueXP Klassifizierungsklassifizierungs-Scans nicht zuletzt zugegriffen werden, empfehlen wir, dass der Benutzer über Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS verfügt. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs-Scans „Zeiten des letzten Zugriffs“ unverändert bleiben, empfehlen wir dem Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
 +
 Nach Eingabe der Anmeldedaten sollte eine Meldung angezeigt werden, dass alle CIFS-Volumes erfolgreich authentifiziert wurden.

@@ -78,12 +78,12 @@ Richten Sie eine IAM-Rolle für die BlueXP Klassifizierungsinstanz ein:: Die Blu
 }
 ----
 --
-Konnektivität von der BlueXP Klassifizierung bis zu Amazon S3:: Die Klassifizierung von BlueXP erfordert eine Verbindung zu Amazon S3. Die beste Möglichkeit, eine solche Verbindung bereitzustellen, ist über einen VPC Endpunkt zum S3-Service. Anweisungen hierzu finden Sie unter https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
+Konnektivität von der BlueXP Klassifizierung bis zu Amazon S3:: Die Klassifizierung von BlueXP erfordert eine Verbindung zu Amazon S3. Die beste Möglichkeit, eine solche Verbindung bereitzustellen, ist über einen VPC Endpunkt zum S3-Service. Anweisungen hierzu finden Sie unter https://["AWS Dokumentation: Erstellen eines Gateway-Endpunkts"^].
 +
 --
 Wenn Sie den VPC-Endpunkt erstellen, müssen Sie die Region, die VPC und die Routetabelle auswählen, die der BlueXP Klassifizierungsinstanz entsprechen. Sie müssen auch die Sicherheitsgruppe ändern, um eine ausgehende HTTPS-Regel hinzuzufügen, die Datenverkehr zum S3-Endpunkt ermöglicht. Andernfalls kann die BlueXP Klassifizierung keine Verbindung zum S3-Service herstellen.
 
-Informationen zu Problemen finden Sie unter https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS Support Knowledge Center: Warum kann ich keine Verbindung zu einem S3-Bucket über einen Gateway-VPC-Endpunkt herstellen?"^]
+Informationen zu Problemen finden Sie unter https://["AWS Support Knowledge Center: Warum kann ich keine Verbindung zu einem S3-Bucket über einen Gateway-VPC-Endpunkt herstellen?"^]
 
 Eine Alternative besteht darin, die Verbindung über ein NAT Gateway bereitzustellen.
 

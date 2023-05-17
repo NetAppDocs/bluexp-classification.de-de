@@ -60,7 +60,7 @@ Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Infor
 | Sensible Personenbezogene Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-sensitive-personal-data["Arten sensibler personenbezogener Daten"^]. 
 
 
-| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. 
+| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["Weitere Informationen zu Datensubjekten finden Sie hier"^]. 
 |===
 
 
@@ -192,7 +192,7 @@ link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Infor
 
 
 
-=== Filtern Sie Daten nach Duplikaten
+=== Daten nach Duplikaten filtern
 
 Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupliziert wurden.
 

@@ -138,7 +138,7 @@ Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien 
 
 Nach Hinzufügen des regex wird die BlueXP Klassifizierung neu gestartet und scannt alle Datenquellen. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
 
-Siehe https://regex101.com/[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie.
+Siehe https://[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie.
 
 .Schritte
 . Klicken Sie auf der Registerkarte _Classification settings_ auf *Add New Classifier*, um den Assistenten _Add Custom Classifier_ zu starten.

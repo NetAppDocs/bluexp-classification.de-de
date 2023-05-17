@@ -37,9 +37,9 @@ Sie führen die folgenden Aufgaben aus.
 
 Ein BlueXP Connector ist erforderlich, bevor Sie die BlueXP Klassifizierung installieren und verwenden können. Sie können jedoch das Skript Voraussetzungen ohne Connector ausführen.
 
-Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
+Das können Sie https://["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 
-Informationen zum Erstellen eines Connectors in der Umgebung Ihres Cloud-Providers finden Sie unter https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
+Informationen zum Erstellen eines Connectors in der Umgebung Ihres Cloud-Providers finden Sie unter https://["Erstellen eines Konnektors in AWS"^], https://["Erstellen eines Connectors in Azure"^], Oder https://["Erstellen eines Konnektors in GCP"^].
 
 Sie benötigen die IP-Adresse oder den Hostnamen des Connector-Systems, wenn Sie das Skript Voraussetzungen ausführen. Diese Informationen erhalten Sie, wenn Sie den Connector in Ihrem Haus installiert haben. Wenn der Connector in der Cloud bereitgestellt wird, finden Sie diese Informationen in der BlueXP-Konsole: Klicken Sie auf das Hilfesymbol, wählen Sie *Support* und klicken Sie auf *BlueXP Connector*.
 
@@ -70,6 +70,24 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
+* *UNIX-Ordnerberechtigungen*: Folgende UNIX-Mindestberechtigungen sind erforderlich:
++
+[cols="25,25"]
+|===
+| Ordner | Mindestberechtigungen 
+
+
+| /Tmp | `rwxrwxrwt` 
+
+
+| /Opt | `rwxr-xr-x` 
+
+
+| /Var/lib/Docker | `rwx------` 
+
+
+| /User/lib/systemd/System | `rwxr-xr-x` 
+|===
 * Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +
 ** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
@@ -78,21 +96,21 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
+
+
+* Red hat Enterprise Linux Versionen 8.0 bis 8.7
+* CentOS-Versionen 8.0 bis 8.7
+* CentOS Stream 8
+* RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 +
-** Red hat Enterprise Linux Versionen 8.0 bis 8.7
-** CentOS-Versionen 8.0 bis 8.7
-** CentOS Stream 8
-** Version 7.8 oder 7.9 kann verwendet werden, aber die Linux-Kernel-Version muss 4.0 oder höher sein
+** *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
+** *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 
 
-* *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
-* *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
+* Docker Engine Version 19.3.1 oder höher. https://["Installationsanweisungen anzeigen"^].
+* Python 3 Version 3.6 oder höher. https://["Installationsanweisungen anzeigen"^].
 +
-** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
-** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
-
-
-* *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
+** *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -113,7 +131,9 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-Wenn Sie aktivieren `firewalld` Nach der Installation der BlueXP Klassifizierung müssen Sie Docker neu starten.
+Beachten Sie, dass Sie Docker immer dann neu starten müssen, wenn Sie diese aktivieren oder aktualisieren `firewalld` Einstellungen.
+
+
 
 
 
@@ -123,8 +143,8 @@ Wenn Sie aktivieren `firewalld` Nach der Installation der BlueXP Klassifizierung
 
 Für die BlueXP Klassifizierung ist Outbound-Internetzugang erforderlich. Wenn Ihr virtuelles oder physisches Netzwerk einen Proxy-Server für den Internetzugang verwendet, stellen Sie sicher, dass die BlueXP Klassifizierungsinstanz über Outbound-Internetzugang verfügt, um die folgenden Endpunkte zu kontaktieren.
 
-TIPP:: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetverbindung installiert sind, nicht erforderlich.
 
+TIP: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetverbindung installiert sind, nicht erforderlich.
 
 [cols="43,57"]
 |===
@@ -143,7 +163,10 @@ TIPP:: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetver
 | \https://support.compliance.api.bluexp.netapp.com/ | Ermöglicht NetApp das Streamen von Daten aus Audit-Datensätzen. 
 
 
-| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Enthält die für die Installation erforderlichen Pakete. 
+| \https://github.com/docker \https://download.docker.com | Enthält die erforderlichen Pakete für die Installation von Dockern. 
+
+
+| \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Enthält die erforderlichen Pakete für die CentOS-Installation. 
 |===
 
 
@@ -176,7 +199,7 @@ Führen Sie diese Schritte aus, um das Skript für die Voraussetzungen der BlueX
 
 
 .Schritte
-. Laden Sie das Skript für die BlueXP Klassifizierungs-Voraussetzungen von herunter https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Standalone-pre-requisite-Tester-<version>*.
+. Laden Sie das Skript für die BlueXP Klassifizierungs-Voraussetzungen von herunter https://["NetApp Support Website"^]. Die Datei, die Sie auswählen sollten, heißt *Standalone-pre-requisite-Tester-<version>*.
 . Kopieren Sie die Datei auf den Linux-Host, den Sie verwenden möchten (mit `scp` Oder eine andere Methode).
 . Weisen Sie Berechtigungen zum Ausführen des Skripts zu.
 +

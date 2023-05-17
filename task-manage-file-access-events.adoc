@@ -16,9 +16,9 @@ summary: 'Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignis
 [role="lead"]
 Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
 
-Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensiblen Personalakten oder Gehaltsabrechnungsdateien vorgenommen werden, können Sie diese Funktion auf den Volumes aktivieren, auf denen sich diese Dateien befinden. Anschließend können Sie das Audit-Protokoll für den Dateizugriff anzeigen, um zu sehen, ob diese Dateien geändert wurden. Wenn sie geändert wurden, können Sie den Namen der Person sehen, die die Änderung vorgenommen hat, und wann die Änderung vorgenommen wurde.
+Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensiblen Personalakten oder Gehaltsabrechnungsdateien vorgenommen werden, können Sie diese Funktion auf den Volumes aktivieren, auf denen sich diese Dateien befinden. Anschließend können Sie das Audit-Protokoll für den Dateizugriff anzeigen, um zu sehen, ob diese Dateien geändert wurden. Wenn sie geändert wurden, können Sie die Sicherheits-ID (SID) der Person sehen, die die Änderung vorgenommen hat und wann die Änderung vorgenommen wurde.
 
-Sie können diese Funktion für alle kritischen Volumes in Ihren ONTAP-Arbeitsumgebungen aktivieren. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
+Sie können diese Funktion auf allen kritischen Volumes in Ihren Arbeitsumgebungen aktivieren, in denen die ONTAP Software ausgeführt wird. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
 
 Die BlueXP Klassifizierung erfasst derzeit Ereignisse für folgende Aktionen Ihrer Dateien und Verzeichnisse:
 
@@ -37,15 +37,15 @@ BlueXP Benutzer mit den Rollen „Account-Administrator“ oder „Workspace-Adm
 
 == Unterstützte Datenquellen
 
-Die BlueXP Klassifizierung kann Dateizugriffsereignisse für Dateien protokollieren, die sich auf den folgenden Datenquellen befinden:
+Die BlueXP Klassifizierung kann Dateizugriffsereignisse für Dateien protokollieren, die sich auf ONTAP Volumes in den folgenden Datenquellen befinden:
 
 * On-Premises-ONTAP
 * Cloud Volumes ONTAP
 * Azure NetApp Dateien
-* FSX für ONTAP
+* Amazon FSX für NetApp ONTAP
 
 
-Für diese Datenquellen muss Active Directory konfiguriert sein, damit die BlueXP Klassifizierung den Namen der Person ermitteln kann, die auf die Dateien zugegriffen hat.
+Auf den Datenquellen muss die Software ONTAP Version 9.11 oder höher ausgeführt werden.
 
 
 
@@ -53,7 +53,12 @@ Für diese Datenquellen muss Active Directory konfiguriert sein, damit die BlueX
 
 Sie können die Audit-Protokollierung für den Dateizugriff bei einzelnen Volumes aktivieren, um Änderungen an Dateien und Verzeichnissen nachzuverfolgen.
 
-TIPP:: Sie können die Dateizugriffsüberwachung für maximal 5 Volumes auf jedem ONTAP-System konfigurieren.
+
+TIP: Sie können die Überwachung des Dateizugriffs für maximal 5 Volumes auf jeder Datenquelle konfigurieren.
+
+.Bevor Sie beginnen
+* Sie sollten Active Directory für die Datenquellen konfiguriert haben, damit durch die BlueXP Klassifizierung die ID der Person, die auf die Dateien zugegriffen hat, aufgelistet werden kann.
+* Port 5018 muss für Outbound-Zugriff aus dem BlueXP Klassifizierungssystem geöffnet sein.
 
 
 .Schritte
@@ -81,34 +86,36 @@ Alle Dateizugriffsereignisse, die für Dateien auf den aktivierten Volumes gener
 
 == Inhalt der Protokolldatei protokollieren
 
-Für jedes Volume, das Sie für die Nachverfolgung von Dateizugriffsereignissen konfiguriert haben, wird eine Protokolldatei erstellt. Jede Zeile im Auditprotokoll enthält Informationen in diesem Format:
-
-`<timestamp> | <volume_name> | <event_type> | <file_name> | <user_name> | <action_result> | <action_details>`
+Für jedes Volume, das Sie für die Nachverfolgung von Dateizugriffsereignissen konfiguriert haben, wird eine Protokolldatei erstellt. Die Protokolldateien heißen „<volume_name>_<volume_uuid>_.log“, z. B. „fpolicy_cifs_838c1727-dd2d-11ed-a3ec-590ce4991.log“. Jede Zeile im Auditprotokoll enthält Informationen in diesem Format:
 
 * Timestamp: Datum und Uhrzeit des Ereignisses
+* Client-IP: IP-Adresse der Instanz/PC/Proxy, in der der Dateivorgang ausgeführt wurde
 * Volume Name: Name des Volumes
-* Ereignistyp - Erstellen, Lesen, Schreiben, Umbenennen, Löschen, Eigentümer/Berechtigungen ändern und SACL/DACL ändern
-* Dateiname: Vollständiger Pfad und Dateiname
-* Benutzername (oder ID): Name oder ID der Person, die die Aktion ausgeführt hat
-* Ergebnis der Aktion – ob die Aktion erfolgreich war oder nicht, und der Grund für Erfolg/Misserfolg
-* Details zur Aktion - was getan wurde: Hängt von der Aktion ab
+* Volume-UUID: UUID des Volumes
+* Dateityp: Dateityp: DATEI oder DIS
+* File Size: Größe der Datei in Byte
+* Pfad: Vollständiger Pfad und Name der betroffenen Datei oder des betroffenen Verzeichnisses
+* Volume Type: Volume-Typ: SMB oder NFS
+* Benutzer-ID: Sicherheits-ID (SID) der Person, die die Aktion ausgeführt hat
+* Dateieigentümer-ID: Sicherheits-ID (SID) des Dateieigentümers
+* Ereignistyp – Erstellen, Lesen, Schreiben, Umbenennen, Löschen, Eigentümer/Berechtigungen ändern oder SACL/DACL ändern
+* Aktionsdetails – Was getan wurde: Hängt von der Aktion ab
 
 
-Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgreichen Kopiervorgang und einen fehlerhaften Kopiervorgang an.
+Beispiel: Die folgende Zeile aus der Protokolldatei zeigt, dass im Volume „fpolicy_cifs“ eine Aktion „Create“ aufgetreten ist - im Volume wurde eine neue Datei „f14“ erstellt.
 
-....
-2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
-2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
-....
+ {"Timestamp": "2023-04-24 13:57", "Client_IP": "172.31.14.35", "Volume_Name": "fpolicy_cifs", "Volume_UUID": "838c1727-dd2d-11ed-a3ec-590ce4991", "File_Type": "FILE", "File_Size": 100, "Path": \\FPOLICY_CVO\fpolicy_cifs_share\dbs\f14, "Volume_Type": "SMB", "User_ID": "S-1-5-21-459977447-2546672318-3630509715-500", "File_Owner_ID": "S-1-5-32-544", "Event_Type": "CREATE", "Action_Details": {details}}
+Über die BlueXP Klassifizierungs-Untersuchungsseite können Sie nach dem Volume suchen (mithilfe des Filters „Storage Repository“) oder nach der Datei (mithilfe des Filters „Datei-/Verzeichnispfad“), um weitere Details zum betroffenen Volume und der betroffenen Datei zu sehen.
+
 
 
 == Greifen Sie auf die Datei Access Audit Log-Dateien zu
 
-Die File Access Audit Log-Dateien befinden sich auf der BlueXP Klassifizierungs-Machine in: `/opt/netapp/audit_logs/`
+Die File Access Audit Log-Dateien befinden sich auf der BlueXP Klassifizierungs-Machine in: `/opt/netapp/file_access_audit_logs/`
 
-Die Protokolldateien heißen „File_Access_Audit_<volume_name>_<timestamp>.log“, zum Beispiel „DateizugriffAudit_MedicalData_20230205092321.log“. Die <timestamp> ist der Zeitpunkt, zu dem die BlueXP Klassifizierung das erste Protokoll in die Datei geschrieben hat. Jede Datei ist standardmäßig so konfiguriert, dass sie maximal 50,000 Ereignisse enthält. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel.
+Jede Datei ist standardmäßig so konfiguriert, dass sie maximal 50,000 Ereignisse enthält. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Nach Erreichen dieses Maximalwerts werden ältere Einträge in der Protokolldatei überschrieben.
 
-Die Gesamtgröße aller Protokolldateien im Verzeichnis ist auf den Standardwert 50 GB festgelegt. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien automatisch gelöscht.
+Die Gesamtgröße aller Protokolldateien im Verzeichnis ist standardmäßig auf maximal 50 GB festgelegt. <<Konfigurieren Sie die Einstellungen für das Audit-Protokoll für den Dateizugriff,Sie können diesen Wert auf der Seite Konfiguration des Dateizugriffsprotokolls anpassen.>> Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien gelöscht, wenn neue Protokolldateien hinzugefügt werden. Darüber hinaus werden alle Protokolldateien, die älter als 14 Tage sind, überschrieben, da dies die maximale Aufbewahrungszeit ist.
 
 Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert wird, die Sie in der Cloud implementiert haben, können Sie direkt zu den Protokolldateien navigieren.
 
@@ -123,14 +130,14 @@ Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH
 ** Für GCP: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
 
 
-* <dataense_ip> = IP-Adresse der virtuellen Maschineninstanz
+* <datasense_ip> = IP-Adresse der Instanz der BlueXP Klassifizierungs-Virtual Machine
 
 
 Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen, um auf das System in der Cloud zuzugreifen. Weitere Informationen finden Sie unter:
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
+* https://["Sicherheitsgruppenregeln in AWS"^]
+* https://["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
+* https://["Firewall-Regeln in Google Cloud"^]
 
 
 
@@ -146,12 +153,12 @@ image:screenshot_compliance_file_access_audit_config.png["Ein Screenshot mit der
 | Option Überwachungsprotokoll | Beschreibung 
 
 
-| Speicherort der Protokolldatei | Der Speicherort ist derzeit fest codiert, um die Protokolldateien in zu schreiben `/opt/netapp/audit_logs/` 
+| Speicherort der Protokolldatei | Der Speicherort ist derzeit fest codiert, um die Protokolldateien in zu schreiben `/opt/netapp/file_access_audit_logs/` 
 
 
 | Maximale Storage-Zuweisung für Prüfprotokolle | Die Gesamtgröße aller Protokolldateien im Verzeichnis ist derzeit auf einen Standardwert von 50 GB hardcodiert. Wenn diese Grenze erreicht ist, werden die ältesten Protokolldateien automatisch gelöscht. 
 
 
-| Maximale Anzahl von Überwachungsereignissen pro Überwachungsdatei | Jede Datei ist derzeit so programmiert, dass sie maximal 50,000 Ereignisse enthält. Nachdem dieses Maximum erreicht wurde, wird eine neue Protokolldatei für dieses Volume erstellt. Die neue Datei hat einen neueren Zeitstempel. 
+| Maximale Anzahl von Überwachungsereignissen pro Überwachungsdatei | Jede Datei ist derzeit so programmiert, dass sie maximal 50,000 Ereignisse enthält. Nachdem dieses Maximum erreicht wurde, werden alte Ereignisse gelöscht, wenn neue Ereignisse hinzugefügt werden. 
 |===
 Beachten Sie, dass diese Einstellungen derzeit auf die Standardeinstellungen hartcodiert sind. Sie können nicht geändert werden.

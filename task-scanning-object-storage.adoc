@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
-summary: 'Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (mit Minio), Linode, B2 Cloud Storage und Amazon S3.' 
+summary: 'Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3 und vieles mehr.' 
 ---
 = Objekt-Storage wird mit S3-Protokoll gescannt
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Führen Sie ein paar Schritte durch und starten Sie das Scannen von Da
 
 
 [role="lead"]
-Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Azure Blob (mit Minio), Linode, B2 Cloud Storage und Amazon S3.
+Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3 und vieles mehr.
 
 
 
@@ -49,7 +49,6 @@ Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierun
 
 * Es muss die Endpunkt-URL vorhanden sein, um eine Verbindung mit dem Objekt-Storage-Service herzustellen.
 * Sie müssen den Zugriffsschlüssel und den geheimen Schlüssel vom Objekt-Storage-Provider besitzen, damit die BlueXP Klassifizierung auf die Buckets zugreifen kann.
-* Für die Unterstützung für Azure Blob müssen Sie den verwenden link:https://min.io/["Minio Service"^].
 
 
 

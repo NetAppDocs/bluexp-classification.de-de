@@ -36,7 +36,7 @@ Melden Sie sich mit qualifizierten Benutzeranmeldeinformationen beim SharePoint-
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Fügen Sie die URLs der SharePoint-Website zum Scannen hinzu
 [role="quick-margin-para"]
-Fügen Sie die Liste der SharePoint-Website-URLs hinzu, die Sie im SharePoint-Konto scannen möchten, und wählen Sie den Scantyp aus. Sie können bis zu 100 URLs gleichzeitig hinzufügen.
+Fügen Sie die Liste der SharePoint-Website-URLs hinzu, die Sie im SharePoint-Konto scannen möchten, und wählen Sie den Scantyp aus. Sie können bis zu 100 URLs gleichzeitig hinzufügen - und bis zu 1,000 Sites insgesamt für jedes Konto.
 
 
 
@@ -63,7 +63,7 @@ Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implemen
 * Für SharePoint vor Ort kann die BlueXP Klassifizierung installiert werden link:task-deploy-compliance-onprem.html["In einer Anlage mit Internetzugang"^] Oder link:task-deploy-compliance-dark-site.html["In einem Hotel, das keinen Internetzugang hat"^].
 
 
-Wenn die BlueXP-Klassifizierung auf einer Website ohne Internetzugang installiert ist, muss der BlueXP Connector auch ohne Internetzugang auf derselben Website installiert sein. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Weitere Informationen ."^].
+Wenn die BlueXP-Klassifizierung auf einer Website ohne Internetzugang installiert ist, muss der BlueXP Connector auch ohne Internetzugang auf derselben Website installiert sein. https://["Weitere Informationen ."^].
 
 Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
@@ -113,7 +113,7 @@ Das On-Premise-Konto SharePoint wird zur Liste der Arbeitsumgebungen hinzugefüg
 
 == Hinzufügen von SharePoint Sites zu Compliance-Scans
 
-Sie können einzelne SharePoint Sites oder alle SharePoint Sites in dem Konto hinzufügen, sodass die zugehörigen Dateien durch die BlueXP Klassifizierung gescannt werden. Die Schritte sind die gleichen, wenn SharePoint Online oder SharePoint On-Premise-Websites hinzugefügt werden.
+Sie können dem Konto einzelne SharePoint Sites oder bis zu 1,000 SharePoint Sites hinzufügen, sodass die zugehörigen Dateien durch die BlueXP Klassifizierung gescannt werden. Unabhängig davon, ob Sie SharePoint Online oder SharePoint On-Premise-Websites hinzufügen, sind die Schritte gleich.
 
 .Schritte
 . Klicken Sie auf der Seite _Configuration_ auf die Schaltfläche *Configuration* für das SharePoint-Konto.
@@ -140,6 +140,7 @@ In einem Bestätigungsdialogfeld wird die Anzahl der hinzugefügten Standorte an
 +
 Wenn im Dialogfeld keine Sites aufgeführt sind, die nicht hinzugefügt werden konnten, erfassen Sie diese Informationen, damit Sie das Problem beheben können. In einigen Fällen können Sie die Site mit einer korrigierten URL erneut hinzufügen.
 
+. Wenn Sie mehr als 100 Sites für dieses Konto hinzufügen müssen, klicken Sie einfach erneut auf *SharePoint Sites hinzufügen*, bis Sie alle Ihre Sites für dieses Konto hinzugefügt haben (bis zu 1,000 Sites insgesamt für jedes Konto).
 . Ermöglichen Sie auf den Dateien auf den SharePoint-Sites Mapping- und Klassifizierungscans.
 +
 [cols="45,45"]
