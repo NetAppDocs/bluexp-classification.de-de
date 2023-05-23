@@ -29,13 +29,13 @@ Wenn in den folgenden Tabellen das als „Standard“ markierte System in der Re
 | Systemgröße | Spezifikationen | Instanztyp 
 
 
-| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://["M6i.4xlarge"^] (Standard) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge"^] (Standard) m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
-| Mittel | 8 CPUs, 32 GB RAM, 200 gib SSD | https://["M6i.2xlarge"^] (Standard) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+| Mittel | 8 CPUs, 32 GB RAM, 200 gib SSD | https://aws.amazon.com/ec2/instance-types/m6i/["M6i.2xlarge"^] (Standard) m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
 
 
-| Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | https://["c6a.2xlarge"^] (Standard) c5a.2xlarge c5.2xlarge c4.2xlarge 
+| Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] (Standard) c5a.2xlarge c5.2xlarge c4.2xlarge 
 |===
 
 
@@ -46,7 +46,7 @@ Wenn in den folgenden Tabellen das als „Standard“ markierte System in der Re
 | Systemgröße | Spezifikationen | Instanztyp 
 
 
-| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://["Standard_D16s_v3"^] (Standard) 
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (Standard) 
 |===
 
 
@@ -57,5 +57,5 @@ Wenn in den folgenden Tabellen das als „Standard“ markierte System in der Re
 | Systemgröße | Spezifikationen | Instanztyp 
 
 
-| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://["n2-Standard-16"^] (Standard) n2d-Standard-16 n1-Standard-16 
+| Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^] (Standard) n2d-Standard-16 n1-Standard-16 
 |===

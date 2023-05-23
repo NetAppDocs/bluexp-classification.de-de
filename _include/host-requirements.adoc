@@ -59,8 +59,8 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 * *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 * *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 +
-** Docker Engine Version 19.3.1 oder höher. https://["Installationsanweisungen anzeigen"^].
-** Python 3 Version 3.6 oder höher. https://["Installationsanweisungen anzeigen"^].
+** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
+** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
 

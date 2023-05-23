@@ -76,7 +76,7 @@ Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH
 
 Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen, um auf das System in der Cloud zuzugreifen. Weitere Informationen finden Sie unter:
 
-* https://["Sicherheitsgruppenregeln in AWS"^]
-* https://["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
-* https://["Firewall-Regeln in Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
 

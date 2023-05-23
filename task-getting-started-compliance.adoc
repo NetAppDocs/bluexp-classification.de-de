@@ -28,7 +28,7 @@ Bevor Sie Volumes scannen können, müssen Sie die Systeme als Arbeitsumgebung i
 
 [role="quick-margin-list"]
 * Bei Cloud Volumes ONTAP-Systemen sollten diese Arbeitsumgebungen bereits in BlueXP zur Verfügung stehen
-* Für On-Premises-ONTAP-Systeme bietet die https://["BlueXP muss die ONTAP Cluster ermitteln"^]
+* Für On-Premises-ONTAP-Systeme bietet die https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP muss die ONTAP Cluster ermitteln"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
@@ -69,7 +69,7 @@ Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie
 
 Wenn sich die zu scannenden Datenquellen nicht bereits in Ihrer BlueXP-Umgebung befinden, können Sie diese zu diesem Zeitpunkt zur Leinwand hinzufügen.
 
-Ihre Cloud Volumes ONTAP-Systeme sollten bereits auf dem Canvas in BlueXP verfügbar sein. Bei ONTAP Systemen vor Ort ist ein muss erforderlich https://["BlueXP ermittelt diese Cluster"^].
+Ihre Cloud Volumes ONTAP-Systeme sollten bereits auf dem Canvas in BlueXP verfügbar sein. Bei ONTAP Systemen vor Ort ist ein muss erforderlich https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP ermittelt diese Cluster"^].
 
 
 

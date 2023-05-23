@@ -57,17 +57,17 @@ image:screenshot_add_subscription.gif["Ein Screenshot des Menüs auf der Seite A
 
 . Wählen Sie ein vorhandenes Abonnement aus und klicken Sie auf *Associate*, oder klicken Sie auf *Abonnement hinzufügen* und befolgen Sie die Schritte.
 +
-Das folgende Video zeigt, wie ein zugeordnet werden soll https://["AWS Marketplace"^] Abonnement eines AWS Abonnements:
+Das folgende Video zeigt, wie ein zugeordnet werden soll https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] Abonnement eines AWS Abonnements:
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
-Das folgende Video zeigt, wie ein zugeordnet werden soll https://["Azure Marketplace"^] Abonnement eines Azure Abonnements:
+Das folgende Video zeigt, wie ein zugeordnet werden soll https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] Abonnement eines Azure Abonnements:
 
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-Das folgende Video zeigt, wie ein zugeordnet werden soll https://["GCP Marketplace"^] Abonnement eines GCP-Abonnements:
+Das folgende Video zeigt, wie ein zugeordnet werden soll https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^] Abonnement eines GCP-Abonnements:
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -85,7 +85,7 @@ Wenn Sie keine BlueXP Klassifizierungslizenz haben, wenden Sie sich an uns, um e
 * Klicken Sie rechts unten auf das Chat-Symbol von BlueXP, um eine Lizenz anzufordern.
 
 
-Wenn Sie optional eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP haben, die Sie nicht verwenden werden, können Sie sie in eine BlueXP Klassifizierungslizenz mit derselben Dollar-Äquivalenz und demselben Ablaufdatum konvertieren. https://["Weitere Informationen finden Sie hier"^].
+Wenn Sie optional eine nicht zugewiesene Node-basierte Lizenz für Cloud Volumes ONTAP haben, die Sie nicht verwenden werden, können Sie sie in eine BlueXP Klassifizierungslizenz mit derselben Dollar-Äquivalenz und demselben Ablaufdatum konvertieren. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Weitere Informationen finden Sie hier"^].
 
 Sie managen die BYOL-Lizenzen der BlueXP Digital-Wallet-Seite in BlueXP. Sie können neue Lizenzen hinzufügen und vorhandene Lizenzen aktualisieren.
 
@@ -98,7 +98,7 @@ Nachdem Sie Ihre BlueXP Klassifizierungs-Lizenz (Data Sense) erworben haben, akt
 Wenn Sie die BlueXP Klassifizierung auf einem Host an einem lokalen Standort ohne Internetzugang implementiert haben, müssen Sie die Lizenzdatei von einem mit dem Internet verbundenen System beziehen. Die Aktivierung der Lizenz unter Verwendung der Seriennummer und des NSS-Kontos ist für Installationen am dunklen Standort nicht verfügbar.
 
 .Schritte
-. Melden Sie sich beim an https://["NetApp Support Website"^] Klicken Sie anschließend auf *Systeme > Softwarelizenzen*.
+. Melden Sie sich beim an https://mysupport.netapp.com["NetApp Support Website"^] Klicken Sie anschließend auf *Systeme > Softwarelizenzen*.
 . Geben Sie die Seriennummer Ihrer BlueXP Klassifizierungs-Lizenz ein.
 +
 image:screenshot_cloud_tiering_license_step1.gif["Ein Screenshot, der eine Tabelle von Lizenzen zeigt, nachdem Sie nach der Seriennummer suchen."]
@@ -126,7 +126,7 @@ Nachdem Sie eine BlueXP Klassifizierungs-Lizenz (Data Sense) für Ihr BlueXP Kon
 +
 ** Wenn Sie die Seriennummer der BlueXP Klassifizierungslizenz haben und Ihr NSS-Konto kennen, wählen Sie die Option *Seriennummer eingeben* aus und geben Sie diese Information ein.
 +
-Wenn Ihr NetApp Support Site Konto nicht in der Dropdown-Liste verfügbar ist, https://["Fügen Sie das NSS-Konto zu BlueXP hinzu"^].
+Wenn Ihr NetApp Support Site Konto nicht in der Dropdown-Liste verfügbar ist, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Fügen Sie das NSS-Konto zu BlueXP hinzu"^].
 
 ** Wenn Sie über die BlueXP-Klassifizierungslizenzdatei verfügen (erforderlich bei Installation auf einer dunklen Seite), wählen Sie die Option *Lizenzdatei hochladen* aus und folgen Sie den Anweisungen zum Anhängen der Datei.
 +
