@@ -348,19 +348,19 @@ Der Connector ist eine Software, die auf einer Computing-Instanz entweder in Ihr
 * Beim Scannen von Daten in lokalen ONTAP Systemen, File Shares anderer Anbieter, generischer S3 Objekt-Storage, Datenbanken, OneDrive Ordner, SharePoint Konten und Google Drive Konten können Sie einen Konnektor in jedem dieser Cloud-Standorte verwenden.
 
 
-Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuell verwenden https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Mehrere Anschlüsse"^].
+Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuell verwenden https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Mehrere Anschlüsse"^].
 
 
 
 === Kann ich den Connector auf meinem eigenen Host bereitstellen?
 
-Ja. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie die BlueXP Klassifizierung lokal implementieren möchten, sollten Sie den Connector möglicherweise auch On-Premises installieren. Dies ist aber nicht erforderlich.
+Ja. Das können Sie https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie die BlueXP Klassifizierung lokal implementieren möchten, sollten Sie den Connector möglicherweise auch On-Premises installieren. Dies ist aber nicht erforderlich.
 
 
 
 === Wie sieht es mit sicheren Websites ohne Internetzugang aus?
 
-Ja, das wird auch unterstützt. Das können Sie https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Stellen Sie den Connector auf einem lokalen Linux-Host bereit, der keinen Internetzugang hat"^]. Anschließend können Sie lokale ONTAP Cluster und andere lokale Datenquellen erkennen und die Daten mit der BlueXP Klassifizierung scannen.
+Ja, das wird auch unterstützt. Das können Sie https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Stellen Sie den Connector auf einem lokalen Linux-Host bereit, der keinen Internetzugang hat"^]. Anschließend können Sie lokale ONTAP Cluster und andere lokale Datenquellen erkennen und die Daten mit der BlueXP Klassifizierung scannen.
 
 
 

@@ -46,7 +46,7 @@ Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte 
 
 * *Kopieren und Synchronisieren von Dateien* aus einem Quell-Repository (ONTAP-Volume, S3-Bucket, NFS-Freigabe usw.) zu einem Verzeichnis in einem bestimmten Ziel-Speicherort (Ziel).
 +
-Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Nach der ersten Kopie synchronisiert der Service alle geänderten Daten auf der Grundlage des von Ihnen festgelegten Zeitplans. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
+Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Nach der ersten Kopie synchronisiert der Service alle geänderten Daten auf der Grundlage des von Ihnen festgelegten Zeitplans. Diese Aktion verwendet das https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
 
 
 
@@ -149,9 +149,9 @@ Wenn Sie zunächst *Alle Volumes zuweisen* oder *alle Volumes zuordnen und klass
 
 === Kopieren und Synchronisieren von Quelldateien auf ein Zielsystem
 
-Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, von einer unterstützten unstrukturierten Datenquelle in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Zielorte, die von der BlueXP Kopier- und Synchronisierungsfunktion unterstützt werden"^]). Nach der ersten Kopie werden alle geänderten Daten in den Dateien gemäß dem von Ihnen konfigurierten Zeitplan synchronisiert.
+Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, von einer unterstützten unstrukturierten Datenquelle in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren (https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["Zielorte, die von der BlueXP Kopier- und Synchronisierungsfunktion unterstützt werden"^]). Nach der ersten Kopie werden alle geänderten Daten in den Dateien gemäß dem von Ihnen konfigurierten Zeitplan synchronisiert.
 
-Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Diese Aktion verwendet das https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
+Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem anderen migrieren. Diese Aktion verwendet das https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["NetApp BlueXP Kopier- und Synchronisierungsfunktion"^] Funktion zum Kopieren und Synchronisieren von Daten von einer Quelle an ein Ziel
 
 
 TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten befinden, können nicht kopiert und synchronisiert werden.
@@ -160,7 +160,7 @@ TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten be
 * Zum Kopieren und Synchronisieren von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen.
 * Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen aus demselben Quell-Repository stammen (ONTAP Volume, S3 Bucket, NFS oder CIFS-Freigabe usw.).
-* Sie müssen den BlueXP Kopier- und Synchronisierungsservice aktivieren und mindestens einen Daten-Broker konfigurieren, mit dem Dateien zwischen Quell- und Zielsystemen übertragen werden können. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
+* Sie müssen den BlueXP Kopier- und Synchronisierungsservice aktivieren und mindestens einen Daten-Broker konfigurieren, mit dem Dateien zwischen Quell- und Zielsystemen übertragen werden können. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Kurzanleitung"^].
 +
 Beachten Sie, dass für den BlueXP Kopier- und Synchronisierungsservice unterschiedliche Servicegebühren für Ihre Synchronisierungsbeziehungen anfallen und Ressourcengebühren anfallen, wenn Sie den Daten-Broker in der Cloud implementieren.
 
@@ -189,7 +189,7 @@ Die BlueXP Kopier- und Synchronisierungs-UI wird in BlueXP geöffnet.
 +
 Sie werden aufgefordert, die Synchronisierungsbeziehung zu definieren. Das Quellsystem basiert auf dem Repository und den Dateien, die Sie bereits in der BlueXP Klassifizierung ausgewählt haben, und wird entsprechend vorausgefüllt.
 
-. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["Kurzanleitung"^].
+. Sie müssen das Zielsystem auswählen und dann den zu verwendenden Daten-Broker (oder erstellen) auswählen. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Kurzanleitung"^].
 
 
 .Ergebnis

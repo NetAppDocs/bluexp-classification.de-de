@@ -59,4 +59,4 @@ Folgende Filteroptionen stehen zur Auswahl:
 * „Zeitpunkt des letzten Zugriffs klassifiziert und aktualisiert“ – Hier werden die Dateien angezeigt, die klassifiziert wurden und die BlueXP-Klassifizierung konnte den Zeitpunkt des letzten Zugriffs nicht auf das ursprüngliche Datum zurücksetzen. Dieser Filter ist nur für Umgebungen relevant, in denen Sie *Scan bei fehlenden Berechtigungen für "Schreibattribute"* AKTIVIERT haben.
 
 
-Bei Bedarf können Sie diese Ergebnisse in einen Bericht exportieren, damit Sie sehen können, welche Dateien aufgrund von Berechtigungen gescannt werden oder nicht. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#data-investigation-report["Erfahren Sie mehr über den Untersuchungsbericht"^].
+Bei Bedarf können Sie diese Ergebnisse in einen Bericht exportieren, damit Sie sehen können, welche Dateien aufgrund von Berechtigungen gescannt werden oder nicht. https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#data-investigation-report["Erfahren Sie mehr über den Untersuchungsbericht"^].
