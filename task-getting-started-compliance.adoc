@@ -109,9 +109,13 @@ Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren 
 .Ergebnis
 Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsumgebung ausgewählten Volumes. Sobald die ersten Scans durch die BlueXP-Klassifizierung abgeschlossen sind, werden die Ergebnisse im Compliance-Dashboard verfügbar sein. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
 
+[NOTE]
+====
+* Wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, scannt das System standardmäßig nicht die Dateien in Ihren Volumes, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, klicken Sie auf *oder wählen Sie den Scantyp für jedes Volume* aus. Die resultierende Seite verfügt über eine Einstellung, die Sie aktivieren können, sodass die BlueXP Klassifizierung die Volumes unabhängig von ihren Berechtigungen scannt.
+* Die BlueXP Klassifizierung scannt nur eine Datei-Freigabe unter einem Volume. Wenn Sie mehrere Freigaben in Ihren Volumes haben, müssen Sie diese anderen Freigaben separat als Gruppe „Freigaben“ scannen. link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["Weitere Informationen zu dieser BlueXP Klassifizierungsbeschränkung"^].
 
-NOTE: Wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, scannt das System standardmäßig nicht die Dateien in Ihren Volumes, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, klicken Sie auf *oder wählen Sie den Scantyp für jedes Volume* aus. Auf dieser Seite können Sie eine Einstellung aktivieren, sodass die BlueXP Klassifizierung die Volumes unabhängig von ihren Berechtigungen scannt.
 
+====
 
 
 == Überprüfung, ob die BlueXP Klassifizierung Zugriff auf Volumes hat

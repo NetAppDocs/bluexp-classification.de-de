@@ -129,7 +129,7 @@ image:screenshot_s3_compliance_iam_role.png["Ein Screenshot der Eingabe der AWS 
 
 
 
-TIP: Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken image:screenshot_gallery_options.gif[""] Und dann *BlueXP Klassifizierung aktivieren*.
+TIP: Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken image:screenshot_gallery_options.gif["Drei Punkte"] Und dann *BlueXP Klassifizierung aktivieren*.
 
 .Ergebnis
 BlueXP weist der Instanz die IAM-Rolle zu.

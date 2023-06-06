@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, data sense, classification, scan shares 
+summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
+---
+= Bekannte Einschränkungen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
+
+
+
+== Einschränkungen beim Scannen der BlueXP Klassifizierung
+
+
+
+=== Die BlueXP Klassifizierung scannt nur eine Freigabe unter einem Volume
+
+Wenn Sie mehrere File Shares unter einem einzelnen Volume haben, scannt die BlueXP Klassifizierung die Freigabe mit der höchsten Hierarchie. Wenn Sie beispielsweise Freigaben wie die folgenden haben:
+
+* /A
+* /A/B
+* /C
+* /D/E
+
+
+Anschließend werden die Daten in /A gescannt. Die Daten in /C und /D werden nicht gescannt.
+
+.Behelfslösung
+Es gibt eine Problemumgehung, um sicherzustellen, dass Sie Daten von allen Freigaben in Ihrem Volume scannen. Führen Sie hierzu folgende Schritte aus:
+
+. Fügen Sie in der Arbeitsumgebung das zu scannende Volumen hinzu.
+. Nachdem die BlueXP Klassifizierung das Scannen des Volumes abgeschlossen hat, öffnen Sie die Seite „_Data Investigation_“ und erstellen Sie einen Filter, um zu sehen, welche Freigabe gescannt wird:
++
+Sie filtern die Daten nach „Name der Arbeitsumgebung“ und „Verzeichnistyp = Freigabe“, um zu sehen, welche Freigabe gescannt wird.
+
+. Rufen Sie die vollständige Liste der Freigaben auf, die im Volume vorhanden sind, damit Sie sehen können, welche Freigaben nicht gescannt werden.
+. link:task-scanning-file-shares.html["Fügen Sie die restlichen Freigaben einer Freigabengruppe hinzu"].
++
+Sie müssen alle Freigaben einzeln hinzufügen, zum Beispiel:
+
++
+....
+/C
+/D
+....
+. Führen Sie diese Schritte für jedes Volume in der Arbeitsumgebung aus, die über mehrere Shares verfügt.
+

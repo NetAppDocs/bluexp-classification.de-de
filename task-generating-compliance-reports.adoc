@@ -198,7 +198,7 @@ NOTE: Die Suche nach Betroffenen wird derzeit in Datenbanken nicht unterstützt.
 Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen, und laden Sie dann einen Dateilistenbericht oder einen DSAR-Bericht herunter. Suchen Sie nach link:reference-private-data-categories.html#types-of-personal-data["Alle persönlichen Informationstypen"^].
 
 
-NOTE: Englisch, Deutsch und Spanisch werden bei der Suche nach den Namen der Betroffenen unterstützt. Support für weitere Sprachen wird später hinzugefügt.
+NOTE: Bei der Suche nach den Namen der betroffenen Personen werden Englisch, Deutsch, Japanisch und Spanisch unterstützt. Support für weitere Sprachen wird später hinzugefügt.
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.

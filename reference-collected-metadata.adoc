@@ -21,22 +21,27 @@ Die BlueXP Klassifizierung erfasst bestimmte Metadaten, wenn Klassifizierungs-Sc
 |  | *Metadaten* | *CIFS* | *NFS* 
 
 
-.3+| *Zeitstempel* | *Erstellungszeit* | Verfügbar | Nicht verfügbar (nicht unterstützt in Linux) 
+.3+| *Zeitstempel* | _Erstellungszeit_ | Verfügbar | Nicht verfügbar (nicht unterstützt in Linux) 
 
 
-| *Letzte Zugriffszeit* | Verfügbar | Verfügbar 
+| _Zeitpunkt des letzten Zugriffs_ | Verfügbar | Verfügbar 
 
 
-| *Letztes Ändern der Zeit* | Verfügbar | Verfügbar 
+| _Letzte Änderungszeit_ | Verfügbar | Verfügbar 
 
 
-.2+| *Berechtigungen* | *Berechtigungen öffnen* | Wenn die Gruppe „ALLE“ Zugriff auf die Datei hat, gilt sie als „für Organisation geöffnet“. | Wenn „andere“ Zugriff auf die Datei haben, gilt sie als „für Organisation geöffnet“. 
+.2+| *Berechtigungen* | _Berechtigungen öffnen_ | Wenn die Gruppe „ALLE“ Zugriff auf die Datei hat, gilt sie als „für Organisation geöffnet“. | Wenn „andere“ Zugriff auf die Datei haben, gilt sie als „für Organisation geöffnet“. 
 
 
-| *Benutzer/Gruppenzugriff* | Benutzer- und Gruppeninformationen werden aus LDAP übernommen | Nicht verfügbar (NFS-Benutzer werden in der Regel lokal auf dem Server verwaltet, daher kann dieselbe Person eine andere UID auf jedem Server haben) 
+| _Benutzer/Gruppenzugriff_ | Benutzer- und Gruppeninformationen werden aus LDAP übernommen | Nicht verfügbar (NFS-Benutzer werden in der Regel lokal auf dem Server verwaltet, daher kann dieselbe Person eine andere UID auf jedem Server haben) 
 |===
-Beachten Sie, dass die Klassifizierung durch BlueXP nicht zur Zeit des letzten Zugriffs aus den folgenden Datenquellen herangezogen wird: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.
+[NOTE]
+====
+* Die BlueXP Klassifizierung extrahiert nicht den „Zeitpunkt des letzten Zugriffs“ aus den folgenden Datenquellen: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.
+* Ältere Versionen des Windows-Betriebssystems (z. B. Windows 7 und Windows 8) deaktivieren standardmäßig die Sammlung des Attributs „Zeit des letzten Zugriffs“, da dies die Systemleistung beeinträchtigen kann. Wenn dieses Attribut nicht erfasst wird, ist die BlueXP Klassifizierungsanalyse, die auf dem Zeitpunkt des letzten Zugriffs basiert, betroffen. Bei Bedarf können Sie die Erfassung der letzten Zugriffszeit auf diesen älteren Windows-Systemen aktivieren.
 
+
+====
 
 
 == Zeitstempel der letzten Zugriffszeit

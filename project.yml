@@ -14,7 +14,11 @@ sidebar:
   - title: BlueXP Klassifizierungs-Dokumente
     url: "/index.html"
   - title: Versionshinweise
-    url: "/whats-new.html"
+    entries:
+    - title: Was ist neu
+      url: "/whats-new.html"
+    - title: Bekannte Einschränkungen
+      url: "/reference-limitations.html"
   - title: Los geht's
     entries:
     - title: Mehr zur BlueXP Klassifizierung
@@ -74,6 +78,8 @@ sidebar:
       url: "/task-using-policies.html"
     - title: Management privater Daten
       url: "/task-managing-highlights.html"
+    - title: Überwachen und managen Sie Dateizugriffsereignisse
+      url: "/task-manage-file-access-events.html"
     - title: Scaneinstellungen ändern
       url: task-managing-repo-scanning.html
     - title: Erstellen von Compliance-Berichten

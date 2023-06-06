@@ -50,9 +50,9 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
 +
-** Red hat Enterprise Linux Versionen 8.0 bis 8.7
-** CentOS-Versionen 8.0 bis 8.7
-** CentOS Stream 8
+** Ubuntu 22.04
+** Red hat Enterprise Linux Versionen 8.0 bis 8.5
+** CentOS-Versionen 8.0 bis 8.5
 ** RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 
 

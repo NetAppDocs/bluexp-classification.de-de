@@ -43,7 +43,7 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | E-Mail-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
-| IBAN-Nummer (International Bank Account Number) | Nein | ✓ | ✓ | ✓ |  | ✓ 
+| IBAN-Nummer (internationale Bankkontonummer) | Nein | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | IP-Adresse | Nein | ✓ | ✓ | ✓ |  | ✓ 

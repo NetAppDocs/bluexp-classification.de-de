@@ -142,9 +142,9 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
 +
-** Red hat Enterprise Linux Versionen 8.0 bis 8.7
-** CentOS-Versionen 8.0 bis 8.7
-** CentOS Stream 8
+** Ubuntu 22.04
+** Red hat Enterprise Linux Versionen 8.0 bis 8.5
+** CentOS-Versionen 8.0 bis 8.5
 ** RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 
 
@@ -210,6 +210,10 @@ Für die BlueXP Klassifizierung ist Outbound-Internetzugang erforderlich. Wenn I
 
 
 | \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Enthält die erforderlichen Pakete für die CentOS-Installation. 
+
+
+| \http://packages.ubuntu.com/
+\http://archive.ubuntu.com | Enthält die erforderlichen Pakete für die Ubuntu-Installation. 
 |===
 
 
@@ -299,6 +303,8 @@ Folgen Sie diesen Schritten, wenn Sie die BlueXP Klassifizierungssoftware auf ei
 +
 ** Sie benötigen die Proxy-Server-Informationen (IP-Adresse oder Hostname, Verbindungsport, Verbindungsschema: https oder http, Benutzername und Passwort).
 ** Wenn der Proxy TLS abfängt, müssen Sie den Pfad auf dem BlueXP Klassifizierungs-Linux-System kennen, auf dem die TLS-CA-Zertifikate gespeichert sind.
+** Der Proxy muss nicht transparent sein - wir unterstützen derzeit keine transparenten Proxys.
+** Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.
 
 
 * Vergewissern Sie sich, dass die erforderliche Offline-Umgebung erfüllt ist <<Ermöglichen Sie Outbound-Internetzugriff aus der BlueXP Klassifizierung,Berechtigungen und Konnektivität>>.
@@ -359,7 +365,7 @@ Variablenwerte:
 ** _Proxy_Host_ = IP oder Hostname des Proxy-Servers, wenn sich der Host hinter einem Proxy-Server befindet.
 ** _Proxy_Port_ = Port zur Verbindung mit dem Proxy-Server (Standard 80).
 ** _Proxy_Schema_ = Verbindungsschema: https oder http (Standard http).
-** _Proxy_User_ = authentifizierter Benutzer zur Verbindung mit dem Proxy-Server, falls eine grundlegende Authentifizierung erforderlich ist.
+** _Proxy_User_ = authentifizierter Benutzer zur Verbindung mit dem Proxy-Server, falls eine grundlegende Authentifizierung erforderlich ist. Der Benutzer muss ein lokaler Benutzer sein – Domänenbenutzer werden nicht unterstützt.
 ** _Proxy_Password_ = Passwort für den von Ihnen angegebenen Benutzernamen.
 ** _Ca_cert_dir_ = Pfad auf dem BlueXP-Klassifizierungs-Linux-System mit zusätzlichen TLS-CA-Zertifikatbundles. Nur erforderlich, wenn der Proxy TLS Abfangen durchführt.
 

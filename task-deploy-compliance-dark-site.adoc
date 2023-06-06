@@ -134,9 +134,9 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
 +
-** Red hat Enterprise Linux Versionen 8.0 bis 8.7
-** CentOS-Versionen 8.0 bis 8.7
-** CentOS Stream 8
+** Ubuntu 22.04
+** Red hat Enterprise Linux Versionen 8.0 bis 8.5
+** CentOS-Versionen 8.0 bis 8.5
 ** RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
 
 
@@ -407,8 +407,8 @@ Das können Sie auch link:task-licensing-datasense.html#use-a-bluexp-classificat
 Da die BlueXP Klassifizierungssoftware regelmäßig mit neuen Funktionen aktualisiert wird, sollten Sie regelmäßig auf neue Versionen überprüfen, um sicherzustellen, dass Sie die neueste Software und Funktionen verwenden. Sie müssen die BlueXP Klassifizierungssoftware manuell aktualisieren, da für ein automatisches Upgrade keine Internetverbindung besteht.
 
 .Bevor Sie beginnen
+* Wir empfehlen ein Upgrade Ihrer BlueXP Connector Software auf die neueste verfügbare Version. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Siehe die Schritte zur Aktualisierung des Connectors"^].
 * Für die BlueXP Klassifizierungssoftware ist ein Upgrade für eine Hauptversion gleichzeitig möglich. Wenn Sie beispielsweise Version 1.20.x installiert haben, können Sie nur auf 1.21.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.
-* Vergewissern Sie sich, dass Ihre BlueXP Connector-Software auf die neueste verfügbare Version aktualisiert wurde. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Siehe die Schritte zur Aktualisierung des Connectors"^].
 
 
 .Schritte
@@ -418,7 +418,7 @@ Da die BlueXP Klassifizierungssoftware regelmäßig mit neuen Funktionen aktuali
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.
