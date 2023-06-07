@@ -16,6 +16,8 @@ summary: Falls erforderlich können Sie die BlueXP Klassifizierung dadurch beend
 [role="lead"]
 Falls erforderlich können Sie die BlueXP Klassifizierung dadurch beenden, dass sie eine oder mehrere Arbeitsumgebungen, Datenbanken, Dateifreigabegruppen, OneDrive-Konten, Google Drive-Konten scannt. Oder SharePoint-Konten.
 
+Der Ladevorgang zum Scannen der Daten wird angehalten, wenn die Datenquelle entfernt wird.
+
 
 
 == Deaktivieren von Compliance-Scans für eine Arbeitsumgebung
