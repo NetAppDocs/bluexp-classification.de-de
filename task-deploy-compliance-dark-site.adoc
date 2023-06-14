@@ -87,8 +87,6 @@ Wenn Sie noch keinen BlueXP Connector an Ihrem lokalen Offline-Standort installi
 Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Software-Anforderungen usw. erfüllt.
 
 * Die BlueXP Klassifizierung wird auf einem Host, der mit anderen Applikationen gemeinsam genutzt wird, nicht unterstützt – der Host muss ein dedizierter Host sein.
-
-
 * Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.
 +
 [cols="18,18,26,30"]
@@ -96,13 +94,22 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 | Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
 
 
-| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder - 100 gib verfügbar auf /opt - 395 gib verfügbar auf /var - 5 gib auf /tmp 
+| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder
+- 100 gib verfügbar auf /opt
+- 395 gib verfügbar auf /var/lib/docker
+- 5 gib auf /tmp 
 
 
-| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 145 gib verfügbar auf /var - 5 gib auf /tmp 
+| *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder
+- 50 gib verfügbar auf /opt
+- 145 gib verfügbar auf /var/lib/docker
+- 5 gib auf /tmp 
 
 
-| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder - 50 gib verfügbar auf /opt - 45 gib verfügbar auf /var - 5 gib auf /tmp 
+| *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder
+- 50 gib verfügbar auf /opt
+- 45 gib verfügbar auf /var/lib/docker
+- 5 gib auf /tmp 
 |===
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
@@ -144,6 +151,9 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 * *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 +
 ** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
++
+https://youtu.be/H1WS_-85pWA["Hier geht's zum Video"] Eine kurze Demo zur Installation von Docker auf CentOS.
+
 ** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
