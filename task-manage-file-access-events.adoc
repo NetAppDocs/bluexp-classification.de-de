@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 'Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.' 
+summary: 'Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Protokolldatei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.' 
 ---
 = Überwachen und managen Sie Dateizugriffsereignisse
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 'Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignis
 
 
 [role="lead"]
-Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Datei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
+Sie können die BlueXP Klassifizierung so konfigurieren, dass Ereignisse in einer Datei protokolliert werden, wenn auf eine der gescannten Dateien zugegriffen oder geändert wurde. Anschließend können Sie den Inhalt dieser Protokolldatei (das Dateizugriffsprotokoll) anzeigen oder herunterladen, um zu sehen, welche Dateiänderungen stattgefunden haben und von wem.
 
 Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensiblen Personalakten oder Gehaltsabrechnungsdateien vorgenommen werden, können Sie diese Funktion auf den Volumes aktivieren, auf denen sich diese Dateien befinden. Anschließend können Sie das Audit-Protokoll für den Dateizugriff anzeigen, um zu sehen, ob diese Dateien geändert wurden. Wenn sie geändert wurden, können Sie die Sicherheits-ID (SID) der Person sehen, die die Änderung vorgenommen hat und wann die Änderung vorgenommen wurde.
 
-Sie können diese Funktion auf allen kritischen Volumes in Ihren Arbeitsumgebungen aktivieren, in denen die ONTAP Software ausgeführt wird. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen.
+Sie können diese Funktion auf allen kritischen Volumes in Ihren Arbeitsumgebungen aktivieren, in denen die ONTAP Software ausgeführt wird. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen. Die BlueXP Klassifizierung kann etwa 990 Ereignisse pro Sekunde aus ONTAP verarbeiten.
 
 Die BlueXP Klassifizierung erfasst derzeit Ereignisse für folgende Aktionen Ihrer Dateien und Verzeichnisse:
 
@@ -52,9 +52,6 @@ Auf den Datenquellen muss die Software ONTAP Version 9.11 oder höher ausgeführ
 == Konfigurieren Sie Volumes für die Audit-Protokollierung des Dateizugriffs
 
 Sie können die Audit-Protokollierung für den Dateizugriff bei einzelnen Volumes aktivieren, um Änderungen an Dateien und Verzeichnissen nachzuverfolgen.
-
-
-TIP: Sie können die Überwachung des Dateizugriffs für maximal 5 Volumes auf jeder Datenquelle konfigurieren.
 
 .Bevor Sie beginnen
 * Sie sollten Active Directory für die Datenquellen konfiguriert haben, damit durch die BlueXP Klassifizierung die ID der Person, die auf die Dateien zugegriffen hat, aufgelistet werden kann.
