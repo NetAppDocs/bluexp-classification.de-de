@@ -52,7 +52,7 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 | Passwort | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.54+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
+.57+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | Australische Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
@@ -119,6 +119,15 @@ Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien g
 
 
 | Französische Steuernummer (SPI) | Ja. | ✓ | ✓ | ✓ | ✓ |  
+
+
+| Personalausweisnummer | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| Deutsche interne ID für Banküberweisungen | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| Sozialversicherungsnummer | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | Steuernummer (Steuerliche Identifikationsnummer) | Ja. | ✓ | ✓ | ✓ |  |  

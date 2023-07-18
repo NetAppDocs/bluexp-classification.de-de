@@ -226,6 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["Ein Screenshot zeigt, wie Sie d
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
++
+Derzeit können Sie Tags auf maximal 20 Dateien gleichzeitig anwenden - eine Seite auf der Seite Ergebnisse der Datenuntersuchung.
+
 
 
 . Klicken Sie in der Buttonleiste auf *Tags* und die aktuell zugewiesenen Tags werden angezeigt.

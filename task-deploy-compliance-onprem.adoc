@@ -149,10 +149,10 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 * *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
 +
-** Ubuntu 22.04
-** Red hat Enterprise Linux Versionen 8.0 bis 8.5
-** CentOS-Versionen 8.0 bis 8.5
-** RHEL oder CentOS Version 7.8 oder 7.9 kann verwendet werden, aber die Linux Kernel Version muss 4.0 oder höher sein
+** Red hat Enterprise Linux Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
+** CentOS Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
+** Rocky Linux 9 (erfordert BlueXP Klassifizierung von Version 1.24 und höher)
+** Ubuntu 22.04 (BlueXP Klassifikation ab Version 1.23 erforderlich)
 
 
 * *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
@@ -307,6 +307,8 @@ Anforderungen prüfen und bei der Installation der BlueXP Klassifizierungssoftwa
 
 https://youtu.be/gE-vrBLSJqw["Hier geht's zum Video"] Informationen zur Installation der BlueXP Klassifizierung.
 
+Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Weitere Details finden Sie hier"].
+
 .Was Sie benötigen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
 * Vergewissern Sie sich, dass auf dem System die beiden erforderlichen Softwarepakete installiert sind (Docker Engine und Python 3).
@@ -329,7 +331,7 @@ https://youtu.be/gE-vrBLSJqw["Hier geht's zum Video"] Informationen zur Installa
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.21.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.22.0.tar.gz
 ----
 . Wählen Sie in BlueXP die Option *Governance > Klassifizierung* aus.
 . Klicken Sie Auf *Datensense Aktivieren*.

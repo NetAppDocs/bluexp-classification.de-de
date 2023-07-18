@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reference-db-capabilities.html 
+keywords: database actions, database filters, supported, unsupported 
+summary: Einige Funktionen sind bei der BlueXP Klassifizierung beim Scannen von Datenbankschemas nicht verfügbar. 
+---
+= Unterstützte und nicht unterstützte Datenbankfunktionen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Einige Funktionen sind bei der BlueXP Klassifizierung beim Scannen von Datenbankschemas nicht verfügbar. Siehe Liste unten.
+
+Sie können Ihre Datenbankschemas zur BlueXP Klassifizierung hinzufügen, um sie zu scannen link:task-scanning-databases.html["Wie hier beschrieben"^].
+
+[cols="12,25,9,9,9,9,9,9,9"]
+|===
+| Typ | Beschreibung | MongoDB | SQL Server geschult sind | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
+
+
+.9+| Aktionen | Erstellen einer Richtlinie | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Tag | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Zuweisen zu | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Daten exportieren | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Erneut Scannen | X | X | X | X | X | X | X 
+
+
+| Löschen | X | X | X | X | X | X | X 
+
+
+| Bewegen | X | X | X | X | X | X | X 
+
+
+| Kopieren | X | X | X | X | X | X | X 
+
+
+| Etikett | X | X | X | X | X | X | X 
+
+
+.25+| Filter | Richtlinien | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Status der Scananalyse | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Art der Arbeitsumgebung | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Arbeitsumgebung | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Storage Repository | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Empfindlichkeitsstufe | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Sensible persönliche Daten | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Kategorien | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Persönliche Daten | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Betroffene Person | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Dateityp | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Dateigröße | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Entdeckte Zeit | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Tags | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Zuweisen zu | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| Analyseereignis scannen | X | X | X | X | X | X | X 
+
+
+| Datei-/Verzeichnispfad | X | X | X | X | X | X | X 
+
+
+| Berechtigungsfilter | X | X | X | X | X | X | X 
+
+
+| Etikett | X | X | X | X | X | X | X 
+
+
+| Anzahl der Kennungen | X | X | X | X | X | X | X 
+
+
+| Verzeichnistyp | X | X | X | X | X | X | X 
+
+
+| Erstellungszeit | X | X | X | X | X | X | X 
+
+
+| Zuletzt geändert | X | X | X | X | X | X | X 
+
+
+| Zuletzt aufgerufen | X | X | X | X | X | X | X 
+
+
+| Duplikate | X | X | X | X | X | X | X 
+|===

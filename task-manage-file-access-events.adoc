@@ -41,7 +41,6 @@ Die BlueXP Klassifizierung kann Dateizugriffsereignisse für Dateien protokollie
 
 * On-Premises-ONTAP
 * Cloud Volumes ONTAP
-* Azure NetApp Dateien
 * Amazon FSX für NetApp ONTAP
 
 
@@ -52,6 +51,9 @@ Auf den Datenquellen muss die Software ONTAP Version 9.11 oder höher ausgeführ
 == Konfigurieren Sie Volumes für die Audit-Protokollierung des Dateizugriffs
 
 Sie können die Audit-Protokollierung für den Dateizugriff bei einzelnen Volumes aktivieren, um Änderungen an Dateien und Verzeichnissen nachzuverfolgen.
+
+
+TIP: Sie können die Überwachung des Dateizugriffs für maximal 8 Volumes auf jeder Datenquelle konfigurieren.
 
 .Bevor Sie beginnen
 * Sie sollten Active Directory für die Datenquellen konfiguriert haben, damit durch die BlueXP Klassifizierung die ID der Person, die auf die Dateien zugegriffen hat, aufgelistet werden kann.

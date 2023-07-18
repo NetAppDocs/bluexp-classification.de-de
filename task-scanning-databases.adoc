@@ -16,6 +16,8 @@ summary: Führen Sie ein paar Schritte durch, um mit dem Scannen Ihrer Datenbank
 [role="lead"]
 Führen Sie ein paar Schritte durch, um mit dem Scannen Ihrer Datenbankschemas mit der BlueXP Klassifizierung zu beginnen.
 
+Beachten Sie, dass Sie nach der Datenbanküberprüfung eindeutige IDs hinzufügen können, die die BlueXP Klassifizierung in allen Datenquellen anhand bestimmter Spalten in Ihren Datenbanken identifiziert. Dies wird als _Data Fusion_ -Funktion bezeichnet. link:task-managing-data-fusion.html#add-custom-personal-data-identifiers-from-your-databases["Erfahren Sie, wie Sie benutzerdefinierte Kennungen für persönliche Daten aus Ihren Datenbanken hinzufügen"^].
+
 
 
 == Schnellstart

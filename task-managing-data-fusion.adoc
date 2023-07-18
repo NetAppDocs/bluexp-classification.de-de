@@ -62,15 +62,12 @@ image:screenshot_compliance_add_data_fusion.png["Ein Screenshot zur Identifizier
 
 . Klicken Sie Auf *Data Fusion-Quelle Hinzufügen*.
 +
-Auf der Seite Data Fusion Inventory werden die Datenbankquellspalten angezeigt, die Sie für die Überprüfung der BlueXP Klassifizierung konfiguriert haben.
-
-+
 image:screenshot_compliance_data_fusion_list.png["Ein Screenshot aller Datenquellenreferenzen, die Sie mit Data Fusion konfiguriert haben"]
 
 
 
 .Ergebnisse
-Nach dem nächsten Scan werden diese neuen Informationen im Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt. Jede von Ihnen hinzugefügte Quellspalte wird beispielsweise im Format „Tabelle.Spalte“ in der Filterliste angezeigt `Customers.CustomerID`.
+Nach dem nächsten Scan werden diese neuen Informationen im Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt. Der Name, den Sie für den Klassifikator verwendet haben, wird z. B. in der Filterliste angezeigt `Customers.CustomerID`.
 
 image:screenshot_add_data_fusion_result.png["Ein Screenshot, der ein Beispiel für Data Fusion zeigt, führt in das Fenster Untersuchungsergebnisse."]
 
@@ -116,7 +113,7 @@ image:screenshot_select_classifier_tool_keywords.png["Ein Screenshot mit der Aus
 Die Abbildung unten zeigt interne Produktnamen (verschiedene Arten von Eulen). Bei der BlueXP Klassifizierungssuche für diese Elemente wird die Groß-/Kleinschreibung nicht berücksichtigt.
 
 +
-image:screenshot_select_classifier_create_logic_keyword.png["Ein Screenshot der Eingabe der Schlüsselwörter für Ihren Kunden-Klassifikator."]
+image:screenshot_select_classifier_create_logic_keyword.png["Ein Screenshot der Eingabe der Schlüsselwörter für Ihren benutzerdefinierten Klassifikator."]
 
 . Klicken Sie auf *done* und die BlueXP Klassifizierung beginnt mit der erneuten Überprüfung Ihrer Daten.
 
@@ -138,7 +135,10 @@ Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien 
 
 Nach Hinzufügen des regex wird die BlueXP Klassifizierung neu gestartet und scannt alle Datenquellen. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
 
-Siehe https://regex101.com/[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie.
+Siehe https://regex101.com/[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie. Wählen Sie *Python* für den Geschmack, um zu sehen, welche Arten von Ergebnissen die BlueXP-Klassifikation vom regulären Ausdruck entspricht.
+
+
+NOTE: Derzeit erlauben wir die Verwendung von Pattern Flags beim Erstellen eines Regex nicht - das bedeutet, dass Sie "/" nicht verwenden sollten.
 
 .Schritte
 . Klicken Sie auf der Registerkarte _Classification settings_ auf *Add New Classifier*, um den Assistenten _Add Custom Classifier_ zu starten.
@@ -161,7 +161,7 @@ image:screenshot_select_classifier_tool_regex.png["Ein Screenshot, der die Auswa
 .. Sie können jeden beliebigen regulären Ausdruck eingeben. Klicken Sie auf die Schaltfläche *Validieren*, um die BlueXP-Klassifizierung zu überprüfen, ob der reguläre Ausdruck gültig ist und nicht zu breit ist -- das bedeutet, dass zu viele Ergebnisse zurückgegeben werden.
 .. Optional können Sie einige Annäherungsworte eingeben, um die Genauigkeit der Ergebnisse zu verbessern. Das sind Wörter, die in der Regel innerhalb von 300 Zeichen des Musters gefunden werden, nach dem Sie suchen (entweder vor oder nach dem gefundenen Muster). Geben Sie jedes Wort oder jede Phrase in eine separate Zeile ein.
 +
-image:screenshot_select_classifier_create_logic_regex.png["Ein Screenshot der Eingabe der Regex- und Proximity-Wörter für Ihren Kunden Klassifikator."]
+image:screenshot_select_classifier_create_logic_regex.png["Ein Screenshot der Eingabe der regex- und Proximity-Wörter für Ihren benutzerdefinierten Klassifikator."]
 
 
 
@@ -241,6 +241,9 @@ image:screenshot_custom_classifier_top_5.png["Ein Screenshot mit den Top 3 benut
 == Benutzerdefinierte Klassifikatoren verwalten
 
 Sie können alle benutzerdefinierten Klassifikatoren ändern, die Sie mit der Schaltfläche *Klassifikator bearbeiten* erstellt haben.
+
+
+TIP: Sie können derzeit keine Data Fusion-Klassifikatoren bearbeiten.
 
 Und wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie keine BlueXP-Klassifizierung benötigen, um die von Ihnen hinzugefügten benutzerdefinierten Muster zu identifizieren, können Sie die Schaltfläche *Klassifikator löschen* verwenden, um jedes Element zu entfernen.
 

@@ -22,16 +22,18 @@ Die erforderlichen Schritte hängen davon ab, ob Sie die BlueXP Klassifizierung 
 
 == Deinstallieren der BlueXP Klassifizierung aus einer Cloud-Implementierung
 
-Wenn Sie die BlueXP Klassifizierungsinstanz nicht mehr verwenden möchten, können Sie die BlueXP Klassifizierungsinstanz deinstallieren oder vom Cloud-Provider löschen.
+Wenn Sie die BlueXP Klassifizierungsinstanz nicht mehr verwenden möchten, können Sie sie deinstallieren oder aus der Cloud-Provider-Umgebung löschen.
 
 . Klicken Sie oben auf der BlueXP Klassifizierungsseite auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und klicken Sie dann auf *Data Sense deinstallieren*.
 +
 image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche zum Deinstallieren der BlueXP Klassifizierungssoftware"]
 
-. Geben Sie im Dialogfeld _Uninstall Data Sense_ *uninstall* ein, um zu bestätigen, dass Sie die Instanz und alle zugehörigen Daten löschen möchten, und klicken Sie dann auf *Uninstall*.
+. Geben Sie im Dialogfeld _Uninstall Data Sense_ *uninstall* ein, um zu bestätigen, dass Sie die BlueXP-Klassifikationsinstanz vom BlueXP Connector trennen möchten, und klicken Sie dann auf *Uninstall*.
+. Rufen Sie die Konsole Ihres Cloud-Providers auf und löschen Sie die BlueXP Klassifizierungsinstanz. Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
++
+Damit werden die Instanz und alle zugehörigen Daten, die durch die BlueXP Klassifizierung erfasst wurden, gelöscht.
 
 
-Beachten Sie, dass Sie die BlueXP Klassifizierungsinstanz von Ihrem Cloud-Provider löschen können. Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 
 
 
@@ -43,11 +45,11 @@ Sie können die BlueXP Klassifizierung von einem Host deinstallieren, wenn Sie n
 +
 image:screenshot_compliance_uninstall.png["Ein Screenshot der Schaltfläche zum Deinstallieren der BlueXP Klassifizierungssoftware"]
 
-. Geben Sie im Dialogfeld _Uninstall Data Sense_ die Option *uninstall* ein, um zu bestätigen, dass Sie alle Konfigurationsinformationen löschen möchten, und klicken Sie dann auf *Uninstall*.
-. Um die Deinstallation vom Host abzuschließen, führen Sie das Deinstallationsskript auf dem Hostcomputer aus, zum Beispiel:
+. Geben Sie im Dialogfeld _Uninstall Data Sense_ *uninstall* ein, um zu bestätigen, dass Sie die BlueXP-Klassifikationsinstanz vom BlueXP Connector trennen möchten, und klicken Sie dann auf *Uninstall*.
+. Um die Software vom Host zu deinstallieren, führen Sie den aus `cleanup.sh` Skript auf dem Host-Rechner, z. B.:
 +
 [source, cli]
 ----
-uninstall.sh
+cleanup.sh
 ----
 
