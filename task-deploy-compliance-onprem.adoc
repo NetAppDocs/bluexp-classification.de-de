@@ -160,7 +160,7 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 +
 ** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
 +
-https://youtu.be/H1WS_-85pWA["Hier geht's zum Video"] Eine kurze Demo zur Installation von Docker auf CentOS.
+https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Installation von Docker auf CentOS.
 
 ** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
@@ -305,7 +305,7 @@ NOTE: Die BlueXP Klassifizierung kann derzeit nicht S3 Buckets, Azure NetApp Fil
 
 Anforderungen prüfen und bei der Installation der BlueXP Klassifizierungssoftware auf einem einzelnen lokalen Host befolgen.
 
-https://youtu.be/gE-vrBLSJqw["Hier geht's zum Video"] Informationen zur Installation der BlueXP Klassifizierung.
+https://youtu.be/rFpmekdbORc["Hier geht's zum Video"^] Informationen zur Installation der BlueXP Klassifizierung.
 
 Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-file["Weitere Details finden Sie hier"].
 
@@ -345,7 +345,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["Ein Screenshot, wie Sie die
 . Das Dialogfeld _Deploy Data Sense on premise_ wird angezeigt. Kopieren Sie den angegebenen Befehl (z. B.: `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`) Und fügen Sie sie in eine Textdatei ein, damit Sie sie später verwenden können. Klicken Sie dann auf *Schließen*, um das Dialogfeld zu schließen.
 . Geben Sie auf dem Hostcomputer den kopierten Befehl ein, und folgen Sie dann einer Reihe von Eingabeaufforderungen. Alternativ können Sie den vollständigen Befehl einschließlich aller erforderlichen Parameter als Befehlszeilenargumente bereitstellen.
 +
-Beachten Sie, dass das Installationsprogramm eine Vorprüfung durchführt, um sicherzustellen, dass Ihre System- und Netzwerkanforderungen für eine erfolgreiche Installation erfüllt werden. https://youtu.be/UZtn_I0e1Ls["Hier geht's zum Video"] Um die Pre-Check-Meldungen und -Auswirkungen zu verstehen.
+Beachten Sie, dass das Installationsprogramm eine Vorprüfung durchführt, um sicherzustellen, dass Ihre System- und Netzwerkanforderungen für eine erfolgreiche Installation erfüllt werden. https://youtu.be/_RCYpuLXiV0["Hier geht's zum Video"^] Um die Pre-Check-Meldungen und -Auswirkungen zu verstehen.
 
 +
 [cols="50a,50"]
