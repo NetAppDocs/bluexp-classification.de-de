@@ -105,6 +105,8 @@ sidebar:
       url: "/reference-instance-types.html"
     - title: Metadaten, die aus Datenquellen erhoben werden
       url: "/reference-collected-metadata.html"
+    - title: BlueXP Klassifizierungs-APIs
+      url: "/api-classification.html"
   - title: Wissen und Support
     entries:
     - title: Für den Support anmelden
