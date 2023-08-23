@@ -55,11 +55,12 @@ Beachten Sie, dass die BlueXP Klassifizierung keine Berechtigungen oder die „Z
 ** Für CIFS – die Ports 139 und 445.
 
 
-* Sie benötigen die Liste der Freigaben, die Sie im Format hinzufügen möchten `<host_name>:/<share_path>`. Sie können die Freigaben einzeln eingeben oder eine Liste der Dateien, die Sie scannen möchten, mit einer Zeile angeben.
+* Sie können eine DFS-Freigabe (Distributed File System) als reguläre CIFS-Freigabe hinzufügen. Da die BlueXP Klassifizierung jedoch nicht bewusst ist, dass die Freigabe auf mehreren Servern/Volumes basiert, die als einzelne CIFS-Freigabe kombiniert werden, erhalten Sie möglicherweise Berechtigungen oder Verbindungsfehler bezüglich der Freigabe, wenn die Nachricht sich wirklich nur auf einen der Ordner/Freigaben bezieht, die sich auf einem anderen Server/Volume befinden.
 * Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Active Directory-Anmeldeinformationen verfügen, die Lesezugriff auf die Freigaben bieten. Anmeldedaten als Administrator sind bevorzugt, wenn die BlueXP Klassifizierung alle Daten scannt, die erhöhte Berechtigungen erfordern.
 +
 Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs-Scans „Zeiten des letzten Zugriffs“ unverändert bleiben, empfehlen wir dem Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
 
+* Sie benötigen die Liste der Freigaben, die Sie im Format hinzufügen möchten `<host_name>:/<share_path>`. Sie können die Freigaben einzeln eingeben oder eine Liste der Dateien, die Sie scannen möchten, mit einer Zeile angeben.
 
 
 

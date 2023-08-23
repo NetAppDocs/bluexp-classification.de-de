@@ -279,9 +279,16 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Sie können den Bericht als CSV-Datei (die bis zu 5,000 Datenzeilen enthalten kann) auf dem lokalen Rechner speichern oder als JSON-Datei, die Sie in eine NFS-Freigabe exportieren (die eine unbegrenzte Anzahl von Zeilen enthalten kann). Wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) scannt, können bis zu drei Berichtsdateien heruntergeladen werden.
+Sie können den Bericht in zwei verschiedenen Formaten speichern:
 
+* Als .CSV-Datei auf dem lokalen Rechner, der bis zu 5,000 Datenzeilen enthalten kann.
+* Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren. Diese kann bis zu 100,000 Datenzeilen enthalten. Wenn mehr als 100,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
++
 Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
+
+
+
+Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
 
 
 
@@ -291,10 +298,10 @@ Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klass
 . Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
 . Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.
 +
-image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
+Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll `<host_name>:/<share_path>`.
 
 +
-Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll `<host_name>:/<share_path>`.
+image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
 
 
 
