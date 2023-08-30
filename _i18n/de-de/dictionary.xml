@@ -2823,7 +2823,6 @@
   <block id="976ad3f2a7f2faaf2e337cc8f2c2ff8d" category="list-text">Sorgen Sie dafür, dass die BlueXP Klassifizierung weiter ausgeführt werden kann. Die BlueXP Klassifizierungs-Instanz muss aktiviert bleiben, um Ihre Daten kontinuierlich zu scannen.</block>
   <block id="1b3e958cf9a7fe344e74aa95f30a09f3" category="list-text">Webbrowser-Konnektivität zur BlueXP Klassifizierung sicherstellen Nachdem die Klassifizierung von BlueXP aktiviert ist, stellen Sie sicher, dass Benutzer von einem Host, der über eine Verbindung zur BlueXP Klassifizierungsinstanz verfügt, auf die BlueXP Schnittstelle zugreifen.</block>
   <block id="0886f35745ad179bc8c862cc1f35560d" category="paragraph">Die BlueXP Klassifizierungsinstanz verwendet eine private IP-Adresse, um sicherzustellen, dass andere nicht auf die indizierten Daten zugreifen können. Daher muss der Webbrowser, den Sie für den Zugriff auf BlueXP verwenden, über eine Verbindung mit dieser privaten IP-Adresse verfügen. Diese Verbindung kann von einem Host stammen, der sich im selben Netzwerk wie die BlueXP Klassifizierungsinstanz befindet.</block>
-  <block id="357e290720f6835d0225e4c266e5fca5" category="cell">Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über Port 443 zur und von der BlueXP Klassifizierungsinstanz zulassen. Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können.</block>
   <block id="e47c11f521d98557641f18f4c041fad3" category="cell">BlueXP Klassifizierung &lt;&gt; ONTAP Cluster</block>
   <block id="40e4506c6bd794b594435aa3037f3a4e" category="paragraph">Für die BlueXP Klassifizierung benötigen Sie eine Netzwerkverbindung zu jedem Cloud Volumes ONTAP Subnetz oder Ihrem lokalen ONTAP System. Sicherheitsgruppen für Cloud Volumes ONTAP müssen eingehende Verbindungen von der BlueXP Klassifizierungsinstanz ermöglichen.</block>
   <block id="6000c544d001c3491f4169e31bbf0604" category="cell">BlueXP Klassifizierung &lt;&gt; Active Directory</block>
@@ -3456,4 +3455,8 @@
   <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">Als .CSV-Datei auf dem lokalen Rechner, der bis zu 5,000 Datenzeilen enthalten kann.</block>
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren. Diese kann bis zu 100,000 Datenzeilen enthalten. Wenn mehr als 100,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.</block>
+  <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 (TCP), 6000 (TCP), 443 (TCP) UND 80</block>
+  <block id="31bf187a1f6ba9a21c24893034392c45" category="cell">Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über die Ports 6000 und 443 zur und von der BlueXP Klassifizierungsinstanz zulassen.
+
+Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können.</block>
 </blocks>
