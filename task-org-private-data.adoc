@@ -226,8 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["Ein Screenshot zeigt, wie Sie d
 +
 ** Um einzelne Dateien auszuwählen, aktivieren Sie das Kontrollkästchen für jede Datei (image:button_backup_1_volume.png[""]).
 ** Um alle Dateien auf der aktuellen Seite auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]).
+** Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (image:button_select_all_files.png[""]), und dann in der Pop-up-Nachricht image:screenshot_select_all_items.png[""]Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.
 +
-Derzeit können Sie Tags auf maximal 20 Dateien gleichzeitig anwenden - eine Seite auf der Seite Ergebnisse der Datenuntersuchung.
+Sie können Tags auf maximal 100,000 Dateien gleichzeitig anwenden.
 
 
 

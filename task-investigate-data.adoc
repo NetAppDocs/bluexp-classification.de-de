@@ -248,6 +248,8 @@ Darüber Hinaus Sie können auf den Namen eines Benutzers oder einer Gruppe klic
 
 Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.
 
+Alle Ihre Dateien (ohne Datenbanken), die 1 MB oder größer sind und persönliche oder sensible personenbezogene Daten enthalten, werden verglichen, um zu sehen, ob es Duplikate gibt. Sie können die Filter auf der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien eines bestimmten Größenbereichs in Ihrer Umgebung dupliziert werden.
+
 Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
 
 Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können link:task-managing-highlights.html#deleting-source-files["Löschen Sie die Datei"] Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.
@@ -258,7 +260,7 @@ Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-A
 
 Wenn Sie eine Liste aller Dateien wünschen, die in den Arbeitsumgebungen und Datenquellen, die Sie scannen, dupliziert werden, können Sie den Filter *Duplicates > has Dubletten* auf der Seite Data Investigation verwenden.
 
-Alle Dateien mit Duplikaten aus allen Dateitypen (ohne Datenbanken), mit einer Mindestgröße von 50 MB und/oder mit persönlichen oder sensiblen persönlichen Informationen, werden auf der Ergebnisseite angezeigt.
+Alle duplizierten Dateien werden auf der Ergebnisseite angezeigt.
 
 
 

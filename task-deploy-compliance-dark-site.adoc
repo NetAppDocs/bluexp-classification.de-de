@@ -116,6 +116,13 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 +
 Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
+* Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
++
+** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
+** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
+** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
+
+
 * *UNIX-Ordnerberechtigungen*: Folgende UNIX-Mindestberechtigungen sind erforderlich:
 +
 [cols="25,25"]
@@ -134,29 +141,32 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 
 | /User/lib/systemd/System | `rwxr-xr-x` 
 |===
-* Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
+* *Betriebssystem*:
 +
-** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
-** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
-** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
+** Für die folgenden Betriebssysteme ist die Verwendung der Docker Container-Engine erforderlich:
++
+*** Red hat Enterprise Linux Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
+*** CentOS Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
+*** Rocky Linux 9 (BlueXP Klassifikation ab Version 1.24 erforderlich)
+*** Ubuntu 22.04 (BlueXP Klassifikation ab Version 1.23 erforderlich)
 
 
-* *Betriebssystem*: Das Betriebssystem muss in der Lage sein, die Docking-Engine zu installieren.
-+
-** Red hat Enterprise Linux Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
-** CentOS Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
-** Rocky Linux 9 (erfordert BlueXP Klassifizierung von Version 1.24 und höher)
-** Ubuntu 22.04 (BlueXP Klassifikation ab Version 1.23 erforderlich)
+
+
 
 
 * *Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.
 * *Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:
 +
-** Docker Engine Version 19.3.1 oder höher. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
+** Je nach verwendetem Betriebssystem müssen Sie eine der Container-Engines installieren:
++
+*** Docker Engine ab Version 19.3.1. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
 +
 https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Installation von Docker auf CentOS.
 
-** Python 3 Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
+
+
+** Python Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
 * *Firewalld Überlegungen*: Wenn Sie planen zu verwenden `firewalld`, Wir empfehlen, dass Sie es aktivieren, bevor Sie BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
@@ -270,7 +280,7 @@ Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueX
 
 .Was Sie benötigen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
-* Vergewissern Sie sich, dass Sie die beiden erforderlichen Softwarepakete (Docker Engine und Python 3) installiert haben.
+* Überprüfen Sie, ob Sie die beiden erforderlichen Softwarepakete (Docker Engine und Python 3) installiert haben.
 * Stellen Sie sicher, dass Sie über Root-Rechte auf dem Linux-System verfügen.
 * Vergewissern Sie sich, dass die erforderliche Offline-Umgebung erfüllt ist <<Voraussetzungen für die Klassifizierung von BlueXP und BlueXP prüfen,Berechtigungen und Konnektivität>>.
 
@@ -282,7 +292,7 @@ Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueX
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.22.0.tar.gz
+tar -xzf DataSense-offline-bundle-v1.25.0.tar.gz
 ----
 +
 Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *cc_onprem_Installer.tar.gz*.
@@ -355,7 +365,7 @@ Befolgen Sie diese Schritte, wenn Sie die BlueXP Klassifizierungssoftware auf me
 
 .Was Sie benötigen
 * Stellen Sie sicher, dass alle Linux-Systeme für den Manager- und Scanner-Knoten den entsprechen <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
-* Vergewissern Sie sich, dass Sie die beiden erforderlichen Softwarepakete (Docker Engine und Python 3) installiert haben.
+* Überprüfen Sie, ob Sie die beiden erforderlichen Softwarepakete (Docker Engine und Python 3) installiert haben.
 * Stellen Sie sicher, dass Sie auf den Linux-Systemen über Root-Rechte verfügen.
 * Vergewissern Sie sich, dass die erforderliche Offline-Umgebung erfüllt ist <<Voraussetzungen für die Klassifizierung von BlueXP und BlueXP prüfen,Berechtigungen und Konnektivität>>.
 * Sie müssen über die IP-Adressen der zu verwendenden Scanner-Knoten-Hosts verfügen.
@@ -437,7 +447,7 @@ Wenn Ihre BlueXP Klassifizierungssoftware eine Version vor 1.24 verwendet, könn
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.23.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.25.0.tar.gz
 ----
 +
 Dadurch wird die Installationsdatei *cc_onprem_Installer.tar.gz* extrahiert.

@@ -205,7 +205,7 @@ Die allgemeine BlueXP Klassifizierung funktioniert wie folgt:
 
 == Funktionsweise von Scans
 
-Nachdem Sie die BlueXP Klassifizierung aktiviert und die Volumes, Buckets, Datenbankschemas oder OneDrive- oder SharePoint Anwenderdaten ausgewählt haben, die Sie scannen möchten, beginnt der Service sofort mit der Suche nach persönlichen und sensiblen Daten. Es ordnet Ihre Organisationsdaten zu, kategorisiert jede Datei und identifiziert und extrahiert Entitäten und vordefinierte Muster in den Daten. Das Ergebnis des Scans ist ein Index von persönlichen Daten, sensiblen persönlichen Daten, Datenkategorien und Dateitypen.
+Nachdem die BlueXP Klassifizierung aktiviert und die Repositorys ausgewählt wurden, die gescannt werden sollen (dies sind die Volumes, Buckets, Datenbankschemata oder OneDrive- oder SharePoint Benutzerdaten), beginnt der Scan sofort mit dem Scannen der Daten zur Identifizierung persönlicher und sensibler Daten. Sie sollten sich in den meisten Fällen auf die Scans von Live-Produktionsdaten konzentrieren und nicht auf Backups, Spiegelungen oder DR-Standorte. Die BlueXP Klassifizierung ordnet anschließend Ihre Unternehmensdaten zu, kategorisiert jede Datei und identifiziert und extrahiert Entitäten und vordefinierte Muster in den Daten. Das Ergebnis des Scans ist ein Index von persönlichen Daten, sensiblen persönlichen Daten, Datenkategorien und Dateitypen.
 
 Wie bei jedem anderen Client lässt sich die BlueXP Klassifizierung mit den Daten verbinden, indem NFS- und CIFS-Volumes gemountet werden. NFS Volumes werden automatisch als schreibgeschützt abgerufen und müssen zur Überprüfung von CIFS Volumes Active Directory Anmeldeinformationen bereitstellen.
 
