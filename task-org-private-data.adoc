@@ -125,7 +125,7 @@ Die Beschriftung wird in den Dateimetadaten angezeigt.
 
 
 
-So weisen Sie mehreren Dateien eine AIP-Bezeichnung zu:
+Führen Sie die folgenden Schritte aus, um mehreren Dateien eine AIP-Bezeichnung zuzuweisen. Beachten Sie, dass Sie maximal 20 Dateien gleichzeitig (eine Seite in der Benutzeroberfläche) eine AIP-Bezeichnung zuweisen können.
 
 .Schritte
 . Wählen Sie im Bereich Ergebnisse der Datenuntersuchung die Datei oder die Dateien aus, die Sie beschriften möchten.
@@ -269,7 +269,7 @@ Beachten Sie, dass der Benutzername nicht als Teil der Datei-Metadaten zur Datei
 
 Mit einem neuen Filter auf der Untersuchungsseite können Sie problemlos alle Dateien anzeigen, die dieselbe Person im Feld „Assigned to“ haben.
 
-So weisen Sie einen Benutzer einer einzelnen Datei zu:
+Führen Sie die folgenden Schritte aus, um einen Benutzer einer einzelnen Datei zuzuweisen.
 
 .Schritte
 . Klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für die Datei zum erweitern der Dateimetadaten.
@@ -282,7 +282,7 @@ Der Benutzername wird in den Dateimetadaten angezeigt.
 
 
 
-So weisen Sie einen Benutzer mehreren Dateien zu:
+Führen Sie diese Schritte aus, um einen Benutzer mehreren Dateien zuzuweisen. Beachten Sie, dass Sie einen Benutzer maximal 20 Dateien gleichzeitig zuweisen können (eine Seite in der Benutzeroberfläche).
 
 .Schritte
 . Wählen Sie im Bereich Ergebnisse der Datenuntersuchung die Datei oder die Dateien aus, die Sie einem Benutzer zuweisen möchten.

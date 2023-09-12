@@ -214,6 +214,8 @@ BlueXP erkennt ONTAP-Cluster mithilfe von HTTPS. Wenn Sie benutzerdefinierte Fir
 
 Führen Sie diese Schritte aus, um das Skript für die Voraussetzungen der BlueXP Klassifizierung auszuführen.
 
+https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["Hier geht's zum Video"^] Anleitung zum Ausführen des Skripts „Voraussetzungen“ und zum Interpretieren der Ergebnisse.
+
 .Was Sie benötigen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Host-Anforderungen prüfen,Host-Anforderungen erfüllt>>.
 * Überprüfen Sie, ob auf dem System die beiden erforderlichen Softwarepakete installiert sind (Docker Engine und Python 3).
