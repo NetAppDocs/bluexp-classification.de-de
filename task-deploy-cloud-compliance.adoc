@@ -204,19 +204,7 @@ Hinweis: Wenn Sie die BlueXP Klassifizierung aus einem BlueXP Connector in einer
 image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
 . Klicken Sie Auf *Datensense Aktivieren*.
-+
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
-
 . Klicken Sie auf der Seite _Installation_ auf *Deploy > Deploy*, um die „große“ Instanzgröße zu verwenden und den Cloud-Bereitstellungsassistenten zu starten.
-+
-Sie können auch auf *Deploy > Configuration* klicken, um aus zwei kleineren Instanztypen auszuwählen, wenn Sie nicht über viele Daten zum Scannen verfügen. Wenn eine kleinere Instanz verwendet wird, können dadurch einige Cloud-Kosten eingespart werden. Unten wird eine „mittlere“ Ressourcengröße angezeigt.
-
-+
-Klicken Sie dann auf *deploy*, um den Cloud-Bereitstellungsassistenten zu starten.
-
-+
-image:screenshot_cloud_deploy_resource_size.png["Ein Screenshot der Implementierungsseite zeigt die Größe der Instanz an, auf der die BlueXP Klassifizierung implementiert wird."]
-
 . Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]

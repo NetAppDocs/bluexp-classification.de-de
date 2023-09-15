@@ -61,7 +61,6 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 +
 *** Red hat Enterprise Linux Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
 *** CentOS Version 7.8 und 7.9 - die Linux-Kernel-Version muss 4.0 oder höher sein
-*** Rocky Linux 9 (BlueXP Klassifikation ab Version 1.24 erforderlich)
 *** Ubuntu 22.04 (BlueXP Klassifikation ab Version 1.23 erforderlich)
 
 
