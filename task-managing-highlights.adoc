@@ -205,11 +205,11 @@ Beachten Sie, dass einige der üblichen BlueXP Kopier- und Synchronisierungsvorg
 
 == Quelldateien werden in eine NFS-Freigabe verschoben
 
-Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden (siehe link:task-scanning-file-shares.html["Scannen von Dateifreigaben"]).
+Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden.
 
 Optional können Sie eine Breadcrumb-Datei am Speicherort der verschobenen Datei belassen. Eine Breadcrumb-Datei hilft Ihren Benutzern zu verstehen, warum eine Datei vom ursprünglichen Speicherort verschoben wurde. Für jede verschobene Datei erstellt das System eine Breadcrumb-Datei im Quellspeicherort mit dem Namen `<filename>-breadcrumb-<date>.txt`. Sie können Text in das Dialogfeld einfügen, das der Breadcrumb-Datei hinzugefügt wird, um den Speicherort anzugeben, an dem die Datei verschoben wurde, und den Benutzer, der die Datei verschoben hat.
 
-Wenn eine Datei mit dem gleichen Namen am Zielspeicherort vorhanden ist, wird die Datei nicht verschoben.
+Beachten Sie, dass die Unterverzeichnisstruktur aus der Quelldatei beim Verschieben der Datei auf der Zielfreigabe neu erstellt wird, sodass Sie leichter verstehen können, woher die Datei verschoben wurde. Wenn eine Datei mit dem gleichen Namen am Zielspeicherort vorhanden ist, wird die Datei nicht verschoben.
 
 
 TIP: Sie können keine Dateien verschieben, die sich in Datenbanken befinden.

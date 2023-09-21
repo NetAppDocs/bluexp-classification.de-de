@@ -16,7 +16,7 @@ summary: Wenn Sie eine Aktion aus dem Bereich „Untersuchungsergebnisse“ übe
 [role="lead"]
 Wenn Sie eine asynchrone Aktion aus dem Bereich Untersuchungsergebnisse über viele Dateien ausführen, z. B. das Verschieben oder Löschen von 100 Dateien, kann der Prozess einige Zeit in Anspruch nehmen. Sie können den Status dieser Aktionen im Fenster „_Action Status_ “ überwachen, sodass Sie wissen, wann sie auf alle Dateien angewendet wurde.
 
-Auf diese Weise können Sie die Aktionen sehen, die erfolgreich abgeschlossen wurden, die derzeit in Bearbeitung sind und die, die nicht erfolgreich waren, damit Sie Probleme diagnostizieren und beheben können.
+Auf diese Weise können Sie die Aktionen sehen, die erfolgreich abgeschlossen wurden, die derzeit in Bearbeitung sind und die, die nicht erfolgreich waren, damit Sie Probleme diagnostizieren und beheben können. Beachten Sie, dass kurze Vorgänge, die schnell abgeschlossen werden, z. B. das Verschieben einer einzelnen Datei, nicht im Bereich Aktionsstatus angezeigt werden.
 
 Der Status kann lauten:
 
