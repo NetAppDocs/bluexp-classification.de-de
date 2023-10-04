@@ -217,8 +217,9 @@ TIP: Sie können keine Dateien verschieben, die sich in Datenbanken befinden.
 .Anforderungen
 * Sie müssen über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen, um Dateien zu verschieben.
 * Die Quelldateien lassen sich in den folgenden Datenquellen befinden: On-Premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, File Shares und SharePoint Online.
-* Für das Verschieben von Dateien muss die NFS-Freigabe den Zugriff über die IP-Adresse der BlueXP Klassifizierungsinstanz ermöglichen.
 * Sie können maximal 15 Millionen Dateien gleichzeitig verschieben.
+* Es werden nur Dateien verschoben, die 50 MB oder kleiner sind.
+* Die NFS-Zielfreigabe muss den Zugriff von der IP-Adresse der BlueXP Klassifizierungsinstanz ermöglichen.
 
 
 .Schritte
