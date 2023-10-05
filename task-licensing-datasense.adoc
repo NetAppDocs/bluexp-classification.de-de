@@ -96,7 +96,7 @@ Sie managen die BYOL-Lizenzen der BlueXP Digital-Wallet-Seite in BlueXP. Sie kö
 
 Nachdem Sie Ihre BlueXP Klassifizierungs- (Data Sense) Lizenz erworben haben, aktivieren Sie die Lizenz in BlueXP, indem Sie die BlueXP Klassifizierungs-Seriennummer und das NSS-Konto eingeben oder die Lizenzdatei hochladen. Die folgenden Schritte zeigen, wie Sie die Lizenzdatei NLF abrufen können, wenn Sie diese Methode verwenden möchten.
 
-Wenn Sie die BlueXP Klassifizierung auf einem Host an einem lokalen Standort ohne Internetzugang implementiert haben, müssen Sie die Lizenzdatei von einem mit dem Internet verbundenen System beziehen. Die Aktivierung der Lizenz unter Verwendung der Seriennummer und des NSS-Kontos ist für Installationen am dunklen Standort nicht verfügbar.
+Wenn Sie die BlueXP Klassifizierung auf einem Host an einem lokalen Standort ohne Internetzugang implementiert haben, d. h., Sie haben den BlueXP Connector in implementiert https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Privater Modus"^], Sie müssen die Lizenzdatei von einem mit dem Internet verbundenen System beziehen. Die Aktivierung der Lizenz unter Verwendung der Seriennummer und des NSS-Kontos ist für Installationen am dunklen Standort nicht verfügbar.
 
 .Bevor Sie beginnen
 Sie müssen die folgenden Informationen haben, bevor Sie beginnen:
@@ -107,7 +107,7 @@ Suchen Sie diese Nummer in Ihrem Auftrag, oder wenden Sie sich an das Account Te
 
 * BlueXP Konto-ID
 +
-Sie können Ihre BlueXP-Konto-ID finden, indem Sie oben in BlueXP das Dropdown-Menü *Konto* auswählen und dann neben Ihrem Konto auf *Konto verwalten* klicken. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt.
+Sie können Ihre BlueXP-Konto-ID finden, indem Sie oben in BlueXP das Dropdown-Menü *Konto* auswählen und dann neben Ihrem Konto auf *Konto verwalten* klicken. Ihre Account-ID wird auf der Registerkarte „Übersicht“ angezeigt. Verwenden Sie für Websites im privaten Modus ohne Internetzugang *Account-DARKSITE1*.
 
 
 

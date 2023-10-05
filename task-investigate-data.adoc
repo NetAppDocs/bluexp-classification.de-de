@@ -329,6 +329,7 @@ Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ih
 * Erstellungszeit
 * Zuletzt geändert
 * Zuletzt aufgerufen
+* Berechtigungen öffnen
 * Dateibesitzer
 * Kategorie
 * Persönliche Angaben

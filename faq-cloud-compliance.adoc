@@ -88,9 +88,11 @@ Die folgenden Fragen beziehen sich auf die Scan-Performance der BlueXP Klassifiz
 
 === Wie oft werden meine Daten durch die BlueXP Klassifizierung gescannt?
 
-Daten ändern sich häufig, sodass die BlueXP Klassifizierung Ihre Daten fortlaufend ohne Auswirkungen auf Ihre Daten scannt. Während der erste Scan Ihrer Daten länger dauern kann, scannen nachfolgende Scans nur die inkrementellen Änderungen, was die Dauer des Systemscans verkürzt.
+Während der erste Scan Ihrer Daten etwas Zeit in Anspruch nehmen kann, untersuchen nachfolgende Scans nur die inkrementellen Änderungen, was die Systemscanzeiten verkürzt. Die BlueXP Klassifizierung scannt Ihre Daten kontinuierlich nach Round Robin-Verfahren und bietet Ihnen sechs Repositorys gleichzeitig, sodass alle geänderten Daten sehr schnell klassifiziert werden.
 
 link:concept-cloud-compliance.html#how-scans-work["Lesen Sie, wie Scans funktionieren"].
+
+Beachten Sie, dass die BlueXP Klassifizierung Datenbanken nur einmal pro Tag scannt – Datenbanken werden nicht wie andere Datenquellen fortlaufend gescannt.
 
 Datenscans haben keine nennenswerten Auswirkungen auf Ihre Storage-Systeme und Ihre Daten. Wenn Sie jedoch auch nur geringe Auswirkungen haben, können Sie die BlueXP-Klassifizierung für „langsame“ Scans konfigurieren. link:task-reduce-scan-speed.html["Erfahren Sie, wie Sie die Scangeschwindigkeit verringern"].
 

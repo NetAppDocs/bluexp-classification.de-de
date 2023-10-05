@@ -211,7 +211,7 @@ Wie bei jedem anderen Client lässt sich die BlueXP Klassifizierung mit den Date
 
 image:diagram_cloud_compliance_scan.png["Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird. Die BlueXP Klassifizierungs-Instanz stellt eine Verbindung zu NFS- und CIFS-Volumes, S3 Buckets, OneDrive Konten und Datenbanken her, um sie zu scannen."]
 
-Nach dem ersten Scan scannt die BlueXP Klassifizierung Ihre Daten fortlaufend, um inkrementelle Änderungen zu erkennen (daher ist es wichtig, die Instanz weiterhin aktiv zu halten).
+Nach dem ersten Scan scannt die BlueXP Klassifizierung Ihre Daten fortlaufend und nach Round Robin-Verfahren, um inkrementelle Änderungen zu erkennen (aus diesem Grund ist es wichtig, die Instanz weiterhin auszuführen).
 
 Sie können Scans auf Volume-Ebene, auf Bucket-Ebene, auf Datenbankschemaebene, auf OneDrive-Benutzerebene und auf SharePoint-Standortebene aktivieren und deaktivieren.
 
