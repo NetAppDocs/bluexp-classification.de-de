@@ -3479,4 +3479,8 @@ Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfor
   <block id="74246010013353726bd9ff99866fa7d4" category="section-title">Unterstützung lokaler Installationen von BlueXP Klassifizierungen auf RHEL Version 9</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red hat Enterprise Linux Versionen 8 und 9 unterstützen nicht die Docker Engine, die für die Installation der BlueXP Klassifikation erforderlich war. Wir unterstützen jetzt die Installation der BlueXP Klassifizierung auf RHEL 9.0, 9.1 und 9.2 mit Podman Version 4 oder höher als Container-Infrastruktur. Wenn in Ihrer Umgebung die neuesten Versionen von RHEL erforderlich sind, können Sie Podman jetzt auch die BlueXP-Klassifizierung (Version 1.26 oder höher) installieren.</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder verteilte Scanumgebungen (mit Master- und Remote-Scanner-Nodes) unterstützt</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">November 6 (Version 1.26.3)</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Die folgenden Probleme wurden in dieser Version behoben</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.</block>
 </blocks>

@@ -18,6 +18,18 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== November 6 (Version 1.26.3)
+
+
+
+=== Die folgenden Probleme wurden in dieser Version behoben
+
+* Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.
+* Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.
+
+
+
+
 == Oktober 4 (Version 1.26)
 
 
