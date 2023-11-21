@@ -223,9 +223,13 @@ Sie müssen sicherstellen, dass alle erforderlichen Ports für die Kommunikation
 | Verbindungstyp | Ports | Beschreibung 
 
 
-| Connector <> BlueXP Klassifizierung | 8080 (TCP), 6000 (TCP), 443 (TCP) UND 80 | Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über die Ports 6000 und 443 zur und von der BlueXP Klassifizierungsinstanz zulassen.
+| Connector <> BlueXP Klassifizierung | 8080 (TCP), 6000 (TCP), 443 (TCP) UND 80  a| 
+Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über die Ports 6000 und 443 zur und von der BlueXP Klassifizierungsinstanz zulassen.
 
-Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können. 
+* Port 6000 ist erforderlich, damit die BYOL-Lizenz für die BlueXP Klassifizierung an einem Dark Site funktioniert.
+* Port 8080 sollte offen sein, damit Sie den Installationsfortschritt in BlueXP sehen können.
+
+
 
 
 | Connector <> ONTAP-Cluster (NAS) | 443 (TCP)  a| 
