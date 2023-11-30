@@ -283,7 +283,7 @@ Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Date
 
 Sie können den Bericht in zwei verschiedenen Formaten speichern:
 
-* Als .CSV-Datei auf dem lokalen Rechner, der bis zu 5,000 Datenzeilen enthalten kann.
+* Als .CSV-Datei auf dem lokalen Rechner, der bis zu 10,000 Datenzeilen enthalten kann.
 * Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren. Diese kann bis zu 100,000 Datenzeilen enthalten. Wenn mehr als 100,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
 +
 Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
