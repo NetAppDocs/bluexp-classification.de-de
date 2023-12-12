@@ -281,10 +281,16 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Sie können den Bericht in zwei verschiedenen Formaten speichern:
+Der Bericht ist in zwei verschiedenen Formaten verfügbar:
 
-* Als .CSV-Datei auf dem lokalen Rechner, der bis zu 10,000 Datenzeilen enthalten kann.
-* Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren. Diese kann bis zu 100,000 Datenzeilen enthalten. Wenn mehr als 100,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
+* Als CSV-Datei, die Sie auf dem lokalen Computer speichern können.
++
+Dieser Bericht kann maximal 10,000 Datenzeilen enthalten.
+
+* Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren.
++
+Wenn mehr als 250,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
+
 +
 Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
 
@@ -322,18 +328,19 @@ Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ih
 * Positionstyp
 * Name der Arbeitsumgebung
 * Storage-Repository (z. B. Volume, Bucket, Shares)
-* Art der Arbeitsumgebung
+* Repository-Typ
 * Dateipfad
 * Dateityp
-* Dateigröße
+* Dateigröße (in MB)
 * Erstellungszeit
 * Zuletzt geändert
 * Zuletzt aufgerufen
-* Berechtigungen öffnen
 * Dateibesitzer
 * Kategorie
 * Persönliche Angaben
 * Sensible persönliche Daten
+* Berechtigungen öffnen
+* Fehler Bei Der Scananalyse
 * Löscherkennung Datum
 +
 Ein Löscherkennungsdatum gibt das Datum an, an dem die Datei gelöscht oder verschoben wurde. So können Sie feststellen, wann sensible Dateien verschoben wurden. Gelöschte Dateien sind nicht Teil der Anzahl der Dateinummern, die im Dashboard oder auf der Untersuchungsseite angezeigt wird. Die Dateien werden nur in den CSV-Berichten angezeigt.
@@ -342,11 +349,11 @@ Ein Löscherkennungsdatum gibt das Datum an, an dem die Datei gelöscht oder ver
 
 Der Datenbericht für unstrukturierte Verzeichnisse* enthält die folgenden Informationen zu Ihren Ordnern und Dateifreigaben:
 
-* Name der Arbeitsumgebung
-* Storage-Repository (beispielsweise ein Ordner oder Dateifreigaben)
 * Art der Arbeitsumgebung
-* Dateipfad (Verzeichnisname)
-* Dateibesitzer
+* Name der Arbeitsumgebung
+* Verzeichnisname
+* Storage-Repository (beispielsweise ein Ordner oder Dateifreigaben)
+* Verzeichniseigentümer
 * Erstellungszeit
 * Entdeckte Zeit
 * Zuletzt geändert
