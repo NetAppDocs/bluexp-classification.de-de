@@ -18,6 +18,22 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== Januar 10 (Version 1.27)
+
+
+
+=== Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an
+
+Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.
+
+
+
+=== Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren
+
+Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt in der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn sie nicht ursprünglich mit dieser Berechtigung festgelegt wurden. Informieren Sie sich darüber https://task-add-group-id-as-open["Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen"].
+
+
+
 == November 6 (Version 1.26.3)
 
 
