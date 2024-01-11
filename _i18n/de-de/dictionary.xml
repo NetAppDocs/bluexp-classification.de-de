@@ -406,8 +406,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Treten Sie der BlueXP Community bei, um laufende Diskussionen zu verfolgen oder neue zu erstellen.</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Dokumentation</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">Die BlueXP-Dokumentation, die Sie gerade anzeigen.</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Mailto:ng-cloudmanager-feedback@netapp.com[Feedback email]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Wir wissen Ihre Vorschläge zu schätzen. Senden Sie uns Ihr Feedback, um BlueXP zu verbessern.</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Zusätzlich zu den oben genannten Self-Support-Optionen können Sie gemeinsam mit einem NetApp Support-Experten eventuelle Probleme nach der Aktivierung des Supports beheben.</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*: Wählen Sie den Dienst aus, mit dem das Problem verknüpft ist. Beispiel: BlueXP, wenn es sich um ein Problem des technischen Supports mit Workflows oder Funktionen im Service handelt.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Arbeitsumgebung*: Wählen Sie *Cloud Volumes ONTAP* oder *On-Prem* und anschließend die zugehörige Arbeitsumgebung aus.</block>
@@ -3481,16 +3479,16 @@
   <block id="2783de23499f1b6912284079950af328" category="list-text">Klicken Sie auf dem BlueXP Klassifizierungssystem auf „/opt/netapp/config/Custom_Configuration“ und öffnen Sie die Datei „Data_Provider.yaml“.</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">Fügen Sie in der Zeile "Organisation_Group_ids: []" die Gruppen-IDs hinzu. Beispiel:</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">Ändern Sie nichts anderes in dieser Datei.</block>
-  <block id="fb448d942cb14f250d9497a3bb5f49dc" category="list-text">Gehen Sie zu „/opt/netapp/Datense“ und führen Sie das folgende Skript aus:</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">Mit diesem Befehl werden die überarbeiteten Gruppen-ID-Berechtigungen für die Klassifizierungs-Engine übertragen.</block>
   <block id="fa72d06a2d710ef92a76614af32ec1f7" category="paragraph">Bei allen nachfolgenden Scans Ihrer Daten werden Dateien oder Ordner identifiziert, bei denen diese Gruppen-IDs als „für Unternehmen offen“ angehängt sind.</block>
   <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">Mit den gleichen Schritten können Sie die Liste der Gruppen-IDs bearbeiten und alle Gruppen-IDs löschen, die Sie in der Vergangenheit hinzugefügt haben. Die überarbeitete Liste der Gruppen-IDs wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.</block>
-  <block id="547ea5f0fcc4aedf35c256e9b5b85845" category="paragraph">Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl aus „/opt/netapp/Datense“ aus:</block>
   <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">Januar 10 (Version 1.27)</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen</block>
-  <block id="883dea14e891e466e8184cc34b65bd17" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt in der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn sie nicht ursprünglich mit dieser Berechtigung festgelegt wurden. Informieren Sie sich darüber<block ref="d0c1b51f12c2e361f70a1ff7d6038c44" category="inline-link-rx"></block>.</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Vorhandene Gruppen-IDs als „für Organisation offen“ definieren</block>
+  <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:</block>
+  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
+  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt in der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn sie nicht ursprünglich mit dieser Berechtigung festgelegt wurden. Informieren Sie sich darüber<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>.</block>
 </blocks>

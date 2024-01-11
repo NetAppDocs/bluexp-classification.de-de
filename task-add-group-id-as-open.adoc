@@ -61,7 +61,7 @@ Sie müssen die Gruppen-ID-Nummern (GIDs) haben, bevor Sie diese Aufgabe starten
 +
 Ändern Sie nichts anderes in dieser Datei.
 
-. Gehen Sie zu „/opt/netapp/Datense“ und führen Sie das folgende Skript aus:
+. Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:
 +
  update_data_providers_from_config_file.sh
 +
@@ -73,6 +73,6 @@ Bei allen nachfolgenden Scans Ihrer Daten werden Dateien oder Ordner identifizie
 
 Mit den gleichen Schritten können Sie die Liste der Gruppen-IDs bearbeiten und alle Gruppen-IDs löschen, die Sie in der Vergangenheit hinzugefügt haben. Die überarbeitete Liste der Gruppen-IDs wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.
 
-Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl aus „/opt/netapp/Datense“ aus:
+Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
 
  get_data_providers_configuration.sh
