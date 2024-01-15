@@ -18,7 +18,7 @@ Wenn Gruppen-IDs (GIDs) an Dateien oder Ordner in NFS-Dateifreigaben angehängt 
 
 Nachdem Sie diese Änderung vorgenommen und die BlueXP-Klassifizierung Ihre Dateien und Ordner erneut scannt, werden alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, auf der Seite „Ermittlungsdetails“ diese Berechtigung angezeigt. Sie werden auch in Berichten angezeigt, in denen Sie Dateiberechtigungen anzeigen.
 
-Sie müssen sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können, um diese Funktionalität nutzen zu können.
+Um diese Funktion zu aktivieren, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können.
 
 
 

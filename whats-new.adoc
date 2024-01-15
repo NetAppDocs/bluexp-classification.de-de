@@ -30,7 +30,7 @@ Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur
 
 === Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren
 
-Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt in der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn sie nicht ursprünglich mit dieser Berechtigung festgelegt wurden. Informieren Sie sich darüber https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen"].
+Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen"].
 
 
 
@@ -317,33 +317,3 @@ Die folgenden Erweiterungen wurden für die On-Prem Data Sense Installation hinz
 
 
 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Erfahren Sie mehr über die Installation von Data Sense auf einem einzelnen Host-Server und auf mehreren Hosts"].
-
-
-
-== 13. November 2022 (Version 1.17)
-
-
-
-=== Unterstützung für das Scannen von On-Premises-Konten von SharePoint
-
-Data Sense kann jetzt sowohl SharePoint Online-Konten als auch SharePoint On-Premises-Konten (SharePoint Server) scannen. Wenn Sie SharePoint auf Ihren eigenen Servern oder auf Websites ohne Internetzugang installieren müssen, können Sie jetzt Data Sense die Benutzerdateien in diesen Konten scannen lassen. https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["Weitere Informationen ."^].
-
-
-
-=== Möglichkeit zum erneuten Scannen mehrerer Verzeichnisse (Ordner oder Freigaben)
-
-Jetzt können Sie mehrere Verzeichnisse (Ordner oder Freigaben) sofort erneut scannen, sodass Änderungen im System berücksichtigt werden. So können Sie das erneute Scannen bestimmter Daten vor anderen Daten priorisieren. https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["Lesen Sie, wie Sie ein Verzeichnis erneut scannen"^].
-
-
-
-=== Möglichkeit zum Hinzufügen weiterer „Scanner“-Knoten vor Ort, um bestimmte Datenquellen zu scannen
-
-Wenn Sie Data Sense an einem lokalen Standort installiert haben und feststellen, dass Sie mehr Scanning Processing Power zum Scannen bestimmter Datenquellen benötigen, können Sie weitere „Scanner“-Knoten hinzufügen und diese zum Scannen dieser Datenquellen zuordnen. Sie können die Scanner-Knoten unmittelbar nach der Installation des Manager-Knotens hinzufügen oder später einen Scanner-Knoten hinzufügen.
-
-Bei Bedarf können die Scanner-Knoten auf Hostsystemen installiert werden, die sich physisch näher an den zu scannenden Datenquellen befinden. Je näher der Scanner-Knoten an den Daten liegt, desto besser, da er die Netzwerklatenz so weit wie möglich beim Scannen der Daten reduziert. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Lesen Sie, wie Scannerknoten installiert werden, um zusätzliche Datenquellen zu scannen"^].
-
-
-
-=== Vor dem Start der Installation führen die vor-Ort-Installationsprogramme nun eine Vorprüfung durch
-
-Bei der Installation von Data Sense auf einem Linux-System überprüft der Installer, ob das System alle erforderlichen Anforderungen (CPU, RAM, Kapazität, Netzwerk usw.) erfüllt, bevor die eigentliche Installation gestartet wird. Dies hilft beim Auffangen von Problemen *vor* verbringen Sie Zeit mit der Installation.
