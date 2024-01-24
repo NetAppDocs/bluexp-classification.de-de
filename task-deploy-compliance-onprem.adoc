@@ -145,7 +145,7 @@ Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkung
 | /Var/lib/Docker | `rwx------` 
 
 
-| /User/lib/systemd/System | `rwxr-xr-x` 
+| /Usr/lib/systemd/System | `rwxr-xr-x` 
 |===
 * *Betriebssystem*:
 +
