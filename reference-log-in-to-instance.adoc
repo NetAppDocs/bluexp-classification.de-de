@@ -1,6 +1,22 @@
-= 
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: Gelegentlich müssen Sie sich möglicherweise beim BlueXP Klassifizierungssystem anmelden, damit Sie auf Protokolldateien zugreifen oder Konfigurationsdateien bearbeiten können. 
+---
+= Melden Sie sich beim BlueXP Klassifizierungssystem an
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
+
+[role="lead"]
+Gelegentlich müssen Sie sich möglicherweise beim BlueXP Klassifizierungssystem anmelden, damit Sie auf Protokolldateien zugreifen oder Konfigurationsdateien bearbeiten können.
+
+Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer in der Cloud implementierten Linux-Maschine installiert wird, können Sie direkt auf die Konfigurationsdatei und das Skript zugreifen.
 
 Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
 

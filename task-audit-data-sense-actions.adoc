@@ -50,33 +50,16 @@ Beispielsweise zeigen die folgenden Zeilen aus der Protokolldatei einen erfolgre
 ....
 
 
-== Greifen Sie auf die Protokolldatei zu
+== Speicherorte der Protokolldateien
 
 Die Management-Audit-Log-Dateien befinden sich auf der BlueXP Klassifizierungs-Maschine in: `/opt/netapp/audit_logs/`
 
 Die Audit-Protokolldateien für die Installation werden in geschrieben `/opt/netapp/install_logs/`
 
-Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Maximal 100 Protokolldateien werden auf dem System gespeichert - alte Protokolldateien werden nach Erreichen des Maximalwerts automatisch gelöscht.
-
-Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine installiert wird, die Sie in der Cloud implementiert haben, können Sie direkt zu der Protokolldatei navigieren.
-
-Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = Speicherort der ssh-Authentifizierungsschlüssel
-* <machine_user>:
-+
-** Für AWS: Verwenden Sie <ec2-user>
-** Für Azure: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
-** Für GCP: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
+Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Es werden maximal 100 Protokolldateien im System gespeichert. Ältere Protokolldateien werden automatisch gelöscht, sobald die maximale Anzahl erreicht wurde.
 
 
-* <dataense_ip> = IP-Adresse der virtuellen Maschineninstanz
 
+== Zugriff auf die Protokolldateien
 
-Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen, um auf das System in der Cloud zuzugreifen. Weitere Informationen finden Sie unter:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
-
+Sie müssen sich beim BlueXP Klassifizierungssystem anmelden, um auf die Protokolldateien zugreifen zu können. Informieren Sie sich darüber link:reference-log-in-to-instance.html["Melden Sie sich beim BlueXP Klassifizierungssystem an"] Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.

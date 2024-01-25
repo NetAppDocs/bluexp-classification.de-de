@@ -107,6 +107,8 @@ sidebar:
       url: "/reference-instance-types.html"
     - title: Metadaten, die aus Datenquellen erhoben werden
       url: "/reference-collected-metadata.html"
+    - title: Melden Sie sich beim BlueXP Klassifizierungssystem an
+      url: "/reference-log-in-to-instance.html"
     - title: BlueXP Klassifizierungs-APIs
       url: "/api-classification.html"
   - title: Wissen und Support

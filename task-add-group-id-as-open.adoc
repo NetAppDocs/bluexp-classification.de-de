@@ -18,34 +18,7 @@ Wenn Gruppen-IDs (GIDs) an Dateien oder Ordner in NFS-Dateifreigaben angehängt 
 
 Nachdem Sie diese Änderung vorgenommen und die BlueXP-Klassifizierung Ihre Dateien und Ordner erneut scannt, werden alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, auf der Seite „Ermittlungsdetails“ diese Berechtigung angezeigt. Sie werden auch in Berichten angezeigt, in denen Sie Dateiberechtigungen anzeigen.
 
-Um diese Funktion zu aktivieren, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können.
-
-
-
-== Melden Sie sich beim BlueXP Klassifizierungssystem an
-
-Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer in der Cloud implementierten Linux-Maschine installiert wird, können Sie direkt auf die Konfigurationsdatei und das Skript zugreifen.
-
-Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh_key> = Speicherort der ssh-Authentifizierungsschlüssel
-* <machine_user>:
-+
-** Für AWS: Verwenden Sie <ec2-user>
-** Für Azure: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
-** Für GCP: Verwenden Sie den für die BlueXP-Instanz erstellten Benutzer
-
-
-* <dataense_ip> = IP-Adresse der virtuellen Maschineninstanz
-
-
-Beachten Sie, dass Sie die Inbound-Regeln der Sicherheitsgruppe ändern müssen, um auf das System in der Cloud zuzugreifen. Weitere Informationen finden Sie unter:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Sicherheitsgruppenregeln in AWS"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Für Sicherheitsgruppen gibt es in Azure Regeln"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Firewall-Regeln in Google Cloud"^]
-
+Um diese Funktion zu aktivieren, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können. Informieren Sie sich darüber link:reference-log-in-to-instance.html["Melden Sie sich beim BlueXP Klassifizierungssystem an"] Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.
 
 
 
