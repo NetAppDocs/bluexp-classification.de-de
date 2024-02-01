@@ -192,22 +192,6 @@ Nein Durch die BlueXP Klassifizierung werden Snapshots nicht gescannt, da der In
 
 
 
-=== Kann ich die BlueXP Klassifizierungsinformationen auf bestimmte Benutzer beschränken?
-
-Ja, die BlueXP Klassifizierung ist vollständig in BlueXP integriert. BlueXP-Benutzer können nur Informationen für die Arbeitsumgebungen sehen, für die sie gemäß ihren Arbeitsbereichberechtigungen angezeigt werden können.
-
-Wenn Sie bestimmten Benutzern darüber hinaus erlauben möchten, die Ergebnisse der BlueXP Klassifizierungsüberprüfung einfach anzuzeigen, ohne BlueXP Klassifizierungseinstellungen zu managen, können Sie diesen Benutzern die Rolle der Cloud Compliance Viewer zuweisen.
-
-link:concept-cloud-compliance.html#user-access-to-compliance-information["Weitere Informationen ."^].
-
-
-
-=== Kann jemand auf die privaten Daten zugreifen, die zwischen meinem Browser und der BlueXP Klassifizierung gesendet werden?
-
-Nein Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz übertragen werden, sind durch End-to-End-Verschlüsselung geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können. Die BlueXP Klassifizierung gibt keine Daten oder Ergebnisse an NetApp weiter, es sei denn, Sie beantragen und genehmigen den Zugriff.
-
-
-
 === Kann die BlueXP Klassifizierung Benachrichtigungen an mein Unternehmen senden?
 
 Ja. In Verbindung mit der Funktion Richtlinien können Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer (täglich, wöchentlich oder monatlich) oder andere E-Mail-Adressen senden, wenn eine Richtlinie Ergebnisse liefert, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Weitere Informationen zu link:task-using-policies.html["Richtlinien"^].
@@ -309,6 +293,46 @@ BlueXP Klassifizierungs-Scans mittels Standardprotokollen und schreibgeschützte
 Nach einem vollständigen Scan gibt es zahlreiche zusätzliche BlueXP Klassifizierungsfunktionen, die Sie auf Ihre Daten anwenden können, beispielsweise das Anzeigen und Optimieren von Daten auf der Seite „Datenuntersuchung“, das Suchen nach Namen in Dateien, das Kopieren, Verschieben und Löschen von Quelldateien usw.
 
 
+
+Die BlueXP Klassifizierung erfasst Metadaten wie z. B. Dateiname, -Berechtigungen, -Erstellungszeit, letzter Zugriff und letzte Änderung. Dies umfasst alle Metadaten, die auf der Seite „Datenermittlungsdetails“ und in „Datenermittlungsberichte“ angezeigt werden.
+
+Die BlueXP Klassifizierung kann viele Arten von privaten Daten identifizieren, wie beispielsweise personenbezogene und sensible personenbezogene Daten. Weitere Informationen zu privaten Daten finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten, die durch die BlueXP Klassifizierung gescannt werden"].
+
+
+
+=== Kann ich die BlueXP Klassifizierungsinformationen auf bestimmte Benutzer beschränken?
+
+Ja, die BlueXP Klassifizierung ist vollständig in BlueXP integriert. BlueXP-Benutzer können nur Informationen für die Arbeitsumgebungen sehen, für die sie gemäß ihren Arbeitsbereichberechtigungen angezeigt werden können.
+
+Wenn Sie bestimmten Benutzern darüber hinaus erlauben möchten, die Ergebnisse der BlueXP Klassifizierungsüberprüfung einfach anzuzeigen, ohne BlueXP Klassifizierungseinstellungen zu managen, können Sie diesen Benutzern die Rolle der Cloud Compliance Viewer zuweisen.
+
+link:concept-cloud-compliance.html#user-access-to-compliance-information["Weitere Informationen ."^].
+
+
+
+=== Kann jemand auf die privaten Daten zugreifen, die zwischen meinem Browser und der BlueXP Klassifizierung gesendet werden?
+
+Nein Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz übertragen werden, sind durch End-to-End-Verschlüsselung geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können. Die BlueXP Klassifizierung gibt keine Daten oder Ergebnisse an NetApp weiter, es sei denn, Sie beantragen und genehmigen den Zugriff.
+
+Die gescannten Daten verbleiben in Ihrer Umgebung.
+
+
+
+=== Wie werden sensible Daten behandelt?
+
+NetApp hat keinen Zugriff auf sensible Daten und zeigt sie nicht in der Benutzeroberfläche an. Sensible Daten werden maskiert, beispielsweise werden die letzten vier Zahlen für Kreditkarteninformationen angezeigt.
+
+
+
+=== Wo werden die Daten gespeichert?
+
+Die Scan-Ergebnisse werden in Elastisearch innerhalb Ihrer BlueXP Klassifizierungsinstanz gespeichert.
+
+
+
+=== Wie wird auf die Daten zugegriffen?
+
+Die BlueXP Klassifizierung greift über API-Aufrufe, die eine Authentifizierung erfordern und mit AES-128 verschlüsselt sind, auf in Elasticsearch gespeicherte Daten zu. Für den direkten Zugriff auf Elasticsearch ist Root-Zugriff erforderlich.
 
 
 

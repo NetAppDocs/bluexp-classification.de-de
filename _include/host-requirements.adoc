@@ -94,5 +94,5 @@ https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Insta
 ** Python Version 3.6 oder höher. https://www.python.org/downloads/["Installationsanweisungen anzeigen"^].
 
 
-* *NTP-Überlegungen*: NetApp empfiehlt die Konfiguration des BlueXP Klassifizierungssystems für die Verwendung eines NTP-Dienstes (Network Time Protocol). Die Zeit muss zwischen dem BlueXP Klassifizierungssystem und dem BlueXP Connector-System synchronisiert werden.
+* *NTP-Überlegungen*: NetApp empfiehlt die Konfiguration des BlueXP Klassifizierungssystems für die Verwendung eines NTP-Dienstes (Network Time Protocol). Die Zeit muss zwischen dem BlueXP Klassifizierungssystem und dem BlueXP Connector System synchronisiert werden.
 
