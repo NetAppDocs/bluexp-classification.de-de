@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit dem Scannen Ihrer Datenbankschemas mit der BlueXP Klassifizierung zu beginnen. 
 ---
-= Datenbankschemas werden gescannt
+= Datenbankschemas scannen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -95,7 +95,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Hinzufügen des Datenbankservers
+== Fügen Sie den Datenbankserver hinzu
 
 Fügen Sie den Datenbankserver dort hinzu, wo sich die Schemas befinden.
 
@@ -121,7 +121,7 @@ Die Datenbank wird zur Liste der Arbeitsumgebungen hinzugefügt.
 
 
 
-== Aktivieren und Deaktivieren von Compliance-Scans auf Datenbankschemas
+== Aktivieren und deaktivieren Sie Compliance-Scans für Datenbankschemas
 
 Sie können jederzeit das vollständige Scannen Ihrer Schemas anhalten oder starten.
 

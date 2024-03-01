@@ -5,9 +5,15 @@
 * Die BlueXP Klassifizierung wird auf einem Host, der mit anderen Applikationen gemeinsam genutzt wird, nicht unterstützt – der Host muss ein dedizierter Host sein.
 * Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.
 +
-[cols="18,18,26,30"]
+[cols="17,17,27,31"]
 |===
 | Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
+
+
+| *Extra Groß* | 32 CPUs | 128 GB RAM | 1 tib SSD auf /, oder
+- 100 gib verfügbar auf /opt
+- 895 gib verfügbar auf /var/lib/docker
+- 5 gib auf /tmp 
 
 
 | *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder
@@ -28,7 +34,7 @@
 - 5 gib auf /tmp 
 |===
 +
-Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
+Beachten Sie, dass es bei der Verwendung der kleineren Systeme Einschränkungen gibt. Siehe link:concept-cloud-compliance.html#using-a-smaller-instance-type["Verwenden eines kleineren Instanztyps"] Entsprechende Details.
 
 * Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +

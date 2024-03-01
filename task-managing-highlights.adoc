@@ -32,7 +32,7 @@ Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten für das Management
 ====
 
 
-== Quelldateien werden kopiert
+== Quelldateien kopieren
 
 Sie können beliebige Quelldateien kopieren, die von der BlueXP Klassifizierung gescannt werden. Es gibt drei Arten von Kopiervorgängen, je nachdem, was Sie erreichen möchten:
 
@@ -52,7 +52,7 @@ Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem ande
 
 
 
-=== Quelldateien werden in eine NFS-Freigabe kopiert
+=== Kopieren Sie Quelldateien auf eine NFS-Freigabe
 
 Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf eine beliebige NFS-Freigabe kopieren. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden – Sie müssen nur den Namen der NFS-Freigabe kennen, von der alle ausgewählten Dateien im Format kopiert werden `<host_name>:/<share_path>`.
 
@@ -94,7 +94,7 @@ image:screenshot_compliance_copy_file.png["Ein Screenshot, in dem die Auswahl de
 
 
 
-=== Klonen von Volume-Daten auf einem neuen Volume
+=== Volume-Daten auf ein neues Volume klonen
 
 Sie können ein vorhandenes ONTAP Volume klonen, das von der BlueXP Klassifizierung gescannt wird, mit der NetApp _FlexClone_ Funktion. So können Sie das Volume schnell duplizieren, während nur die von Ihnen ausgewählten Dateien enthalten sind. Dies ist nützlich, wenn Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten oder wenn Sie eine Kopie eines Volumes zu Testzwecken erstellen möchten.
 
@@ -147,7 +147,7 @@ Wenn Sie zunächst *Alle Volumes zuweisen* oder *alle Volumes zuordnen und klass
 
 
 
-=== Kopieren und Synchronisieren von Quelldateien auf ein Zielsystem
+=== Kopieren und synchronisieren Sie Quelldateien auf ein Zielsystem
 
 Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, von einer unterstützten unstrukturierten Datenquelle in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren (https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["Zielorte, die von der BlueXP Kopier- und Synchronisierungsfunktion unterstützt werden"^]). Nach der ersten Kopie werden alle geänderten Daten in den Dateien gemäß dem von Ihnen konfigurierten Zeitplan synchronisiert.
 
@@ -203,7 +203,7 @@ Beachten Sie, dass einige der üblichen BlueXP Kopier- und Synchronisierungsvorg
 
 
 
-== Quelldateien werden in eine NFS-Freigabe verschoben
+== Verschieben Sie Quelldateien auf eine NFS-Freigabe
 
 Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden.
 
@@ -248,11 +248,11 @@ image:screenshot_compliance_move_file.png["Ein Screenshot, in dem die Auswahl de
 
 
 
-== Quelldateien werden gelöscht
+== Quelldateien löschen
 
 Sie können Quelldateien dauerhaft entfernen, die unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder dass Sie als Duplikat identifiziert haben. Diese Aktion ist permanent und es gibt kein Rückgängigmachen oder Wiederherstellen.
 
-Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder link:task-using-policies.html#deleting-source-files-automatically-using-policies["Automatische Verwendung von Richtlinien"^].
+Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder link:task-using-policies.html#delete-source-files-automatically-using-policies["Automatische Verwendung von Richtlinien"^].
 
 
 TIP: Sie können keine Dateien löschen, die sich in Datenbanken befinden. Alle anderen Datenquellen werden unterstützt.
@@ -266,7 +266,7 @@ Das Löschen von Dateien erfordert die folgenden Berechtigungen:
 
 
 
-=== Quelldateien werden manuell gelöscht
+=== Quelldateien manuell löschen
 
 .Anforderungen
 * Zum Löschen von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen.

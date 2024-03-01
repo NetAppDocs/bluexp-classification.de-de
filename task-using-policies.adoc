@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
 ---
-= Zuweisen von Richtlinien zu Ihren Daten
+= Weisen Sie Daten Richtlinien zu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -34,7 +34,7 @@ Darüber hinaus werden Richtlinien in der Liste der Filter auf der Untersuchungs
 
 
 
-== Anzeigen von Policy-Ergebnissen auf der Untersuchungsseite
+== Zeigen Sie die Ergebnisse der Richtlinie auf der Seite Untersuchung an
 
 Um die Ergebnisse für eine Richtlinie auf der Untersuchungsseite anzuzeigen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.
 
@@ -42,7 +42,7 @@ image:screenshot_compliance_highlights_investigate.png["Ein Screenshot, in dem S
 
 
 
-== Erstellen benutzerdefinierter Richtlinien
+== Erstellen Sie benutzerdefinierte Richtlinien
 
 Sie können eigene benutzerdefinierte Richtlinien erstellen, die Ergebnisse für spezifische Suchen in Ihrem Unternehmen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.
 
@@ -57,10 +57,10 @@ image:screenshot_compliance_save_as_highlight.png["Ein Screenshot zeigt, wie ein
 . Benennen Sie die Richtlinie, und wählen Sie andere Aktionen aus, die von der Richtlinie ausgeführt werden können:
 +
 .. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
-.. Aktivieren Sie optional das Kontrollkästchen, um Dateien automatisch zu löschen, die mit den Richtlinieparametern übereinstimmen. Weitere Informationen zu <<Quelldateien werden automatisch mithilfe von Richtlinien gelöscht,Quelldateien mit einer Richtlinie löschen>>.
-.. Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungen-E-Mails an BlueXP-Benutzer in Ihrem Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird. Weitere Informationen zu <<Senden von E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden,Senden von E-Mail-Warnmeldungen anhand von Richtlinienergebnissen>>.
+.. Aktivieren Sie optional das Kontrollkästchen, um Dateien automatisch zu löschen, die mit den Richtlinieparametern übereinstimmen. Weitere Informationen zu <<Löschen Sie Quelldateien automatisch mithilfe von Richtlinien,Quelldateien mit einer Richtlinie löschen>>.
+.. Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungen-E-Mails an BlueXP-Benutzer in Ihrem Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird. Weitere Informationen zu <<Senden Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden,Senden von E-Mail-Warnmeldungen anhand von Richtlinienergebnissen>>.
 .. Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungs-E-Mails an andere Benutzer senden möchten, geben Sie bis zu 20 E-Mail-Adressen ein und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird.
-.. Aktivieren Sie optional das Kontrollkästchen, um Dateien, die den Richtlinieparametern entsprechen, automatisch AIP-Etiketten zuzuweisen, und wählen Sie die Beschriftung aus. (Nur wenn Sie bereits AIP-Etiketten integriert haben. Weitere Informationen zu link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"].)
+.. Aktivieren Sie optional das Kontrollkästchen, um Dateien, die den Richtlinieparametern entsprechen, automatisch AIP-Etiketten zuzuweisen, und wählen Sie die Beschriftung aus. (Nur wenn Sie bereits AIP-Etiketten integriert haben. Weitere Informationen zu link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"].)
 .. Klicken Sie Auf *Create Policy*.
 +
 image:screenshot_compliance_save_highlight.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
@@ -74,7 +74,7 @@ Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.
 
 
 
-== Senden von E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
+== Senden Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
 
 Die BlueXP Klassifizierung kann E-Mail-Benachrichtigungen an BlueXP Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, sodass Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden. Sie können auch E-Mail-Benachrichtigungen an eine andere E-Mail-Adresse senden - bis zu 20 E-Mail-Adressen - nicht in Ihrem BlueXP-Konto.
 
@@ -104,7 +104,7 @@ Die erste E-Mail wird jetzt gesendet, wenn Ergebnisse aus der Richtlinie vorlieg
 
 
 
-== Quelldateien werden automatisch mithilfe von Richtlinien gelöscht
+== Löschen Sie Quelldateien automatisch mithilfe von Richtlinien
 
 Sie können eine benutzerdefinierte Richtlinie erstellen, um Dateien zu löschen, die der Richtlinie entsprechen. Beispielsweise können Sie Dateien löschen, die sensible Informationen enthalten und von der BlueXP Klassifizierung in den letzten 30 Tagen erkannt wurden.
 
@@ -135,7 +135,7 @@ Sie können die Liste der Dateien anzeigen, die im gelöscht wurden link:task-vi
 
 
 
-== Automatisches Zuweisen von AIP-Etiketten mit Richtlinien
+== Weisen Sie AIP-Etiketten automatisch mit Richtlinien zu
 
 Sie können allen Dateien, die die Kriterien der Richtlinie erfüllen, eine AIP-Beschriftung zuweisen. Sie können beim Erstellen der Richtlinie das AIP-Etikett angeben oder die Beschriftung beim Bearbeiten einer Richtlinie hinzufügen.
 
@@ -181,7 +181,7 @@ NOTE: Wenn eine Richtlinie mit einem Etikett konfiguriert wurde, die Bezeichnung
 
 
 
-== Richtlinien Werden Bearbeitet
+== Richtlinien Bearbeiten
 
 Sie können alle Kriterien für eine vorhandene Richtlinie ändern, die Sie zuvor erstellt haben. Dies kann besonders nützlich sein, wenn Sie die Abfrage (die Elemente, die Sie mit Filtern definiert haben) ändern möchten, um bestimmte Parameter hinzuzufügen oder zu entfernen.
 
@@ -210,7 +210,7 @@ Die Richtlinie wird sofort geändert. Alle Aktionen, die für diese Richtlinie z
 
 
 
-== Richtlinien Werden Gelöscht
+== Richtlinien Löschen
 
 Sie können alle benutzerdefinierten Richtlinien löschen, die Sie erstellt haben, wenn Sie sie nicht mehr benötigen. Sie können keine der vordefinierten Richtlinien löschen.
 

@@ -20,7 +20,7 @@ Sie können sich unter anderem ändern, ob ein Repository gescannt wird oder nic
 
 
 
-== Anzeigen des Scan-Status für Ihre Repositories
+== Anzeigen des Scanstatus für Ihre Repositorys
 
 Sie können die einzelnen Repositorys anzeigen, die von der BlueXP Klassifizierung gescannt werden (Volumes, Buckets usw.), für jede Arbeitsumgebung und Datenquelle. Außerdem können Sie sehen, wie viele "zugeordnet" wurden und wie viele "klassifiziert" wurden. Die Klassifizierung dauert länger, wenn für alle Daten die vollständige KI-Identifizierung durchgeführt wird.
 
@@ -39,7 +39,7 @@ Sie können den Cursor über das Diagramm in der Spalte _Scan Status_ bewegen, u
 
 
 
-== Ändern des Scantyps für ein Repository
+== Ändern Sie den Typ der Suche nach einem Repository
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln.
 
@@ -65,7 +65,7 @@ image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie di
 
 
 
-== Anhalten der Suche nach einem Repository
+== Beenden Sie die Suche nach einem Repository
 
 Sie können das Scannen eines Repositorys (z. B. eines Volumes) beenden, wenn Sie es nicht mehr auf Compliance-Anforderungen überwachen müssen. Dazu schalten Sie das Scannen aus. Wenn der Scanvorgang deaktiviert ist, werden alle Indexierungen und Informationen zu diesem Volumen aus dem System entfernt, und der Ladevorgang zum Scannen der Daten wird angehalten.
 
@@ -82,7 +82,7 @@ image:screenshot_compliance_stop_repo_scanning.png["Ein Screenshot, in dem gezei
 
 
 
-== Anhalten und Wiederaufnehmen des Scanvorgangs für ein Repository
+== Halten Sie die Suche nach einem Repository an und setzen Sie sie fort
 
 Sie können das Scannen in einem Repository „anhalten“, wenn Sie vorübergehend das Scannen bestimmter Inhalte beenden möchten. Das Anhalten des Scans bedeutet, dass die BlueXP Klassifizierung keine zukünftigen Scans nach Änderungen oder Ergänzungen des Repositorys durchführt, sondern dass alle aktuellen Ergebnisse weiterhin im System angezeigt werden. Das Anhalten des Scanvorgangs stoppt nicht den Ladevorgang für die gescannten Daten, da die Daten noch vorhanden sind.
 
@@ -107,7 +107,7 @@ image:screenshot_compliance_repo_pause_resume2.png["Ein Screenshot, der zeigt, w
 
 
 
-== Erneutes Scannen von Daten eines vorhandenen Repositorys
+== Daten für ein vorhandenes Repository erneut scannen
 
 Die BlueXP Klassifizierung durchsucht Ihre Daten kontinuierlich, um inkrementelle Änderungen der hinzugefügten Repositorys zu erkennen. Das System benötigt jedoch Zeit, um alle Umgebungen zu scannen, und es gibt keine Möglichkeit, die Reihenfolge der gescannten Repositories zu steuern. Wenn Sie ein bestimmtes Repository sofort erneut scannen müssen, damit Änderungen im System angezeigt werden, können Sie das Repository auswählen und erneut scannen. So können Sie das Scannen bestimmter Daten vor anderen Daten priorisieren. Nach der erneuten Überprüfung kehrt das ausgewählte Repository unter dem normalen BlueXP-Klassifizierungszeitplan wieder zum Scannen zurück.
 

@@ -20,6 +20,9 @@ Wenn Sie beispielsweise nachverfolgen möchten, wann Änderungen an Ihren sensib
 
 Sie können diese Funktion auf allen kritischen Volumes in Ihren Arbeitsumgebungen aktivieren, in denen die ONTAP Software ausgeführt wird. Wenn diese Option auf einem Volume aktiviert ist, werden Dateizugriffsereignisse für alle Dateien und Verzeichnisse im Volume verfolgt. Diese Funktion basiert auf dem https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy-Funktion"^] Von Ihren ONTAP Systemen genutzt. Dabei verwendet es Ihr BlueXP Klassifizierungssystem als FPolicy-Server, um Benachrichtigungen (Ereignisse) von ONTAP zu empfangen. Die BlueXP Klassifizierung kann etwa 990 Ereignisse pro Sekunde aus ONTAP verarbeiten.
 
+
+NOTE: Mit der Veröffentlichung von Dezember 2023 (Version 1.26.6) wurde die Option zur Aktivierung der Überwachungsprotokollsammlung vorübergehend entfernt.
+
 Die BlueXP Klassifizierung erfasst derzeit Ereignisse für folgende Aktionen Ihrer Dateien und Verzeichnisse:
 
 * Erstellen

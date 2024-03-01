@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, data sense, classification, scan shares 
+keywords: limitations, data sense, classification, bluexp, scan shares 
 summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
 = Bekannte Einschränkungen
@@ -15,6 +15,17 @@ summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Ver
 
 [role="lead"]
 Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
+
+
+
+== Die BlueXP Klassifizierungs-Version hat Optionen vorübergehend entfernt
+
+Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die folgenden Optionen vorübergehend entfernt:
+
+* Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.
+* Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung.
+* Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert.
+
 
 
 

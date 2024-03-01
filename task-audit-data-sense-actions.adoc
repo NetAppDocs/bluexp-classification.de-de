@@ -4,7 +4,7 @@ permalink: task-audit-data-sense-actions.html
 keywords: compliance, actions, view progress, audit, logs, installation 
 summary: Die BlueXP Klassifizierungs-Logs managen-Aktivitäten, die an Dateien aus allen Arbeitsumgebungen und Datenquellen ausgeführt wurden, die von der BlueXP Klassifizierung gescannt werden. Die BlueXP Klassifizierung protokolliert auch die Aktivitäten, wenn Sie eine BlueXP Klassifizierungsinstanz implementieren. 
 ---
-= Auditing der Historie der BlueXP Klassifizierungsaktionen
+= Audit der Historie der BlueXP Klassifizierungsaktionen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -60,6 +60,6 @@ Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreich
 
 
 
-== Zugriff auf die Protokolldateien
+== Greifen Sie auf die Protokolldateien zu
 
 Sie müssen sich beim BlueXP Klassifizierungssystem anmelden, um auf die Protokolldateien zugreifen zu können. Informieren Sie sich darüber link:reference-log-in-to-instance.html["Melden Sie sich beim BlueXP Klassifizierungssystem an"] Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.

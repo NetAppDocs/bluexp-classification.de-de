@@ -20,8 +20,8 @@ Wenn Sie bestimmte (unten aufgeführte) Datenquellen einrichten, müssen Sie Act
 
 Diese Integration bietet zusätzliche Informationen an folgenden Standorten in der BlueXP Klassifizierung:
 
-* Sie können den „Dateieigentümer“ verwenden. link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["Filtern"] Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.
-* Sie sehen link:task-investigate-data.html#viewing-permissions-for-files-and-directories["Volldateiberechtigungen"] Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.
+* Sie können den „Dateieigentümer“ verwenden. link:task-investigate-data.html#filter-data-in-the-data-investigation-page["Filtern"] Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.
+* Sie sehen link:task-investigate-data.html#view-permissions-for-files-and-directories["Volldateiberechtigungen"] Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.
 * Im link:task-controlling-governance-data.html["Governance-Dashboard"], Das Fenster „Offene Berechtigungen“ zeigt eine größere Detailebene über Ihre Daten an.
 
 
@@ -47,7 +47,7 @@ Es wird keine Unterstützung für das Identifizieren von Benutzer- und Berechtig
 
 
 
-== Verbindung zu Ihrem Active Directory-Server herstellen
+== Stellen Sie eine Verbindung zu Ihrem Active Directory-Server her
 
 Nachdem Sie die BlueXP Klassifizierung implementiert und das Scannen Ihrer Datenquellen aktiviert haben, können Sie die BlueXP Klassifizierung in Ihr Active Directory integrieren. Auf Active Directory kann über eine DNS-Server-IP-Adresse oder eine LDAP-Server-IP-Adresse zugegriffen werden.
 
@@ -114,7 +114,7 @@ image:screenshot_compliance_active_directory_added.png["Ein Screenshot aus dem n
 
 
 
-== Verwalten Ihrer Active Directory-Integration
+== Verwalten Sie Ihre Active Directory-Integration
 
 Wenn Sie Werte in Ihrer Active Directory-Integration ändern müssen, klicken Sie auf die Schaltfläche *Bearbeiten* und nehmen Sie die Änderungen vor.
 

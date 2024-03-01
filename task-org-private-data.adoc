@@ -4,7 +4,7 @@ permalink: task-org-private-data.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Die BlueXP Klassifizierung bietet Ihnen zahlreiche Möglichkeiten zum Managen und Organisieren Ihrer privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen. 
 ---
-= Organisieren von privaten Daten
+= Private Daten organisieren
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,6 +17,10 @@ summary: Die BlueXP Klassifizierung bietet Ihnen zahlreiche Möglichkeiten zum M
 Die BlueXP Klassifizierung bietet Ihnen zahlreiche Möglichkeiten zum Managen und Organisieren Ihrer privaten Daten. Auf diese Weise können Sie die für Sie wichtigsten Daten besser einsehen.
 
 * Wenn Sie abonniert sind https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^] Um Ihre Dateien zu klassifizieren und zu schützen, können Sie diese AIP-Labels mit der BlueXP Klassifizierung managen.
++
+
+NOTE: Mit der Veröffentlichung im Dezember 2023 (v1.26.6) wurde die Option zur Integration von Daten mit Azure Information Protection (AIP)-Labels vorübergehend aufgehoben.
+
 * Sie können Tags zu Dateien hinzufügen, die Sie als Organisation oder für eine Art von Follow-up markieren möchten.
 * Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, sodass diese Person für das Management der Datei verantwortlich ist.
 * Mit der "Policy"-Funktion können Sie Ihre eigenen individuellen Suchanfragen erstellen, so dass Sie die Ergebnisse einfach durch Klicken auf eine Schaltfläche sehen können.
@@ -69,7 +73,7 @@ Die BlueXP Klassifizierung unterstützt AIP-Labels innerhalb der folgenden Datei
 ====
 
 
-=== Integrieren von AIP-Etiketten in Ihren Arbeitsbereich
+=== Integrieren Sie AIP-Beschriftungen in Ihren Arbeitsbereich
 
 Bevor Sie AIP-Labels managen können, müssen Sie die AIP-Label-Funktionalität in die BlueXP Klassifizierung integrieren, indem Sie sich in Ihr bestehendes Azure Konto anmelden. Nach der Aktivierung können Sie AIP-Beschriftungen in Dateien für alle verwalten link:concept-cloud-compliance.html#supported-data-sources["Datenquellen"^] In Ihrem BlueXP Workspace.
 
@@ -98,7 +102,7 @@ Sie können AIP-Beschriftungen im Ergebnisbereich der Untersuchungsseite anzeige
 
 
 
-=== Anzeigen von AIP-Etiketten in Ihren Dateien
+=== AIP-Etiketten in Ihren Dateien anzeigen
 
 Sie können die aktuelle AIP-Bezeichnung anzeigen, die einer Datei zugewiesen ist.
 
@@ -108,7 +112,7 @@ image:screenshot_compliance_show_label.png["Ein Screenshot mit den Metadatendeta
 
 
 
-=== Manuelles Zuweisen von AIP-Beschriftungen
+=== Weisen Sie AIP-Beschriftungen manuell zu
 
 Mit der BlueXP Klassifizierung können Sie AIP-Labels zu Ihren Dateien hinzufügen, ändern und entfernen.
 
@@ -148,7 +152,7 @@ Die AIP-Bezeichnung wird den Metadaten für alle ausgewählten Dateien hinzugef�
 
 
 
-=== Entfernen der AIP-Integration
+=== Entfernen Sie die AIP-Integration
 
 Wenn Sie AIP-Labels in Dateien nicht mehr verwalten möchten, können Sie das AIP-Konto von der BlueXP Klassifizierungs-Schnittstelle entfernen.
 
@@ -164,7 +168,7 @@ image:screenshot_compliance_un_integrate_aip_labels.png["Ein Screenshot, der zei
 
 
 
-== Anwenden von Tags zur Verwaltung der gescannten Dateien
+== Wenden Sie Tags an, um die gescannten Dateien zu verwalten
 
 Sie können Dateien, die Sie für eine Art von Follow-up markieren möchten, ein Tag hinzufügen. Sie haben z. B. einige doppelte Dateien gefunden und möchten eine davon löschen, müssen aber überprüfen, welche Dateien gelöscht werden sollen. Sie könnten der Datei einen Tag mit "Prüfen zum Löschen" hinzufügen, damit Sie wissen, dass diese Datei eine Recherche und eine Art von zukünftigen Aktionen erfordert.
 
@@ -177,7 +181,7 @@ TIP: Die Tags, die Dateien in der BlueXP Klassifizierung zugewiesen sind, stehen
 
 
 
-=== Anzeigen von Dateien, auf die bestimmte Tags angewendet wurden
+=== Zeigen Sie Dateien an, auf die bestimmte Tags angewendet wurden
 
 Sie können alle Dateien anzeigen, denen bestimmte Tags zugewiesen sind.
 
@@ -193,7 +197,7 @@ Im Bereich Untersuchungsergebnisse werden alle Dateien angezeigt, denen diese Ta
 
 
 
-=== Tags zu Dateien werden zugewiesen
+=== Weisen Sie Dateien Tags zu
 
 Sie können Tags zu einer einzelnen Datei oder zu einer Gruppe von Dateien hinzufügen.
 
@@ -247,7 +251,7 @@ image:screenshot_compliance_select_tags_multi.png["Ein Screenshot, in dem gezeig
 
 
 
-=== Tags aus Dateien werden gelöscht
+=== Tags aus Dateien löschen
 
 Sie können ein Tag löschen, wenn Sie es nicht mehr verwenden müssen.
 
@@ -259,7 +263,7 @@ Wenn Sie mehrere Dateien ausgewählt haben, wird das Tag aus allen Dateien entfe
 
 
 
-== Zuweisen von Benutzern zum Verwalten bestimmter Dateien
+== Weisen Sie Benutzer zu, um bestimmte Dateien zu verwalten
 
 Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, so dass diese Person für alle Follow-up-Aktionen verantwortlich sein kann, die in der Datei ausgeführt werden müssen. Diese Funktion wird häufig zusammen mit der Funktion verwendet, um einer Datei benutzerdefinierte Status-Tags hinzuzufügen.
 

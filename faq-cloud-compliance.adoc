@@ -204,7 +204,7 @@ Sie können auch Statusberichte von der Seite Governance und Untersuchung herunt
 
 Ja. Sie können AIP-Etiketten in den Dateien managen, die die BlueXP Klassifizierung scannt, wenn Sie abonniert haben https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Sie können die bereits zugewiesenen Beschriftungen anzeigen, Dateien Beschriftungen hinzufügen und vorhandene Beschriftungen ändern.
 
-link:task-org-private-data.html#categorizing-your-data-using-aip-labels["Weitere Informationen ."^].
+link:task-org-private-data.html#categorize-your-data-using-aip-labels["Weitere Informationen ."^].
 
 
 
@@ -326,7 +326,7 @@ NetApp hat keinen Zugriff auf sensible Daten und zeigt sie nicht in der Benutzer
 
 === Wo werden die Daten gespeichert?
 
-Die Scan-Ergebnisse werden in Elastisearch innerhalb Ihrer BlueXP Klassifizierungsinstanz gespeichert.
+Die Scan-Ergebnisse werden in Elasticsearch innerhalb der BlueXP Klassifizierungsinstanz gespeichert.
 
 
 

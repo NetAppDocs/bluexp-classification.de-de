@@ -83,7 +83,6 @@
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">Entpacken Sie das Software-Bundle auf dem Host-Rechner, zum Beispiel:</block>
   <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">Dadurch wird das Upgrade-Skript *Start_darchsite_Upgrade.sh* und jede erforderliche Software von Drittanbietern extrahiert.</block>
   <block id="85455891651214d50e704a4b3e9dde66" category="list-text">Führen Sie das Upgrade-Skript auf dem Hostcomputer aus, z. B.:</block>
-  <block id="82e6e10597cf7de906fad4f53b7deab7" category="doc">Organisieren von privaten Daten</block>
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link-macro">Azure Information Protection (AIP)</block>
   <block id="892f73595a08cb4eef7c3e6319b7f807" category="list-text">Sie können Tags zu Dateien hinzufügen, die Sie als Organisation oder für eine Art von Follow-up markieren möchten.</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, sodass diese Person für das Management der Datei verantwortlich ist.</block>
@@ -98,9 +97,7 @@
   <block id="5419a6956bcb58f1ecfb0764315b597c" category="cell">Sie können eine Bezeichnung auf einer einzelnen Datei haben.</block>
   <block id="9bd315267ebba0738f6713698f565ca4" category="cell">Andere Systeme, die die Datei lesen können, können das Etikett sehen - welches für zusätzliche Automatisierung verwendet werden kann.</block>
   <block id="aedd3229a38d6b05f0995fcc5999e0bb" category="cell">Nur ein einzelner API-Aufruf wird verwendet, um zu sehen, ob eine Datei ein Tag hat.</block>
-  <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">Kategorisieren Sie Ihre Daten mit AIP-Etiketten</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">Sie können zurzeit keine Etiketten in Dateien ändern, die größer als 30 MB sind. Für OneDrive, SharePoint und Google Drive Konten die maximale Dateigröße beträgt 4 MB.</block>
-  <block id="96238d4f93a120c69c563c428e826a69" category="section-title">Integrieren von AIP-Etiketten in Ihren Arbeitsbereich</block>
   <block id="66419de72b8ef9b668dec88e9b2fdc45" category="inline-link-macro">Datenquellen</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">Anforderungen</block>
   <block id="134b8f00ffb7e15169d315180cdd63ef" category="list-text">Sie benötigen ein Konto und eine Azure Information Protection-Lizenz.</block>
@@ -113,7 +110,6 @@
   <block id="1a7c4f9b547d006d3e3e176f2ab1602c" category="inline-image-macro">Ein Screenshot mit AIP-Etiketten wurde erfolgreich integriert.</block>
   <block id="05c8cfaea812d7833aa0ed821f517692" category="paragraph"><block ref="05c8cfaea812d7833aa0ed821f517692" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7a7d5e760e9862d0cb81aadaad6afb6" category="paragraph">Sie können AIP-Beschriftungen im Ergebnisbereich der Untersuchungsseite anzeigen und zuweisen. Außerdem können Sie Dateien mithilfe von Richtlinien AIP-Etiketten zuweisen.</block>
-  <block id="efc1c120789b0f58eca439d255b02d13" category="section-title">Anzeigen von AIP-Etiketten in Ihren Dateien</block>
   <block id="6b366eac1f5f26f43c2dac1c767c2f05" category="paragraph">Sie können die aktuelle AIP-Bezeichnung anzeigen, die einer Datei zugewiesen ist.</block>
   <block id="ddd53e8927c624ebcbf44e804dd39950" category="inline-image-macro">Vorsicht</block>
   <block id="86336d6e600c30c4d7c8749ad01e4965" category="paragraph">Klicken Sie im Bereich „Untersuchungsergebnisse“ auf <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> Für die Datei zum erweitern der Dateimetadaten.</block>
@@ -132,7 +128,6 @@
   <block id="7ddc7d6d8dbb2dc5a17135fab81b47cf" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie auf der Seite „Datenuntersuchung“ mehreren Dateien ein AIP-Etikett zugewiesen wird.</block>
   <block id="cdeb776dc578fceef2300eedbf8c9aca" category="paragraph"><block ref="cdeb776dc578fceef2300eedbf8c9aca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ddcea8a74ef269dddbaef0e519805fe0" category="paragraph">Die AIP-Bezeichnung wird den Metadaten für alle ausgewählten Dateien hinzugefügt.</block>
-  <block id="1a7d62e70b7a4479bb1326435261a45f" category="section-title">Automatisches Zuweisen von AIP-Etiketten mit Richtlinien</block>
   <block id="4c20e62469a6d959b39eee38bf96fbee" category="paragraph">Sie können allen Dateien, die die Kriterien der Richtlinie erfüllen, eine AIP-Beschriftung zuweisen. Sie können beim Erstellen der Richtlinie das AIP-Etikett angeben oder die Beschriftung beim Bearbeiten einer Richtlinie hinzufügen.</block>
   <block id="1541ec8982839d11a2c7b6d49e832c32" category="paragraph">Je nachdem, ob bereits ein Label auf eine Datei und die Klassifizierungsstufe des Etiketts angewendet wurde, werden beim Ändern einer Bezeichnung folgende Aktionen ausgeführt:</block>
   <block id="eea4419659684ba18fac003140a4a8b4" category="cell">Wenn die Datei...</block>
@@ -154,18 +149,14 @@
   <block id="f3e4dff4900974e7d6033b16c7f75179" category="paragraph"><block ref="f3e4dff4900974e7d6033b16c7f75179" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5e0da9e04f209ba6382a6646eafa408a" category="list-text">Klicken Sie auf *Save Policy* und das Etikett wird in der Policy description angezeigt.</block>
   <block id="0d7ff31965279bca5aa449dad5118869" category="admonition">Wenn eine Richtlinie mit einem Etikett konfiguriert wurde, die Bezeichnung aber seitdem von AIP entfernt wurde, wird der Name der Bezeichnung auf AUS gesetzt und die Bezeichnung nicht mehr zugewiesen.</block>
-  <block id="5803f352e5dd56b3494a56eabe17fd51" category="section-title">Entfernen der AIP-Integration</block>
   <block id="640064394e27c9f380f0df378ba639e9" category="list-text">Klicken Sie auf der Seite _Configuration_ auf *AIP Labels integriert &gt; Integration entfernen*.</block>
   <block id="1adb70ded77a9f087a1361758e3bb6ba" category="list-text">Klicken Sie im Bestätigungsdialogfeld auf *Integration entfernen*.</block>
-  <block id="2896b6998e15cd6aa0e7899122d8d308" category="section-title">Anwenden von Tags zur Verwaltung der gescannten Dateien</block>
   <block id="ae71277524debd40a10c5eecfc6441d2" category="paragraph">Sie können Dateien, die Sie für eine Art von Follow-up markieren möchten, ein Tag hinzufügen. Sie haben z. B. einige doppelte Dateien gefunden und möchten eine davon löschen, müssen aber überprüfen, welche Dateien gelöscht werden sollen. Sie könnten der Datei einen Tag mit "Prüfen zum Löschen" hinzufügen, damit Sie wissen, dass diese Datei eine Recherche und eine Art von zukünftigen Aktionen erfordert.</block>
-  <block id="33f24a352f311748945dfdc2d17db063" category="section-title">Anzeigen von Dateien, auf die bestimmte Tags angewendet wurden</block>
   <block id="3b073ce36dc01faa340c1b26f1ec94ad" category="paragraph">Sie können alle Dateien anzeigen, denen bestimmte Tags zugewiesen sind.</block>
   <block id="88269b0396f7e11ee581650ad642def1" category="list-text">Klicken Sie auf der Seite Datenuntersuchung im Bereich Filter auf *Tags* und wählen Sie die gewünschten Tags aus.</block>
   <block id="5dab2359e7938a23857c1f0e98f9dc1c" category="inline-image-macro">Ein Screenshot, in dem die Auswahl von Tags im Fensterbereich Filter angezeigt wird.</block>
   <block id="11088c5daa748233b737d4f0f383f0db" category="paragraph"><block ref="11088c5daa748233b737d4f0f383f0db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f31450d7e15440981a069481b29172b4" category="paragraph">Im Bereich Untersuchungsergebnisse werden alle Dateien angezeigt, denen diese Tags zugewiesen sind.</block>
-  <block id="f33e170ce4b7f60ab8eb1f1311a1a726" category="section-title">Tags zu Dateien werden zugewiesen</block>
   <block id="964c300d9072ec8289ac7e61f4fd062e" category="paragraph">Sie können Tags zu einer einzelnen Datei oder zu einer Gruppe von Dateien hinzufügen.</block>
   <block id="a423c23afbc52ec3e0c82abbbb777944" category="paragraph">So fügen Sie einer einzelnen Datei ein Tag hinzu:</block>
   <block id="7cb3325e26d531c037cf82f547ddc373" category="list-text">Klicken Sie auf das Feld *Tags* und die aktuell zugewiesenen Tags werden angezeigt.</block>
@@ -183,11 +174,9 @@
   <block id="58cb86f2b4a3ffa2124a12532f6afb5f" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie Sie mehreren Dateien auf der Seite „Datenuntersuchung“ ein Tag zuweisen.</block>
   <block id="633db9ec25de377fad5f837b7b8bd1a3" category="paragraph"><block ref="633db9ec25de377fad5f837b7b8bd1a3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f600a8cde199f8d2d69183ea7c848954" category="list-text">Genehmigen Sie das Hinzufügen der Tags im Bestätigungsdialogfeld, und die Tags werden den Metadaten für alle ausgewählten Dateien hinzugefügt.</block>
-  <block id="2c542408318e2466085680b27900346c" category="section-title">Tags aus Dateien werden gelöscht</block>
   <block id="aff9af6d08960897da4fd01c93798a8d" category="paragraph">Sie können ein Tag löschen, wenn Sie es nicht mehr verwenden müssen.</block>
   <block id="fb99748ee9135bf42ab6cc714136d9f0" category="paragraph">Klicken Sie einfach auf das *x* für ein vorhandenes Tag.</block>
   <block id="3358cad1e9fb27ca213fc2453657e851" category="paragraph">Wenn Sie mehrere Dateien ausgewählt haben, wird das Tag aus allen Dateien entfernt.</block>
-  <block id="c920fb7990e3c619785581c1ca57a2e6" category="section-title">Zuweisen von Benutzern zum Verwalten bestimmter Dateien</block>
   <block id="c38adf84c9ff1f07a9abdc6fc5abfc96" category="paragraph">Sie können einen BlueXP-Benutzer einer bestimmten Datei oder mehreren Dateien zuweisen, so dass diese Person für alle Follow-up-Aktionen verantwortlich sein kann, die in der Datei ausgeführt werden müssen. Diese Funktion wird häufig zusammen mit der Funktion verwendet, um einer Datei benutzerdefinierte Status-Tags hinzuzufügen.</block>
   <block id="640ddcfcbdd6fd24058616dfd813d30c" category="paragraph">Sie können beispielsweise eine Datei mit bestimmten personenbezogenen Daten haben, die zu vielen Benutzern Lese- und Schreibzugriff (offene Berechtigungen) ermöglicht. Sie können also das Status-Tag "Berechtigungen ändern" zuweisen und diese Datei dem Benutzer "Joan Smith" zuweisen, damit er entscheiden kann, wie das Problem behoben werden kann. Wenn sie das Problem behoben haben, könnten sie die Status-Tag-Nummer auf „Abgeschlossen“ ändern.</block>
   <block id="931074f4d66344e7b9658958b6d87907" category="paragraph">Mit einem neuen Filter auf der Untersuchungsseite können Sie problemlos alle Dateien anzeigen, die dieselbe Person im Feld „Assigned to“ haben.</block>
@@ -210,12 +199,10 @@
   <block id="e4be9266a700a3741ce848b53cdf44cb" category="list-text">Weisen Sie AIP-Etiketten (Azure Information Protection) automatisch allen Dateien zu, die den in einer Richtlinie definierten Kriterien entsprechen</block>
   <block id="556a14198319561f24670a620f5b2fd2" category="list-text">Löschen Sie Dateien automatisch (einmal pro Tag), wenn bestimmte Richtlinien Ergebnisse zurückgeben, damit Sie Ihre Daten automatisch schützen können</block>
   <block id="ec765c8328cc06fe6531b9b567451d5f" category="paragraph">Darüber hinaus werden Richtlinien in der Liste der Filter auf der Untersuchungsseite angezeigt.</block>
-  <block id="7101ead3492fc55fe8e6ae3b0d7ff850" category="section-title">Anzeigen von Policy-Ergebnissen auf der Untersuchungsseite</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">Schaltfläche „Mehr“</block>
   <block id="94f8db548fe539bc8f110fc0def01143" category="paragraph">Um die Ergebnisse für eine Richtlinie auf der Untersuchungsseite anzuzeigen, klicken Sie auf die <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Klicken Sie für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.</block>
   <block id="255e1125d849f7edda6bed80ac46496e" category="inline-image-macro">Ein Screenshot, in dem Sie auf der Registerkarte Richtlinien Ergebnisse für eine bestimmte Richtlinie untersuchen auswählen.</block>
   <block id="81d6d5b017dce15ac441154a1942e517" category="paragraph"><block ref="81d6d5b017dce15ac441154a1942e517" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b0449a02f1a4c60439d939f1f9e382e5" category="section-title">Erstellen benutzerdefinierter Richtlinien</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">Sie können eigene benutzerdefinierte Richtlinien erstellen, die Ergebnisse für spezifische Suchen in Ihrem Unternehmen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.</block>
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">Beachten Sie, dass die Aktionen zum Löschen von Daten und zum Zuweisen von AIP-Etiketten auf der Grundlage der Richtlinienergebnisse nur für Dateien gültig sind. Verzeichnisse, die den Suchkriterien entsprechen, können nicht automatisch gelöscht oder AIP-Bezeichnungen zugewiesen werden.</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">Filtern von Daten auf der Seite „Datenuntersuchung“</block>
@@ -227,12 +214,10 @@
   <block id="69afb208b3f73c16d486210229cfd874" category="inline-link-macro">Quelldateien mit einer Richtlinie löschen</block>
   <block id="ed0c49068f9d7e929a30f26c6d8c4a8b" category="inline-link-macro">Senden von E-Mail-Warnmeldungen anhand von Richtlinienergebnissen</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP-Etiketten</block>
-  <block id="aebde29cfdfa1930a437316c54f45e0d" category="list-text">Aktivieren Sie optional das Kontrollkästchen, um Dateien, die den Richtlinieparametern entsprechen, automatisch AIP-Etiketten zuzuweisen, und wählen Sie die Beschriftung aus. (Nur wenn Sie bereits AIP-Etiketten integriert haben. Weitere Informationen zu <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block>.)</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Klicken Sie Auf *Create Policy*.</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird.</block>
   <block id="23e34b6c117b6fd91abb568e48195e27" category="paragraph"><block ref="23e34b6c117b6fd91abb568e48195e27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.</block>
-  <block id="44b09c7ed11f8b8bc1b6c565396ae51f" category="section-title">Senden von E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden</block>
   <block id="f77f93b662e07d2958780dffbc360ec3" category="paragraph">Sie können diese Einstellung beim Erstellen der Richtlinie oder beim Bearbeiten einer Richtlinie konfigurieren.</block>
   <block id="831a96e5f215f39fdd445625f868bf58" category="paragraph">Befolgen Sie diese Schritte, um E-Mail-Updates zu einer bestehenden Richtlinie hinzuzufügen.</block>
   <block id="e611dc00053c0d54bc07aac02db6bc88" category="list-text">Klicken Sie auf der Liste Richtlinien auf *Bearbeiten* für die Richtlinie, in der Sie die E-Mail-Einstellung hinzufügen (oder ändern) möchten.</block>
@@ -241,7 +226,6 @@
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03edddfdd703f81e66c3ec945cdf1ae4" category="list-text">Klicken Sie auf *Save Policy* und das Intervall, in dem die E-Mail gesendet wird, wird in der Policy description angezeigt.</block>
   <block id="adae64945c95a64a4e7460741eaad566" category="paragraph">Die erste E-Mail wird jetzt gesendet, wenn Ergebnisse aus der Richtlinie vorliegen - aber nur, wenn Dateien die Kriterien der Richtlinie erfüllen. Es werden keine personenbezogenen Daten in die Benachrichtigungs-E-Mails gesendet. Die E-Mail zeigt an, dass es Dateien gibt, die den Kriterien der Richtlinie entsprechen, und sie enthält einen Link zu den Ergebnissen der Richtlinie.</block>
-  <block id="e3aca2a1f52769c86959db59de5c8e57" category="section-title">Richtlinien Werden Bearbeitet</block>
   <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">Sie können alle Kriterien für eine vorhandene Richtlinie ändern, die Sie zuvor erstellt haben. Dies kann besonders nützlich sein, wenn Sie die Abfrage (die Elemente, die Sie mit Filtern definiert haben) ändern möchten, um bestimmte Parameter hinzuzufügen oder zu entfernen.</block>
   <block id="06e09be9c5d10de07a221aa29c84e398" category="paragraph">Beachten Sie, dass Sie für vordefinierte Richtlinien nur ändern können, ob E-Mail-Benachrichtigungen gesendet werden und ob AIP-Beschriftungen hinzugefügt werden. Andere Werte können nicht geändert werden.</block>
   <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">Klicken Sie auf der Liste Richtlinien auf *Bearbeiten* für die Richtlinie, die Sie ändern möchten.</block>
@@ -255,7 +239,6 @@
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">Ein Screenshot zeigt, wie die Abfrage durch Ändern der Filtereinstellungen bearbeitet wird.</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">Die Richtlinie wird sofort geändert. Alle Aktionen, die für diese Richtlinie zum Senden einer E-Mail, Hinzufügen von AIP-Etiketten oder Löschen von Dateien definiert sind, werden im nächsten internen ausgeführt.</block>
-  <block id="8a5b49145936e154af1faea833484a85" category="section-title">Richtlinien Werden Gelöscht</block>
   <block id="725f2bee980781415fd1a5062a4c3e0c" category="paragraph">Sie können alle benutzerdefinierten Richtlinien löschen, die Sie erstellt haben, wenn Sie sie nicht mehr benötigen. Sie können keine der vordefinierten Richtlinien löschen.</block>
   <block id="4f414b6a5ed633d6213d3e02617aa919" category="paragraph">Zum Löschen einer Richtlinie klicken Sie auf das <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Klicken Sie für eine bestimmte Richtlinie auf *Richtlinie löschen*, und klicken Sie dann im Bestätigungsdialogfeld erneut auf *Richtlinie löschen*.</block>
   <block id="8576d798b241f0250d2350430aef4005" category="section-title">Liste der vordefinierten Richtlinien</block>
@@ -323,7 +306,6 @@
   <block id="bf921de5d4c70eef45feab946da98137" category="paragraph">Datenschutzvorschriften wie die Europäische DSGVO erteilen Betroffenen (wie Kunden oder Mitarbeitern) das Recht, auf ihre personenbezogenen Daten zuzugreifen. Wenn eine betroffene Person diese Informationen anfordert, wird dies als DSAR (Zugriffsanfrage für betroffene Person) bezeichnet. Unternehmen sind verpflichtet, auf diese Anfragen „ohne übermäßige Verzögerung“ und spätestens innerhalb eines Monats nach Eingang zu reagieren.</block>
   <block id="8a464fab58ec0272448f96c6e09a0019" category="paragraph">Nachdem die Suche abgeschlossen ist, können Sie die Liste der Dateien für einen Bericht für die Anforderung von Datensubjekten herunterladen. Der Bericht sammelt Erkenntnisse aus den Daten und stellt die Daten zu rechtlichen Bedingungen bereit, die Sie an die Person zurücksenden können.</block>
   <block id="dd363d2f15cf39a647d862100dda0956" category="admonition">Die Suche nach Betroffenen wird derzeit in Datenbanken nicht unterstützt.</block>
-  <block id="b6d9bc7bd8d7f42a7f70429316f4c5a8" category="section-title">Suchen nach Betroffenen und Herunterladen von Berichten</block>
   <block id="95fbc0e5629d1a6565b155bfc1a72f1f" category="inline-link-macro">Alle persönlichen Informationstypen</block>
   <block id="22f358540a8137fabaf166237bf90665" category="paragraph">Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen, und laden Sie dann einen Dateilistenbericht oder einen DSAR-Bericht herunter. Suchen Sie nach <block ref="15f0bc476b1c646a9bfee9ca0397f926" category="inline-link-macro-rx"></block>.</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">Klicken Sie im BlueXP-Menü auf *Governance &gt; Klassifizierung*.</block>
@@ -454,7 +436,6 @@
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">Was geschieht, wenn das Daten-Tiering auf Ihren ONTAP Volumes aktiviert ist?</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="inline-link-macro">Richtlinien</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">Sie können auch Statusberichte von der Seite Governance und Untersuchung herunterladen, die Sie intern in Ihrem Unternehmen teilen können.</block>
-  <block id="399d9d9194e5aac73d00fdd68d88fed1" category="paragraph"><block ref="d2df47398690701c36c48ad6a1a06ca4" category="inline-link-macro-rx"></block>.</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">Arten von Quellsystemen und Datentypen</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">Die folgenden Fragen beziehen sich auf die Art des zu scannenden Speichers und die Arten der gescannten Daten.</block>
   <block id="335e4bf959c1a6bf79337e11e91e4b41" category="paragraph">* Arbeitsumgebungen:*</block>
@@ -553,7 +534,6 @@
   <block id="005b996ef864c5e5d692c055b435643b" category="list-text">Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">Systemgröße</block>
   <block id="360d214e899b88b8fe54a260668c2f48" category="cell">Spezifikationen</block>
-  <block id="6adf97f83acf6453d4a6a4b1070f3754" category="cell">Keine</block>
   <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="cell">Mittel</block>
   <block id="67c7201d970ee76fdf5320231dbc0367" category="cell">Langsamer Scan und kann nur bis zu 1 Million Dateien scannen.</block>
   <block id="2660064e68655415da2628c2ae2f7592" category="cell">Klein</block>
@@ -585,10 +565,8 @@
   <block id="7723c0a066a249ebd5a6009e28eb007d" category="list-text">Standard-Metadaten</block>
   <block id="6370c5a9859b827de2be9d30ec4b997e" category="list-text">Persönliche Daten</block>
   <block id="8c6847c1a3fee83b5a17b582397de2ec" category="inline-link-macro">Weitere Informationen zu personenbezogenen Daten</block>
-  <block id="9c86c531b04dd4c215f890b0c339c9e9" category="list-text">Personenbezogene Informationen wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. <block ref="3eee1df461628d1e5e60a06b8a695d25" category="inline-link-macro-rx"></block>.</block>
   <block id="83b358180e4e01f210434dd14618f990" category="list-text">Sensible persönliche Daten</block>
   <block id="902c63c889818696415465bcf8e0b76b" category="inline-link-macro">Erfahren Sie mehr über sensible persönliche Daten</block>
-  <block id="c007d54248409a2819a74cfc8f76c508" category="list-text">Besondere Arten sensibler Daten, wie etwa Gesundheitsdaten, ethnische Herkunft oder politische Ansichten, wie in der DSGVO und anderen Datenschutzvorschriften definiert <block ref="46c923ad4442ea22c406ccb68f476a0e" category="inline-link-macro-rx"></block>.</block>
   <block id="af1b98adf7f686b84cd0b443e022b7a0" category="list-text">Kategorien</block>
   <block id="6a92cf43085c9bfddf06d24557be9d88" category="inline-link-macro">Weitere Informationen zu Kategorien</block>
   <block id="f2d346b1bb7c1c85ab6f7f21e3666b9f" category="list-text">Typen</block>
@@ -602,7 +580,6 @@
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">Erfahren Sie mehr über BlueXP-Rollen</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">Benutzer mit bestimmten Rollen hinzufügen</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">Mapping-Scan oder Mapping &amp;amp; Klassifizierungsscan</block>
-  <block id="cc044854b72a7b1c98c22253b0aaedcd" category="section-title">Anzeigen des Scan-Status für Ihre Repositories</block>
   <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">Klicken Sie auf der Registerkarte Konfiguration auf die Schaltfläche *Konfiguration* für die Arbeitsumgebung.</block>
   <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">Ein Screenshot zeigt, wie Sie auf die Schaltfläche Konfiguration für eine Arbeitsumgebung klicken.</block>
   <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
@@ -610,7 +587,6 @@
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">Ein Screenshot, in dem angezeigt wird, ob Ihre Buckets gescannt werden, und der aktuelle Scanstatus.</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">Sie können den Cursor über das Diagramm in der Spalte _Scan Status_ bewegen, um die Anzahl der Dateien anzuzeigen, die in jedem Repository zugeordnet oder klassifiziert werden sollen (in diesem Beispiel Bucket).</block>
-  <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">Ändern des Scantyps für ein Repository</block>
   <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln.</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">Datenbanken können nicht auf mapping-only Scans gesetzt werden. Das Scannen von Datenbanken kann deaktiviert oder aktiviert sein; wobei ein dem Kartenwert und Klassifizieren entspricht.</block>
   <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird.</block>
@@ -619,7 +595,6 @@
   <block id="648f292c272072450d20c88db515b454" category="paragraph">Das folgende Beispiel zeigt diese Tastenleiste für ein Azure NetApp Files System.</block>
   <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">Ein Screenshot, der zeigt, wie die gleiche Scaneinstellung für alle Volumes in einer Arbeitsumgebung konfiguriert wird.</block>
   <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">Anhalten und Wiederaufnehmen des Scanvorgangs für ein Repository</block>
   <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">Sie können den Scanvorgang jederzeit fortsetzen.</block>
   <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">Klicken Sie auf der Seite Scankonfiguration auf die Schaltfläche Pause, um den Scanvorgang für ein Volume anzuhalten, oder drücken Sie die Wiederaufnahmetaste, um den Scanvorgang für ein zuvor angehaltenes Volume fortzusetzen.</block>
   <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">Ein Screenshot, der zeigt, wie das Scannen auf einem Volume angehalten und fortgesetzt werden kann.</block>
@@ -627,7 +602,6 @@
   <block id="04843fa750ddea2d46823d2d06cf3063" category="paragraph">Beachten Sie, dass einige Datenquellen die Funktion „Pause und Wiederaufnehmen“ in einem Menü bereitstellen, wie unten für SharePoint-Sites gezeigt.</block>
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">Ein Screenshot, der zeigt, wie das Scannen auf einer SharePoint-Website angehalten und fortgesetzt wird.</block>
   <block id="9e9d3c723f9f4d6ab1b9e783f2239e62" category="paragraph"><block ref="9e9d3c723f9f4d6ab1b9e783f2239e62" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f976bf2eff4504fae0fc49c0115018dc" category="section-title">Erneutes Scannen von Daten eines vorhandenen Repositorys</block>
   <block id="62796d34bcb4d2217e01776ba00d5ea0" category="list-text">Beim erneuten Scannen eines Verzeichnisses werden alle Dateien im Verzeichnis erneut gescannt, die Unterordner im Verzeichnis werden jedoch nicht erneut gescannt.</block>
   <block id="4e67a9dec79298e79d1abf05ea540fbc" category="list-text">Beim erneuten Scannen einer Freigabe werden nur die Metadaten der Freigabe erneut gescannt.</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">Es können maximal 1.000 Elemente gleichzeitig erneut in den Scanner aufgenommen werden.</block>
@@ -706,10 +680,8 @@
   <block id="b630526833dea659599fd366bda99475" category="cell">Deaktivieren Sie das Scannen auf allen Volumes</block>
   <block id="f7b5fb19f08d635e70f43c38cc7e0a67" category="cell">Klicken Sie im Bereich Überschrift auf *aus*</block>
   <block id="1456e5fc169a243504826034d14947c3" category="admonition">Neue Volumen, die der Arbeitsumgebung hinzugefügt wurden, werden automatisch nur gescannt, wenn Sie die Einstellung *Karte* oder *Karte &amp; Klassieren* im Steuerkursbereich festgelegt haben. Wenn Sie im Bereich Überschrift auf *Benutzerdefiniert* oder *aus* eingestellt sind, müssen Sie für jedes neue Volumen, das Sie in der Arbeitsumgebung hinzufügen, das Mapping und/oder das vollständige Scannen aktivieren.</block>
-  <block id="16ace13e9030ba8b43b8bf469be3ffff" category="doc">Anzeigen von Governance-Details zu den in Ihrem Unternehmen gespeicherten Daten</block>
   <block id="f7b090ae0361a33be68398c938094aa6" category="section-title">Dashboard für Governance</block>
   <block id="e5295f0dcd9974bcca40c2b38f856a76" category="paragraph">Das Governance-Dashboard liefert Informationen, mit denen Sie die Effizienz steigern und die Kosten für die in Ihren Storage-Ressourcen gespeicherten Daten kontrollieren können.</block>
-  <block id="0751626f1e414dc9007de23880868044" category="section-title">Speichern Von Geschäftschancen</block>
   <block id="66828697b142b247f0ff8f5fde69fed4" category="paragraph">Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten. Klicken Sie auf die einzelnen Elemente, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen.</block>
   <block id="da7e456f74e6e77de59afc145e42d85d" category="list-text">*Veraltete Daten* - Daten die zuletzt vor über 3 Jahren geändert wurden.</block>
   <block id="c25ad118eb89526500bf75c7b98bc13a" category="list-text">*Nicht-Geschäftsdaten* - Daten, die aufgrund ihrer Kategorie oder ihres Dateityps als nicht geschäftsbezogen gelten. Hierzu zählen folgende Optionen:</block>
@@ -742,14 +714,10 @@
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">Die meisten ermittelten Datenklassifizierungen</block>
   <block id="65da47b6ef0adda3d4c4ed54dfde4494" category="inline-link-macro">Dateitypen</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP-Etiketten</block>
-  <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>, <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>, und <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> In den gescannten Daten.</block>
   <block id="f57be897cf74c2ec8ac018d90999d9ef" category="inline-link-macro">Anzeigen von Dateien nach Kategorien</block>
-  <block id="659056cf2678e420a1509bbcc731edcf" category="paragraph">Siehe <block ref="21094466ac939ca1953a7d6cc6a49a1d" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind.</block>
   <block id="5e8739b0bd7e602b7f492e7398e41425" category="inline-link-macro">Anzeigen von Dateitypen</block>
-  <block id="604e7f8b88690e4a7309154d6c507dbe" category="paragraph">Siehe <block ref="0016b6cca33bb771b0fdf7e717a8f0f9" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="fb91597bc7333ab092ccda3e2c38ed9f" category="paragraph">Wenn Sie den Azure Information Protection (AIP) abonniert haben, können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Inhaltsetiketten anwenden. Durch die Überprüfung der am häufigsten verwendeten AIP-Etiketten, die Dateien zugeordnet sind, können Sie feststellen, welche Etiketten am häufigsten in Ihren Dateien verwendet werden.</block>
-  <block id="de1409a5455f1de6df444c6a03e3b4a6" category="paragraph">Siehe <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="211751cb447d335f31ff23a277ab83a3" category="inline-link">Erstellen eines Konnektors in AWS</block>
   <block id="b51a9186f236269e0e1206fe364d56ee" category="inline-link">Erstellen eines Connectors in Azure</block>
   <block id="24f7d339e21b63b3cef99a7c8f1236fe" category="inline-link">Erstellen eines Konnektors in GCP</block>
@@ -810,7 +778,6 @@
   <block id="4d73a075dbf1c56303ccda451f26cc3a" category="list-text">Ändern Sie die maximale CLI/API-Sitzungsdauer* von 1 Stunde auf 12 Stunden und speichern Sie diese Änderung.</block>
   <block id="d7bd77c61ee265322fab9869a5ec2219" category="list-text">Klicken Sie auf *Richtlinien anhängen* und dann auf *Richtlinien erstellen*.</block>
   <block id="fa35ffe79ce8cfa3c54cab66d30042aa" category="list-text">Erstellen Sie eine Richtlinie, die die Aktion „STS:AssumeRole“ enthält, und geben Sie den ARN der Rolle an, die Sie im Zielkonto erstellt haben.</block>
-  <block id="ce41a706cd7d768f91deb7b6d30a53a6" category="doc">Datenbankschemas werden gescannt</block>
   <block id="6ba6f62eaa922e3764dfb0e34527892f" category="paragraph">Stellen Sie sicher, dass Ihre Datenbank unterstützt wird und dass Sie über die erforderlichen Informationen verfügen, um eine Verbindung zur Datenbank herzustellen.</block>
   <block id="18145622150e1a809831297a4332c742" category="paragraph">Fügen Sie den Datenbankserver hinzu, auf den Sie zugreifen möchten.</block>
   <block id="5a810676627d546e80218e706059b849" category="paragraph">Wählen Sie die Schemata aus, die Sie scannen möchten.</block>
@@ -822,7 +789,6 @@
   <block id="9beea22282a9d43f642a2cef04f44e43" category="list-text">Dienstname (nur für den Zugriff auf Oracle-Datenbanken)</block>
   <block id="2605f71f51c7d6600726326b9237ebc5" category="list-text">Anmeldeinformationen, die einen Lesezugriff auf die Schemas ermöglichen</block>
   <block id="bc41579bb1dca18fecae30e859ceff50" category="paragraph">*Hinweis:* für MongoDB ist eine schreibgeschützte Administratorrolle erforderlich.</block>
-  <block id="87eba47abb2d2374d54845950994f58b" category="section-title">Hinzufügen des Datenbankservers</block>
   <block id="a4d915351d456b98e430d4b56f363817" category="paragraph">Fügen Sie den Datenbankserver dort hinzu, wo sich die Schemas befinden.</block>
   <block id="6a92144fbc213814d38b4fcd8dc7ba49" category="list-text">Klicken Sie auf der Seite Arbeitsumgebungen Konfiguration auf *Datenquelle hinzufügen* &gt; *Datenbank-Server hinzufügen*.</block>
   <block id="3a0e5c0a3596c957b4947c3009360640" category="inline-image-macro">Ein Screenshot der Seite Scankonfiguration, auf der Sie auf die Schaltfläche DB-Server hinzufügen klicken können.</block>
@@ -835,7 +801,6 @@
   <block id="975a926a0acffc9710e8ecd51beec54b" category="inline-image-macro">Ein Screenshot der Seite DB Server hinzufügen, sodass Sie die Datenbank identifizieren können.</block>
   <block id="7c6692b3993d10f33b7ccf14b4d921b5" category="paragraph"><block ref="7c6692b3993d10f33b7ccf14b4d921b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fc992e494348eb4ec6a8872b8dde59da" category="paragraph">Die Datenbank wird zur Liste der Arbeitsumgebungen hinzugefügt.</block>
-  <block id="296c70d3038449465934d85d8968a541" category="section-title">Aktivieren und Deaktivieren von Compliance-Scans auf Datenbankschemas</block>
   <block id="b7a17432eb09c32a574991d9b6b0be00" category="paragraph">Sie können jederzeit das vollständige Scannen Ihrer Schemas anhalten oder starten.</block>
   <block id="bee9dc960933af9ecc3b6f30878d28e4" category="admonition">Es besteht keine Möglichkeit, nur mappingbare Scans für Datenbankschemas auszuwählen.</block>
   <block id="66a2cf8e7e33f076420fc7afe01ab7b3" category="list-text">Klicken Sie auf der Seite _Configuration_ auf die Schaltfläche *Configuration* für die zu konfigurierende Datenbank.</block>
@@ -852,7 +817,6 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">FSX für ONTAP</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">CIFS-File-Shares von anderen Anbietern (keine NFS-File-Shares)</block>
-  <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">Verbindung zu Ihrem Active Directory-Server herstellen</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">Sie müssen bereits ein Active Directory für die Benutzer in Ihrem Unternehmen eingerichtet haben.</block>
   <block id="6fcd963bedffc4e92b9378afcac66a5a" category="list-text">Sie müssen über die folgenden Informationen für das Active Directory verfügen:</block>
   <block id="7078363248b15fb54dcc0ed38080ad0d" category="list-text">DNS-Server-IP-Adresse oder mehrere IP-Adressen</block>
@@ -876,7 +840,6 @@
   <block id="c91ca3d20e968a1690e1471dfecc0dda" category="cell">Globaler Katalog über SSL</block>
   <block id="2778c2bfe3f33a69fca329b57f1593af" category="list-text">Geben Sie im Dialogfeld mit Active Directory verbinden die Active Directory-Details ein, und klicken Sie auf *Verbinden*.</block>
   <block id="d612613d84fc2070d51661d666c6e11b" category="paragraph">Sie können bei Bedarf mehrere IP-Adressen hinzufügen, indem Sie auf *IP hinzufügen* klicken.</block>
-  <block id="2e6b92424c978f0e1635007c6ce96700" category="section-title">Verwalten Ihrer Active Directory-Integration</block>
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">Wenn Sie Werte in Ihrer Active Directory-Integration ändern müssen, klicken Sie auf die Schaltfläche *Bearbeiten* und nehmen Sie die Änderungen vor.</block>
   <block id="e0beb155f64410441b0e76c0d0350422" category="paragraph">Sie können die Integration auch löschen, wenn Sie sie nicht mehr benötigen, indem Sie auf die klicken <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Und dann *Active Directory entfernen*.</block>
   <block id="7516ed4bcabc82b8b67177aff48fb5b0" category="doc">Google Drive-Konten werden durchsucht</block>
@@ -1028,11 +991,9 @@
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">Wenn die Menge der Daten, die Sie scannen, erreicht hat 80% der lizenzierten Kapazität, und wieder, wenn Sie das Limit erreicht haben</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">30 Tage, bevor eine Lizenz abläuft, und wieder, wenn die Lizenz abläuft</block>
   <block id="379dea20c8734742bd3f9c78de134135" category="paragraph">Verwenden Sie das Chat-Symbol rechts unten in der BlueXP-Schnittstelle, um Ihre Lizenz zu verlängern, wenn diese Warnungen angezeigt werden.</block>
-  <block id="4264ca6efffa4cf6fdf127440dfdd525" category="doc">Management privater Daten</block>
   <block id="681a30d34dc88519fc9d3b5f02853ef5" category="list-text">Sie können Dateien in eine Ziel-NFS-Freigabe kopieren, wenn Sie eine Kopie bestimmter Daten erstellen und sie an einen anderen NFS-Speicherort verschieben möchten.</block>
   <block id="8cd71862f8a8c010084d3687780ba841" category="list-text">Sie können Dateien löschen, die als unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder die Sie als Duplikat identifiziert haben.</block>
   <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">Daten von Google Drive-Konten können derzeit keine dieser Funktionen nutzen.</block>
-  <block id="e1ceec320e11017e93f764dd05d20aa0" category="section-title">Quelldateien werden kopiert</block>
   <block id="274ca76213f0f731f350a5f61c91b264" category="list-text">*Kopieren Sie Dateien* aus den gleichen oder anderen Volumes oder Datenquellen in eine Ziel-NFS-Freigabe.</block>
   <block id="73d4c457b0f8ca0f7be75dc85bba7f0f" category="paragraph">Dies ist nützlich, wenn Sie eine Kopie bestimmter Daten erstellen und sie an einen anderen NFS-Speicherort verschieben möchten.</block>
   <block id="d5c3d70f964953312816ce98d2f4f5d1" category="list-text">*Ein ONTAP-Volume* zu einem neuen Volume im selben Aggregat klonen, aber nur ausgewählte Dateien aus dem Quell-Volume in das neue geklonte Volume einbeziehen.</block>
@@ -1054,7 +1015,6 @@
   <block id="577f7e077dfc06e3803431bf95bd8d3b" category="paragraph">Beachten Sie, dass Sie bei der Anzeige der Metadatendetails für eine Datei auch eine einzelne Datei kopieren können. Klicken Sie einfach auf *Datei kopieren*.</block>
   <block id="0847b25e23803d73ff0a2e412a366eef" category="inline-image-macro">Ein Screenshot, in dem die Auswahl der Schaltfläche „Datei kopieren“ aus den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“ angezeigt wird.</block>
   <block id="fb1ff7732bccd8da11bd09f898a27956" category="paragraph"><block ref="fb1ff7732bccd8da11bd09f898a27956" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2c0dd6d9ef4836e8fab2a426a617d531" category="section-title">Klonen von Volume-Daten auf einem neuen Volume</block>
   <block id="6cf0ba5e69af525a045e9a0a7857af7c" category="paragraph">Das neue Volume wird im selben Aggregat erstellt wie das Quell-Volume. Stellen Sie vor Beginn dieser Aufgabe sicher, dass genügend Platz für dieses neue Volume im Aggregat vorhanden ist. Wenden Sie sich bei Bedarf an Ihren Storage-Administrator.</block>
   <block id="1612b9175941a981786b5c32de4a8abc" category="paragraph">*Hinweis:* FlexGroup Volumes können nicht geklont werden, da sie nicht von FlexClone unterstützt werden.</block>
   <block id="b13afea2d6a48fa4e12da584544f7c62" category="list-text">Alle ausgewählten Dateien müssen sich vom selben Volume befinden, und das Volume muss online sein.</block>
@@ -1073,7 +1033,6 @@
   <block id="2fe40b402eb4dc28515dfbbf411e5e9e" category="paragraph">Das neue geklonte Volume wird in demselben Aggregat erstellt wie das Quell-Volume.</block>
   <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">Sie können den Status des Klonvorgangs in anzeigen <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>.</block>
   <block id="d25aba80994e98cacd011b113628101b" category="inline-link-macro">Aktivieren Sie manuell das Scannen auf dem Volumen</block>
-  <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">Kopieren und Synchronisieren von Quelldateien auf ein Zielsystem</block>
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten befinden, können nicht kopiert und synchronisiert werden.</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">Zum Kopieren und Synchronisieren von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen.</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">Alle ausgewählten Dateien müssen aus demselben Quell-Repository stammen (ONTAP Volume, S3 Bucket, NFS oder CIFS-Freigabe usw.).</block>
@@ -1112,7 +1071,6 @@
   <block id="52cd2f737a295e43ee2f51fe52c772a4" category="list-text">Für NFS-Daten: Die Exportrichtlinie muss mit Schreibberechtigungen definiert werden.</block>
   <block id="2a500e3681b7e207d0d6c159ff2008ab" category="list-text">Für CIFS-Daten - die CIFS-Anmeldeinformationen benötigen Schreibberechtigungen.</block>
   <block id="e9d85b8e3ea5257d3468eb6f787a1fcd" category="list-text">Für S3-Daten muss die IAM-Rolle die folgende Berechtigung enthalten:<block ref="ec68e11afcd3e390ebf5080e8af5b735" prefix=" " category="inline-code"></block>.</block>
-  <block id="6a73b2e7e212b654de2a1932805f983e" category="section-title">Quelldateien werden manuell gelöscht</block>
   <block id="b625bf3592e2928981ee61c2a8d659a8" category="list-text">Zum Löschen von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen.</block>
   <block id="982e0ea8ac129cb8e1614b1eb919a238" category="list-text">Sie können maximal 100,000 Dateien gleichzeitig löschen.</block>
   <block id="d14aadac54b4954b4a906556c2e19bd5" category="list-text">Wählen Sie im Bereich Ergebnisse der Datenuntersuchung die Datei oder die Dateien aus, die Sie löschen möchten.</block>
@@ -1124,7 +1082,6 @@
   <block id="73b79920d299fa15b37932692eeed2d3" category="paragraph">Beachten Sie, dass Sie auch eine einzelne Datei löschen können, wenn Sie sich die Metadatendetails für eine Datei ansehen. Klicken Sie einfach auf *Datei löschen*.</block>
   <block id="78933a7726c13f608f7d7da25c47d184" category="inline-image-macro">Ein Screenshot, in dem die Auswahl der Schaltfläche Datei löschen aus den Metadatendetails für eine Datei auf der Seite Datenuntersuchung angezeigt wird.</block>
   <block id="1ae48305acc0dd19cfd8f7461fcc887a" category="paragraph"><block ref="1ae48305acc0dd19cfd8f7461fcc887a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c76c06532ae9e59546a748c7233e4451" category="section-title">Quelldateien werden automatisch mithilfe von Richtlinien gelöscht</block>
   <block id="809f64202f1380bfa162de2b48ae05c0" category="paragraph">Nur Kontoadministratoren können eine Richtlinie zum automatischen Löschen von Dateien erstellen.</block>
   <block id="1911b5e2b0381b00e1ac45e47f734440" category="admonition">Alle Dateien, die der Richtlinie entsprechen, werden einmal am Tag dauerhaft gelöscht.</block>
   <block id="31d61da3269b125b8a056a011eb7348b" category="list-text">Aktivieren Sie das Kontrollkästchen "Dateien, die dieser Richtlinie entsprechen automatisch löschen" und geben Sie *dauerhaft löschen* ein, um zu bestätigen, dass Dateien dauerhaft von dieser Richtlinie gelöscht werden sollen.</block>
@@ -1299,7 +1256,6 @@
   <block id="a010805627ab286c5d83a11d886cf170" category="paragraph">Wenn Benutzer das Unternehmen verlassen oder sich ihre E-Mail-Adresse ändert, können Sie einzelne OneDrive Benutzer davon entfernen, dass ihre Dateien jederzeit gescannt werden können. Klicken Sie einfach auf *OneDrive User entfernen* von der Konfigurationsseite.</block>
   <block id="ed026517be9fe6d05aaa49ea802eff93" category="inline-image-macro">Ein Screenshot zeigt, wie ein einzelner Benutzer die gescannten Dateien entfernen kann.</block>
   <block id="c10114c9189f598289f5615e85beb064" category="paragraph"><block ref="c10114c9189f598289f5615e85beb064" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59da637a5daa4fdc3901cb939fca6c7e" category="doc">Anzeigen von Compliance-Berichten</block>
   <block id="012baeb8540b8dedd6d71e5dd0f531d0" category="inline-xref">Wählen Sie diese Arbeitsumgebungen aus</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="list-text">Die in diesem Abschnitt beschriebenen Berichte sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan durchgeführt wurde, können nur den Daten-Mapping-Bericht generieren.</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">Datenschutzrisiko-Assessment-Bericht</block>
@@ -1310,7 +1266,6 @@
   <block id="50b1479ebaf14151aa48027e51cf50af" category="list-text">Eine Aufschlüsselung der gefundenen Arten von personenbezogenen Daten sowie der Kategorien von Daten.</block>
   <block id="dac9a37f6b8a5f930c7c6a2c881ac27d" category="list-text">Betroffene in dieser Beurteilung</block>
   <block id="d18b36601a861dcbabfa55ca89a58214" category="list-text">Die Anzahl der Personen, nach Ort, für die nationale Kennungen gefunden wurden.</block>
-  <block id="05d58f8b36588ec9efc20f3482c649ad" category="section-title">Generieren des Datenschutzrisikobewertungsberichts</block>
   <block id="df021c142a7f1ae824eb0a27da4d5430" category="list-text">Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *Privacy Risk Assessment* unter *Reports*.</block>
   <block id="774c84e5f21e54f29a77614631e4f82d" category="inline-image-macro">Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können.</block>
   <block id="f333577cc4eb4e75ec2cbb670cbf0d59" category="paragraph"><block ref="f333577cc4eb4e75ec2cbb670cbf0d59" category="inline-image-macro-rx" type="image"></block></block>
@@ -1353,7 +1308,6 @@
   <block id="9be153c396f5d81a0651e606a15b97a6" category="list-text">Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Ihre Kreditkartendaten nicht länger aufbewahren sollten, als Sie sie bearbeiten müssen.</block>
   <block id="6e8eeb60988a6a82d5ccdc9189a04ab1" category="list-text">Verteilung der Kreditkarteninformationen</block>
   <block id="07fbe98a65e816ddb6d2350071bcab9d" category="list-text">Die Arbeitsumgebungen, in denen Kreditkartendaten gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.</block>
-  <block id="c574f719f3835448fef801f6174f2213" category="section-title">PCI DSS-Bericht wird erstellt</block>
   <block id="82ee2415e5e4e15c63902d6a550b7af1" category="list-text">Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *PCI DSS Report* unter *Reports*.</block>
   <block id="0c82783c4e63c4ad190a9cc165c2de20" category="paragraph"><block ref="0c82783c4e63c4ad190a9cc165c2de20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e4972d194dcdd01c957ef6b3398d9e2" category="section-title">HIPAA-Bericht</block>
@@ -1368,7 +1322,6 @@
   <block id="475d2ce86284eab3c5230fef8becebe3" category="list-text">Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Gesundheitsinformationen nicht länger aufbewahren sollten, als Sie sie verarbeiten müssen.</block>
   <block id="a6287f4c37d3aeaddd03675602115ba3" category="list-text">Verteilung von Gesundheitsinformationen</block>
   <block id="8f8c34ce8b2510cd1c1e29b5a17cd92e" category="list-text">In den Arbeitsumgebungen, in denen die Gesundheitsdaten gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.</block>
-  <block id="bdb2200dccd3bf8bccbda3121ec3619d" category="section-title">HIPAA-Bericht wird erstellt</block>
   <block id="f6bcba6045f642cc0b7c93a339fe0eb7" category="list-text">Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *HIPAA Report* unter *Reports*.</block>
   <block id="0a849af88f16bfeec242814d55316f73" category="inline-image-macro">Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf HIPAA klicken können.</block>
   <block id="e647377f6010170b6305b0a8ef0e26d6" category="paragraph"><block ref="e647377f6010170b6305b0a8ef0e26d6" category="inline-image-macro-rx" type="image"></block></block>
@@ -1380,9 +1333,7 @@
   <block id="e22f9909ed0cc14af3ae41c9e280cf13" category="list-text">Führt die Anzahl der Dateien auf, die in bestimmten Größenbereichen in Ihren Arbeitsumgebungen vorhanden sind.</block>
   <block id="f12b42eece54a56ffab836a42eb37488" category="list-text">Dateitypen</block>
   <block id="7d8121f1bc518fb0e6e184fba09d6b2b" category="list-text">Listet die Gesamtzahl der Dateien und die genutzte Kapazität für jeden Dateityp auf, der in Ihren Arbeitsumgebungen gespeichert ist.</block>
-  <block id="e880ed205f16cce0e493e65a4bcedcf6" category="section-title">Datenzuordnungsbericht wird erstellt</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">Bericht Zur Datenuntersuchung</block>
-  <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">Generieren des Datenuntersuchungsberichts</block>
   <block id="0c99fdc0d05bf34d6834c6ef3cd92bb3" category="inline-image-macro">Schaltfläche „Download“</block>
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">Klicken Sie auf der Seite „Untersuchung von Daten“ auf <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> Oben rechts auf der Seite klicken.</block>
   <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.</block>
@@ -1418,7 +1369,6 @@
   <block id="24588d9873aeb10a7d918f9f39a921ad" category="list-text">Storage-Repository (z. B. ein Schema)</block>
   <block id="ab8a843d390e68d7263eb4d3758cbb94" category="list-text">Anzahl der Spalten</block>
   <block id="8914a2ab502c2e892c90f9e40240866c" category="list-text">Zeilenanzahl</block>
-  <block id="20e8135f6b31b5442360d1284197abb8" category="section-title">Auswählen der Arbeitsumgebungen für Berichte</block>
   <block id="6033e7117e1fdf38561d007aabe17e6b" category="list-text">Klicken Sie auf das Dropdown-Menü Filter, wählen Sie die Arbeitsumgebungen aus, für die Sie Daten anzeigen möchten, und klicken Sie auf *Ansicht*.</block>
   <block id="a3b67f96a0c9278d4984faae4a248582" category="inline-image-macro">Ein Screenshot zur Auswahl der Arbeitsumgebungen für die Berichte, die ausgeführt werden sollen.</block>
   <block id="71750f5e2f8e92320feced026981497e" category="paragraph"><block ref="71750f5e2f8e92320feced026981497e" category="inline-image-macro-rx" type="image"></block></block>
@@ -1524,9 +1474,6 @@
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">Ein Screenshot zeigt, wie eine einzelne Dateifreigabe aus dem Scannen ihrer Dateien entfernt wird.</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">Sehen Sie sich die Liste aller Filter an, mit denen Sie Ihre Daten untersuchen können</block>
-  <block id="d244d9b7396fa074e6a948934df3072c" category="doc">Anzeigen von Compliance-Details zu den in Ihrem Unternehmen gespeicherten Daten</block>
-  <block id="331af28d8562855df8ae24482b6e7207" category="paragraph">Wenn Sie Daten nur für einige der Arbeitsumgebungen sehen möchten, <block ref="e9501f07ec1c7b7f2758fbc3d1e77ae6" category="inline-xref-macro-rx"></block>.</block>
-  <block id="4dd66ca96fb96e8e0b7ea1d39b21b6d2" category="section-title">Anzeigen von Dateien mit persönlichen Daten</block>
   <block id="99c411b30c0d86f95c6416318f98106b" category="inline-link-macro">Die vollständige Liste finden Sie hier</block>
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">Wenn Sie außerdem einen zu scannenden Datenbankserver hinzugefügt haben, können Sie mit der Funktion _Data Fusion_ Ihre Dateien scannen, um festzustellen, ob eindeutige Identifikatoren aus Ihren Datenbanken in diesen Dateien oder anderen Datenbanken gefunden werden. Siehe <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">Der Tisch der personenbezogenen Daten</block>
@@ -1543,7 +1490,6 @@
   <block id="67524a6d2ea2d542c817bd783e914070" category="paragraph"><block ref="67524a6d2ea2d542c817bd783e914070" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">Ein Screenshot mit detaillierten Informationen in Verzeichnissen, nachdem Sie auf Ergebnisse untersuchen geklickt haben.</block>
   <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">Anzeigen von Dateien mit vertraulichen persönlichen Daten</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">Artikel 9 und 10 der DSGVO</block>
   <block id="a8dc04f8b2b452296a4b47a8a5006a86" category="admonition">Nur Englisch wird beim Scannen sensibler personenbezogener Daten unterstützt. Support für weitere Sprachen wird später hinzugefügt.</block>
   <block id="ec3eb784516048a066188028a6d8bd38" category="list-text">Um die Details für alle sensiblen persönlichen Daten zu untersuchen, klicken Sie auf das Symbol neben dem Prozentsatz sensibler personenbezogener Daten.</block>
@@ -1558,51 +1504,37 @@
   <block id="9aa9abf60f82df3e21d796f9168c36b0" category="list-text">Klicken Sie auf das Symbol *Ergebnisse untersuchen* für eine der 4 Top-Kategorien direkt im Hauptbildschirm oder klicken Sie auf *Alle anzeigen* und dann auf das Symbol für eine der Kategorien.</block>
   <block id="613f07741bbd9071b1b79a6196853b30" category="inline-image-macro">Ein Screenshot des Dialogfelds „Kategorien“, in dem Sie neben einer Kategorie auf das Symbol „Ergebnisse untersuchen“ klicken können.</block>
   <block id="7be6351deec8b8b967edf1bf3befd4ee" category="paragraph"><block ref="7be6351deec8b8b967edf1bf3befd4ee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d467ba6d6db79ffd075794bd2ba9cb62" category="section-title">Anzeigen von Dateien nach Dateitypen</block>
   <block id="a568986c28662b111bad8be3bc7def2a" category="inline-link-macro">Siehe die Liste der Dateitypen</block>
   <block id="dc3104783e08badc94118d53e3958d1c" category="paragraph">Sie können beispielsweise CAD-Dateien speichern, die sehr sensible Informationen über Ihr Unternehmen enthalten. Wenn diese nicht gesichert sind, können Sie die Kontrolle über vertrauliche Daten übernehmen, indem Sie Berechtigungen beschränken oder Dateien an einen anderen Speicherort verschieben.</block>
   <block id="6ca0bce1ee7983409875080431586833" category="list-text">Klicken Sie auf das Symbol *Ergebnisse untersuchen* für einen der 4 wichtigsten Dateitypen direkt vom Hauptbildschirm aus, oder klicken Sie auf *Alle anzeigen* und dann auf das Symbol für einen der Dateitypen.</block>
   <block id="52cb04713493959b4bbe6583f1b9c4aa" category="inline-image-macro">Ein Screenshot des Dialogfelds Dateitypen, in dem Sie auf das Symbol Ergebnisse untersuchen neben einem Dateityp klicken können.</block>
   <block id="a34177e7f46c4653a4d5f3b70742cf17" category="paragraph"><block ref="a34177e7f46c4653a4d5f3b70742cf17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="054f4bee64257e10c174c4d647399308" category="section-title">Anzeigen von Dateimetadaten</block>
   <block id="f934a72c8aa162f28cd2451333d31995" category="paragraph">Klicken Sie im Bereich „Untersuchungsergebnisse“ auf <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> Für jede einzelne Datei, um die Dateimetadaten anzuzeigen.</block>
   <block id="c545ce144b1f4d763f30d9b729c1590c" category="paragraph"><block ref="c545ce144b1f4d763f30d9b729c1590c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa4ba8b621d22449a2723e4175ff5c9d" category="inline-link-macro">Erstellen von Richtlinien</block>
   <block id="f376a83a4ecd9ff606d32bca5349b2e9" category="paragraph">Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Volume-Name, die Berechtigungen und AIP-Labels nicht für Datenbankdateien relevant.</block>
   <block id="adbb2407fea1d2f51e23826ed34596b8" category="paragraph">Wenn Sie die Details für eine einzelne Datei anzeigen, gibt es einige Aktionen, die Sie für die Datei ergreifen können:</block>
-  <block id="39818cbec944397bbac9753bbceaeedd" category="list-text">Sie können die Datei verschieben oder in eine beliebige NFS-Freigabe kopieren. Siehe <block ref="590341e5db729864a837ad7726036455" category="inline-link-macro-rx"></block> Und <block ref="7ba2a508f70171076e09d2a9526d5476" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
-  <block id="4457ece976e0a49a8f68c9bd26bd8a1b" category="list-text">Sie können die Datei löschen. Siehe <block ref="cd2ebc624881f1a89aa3bf20cdd7440c" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="5e1885042ce945f860120053c61ffb54" category="inline-link-macro">Tags werden angewendet</block>
-  <block id="850dcc64352d6ec82fb2c15e439c169b" category="list-text">Sie können der Datei einen bestimmten Status zuweisen. Siehe <block ref="8a1b9fcafc24ba7d6db53f4a655335df" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">Zuweisen von Benutzern zu einer Datei</block>
-  <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">Sie können die Datei einem BlueXP-Benutzer zuweisen, damit er für alle Follow-up-Aktionen verantwortlich ist, die in der Datei ausgeführt werden müssen. Siehe <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
-  <block id="90915c385560094095567649cbd732aa" category="section-title">Anzeigen von Berechtigungen für Dateien und Verzeichnisse</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche gilt nur für Daten in CIFS Shares, SharePoint Online, SharePoint On-Premises und OneDrive.</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">So geht's</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">Ein Screenshot mit detaillierten Dateiberechtigungen.</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">Klicken Sie auf <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> Für jede Gruppe, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.</block>
   <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">Darüber Hinaus Sie können auf den Namen eines Benutzers oder einer Gruppe klicken und die Untersuchungsseite wird mit dem Namen dieses Benutzers oder dieser Gruppe angezeigt, der im Filter „Benutzer-/Gruppenberechtigungen“ ausgefüllt ist, sodass Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.</block>
-  <block id="c928af120c06b9565d871ba33db1c7f5" category="section-title">In den Storage-Systemen werden nach doppelten Dateien gesucht</block>
   <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.</block>
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">Löschen Sie die Datei</block>
-  <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.</block>
-  <block id="05a9e2e2902a6ea5dacdfe3be87085eb" category="section-title">Anzeigen aller duplizierten Dateien</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">Wenn Sie eine Liste aller Dateien wünschen, die in den Arbeitsumgebungen und Datenquellen, die Sie scannen, dupliziert werden, können Sie den Filter *Duplicates &gt; has Dubletten* auf der Seite Data Investigation verwenden.</block>
-  <block id="7ae09bb031844e25b6bd333f8e364d99" category="section-title">Anzeigen, ob eine bestimmte Datei doppelt vorhanden ist</block>
   <block id="481ee5e06ca7a72cfe4a783b39c7d0e3" category="paragraph">Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, klicken Sie im Bereich „Untersuchungsergebnisse“ auf <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> Für jede einzelne Datei, um die Dateimetadaten anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.</block>
   <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">Klicken Sie auf *Details anzeigen*, um die Liste der duplizierten Dateien anzuzeigen und wo sie sich befinden. Klicken Sie auf der nächsten Seite auf *Duplicates anzeigen*, um die Dateien auf der Untersuchungsseite anzuzeigen.</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">Ein Screenshot zeigt, wo sich doppelte Dateien befinden.</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden und direkt auf der Untersuchungsseite eingeben, um jederzeit nach einer bestimmten doppelten Datei zu suchen - oder Sie können sie in einer Richtlinie verwenden.</block>
-  <block id="c03eb1ff575a67ef8cf7b0cbe6f24dad" category="section-title">Anzeigen von Dashboard-Daten für bestimmte Arbeitsumgebungen</block>
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">Ein Screenshot zeigt, wie die Untersuchungsergebnisse für bestimmte Arbeitsumgebungen gefiltert werden.</block>
   <block id="7675f7474f9e9ad03c6a7bb35d2d9fad" category="paragraph"><block ref="7675f7474f9e9ad03c6a7bb35d2d9fad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten. Dies ist eine sehr leistungsstarke Funktion, denn nachdem Sie die Daten verfeinert haben, können Sie die Buttonleiste oben auf der Seite verwenden, um eine Vielzahl von Aktionen durchzuführen, wie das Kopieren von Dateien, Verschieben von Dateien, Hinzufügen eines Tags oder AIP-Label zu den Dateien und vieles mehr.</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">Ein Screenshot der verfügbaren Filter, wenn die Ergebnisse auf der Untersuchungsseite verfeinert werden.</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">Auf den Registerkarten der obersten Ebene können Sie Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder aus Datenbanken (strukturierte Daten) anzeigen.</block>
-  <block id="812ce4d3a07734d12cdaa3ed2010e22f" category="list-text">Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">Filtern</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">Details</block>
   <block id="d55969f99169fb1ccecedd45e530342d" category="cell">Analysestatus</block>
@@ -1756,7 +1688,6 @@
   <block id="0ffaed104783fa77dca7b463b63d6a3d" category="cell">Wählen Sie einen oder mehrere Kategoriebereiche aus, um anzuzeigen, welche Dateien und Ordner für eine bestimmte Anzahl von Benutzern geöffnet sind.</block>
   <block id="71336345482d82fac965748940e9723b" category="cell">Wählen Sie einen oder mehrere Benutzernamen und/oder Gruppennamen aus, oder geben Sie einen Teilnamen ein.</block>
   <block id="ff149397e3b0b14099015d624d39c42d" category="cell">Geben Sie den Namen des Dateieigentümers ein.</block>
-  <block id="5e11b9767e7bd2c58f38d60ac9f67f80" category="cell">Wählen Sie <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> Die Ihren Dateien zugewiesen sind.</block>
   <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">Wählen Sie spezielle Arbeitsumgebungen aus.</block>
   <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">Wählen Sie das Speicher-Repository aus, z. B. ein Volume oder ein Schema.</block>
   <block id="01c40954af185b794e35d719875d3a7a" category="cell">Wählen Sie die aus <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block>.</block>
@@ -1770,7 +1701,6 @@
   <block id="55e421a96ef89113e0aa27aebfaa73aa" category="cell">Wählen Sie einen Zeitbereich aus, in dem die Datei zuletzt geändert wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern.</block>
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">Wählen Sie aus, ob die Datei in den Repositorys dupliziert wird.</block>
   <block id="6c19be59705b1afb4e5b6315b9a0d84e" category="cell">Geben Sie den Hash der Datei ein, um eine bestimmte Datei zu finden, selbst wenn der Name anders ist.</block>
-  <block id="fdd455d725fb278b4fe9d43c83722f88" category="cell">Wählen Sie <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> Die Ihren Dateien zugewiesen sind.</block>
   <block id="396e873f2847657ab91854cd3443d47e" category="cell">Wählen Sie den Namen der Person aus, der die Datei zugeordnet ist.</block>
   <block id="542947c94dac5ea97aa3f3323ad86f25" category="cell">Australische Führerschein</block>
   <block id="15ed3f23837f7e98eb87015b76063af1" category="cell">Führerschein in Neuseeland</block>
@@ -1895,18 +1825,13 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-Standard-16</block>
   <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">Fügen Sie einen Knoten hinzu, um das Scannen einer bestimmten Datenquelle oder einer bestimmten Gruppe von Datenquellen zu unterstützen (typischerweise basierend auf dem Speicherort).</block>
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">Sie müssen über die IP-Adresse oder den Hostnamen des Connector-Systems, Ihre NetApp Account-ID, Connector Client-ID und Benutzer-Zugriffstoken verfügen. Wenn Sie planen, Scannergruppen zu verwenden, müssen Sie die ID der Arbeitsumgebung für jede Datenquelle in Ihrem Konto kennen. Weitere Informationen finden Sie unten unter *_Voraussetzungen Schritte_*.</block>
-  <block id="a9cb7c21103eb81a473453f19f0d7b20" category="list-text">*Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. <block ref="440fccf34bc4c2a440d9bf3f906df06d" category="inline-link-macro-rx"></block>.</block>
   <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">Klicken Sie Auf <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> Um mehr über Richtlinien zu erfahren.</block>
   <block id="f7e44fd8c27ddf80c242fb3dae245422" category="paragraph">Der Abschnitt _Data Overview_ bietet einen schnellen Überblick über alle zu scannenden Daten. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Datengröße und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe <block ref="53e5c76c1fe1c6ab36aa624f6960e384" category="inline-xref-macro-rx"></block> Alle Details zu diesem Bericht.</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird.</block>
   <block id="7a9d38d1340793fbf851372aaba4270d" category="paragraph"><block ref="7a9d38d1340793fbf851372aaba4270d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5810a6765696da7b12979cf90b9b287c" category="list-text">Wenn BlueXP die Lizenz nicht automatisch aktualisieren kann (z. B. wenn sie auf einer dunklen Website installiert ist), müssen Sie die Lizenzdatei manuell hochladen.</block>
-  <block id="7c95933908ae16d594ec73affc0831bb" category="doc">Zuweisen von Richtlinien zu Ihren Daten</block>
   <block id="d8cea64df56dbd6c2f05daa03963a550" category="list-text">Definieren Sie auf der Seite „Untersuchung von Daten“ die Suche, indem Sie alle Filter auswählen, die Sie verwenden möchten. Siehe <block ref="e79f6c0a50d03630f8bf728699f2d526" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
-  <block id="9b572ee77209685d61af9e6d7a6287c9" category="list-text">Aktivieren Sie optional das Kontrollkästchen, um Dateien automatisch zu löschen, die mit den Richtlinieparametern übereinstimmen. Weitere Informationen zu <block ref="a7e3716ae3f42340eb342f21d0a53141" category="inline-xref-macro-rx"></block>.</block>
-  <block id="87c229724df460ccb467ced11416411e" category="list-text">Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungen-E-Mails an BlueXP-Benutzer in Ihrem Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird. Weitere Informationen zu <block ref="f66d6203e0ba3f0c23c1b4e6c30ea659" category="inline-xref-macro-rx"></block>.</block>
   <block id="330f8b46c48484fc9016a8247fb99ba3" category="inline-link-macro">Automatische Verwendung von Richtlinien</block>
-  <block id="4c72269fd9794f82c5bab4ab12e041f1" category="paragraph">Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder <block ref="6099f220852bc903a62b6f3cb3ea01f8" category="inline-link-macro-rx"></block>.</block>
   <block id="80ce077edb1be50ba22951913b78148c" category="doc">Metadaten, die aus Datenquellen erhoben werden</block>
   <block id="f22df8f0b5591e83e42546cc1ff8a3d7" category="cell">*Metadaten*</block>
   <block id="4e7da840816931928beff62cd45584f2" category="cell">*CIFS*</block>
@@ -1939,8 +1864,6 @@
   <block id="158e99247d19480d767e25e00d129553" category="section-title">Filtern Sie Daten nach Analysestatus</block>
   <block id="9c7541a95b9333c21b847910917cc789" category="paragraph">Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupliziert wurden.</block>
   <block id="f29d7c200ca42589e2a229aaea31ee81" category="paragraph">Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.</block>
-  <block id="3cb1844e1b6238f77e2e51aff4e9f4d6" category="list-text">Sie können den „Dateieigentümer“ verwenden. <block ref="11e66926bceae3c2a281c0952ca162a2" category="inline-link-macro-rx"></block> Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.</block>
-  <block id="10747afcf7031178a4a06e679b60a179" category="list-text">Sie sehen <block ref="96d05cdc332725fcae471007cae34e27" category="inline-link-macro-rx"></block> Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.</block>
   <block id="6b60aa2efdd7dd58a41b7ff64ca17b7a" category="list-text">Ermöglicht Ihnen, einen Bericht aller Dateien zu extrahieren, die Informationen über den spezifischen Namen oder die persönliche Kennung eines Betroffenen enthalten. <block ref="687b2924920d296441b75037f5a19f32" category="inline-link-macro-rx"></block>.</block>
   <block id="0de3b44db953b32901a8c86899f466bf" category="list-text">Stellt Informationen zur Größe und Anzahl der Dateien in Ihren Arbeitsumgebungen bereit. Dazu zählen Nutzungskapazität, Alter der Daten, Größe der Daten und Dateitypen. <block ref="32adca559d3a8c83bce5149c424376df" category="inline-link-macro-rx"></block>.</block>
   <block id="fa5af203c1129bb563bbf7f09ad2de8e" category="paragraph">Ja. In Verbindung mit der Funktion Richtlinien können Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer (täglich, wöchentlich oder monatlich) oder andere E-Mail-Adressen senden, wenn eine Richtlinie Ergebnisse liefert, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Weitere Informationen zu <block ref="52a90c0911f2be2601275d578a93ce51" category="inline-link-macro-rx"></block>.</block>
@@ -1959,7 +1882,6 @@
   <block id="1c30d6a3b54fde82807f5962774d68d0" category="paragraph"><block ref="1c30d6a3b54fde82807f5962774d68d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="162627490dd9e3bfa1451fcbd693e2df" category="list-text">Für NFS - die Ports 111 und 2049.</block>
   <block id="ebc566be80d2aa97a2d54b51da6e0306" category="list-text">Für CIFS - Ports 139 und 445.</block>
-  <block id="74c03c84923d39d5386f0068a84a381d" category="paragraph">Sie können die Ergebnisse auch auf der Seite Datenuntersuchung filtern und einen Bericht der Ergebnisse als CSV-Datei herunterladen. Siehe <block ref="96027b6b3614f949497b9155b3c1b723" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="79ef1979db95fea8f788488be1660ddb" category="paragraph">Sie können auf einen DSAR antworten, indem Sie nach dem vollständigen Namen eines Studienteilnehmers oder einer bekannten Kennung (z. B. einer E-Mail-Adresse) suchen und dann einen Bericht herunterladen. Der Bericht soll Ihrem Unternehmen helfen, die Vorgaben der DSGVO oder ähnlicher Datenschutzgesetze einzuhalten.</block>
   <block id="949195768b714c50c6fc8c9385a74cc5" category="sidebar">Untersuchen Sie Ihre Daten</block>
   <block id="8ca194e9f33f192ece200a8c9ed9e621" category="sidebar">Weisen Sie Daten Richtlinien zu</block>
@@ -2065,7 +1987,6 @@
   <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8 CPUs</block>
   <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GB RAM</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
-  <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">Beachten Sie, dass es bei der Verwendung dieser kleineren Systeme Einschränkungen gibt. Siehe <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">Wenn Sie einen Proxy für den Zugriff auf das Internet verwenden:</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">Sie benötigen die Proxy-Server-Informationen (IP-Adresse oder Hostname, Verbindungsport, Verbindungsschema: https oder http, Benutzername und Passwort).</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">Die typische Installation auf einem Linux-Host _in your premises_ hat folgende Komponenten und Verbindungen.</block>
@@ -2181,7 +2102,6 @@
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">Senkung der Storage-Kosten durch Ändern der Aufbewahrungsrichtlinie oder durch Verschieben oder Löschen bestimmter Daten (veraltete, doppelte oder nicht geschäftsfremde Daten)</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">Schützen Sie Ihre berechtigen Daten durch eine Überarbeitung der globalen Richtlinien für das Gruppenmanagement</block>
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">Schützen Sie Ihre persönlichen oder sensiblen Daten, indem Sie personenbezogene Daten in sicherere Datenspeicher verlagern</block>
-  <block id="4928ecf57de239e143368971910a2343" category="section-title">Generieren des Data Discovery Assessment-Berichts</block>
   <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Discovery Assessment Report*.</block>
   <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">Ein Screenshot des Governance Dashboards zeigt, wie der Data Discovery Assessment Report gestartet wird.</block>
   <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
@@ -2224,7 +2144,6 @@
   <block id="6b3a75b3808f31da6754be1d099cbe3f" category="summary">Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten.</block>
   <block id="d025848d80633e7f7dd88e1694478473" category="paragraph">Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten. Sehen Sie sich die folgenden Kategorien an.</block>
   <block id="092e6dee95258860d663bccecea3a137" category="admonition">Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierung von BlueXP benötigen, z. B. zusätzliche nationale ID-Nummern oder Identifikatoren in Ihrem Gesundheitswesen, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com.</block>
-  <block id="205d008b6494d1d9d73cfe5c5bc8d14a" category="paragraph">Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> Zum Validieren seiner Ergebnisse für die Kennung.</block>
   <block id="6a966db3fe3382f2e1f9bedacd70bde4" category="inline-link-macro">Hinzufügen persönlicher Daten-IDs zu Ihren BlueXP Klassifizierungs-Scans</block>
   <block id="d92d4f1116f806c4af681905691eff43" category="paragraph">Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen die BlueXP-Klassifizierung in ihren Scans suchen wird, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe <block ref="5b7645dae0ded9d9e2c8b83b27050fe0" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="1c5cd4f2794657644bcca6e1c8cd7dfd" category="paragraph">Die sensiblen personenbezogenen Daten, die die BlueXP Klassifizierung in Dateien finden kann, enthalten die folgende Liste.</block>
@@ -2291,7 +2210,6 @@
   <block id="1f8c80b13ea5752a98c91bcaecfcd5f1" category="paragraph">Sie können die Inhalte des BlueXP Klassifizierungs-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.</block>
   <block id="d8867de26e72d5c1462f532885d969d8" category="paragraph">Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.</block>
   <block id="d00262b814d9ca29426ceae460b61927" category="summary">Die BlueXP Klassifizierung bietet Berichte, die Sie verwenden können, um besseren Einblick in den Status Ihres Unternehmenskonzepts zum Datenschutz zu erhalten.</block>
-  <block id="d4b323072f8a67ed4d33c093c06453d1" category="paragraph">Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>.</block>
   <block id="b6fa61ed970b3d1e0c1e1bd8acca709e" category="paragraph">Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.</block>
   <block id="e1a821d23f1453d667dd352729a4cff7" category="paragraph">Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.</block>
   <block id="36e1d0a440607d9a066bde9242895954" category="paragraph">Die BlueXP Klassifizierung berechnet die Bewertung des Schweregrads für den Bericht zur Risikoanalyse personenbezogener Daten auf der Basis von drei Variablen:</block>
@@ -2363,19 +2281,15 @@
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.</block>
   <block id="7299a589db31a0bc8b28dedaafe896cd" category="list-text">*Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:</block>
   <block id="786452cdc534ba8395eb7a26c9ab3efc" category="summary">Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards.</block>
-  <block id="884309a4cc6c63d83f80240d7635f514" category="cell">Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern).</block>
   <block id="7d90772c058139f0ea31169188a0eac1" category="cell">Wählen Sie einen Zeitraum aus, in dem die BlueXP Klassifizierung die Datei erkannt hat. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern.</block>
   <block id="ed50439b6d76225c4473b3e79754891d" category="cell">Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Für die Dateitypen, die die BlueXP Klassifizierung scannt, wurde die Datei zuletzt durch die BlueXP Klassifizierung gescannt.</block>
   <block id="38047badba2a7d1889fc338e16f28ba7" category="cell">Geben Sie bis zu 20 Teilpfade oder vollständige Pfade ein, die in die Abfrage einbezogen oder ausgeschlossen werden sollen. Wenn Sie beide Einschlusspfade eingeben und Pfade ausschließen, werden bei der BlueXP Klassifizierung zuerst alle Dateien in den eingeschlossenen Pfaden gefunden. Anschließend werden Dateien aus ausgeschlossenen Pfaden entfernt, und die Ergebnisse werden angezeigt. Beachten Sie, dass die Verwendung von "*" in diesem Filter keine Wirkung hat und dass Sie bestimmte Ordner nicht aus dem Scan ausschließen können - alle Verzeichnisse und Dateien unter einer konfigurierten Freigabe werden gescannt.</block>
   <block id="2cc5511704a792153e3bfc286f24901a" category="paragraph">Verwenden Sie den folgenden Filter, um Daten nach dem BlueXP Klassifizierungs-Scan-Status anzuzeigen.</block>
   <block id="7d1696fb9cd67d3f50bae50111c3ca63" category="cell">Wählen Sie aus, ob Dateien angezeigt werden sollen, die nicht klassifiziert wurden, weil die BlueXP-Klassifizierung die Uhrzeit des letzten Zugriffs nicht rückgängig machen konnte, oder Dateien, die klassifiziert wurden, obwohl die BlueXP-Klassifizierung die Zeit des letzten Zugriffs nicht rückgängig machen konnte.</block>
   <block id="9bc1fe9b45fdbabf06c29b2f9720a353" category="inline-link-macro">Integrierte AIP in BlueXP Klassifizierung</block>
-  <block id="d74c67e21bc9be34bcddf3c81395bed8" category="paragraph">Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) <block ref="0a27b5b5b425e267a582268cc3bc8694" category="inline-link-macro-rx"></block>). Diese Informationen sind hilfreich, wenn Sie Vorhaben <block ref="cb74d1e92c56be00b84da09155138bef" category="inline-link-macro-rx"></block> Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.</block>
-  <block id="84c1068a68e2f96982851954838c2d5b" category="list-text">Wenn Sie AIP-Labels mit der BlueXP-Klassifizierung integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder, sofern vorhanden, zu einer anderen Bezeichnung wechseln. Siehe <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">Wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen, sollten Sie Ihr Active Directory in die BlueXP Klassifizierung integrieren. <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>.</block>
   <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.</block>
   <block id="c67419f269df3afdc5c4ea77c6a74cef" category="paragraph">Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.</block>
-  <block id="c3e3558057a47a586b2936491602503e" category="summary">Die BlueXP Klassifizierung (Cloud Data Sense) ermöglicht Ihnen das Scannen und Klassifizieren von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens. BlueXP Classification nutzt KI-gestützte Natural Language Processing (NLP) für die kontextbezogene Datenanalyse und -Kategorisierung. Sie erhalten damit praxisnahe Erkenntnisse für Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.</block>
   <block id="44b34442167c9611792529867ee76d90" category="doc">Dokumentation der BlueXP Klassifizierung</block>
   <block id="7323ab6aab1dfb48468b77bc771127f5" category="summary">Führen Sie ein paar Schritte durch und beginnen Sie mit der Überprüfung Ihrer Cloud Volumes ONTAP und lokalen ONTAP Volumes mithilfe der BlueXP Klassifizierung.</block>
   <block id="968d6e0e449e2c68755e2d69920c0200" category="doc">Erste Schritte mit der BlueXP Klassifizierung für Cloud Volumes ONTAP und lokale ONTAP</block>
@@ -2642,7 +2556,6 @@
   <block id="b65f3e108ef152bd59fffc2955d2d547" category="paragraph">Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung bei zukünftigen Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich möglicherweise sensible Daten in den Dateien Ihrer Unternehmen befinden.</block>
   <block id="e88adea3b212c154801612c8605db6d5" category="paragraph">Eine Funktion, die wir _Data Fusion_ nennen, ermöglicht Ihnen, die Daten Ihres Unternehmens zu überprüfen, um zu ermitteln, ob eindeutige IDs aus Ihren Datenbanken in einer Ihrer anderen Datenquellen gefunden werden. Sie können die zusätzlichen Identifikatoren auswählen, nach denen die BlueXP Klassifizierung in ihren Scans suchen soll, indem Sie eine bestimmte Spalte oder Spalte in einer Datenbanktabelle auswählen. Das folgende Diagramm zeigt beispielsweise, wie Daten-Fusion zur Überprüfung von Volumes, Buckets und Datenbanken eingesetzt wird, um vor allen Kunden-IDs aus der Oracle Datenbank zu kommen.</block>
   <block id="905a4962b323594ff4605a44781efa64" category="paragraph">Da Sie Ihre eigenen Datenbanken scannen, können Sie mit jeder Sprache, in der Ihre Daten gespeichert sind, Daten bei zukünftigen BlueXP Klassifizierungs-Scans erkennen.</block>
-  <block id="7d6ff4779a51eda37c81632e481e5db2" category="paragraph">Dieser muss unbedingt vorhanden sein <block ref="4ec8c7ffee3077e2fe1a50f122f89322" category="inline-link-macro-rx"></block> Bis zur BlueXP Klassifizierung vor dem Hinzufügen von Fusion-Datenquellen</block>
   <block id="7c655988789d416c5a4a87e462cfe874" category="paragraph">Sie können der BlueXP Klassifizierung benutzerdefinierte Schlüsselwörter hinzufügen, um den Speicherort der Daten bestimmen zu können. Fügen Sie die Schlüsselwörter einfach ein, indem Sie jedes Wort eingeben, das die BlueXP Klassifizierung wiedererkennen soll. Die Schlüsselwörter werden zu den vorhandenen vordefinierten Schlüsselwörtern hinzugefügt, die bereits von der BlueXP-Klassifizierung verwendet werden, und die Ergebnisse werden im Abschnitt „Persönliche Muster“ angezeigt.</block>
   <block id="ddebf200916f487e633020a034f5904d" category="paragraph">Nach der Aktualisierung der benutzerdefinierten Schlüsselwörter wird die BlueXP Klassifizierung neu gestartet und alle Datenquellen werden gescannt. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.</block>
   <block id="3702db8c41a7dd17f1292e46a0b6c861" category="paragraph">Der eingegebene Name wird in der BlueXP-Klassifizierungs-UI als Überschrift für gescannte Dateien angezeigt, die den Anforderungen des Klassifikators entsprechen, und als Name des Filters auf der Seite Untersuchung.</block>
@@ -2659,7 +2572,6 @@
   <block id="47e4c2aae6a06418422bf2ec5da13da7" category="paragraph">Der Klassifikator wird hinzugefügt, und die BlueXP Klassifizierung beginnt, alle Datenquellen erneut zu scannen. Sie gelangen zurück zur Seite Benutzerdefinierte Klassifizierungsmerkmale, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrem neuen Klassifikator entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.</block>
   <block id="5b6013c5c7daa10c8c807063c8c8b22c" category="paragraph">Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themenbereiche, die auf der künstlichen Intelligenz Analyse der Inhalte und Metadaten der einzelnen Dateien basieren. <block ref="e4966eba5f5aa891b400570a53d2b0f2" category="inline-link-macro-rx"></block>.</block>
   <block id="c940384a2752413c7ba88aaca9aa1a86" category="paragraph">Sie können der BlueXP Klassifizierung benutzerdefinierte Kategorien hinzufügen, damit Sie erkennen können, in welchen Kategorien von Informationen Sie Ihre Daten finden, die speziell für Ihren Datenbestand sind. Jede Kategorie fügen Sie hinzu, indem Sie „Trainingsdateien“ erstellen, die die Datenkategorien enthalten, die Sie identifizieren möchten. Anschließend lässt die BlueXP Klassifizierung diese Dateien scannen, um sie über KI zu „lernen“, damit die Daten in Ihren Datenquellen identifiziert werden können. Die Kategorien werden zu den vorhandenen vordefinierten Kategorien hinzugefügt, die durch die BlueXP Klassifizierung bereits identifiziert werden. Die Ergebnisse sind im Abschnitt „Kategorien“ sichtbar.</block>
-  <block id="cbe8155b25db5118616eb1518a75c3d8" category="paragraph">Nach der Aktualisierung der benutzerdefinierten Kategorien wird die BlueXP Klassifizierung alle Datenquellen neu gescannt. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Klassifizierungs-Compliance-Dashboard im Abschnitt „Kategorien“ und auf der Untersuchungsseite im Filter „Kategorie“ angezeigt. <block ref="808a87ee72a165bf91101aadbd6c48bb" category="inline-link-macro-rx"></block>.</block>
   <block id="c52d77e366b608504557f6801006baab" category="paragraph">Sie müssen mindestens 25 Trainingsdateien erstellen, die Beispiele für die Datenkategorien enthalten, die von der BlueXP Klassifizierung erkannt werden sollen. Die folgenden Dateitypen werden unterstützt:</block>
   <block id="5ba00ccaa1be6a68d7a55bf4cfd95060" category="paragraph">Die Dateien müssen mindestens 100 Byte groß sein und sich in einem Ordner befinden, auf den BlueXP Zugriff bietet.</block>
   <block id="3956490c9250dea06d8740f95d1e14b7" category="paragraph">Der eingegebene Name wird in der BlueXP Klassifizierungs-UI als Überschrift für gescannte Dateien angezeigt, die der von Ihnen definierten Datenkategorie entsprechen, und als Name des Filters auf der Seite Untersuchung.</block>
@@ -2671,7 +2583,6 @@
   <block id="30bb1d853143952513be7ed01a1458b3" category="paragraph">Die neue Kategorie wird gemäß den Trainingsdateien erstellt und der BlueXP Klassifizierung hinzugefügt. Die BlueXP Klassifizierung beginnt dann, alle Datenquellen neu zu scannen, um Dateien zu identifizieren, die in diese neue Kategorie passen. Sie kehren zur Seite Benutzerdefinierte Klassifikatoren zurück, auf der Sie die Anzahl der Dateien anzeigen können, die Ihrer neuen Kategorie entsprechen. Die Ergebnisse aus dem Scannen aller Ihrer Datenquellen werden je nach Anzahl der zu scannenden Dateien einige Zeit in Anspruch nehmen.</block>
   <block id="db9af798ae25159937450a2da9c414de" category="paragraph">Und wenn Sie zu einem späteren Zeitpunkt entscheiden, dass Sie keine BlueXP-Klassifizierung benötigen, um die von Ihnen hinzugefügten benutzerdefinierten Muster zu identifizieren, können Sie die Schaltfläche *Klassifikator löschen* verwenden, um jedes Element zu entfernen.</block>
   <block id="5017a17c7cb03a76fa4a9d39ad079ab9" category="summary">Die BlueXP Klassifizierungs-Logs managen-Aktivitäten, die an Dateien aus allen Arbeitsumgebungen und Datenquellen ausgeführt wurden, die von der BlueXP Klassifizierung gescannt werden. Die BlueXP Klassifizierung protokolliert auch die Aktivitäten, wenn Sie eine BlueXP Klassifizierungsinstanz implementieren.</block>
-  <block id="fc82aea02743067d55a199569cd61d50" category="doc">Auditing der Historie der BlueXP Klassifizierungsaktionen</block>
   <block id="323141f17dc965b7894c3fede5810589" category="paragraph">Sie können den Inhalt der BlueXP Klassifizierungs-Audit-Protokolldateien anzeigen oder herunterladen, um festzustellen, welche Dateiänderungen wann vorgenommen wurden. Beispielsweise können Sie sehen, welche Anfrage erstellt wurde, wann die Anfrage gestellt wurde, und Details wie den Quellspeicherort für das Löschen einer Datei oder den Quell- und Zielstandort, falls eine Datei verschoben wurde.</block>
   <block id="c1e0b6a06406fd162de0635cd20ac657" category="paragraph">Die Management-Audit-Log-Dateien befinden sich auf der BlueXP Klassifizierungs-Maschine in:<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
   <block id="2970783922bde0b77210901329267de0" category="paragraph">Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden. Sie können SSH auf dem System verwenden, indem Sie den Benutzer und das Kennwort eingeben oder den SSH-Schlüssel verwenden, den Sie während der Installation des BlueXP Connectors angegeben haben. Der SSH-Befehl lautet:</block>
@@ -2804,8 +2715,6 @@
   <block id="b9542475929b3c8ff209e88bb948446b" category="paragraph">Sie können die BlueXP Klassifizierung auch auf einem Linux-Host vor Ort oder auf einem Host in Ihrem bevorzugten Cloud-Provider implementieren. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der BlueXP Klassifizierungs-Software werden automatisiert, solange die Instanz einen Internetzugang hat.</block>
   <block id="5509f198213f653cadd8f4de67a143bf" category="admonition">Die Instanz sollte immer ausgeführt werden, da die BlueXP Klassifizierung die Daten kontinuierlich scannt.</block>
   <block id="e0fd86ff833307e88c100c6db47be129" category="paragraph">Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen.</block>
-  <block id="a78aaf0d1a74c2b6043f3ea370323457" category="paragraph">Bei der Implementierung der BlueXP Klassifizierung in der Cloud auf AWS können Sie sich für eine große/mittlere/kleine Instanz entscheiden. Wenn Sie die BlueXP Klassifizierung in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser kleineren Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese kleineren Cloud-Konfigurationen zu implementieren.</block>
-  <block id="738e771362cc095122d8a2f4de604565" category="paragraph">Bei der lokalen Implementierung der BlueXP Klassifizierung sollten Sie einfach einen Linux-Host mit den kleineren Spezifikationen verwenden. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.</block>
   <block id="0420746794140f8978222121f6e4a764" category="section-title">Funktionsweise der BlueXP Klassifizierung</block>
   <block id="e5cbd4e407b221a95e9bc8b3965978dd" category="paragraph">Die allgemeine BlueXP Klassifizierung funktioniert wie folgt:</block>
   <block id="1483534eda512965970c7917b74698ae" category="list-text">Sie implementieren eine Instanz der BlueXP Klassifizierung in BlueXP.</block>
@@ -2821,8 +2730,6 @@
   <block id="737ab30d4451f7b971d756cdcc6b7d6b" category="section-title">Informationen, die die BlueXP Klassifizierung indexiert</block>
   <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Kategorien zu. Die Daten, die die BlueXP Klassifizierung indiziert, umfassen die folgenden:</block>
   <block id="e1c6fd17dccbebfc440207f27d59459b" category="list-text">Die BlueXP Klassifizierung erfasst Standardmetadaten zu Dateien: Die Art der Datei, ihre Größe, das Erstellungsdatum und die Änderungsdaten usw.</block>
-  <block id="22abd0d5444d4f49059fb40593a006af" category="list-text">Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. <block ref="c4a6ac90e0e68c07e6a0c53363aff298" category="inline-link-macro-rx"></block>.</block>
-  <block id="bf06434ff8860e330b877a91db6f3f11" category="list-text">Die BlueXP Klassifizierung unterteilt die gescannten Daten nach Dateityp. <block ref="7a0e9af4a23944c56398184b71788414" category="inline-link-macro-rx"></block>.</block>
   <block id="8546288939f901d3a1276b7f9e394f46" category="list-text">Die BlueXP Klassifizierung verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>.</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXP implementiert die BlueXP Klassifizierungsinstanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.</block>
   <block id="be23e27acb2e7fab8227de3a00bddee1" category="paragraph">Wenn Sie BlueXP im SaaS-Modus verwenden, wird die Verbindung zu BlueXP über HTTPS hergestellt. Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz gesendet werden, sind durch End-to-End-Verschlüsselung geschützt, sodass NetApp und Drittanbieter die Daten nicht lesen können.</block>
@@ -2977,7 +2884,6 @@
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ Wenn Sie sicherstellen möchten, dass Ihre Dateien „zuletzt aufgerufen Zeiten“ durch BlueXP Klassifizierungsscans unverändert sind, empfehlen wir dem Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS zu geben. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">Weitere Informationen zu Datensubjekten finden Sie hier</block>
-  <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>.</block>
   <block id="21ed6b8b65a14c2b031742eda9665bec" category="section-title">Daten nach Duplikaten filtern</block>
   <block id="3cdb36967a02a71e0d639c6d71d16ac3" category="summary">Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3 und vieles mehr.</block>
   <block id="c3e061f64826624fb21952c760e39065" category="paragraph">Beachten Sie, dass die Klassifizierung durch BlueXP nicht zur Zeit des letzten Zugriffs aus den folgenden Datenquellen herangezogen wird: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.</block>
@@ -3047,12 +2953,9 @@
   <block id="8f031c80211d08a2fc3d24c73c826e4b" category="paragraph"><block ref="d597807e5ef4bec605cdd823cfc707e7" category="inline-link-rx"></block>.</block>
   <block id="b81005c38cb0963c694c4f17fdffdda5" category="paragraph"><block ref="6a34fff85e918ca0361628bb33e44cc4" category="inline-link-rx"></block>.</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>.</block>
-  <block id="c51401ffdfb1031aea6f8a59f0b12ac5" category="paragraph"><block ref="364c24684858aaf9cf725ae1ec404c5d" category="inline-link-rx"></block>.</block>
   <block id="75dbbfa0c63b5452f1dab4062180db11" category="paragraph"><block ref="096bf81f435bf11200f532bd4759e1e0" category="inline-link-rx"></block>.</block>
-  <block id="882ecc5b644de8aa6bd8f8ae2a69ef91" category="paragraph">In der Vergangenheit können Sie durch die BlueXP Klassifizierung maximal 100,000 Quelldateien auf eine beliebige NFS-Freigabe verschieben. Sie können jetzt bis zu 15 Millionen Dateien gleichzeitig verschieben.<block ref="9bbad7a61d2ec2ac2169dcc43ec22874" category="inline-link-rx"></block>.</block>
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsaktion abgeschlossen ist und einige Elemente fehlgeschlagen sind und einige Elemente erfolgreich waren, z. B. wenn Sie 100 Dateien verschieben oder löschen. Außerdem wurde der Status „Fertig“ in „Erfolg“ umbenannt. In der Vergangenheit können im Status „Fertig“ Aktionen aufgeführt werden, die erfolgreich waren und die fehlgeschlagen sind. Der Status „Erfolg“ bedeutet nun, dass alle Aktionen erfolgreich auf allen Elementen durchgeführt wurden.<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>.</block>
   <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">Das Governance Dashboard hat einen neuen Bereich mit „_sensitiven Daten“ und „Wide Permissions_“ hinzugefügt, der eine Heatmap mit Dateien enthält, die vertrauliche Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und die zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben.<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>.</block>
-  <block id="256d4a07e31924bad219936ee7fbe092" category="paragraph"><block ref="6cbac5d82b5b6979376ae555290ffa96" category="inline-link-rx"></block>.</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">Durch die BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die japanische individuelle Nummer (auch „Meine Nummer“) enthalten. Dazu gehört sowohl die persönliche als auch die Firmennummer.<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>.</block>
   <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>.</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">Das können Sie<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.</block>
@@ -3150,7 +3053,6 @@
   <block id="b9a11b90960ff803269429887ab4cff3" category="list-text">Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.</block>
   <block id="fae80424c022f4f6a5863e7a9e007154" category="list-text">_Proxy_User_ = authentifizierter Benutzer zur Verbindung mit dem Proxy-Server, falls eine grundlegende Authentifizierung erforderlich ist. Der Benutzer muss ein lokaler Benutzer sein – Domänenbenutzer werden nicht unterstützt.</block>
   <block id="e0f8faa1f60bb9ad057dbed0ae3366cd" category="inline-link-macro">Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter</block>
-  <block id="a9420bec80d413a65a75f5b930ab95d6" category="paragraph">Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. <block ref="deb8a567236e3a33c0e546690f1ec883" category="inline-link-macro-rx"></block>.</block>
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">Drei Punkte</block>
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> Und dann *BlueXP Klassifizierung aktivieren*.</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
@@ -3187,7 +3089,6 @@
   <block id="548a75d789202d935a1a2f04740b1caf" category="paragraph">Wenn Sie noch keinen Connector im privaten Modus installiert haben,<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Jetzt auf einem Linux-Host.</block>
   <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">Wenn Sie noch keinen BlueXP Connector im privaten Modus installiert haben,<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> Auf einem Linux-Host in Ihrer Offline-Site.</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">Weitere Details finden Sie hier</block>
-  <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>. <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>.</block>
   <block id="e441d0b06845e470533ecf90d990663b" category="list-text">Kopieren Sie das Installationspaket auf den Linux-Host, den Sie im privaten Modus verwenden möchten.</block>
   <block id="c28fe179e2385f26eb310f2d32183eea" category="list-text">Ab der BlueXP Klassifizierungsversion 1.24 können Sie Upgrades auf jede beliebige zukünftige Softwareversion durchführen.</block>
   <block id="6d1c16ac15ccc187094a216f48771131" category="paragraph">Wenn Ihre BlueXP Klassifizierungssoftware eine Version vor 1.24 verwendet, können Sie jeweils nur eine Hauptversion aktualisieren. Wenn Sie beispielsweise Version 1.21.x installiert haben, können Sie nur auf 1.22.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.</block>
@@ -3312,7 +3213,6 @@
   <block id="43ec96609274e10e69e4ef1f50473aba" category="doc">Ändern Sie die Scaneinstellungen für Ihre Repositorys</block>
   <block id="926f6a4e85f1593fffa7270c143e3ddb" category="paragraph">Sie können sich unter anderem ändern, ob ein Repository gescannt wird oder nicht, und ob die BlueXP Klassifizierung eine ausführt <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>. Sie können den Scanvorgang auch anhalten und fortsetzen, beispielsweise, wenn Sie das Scannen eines Volumens für einen bestimmten Zeitraum beenden müssen.</block>
   <block id="5c7952df3d9c0233217acae5c6f1153d" category="list-text">Auf der Seite Scankonfiguration können Sie jedes der Repositories (in diesem Beispiel Buckets) so ändern, dass *Map* oder *Map &amp; Classify* Scans durchgeführt werden.</block>
-  <block id="fa11512af60e80dd5cda30d6a494a8cd" category="section-title">Anhalten der Suche nach einem Repository</block>
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">Sie können das Scannen eines Repositorys (z. B. eines Volumes) beenden, wenn Sie es nicht mehr auf Compliance-Anforderungen überwachen müssen. Dazu schalten Sie das Scannen aus. Wenn der Scanvorgang deaktiviert ist, werden alle Indexierungen und Informationen zu diesem Volumen aus dem System entfernt, und der Ladevorgang zum Scannen der Daten wird angehalten.</block>
   <block id="565a8976f79d6c76ecebff0fff08e98a" category="list-text">Wählen Sie auf der Seite Scankonfiguration die Option *aus*, um die Suche nach einem bestimmten Bucket zu beenden.</block>
   <block id="935638dd063f7f7f75feaf9c1efed37e" category="paragraph"><block ref="935638dd063f7f7f75feaf9c1efed37e" category="inline-image-macro-rx" type="image"></block></block>
@@ -3334,7 +3234,6 @@
   <block id="0cc4457720b5fe0dd1b8dc6667280ebb" category="list-text">Überprüfen Sie, ob auf den Systemen die beiden erforderlichen Softwarepakete installiert sind (Docker oder Podman Engine und Python 3).</block>
   <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">Alle Ihre Dateien (ohne Datenbanken), die 1 MB oder größer sind und persönliche oder sensible personenbezogene Daten enthalten, werden verglichen, um zu sehen, ob es Duplikate gibt. Sie können die Filter auf der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien eines bestimmten Größenbereichs in Ihrer Umgebung dupliziert werden.</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">Alle duplizierten Dateien werden auf der Ergebnisseite angezeigt.</block>
-  <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">September 5 (Version 1.25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Verwenden Sie Tags auf bis zu 100,000 Elemente auf der Seite Untersuchungsergebnisse</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Erfahren Sie, wie</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identifizieren Sie duplizierte Dateien mit einer Mindestdateigröße von 1 MB</block>
@@ -3347,12 +3246,10 @@
   <block id="7cb00932323e74919350bd2ce54bb9db" category="paragraph">Führen Sie diese Schritte aus, um einen Benutzer mehreren Dateien zuzuweisen. Beachten Sie, dass Sie einen Benutzer maximal 20 Dateien gleichzeitig zuweisen können (eine Seite in der Benutzeroberfläche).</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Kleine und mittlere Bereitstellungen sind vorübergehend nicht verfügbar</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Wenn Sie eine Instanz der BlueXP Klassifizierung in AWS implementieren, ist die Option *Deploy &gt; Configuration* und die Auswahl einer kleinen oder mittelgroßen Instanz derzeit nicht verfügbar. Sie können die Instanz weiterhin mit der Größe der großen Instanz bereitstellen, indem Sie *Deploy &gt; Deploy* auswählen.</block>
-  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
   <block id="b76d53d86b234eb61cbe1f1f8dd81414" category="paragraph">Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, auf jede beliebige NFS-Freigabe verschieben. Die NFS-Freigabe muss nicht in die BlueXP Klassifizierung integriert werden.</block>
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">Beachten Sie, dass die Unterverzeichnisstruktur aus der Quelldatei beim Verschieben der Datei auf der Zielfreigabe neu erstellt wird, sodass Sie leichter verstehen können, woher die Datei verschoben wurde. Wenn eine Datei mit dem gleichen Namen am Zielspeicherort vorhanden ist, wird die Datei nicht verschoben.</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">Auf diese Weise können Sie die Aktionen sehen, die erfolgreich abgeschlossen wurden, die derzeit in Bearbeitung sind und die, die nicht erfolgreich waren, damit Sie Probleme diagnostizieren und beheben können. Beachten Sie, dass kurze Vorgänge, die schnell abgeschlossen werden, z. B. das Verschieben einer einzelnen Datei, nicht im Bereich Aktionsstatus angezeigt werden.</block>
   <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">Die BlueXP Klassifizierung extrahiert nicht den „Zeitpunkt des letzten Zugriffs“ aus den folgenden Datenquellen: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3 sowie Datenbanken.</block>
-  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">Oktober 4 (Version 1.26)</block>
   <block id="4a90d7d35061a4c9e5845a989ea05db2" category="list-text">Die folgenden Betriebssysteme erfordern die Verwendung der Podman Container-Engine. Sie erfordern eine BlueXP Klassifikation der Version 1.26 oder höher:</block>
   <block id="59f227bced13db9b55686d58d4422b7b" category="list-text">Red hat Enterprise Linux Version 9.0, 9.1 und 9.2</block>
   <block id="ca4483ba58214f8a91253985b52c976c" category="paragraph">Beachten Sie, dass die folgenden Funktionen derzeit bei Verwendung von RHEL 9.x nicht unterstützt werden:</block>
@@ -3377,7 +3274,6 @@
   <block id="74246010013353726bd9ff99866fa7d4" category="section-title">Unterstützung lokaler Installationen von BlueXP Klassifizierungen auf RHEL Version 9</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red hat Enterprise Linux Versionen 8 und 9 unterstützen nicht die Docker Engine, die für die Installation der BlueXP Klassifikation erforderlich war. Wir unterstützen jetzt die Installation der BlueXP Klassifizierung auf RHEL 9.0, 9.1 und 9.2 mit Podman Version 4 oder höher als Container-Infrastruktur. Wenn in Ihrer Umgebung die neuesten Versionen von RHEL erforderlich sind, können Sie Podman jetzt auch die BlueXP-Klassifizierung (Version 1.26 oder höher) installieren.</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder verteilte Scanumgebungen (mit Master- und Remote-Scanner-Nodes) unterstützt</block>
-  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">November 6 (Version 1.26.3)</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">Die folgenden Probleme wurden in dieser Version behoben</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">Es wurde eine Inkonsistenz bei der Darstellung der Anzahl der vom System gescannten Dateien in Dashboards behoben.</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Verbesserte das Scanverhalten durch die Handhabung und Berichterstattung von Dateien und Verzeichnissen mit Sonderzeichen im Namen und Metadaten.</block>
@@ -3434,7 +3330,6 @@
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">Mit diesem Befehl werden die überarbeiteten Gruppen-ID-Berechtigungen für die Klassifizierungs-Engine übertragen.</block>
   <block id="fa72d06a2d710ef92a76614af32ec1f7" category="paragraph">Bei allen nachfolgenden Scans Ihrer Daten werden Dateien oder Ordner identifiziert, bei denen diese Gruppen-IDs als „für Unternehmen offen“ angehängt sind.</block>
   <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">Mit den gleichen Schritten können Sie die Liste der Gruppen-IDs bearbeiten und alle Gruppen-IDs löschen, die Sie in der Vergangenheit hinzugefügt haben. Die überarbeitete Liste der Gruppen-IDs wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.</block>
-  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">Januar 10 (Version 1.27)</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">Die Ergebnisse der Untersuchungsseite zeigen jetzt zusätzlich zur Gesamtanzahl der Elemente die Gesamtgröße an</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Die gefilterten Ergebnisse auf der Untersuchungsseite zeigen nun zusätzlich zur Gesamtanzahl der Dateien die Gesamtgröße der Elemente an. Dies kann beim Verschieben von Dateien, beim Löschen von Dateien und vielem mehr helfen.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Zusätzliche Gruppen-IDs als „für Organisation offen“ konfigurieren</block>
@@ -3452,7 +3347,6 @@
   <block id="5b40d5baf253a6d11974d57a0890fe5a" category="paragraph">Um diese Funktion zu aktivieren, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können. Informieren Sie sich darüber <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.</block>
   <block id="bc43ce46ec2d6fbf9c8f6da8a4306dd8" category="section-title">Speicherorte der Protokolldateien</block>
   <block id="4f2ff1b367ff3e36e64a9ae197aa8277" category="paragraph">Jede Protokolldatei kann maximal 10 MB groß sein. Wenn dieser Grenzwert erreicht wird, wird eine neue Protokolldatei gestartet. Die Log-Dateien werden mit „DataSense_Audit.log“, „DataSense_Audit.log.1“, „DataSense_Audit.log.2“ und so weiter benannt. Es werden maximal 100 Protokolldateien im System gespeichert. Ältere Protokolldateien werden automatisch gelöscht, sobald die maximale Anzahl erreicht wurde.</block>
-  <block id="8d62d7d8c4e5247ff9d832d971c73356" category="section-title">Zugriff auf die Protokolldateien</block>
   <block id="1adc1bcbca14587886f0722f89d1238c" category="paragraph">Sie müssen sich beim BlueXP Klassifizierungssystem anmelden, um auf die Protokolldateien zugreifen zu können. Informieren Sie sich darüber <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.</block>
   <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">Melden Sie sich bei der BlueXP Klassifizierungs-Host-Maschine an</block>
   <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">Informieren Sie sich darüber <block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>.</block>
@@ -3464,8 +3358,170 @@
   <block id="b39079257432aa2e0ea1ac3e4e36cdf8" category="section-title">Wie werden sensible Daten behandelt?</block>
   <block id="35a8814c3eaa26f66ca3a0eea1193f70" category="paragraph">NetApp hat keinen Zugriff auf sensible Daten und zeigt sie nicht in der Benutzeroberfläche an. Sensible Daten werden maskiert, beispielsweise werden die letzten vier Zahlen für Kreditkarteninformationen angezeigt.</block>
   <block id="a6b6381d05f6dc9530f37099c9feb5cf" category="section-title">Wo werden die Daten gespeichert?</block>
-  <block id="efe4cf854e0017e5c35b4f8fb03e5a1b" category="paragraph">Die Scan-Ergebnisse werden in Elastisearch innerhalb Ihrer BlueXP Klassifizierungsinstanz gespeichert.</block>
   <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">Wie wird auf die Daten zugegriffen?</block>
   <block id="9e52028c48600512f13df2884f1ec709" category="paragraph">Die BlueXP Klassifizierung greift über API-Aufrufe, die eine Authentifizierung erfordern und mit AES-128 verschlüsselt sind, auf in Elasticsearch gespeicherte Daten zu. Für den direkten Zugriff auf Elasticsearch ist Root-Zugriff erforderlich.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices, die speziell auf Support und Lizenzierung zugeschnitten sind.</block>
+  <block id="b97835ec7267635dbdb6a030bb594b9b" category="doc">Zeigen Sie Governance-Details zu den in Ihrer Organisation gespeicherten Daten an</block>
+  <block id="137856a117db72a4c07a63ed4622372f" category="section-title">Speichern Sie Opportunitys</block>
+  <block id="079997081651f8a82d27ca6d62534f5e" category="list-text">*Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. <block ref="fcb1526de99321017edbeb7796592372" category="inline-link-macro-rx"></block>.</block>
+  <block id="9342c0e29d04561cbb53f2ba321a759c" category="paragraph">Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten <block ref="d3b5de2fe3785a28f0b4099f30abefe6" category="inline-link-macro-rx"></block>, <block ref="6d5873eba480eee9411c9a14fd12e5d9" category="inline-link-macro-rx"></block>, und <block ref="831f3d64e1800ca5ef8e2c817b5a43b2" category="inline-link-macro-rx"></block> In den gescannten Daten.</block>
+  <block id="747fb24cd2b94a7b0fc7076c4af2f2c2" category="paragraph">Siehe <block ref="3648d3c4c92bd601fe477d66a90a40cd" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
+  <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">Siehe <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
+  <block id="181332a3540aa1ea82fa85f6dc6f6625" category="paragraph">Siehe <block ref="831f3d64e1800ca5ef8e2c817b5a43b2" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
+  <block id="1ec26f1d39a398158aea4e2d5e31e150" category="section-title">Generieren Sie den Bericht zur Datenzuordnung</block>
+  <block id="69bf5c037f5606f34aefc52d8ef3628b" category="paragraph">Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>.</block>
+  <block id="1f409051045abcc9fdb719d7f375ac7a" category="section-title">Generieren Sie den Data Discovery Assessment Report</block>
+  <block id="8d2b3a00bc0d44767cf3d5dfed11884d" category="section-title">Filtern Sie die Daten auf der Seite „Datenuntersuchung“</block>
+  <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">Auf den Registerkarten der obersten Ebene können Sie Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) anzeigen.</block>
+  <block id="2decf56c6b11817a8a3b1d8d3feeba96" category="list-text">Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.</block>
+  <block id="edf41506335073de556ea5e2cf897ab7" category="cell">Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern).
+
+HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Möglichkeit, die Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen zu berechnen, vorübergehend entfernt.</block>
+  <block id="7fa4c0d19f9e22e46c1599f489a40200" category="cell">Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. <block ref="c68d9f5d265dae5a91c67e9376307e7e" category="inline-link-macro-rx"></block>.</block>
+  <block id="dd6c13315898ffef83a20b77b08aee15" category="cell">Wählen Sie <block ref="9b3a58766d8c539d0ec9039695618ffe" category="inline-link-macro-rx"></block> Die Ihren Dateien zugewiesen sind.</block>
+  <block id="589dfe04fd4fd66d98351532c0822d43" category="cell">Wählen Sie <block ref="f97d1e70e05df66e5383a32214d43b68" category="inline-link-macro-rx"></block> Die Ihren Dateien zugewiesen sind.</block>
+  <block id="d9ff86959e1f6d2016c4db58114184ab" category="section-title">Anzeigen von Datei-Metadaten</block>
+  <block id="6bfe7c49ed08b9ae3e8b4562fbb9a699" category="paragraph">Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) <block ref="2b7c3ccfb68eb615813c6831857e6287" category="inline-link-macro-rx"></block>). Diese Informationen sind hilfreich, wenn Sie Vorhaben <block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block> Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.</block>
+  <block id="b0532ead11e8ff469286217af3d2bd21" category="list-text">Sie können die Datei verschieben oder in eine beliebige NFS-Freigabe kopieren. Siehe <block ref="47c4bb8753f1ccd8056e33aa9c09984f" category="inline-link-macro-rx"></block> Und <block ref="7b9de7c61d109933747889413b3eab6b" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="dd357e172a945ce8d61fe779740b8356" category="list-text">Sie können die Datei löschen. Siehe <block ref="1619d8f142b3f62dae3a793f7b393a2d" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="8ae179cabde4d7ab16ea4d62c9dff439" category="list-text">Sie können der Datei einen bestimmten Status zuweisen. Siehe <block ref="13aed6bc1ea45840de263e10256c8800" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="5c02bc6832b3ccc24da05f08c60ce812" category="list-text">Sie können die Datei einem BlueXP-Benutzer zuweisen, damit er für alle Follow-up-Aktionen verantwortlich ist, die in der Datei ausgeführt werden müssen. Siehe <block ref="1c8e1beef2d3a961e27ab1da8a9a58a5" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="80040a72b1bfe1dd7112c9895e8e2c3a" category="list-text">Wenn Sie AIP-Labels mit der BlueXP-Klassifizierung integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder, sofern vorhanden, zu einer anderen Bezeichnung wechseln. Siehe <block ref="edb186a87f811c37ad4a5069aa7682ee" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">Berechtigungen für Dateien und Verzeichnisse anzeigen</block>
+  <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">Überprüfen Sie auf doppelte Dateien in Ihren Speichersystemen</block>
+  <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können <block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block> Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.</block>
+  <block id="11b431a799ad33cee933ceccc5de850c" category="section-title">Alle duplizierten Dateien anzeigen</block>
+  <block id="3c4c508b343b43aeeceba1d0993025fc" category="section-title">Anzeigen, ob eine bestimmte Datei dupliziert wurde</block>
+  <block id="d9f65abd84f27877cbba1b5ea828d53d" category="section-title">Generieren Sie den Bericht zur Datenermittlung</block>
+  <block id="13b1a6e1bb1b3f8696189ada6b422170" category="list-text">Sie können den „Dateieigentümer“ verwenden. <block ref="8f117870d9a34eabfa5286947f602d95" category="inline-link-macro-rx"></block> Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.</block>
+  <block id="cd4d01ef1bbc41dd6c1a648ca6b131c3" category="list-text">Sie sehen <block ref="bb7ccaeb199c0a6d94b809bfbddc428e" category="inline-link-macro-rx"></block> Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.</block>
+  <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">Stellen Sie eine Verbindung zu Ihrem Active Directory-Server her</block>
+  <block id="bbc0bef191e546654d479088a63463e8" category="section-title">Verwalten Sie Ihre Active Directory-Integration</block>
+  <block id="10ccc27cc214fa448d0b8e0b334f0151" category="section-title">Die BlueXP Klassifizierungs-Version hat Optionen vorübergehend entfernt</block>
+  <block id="dffabdaa2a3357c29a2d709ccde0a0c8" category="paragraph">Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die folgenden Optionen vorübergehend entfernt:</block>
+  <block id="bd387dbe20d15a2a0ff5e7602549388e" category="list-text">Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.</block>
+  <block id="a8a28cc44c1c782e3e832f304d4dfbd7" category="list-text">Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung.</block>
+  <block id="6b1b1c56d9e50ead02cb1c15240f6672" category="list-text">Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert.</block>
+  <block id="20d9878156a2091b70c1ea4cf697dd9d" category="paragraph">Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet <block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block> Zum Validieren seiner Ergebnisse für die Kennung.</block>
+  <block id="5d4d8771b47d6c5166952822e552f082" category="cell">Extra Groß</block>
+  <block id="286037639991fbe8162e37237400f775" category="cell">32 CPUs, 128 GB RAM, 1 tib SSD</block>
+  <block id="f6f61cf219d5829d5169842d420d1503" category="cell">Kann bis zu 500 Millionen Dateien scannen.</block>
+  <block id="ea1a46649fa6479f8f6b7adefbb4450a" category="cell">Kann bis zu 250 Millionen Dateien scannen.</block>
+  <block id="d2ab97ef89606f2d10fb34a332e0fdb6" category="paragraph">Bei der Implementierung der BlueXP Klassifizierung in der Cloud auf AWS können Sie sich für eine große/mittlere/kleine Instanz entscheiden. Wenn Sie die BlueXP Klassifizierung in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser alternativen Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese anderen Cloud-Konfigurationen zu implementieren.</block>
+  <block id="8910b1ec473cf0681670f869289481a2" category="paragraph">Bei der Implementierung der BlueXP Klassifizierung vor Ort müssen Sie einfach einen Linux-Host mit den alternativen Spezifikationen verwenden. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.</block>
+  <block id="5a8ee8420a5d1cdc5ee93a7fd5065c6a" category="list-text">Personenbezogene Informationen wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. <block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>.</block>
+  <block id="824da272ee238f0ff0da26b458ce480c" category="list-text">Besondere Arten sensibler Daten, wie etwa Gesundheitsdaten, ethnische Herkunft oder politische Ansichten, wie in der DSGVO und anderen Datenschutzvorschriften definiert <block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>.</block>
+  <block id="e95f1ed805ee251f2c684538d33ea9f4" category="list-text">Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. <block ref="722783767558c868b0670a999b08f996" category="inline-link-macro-rx"></block>.</block>
+  <block id="7a8cb013c41bdd9770a1cad9bb979c55" category="list-text">Die BlueXP Klassifizierung unterteilt die gescannten Daten nach Dateityp. <block ref="a23a1c3a68ab723cb619be8574a4637d" category="inline-link-macro-rx"></block>.</block>
+  <block id="acff74627293e3e739a3c24e5fec03c2" category="cell">*Extra Groß*</block>
+  <block id="8a0a1142229b3b639f68556794cbd985" category="cell">32 CPUs</block>
+  <block id="228d50520d6c2a627ecce76f2775d5e1" category="cell">128 GB RAM</block>
+  <block id="92194a80ea376740e10d5ee7343f171c" category="cell">1 tib SSD auf /, oder
+- 100 gib verfügbar auf /opt
+- 895 gib verfügbar auf /var/lib/docker
+- 5 gib auf /tmp</block>
+  <block id="7e6ae7e8de71f1a36043487bc45a85eb" category="paragraph">Beachten Sie, dass es bei der Verwendung der kleineren Systeme Einschränkungen gibt. Siehe <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="6652143756854261fc684a5e0baebe87" category="paragraph">Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>. <block ref="696479ac7e872b184d766a98c9dcee75" category="inline-link-macro-rx"></block>.</block>
+  <block id="a006d7d6fbe943e4c3cd4f1f23e24888" category="admonition">Mit der Veröffentlichung im Dezember 2023 (v1.26.6) wurde die Option zur Integration von Daten mit Azure Information Protection (AIP)-Labels vorübergehend aufgehoben.</block>
+  <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="section-title">Kategorisieren Sie Ihre Daten mit AIP-Etiketten</block>
+  <block id="0ed54f1d736772cdfa10d041612c19cc" category="section-title">Integrieren Sie AIP-Beschriftungen in Ihren Arbeitsbereich</block>
+  <block id="dc868ca3e5d8a2a78f0a032d630be98e" category="section-title">AIP-Etiketten in Ihren Dateien anzeigen</block>
+  <block id="a63feced797847158dd7b93ba9ec1c9c" category="section-title">Weisen Sie AIP-Beschriftungen manuell zu</block>
+  <block id="079ba7083ee44d94b780ca3410262aad" category="section-title">Entfernen Sie die AIP-Integration</block>
+  <block id="b711ac049bfb30775a44db0b240bf50a" category="section-title">Wenden Sie Tags an, um die gescannten Dateien zu verwalten</block>
+  <block id="b093b0407978309f95be2f6607edea0f" category="section-title">Zeigen Sie Dateien an, auf die bestimmte Tags angewendet wurden</block>
+  <block id="667181137727a5b43984825022e78afe" category="section-title">Weisen Sie Dateien Tags zu</block>
+  <block id="9e20f51759b1307e883b2ee0dc3f188e" category="section-title">Tags aus Dateien löschen</block>
+  <block id="d36044fd7d23f212e2a9c29198ebfb6a" category="section-title">Weisen Sie Benutzer zu, um bestimmte Dateien zu verwalten</block>
+  <block id="503c49a3ccf62894992dc5b2f108ca21" category="section-title">Quelldateien kopieren</block>
+  <block id="f1c00e884b0e070464c8f286c3174093" category="section-title">Kopieren Sie Quelldateien auf eine NFS-Freigabe</block>
+  <block id="bc2ddaab6055ab1255961a9d20b9b561" category="section-title">Volume-Daten auf ein neues Volume klonen</block>
+  <block id="526dcc2d2df3c7d2b2a5eff8bfe8f919" category="section-title">Kopieren und synchronisieren Sie Quelldateien auf ein Zielsystem</block>
+  <block id="84f7b8f0d62cd1dd2a92acfab284f990" category="section-title">Verschieben Sie Quelldateien auf eine NFS-Freigabe</block>
+  <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="section-title">Quelldateien löschen</block>
+  <block id="b6da96c1d36493966b387017bdd6ea22" category="paragraph">Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder <block ref="e53db43404234e4ae64f1250fb75e000" category="inline-link-macro-rx"></block>.</block>
+  <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">Quelldateien manuell löschen</block>
+  <block id="a83bc0aa2bd876d7cc5a350879bd008c" category="section-title">Greifen Sie auf die Protokolldateien zu</block>
+  <block id="a6ed2c91ea69381b6a464e642ca3c940" category="paragraph"><block ref="8600e76f489947dcd3c20a1b1ce1e8ca" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed6f72ce35fa37960b096efc305078ca" category="paragraph">Die Scan-Ergebnisse werden in Elasticsearch innerhalb der BlueXP Klassifizierungsinstanz gespeichert.</block>
+  <block id="07b74cfb8b148331baaaa74d89dd4cec" category="doc">Anzeigen von Compliance-Berichten</block>
+  <block id="8932e9435ce03fbb7ecf0b2f738ce66a" category="paragraph">Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <block ref="200c05d79644e6ad09afbf686b752513" category="inline-xref-macro-rx"></block>.</block>
+  <block id="8fe6204e46726000832b41b57a8682fa" category="section-title">Erstellen Sie den Bericht zur Risikoanalyse für den Datenschutz</block>
+  <block id="a278deb1b004bff80e79de1e339663d8" category="section-title">Erstellen Sie den PCI DSS-Bericht</block>
+  <block id="3d6c8f2da2f31e222453954edbdc0016" category="section-title">Erstellen Sie den HIPAA-Bericht</block>
+  <block id="dea05f9db0b78f5c37e6ef730d7c9cb3" category="section-title">Suche nach betroffenen Personen und Download von Berichten</block>
+  <block id="d31797d513ed86de950b1e6cad114a0e" category="section-title">Wählen Sie die Arbeitsumgebungen für Berichte aus</block>
+  <block id="2698a0014cadd28141bb459524e52ece" category="doc">Zeigen Sie Compliance-Details zu den in Ihrem Unternehmen gespeicherten Daten an</block>
+  <block id="5bd05de235efc04c8b15b98cdd6622d2" category="paragraph">Wenn Sie Daten nur für einige der Arbeitsumgebungen sehen möchten, <block ref="06e3575e0ad015087c5a66ab84fa89cb" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ee2ce94ca497f99a823b64ee93e29228" category="paragraph">Sie können die Ergebnisse auch auf der Seite Datenuntersuchung filtern und einen Bericht der Ergebnisse als CSV-Datei herunterladen. Siehe <block ref="f082a9ca9c2b3ab3d0b6d26a35559d93" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
+  <block id="f9643188d49ee294212ab09521305bdd" category="section-title">Dateien anzeigen, die personenbezogene Daten enthalten</block>
+  <block id="2d46c3977746d66d8fa8c15b6bc98d6c" category="section-title">Dateien anzeigen, die sensible personenbezogene Daten enthalten</block>
+  <block id="8a5ea9dc53c4c86f4aed7ef4b4da982c" category="section-title">Dateien nach Kategorien anzeigen</block>
+  <block id="ecb953672f3305298a86f0569c18d178" category="section-title">Dateien nach Dateitypen anzeigen</block>
+  <block id="303b0a57019c624c482fb5d775729281" category="section-title">Anzeigen von Dashboard-Daten für bestimmte Arbeitsumgebungen</block>
+  <block id="0ed24c69d85b53c201d924087682efef" category="admonition">Mit der Veröffentlichung von Dezember 2023 (Version 1.26.6) wurde die Option zur Aktivierung der Überwachungsprotokollsammlung vorübergehend entfernt.</block>
+  <block id="50c07d396e4bf402b72ebf82cfaadea1" category="doc">Datenbankschemas scannen</block>
+  <block id="846eb83e821481bdeafbcc34c9138401" category="section-title">Implementieren der BlueXP Klassifizierungsinstanz</block>
+  <block id="117276e96b89d072e0a833596332ef29" category="section-title">Fügen Sie den Datenbankserver hinzu</block>
+  <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">Aktivieren und deaktivieren Sie Compliance-Scans für Datenbankschemas</block>
+  <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">10. Januar 2024 (Version 1.27)</block>
+  <block id="c0aa452130abaadece0c71d90274bb8e" category="section-title">Dezember 2023 (Version 1.26.6)</block>
+  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Diese Version enthält einige kleinere Verbesserungen.</block>
+  <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">Das Release hat auch vorübergehend die folgenden Optionen entfernt:</block>
+  <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>.</block>
+  <block id="ea2bddf8f5366e4e19e9f92e993db900" category="list-text">Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe <block ref="5f0cc912e1424f54004e4ab3376e7552" category="inline-link-macro-rx"></block>.</block>
+  <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>.</block>
+  <block id="8571bddd96e0bf7c1af547bf5706fe41" category="section-title">6. November 2023 (Version 1.26.3)</block>
+  <block id="7e59fce056fd1f38e1a30dea9fa90ab7" category="section-title">4. Oktober 2023 (Version 1.26)</block>
+  <block id="371c5ebc9b12d1edc94ae540d4adaef6" category="section-title">5. September 2023 (Version 1.25)</block>
+  <block id="f9be4df42ee71d8a46fc32f8b40e0b1b" category="paragraph">In der Vergangenheit konnten Sie auf der Seite Untersuchungsergebnisse (20 Elemente) jeweils nur Tags auf eine Seite anwenden. Jetzt können Sie *alle* Elemente auf den Seiten Untersuchungsergebnisse auswählen und Tags auf alle Elemente anwenden - bis zu 100,000 Elemente gleichzeitig.<block ref="46e19d501a7aeb47676677c6786cd6a8" category="inline-link-rx"></block>.</block>
+  <block id="5dfcd9d1075127141684c90379617d15" category="paragraph"><block ref="f9682605316459d6868d028dc460934e" category="inline-link-rx"></block>.</block>
+  <block id="1a24f136700e7d996dbc845dbf267e7f" category="paragraph">In der Vergangenheit können Sie durch die BlueXP Klassifizierung maximal 100,000 Quelldateien auf eine beliebige NFS-Freigabe verschieben. Sie können jetzt bis zu 15 Millionen Dateien gleichzeitig verschieben.<block ref="51df0b03dbf1aa6425434a76a39934ae" category="inline-link-rx"></block>.</block>
+  <block id="e8c2efb8e9d3b045395cb04412e0a901" category="paragraph"><block ref="3cbb63227aae75adda769f4ce4856356" category="inline-link-rx"></block>.</block>
+  <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">Zeigen Sie die Ergebnisse der Richtlinie auf der Seite Untersuchung an</block>
+  <block id="b35b6bc32132e02089037cba925ed82f" category="section-title">Erstellen Sie benutzerdefinierte Richtlinien</block>
+  <block id="8a2a52a8ac4ccb92049a30a391068a19" category="list-text">Aktivieren Sie optional das Kontrollkästchen, um Dateien automatisch zu löschen, die mit den Richtlinieparametern übereinstimmen. Weitere Informationen zu <block ref="f88efbd37b0606539098521e5f566822" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e23294da5f86a971ed9b9377071c72eb" category="list-text">Aktivieren Sie optional das Kontrollkästchen, wenn Sie Benachrichtigungen-E-Mails an BlueXP-Benutzer in Ihrem Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird. Weitere Informationen zu <block ref="fb324c3b99a97addc0eaa42935f5e40a" category="inline-xref-macro-rx"></block>.</block>
+  <block id="d02bac7cd8c477dd8dc5c26762c991d7" category="list-text">Aktivieren Sie optional das Kontrollkästchen, um Dateien, die den Richtlinieparametern entsprechen, automatisch AIP-Etiketten zuzuweisen, und wählen Sie die Beschriftung aus. (Nur wenn Sie bereits AIP-Etiketten integriert haben. Weitere Informationen zu <block ref="9b3a58766d8c539d0ec9039695618ffe" category="inline-link-macro-rx"></block>.)</block>
+  <block id="d78b3e7832ff9a2bb5655d9088bc9162" category="section-title">Senden Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden</block>
+  <block id="b2d0b99eca7664c29a90b8f6d10b4bdc" category="section-title">Löschen Sie Quelldateien automatisch mithilfe von Richtlinien</block>
+  <block id="2b3be59bfe2624f8c8c8e5598a41bbc0" category="section-title">Weisen Sie AIP-Etiketten automatisch mit Richtlinien zu</block>
+  <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">Richtlinien Bearbeiten</block>
+  <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">Richtlinien Löschen</block>
+  <block id="ea8e3558520841b9ad476460d59b798b" category="doc">Ergänzen Sie Ihre BlueXP Klassifizierungs-Scans um persönliche Daten-IDs</block>
+  <block id="8ebfdc752250ae84fbace65f427cdb3f" category="paragraph">Dieser muss unbedingt vorhanden sein <block ref="bbfd14f1fba46892c6cec16b4233f355" category="inline-link-macro-rx"></block> Bis zur BlueXP Klassifizierung vor dem Hinzufügen von Fusion-Datenquellen</block>
+  <block id="63237392f6a02b88aeb414ad83b2e4f4" category="paragraph">Nach der Aktualisierung der benutzerdefinierten Kategorien wird die BlueXP Klassifizierung alle Datenquellen neu gescannt. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Klassifizierungs-Compliance-Dashboard im Abschnitt „Kategorien“ und auf der Untersuchungsseite im Filter „Kategorie“ angezeigt. <block ref="aa135715447fa7e396ac4a2dc64b02cf" category="inline-link-macro-rx"></block>.</block>
+  <block id="8f737a8c409b235d7a43941682f2a548" category="section-title">Anzeigen des Scanstatus für Ihre Repositorys</block>
+  <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">Ändern Sie den Typ der Suche nach einem Repository</block>
+  <block id="74a477b7e0bb4c7103127e1c4536e606" category="section-title">Beenden Sie die Suche nach einem Repository</block>
+  <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">Halten Sie die Suche nach einem Repository an und setzen Sie sie fort</block>
+  <block id="86e9fad25d6f638eb7f7e437763b425e" category="section-title">Daten für ein vorhandenes Repository erneut scannen</block>
+  <block id="592eb07fa38cd17123bbb06a297c20fe" category="sidebar">Die BlueXP Klassifizierung ermöglicht Ihnen das Scannen und Klassifizieren von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens. Das Klassifizierungs-System verwendet KI-gestützte Natural Language Processing (NLP) für die kontextbezogene Datenanalyse und -Kategorisierung. Damit erhalten Sie praxisnahe Erkenntnisse für Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.</block>
+  <block id="e3a146b1e8e087acabb6e5959293dcd8" category="sidebar">Die BlueXP Klassifizierung (Cloud Data Sense) ermöglicht Ihnen das Scannen und Klassifizieren von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens. Die BlueXP Klassifizierung nutzt KI-gestützte Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) für die kontextbezogene Datenanalyse und -Kategorisierung. Sie bietet Ihnen so verwertbare Einblicke in Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
+  <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">BlueXP Klassifizierung auf einem Linux-Host mit Internet installieren</block>
+  <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">Installieren Sie die BlueXP Klassifizierung lokal und ohne Internet</block>
+  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">Scannen Sie Ihre Arbeitsumgebungen</block>
+  <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">Cloud Volumes ONTAP Volumes</block>
+  <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">On-Premises ONTAP Volumes</block>
+  <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files Volumes</block>
+  <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">Amazon FSX für ONTAP Volumes</block>
+  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">Andere Datenquellen scannen</block>
+  <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">Allgemeine S3 Buckets</block>
+  <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">Zeigen Sie Details zu Ihren Daten an</block>
+  <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Zeigen Sie Dateien an, die private Informationen enthalten</block>
+  <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Anzeigen von Dateien, die im Speicher dupliziert werden</block>
+  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtern Sie Ihre Daten, um bestimmte Dateien anzuzeigen</block>
+  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">Erstellen Sie Richtlinien, um Ihre wichtigsten Suchen anzuzeigen</block>
+  <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">Wenden Sie Tags und Eigentümer auf Dateien an, die Aufmerksamkeit erfordern</block>
+  <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">Fügen Sie Ihre eigenen persönlichen Daten-IDs hinzu</block>
+  <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">Quelldateien verschieben</block>
+  <block id="40af1406afc061038f5851961a636714" category="sidebar">Erstellen Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden</block>
+  <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">Reaktion auf eine Anforderung für den Zugriff eines Betroffenen</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs und Community</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp Community</block>
+  <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">Anwendungsfälle für die BlueXP Klassifizierung</block>
+  <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXP Klassifizierungs-Videos</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP-Blog</block>
+  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP Webinare</block>
 </blocks>

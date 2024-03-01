@@ -23,7 +23,7 @@ TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierun
 
 == Arten personenbezogener Daten
 
-Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
+Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
 
 Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
 

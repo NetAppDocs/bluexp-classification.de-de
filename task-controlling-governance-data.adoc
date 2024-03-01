@@ -4,7 +4,7 @@ permalink: task-controlling-governance-data.html
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
 summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten. 
 ---
-= Anzeigen von Governance-Details zu den in Ihrem Unternehmen gespeicherten Daten
+= Zeigen Sie Governance-Details zu den in Ihrer Organisation gespeicherten Daten an
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,7 +28,7 @@ image:screenshot_compliance_governance_dashboard.png["Ein Screenshot des BlueXP 
 
 
 
-=== Speichern Von Geschäftschancen
+=== Speichern Sie Opportunitys
 
 Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten. Klicken Sie auf die einzelnen Elemente, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen.
 
@@ -44,7 +44,7 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 ** Sonstiges (allgemeine Kategorie „Sonstige“)
 
 
-* *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#viewing-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
+* *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#view-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
 +
 HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, werden alte Daten, die sich bereits im Objektspeicher befinden, möglicherweise in der Kategorie „veraltete Daten“ identifiziert.
 
@@ -131,7 +131,7 @@ HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im D
 
 === Die meisten ermittelten Datenklassifizierungen
 
-Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#viewing-files-by-categories["Kategorien"^], link:task-controlling-private-data.html#viewing-files-by-file-types["Dateitypen"^], und link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"^] In den gescannten Daten.
+Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^], link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^], und link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"^] In den gescannten Daten.
 
 
 
@@ -139,7 +139,7 @@ Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizier
 
 Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
-Siehe link:task-controlling-private-data.html#viewing-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
+Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
 
 
 
@@ -147,7 +147,7 @@ Siehe link:task-controlling-private-data.html#viewing-files-by-categories["Anzei
 
 Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind.
 
-Siehe link:task-controlling-private-data.html#viewing-files-by-file-types["Anzeigen von Dateitypen"^] Finden Sie weitere Informationen.
+Siehe link:task-controlling-private-data.html#view-files-by-file-types["Anzeigen von Dateitypen"^] Finden Sie weitere Informationen.
 
 
 
@@ -155,7 +155,7 @@ Siehe link:task-controlling-private-data.html#viewing-files-by-file-types["Anzei
 
 Wenn Sie den Azure Information Protection (AIP) abonniert haben, können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Inhaltsetiketten anwenden. Durch die Überprüfung der am häufigsten verwendeten AIP-Etiketten, die Dateien zugeordnet sind, können Sie feststellen, welche Etiketten am häufigsten in Ihren Dateien verwendet werden.
 
-Siehe link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP-Etiketten"^] Finden Sie weitere Informationen.
+Siehe link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"^] Finden Sie weitere Informationen.
 
 
 
@@ -183,7 +183,7 @@ Der Bericht enthält die folgenden Informationen:
 |===
 
 
-=== Datenzuordnungsbericht wird erstellt
+=== Generieren Sie den Bericht zur Datenzuordnung
 
 Sie generieren diesen Bericht über die Registerkarte Governance in der BlueXP Klassifizierung.
 
@@ -198,7 +198,7 @@ image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des G
 .Ergebnis
 Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
-Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-file["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
+Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-files["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
 
 Beachten Sie, dass Sie den Unternehmensnamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der BlueXP Klassifizierungsseite anpassen können, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.
 
@@ -230,7 +230,7 @@ Nach der Bewertung enthält dieser Bericht Bereiche, in denen Sie:
 
 
 
-=== Generieren des Data Discovery Assessment-Berichts
+=== Generieren Sie den Data Discovery Assessment Report
 
 Sie generieren diesen Bericht über die Registerkarte Governance in der BlueXP Klassifizierung.
 
