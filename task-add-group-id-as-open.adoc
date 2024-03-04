@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: 'Wenn Gruppen-IDs an Dateien oder Ordner in NFS-Dateifreigaben angehängt werden, definieren sie die Berechtigungen für die Datei oder den Ordner, z. B. ob sie „für die Organisation geöffnet“ sind. Wenn einige Gruppen-IDs (GIDs) zunächst nicht mit der Berechtigungsebene „für Organisation öffnen“ eingerichtet wurden, können Sie diese Berechtigung zur GID hinzufügen, sodass alle Dateien und Ordner, die mit dieser GID verknüpft sind, als „für die Organisation offen“ gelten.' 
 ---
-= Zusätzliche Gruppen-IDs als „für Organisation offen“ definieren
+= Definieren Sie zusätzliche Gruppen-IDs als für die Organisation offen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -27,13 +27,14 @@ Um diese Funktion zu aktivieren, müssen Sie sich beim BlueXP Klassifizierungssy
 Sie müssen die Gruppen-ID-Nummern (GIDs) haben, bevor Sie diese Aufgabe starten.
 
 .Schritte
-. Klicken Sie auf dem BlueXP Klassifizierungssystem auf „/opt/netapp/config/Custom_Configuration“ und öffnen Sie die Datei „Data_Provider.yaml“.
+. Öffnen Sie auf dem BlueXP Klassifizierungssystem die Datei unter „/opt/netapp/config/Custom_Configuration“ `data_provider.yaml`.
 . Fügen Sie in der Zeile "Organisation_Group_ids: []" die Gruppen-IDs hinzu. Beispiel:
 +
  organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
 +
 Ändern Sie nichts anderes in dieser Datei.
 
+. Speichern Sie die Änderungen in der Datei.
 . Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:
 +
  update_data_providers_from_config_file.sh
@@ -42,10 +43,15 @@ Mit diesem Befehl werden die überarbeiteten Gruppen-ID-Berechtigungen für die 
 
 
 
+.Ergebnis
 Bei allen nachfolgenden Scans Ihrer Daten werden Dateien oder Ordner identifiziert, bei denen diese Gruppen-IDs als „für Unternehmen offen“ angehängt sind.
 
 Mit den gleichen Schritten können Sie die Liste der Gruppen-IDs bearbeiten und alle Gruppen-IDs löschen, die Sie in der Vergangenheit hinzugefügt haben. Die überarbeitete Liste der Gruppen-IDs wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.
 
-Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
+
+
+== Die aktuelle Liste der Gruppen-IDs anzeigen
+
+Es ist möglich für den Inhalt des `data_provider.yaml` Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde `update_data_providers_from_config_file.sh` Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
 
  get_data_providers_configuration.sh

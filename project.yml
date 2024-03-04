@@ -89,6 +89,8 @@ sidebar:
     entries:
     - title: Fügen Sie benutzerdefinierte Kennungen für persönliche Daten hinzu
       url: "/task-managing-data-fusion.html"
+    - title: Verzeichnisse vom Scannen ausschließen
+      url: "/task-exclude-scan-paths.html"
     - title: Status der BlueXP Klassifizierungsaktionen anzeigen
       url: "/task-view-compliance-actions.html"
     - title: Vorhandene Gruppen-IDs als „für Organisation offen“ definieren

@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: Wenn die BlueXP Klassifizierung Scandaten in bestimmten Datenquellen-Verzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen. Nachdem Sie diese Änderung angewendet haben, schließt die BlueXP Klassifizierungs-Engine Scandaten in diesen Verzeichnissen aus. 
+---
+= Ausschließen bestimmter Verzeichnisse von den Klassifikationsscans von BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn die BlueXP Klassifizierung Scandaten in bestimmten Datenquellen-Verzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen. Nachdem Sie diese Änderung angewendet haben, schließt die BlueXP Klassifizierungs-Engine Scandaten in diesen Verzeichnissen aus.
+
+Beachten Sie, dass die BlueXP Klassifizierung standardmäßig so konfiguriert ist, dass die Scan-Volume-Snapshot-Daten ausgeschlossen werden, da dieser Inhalt mit dem Inhalt des Volumes identisch ist.
+
+Diese Funktion ist ab Version 1.29 der BlueXP Klassifizierung verfügbar (ab März 2024).
+
+
+
+== Unterstützte Datenquellen
+
+Der Ausschluss bestimmter Verzeichnisse aus der BlueXP Klassifizierungs-Scans wird für NFS- und CIFS-Freigaben in den folgenden Datenquellen unterstützt:
+
+* On-Premises-ONTAP
+* Cloud Volumes ONTAP
+* Amazon FSX für NetApp ONTAP
+* Azure NetApp Dateien
+* Allgemeine Dateifreigaben
+
+
+
+
+== Definieren Sie die Verzeichnisse, die vom Scannen ausgeschlossen werden sollen
+
+Bevor Sie Verzeichnisse von der Klassifizierungsüberprüfung ausschließen können, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können. Informieren Sie sich darüber link:reference-log-in-to-instance.html["Melden Sie sich beim BlueXP Klassifizierungssystem an"] Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.
+
+[NOTE]
+====
+* Pro BlueXP Klassifizierungssystem können Sie maximal 50 Verzeichnispfade ausschließen.
+* Das Ausschließen von Verzeichnispfaden kann sich auf die Scanzeiten auswirken.
+
+
+====
+.Schritte
+. Öffnen Sie auf dem BlueXP Klassifizierungssystem die Datei unter „/opt/netapp/config/Custom_Configuration“ `data_provider.yaml`.
+. Geben Sie im Bereich „Data_Providers“ unter der Zeile „exclude:“ die auszuschließenden Verzeichnispfade ein. Beispiel:
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+Ändern Sie nichts anderes in dieser Datei.
+
+. Speichern Sie die Änderungen in der Datei.
+. Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:
++
+ update_data_providers_from_config_file.sh
++
+Mit diesem Befehl werden die Verzeichnisse, die vom Scannen ausgeschlossen werden sollen, an die Klassifizierungs-Engine übergeben.
+
+
+
+.Ergebnis
+Alle nachfolgenden Scans Ihrer Daten schließen das Scannen dieser angegebenen Verzeichnisse aus.
+
+Mit den gleichen Schritten können Sie Elemente aus der Ausschlussliste hinzufügen, bearbeiten oder löschen. Die überarbeitete Ausschlussliste wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.
+
+
+
+== Beispiele
+
+.Konfiguration 1:
+Jeder Ordner, der an einer beliebigen Stelle im Namen „folder1“ enthält, wird von allen Datenquellen ausgeschlossen.
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.Erwartete Ergebnisse für Pfade, die ausgeschlossen werden:
+* /CVO1/folder1
+* /CVO1/folder1Name
+* /CVO1/folder10
+* /CVO1/*folder1
+* /CVO1/+folder1Name
+* /CVO1/notfolder10
+* /CVO22/folder1
+* /CVO22/folder1Name
+* /CVO22/folder10
+
+
+.Beispiele für Pfade, die nicht ausgeschlossen werden:
+* /CVO1/*Ordner
+* /CVO1/Ordnername
+* /CVO22/*folder20
+
+
+.Konfiguration 2:
+Jeder Ordner, der "*folder1" nur am Anfang des Namens enthält, wird ausgeschlossen.
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.Erwartete Ergebnisse für Pfade, die ausgeschlossen werden:
+* /CVO/*folder1
+* /CVO/*folder1Name
+* /CVO/*folder10
+
+
+.Beispiele für Pfade, die nicht ausgeschlossen werden:
+* /CVO/folder1
+* /CVO/folder1Name
+* /CVO/Not*folder10
+
+
+.Konfiguration 3:
+Jeder Ordner in der Datenquelle „CVO22“, der „folder1“ irgendwo im Namen enthält, wird ausgeschlossen.
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.Erwartete Ergebnisse für Pfade, die ausgeschlossen werden:
+* /CVO22/folder1
+* /CVO22/folder1Name
+* /CVO22/folder10
+
+
+.Beispiele für Pfade, die nicht ausgeschlossen werden:
+* /CVO1/folder1
+* /CVO1/folder1Name
+* /CVO1/folder10
+
+
+
+
+== Sonderzeichen in Ordnernamen werden entfernt
+
+Wenn Sie einen Ordnernamen haben, der eines der folgenden Sonderzeichen enthält und Sie Daten in diesem Ordner vom Scannen ausschließen möchten, müssen Sie die Escape-Sequenz \\ vor dem Ordnernamen verwenden.
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+Beispiel:
+
+Pfad in Quelle: `/project/*not_to_scan`
+
+Syntax in Ausschlussdatei: `"\\*not_to_scan"`
+
+
+
+== Aktuelle Ausschlussliste anzeigen
+
+Es ist möglich für den Inhalt des `data_provider.yaml` Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde `update_data_providers_from_config_file.sh` Skript: Um die aktuelle Liste der Verzeichnisse anzuzeigen, die Sie nicht beim Klassifizierungs-Scan von BlueXP berücksichtigt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
+
+ get_data_providers_configuration.sh

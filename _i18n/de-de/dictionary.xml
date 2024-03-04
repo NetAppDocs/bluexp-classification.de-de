@@ -1654,13 +1654,6 @@
   <block id="6187258d3b87228cf977d535a5db1ea0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Wählen Sie den Scantyp für die Benutzerdateien aus</block>
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">Groß (Standard)</block>
   <block id="9868eea85c69d464c823a4c7e185121a" category="section-title">Was ist der Unterschied zwischen Mapping und Classification Scans</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">11. Dezember 2022 (Version 1.18)</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">Erweiterungen für die Installation vor Ort</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">Die folgenden Erweiterungen wurden für die On-Prem Data Sense Installation hinzugefügt:</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">Einige zusätzliche Voraussetzungen werden jetzt geprüft, bevor die Installation auf einem lokalen Host gestartet wird. Dadurch kann sichergestellt werden, dass Ihr Hostsystem zu 100 % bereit ist, wenn Daten Sense Software installiert wird:</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">Testen Sie die entsprechenden Berechtigungen für alle erforderlichen Ordner</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">Auf der Seite Konfiguration zeigt jetzt der Abschnitt Arbeitsumgebungen die ID _Arbeitsumgebung_ und den Namen _Scannergruppe_ an. Wenn Sie mehrere Data Sense Hosts verwenden möchten, um zusätzliche Verarbeitungsleistung für das Scannen Ihrer Datenquellen bereitzustellen, müssen Sie die ID der Arbeitsumgebung kennen.</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">Erfahren Sie mehr über die Installation von Data Sense auf einem einzelnen Host-Server und auf mehreren Hosts</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Bevor Sie beginnen</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Nachdem Sie fertig sind</block>
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Prüfen Sie die Voraussetzungen für den Objekt-Storage</block>
@@ -1672,8 +1665,6 @@
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">Führen Sie das folgende Skript aus, um diese Zuordnungsinformationen bei allen Scanner-Knoten zu registrieren:<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">Erforderliche Schritte</block>
   <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> S3-Anforderungen in Ihrer Cloud-Umgebung einrichten</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">Testen Sie ausreichend Speicherplatz auf<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>,<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>, und<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">Außerdem zeigt ein neuer Abschnitt auf der Konfigurationsseite die Scannergruppen, die Sie eingerichtet haben, und die Scannerknoten, die sich in jeder Gruppe befinden.</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">Der Connector-Host muss ausgehenden HTTPS-Zugriff über Port 443 ermöglichen. Wenn sich der Connector in der Cloud befindet, ist die gesamte ausgehende Kommunikation durch vordefinierte Firewall- oder Routingregeln zulässig.</block>
   <block id="be8e8316109467c39dd04940dda55d9c" category="list-text">Öffnen Sie die Datei „/opt/netapp/Datacense/Working_Environment_to_Scanner_Group_config.yml“, und geben Sie die Zuordnung ein, für die Scannergruppen bestimmte Arbeitsumgebungen scannen. Sie benötigen die _Working Environment ID_ für jede Datenquelle. Die folgenden Einträge fügen beispielsweise 2 Arbeitsumgebungen zur Scanner-Gruppe „europa“ und 2 zur Scannergruppe „united_States“ hinzu:</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">Auf der Konfigurationsseite können Sie die Datenquellen auswählen, die Sie scannen möchten - wenn Sie das noch nicht getan haben. Wenn Sie Scannergruppen erstellt haben, wird jede Datenquelle von den Scanner-Knoten in der jeweiligen Gruppe gescannt.</block>
@@ -2957,7 +2948,6 @@
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsaktion abgeschlossen ist und einige Elemente fehlgeschlagen sind und einige Elemente erfolgreich waren, z. B. wenn Sie 100 Dateien verschieben oder löschen. Außerdem wurde der Status „Fertig“ in „Erfolg“ umbenannt. In der Vergangenheit können im Status „Fertig“ Aktionen aufgeführt werden, die erfolgreich waren und die fehlgeschlagen sind. Der Status „Erfolg“ bedeutet nun, dass alle Aktionen erfolgreich auf allen Elementen durchgeführt wurden.<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>.</block>
   <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">Das Governance Dashboard hat einen neuen Bereich mit „_sensitiven Daten“ und „Wide Permissions_“ hinzugefügt, der eine Heatmap mit Dateien enthält, die vertrauliche Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und die zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben.<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>.</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">Durch die BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die japanische individuelle Nummer (auch „Meine Nummer“) enthalten. Dazu gehört sowohl die persönliche als auch die Firmennummer.<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>.</block>
-  <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>.</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">Das können Sie<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">Informationen zum Erstellen eines Connectors in der Umgebung Ihres Cloud-Providers finden Sie unter<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>,<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>, Oder<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3317,14 +3307,12 @@
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">Verzeichnisname</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">Verzeichniseigentümer</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">Wenn Gruppen-IDs an Dateien oder Ordner in NFS-Dateifreigaben angehängt werden, definieren sie die Berechtigungen für die Datei oder den Ordner, z. B. ob sie „für die Organisation geöffnet“ sind. Wenn einige Gruppen-IDs (GIDs) zunächst nicht mit der Berechtigungsebene „für Organisation öffnen“ eingerichtet wurden, können Sie diese Berechtigung zur GID hinzufügen, sodass alle Dateien und Ordner, die mit dieser GID verknüpft sind, als „für die Organisation offen“ gelten.</block>
-  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">Zusätzliche Gruppen-IDs als „für Organisation offen“ definieren</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">Wenn Gruppen-IDs (GIDs) an Dateien oder Ordner in NFS-Dateifreigaben angehängt werden, definieren sie die Berechtigungen für die Datei oder den Ordner, z. B. ob sie „für die Organisation offen“ sind. Wenn einige Gruppen-IDs (GIDs) zunächst nicht mit der Berechtigungsebene „für Organisation öffnen“ eingerichtet wurden, können Sie diese Berechtigung zur GID hinzufügen, sodass alle Dateien und Ordner, die mit dieser GID verknüpft sind, als „für die Organisation offen“ gelten.</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">Nachdem Sie diese Änderung vorgenommen und die BlueXP-Klassifizierung Ihre Dateien und Ordner erneut scannt, werden alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, auf der Seite „Ermittlungsdetails“ diese Berechtigung angezeigt. Sie werden auch in Berichten angezeigt, in denen Sie Dateiberechtigungen anzeigen.</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">Melden Sie sich beim BlueXP Klassifizierungssystem an</block>
   <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer in der Cloud implementierten Linux-Maschine installiert wird, können Sie direkt auf die Konfigurationsdatei und das Skript zugreifen.</block>
   <block id="aea796c551760c123249c98597ef5dab" category="section-title">Fügen Sie den Gruppen-IDs die Berechtigung „für Organisation öffnen“ hinzu</block>
   <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">Sie müssen die Gruppen-ID-Nummern (GIDs) haben, bevor Sie diese Aufgabe starten.</block>
-  <block id="2783de23499f1b6912284079950af328" category="list-text">Klicken Sie auf dem BlueXP Klassifizierungssystem auf „/opt/netapp/config/Custom_Configuration“ und öffnen Sie die Datei „Data_Provider.yaml“.</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">Fügen Sie in der Zeile "Organisation_Group_ids: []" die Gruppen-IDs hinzu. Beispiel:</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">Ändern Sie nichts anderes in dieser Datei.</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">Mit diesem Befehl werden die überarbeiteten Gruppen-ID-Berechtigungen für die Klassifizierungs-Engine übertragen.</block>
@@ -3336,7 +3324,6 @@
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Zusätzliche Gruppen-IDs als „für Organisation offen“ hinzufügen</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Vorhandene Gruppen-IDs als „für Organisation offen“ definieren</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:</block>
-  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP unterstützt REST-API-Funktionen für seine Services. Wenn BlueXP nicht der bevorzugte Managementpunkt ist, können Services wie die BlueXP Klassifizierung auch über eine REST-API genutzt werden. Jede Benutzeraktion hat eine REST-API, die in Systeme von Drittanbietern integriert werden kann. Siehe <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> Entsprechende Details.</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">Werden Snapshot-Kopien auf ONTAP Volumes gescannt?</block>
@@ -3465,7 +3452,6 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Mögli
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">Fügen Sie den Datenbankserver hinzu</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">Aktivieren und deaktivieren Sie Compliance-Scans für Datenbankschemas</block>
   <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">10. Januar 2024 (Version 1.27)</block>
-  <block id="c0aa452130abaadece0c71d90274bb8e" category="section-title">Dezember 2023 (Version 1.26.6)</block>
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Diese Version enthält einige kleinere Verbesserungen.</block>
   <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">Das Release hat auch vorübergehend die folgenden Optionen entfernt:</block>
   <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>.</block>
@@ -3512,7 +3498,6 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Mögli
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">Zeigen Sie Dateien an, die private Informationen enthalten</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">Anzeigen von Dateien, die im Speicher dupliziert werden</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">Filtern Sie Ihre Daten, um bestimmte Dateien anzuzeigen</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">Erstellen Sie Richtlinien, um Ihre wichtigsten Suchen anzuzeigen</block>
   <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">Wenden Sie Tags und Eigentümer auf Dateien an, die Aufmerksamkeit erfordern</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">Fügen Sie Ihre eigenen persönlichen Daten-IDs hinzu</block>
   <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">Quelldateien verschieben</block>
@@ -3524,4 +3509,68 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Mögli
   <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXP Klassifizierungs-Videos</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP-Blog</block>
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP Webinare</block>
+  <block id="8180cc16c2c6f5d6b650c76944d52252" category="summary">Wenn die BlueXP Klassifizierung Scandaten in bestimmten Datenquellen-Verzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen. Nachdem Sie diese Änderung angewendet haben, schließt die BlueXP Klassifizierungs-Engine Scandaten in diesen Verzeichnissen aus.</block>
+  <block id="f6af5e23cd22bc5f1b7833ad602a5c38" category="doc">Ausschließen bestimmter Verzeichnisse von den Klassifikationsscans von BlueXP</block>
+  <block id="bea0fd574e5a5abde1c8262dbd6e2370" category="paragraph">Beachten Sie, dass die BlueXP Klassifizierung standardmäßig so konfiguriert ist, dass die Scan-Volume-Snapshot-Daten ausgeschlossen werden, da dieser Inhalt mit dem Inhalt des Volumes identisch ist.</block>
+  <block id="efebf801e240ae82ed1c434305548b38" category="paragraph">Diese Funktion ist ab Version 1.29 der BlueXP Klassifizierung verfügbar (ab März 2024).</block>
+  <block id="0abc7ce542155915b82311c6450bea62" category="paragraph">Der Ausschluss bestimmter Verzeichnisse aus der BlueXP Klassifizierungs-Scans wird für NFS- und CIFS-Freigaben in den folgenden Datenquellen unterstützt:</block>
+  <block id="49fe103d0a39e5feeddf772106a8122e" category="list-text">Allgemeine Dateifreigaben</block>
+  <block id="cf2e31e61b9c0d3547f54fc506e4b383" category="section-title">Definieren Sie die Verzeichnisse, die vom Scannen ausgeschlossen werden sollen</block>
+  <block id="78e986fa820c103dbcc45ed24bd2f383" category="paragraph">Bevor Sie Verzeichnisse von der Klassifizierungsüberprüfung ausschließen können, müssen Sie sich beim BlueXP Klassifizierungssystem anmelden, damit Sie eine Konfigurationsdatei bearbeiten und ein Skript ausführen können. Informieren Sie sich darüber <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> Je nachdem, ob Sie die Software manuell auf einem Linux-Rechner installiert haben oder ob Sie die Instanz in der Cloud bereitgestellt haben.</block>
+  <block id="bc6218284832af039faeb4c497e97a18" category="list-text">Pro BlueXP Klassifizierungssystem können Sie maximal 50 Verzeichnispfade ausschließen.</block>
+  <block id="66a7b6ae1af91171aaf4ecc7afd0b7d0" category="list-text">Das Ausschließen von Verzeichnispfaden kann sich auf die Scanzeiten auswirken.</block>
+  <block id="2e19c6096e07e117219780aee7f88c45" category="list-text">Öffnen Sie auf dem BlueXP Klassifizierungssystem die Datei unter „/opt/netapp/config/Custom_Configuration“<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>.</block>
+  <block id="6e0803e8653caacbe1a019f32eda00bb" category="list-text">Geben Sie im Bereich „Data_Providers“ unter der Zeile „exclude:“ die auszuschließenden Verzeichnispfade ein. Beispiel:</block>
+  <block id="5a0dfd405c0424a01f42cdb7e596d91c" category="list-text">Speichern Sie die Änderungen in der Datei.</block>
+  <block id="d661ab86a14960e8bcf6cdfa727299d1" category="paragraph">Mit diesem Befehl werden die Verzeichnisse, die vom Scannen ausgeschlossen werden sollen, an die Klassifizierungs-Engine übergeben.</block>
+  <block id="21f183efd2dff70b58a99d83fc4f0ce7" category="paragraph">Alle nachfolgenden Scans Ihrer Daten schließen das Scannen dieser angegebenen Verzeichnisse aus.</block>
+  <block id="a495b8035b743d8b7dea2d9d0918de77" category="paragraph">Mit den gleichen Schritten können Sie Elemente aus der Ausschlussliste hinzufügen, bearbeiten oder löschen. Die überarbeitete Ausschlussliste wird aktualisiert, nachdem Sie das Skript ausgeführt haben, um Ihre Änderungen zu übernehmen.</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">Beispiele</block>
+  <block id="0440227581515c72236de5a764242d5c" category="paragraph-title">Konfiguration 1:</block>
+  <block id="8c0f7ed2eea737d19ff087745c78f4ae" category="paragraph">Jeder Ordner, der an einer beliebigen Stelle im Namen „folder1“ enthält, wird von allen Datenquellen ausgeschlossen.</block>
+  <block id="d6d0a43c6c69d1f785258f09797e96a2" category="list-title">Erwartete Ergebnisse für Pfade, die ausgeschlossen werden:</block>
+  <block id="0d30977fecaa90640135943496e20863" category="list-text">/CVO1/folder1</block>
+  <block id="8eb7d336cfc030df3afe89d5c289514d" category="list-text">/CVO1/folder1Name</block>
+  <block id="9f2d1aa2824b0506dd1e80da3eaebd63" category="list-text">/CVO1/folder10</block>
+  <block id="15fb383027ef8fbe15d374b2efc33994" category="list-text">/CVO1/*folder1</block>
+  <block id="569806d3b5250620ff0f137d85df73c4" category="list-text">/CVO1/+folder1Name</block>
+  <block id="d6f23bc30d0950bf24b440de3579ee1f" category="list-text">/CVO1/notfolder10</block>
+  <block id="7e3057c60782470bd7f0c765e4d614b9" category="list-text">/CVO22/folder1</block>
+  <block id="b18ea64bfd5aa27240193320e354bfeb" category="list-text">/CVO22/folder1Name</block>
+  <block id="6fdf0a8d667f474107a56d7566260558" category="list-text">/CVO22/folder10</block>
+  <block id="7c9e22babb20d95a6ccacbc12c6e72db" category="list-title">Beispiele für Pfade, die nicht ausgeschlossen werden:</block>
+  <block id="ec2b190a955f29720921cc8e6a67731d" category="list-text">/CVO1/*Ordner</block>
+  <block id="0856e33548ceb338ab56d993d8281098" category="list-text">/CVO1/Ordnername</block>
+  <block id="14b8fac51101a115be8405f9d25adf0c" category="list-text">/CVO22/*folder20</block>
+  <block id="ce6c202454d84db0a51ee3b673259d76" category="paragraph-title">Konfiguration 2:</block>
+  <block id="cd10b67d6b72e9152aca54085862e630" category="paragraph">Jeder Ordner, der "*folder1" nur am Anfang des Namens enthält, wird ausgeschlossen.</block>
+  <block id="33114d8cd4f5562094ea8f71798fab0c" category="list-text">/CVO/*folder1</block>
+  <block id="07099186c5910fc2467ae1b4757b70f3" category="list-text">/CVO/*folder1Name</block>
+  <block id="b96768cc207dc3d7940a06aed4482e49" category="list-text">/CVO/*folder10</block>
+  <block id="129853dc73d0231d5c812823e2480cba" category="list-text">/CVO/folder1</block>
+  <block id="c855f79110a45e3cf4ee4a2e9f07d01c" category="list-text">/CVO/folder1Name</block>
+  <block id="5b6734714cb7b0ac3b7b695994d18616" category="list-text">/CVO/Not*folder10</block>
+  <block id="d3b9102bc3b45248bbfec3ec65c81ffd" category="paragraph-title">Konfiguration 3:</block>
+  <block id="c962d247f3d6cbb96db748ddbc8947d0" category="paragraph">Jeder Ordner in der Datenquelle „CVO22“, der „folder1“ irgendwo im Namen enthält, wird ausgeschlossen.</block>
+  <block id="85aafa7a10a33b1a6b3edd3a981f3e09" category="section-title">Sonderzeichen in Ordnernamen werden entfernt</block>
+  <block id="555e1283533f2fd2406da22eb7c48543" category="paragraph">Wenn Sie einen Ordnernamen haben, der eines der folgenden Sonderzeichen enthält und Sie Daten in diesem Ordner vom Scannen ausschließen möchten, müssen Sie die Escape-Sequenz \\ vor dem Ordnernamen verwenden.</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">Beispiel:</block>
+  <block id="f6b342a69edf320338b3f72b95931768" category="paragraph">Pfad in Quelle:<block ref="4cd339ff39aca9d50d4472947a989dc1" prefix=" " category="inline-code"></block></block>
+  <block id="457d08b230361da11684b35702d5d114" category="paragraph">Syntax in Ausschlussdatei:<block ref="656c9e12809cee621e2abce3032674d0" prefix=" " category="inline-code"></block></block>
+  <block id="3d704d8a7dea04055fa8e435fb3ba4a4" category="section-title">Aktuelle Ausschlussliste anzeigen</block>
+  <block id="ce591271bee64e6f1ef9a4585a8a1142" category="paragraph">Es ist möglich für den Inhalt des<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> Skript: Um die aktuelle Liste der Verzeichnisse anzuzeigen, die Sie nicht beim Klassifizierungs-Scan von BlueXP berücksichtigt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
+  <block id="75377d4edffa6c8df90ec35a6c2955ae" category="section-title">Kann ich den Dienst anweisen, Scandaten in bestimmten Verzeichnissen auszuschließen?</block>
+  <block id="140079c23bf99666acb52cc8f9b453cb" category="paragraph">Ja. Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie der Klassifizierungs-Engine diese Liste bereitstellen. Nach Anwendung dieser Änderung schließt die BlueXP Klassifizierung Scandaten in den angegebenen Verzeichnissen aus.</block>
+  <block id="cccdbfa223764cc2c6bbdf979c65ac39" category="paragraph"><block ref="8704cac21d49e5e6ff202bcfdaf0dcb0" category="inline-link-macro-rx"></block>.</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4. März 2024 (Version 1.29)</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">14. Dezember 2023 (Version 1.26.6)</block>
+  <block id="a1663078538acf931413c4667ee4dc32" category="doc">Definieren Sie zusätzliche Gruppen-IDs als für die Organisation offen</block>
+  <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Die aktuelle Liste der Gruppen-IDs anzeigen</block>
+  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">Es ist möglich für den Inhalt des<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
+  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Erstellen Sie Richtlinien, um die Ergebnisse Ihrer Top-Suchen anzuzeigen</block>
+  <block id="3e01ecaa94897c14b8a0c8eb76bf0c93" category="sidebar">Bestimmte Verzeichnisse vom Scannen ausschließen</block>
+  <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Verzeichnisse vom Scannen ausschließen</block>
 </blocks>

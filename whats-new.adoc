@@ -18,6 +18,18 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== 4. März 2024 (Version 1.29)
+
+
+
+=== Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden
+
+Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.
+
+https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["Weitere Informationen ."].
+
+
+
 == 10. Januar 2024 (Version 1.27)
 
 
@@ -34,7 +46,7 @@ Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der Blu
 
 
 
-== Dezember 2023 (Version 1.26.6)
+== 14. Dezember 2023 (Version 1.26.6)
 
 Diese Version enthält einige kleinere Verbesserungen.
 
@@ -308,25 +320,3 @@ https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#f
 === Durch die BlueXP Klassifizierung kann die japanische individuelle Nummer identifiziert werden
 
 Durch die BlueXP Klassifizierung können Dateien identifiziert und kategorisiert werden, die die japanische individuelle Nummer (auch „Meine Nummer“) enthalten. Dazu gehört sowohl die persönliche als auch die Firmennummer. https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Hier können Sie alle Arten von personenbezogenen Daten einsehen, die durch die BlueXP Klassifizierung in Ihren Daten identifiziert werden können"].
-
-
-
-== 11. Dezember 2022 (Version 1.18)
-
-
-
-=== Erweiterungen für die Installation vor Ort
-
-Die folgenden Erweiterungen wurden für die On-Prem Data Sense Installation hinzugefügt:
-
-* Einige zusätzliche Voraussetzungen werden jetzt geprüft, bevor die Installation auf einem lokalen Host gestartet wird. Dadurch kann sichergestellt werden, dass Ihr Hostsystem zu 100 % bereit ist, wenn Daten Sense Software installiert wird:
-+
-** Testen Sie ausreichend Speicherplatz auf `/var/lib/docker`, `/tmp`, und `/opt`
-** Testen Sie die entsprechenden Berechtigungen für alle erforderlichen Ordner
-
-
-* Auf der Seite Konfiguration zeigt jetzt der Abschnitt Arbeitsumgebungen die ID _Arbeitsumgebung_ und den Namen _Scannergruppe_ an. Wenn Sie mehrere Data Sense Hosts verwenden möchten, um zusätzliche Verarbeitungsleistung für das Scannen Ihrer Datenquellen bereitzustellen, müssen Sie die ID der Arbeitsumgebung kennen.
-* Außerdem zeigt ein neuer Abschnitt auf der Konfigurationsseite die Scannergruppen, die Sie eingerichtet haben, und die Scannerknoten, die sich in jeder Gruppe befinden.
-
-
-https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Erfahren Sie mehr über die Installation von Data Sense auf einem einzelnen Host-Server und auf mehreren Hosts"].

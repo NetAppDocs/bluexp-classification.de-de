@@ -178,17 +178,25 @@ link:task-managing-data-fusion.html["Weitere Informationen ."^].
 
 
 
-=== Was geschieht, wenn das Daten-Tiering auf Ihren ONTAP Volumes aktiviert ist?
+=== Kann ich den Dienst anweisen, Scandaten in bestimmten Verzeichnissen auszuschließen?
 
-Wenn die BlueXP Klassifizierung Volumes scannt, die kalte Daten in Objekt-Storage verschoben haben, scannt sie alle Daten auf lokalen Festplatten, während die kalten Daten in Objekt-Storage verschoben werden. Dies gilt auch für Produkte, die nicht von NetApp stammen und Tiering implementieren.
+Ja. Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie der Klassifizierungs-Engine diese Liste bereitstellen. Nach Anwendung dieser Änderung schließt die BlueXP Klassifizierung Scandaten in den angegebenen Verzeichnissen aus.
 
-Der Scan heizt die kalten Daten nicht auf – sie bleiben kalt und verbleiben im Objekt-Storage.
+link:task-exclude-scan-paths.html["Weitere Informationen ."^].
 
 
 
 === Werden Snapshot-Kopien auf ONTAP Volumes gescannt?
 
 Nein Durch die BlueXP Klassifizierung werden Snapshots nicht gescannt, da der Inhalt mit dem Inhalt des Volume identisch ist.
+
+
+
+=== Was geschieht, wenn das Daten-Tiering auf Ihren ONTAP Volumes aktiviert ist?
+
+Wenn die BlueXP Klassifizierung Volumes scannt, die kalte Daten in Objekt-Storage verschoben haben, scannt sie alle Daten auf lokalen Festplatten, während die kalten Daten in Objekt-Storage verschoben werden. Dies gilt auch für Produkte, die nicht von NetApp stammen und Tiering implementieren.
+
+Der Scan heizt die kalten Daten nicht auf – sie bleiben kalt und verbleiben im Objekt-Storage.
 
 
 
