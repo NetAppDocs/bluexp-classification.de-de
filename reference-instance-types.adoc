@@ -49,7 +49,7 @@ Wenn in den folgenden Tabellen das als „Standard“ markierte System in der Re
 | Systemgröße | Spezifikationen | Instanztyp 
 
 
-| Extra Groß | 32 CPUs, 128 GB RAM, 1 tib SSD (min. Durchsatz von 750 MB/s) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (Standard) 
+| Extra Groß | 32 CPUs, 128 GB RAM, BS-Festplatte (2,048 gib, min. 250 MB/s Durchsatz) und Datenfestplatte (1 tib SSD, min. 750 MB/s Durchsatz) | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] (Standard) 
 
 
 | Groß | 16 CPUs, 64 GB RAM, 500 gib SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] (Standard) 
