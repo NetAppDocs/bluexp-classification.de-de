@@ -135,7 +135,7 @@ Sie können beispielsweise sehen, wo Ihre internen Produkt-IDs in allen Dateien 
 
 Nach Hinzufügen des regex wird die BlueXP Klassifizierung neu gestartet und scannt alle Datenquellen. Nach Abschluss des Scans werden die neuen Ergebnisse im BlueXP Classification Compliance Dashboard im Abschnitt „Persönliche Ergebnisse“ und auf der Untersuchungsseite im Filter „Persönliche Daten“ angezeigt.
 
-Siehe https://regex101.com/[] Wenn Sie Hilfe beim Aufbau des regulären Ausdrucks benötigen, benötigen Sie. Wählen Sie *Python* für den Geschmack, um zu sehen, welche Arten von Ergebnissen die BlueXP-Klassifikation vom regulären Ausdruck entspricht.
+Wenn Sie beim Erstellen des regulären Ausdrucks Hilfe benötigen, lesen Sie https://regex101.com/["Reguläre Ausdrücke 101"^]. Wählen Sie *Python* für den Geschmack, um zu sehen, welche Arten von Ergebnissen die BlueXP-Klassifikation vom regulären Ausdruck entspricht. Der https://pythonium.net/regex["Seite „Python Regex Tester“"^] Ist auch nützlich, indem Sie eine grafische Darstellung Ihrer Muster anzeigen.
 
 
 NOTE: Derzeit erlauben wir die Verwendung von Pattern Flags beim Erstellen eines Regex nicht - das bedeutet, dass Sie "/" nicht verwenden sollten.

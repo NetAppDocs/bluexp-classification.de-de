@@ -35,7 +35,7 @@ image:screenshot_compliance_repo_scan_settings.png["Ein Screenshot, in dem angez
 
 
 
-Sie können den Cursor über das Diagramm in der Spalte _Scan Status_ bewegen, um die Anzahl der Dateien anzuzeigen, die in jedem Repository zugeordnet oder klassifiziert werden sollen (in diesem Beispiel Bucket).
+Sie können den Mauszeiger über das Diagramm in der Spalte _Mapping Status_ bewegen, um die Anzahl der Dateien anzuzeigen, die in jedem Repository (Bucket in diesem Beispiel) noch zugeordnet oder klassifiziert werden sollen.
 
 
 
@@ -53,7 +53,7 @@ image:screenshot_compliance_config_button.png["Ein Screenshot zeigt, wie Sie auf
 
 . Auf der Seite Scankonfiguration können Sie jedes der Repositories (in diesem Beispiel Buckets) so ändern, dass *Map* oder *Map & Classify* Scans durchgeführt werden.
 +
-image:screenshot_compliance_repo_scanning.png["Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird."]
+image:screenshot_compliance_repo_scan_settings.png["Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird."]
 
 
 

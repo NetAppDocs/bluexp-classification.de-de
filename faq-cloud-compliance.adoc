@@ -245,7 +245,7 @@ Die BlueXP Klassifizierung kann Daten aus Arbeitsumgebungen scannen, die Sie der
 * Google Drive-Konten
 
 
-Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x, 4.0 und 4.1 sowie CIFS-Versionen 1.x, 2.0, 2.1 und 3.0.
+Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x und CIFS-Versionen 1.x, 2.0, 2.1 und 3.0.
 
 
 
@@ -392,9 +392,23 @@ Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuel
 
 
 
+=== Ist für die BlueXP Klassifizierung Zugriff auf Zugangsdaten erforderlich?
+
+Die BlueXP Klassifizierung selbst ruft keine Storage-Anmeldedaten ab. Stattdessen werden sie im BlueXP Connector gespeichert.
+
+Die BlueXP Klassifizierung verwendet Daten-Ebenen-Anmeldedaten, zum Beispiel CIFS-Zugangsdaten, um Freigaben vor dem Scannen zu mounten.
+
+
+
 === Kann ich den Connector auf meinem eigenen Host bereitstellen?
 
 Ja. Das können Sie https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Host in der Cloud. Wenn Sie die BlueXP Klassifizierung lokal implementieren möchten, sollten Sie den Connector möglicherweise auch On-Premises installieren. Dies ist aber nicht erforderlich.
+
+
+
+=== Verwendet die Kommunikation zwischen dem Dienst und dem Connector HTTP?
+
+Ja, die BlueXP Klassifizierung kommuniziert über HTTP mit dem BlueXP Connector.
 
 
 

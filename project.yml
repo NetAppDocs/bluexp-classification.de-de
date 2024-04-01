@@ -26,11 +26,13 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: Implementieren Sie die BlueXP Klassifizierung
       entries:
+      - title: Welche Implementierung sollten Sie verwenden
+        url: "/task-deploy-overview.html"
       - title: Implementieren Sie mit BlueXP in der Cloud
         url: "/task-deploy-cloud-compliance.html"
       - title: Installation auf einem Linux-Host mit Internetzugang
         url: "/task-deploy-compliance-onprem.html"
-      - title: Installation vor Ort ohne Internetzugang
+      - title: Installation auf einem lokalen Linux-Host ohne Internetzugang
         url: "/task-deploy-compliance-dark-site.html"
       - title: Stellen Sie sicher, dass Ihr Linux Host bereit ist, die BlueXP Klassifizierung
           zu installieren

@@ -8,13 +8,13 @@ indexpage:
     Sie bietet Ihnen so verwertbare Einblicke in Ihre Daten, um Compliance-Anforderungen
     zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration
     zu beschleunigen.
-  keywords: classification, cloud data sense, data sense, compliance, security
-  lead: Die BlueXP Klassifizierung ermöglicht Ihnen das Scannen und Klassifizieren
-    von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens. Das Klassifizierungs-System
-    verwendet KI-gestützte Natural Language Processing (NLP) für die kontextbezogene
-    Datenanalyse und -Kategorisierung. Damit erhalten Sie praxisnahe Erkenntnisse
-    für Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu
-    erkennen, Kosten zu optimieren und die Migration zu beschleunigen.
+  keywords: bluexp, classification, cloud data sense, data sense, compliance, security
+  lead: Die BlueXP Klassifizierung (Cloud Data Sense) ermöglicht Ihnen das Scannen
+    und Klassifizieren von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens.
+    Das Klassifizierungs-System verwendet KI-gestützte Natural Language Processing
+    (NLP) für die kontextbezogene Datenanalyse und -Kategorisierung. Damit erhalten
+    Sie praxisnahe Erkenntnisse für Ihre Daten, um Compliance-Anforderungen zu erfüllen,
+    Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.
   tiles:
   - title: Los geht's
     links:
@@ -90,8 +90,6 @@ indexpage:
       url: task-managing-highlights.html#delete-source-files
     - title: Erstellen Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
       url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
-    - title: Überwachen und managen Sie Dateizugriffsereignisse
-      url: task-manage-file-access-events.html
     - title: Reaktion auf eine Anforderung für den Zugriff eines Betroffenen
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: Blogs und Community
