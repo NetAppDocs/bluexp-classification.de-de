@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data-deprecated.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. 
+---
+= Untersuchen Sie die auf der Seite „Datenermittlung“ gespeicherten Daten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards.
+
+
+NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
+
+
+
+== Filtern Sie die Daten auf der Seite „Datenuntersuchung“
+
+Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten. Dies ist eine sehr leistungsstarke Funktion, denn nachdem Sie die Daten verfeinert haben, können Sie die Buttonleiste oben auf der Seite verwenden, um eine Vielzahl von Aktionen durchzuführen, wie das Kopieren von Dateien, Verschieben von Dateien, Hinzufügen eines Tags oder AIP-Label zu den Dateien und vieles mehr.
+
+
+
+=== Filtern Sie Daten nach Tags, Labels, zugewiesenen Benutzern und Richtlinien
+
+Verwenden Sie die folgenden Filter, um Daten nach Tags, AIP-Etiketten, zugewiesenen Benutzern oder Richtlinien anzuzeigen.
+
+[]
+====
+*HINWEIS* die Möglichkeit, nach Tags, Labels und zugewiesenen Benutzern zu filtern, ist nur für die BlueXP-Klassifizierungsversionen 1.30 und früher relevant.
+
+====
+[cols="30,60"]
+|===
+| Filtern | Details 
+
+
+| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
+
+
+| Etikett | Wählen Sie link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"] Die Ihren Dateien zugewiesen sind. 
+
+
+| Tags | Wählen Sie link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["Das Tag oder die Tags"] Die Ihren Dateien zugewiesen sind. 
+
+
+| Zugewiesen Zu | Wählen Sie den Namen der Person aus, der die Datei zugeordnet ist. 
+|===
+
+
+== Erstellen Sie den Datenermittlungsbericht
+
+Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
+
+Der Bericht ist in zwei verschiedenen Formaten verfügbar:
+
+* Als CSV-Datei, die Sie auf dem lokalen Computer speichern können.
++
+Dieser Bericht kann maximal 10,000 Datenzeilen enthalten.
+
+* Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren.
++
+Wenn mehr als 250,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
+
++
+Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
+
++
+[]
+====
+*HINWEIS* die Möglichkeit, den Bericht in zu generieren. Das JSON-Format ist nur für die BlueXP Klassifizierungsversionen 1.30 und früher relevant.
+
+====
+
+
+Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
+
+.Schritte
+. Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
+. Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.
++
+Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll `<host_name>:/<share_path>`.
+
++
+Sie können den Fortschritt der JSON-Berichterstellung in anzeigen link:task-view-compliance-actions.html["Statusbereich Aktionen"].
+
++
+[]
+====
+*HINWEIS* die Möglichkeit, nach Tags, Labels und zugewiesenen Benutzern zu filtern, ist nur für die BlueXP-Klassifizierungsversionen 1.30 und früher relevant.
+
+====
+

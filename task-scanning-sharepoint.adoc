@@ -16,6 +16,11 @@ summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Dateien in 
 [role="lead"]
 Führen Sie ein paar Schritte durch, um mit dem Scannen von Dateien in Ihren lokalen SharePoint Online- und SharePoint-Konten mit BlueXP Klassifizierung zu beginnen.
 
+[]
+====
+*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+
+====
 
 
 == Schnellstart
@@ -40,7 +45,7 @@ Fügen Sie die Liste der SharePoint-Website-URLs hinzu, die Sie im SharePoint-Ko
 
 
 
-== Überprüfung der SharePoint Anforderungen
+== SharePoint-Anforderungen prüfen
 
 Prüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass Sie die BlueXP Klassifizierung für ein SharePoint Konto aktivieren können.
 
@@ -69,7 +74,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Hinzufügen eines SharePoint Online-Kontos
+== Fügen Sie ein SharePoint Online-Konto hinzu
 
 Fügen Sie das SharePoint Online-Konto hinzu, in dem sich die Benutzerdateien befinden.
 
@@ -86,7 +91,7 @@ Das SharePoint Online-Konto wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 
 
-== Hinzufügen eines SharePoint-Kontos vor Ort
+== Fügen Sie ein SharePoint On-Premise-Konto hinzu
 
 Fügen Sie das SharePoint-On-Premise-Konto hinzu, in dem sich die Benutzerdateien befinden.
 
@@ -111,7 +116,7 @@ Das On-Premise-Konto SharePoint wird zur Liste der Arbeitsumgebungen hinzugefüg
 
 
 
-== Hinzufügen von SharePoint Sites zu Compliance-Scans
+== Fügen Sie SharePoint-Sites zu Compliance-Scans hinzu
 
 Sie können dem Konto einzelne SharePoint Sites oder bis zu 1,000 SharePoint Sites hinzufügen, sodass die zugehörigen Dateien durch die BlueXP Klassifizierung gescannt werden. Unabhängig davon, ob Sie SharePoint Online oder SharePoint On-Premise-Websites hinzufügen, sind die Schritte gleich.
 
@@ -163,10 +168,10 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen 
 
 
 
-== Entfernen einer SharePoint-Website aus Compliance-Scans
+== Entfernen Sie eine SharePoint-Website aus Compliance-Scans
 
 Wenn Sie eine SharePoint-Site in der Zukunft entfernen oder sich entscheiden, keine Dateien auf einer SharePoint-Site zu scannen, können Sie einzelne SharePoint-Sites davon entfernen, dass ihre Dateien jederzeit gescannt werden. Klicken Sie einfach auf *SharePoint-Website entfernen* von der Konfigurationsseite.
 
 image:screenshot_compliance_sharepoint_remove_site.png["Ein Screenshot zeigt, wie Sie eine einzelne SharePoint-Site aus dem Scannen ihrer Dateien entfernen."]
 
-Beachten Sie, dass Sie können link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Löschen Sie das gesamte SharePoint Konto aus der BlueXP Klassifizierung"] Wenn Sie keine Benutzerdaten mehr vom SharePoint-Konto scannen möchten.
+Beachten Sie, dass Sie können link:task-managing-compliance.html["Löschen Sie das gesamte SharePoint Konto aus der BlueXP Klassifizierung"] Wenn Sie keine Benutzerdaten mehr vom SharePoint-Konto scannen möchten.

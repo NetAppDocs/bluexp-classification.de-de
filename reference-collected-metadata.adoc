@@ -37,7 +37,7 @@ Die BlueXP Klassifizierung erfasst bestimmte Metadaten, wenn Klassifizierungs-Sc
 |===
 [NOTE]
 ====
-* Die BlueXP Klassifizierung extrahiert nicht den „Zeitpunkt des letzten Zugriffs“ aus den folgenden Datenquellen: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3 sowie Datenbanken.
+* Durch die BlueXP Klassifizierung wird nicht der „Zeitpunkt des letzten Zugriffs“ aus den Datenbankdatenquellen extrahiert.
 * Ältere Versionen des Windows-Betriebssystems (z. B. Windows 7 und Windows 8) deaktivieren standardmäßig die Sammlung des Attributs „Zeit des letzten Zugriffs“, da dies die Systemleistung beeinträchtigen kann. Wenn dieses Attribut nicht erfasst wird, ist die BlueXP Klassifizierungsanalyse, die auf dem Zeitpunkt des letzten Zugriffs basiert, betroffen. Bei Bedarf können Sie die Erfassung der letzten Zugriffszeit auf diesen älteren Windows-Systemen aktivieren.
 
 

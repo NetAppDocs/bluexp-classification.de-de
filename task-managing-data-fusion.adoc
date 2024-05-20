@@ -16,6 +16,11 @@ summary: Die BlueXP Klassifizierung bietet Ihnen verschiedene Möglichkeiten, ei
 [role="lead"]
 Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung bei zukünftigen Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich möglicherweise sensible Daten in den Dateien Ihrer Unternehmen befinden.
 
+[]
+====
+*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+
+====
 * Sie können eindeutige Kennungen basierend auf bestimmten Spalten in Datenbanken hinzufügen, die Sie scannen.
 * Sie können benutzerdefinierte Schlüsselwörter aus einer Textdatei hinzufügen - diese Wörter werden in Ihren Daten identifiziert.
 * Sie können ein persönliches Muster mit einem regulären Ausdruck (regex) hinzufügen -- der Regex wird den bestehenden vordefinierten Mustern hinzugefügt.

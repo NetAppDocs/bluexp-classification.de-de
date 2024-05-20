@@ -1,0 +1,161 @@
+---
+sidebar: sidebar 
+permalink: reference-free-paid.html 
+keywords: bluexp, classification, cloud data sense, data sense, compliance, security 
+summary: In der kostenlosen Version der BlueXP Klassifizierung stehen einige Funktionen nicht zur Verfügung. 
+---
+= Veraltete BlueXP Klassifizierungsfunktionen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die BlueXP Klassifizierung ist als zentrale Funktion in BlueXP ohne Aufpreis verfügbar. Mit der Klassifizierung von BlueXP als zentrale BlueXP Funktion haben NetApp Sie allen Kunden Zugriff auf maßgeschneidertes Datenmanagement – mit Kernfunktionen.
+
+Es gibt einige Funktionen, die in der BlueXP Kernversion ab Version 1.31 veraltet sind und weiterhin in den älteren Versionen 1.30 und früher unterstützt werden.
+
+
+
+== Unterstützte Datenquellen
+
+[cols="60,20,20"]
+|===
+| Datenquelle | Ältere Versionen 1.30 und früher | BlueXP Kernversionen 1.31 und höher 
+
+
+| Cloud Volumes ONTAP (implementiert in AWS, Azure oder GCP) | Ja. | Ja. 
+
+
+| On-Premises ONTAP Cluster | Ja. | Ja. 
+
+
+| StorageGRID | Ja. | Nein 
+
+
+| Azure NetApp Dateien | Ja. | Ja. 
+
+
+| Amazon FSX für ONTAP | Ja. | Ja. 
+
+
+| Google Cloud NetApp Volumes | Ja. | Ja. 
+
+
+| Cloud Volumes Service für Google Cloud | Ja. | Ja. 
+
+
+| Datenbanken | Ja. | Ja. 
+
+
+| Amazon S3 | Ja. | Nein 
+
+
+| Google Cloud Storage | Ja. | Nein 
+
+
+| OneDrive | Ja. | Nein 
+
+
+| SharePoint Online | Ja. | Nein 
+
+
+| SharePoint On-Premises (SharePoint Server) | Ja. | Nein 
+
+
+| Google Drive | Ja. | Nein 
+|===
+
+
+== Compliance-Funktionen
+
+[cols="60,20,20"]
+|===
+| Merkmal | Ältere Versionen 1.30 und früher | BlueXP Kernversionen 1.31 und höher 
+
+
+| Ermitteln von personenbezogenen Daten | Ja. | Ja. 
+
+
+| Identifizieren Sie sensible personenbezogene Daten | Ja. | Ja. 
+
+
+| Reagieren Sie auf DSAR (Data Subject Access Requests). | Ja. | Ja. 
+
+
+| Erstellen Sie eine benutzerdefinierte Liste mit identifizierten „personenbezogenen Daten“ | Ja. | Nein 
+
+
+| Benachrichtigen Sie Benutzer per E-Mail, wenn Dateien bestimmte personenbezogene Daten enthalten. (Diese Kriterien definieren Sie mit link:task-using-policies.html["Richtlinien"^].) | Ja. | Ja. 
+
+
+| Verwenden Sie Filter auf Verzeichnisebene | Ja. | Ja. 
+
+
+| Verwenden Sie die PII-Analyse auf Verzeichnisebene | Ja. | Nein 
+|===
+
+
+== Funktionen für das Datenmanagement
+
+[cols="60,20,20"]
+|===
+| Merkmal | Ältere Versionen 1.30 und früher | BlueXP Kernversionen 1.31 und höher 
+
+
+| Quelldateien verschieben, kopieren und löschen | Ja. | Nein 
+
+
+| Kategorisieren Sie Daten mithilfe von Status-Tags | Ja. | Nein 
+
+
+| Kategorisieren Sie Daten mithilfe von AIP-Etiketten | Ja. | Nein 
+
+
+| Weisen Sie den Benutzern Dateien zu | Ja. | Nein 
+
+
+| Daten nach Bedarf erneut scannen | Ja. | Nein 
+
+
+| Erstellen Sie benutzerdefinierte Klassifikatoren | Ja. | Nein 
+
+
+| Verzeichnisse vom Scannen ausschließen | Ja. | Ja. 
+
+
+| Suche nach Namen in Dateien | Ja. | Ja. 
+
+
+| Daten aus der Untersuchung in NFS exportieren | Ja. | Nein 
+
+
+| Unterstützung mehrerer Scanner | Ja. | Nein 
+
+
+| Integrieren Sie Active Directory | Ja. | Ja. 
+
+
+| Verwenden Sie die Berechtigungsanalyse und Filter | Ja. | Ja. 
+
+
+| Verwenden Sie die Speicherkarte | Ja. | Ja. 
+
+
+| Verwenden Sie die Heatmap | Ja. | Ja. 
+
+
+| Verwenden Sie Aktionen auf Dashboard und Speicherkarte | Ja. | Nein 
+
+
+| Verwenden Sie die Audit-Protokollierung für den Dateizugriff | Ja. | Nein 
+
+
+| Aktivieren Sie den Dateizugriff über die Konfigurationsseite | Ja. | Nein 
+
+
+| Verwenden Sie bestimmte vordefinierte Richtlinien | Ja. | Nein 
+|===

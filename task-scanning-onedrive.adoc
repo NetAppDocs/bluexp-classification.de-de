@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung von Dateien in den OneDrive Ordnern eines Benutzers zu scannen. 
 ---
-= OneDrive-Konten werden gescannt
+= Scannen Sie OneDrive-Konten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung 
 [role="lead"]
 Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung von Dateien in den OneDrive Ordnern eines Benutzers zu scannen.
 
+[]
+====
+*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+
+====
 
 
 == Schnellstart
@@ -133,5 +138,3 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien für die Benutzer
 Wenn Benutzer das Unternehmen verlassen oder sich ihre E-Mail-Adresse ändert, können Sie einzelne OneDrive Benutzer davon entfernen, dass ihre Dateien jederzeit gescannt werden können. Klicken Sie einfach auf *OneDrive User entfernen* von der Konfigurationsseite.
 
 image:screenshot_compliance_onedrive_remove_user.png["Ein Screenshot zeigt, wie ein einzelner Benutzer die gescannten Dateien entfernen kann."]
-
-Beachten Sie, dass Sie können link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Löschen Sie das gesamte OneDrive Konto aus der BlueXP Klassifizierung"] Wenn Sie keine Benutzerdaten mehr aus dem OneDrive-Konto scannen möchten.

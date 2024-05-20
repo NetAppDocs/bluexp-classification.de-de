@@ -1,0 +1,118 @@
+---
+sidebar: sidebar 
+permalink: task-using-policies-deprecated.html 
+keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
+---
+= Senden Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die BlueXP Klassifizierung kann E-Mail-Benachrichtigungen an BlueXP Benutzer in Ihrem Konto senden, wenn bestimmte kritische Richtlinien Ergebnisse liefern, sodass Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten. Sie können die E-Mail-Benachrichtigungen täglich, wöchentlich oder monatlich versenden. Sie können auch E-Mail-Benachrichtigungen an eine andere E-Mail-Adresse senden - bis zu 20 E-Mail-Adressen - nicht in Ihrem BlueXP-Konto.
+
+Sie können diese Einstellung beim Erstellen der Richtlinie oder beim Bearbeiten einer Richtlinie konfigurieren.
+
+Führen Sie die folgenden Schritte aus, um einer vorhandenen Richtlinie E-Mail-Updates hinzuzufügen.
+
+.Schritte
+. Klicken Sie auf der Seite „Richtlinienliste“ für die Richtlinie, in der Sie die E-Mail-Einstellung hinzufügen (oder ändern) möchten, auf *Bearbeiten*.
++
+image:screenshot_compliance_add_email_alert_1.png["Ein Screenshot, der zeigt, wie eine vorhandene Richtlinie bearbeitet wird."]
+
+. Auf der Seite Richtlinie bearbeiten:
++
+.. Aktivieren Sie das Kontrollkästchen „E-Mail all the users in this Account“, wenn Sie Benachrichtigungen-E-Mails an Benutzer in Ihrem BlueXP-Konto senden möchten, und wählen Sie das Intervall aus, in dem die E-Mail gesendet wird (z. B. *every Day*).
+.. Aktivieren Sie das Kontrollkästchen „E-Mail senden“, wenn Sie Benachrichtigungs-E-Mails an weitere Benutzer senden möchten, wählen Sie das Intervall aus, in dem die E-Mail gesendet wird, und geben Sie bis zu 20 E-Mail-Adressen ein.
++
+image:screenshot_compliance_add_email_alert_2.png["Ein Screenshot, in dem gezeigt wird, wie die E-Mail-Kriterien für die Richtlinie ausgewählt werden."]
+
+
+
+. Klicken Sie auf *Richtlinie speichern* und das Intervall, in dem die E-Mail gesendet wird, wird in der Richtlinienbeschreibung angezeigt.
+
+
+.Ergebnis
+Die erste E-Mail wird jetzt gesendet, wenn Ergebnisse aus der Richtlinie vorliegen - aber nur, wenn Dateien die Richtlinienkriterien erfüllen. Es werden keine personenbezogenen Daten in die Benachrichtigungs-E-Mails gesendet. Die E-Mail zeigt an, dass Dateien vorhanden sind, die den Richtlinienkriterien entsprechen, und sie enthält einen Link zu den Richtlinienergebnissen.
+
+
+
+== Löschen Sie Quelldateien automatisch mithilfe von Richtlinien
+
+Sie können eine benutzerdefinierte Richtlinie erstellen, um Dateien zu löschen, die der Richtlinie entsprechen. Beispielsweise können Sie Dateien löschen, die sensible Informationen enthalten und von der BlueXP Klassifizierung in den letzten 30 Tagen erkannt wurden.
+
+Nur Kontoadministratoren können eine Richtlinie zum automatischen Löschen von Dateien erstellen.
+
+
+NOTE: Alle Dateien, die der Richtlinie entsprechen, werden einmal am Tag dauerhaft gelöscht.
+
+.Schritte
+. Definieren Sie auf der Seite „Untersuchung von Daten“ die Suche, indem Sie alle Filter auswählen, die Sie verwenden möchten. Siehe link:task-investigate-data.html["Filtern von Daten auf der Seite „Datenuntersuchung“"^] Entsprechende Details.
+. Wenn Sie alle Filtereigenschaften genau so haben, wie Sie sie wollen, klicken Sie auf *Create Policy von dieser Suche*.
+. Benennen Sie die Richtlinie, und wählen Sie andere Aktionen aus, die von der Richtlinie ausgeführt werden können:
++
+.. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
+.. Aktivieren Sie das Kontrollkästchen "Dateien, die dieser Richtlinie entsprechen automatisch löschen" und geben Sie *dauerhaft löschen* ein, um zu bestätigen, dass Dateien dauerhaft von dieser Richtlinie gelöscht werden sollen.
+.. Klicken Sie Auf *Create Policy*.
++
+image:screenshot_compliance_delete_files_using_policies.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
+
+
+
+
+
+.Ergebnis
+Die neue Richtlinie wird auf der Registerkarte Policies angezeigt. Dateien, die der Richtlinie entsprechen, werden einmal pro Tag gelöscht, wenn die Richtlinie ausgeführt wird.
+
+Sie können die Liste der Dateien anzeigen, die im gelöscht wurden link:task-view-compliance-actions.html["Statusbereich Aktionen"].
+
+
+
+== Weisen Sie AIP-Beschriftungen automatisch mit Richtlinien zu
+
+Sie können allen Dateien, die die Kriterien der Richtlinie erfüllen, eine AIP-Bezeichnung zuweisen. Sie können beim Erstellen der Richtlinie das AIP-Label angeben oder beim Bearbeiten einer Richtlinie die Bezeichnung hinzufügen.
+
+Während die BlueXP Klassifizierung Ihre Dateien scannt, werden Labels fortlaufend in Dateien hinzugefügt oder aktualisiert.
+
+Je nachdem, ob bereits ein Label auf eine Datei und die Klassifizierungsstufe des Etiketts angewendet wurde, werden beim Ändern einer Bezeichnung folgende Aktionen ausgeführt:
+
+[cols="60,40"]
+|===
+| Wenn die Datei... | Dann... 
+
+
+| Hat kein Etikett | Die Beschriftung wird hinzugefügt 
+
+
+| Verfügt über ein bereits vorhandenes Etikett mit einer niedrigeren Klassifizierungsstufe | Das Etikett der höheren Ebene wird hinzugefügt 
+
+
+| Verfügt über ein bereits vorhandenes Etikett mit einer höheren Klassifizierungsstufe | Das Etikett der höheren Ebene bleibt erhalten 
+
+
+| Wird sowohl manuell als auch durch eine Richtlinie eine Beschriftung zugewiesen | Das Etikett der höheren Ebene wird hinzugefügt 
+
+
+| Wird zwei verschiedene Bezeichnungen durch zwei Richtlinien zugewiesen | Das Etikett der höheren Ebene wird hinzugefügt 
+|===
+Führen Sie die folgenden Schritte aus, um einer vorhandenen Richtlinie eine AIP-Bezeichnung hinzuzufügen.
+
+.Schritte
+. Klicken Sie auf der Seite „Richtlinienliste“ auf *Bearbeiten* für die Richtlinie, der Sie die AIP-Bezeichnung hinzufügen (oder ändern) möchten.
++
+image:screenshot_compliance_add_label_highlight_1.png["Ein Screenshot zeigt, wie eine vorhandene Richtlinie bearbeitet wird."]
+
+. Aktivieren Sie auf der Seite Richtlinie bearbeiten das Kontrollkästchen, um automatische Beschriftungen für Dateien zu aktivieren, die den Richtlinieparametern entsprechen, und wählen Sie die Beschriftung aus (z. B. *Allgemein*).
++
+image:screenshot_compliance_add_label_highlight_2.png["Ein Screenshot zeigt, wie Sie die Beschriftung auswählen, die Dateien zugewiesen werden soll, die der Richtlinie entsprechen."]
+
+. Klicken Sie auf *Richtlinie speichern* und das Label wird in der Richtlinienbeschreibung angezeigt.
+
+
+
+NOTE: Wenn eine Richtlinie mit einer Beschriftung konfiguriert wurde, die Bezeichnung jedoch inzwischen aus AIP entfernt wurde, wird der Etikettenname auf AUS gesetzt und die Bezeichnung nicht mehr zugewiesen.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, bluexp, bluexp classification' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung. 
 ---
 = Neuerungen bei der BlueXP Klassifizierung
@@ -15,6 +15,18 @@ summary: Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 [role="lead"]
 Informieren Sie sich über die Neuerungen bei der BlueXP Klassifizierung (Cloud Data Sense).
+
+
+
+== 15. Mai 2024 (Version 1.31)
+
+
+
+=== Klassifizierung ist als kostenloser Service in BlueXP erhältlich
+
+Die BlueXP Klassifizierung ist jetzt als zentrale Funktion in BlueXP ohne Aufpreis für bis zu 500 tib gescannte Daten verfügbar. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Da wir uns bei der BlueXP Klassifizierungsfunktion auf das Scannen von NetApp Storage-Systemen mit dieser neuen Version konzentrieren, stehen einige ältere Funktionen nur Kunden zur Verfügung, die zuvor für eine Lizenz bezahlt hatten. Die Nutzung dieser älteren Funktionen läuft ab, wenn der bezahlte Vertrag sein Enddatum erreicht.
+
+link:reference-free-paid.html["Erfahren Sie mehr über die veralteten Funktionen"].
 
 
 
@@ -92,9 +104,9 @@ Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der Blu
 
 Diese Version enthält einige kleinere Verbesserungen.
 
-Das Release hat auch vorübergehend die folgenden Optionen entfernt:
+Die Version hat außerdem die folgenden Optionen entfernt:
 
-* Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert. Siehe link:task-manage-file-access-events.html["Überwachen und managen Sie Dateizugriffsereignisse"].
+* Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.
 * Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"].
 * Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe link:task-org-private-data.html["Private Daten organisieren"].
 
@@ -207,7 +219,7 @@ Diese Versionen werden bei neuen Bereitstellungen nicht unterstützt, da Red hat
 
 === Die BlueXP Klassifizierung kann als FPolicy Collector konfiguriert werden, um FPolicy Ereignisse von ONTAP Systemen zu empfangen
 
-Sie können Audit-Protokolle für den Dateizugriff in Ihrem BlueXP Klassifizierungssystem für Dateizugriffsereignisse auf Volumes in Ihren Arbeitsumgebungen erfassen. Die BlueXP Klassifizierung kann die folgenden Arten von FPolicy Ereignissen und die Benutzer erfassen, die die Aktionen an Ihren Dateien durchgeführt haben: Erstellen, Lesen, Schreiben, Löschen, Umbenennen, Eigentümer/Berechtigungen ändern und SACL/DACL ändern. https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["Hier erfahren Sie, wie Sie Dateizugriffsereignisse überwachen und verwalten"].
+Sie können Audit-Protokolle für den Dateizugriff in Ihrem BlueXP Klassifizierungssystem für Dateizugriffsereignisse auf Volumes in Ihren Arbeitsumgebungen erfassen. Die BlueXP Klassifizierung kann die folgenden Arten von FPolicy Ereignissen und die Benutzer erfassen, die die Aktionen an Ihren Dateien durchgeführt haben: Erstellen, Lesen, Schreiben, Löschen, Umbenennen, Eigentümer/Berechtigungen ändern und SACL/DACL ändern.
 
 
 

@@ -17,6 +17,9 @@ summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetAp
 Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetApp NFS- oder CIFS-Dateifreigaben direkt mit der BlueXP Klassifizierung zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden.
 
 
+TIP: Nur durch das Hinzufügen von Dateifreigaben können Daten aus Google Cloud NetApp Volumes gescannt werden.
+
+
 
 == Schnellstart
 

@@ -45,11 +45,10 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 
 
 * *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#view-all-duplicated-files["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
-+
-HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, werden alte Daten, die sich bereits im Objektspeicher befinden, möglicherweise in der Kategorie „veraltete Daten“ identifiziert.
 
 
 
+NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, werden alte Daten, die sich bereits im Objektspeicher befinden, möglicherweise in der Kategorie „veraltete Daten“ identifiziert.
 
 
 
@@ -82,23 +81,6 @@ Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Un
 
 
 
-=== Daten, die nach Sensitivität und breiten Berechtigungen aufgelistet sind
-
-Der Bereich _sensible Daten und Wide Permissions_ bietet eine Heatmap von Dateien, die sensible Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und zu permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben.
-
-Die Dateien werden anhand der Anzahl der Benutzer bewertet, die berechtigt sind, auf die Dateien auf der X-Achse (niedrigste bis höchste) zuzugreifen, und die Anzahl der sensiblen Kennungen innerhalb der Dateien auf der Y-Achse (niedrigste bis höchste). Die Blöcke stellen die Anzahl der Dateien dar, die mit den Elementen der X- und Y-Achsen übereinstimmen. Der hellere Block ist gut, da weniger Benutzer auf die Dateien zugreifen können und weniger sensible Kennungen pro Datei. Die dunkleren Blöcke sind die Elemente, die Sie untersuchen möchten. Auf dem folgenden Bildschirm wird beispielsweise der Mauszeiger für den dunkelblauen Block angezeigt. Es zeigt, dass Sie 1,500 Dateien haben, auf die 751-100 Benutzer zugreifen können und wo es 501-100 sensible Kennungen pro Datei gibt.
-
-image:screenshot_compliance_sensitive_data.png["Ein Screenshot, in dem die Daten angezeigt werden, wenn Sie den Cursor über ein Element in diesem Fenster platzieren."]
-
-Sie können auf den Block klicken, für den Sie sich interessieren, um die gefilterten Ergebnisse der betroffenen Dateien auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen durchführen können.
-
-Wenn Sie keinen Identitätsdienst mit BlueXP-Klassifizierung integriert haben, werden in diesem Bereich keine Daten angezeigt. link:task-add-active-directory-datasense.html["Erfahren Sie, wie Sie Ihren Active Directory-Service in die BlueXP Klassifizierung integrieren"^].
-
-
-TIP: Dieses Fenster unterstützt Dateien in CIFS-Freigaben, OneDrive und SharePoint-Datenquellen. Derzeit werden Datenbanken, Google Drive, Amazon S3 und generischer Objektspeicher nicht unterstützt.
-
-
-
 === Daten, die nach Typen der offenen Berechtigungen aufgeführt sind
 
 Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
@@ -121,17 +103,16 @@ Sie können den Mauszeiger über einen Punkt in den Diagrammen bewegen, um Detai
 
 * *Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.
 * *Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.
-+
-HINWEIS:: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagramm „_Age of Data“ alte Daten, die sich bereits im Objektspeicher befinden, identifiziert werden.
 
 
 
+NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagramm „_Age of Data“ alte Daten, die sich bereits im Objektspeicher befinden, identifiziert werden.
 
 
 
 === Die meisten ermittelten Datenklassifizierungen
 
-Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^], link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^], und link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"^] In den gescannten Daten.
+Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^] Und link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^] In den gescannten Daten.
 
 
 
@@ -148,14 +129,6 @@ Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen
 Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind.
 
 Siehe link:task-controlling-private-data.html#view-files-by-file-types["Anzeigen von Dateitypen"^] Finden Sie weitere Informationen.
-
-
-
-==== AIP-Etiketten
-
-Wenn Sie den Azure Information Protection (AIP) abonniert haben, können Sie Dokumente und Dateien klassifizieren und schützen, indem Sie Inhaltsetiketten anwenden. Durch die Überprüfung der am häufigsten verwendeten AIP-Etiketten, die Dateien zugeordnet sind, können Sie feststellen, welche Etiketten am häufigsten in Ihren Dateien verwendet werden.
-
-Siehe link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"^] Finden Sie weitere Informationen.
 
 
 
@@ -244,5 +217,3 @@ image:screenshot_compliance_data_discovery_report_button.png["Ein Screenshot des
 
 .Ergebnis
 Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
-
-Beachten Sie, dass Sie den Unternehmensnamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der BlueXP Klassifizierungsseite anpassen können, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.

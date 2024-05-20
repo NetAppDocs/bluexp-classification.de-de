@@ -14,7 +14,7 @@ summary: Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizi
 
 
 [role="lead"]
-Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten. Sehen Sie sich die folgenden Kategorien an.
+Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes und Datenbanken identifiziert werden können. Sehen Sie sich die folgenden Kategorien an.
 
 
 TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierung von BlueXP benötigen, z. B. zusätzliche nationale ID-Nummern oder Identifikatoren in Ihrem Gesundheitswesen, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com.
@@ -26,8 +26,6 @@ TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierun
 Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
 
 Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
-
-Beachten Sie, dass Sie der Liste der persönlichen Daten, die in Ihren Dateien gefunden werden, hinzufügen können. Wenn Sie einen Datenbankserver scannen, können Sie mit der Funktion _Data Fusion_ zusätzliche Kennungen auswählen, nach denen die BlueXP-Klassifizierung in ihren Scans suchen wird, indem Sie Spalten in einer Datenbanktabelle auswählen. Sie können auch benutzerdefinierte Schlüsselwörter aus einer Textdatei oder benutzerdefinierte Muster mit einem regulären Ausdruck hinzufügen. Siehe link:task-managing-data-fusion.html["Hinzufügen persönlicher Daten-IDs zu Ihren BlueXP Klassifizierungs-Scans"^] Entsprechende Details.
 
 [cols="13,37,10,8,8,8,8,8"]
 |===

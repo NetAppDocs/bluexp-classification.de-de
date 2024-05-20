@@ -4,7 +4,7 @@ permalink: task-scanning-google-drive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Benutzerdateien in Ihren Google-Laufwerkskonten mit BlueXP Klassifizierung zu beginnen. 
 ---
-= Google Drive-Konten werden durchsucht
+= Scannen Sie Google Drive-Konten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Benutzerdat
 [role="lead"]
 Führen Sie ein paar Schritte durch, um mit dem Scannen von Benutzerdateien in Ihren Google-Laufwerkskonten mit BlueXP Klassifizierung zu beginnen.
 
+[]
+====
+*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+
+====
 
 
 == Schnellstart
@@ -40,7 +45,7 @@ Wählen Sie den Scantyp aus, den Sie für die Benutzerdateien durchführen möch
 
 
 
-== Überprüfen der Google-Laufwerksanforderungen
+== Überprüfen Sie die Google Drive-Anforderungen
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass Sie die BlueXP Klassifizierung für ein Google Drive Konto aktivieren können.
 
@@ -59,7 +64,7 @@ Die folgenden BlueXP Klassifizierungsfunktionen werden derzeit nicht von Google 
 
 
 
-== Implementieren der BlueXP Klassifizierung
+== Implementieren Sie die BlueXP Klassifizierung
 
 Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
@@ -69,7 +74,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Hinzufügen des Google Drive-Kontos
+== Fügen Sie das Google Drive-Konto hinzu
 
 Fügen Sie das Google Drive-Konto hinzu, in dem sich die Benutzerdateien befinden. Wenn Sie Dateien von mehreren Benutzern scannen möchten, müssen Sie diesen Schritt für jeden Benutzer ausführen.
 
@@ -86,7 +91,7 @@ Das Google Drive-Konto wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 
 
-== Auswählen des Scantyps für Benutzerdaten
+== Wählen Sie den Typ der Suche nach Benutzerdaten aus
 
 Wählen Sie die Art des Scans aus, die die BlueXP Klassifizierung für die Benutzerdaten durchführen soll.
 
@@ -120,6 +125,6 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in dem von Ihnen 
 
 
 
-== Entfernen eines Google Drive-Kontos aus Compliance-Scans
+== Entfernen Sie ein Google Drive-Konto aus Compliance-Scans
 
-Da nur die Google Drive-Dateien eines einzigen Benutzers Teil eines einzigen Google Drive-Kontos sind, wenn Sie die Suche von Dateien von einem Benutzer Google Drive-Konto beenden möchten, dann sollten Sie link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["Löschen Sie das Google Drive-Konto aus der BlueXP Klassifizierung"].
+Da nur die Google Drive-Dateien eines einzigen Benutzers Teil eines einzigen Google Drive-Kontos sind, wenn Sie die Suche von Dateien von einem Benutzer Google Drive-Konto beenden möchten, dann sollten Sie link:task-managing-compliance.html["Löschen Sie das Google Drive-Konto aus der BlueXP Klassifizierung"].

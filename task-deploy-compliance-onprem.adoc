@@ -28,9 +28,14 @@ Die typische Installation auf einem Linux-Host _in der Cloud_ hat die folgenden 
 
 image:diagram_deploy_onprem_cloud_instance.png["Ein Diagramm der erforderlichen BlueXP- und Netzwerkkomponenten sowie der zugehörigen Verbindungen."]
 
-Bei sehr großen Konfigurationen, bei denen Sie Petabyte an Daten scannen, können Sie mehrere Hosts einschließen, um zusätzliche Verarbeitungsleistung zu schaffen. Bei der Verwendung mehrerer Hostsysteme wird das primäre System als _Manager Node_ bezeichnet, und die zusätzlichen Systeme, die zusätzliche Rechenleistung bieten, heißen _Scanner Nodes_.
+Bei sehr großen Konfigurationen, bei denen Sie mehrere Petabyte an Daten scannen werden, können Sie bei Versionen 1.30 und früher mehrere Hosts integrieren, um zusätzliche Verarbeitungsleistung bereitzustellen. Bei der Verwendung mehrerer Hostsysteme wird das primäre System als _Manager Node_ bezeichnet, und die zusätzlichen Systeme, die zusätzliche Rechenleistung bieten, heißen _Scanner Nodes_.
 
-Beachten Sie, dass Sie auch können link:task-deploy-compliance-dark-site.html["Installieren Sie die BlueXP Klassifizierung auf einer lokalen Website ohne Internetzugang"] Für vollständig sichere Standorte.
+Informationen zu Versionen 1.30 und älteren Versionen finden Sie unter link:task-deploy-multi-host-install-dark-site.html["Installieren Sie die BlueXP Klassifizierung auf mehreren Hosts ohne Internetzugang"].
+
+Das können Sie auch link:task-deploy-compliance-dark-site.html["Installieren Sie die BlueXP Klassifizierung auf einer lokalen Website ohne Internetzugang"] Für vollständig sichere Standorte.
+
+
+NOTE: Informationen zum Hinzufügen von Scannerknoten für ältere Versionen 1.30 und früher finden Sie unter link:task-deploy-add-scanner-nodes.html["Fügen Sie Scannerknoten zu einer vorhandenen Implementierung hinzu"].
 
 
 
@@ -58,19 +63,19 @@ Laden Sie die Cloud BlueXP Klassifizierungssoftware von der NetApp Support-Websi
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den BlueXP Klassifizierungsservice
 [role="quick-margin-para"]
-Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, benötigen Sie ein Abonnement für Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp.
+Die ersten 500 TB an Daten, die die BlueXP Klassifizierung in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, benötigen Sie ein Abonnement für Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp.
 
 
 
 == Einen Konnektor erstellen
 
-Ein BlueXP Connector ist erforderlich, bevor Sie die BlueXP Klassifizierung installieren und verwenden können. In den meisten Fällen ist wahrscheinlich vor der Aktivierung der BlueXP Klassifizierung ein Connector eingerichtet. Die meisten dieser Funktionen sind jedoch vorhanden https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
+Ein BlueXP Connector ist erforderlich, bevor Sie die BlueXP Klassifizierung installieren und verwenden können. In den meisten Fällen ist wahrscheinlich vor der Aktivierung der BlueXP Klassifizierung ein Connector eingerichtet. Die meisten dieser Funktionen sind jedoch vorhanden https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Für BlueXP-Funktionen ist ein Connector erforderlich"], Aber es gibt Fälle, in denen Sie müssen, um eine Einrichtung jetzt.
 
 Informationen zum Erstellen einer Lösung in Ihrer Cloud-Provider-Umgebung finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Erstellen eines Konnektors in AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Erstellen eines Connectors in Azure"^], Oder https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Erstellen eines Konnektors in GCP"^].
 
 Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der bei einem bestimmten Cloud-Provider implementiert wird:
 
-* Zum Scannen von Daten in Cloud Volumes ONTAP in AWS, Amazon FSX für ONTAP oder in AWS S3-Buckets verwenden Sie einen Connector in AWS.
+* Beim Scannen von Daten in Cloud Volumes ONTAP in AWS oder Amazon FSX für ONTAP verwenden Sie einen Connector in AWS.
 * Beim Scannen von Daten in Cloud Volumes ONTAP in Azure oder in Azure NetApp Files verwenden Sie einen Connector in Azure.
 +
 Bei Azure NetApp Files muss sie in demselben Bereich bereitgestellt werden wie die Volumes, die Sie scannen möchten.
@@ -78,11 +83,11 @@ Bei Azure NetApp Files muss sie in demselben Bereich bereitgestellt werden wie d
 * Beim Scannen von Daten in Cloud Volumes ONTAP in GCP wird ein Connector in GCP verwendet.
 
 
-On-Prem ONTAP Systeme, File Shares anderer Anbieter, generischer S3 Objekt-Storage, Datenbanken, OneDrive Ordner, SharePoint Konten und Google Drive Konten können über jeden dieser Cloud Connectors gescannt werden.
+On-Premises-ONTAP-Systeme, nicht-NetApp-Dateifreigaben und Datenbankkonten können mit jedem dieser Cloud Connectors gescannt werden.
 
 Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Stellen Sie den Connector vor Ort bereit"^] Auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 
-Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
+Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Mehrere Anschlüsse"].
 
 Bei der Installation der BlueXP-Klassifizierung benötigen Sie die IP-Adresse oder den Hostnamen des Connector-Systems. Diese Informationen erhalten Sie, wenn Sie den Connector in Ihrem Haus installiert haben. Wenn der Connector in der Cloud bereitgestellt wird, finden Sie diese Informationen in der BlueXP-Konsole: Klicken Sie auf das Hilfesymbol, wählen Sie *Support* und klicken Sie auf *BlueXP Connector*.
 
@@ -311,7 +316,7 @@ Sie müssen über die folgenden Informationen für das Active Directory verfüge
 
 
 |===
-Wenn Sie mehrere BlueXP Klassifizierungs-Hosts nutzen, um eine zusätzliche Rechenleistung zum Scannen Ihrer Datenquellen zu bieten, müssen Sie zusätzliche Ports/Protokolle aktivieren. link:task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["Siehe zusätzliche Anschlussanforderungen"].
+Wenn Sie mehrere BlueXP Klassifizierungs-Hosts nutzen, um eine zusätzliche Rechenleistung zum Scannen Ihrer Datenquellen zu bieten, müssen Sie zusätzliche Ports/Protokolle aktivieren. link:task-deploy-compliance-onprem.html["Siehe zusätzliche Anschlussanforderungen"].
 
 
 
@@ -321,7 +326,7 @@ Für typische Konfigurationen installieren Sie die Software auf einem einzigen H
 
 image:diagram_deploy_onprem_single_host_internet.png["Diagramm mit dem Speicherort der Datenquellen, die Sie scannen können, wenn Sie eine einzelne lokale BlueXP Klassifizierungsinstanz mit Internetzugang verwenden."]
 
-Bei sehr großen Konfigurationen, bei denen Sie Petabyte an Daten scannen, können Sie mehrere Hosts einschließen, um zusätzliche Verarbeitungsleistung zu schaffen. <<Installation mit mehreren Hosts für große Konfigurationen,Siehe diese Schritte hier>>.
+Bei sehr großen Konfigurationen, bei denen Sie Petabyte an Daten scannen, können Sie mehrere Hosts einschließen, um zusätzliche Verarbeitungsleistung zu schaffen. Weitere Informationen Link:Task-deploy-multi-Host-install-dark-site.HTML> über die Installation auf mehreren Hosts für große Konfigurationen.
 
 image:diagram_deploy_onprem_multi_host_internet.png["Ein Diagramm mit dem Speicherort der Datenquellen, die Sie scannen können, wenn mehrere lokale BlueXP Klassifizierungsinstanzen mit Internetzugang genutzt werden."]
 
@@ -330,7 +335,7 @@ Siehe <<Bereiten Sie das Linux-Hostsystem vor,Vorbereiten des Linux-Hostsystems>
 Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
-NOTE: Die BlueXP Klassifizierung kann derzeit nicht S3 Buckets, Azure NetApp Files oder FSX for ONTAP scannen, wenn die Software vor Ort installiert ist. In diesen Fällen müssen Sie eine separate Connector- und Instanz der BlueXP Klassifizierung in der Cloud und implementieren https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Zwischen den Anschlüssen wechseln"^] Für Ihre unterschiedlichen Datenquellen.
+NOTE: Die BlueXP Klassifizierung kann derzeit nicht S3 Buckets, Azure NetApp Files oder FSX for ONTAP scannen, wenn die Software vor Ort installiert ist. In diesen Fällen müssen Sie eine separate Connector- und Instanz der BlueXP Klassifizierung in der Cloud und implementieren https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Zwischen den Anschlüssen wechseln"^] Für Ihre unterschiedlichen Datenquellen.
 
 
 
@@ -340,7 +345,7 @@ Anforderungen prüfen und bei der Installation der BlueXP Klassifizierungssoftwa
 
 https://youtu.be/rFpmekdbORc["Hier geht's zum Video"^] Informationen zur Installation der BlueXP Klassifizierung.
 
-Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html#access-the-log-files["Weitere Details finden Sie hier"].
+Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html["Weitere Details finden Sie hier"].
 
 .Was Sie benötigen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
@@ -427,263 +432,4 @@ Wenn Konnektivität über Port 8080 zwischen der Host-Maschine und der Connector
 .Nächste Schritte
 Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
 
-Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.
-
-
-
-=== Fügen Sie Scannerknoten zu einer vorhandenen Implementierung hinzu
-
-Sie können weitere Scanner-Knoten hinzufügen, wenn Sie feststellen, dass Sie mehr Scanleistung benötigen, um Ihre Datenquellen zu scannen. Sie können die Scanner-Knoten unmittelbar nach der Installation des Manager-Knotens hinzufügen oder später einen Scanner-Knoten hinzufügen. Wenn Sie beispielsweise feststellen, dass sich die Datenmenge in einer Ihrer Datenquellen nach 6 Monaten verdoppelt oder verdreifacht hat, können Sie einen neuen Scannerknoten hinzufügen, um die Datenüberprüfung zu unterstützen.
-
-Es gibt zwei Möglichkeiten, weitere Scanner-Knoten hinzuzufügen:
-
-* Fügen Sie einen Knoten hinzu, um das Scannen aller Datenquellen zu unterstützen
-* Fügen Sie einen Knoten hinzu, um das Scannen einer bestimmten Datenquelle oder einer bestimmten Gruppe von Datenquellen zu unterstützen (typischerweise basierend auf dem Speicherort).
-
-
-Standardmäßig werden alle neuen Scanner-Knoten, die Sie hinzufügen, dem allgemeinen Pool der Scanning-Ressourcen hinzugefügt. Dies wird als „Standard-Scannergruppe“ bezeichnet. In der Abbildung unten befinden sich 1 Manager-Knoten und 3 Scanner-Knoten in der „Standard“-Gruppe, die alle Scan-Daten aus allen 6 Datenquellen sind.
-
-image:diagram_onprem_scanner_groups_default.png["Ein Diagramm, wie BlueXP Klassifizierungsscanner Datenquellen scannen, wenn sie sich in der Standard-Scannergruppe befinden."]
-
-Wenn Sie bestimmte Datenquellen haben, die von Scannerknoten gescannt werden sollen, die sich physisch näher an den Datenquellen befinden, können Sie einen Scannerknoten oder eine Gruppe von Scannerknoten definieren, um eine bestimmte Datenquelle oder eine Gruppe von Datenquellen zu scannen. In der Abbildung unten befinden sich 1 Manager-Knoten und 3 Scanner-Knoten.
-
-* Der Manager-Knoten befindet sich in der „Standard“-Gruppe, und er scannt 1 Datenquelle
-* Der Scannerknoten 1 befindet sich in der Gruppe „united_States“ und scannt 2 Datenquellen
-* Die Scannerknoten 2 und 3 befinden sich in der Gruppe „europa“, und sie teilen die Scanaufgaben für 3 Datenquellen
-
-
-image:diagram_onprem_scanner_groups.png["Ein Diagramm, wie BlueXP Klassifizierungsscanner Datenquellen scannen, wenn sie verschiedenen Scannergruppen zugewiesen sind."]
-
-BlueXP Klassifizierungs-Scannergruppen sind separate geografische Bereiche, in denen Ihre Daten gespeichert sind. Es können weltweit mehrere BlueXP Klassifizierungs-Scanner-Nodes implementiert und für jeden Node eine Scannergruppe ausgewählt werden. Auf diese Weise scannt jeder Scanner-Knoten die Daten, die ihm am nächsten sind. Je näher der Scanner-Knoten an den Daten liegt, desto besser, da er die Netzwerklatenz so weit wie möglich beim Scannen der Daten reduziert.
-
-Sie können auswählen, welche Scannergruppen zur BlueXP Klassifizierung hinzugefügt werden sollen, und ihre Namen festlegen. Durch die Klassifizierung von BlueXP wird nicht erzwungen, dass ein Node, der einer Scannergruppe namens „europa“ zugeordnet ist, in Europa implementiert wird.
-
-Gehen Sie folgendermaßen vor, um zusätzliche BlueXP Klassifizierungs-Scanner-Nodes zu installieren:
-
-. Bereiten Sie die Linux-Hostsysteme vor, die als Scanner-Knoten fungieren sollen
-. Laden Sie die Software Data Sense auf diese Linux-Systeme herunter
-. Führen Sie einen Befehl auf dem Knoten Manager aus, um die Scanner-Knoten zu identifizieren
-. Befolgen Sie die Schritte, um die Software auf den Scanner-Knoten bereitzustellen (und optional eine „Scannergruppe“ für bestimmte Scanner-Knoten zu definieren).
-. Wenn Sie eine Scannergruppe definiert haben, befinden Sie sich auf dem Knoten Manager:
-+
-.. Öffnen Sie die Datei „Working_Environment_to_Scanner_Group_config.yml“ und definieren Sie die Arbeitsumgebungen, die von jeder Scannergruppe gescannt werden sollen
-.. Führen Sie das folgende Skript aus, um diese Zuordnungsinformationen bei allen Scanner-Knoten zu registrieren: `update_we_scanner_group_from_config_file.sh`
-
-
-
-
-.Was Sie benötigen
-* Stellen Sie sicher, dass alle Linux-Systeme für Scanner-Knoten den erfüllen <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
-* Überprüfen Sie, ob auf den Systemen die beiden erforderlichen Softwarepakete installiert sind (Docker Engine oder Podman und Python 3).
-* Stellen Sie sicher, dass Sie auf den Linux-Systemen über Root-Rechte verfügen.
-* Vergewissern Sie sich, dass Ihre Umgebung den erforderlichen Anforderungen entspricht <<Ermöglichen Sie Outbound-Internetzugriff aus der BlueXP Klassifizierung,Berechtigungen und Konnektivität>>.
-* Sie müssen über die IP-Adressen der Scanner-Knoten-Hosts verfügen, die Sie hinzufügen.
-* Sie müssen über die IP-Adresse des Node-Host-Systems von BlueXP Classification Manager verfügen
-* Sie müssen über die IP-Adresse oder den Hostnamen des Connector-Systems, Ihre NetApp Account-ID, Connector Client-ID und Benutzer-Zugriffstoken verfügen. Wenn Sie planen, Scannergruppen zu verwenden, müssen Sie die ID der Arbeitsumgebung für jede Datenquelle in Ihrem Konto kennen. Weitere Informationen finden Sie unten unter *_Voraussetzungen Schritte_*.
-* Die folgenden Ports und Protokolle müssen auf allen Hosts aktiviert sein:
-+
-[cols="15,20,55"]
-|===
-| Port | Protokolle | Beschreibung 
-
-
-| 2377 | TCP | Cluster-Management-Kommunikation 
-
-
-| 7946 | TCP, UDP | Kommunikation zwischen den Knoten 
-
-
-| 4789 | UDP | Overlay-Netzwerk-Traffic 
-
-
-| 50 | ESP | Verschlüsselter ESP-Datenverkehr (IPsec Overlay Network) 
-
-
-| 111 | TCP, UDP | NFS-Server für die gemeinsame Nutzung von Dateien zwischen den Hosts (benötigt von jedem Scanner-Knoten zu Manager-Knoten) 
-
-
-| 2049 | TCP, UDP | NFS-Server für die gemeinsame Nutzung von Dateien zwischen den Hosts (benötigt von jedem Scanner-Knoten zu Manager-Knoten) 
-|===
-* Wenn Sie verwenden `firewalld` Auf Ihren BlueXP Klassifizierungs-Machines empfehlen wir, sie zu aktivieren, bevor Sie die BlueXP Klassifizierung installieren. Führen Sie die folgenden Befehle zum Konfigurieren aus `firewalld` Damit es mit der BlueXP Klassifizierung kompatibel ist:
-+
-....
-firewall-cmd --permanent --add-service=http
-firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-port=80/tcp
-firewall-cmd --permanent --add-port=8080/tcp
-firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7946/udp
-firewall-cmd --permanent --add-port=7946/tcp
-firewall-cmd --permanent --add-port=4789/udp
-firewall-cmd --reload
-....
-+
-Beachten Sie, dass Sie Docker oder Podman neu starten müssen, wenn Sie aktivieren oder aktualisieren `firewalld` Einstellungen.
-
-
-
-.Erforderliche Schritte
-Führen Sie diese Schritte aus, um die NetApp Account ID, die Connector Client ID, den Connector Server-Namen und das Token für den Benutzerzugriff zu erhalten, die erforderlich sind, um Scanner-Nodes hinzuzufügen.
-
-. Klicken Sie in der Menüleiste von BlueXP auf *Konto > Konten verwalten*.
-+
-image:screenshot_account_id.png["Ein Screenshot der BlueXP Kontodetails."]
-
-. Kopieren Sie die _Konto-ID_.
-. Klicken Sie in der Menüleiste von BlueXP auf *Hilfe > Support > BlueXP Connector*.
-+
-image:screenshot_connector_client_id.png["Ein Screenshot der Konfigurationseinstellungen des BlueXP Connectors."]
-
-. Kopieren Sie die Konnektor_Client-ID_ und die _Servername_.
-. Wenn Sie planen, Scannergruppen zu verwenden, kopieren Sie auf der Registerkarte BlueXP Classification Configuration die Arbeitsumgebungs-ID für jede Arbeitsumgebung, die Sie einer Scannergruppe hinzufügen möchten.
-+
-image:screenshot_work_env_id.png["Ein Screenshot der Arbeitsumgebungs-ID von der BlueXP Klassifizierungs-Konfigurationsseite."]
-
-. Wechseln Sie zum https://services.cloud.netapp.com/developer-hub["API Documentation Developer Hub"^] Und klicken Sie auf *Erfahren Sie, wie Sie sich authentifizieren*.
-+
-image:screenshot_client_access_token.png["Ein Screenshot der Seite API-Dokumentation mit einem Link zu Authentifizierungsanweisungen."]
-
-. Befolgen Sie die Authentifizierungsanweisungen, indem Sie den Benutzernamen und das Passwort des Kontoadministrators in den Parametern „Benutzername“ und „Passwort“ verwenden.
-. Kopieren Sie dann das _Access-Token_ aus der Antwort.
-
-
-.Schritte
-. Führen Sie auf dem BlueXP Classification Manager Node das Skript „add_Scanner_Node.sh“ aus. Mit diesem Befehl werden beispielsweise 2 Scannerknoten hinzugefügt:
-+
-`sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
-
-+
-Variablenwerte:
-
-+
-** _Account_id_ = NetApp Konto-ID
-** _Client_id_ = Konnektor-Client-ID (fügen Sie das Suffix „Clients“ der Client-ID hinzu, die Sie in den erforderlichen Schritten kopiert haben)
-** _Cm_Host_ = IP-Adresse oder Hostname des Steckverbindersystems
-** _ds_Manager_ip_ = Private IP-Adresse des Node-Systems BlueXP Classification Manager
-** _Node_Private_ip_ = IP-Adressen der BlueXP Klassifizierungsscanner Node-Systeme (mehrere Scanner-Node-IPs werden durch ein Komma getrennt)
-** _User_Token_ = JWT-Benutzer-Zugriffstoken
-
-
-. Bevor das Skript add_Scanner_Node abgeschlossen wird, wird in einem Dialogfeld der Installationsbefehl angezeigt, der für die Scanner-Knoten benötigt wird. Kopieren Sie den Befehl (z. B.: `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`) Und in einer Textdatei speichern.
-. Auf * jedem Scanner-Knoten-Host:
-+
-.. Kopieren Sie die Data Sense Installer-Datei (*DATASENSE-INSTALLER-<Version>.tar.gz*) auf den Host-Rechner (mit `scp` Oder eine andere Methode).
-.. Entpacken Sie die Installationsdatei.
-.. Fügen Sie den Befehl ein, den Sie in Schritt 2 kopiert haben, und führen Sie ihn aus.
-.. Wenn Sie einen Scannerknoten zu einer "Scannergruppe" hinzufügen möchten, fügen Sie dem Befehl den Parameter *-r <Scanner_Group_Name>* hinzu. Andernfalls wird der Scannerknoten zur Gruppe „Standard“ hinzugefügt.
-+
-Wenn die Installation auf allen Scanner-Knoten abgeschlossen ist und sie mit dem Manager-Knoten verbunden wurden, wird das Skript „add_Scanner_Node.sh“ ebenfalls beendet. Die Installation dauert 10 bis 20 Minuten.
-
-
-
-. Wenn Sie Scannerknoten zu einer Scannergruppe hinzugefügt haben, kehren Sie zum Manager-Knoten zurück und führen Sie die folgenden beiden Aufgaben aus:
-+
-.. Öffnen Sie die Datei „/opt/netapp/config/Custom_Configuration/working_environment_to_Scanner_Group_config.yml“ und geben Sie die Zuordnung ein, für welche Scannergruppen bestimmte Arbeitsumgebungen scannen sollen. Sie benötigen die _Working Environment ID_ für jede Datenquelle. Die folgenden Einträge fügen beispielsweise 2 Arbeitsumgebungen zur Scanner-Gruppe „europa“ und 2 zur Scannergruppe „united_States“ hinzu:
-+
-....
-scanner_groups:
- europe:
-   working_environments:
-     - "working_environment_id1"
-     - "working_environment_id2"
- united_states:
-   working_environments:
-     - "working_environment_id3"
-     - "working_environment_id4"
-....
-+
-Jede Arbeitsumgebung, die nicht zur Liste hinzugefügt wird, wird von der Gruppe „Standard“ gescannt. Sie müssen mindestens einen Manager- oder Scannerknoten in der Gruppe „Standard“ haben.
-
-.. Führen Sie das folgende Skript aus, um diese Zuordnungsinformationen bei allen Scanner-Knoten zu registrieren:
-`/opt/netapp/Datasense/tools/update_we_scanner_group_from_config_file.sh`
-
-
-
-
-.Ergebnis
-Die BlueXP Klassifizierung wird mit Manager- und Scanner-Nodes eingerichtet, um alle Datenquellen zu scannen.
-
-.Nächste Schritte
-Auf der Konfigurationsseite können Sie die Datenquellen auswählen, die Sie scannen möchten - wenn Sie das noch nicht getan haben. Wenn Sie Scannergruppen erstellt haben, wird jede Datenquelle von den Scanner-Knoten in der jeweiligen Gruppe gescannt.
-
-Der Name der Scannergruppe für jede Arbeitsumgebung wird auf der Konfigurationsseite angezeigt.
-
-image:screenshot_work_env_id.png["Ein Screenshot der Arbeitsumgebungs-ID von der BlueXP Klassifizierungs-Konfigurationsseite."]
-
-Sie können auch die Liste aller Scannergruppen sowie die IP-Adresse und den Status für jeden Scannerknoten in der Gruppe unten auf der Konfigurationsseite anzeigen.
-
-image:screenshot_scanner_groups.png["Ein Screenshot, in dem alle Scannergruppen zusammen mit der IP-Adresse für jeden Scannerknoten in der Gruppe aufgeführt sind."]
-
-Das können Sie link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.
-
-
-
-=== Installation mit mehreren Hosts für große Konfigurationen
-
-Bei sehr großen Konfigurationen, bei denen Sie Petabyte an Daten scannen, können Sie mehrere Hosts einschließen, um zusätzliche Verarbeitungsleistung zu schaffen. Bei der Verwendung mehrerer Hostsysteme wird das primäre System als _Manager-Node_ bezeichnet, und die zusätzlichen Systeme, die zusätzliche Rechenleistung bieten, heißen _Scanner-Nodes_.
-
-Befolgen Sie diese Schritte, wenn Sie die BlueXP Klassifizierungssoftware gleichzeitig auf mehreren lokalen Hosts installieren. Beachten Sie, dass Sie bei der Bereitstellung mehrerer Hosts keine „Scannergruppen“ verwenden können.
-
-.Was Sie benötigen
-* Stellen Sie sicher, dass alle Linux-Systeme für den Manager- und Scanner-Knoten den entsprechen <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
-* Überprüfen Sie, ob auf den Systemen die beiden erforderlichen Softwarepakete installiert sind (Docker oder Podman Engine und Python 3).
-* Stellen Sie sicher, dass Sie auf den Linux-Systemen über Root-Rechte verfügen.
-* Vergewissern Sie sich, dass Ihre Umgebung den erforderlichen Anforderungen entspricht <<Ermöglichen Sie Outbound-Internetzugriff aus der BlueXP Klassifizierung,Berechtigungen und Konnektivität>>.
-* Sie müssen über die IP-Adressen der zu verwendenden Scanner-Knoten-Hosts verfügen.
-* Die folgenden Ports und Protokolle müssen auf allen Hosts aktiviert sein:
-+
-[cols="15,20,55"]
-|===
-| Port | Protokolle | Beschreibung 
-
-
-| 2377 | TCP | Cluster-Management-Kommunikation 
-
-
-| 7946 | TCP, UDP | Kommunikation zwischen den Knoten 
-
-
-| 4789 | UDP | Overlay-Netzwerk-Traffic 
-
-
-| 50 | ESP | Verschlüsselter ESP-Datenverkehr (IPsec Overlay Network) 
-
-
-| 111 | TCP, UDP | NFS-Server für die gemeinsame Nutzung von Dateien zwischen den Hosts (benötigt von jedem Scanner-Knoten zu Manager-Knoten) 
-
-
-| 2049 | TCP, UDP | NFS-Server für die gemeinsame Nutzung von Dateien zwischen den Hosts (benötigt von jedem Scanner-Knoten zu Manager-Knoten) 
-|===
-
-
-.Schritte
-. Befolgen Sie die Schritte 1 bis 7 vom <<Installation mit einem Host für typische Konfigurationen,Installation über einen Host>> Auf dem Knoten Manager.
-. Wie in Schritt 8 gezeigt, können Sie bei Aufforderung durch das Installationsprogramm die erforderlichen Werte in eine Reihe von Eingabeaufforderungen eingeben oder die erforderlichen Parameter als Befehlszeilenargumente für das Installationsprogramm bereitstellen.
-+
-Zusätzlich zu den Variablen, die für eine Installation mit einem Host verfügbar sind, wird eine neue Option *-n <Node_ip>* verwendet, um die IP-Adressen der Scannerknoten anzugeben. Mehrere Scanner-Knoten-IPs werden durch Komma getrennt.
-
-+
-Mit diesem Befehl werden beispielsweise 3 Scannerknoten hinzugefügt:
-`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
-
-. Bevor die Installation des Manager-Node abgeschlossen ist, wird in einem Dialogfeld der für die Scanner-Knoten erforderliche Installationsbefehl angezeigt. Kopieren Sie den Befehl (z. B. `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`) Und in einer Textdatei speichern.
-. Auf * jedem Scanner-Knoten-Host:
-+
-.. Kopieren Sie die Data Sense Installer-Datei (*DATASENSE-INSTALLER-<Version>.tar.gz*) auf den Host-Rechner (mit `scp` Oder eine andere Methode).
-.. Entpacken Sie die Installationsdatei.
-.. Fügen Sie den Befehl ein, den Sie in Schritt 3 kopiert haben, und führen Sie ihn aus.
-+
-Wenn die Installation auf allen Scanner-Knoten abgeschlossen ist und sie mit dem Manager-Knoten verbunden wurden, wird auch die Installation des Manager-Knotens abgeschlossen.
-
-
-
-
-
-.Ergebnis
-Das BlueXP Klassifizierungs-Installationsprogramm schließt die Installation der Pakete ab und registriert die Installation. Die Installation dauert 10 bis 20 Minuten.
-
-.Nächste Schritte
-Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
-
-Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.
+Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden auch nach Ablauf der 30-tägigen kostenlosen Testversion nicht belastet.

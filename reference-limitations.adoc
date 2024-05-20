@@ -18,9 +18,9 @@ Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des 
 
 
 
-== Die BlueXP Klassifizierungs-Version hat Optionen vorübergehend entfernt
+== BlueXP Klassifizierung hat Optionen entfernt
 
-Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die folgenden Optionen vorübergehend entfernt:
+Mit der Version Dezember 2023 (Version 1.26.6) wurden die folgenden Optionen entfernt:
 
 * Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.
 * Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung.

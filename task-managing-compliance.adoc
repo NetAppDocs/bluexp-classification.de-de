@@ -4,7 +4,7 @@ permalink: task-managing-compliance.html
 keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
 summary: Falls erforderlich können Sie die BlueXP Klassifizierung dadurch beenden, dass sie eine oder mehrere Arbeitsumgebungen, Datenbanken, Dateifreigabegruppen, OneDrive-Konten, Google Drive-Konten scannt. Oder SharePoint-Konten. 
 ---
-= Entfernen von Datenquellen aus der BlueXP Klassifizierung
+= Datenquellen aus der BlueXP Klassifizierung entfernen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,11 @@ summary: Falls erforderlich können Sie die BlueXP Klassifizierung dadurch beend
 
 
 [role="lead"]
-Falls erforderlich können Sie die BlueXP Klassifizierung dadurch beenden, dass sie eine oder mehrere Arbeitsumgebungen, Datenbanken, Dateifreigabegruppen, OneDrive-Konten, Google Drive-Konten scannt. Oder SharePoint-Konten.
-
-Der Ladevorgang zum Scannen der Daten wird angehalten, wenn die Datenquelle entfernt wird.
+Falls erforderlich können Sie die BlueXP Klassifizierung davon abhalten, eine oder mehrere Arbeitsumgebungen, Datenbanken oder Dateifreigabegruppen zu scannen.
 
 
 
-== Deaktivieren von Compliance-Scans für eine Arbeitsumgebung
+== Deaktivieren Sie Compliance-Scans für eine Arbeitsumgebung
 
 Wenn Sie Scans deaktivieren, scannt die BlueXP Klassifizierung die Daten nicht mehr in der Arbeitsumgebung und entfernt die indizierten Compliance-Einblicke aus der BlueXP Klassifizierungsinstanz (die Daten aus der Arbeitsumgebung werden nicht gelöscht).
 
@@ -45,21 +43,7 @@ image:screenshot_compliance_remove_db.png["Ein Screenshot der Schaltfläche DB S
 
 
 
-== Entfernen eines OneDrive-, SharePoint- oder Google Drive-Kontos aus der BlueXP Klassifizierung
-
-Wenn Sie Benutzerdateien nicht mehr von einem bestimmten OneDrive-Konto, von einem bestimmten SharePoint-Konto oder von einem Google Drive-Konto scannen möchten, können Sie das Konto von der BlueXP Klassifizierungsschnittstelle löschen und alle Scans beenden.
-
-.Schritte
-. Klicken Sie auf der Seite _Configuration_ auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie in der Zeile für das OneDrive-, SharePoint- oder Google-Drive-Konto auf *OneDrive-Konto entfernen*, *SharePoint-Konto entfernen* oder *Google-Laufwerkskonto entfernen*.
-+
-image:screenshot_compliance_remove_onedrive.png["Ein Screenshot der Schaltfläche „OneDrive entfernen“ auf der Seite „Scankonfiguration“."]
-
-. Klicken Sie im Bestätigungsdialogfeld auf *Konto löschen*.
-
-
-
-
-== Entfernen einer Gruppe von Dateifreigaben aus der BlueXP Klassifizierung
+== Gruppe von Dateifreigaben aus der BlueXP Klassifizierung entfernen
 
 Wenn Sie Benutzerdateien nicht mehr aus einer Dateifreigaben-Gruppe scannen möchten, können Sie die File Shares Group aus der BlueXP Klassifizierungs-Schnittstelle löschen und alle Scans anhalten.
 

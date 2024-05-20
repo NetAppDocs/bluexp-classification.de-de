@@ -53,7 +53,7 @@ Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Infor
 
 | Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern).
 
-HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Möglichkeit, die Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen zu berechnen, vorübergehend entfernt. 
+HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen entfernt. 
 
 
 | Persönliche Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-personal-data["Arten personenbezogener Daten"^]. 
@@ -158,9 +158,9 @@ Verwenden Sie die folgenden Filter, um Daten nach Speichertyp anzuzeigen.
 |===
 
 
-=== Filtern Sie Daten nach Tags, Labels, zugewiesenen Benutzern und Richtlinien
+=== Filtern von Daten nach Richtlinien
 
-Verwenden Sie die folgenden Filter, um Daten nach AIP-Etiketten oder -Tags anzuzeigen.
+Verwenden Sie den folgenden Filter, um Daten nach Richtlinien anzuzeigen.
 
 [cols="30,60"]
 |===
@@ -168,15 +168,6 @@ Verwenden Sie die folgenden Filter, um Daten nach AIP-Etiketten oder -Tags anzuz
 
 
 | Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
-
-
-| Etikett | Wählen Sie link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"] Die Ihren Dateien zugewiesen sind. 
-
-
-| Tags | Wählen Sie link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["Das Tag oder die Tags"] Die Ihren Dateien zugewiesen sind. 
-
-
-| Zugewiesen Zu | Wählen Sie den Namen der Person aus, der die Datei zugeordnet ist. 
 |===
 
 
@@ -217,24 +208,15 @@ Klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret
 
 image:screenshot_compliance_file_details.png["Ein Screenshot mit den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“."]
 
-Zusätzlich zur Anzeige der Arbeitsumgebung und des Volumes, in dem sich die Datei befindet, werden durch die Metadaten viel mehr Informationen angezeigt, einschließlich der Dateiberechtigungen, des Dateieigentümers, ob es Duplikate dieser Datei gibt und des zugewiesenen AIP-Etiketts (falls vorhanden) link:task-org-private-data.html#categorize-your-data-using-aip-labels["Integrierte AIP in BlueXP Klassifizierung"^]). Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#create-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
+Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#create-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
 
-Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Volume-Name, die Berechtigungen und AIP-Labels nicht für Datenbankdateien relevant.
-
-Wenn Sie die Details für eine einzelne Datei anzeigen, gibt es einige Aktionen, die Sie für die Datei ergreifen können:
-
-* Sie können die Datei verschieben oder in eine beliebige NFS-Freigabe kopieren. Siehe link:task-managing-highlights.html#move-source-files-to-an-nfs-share["Quelldateien werden in eine NFS-Freigabe verschoben"] Und link:task-managing-highlights.html#copy-source-files["Quelldateien werden in eine NFS-Freigabe kopiert"] Entsprechende Details.
-* Sie können die Datei löschen. Siehe link:task-managing-highlights.html#delete-source-files["Quelldateien werden gelöscht"] Entsprechende Details.
-* Sie können der Datei einen bestimmten Status zuweisen. Siehe link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["Tags werden angewendet"] Entsprechende Details.
-* Sie können die Datei einem BlueXP-Benutzer zuweisen, damit er für alle Follow-up-Aktionen verantwortlich ist, die in der Datei ausgeführt werden müssen. Siehe link:task-org-private-data.html#assign-users-to-manage-certain-files["Zuweisen von Benutzern zu einer Datei"] Entsprechende Details.
-* Wenn Sie AIP-Labels mit der BlueXP-Klassifizierung integriert haben, können Sie dieser Datei eine Bezeichnung zuweisen oder, sofern vorhanden, zu einer anderen Bezeichnung wechseln. Siehe link:task-org-private-data.html#assign-aip-labels-manually["Manuelles Zuweisen von AIP-Beschriftungen"] Entsprechende Details.
-
+Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.
 
 
 
 == Berechtigungen für Dateien und Verzeichnisse anzeigen
 
-Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche gilt nur für Daten in CIFS Shares, SharePoint Online, SharePoint On-Premises und OneDrive.
+Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche ist nur für Daten in CIFS-Freigaben verfügbar.
 
 Wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen, sollten Sie Ihr Active Directory in die BlueXP Klassifizierung integrieren. link:task-add-active-directory-datasense.html["So geht's"].
 
@@ -283,20 +265,7 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Der Bericht ist in zwei verschiedenen Formaten verfügbar:
-
-* Als CSV-Datei, die Sie auf dem lokalen Computer speichern können.
-+
-Dieser Bericht kann maximal 10,000 Datenzeilen enthalten.
-
-* Als JSON-Datei, die Sie in eine NFS-Freigabe exportieren.
-+
-Wenn mehr als 250,000 Datenzeilen vorhanden sind, werden zusätzliche JSON-Dateien erstellt.
-
-+
-Stellen Sie beim Exportieren in eine Dateifreigabe sicher, dass die BlueXP Klassifizierung die richtigen Berechtigungen für den Exportzugriff hat.
-
-
+Der Bericht ist als . CSV-Datei, die Sie auf dem lokalen Computer speichern können.
 
 Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
 
@@ -306,10 +275,7 @@ Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP K
 
 .Schritte
 . Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
-. Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.
-+
-Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll `<host_name>:/<share_path>`.
-
+. Wählen Sie aus, um einen herunterzuladen. CSV-Bericht der Daten, und klicken Sie auf *Download Report*.
 +
 image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
 
@@ -318,11 +284,9 @@ image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite �
 .Ergebnis
 Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.
 
-Sie können den Fortschritt der JSON-Berichterstellung in anzeigen link:task-view-compliance-actions.html["Statusbereich Aktionen"].
 
 
-
-=== Was ist in den einzelnen Datenuntersuchungs-Berichten enthalten
+=== Was ist im Untersuchungsbericht enthalten
 
 Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ihren Dateien:
 
