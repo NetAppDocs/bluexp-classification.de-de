@@ -89,7 +89,7 @@ Es gibt einige Funktionen, die in der BlueXP Kernversion ab Version 1.31 veralte
 | Erstellen Sie eine benutzerdefinierte Liste mit identifizierten „personenbezogenen Daten“ | Ja. | Nein 
 
 
-| Benachrichtigen Sie Benutzer per E-Mail, wenn Dateien bestimmte personenbezogene Daten enthalten. (Diese Kriterien definieren Sie mit link:task-using-policies.html["Richtlinien"^].) | Ja. | Ja. 
+| Benachrichtigen Sie Benutzer per E-Mail, wenn Dateien bestimmte personenbezogene Daten enthalten. (Diese Kriterien definieren Sie mit link:task-using-policies.html["Richtlinien"^].) | Ja. | Nein 
 
 
 | Verwenden Sie Filter auf Verzeichnisebene | Ja. | Ja. 
@@ -131,6 +131,9 @@ Es gibt einige Funktionen, die in der BlueXP Kernversion ab Version 1.31 veralte
 
 
 | Daten aus der Untersuchung in NFS exportieren | Ja. | Nein 
+
+
+| Daten aus der Untersuchung in CSV exportieren | Ja. | Ja. 
 
 
 | Unterstützung mehrerer Scanner | Ja. | Nein 
