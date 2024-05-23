@@ -55,7 +55,7 @@ image:screenshot_compliance_save_as_highlight.png["Ein Screenshot zeigt, wie ein
 .. Aktivieren Sie optional das Kontrollkästchen, um Dateien zu löschen, die mit den Richtlinienparametern übereinstimmen.
 .. Klicken Sie Auf *Create Policy*.
 +
-image:screenshot_compliance_save_highlight.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
+image:screenshot_compliance_save_highlight2.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
 
 
 
