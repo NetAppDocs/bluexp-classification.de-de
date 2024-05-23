@@ -41,7 +41,7 @@ Starten Sie den Installationsassistenten, um die BlueXP Klassifizierungsinstanz 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den BlueXP Klassifizierungsservice
 [role="quick-margin-para"]
-Die ersten 500 TB an Daten, die die BlueXP Klassifizierung in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp erforderlich.
+Hierfür ist ein BlueXP Abonnement über Ihren Cloud-Provider Marketplace erforderlich.
 
 
 
@@ -60,7 +60,7 @@ Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der be
 * Beim Scannen von Daten in Cloud Volumes ONTAP in GCP wird ein Connector in GCP verwendet.
 
 
-On-Premises-ONTAP-Systeme, nicht-NetApp-Dateifreigaben, generischer S3-Objekt-Storage und Datenbanken können über diese Cloud Connectors gescannt werden.
+On-Premises-ONTAP-Systeme, NetApp-Dateifreigaben, generischer S3-Objektspeicher und Datenbanken können über eine dieser Cloud-Connectors gescannt werden.
 
 Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 

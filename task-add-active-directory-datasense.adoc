@@ -38,7 +38,6 @@ Durch eine Active Directory Integration mit BlueXP Klassifizierung können Daten
 * Cloud Volumes ONTAP
 * Azure NetApp Dateien
 * FSX für ONTAP
-* CIFS-File-Shares von anderen Anbietern (keine NFS-File-Shares)
 * OneDrive-Konten und SharePoint-Konten (für ältere Versionen 1.30 und früher)
 
 

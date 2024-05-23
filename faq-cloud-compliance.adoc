@@ -70,7 +70,7 @@ Die BlueXP Klassifizierung erfolgt als Teil von BlueXP und unterstützt AWS, Azu
 
 === Verfügt die BlueXP Klassifizierung über EINE REST-API, die auch mit Tools von Drittanbietern funktioniert?
 
-BlueXP unterstützt REST-API-Funktionen für seine Services. Wenn BlueXP nicht der bevorzugte Managementpunkt ist, können Services wie die BlueXP Klassifizierung auch über eine REST-API genutzt werden. Jede Benutzeraktion hat eine REST-API, die in Systeme von Drittanbietern integriert werden kann. Siehe link:api-classification.html["BlueXP Klassifizierungs-APIs"^] Entsprechende Details.
+Nein, für die BlueXP Klassifizierung gibt es keine REST-API.
 
 
 
@@ -200,22 +200,6 @@ Der Scan heizt die kalten Daten nicht auf – sie bleiben kalt und verbleiben im
 
 
 
-=== Kann die BlueXP Klassifizierung Benachrichtigungen an mein Unternehmen senden?
-
-Ja. In Verbindung mit der Funktion Richtlinien können Sie E-Mail-Benachrichtigungen an BlueXP-Benutzer (täglich, wöchentlich oder monatlich) oder andere E-Mail-Adressen senden, wenn eine Richtlinie Ergebnisse liefert, damit Sie Benachrichtigungen zum Schutz Ihrer Daten erhalten können. Weitere Informationen zu link:task-using-policies.html["Richtlinien"^].
-
-Sie können auch Statusberichte von der Seite Governance und Untersuchung herunterladen, die Sie intern in Ihrem Unternehmen teilen können.
-
-
-
-=== Kann die BlueXP Klassifizierung mit den in meine Dateien eingebetteten AIP-Labels funktionieren?
-
-Ja. Sie können AIP-Etiketten in den Dateien managen, die die BlueXP Klassifizierung scannt, wenn Sie abonniert haben https://azure.microsoft.com/en-us/services/information-protection/["Azure Information Protection (AIP)"^]. Sie können die bereits zugewiesenen Beschriftungen anzeigen, Dateien Beschriftungen hinzufügen und vorhandene Beschriftungen ändern.
-
-link:task-org-private-data.html#categorize-your-data-using-aip-labels["Weitere Informationen ."^].
-
-
-
 == Arten von Quellsystemen und Datentypen
 
 Die folgenden Fragen beziehen sich auf die Art des zu scannenden Speichers und die Arten der gescannten Daten.
@@ -226,26 +210,7 @@ Die folgenden Fragen beziehen sich auf die Art des zu scannenden Speichers und d
 
 Die BlueXP Klassifizierung kann Daten aus Arbeitsumgebungen scannen, die Sie der BlueXP Leinwand hinzugefügt haben, sowie aus vielen Arten von strukturierten und unstrukturierten Datenquellen, auf die die BlueXP Klassifizierung über Ihre Netzwerke zugreifen kann.
 
-* Arbeitsumgebungen:*
-
-* Cloud Volumes ONTAP (implementiert in AWS, Azure oder GCP)
-* On-Premises ONTAP Cluster
-* Azure NetApp Dateien
-* Amazon FSX für ONTAP
-* Amazon S3
-
-
-*Datenquellen:*
-
-* File Shares von anderen Anbietern
-* Objekt-Storage (nutzt S3-Protokoll)
-* Datenbanken (Amazon RDS, MongoDB, MySQL, Oracle, PostgreSQL, SAP HANA, SQL SERVER)
-* OneDrive Accounts
-* SharePoint Online- und On-Premises-Accounts
-* Google Drive-Konten
-
-
-Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x und CIFS-Versionen 1.x, 2.0, 2.1 und 3.0.
+Siehe link:concept-cloud-compliance.html["Unterstützte Arbeitsumgebungen und Datenquellen"].
 
 
 
@@ -253,6 +218,11 @@ Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x und CIFS-Versionen 1.x
 
 Die BlueXP Klassifizierung wird unterstützt, wenn der Connector in einer Regierungsregion (AWS GovCloud, Azure Gov oder Azure DoD) bereitgestellt wird – auch als „eingeschränkter Modus“ bezeichnet. Bei einer solchen Implementierung unterliegt die BlueXP Klassifizierung folgenden Einschränkungen:
 
+[]
+====
+*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+
+====
 * OneDrive-Konten, SharePoint-Konten und Google-Laufwerk Konten können nicht gescannt werden.
 * Die Funktionalität der Microsoft Azure Information Protection (AIP)-Etiketten kann nicht integriert werden.
 
@@ -265,10 +235,10 @@ Die BlueXP Klassifizierung kann nur Daten aus lokalen Datenquellen am lokalen St
 
 * On-Premises ONTAP Systeme
 * Datenbankschemas
-* SharePoint On-Premises-Accounts (SharePoint Server)
-* NFS- oder CIFS-Dateifreigaben anderer Anbieter
 * Objekt-Storage, der das Simple Storage Service (S3)-Protokoll verwendet
 
+
+Siehe link:concept-cloud-compliance.html["Unterstützte Arbeitsumgebungen und Datenquellen"].
 
 
 
@@ -352,19 +322,7 @@ Die folgenden Fragen beziehen sich auf Lizenzierung und Kosten der Nutzung der B
 
 === Wie hoch sind die Kosten für die Klassifizierung von BlueXP?
 
-Die Kosten der BlueXP Klassifizierung hängen von der Datenmenge ab, die Sie scannen. Die ersten 1 TB an Daten, die die BlueXP Klassifizierung in einem BlueXP Workspace scannt, sind 30 Tage lang kostenlos. Wenn Sie eine der beiden Grenzwerte erreicht haben, benötigen Sie eine der folgenden Optionen, um mit dem Scannen der Daten fortzufahren:
-
-* Ein Abonnement des BlueXP Marketplace-Abonnements von Ihrem Cloud-Provider oder
-* Byol-Modell (Bring-Your-Own-License) von NetApp
-
-
-Siehe https://bluexp.netapp.com/pricing["Preisgestaltung"^] Entsprechende Details.
-
-
-
-=== Was geschieht, wenn ich das BYOL-Kapazitätslimit erreicht habe?
-
-Wenn Sie eine BYOL-Kapazitätsgrenze erreichen, wird die BlueXP Klassifizierung weiter ausgeführt, der Zugriff auf die Dashboards ist jedoch gesperrt, sodass Informationen zu gescannten Daten nicht angezeigt werden können. Nur die Konfigurationsseite ist verfügbar, wenn Sie die Anzahl der eingescannten Volumes reduzieren möchten, um die Kapazitätsnutzung unter das Lizenzlimit zu bringen. Sie müssen Ihre BYOL-Lizenz verlängern, um wieder vollen Zugriff auf die BlueXP Klassifizierung zu erhalten.
+Die BlueXP Klassifizierung ist eine BlueXP Kernfunktion. Sie ist kostenfrei.
 
 
 

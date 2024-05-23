@@ -85,7 +85,7 @@ sidebar:
     entries:
     - title: Liste der veralteten Features
       url: "/reference-free-paid.html"
-    - title: Implementieren Sie die BlueXP Klassifizierung
+    - title: Implementieren Sie BlueXP Klassifizierungs-Deprekationen
       entries:
       - title: Installieren Sie die BlueXP Klassifizierung auf mehreren Hosts ohne
           Internetzugang
@@ -95,7 +95,7 @@ sidebar:
       - title: Hier können Sie eine kostenlose Testversion einrichten oder Ihre eigene
           Lizenz mitbringen
         url: "/task-licensing-byol-freetrial.html"
-    - title: Daten scannen
+    - title: Datenabschreibungen scannen
       entries:
       - title: Scannen von Amazon S3 Buckets
         url: "/task-scanning-s3.html"
@@ -107,7 +107,7 @@ sidebar:
         url: "/task-scanning-google-drive.html"
       - title: Scannen von Objekt-Storage mithilfe des S3-Protokolls
         url: "/task-scanning-object-storage.html"
-    - title: Datenmanagement
+    - title: Datenabschreibungen verwalten
       entries:
       - title: Zeigen Sie Governance-Details zu Daten auf dem Governance-Dashboard
           an

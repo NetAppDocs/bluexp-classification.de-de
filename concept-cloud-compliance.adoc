@@ -70,16 +70,22 @@ Die BlueXP Klassifizierung bietet Tools, die Sie bei Ihren Storage-Gesamtbetrieb
 
 
 
-== Unterstützte Datenquellen
+== Unterstützte Arbeitsumgebungen und Datenquellen
 
-Die BlueXP Klassifizierung kann strukturierte und unstrukturierte Daten aus folgenden Datenquellen scannen und analysieren:
+Die BlueXP Klassifizierung kann strukturierte und unstrukturierte Daten aus den folgenden Arten von Arbeitsumgebungen und Datenquellen scannen und analysieren:
+
+*Arbeitsumgebungen*
 
 * Cloud Volumes ONTAP (implementiert in AWS, Azure oder GCP)
 * On-Premises ONTAP Cluster
 * Azure NetApp Dateien
 * Amazon FSX für ONTAP
 * Google Cloud NetApp Volumes
-* File Shares (z. B. Dell EMC Isilon, Pure Storage, Nutanix usw.)
+
+
+*Datenquellen*
+
+* NetApp-Dateifreigaben
 * Datenbanken:
 +
 ** Amazon Relational Database Service (Amazon RDS)
@@ -99,7 +105,7 @@ Die BlueXP Klassifizierung unterstützt NFS-Versionen 3.x und CIFS-Versionen 1.x
 
 == Kosten
 
-Die BlueXP Klassifizierung ist jetzt für bis zu 500 tib Daten kostenlos. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Bei mehr als 500 tib Daten können Sie die Suche auf einigen Ihrer Originalsysteme deaktivieren und die neuen Systeme scannen, bei denen Sie andernfalls das 500-tib-Limit überschreiten würden.
+Die BlueXP Klassifizierung ist jetzt kostenlos. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich.
 
 
 
@@ -280,7 +286,7 @@ Die Rolle, die jedem Benutzer zugewiesen wurde, bietet unterschiedliche Funktion
 
 * Ein *Account Admin* kann Compliance-Einstellungen verwalten und Compliance-Informationen für alle Arbeitsumgebungen anzeigen.
 * Ein *Workspace Admin* kann Compliance-Einstellungen verwalten und Compliance-Informationen nur für Systeme anzeigen, auf die sie Zugriff haben. Wenn ein Workspace-Administrator nicht auf eine Arbeitsumgebung in BlueXP zugreifen kann, werden keine Compliance-Informationen für die Arbeitsumgebung auf der Registerkarte BlueXP Klassifizierung angezeigt.
-* Benutzer mit der Rolle *Compliance Viewer* können Compliance-Informationen nur anzeigen und Berichte für Systeme erstellen, auf die sie zugreifen können. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemata nicht aktivieren/deaktivieren. Diese Benutzer können Dateien auch nicht kopieren, verschieben oder löschen.
+* Benutzer mit der Rolle *Compliance Viewer* können Compliance-Informationen nur anzeigen und Berichte für Systeme erstellen, auf die sie zugreifen können. Diese Benutzer können das Scannen von Volumes, Buckets oder Datenbankschemata nicht aktivieren/deaktivieren.
 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Erfahren Sie mehr über BlueXP-Rollen"^] Und wie https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["Benutzer mit bestimmten Rollen hinzufügen"^].

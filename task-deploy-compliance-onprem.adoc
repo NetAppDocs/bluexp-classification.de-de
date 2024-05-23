@@ -63,7 +63,7 @@ Laden Sie die Cloud BlueXP Klassifizierungssoftware von der NetApp Support-Websi
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den BlueXP Klassifizierungsservice
 [role="quick-margin-para"]
-Die ersten 500 TB an Daten, die die BlueXP Klassifizierung in BlueXP scannt, sind 30 Tage lang kostenlos. Um die Daten nach diesem Zeitpunkt weiterhin zu scannen, benötigen Sie ein Abonnement für Ihren Cloud-Provider Marketplace oder eine BYOL-Lizenz von NetApp.
+Hierfür ist ein Abonnement Ihres Cloud-Provider Marketplace erforderlich.
 
 
 

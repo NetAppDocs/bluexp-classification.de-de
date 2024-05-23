@@ -22,7 +22,7 @@ Informieren Sie sich über die Neuerungen bei der BlueXP Klassifizierung (Cloud 
 
 
 
-=== Klassifizierung ist als kostenloser Service in BlueXP erhältlich
+=== Klassifizierung ist als zentraler Service in BlueXP erhältlich
 
 Die BlueXP Klassifizierung ist jetzt als zentrale Funktion in BlueXP ohne Aufpreis für bis zu 500 tib gescannte Daten verfügbar. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Da wir uns bei der BlueXP Klassifizierungsfunktion auf das Scannen von NetApp Storage-Systemen mit dieser neuen Version konzentrieren, stehen einige ältere Funktionen nur Kunden zur Verfügung, die zuvor für eine Lizenz bezahlt hatten. Die Nutzung dieser älteren Funktionen läuft ab, wenn der bezahlte Vertrag sein Enddatum erreicht.
 
