@@ -14,10 +14,10 @@ summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetAp
 
 
 [role="lead"]
-Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetApp NFS- oder CIFS-Dateifreigaben direkt mit der BlueXP Klassifizierung zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden.
+Führen Sie einige Schritte aus, um mit dem Scannen von NFS- oder CIFS-Dateifreigaben aus Google Cloud NetApp Volumes und älteren NetApp 7-Mode-Systemen zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden.
 
 
-TIP: Nur durch das Hinzufügen von Dateifreigaben können Daten aus Google Cloud NetApp Volumes gescannt werden.
+NOTE: Das Scannen von Daten aus nicht-NetApp-Dateifreigaben wird in der Kernversion der BlueXP Klassifizierung nicht unterstützt.
 
 
 
@@ -47,7 +47,7 @@ Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den 
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
-* Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. In den meisten Fällen handelt es sich hierbei um File Shares, die auf Storage-Systemen anderer Anbieter residieren. CIFS-Freigaben von älteren NetApp 7-Mode Storage-Systemen können jedoch als Dateifreigaben gescannt werden.
+* Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. CIFS-Freigaben von älteren NetApp 7-Mode Storage-Systemen können als Dateifreigaben gescannt werden.
 +
 Beachten Sie, dass die BlueXP Klassifizierung keine Berechtigungen oder die „Zeit des letzten Zugriffs“ aus 7-Mode Systemen extrahieren kann. Aufgrund eines bekannten Problems zwischen einigen Linux-Versionen und CIFS-Freigaben auf 7-Mode-Systemen müssen Sie die Freigabe zudem so konfigurieren, dass nur SMB v1 mit aktivierter NTLM-Authentifizierung verwendet wird.
 
@@ -71,10 +71,6 @@ Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs
 == Implementieren der BlueXP Klassifizierungsinstanz
 
 Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
-
-Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die über das Internet zugänglich sind, können Sie sie ausführen link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in der Cloud"^] Oder link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung an einem lokalen Standort mit Internetzugang"^].
-
-Wenn Sie nicht-NetApp NFS- oder CIFS-File Shares scannen, die in einer dunklen Site installiert wurden und über keinen Internetzugang verfügen, müssen Sie sie verwenden link:task-deploy-compliance-dark-site.html["Implementieren Sie die BlueXP Klassifizierung an demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
 
 Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
@@ -119,7 +115,7 @@ image:screenshot_compliance_fileshares_add_initial_shares.png["Ein Screenshot mi
 Wenn Sie einer vorhandenen Gruppe File Shares hinzufügen, klicken Sie auf *Add Shares*.
 
 +
-image:screenshot_compliance_fileshares_add_more_shares.png["Ein Screenshot mit der Schaltfläche „Shares hinzufügen“, um der Gruppe weitere Freigaben hinzuzufügen."]
+image:screenshot_compliance_fileshares_add_more_shares2.png["Ein Screenshot mit der Schaltfläche „Shares hinzufügen“, um der Gruppe weitere Freigaben hinzuzufügen."]
 
 . Wählen Sie das Protokoll für die File Shares aus, die Sie hinzufügen, fügen Sie die File Shares hinzu, die Sie scannen möchten - eine Dateifreigabe pro Zeile - und klicken Sie auf *Weiter*.
 +

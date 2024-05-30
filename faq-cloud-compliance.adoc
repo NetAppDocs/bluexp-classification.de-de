@@ -40,18 +40,6 @@ Die BlueXP Klassifizierung verwendet KI, um ein kontextbezogenes Verständnis de
 
 link:concept-cloud-compliance.html["Erfahren Sie mehr über die BlueXP Klassifizierung"^].
 
-
-
-=== Was sind die gängigsten Anwendungsfälle für die BlueXP Klassifizierung?
-
-* Ermitteln von personenbezogenen Daten
-* Das Auffinden und Reporting von Daten zu bestimmten Daten als Antwort auf Betroffene kann ganz nach Bedarf auf DSGVO, CCPA, HIPAA und anderen Datenschutzvorschriften erfolgen.
-* Einhaltung neuer und anstehender Datenschutzvorschriften
-* Einhaltung von Daten-Compliance- und Datenschutzvorschriften
-* Migrieren von Daten von Legacy-Systemen zur Cloud
-* Einhaltung von Richtlinien zur Datenaufbewahrung.
-
-
 https://bluexp.netapp.com/netapp-cloud-data-sense["Weitere Informationen zu Anwendungsfällen für die BlueXP Klassifizierung"^].
 
 
@@ -106,12 +94,6 @@ Sobald die entsprechenden Dateien gefunden wurden, können die Merkmale aufgelis
 
 
 
-=== Welche Art von Analysen bietet die BlueXP Klassifizierung?
-
-Datenquellen können visuell dargestellt und Beziehungen definiert und grafisch dargestellt werden. Administratoren können beispielsweise alle veralteten, doppelten und nicht geschäftsbezogenen Daten aus allen Datenquellen im gesamten Unternehmen sehen (On-Premises-Systeme, Datenbanken, Dateifreigaben, S3-Speicher, OneDrive, Usw.). Anschließend können sie Daten kopieren, verschieben, löschen und managen, um so die Storage-Kosten zu optimieren und Risiken zu minimieren. Benutzer können Risiken minimieren, indem sie erkennen, welche sensitiven Daten offengelegt werden können. Sie können zudem Jobs zum Management der Berechtigungen für eine starke Datensicherung erstellen. Durch die BlueXP Klassifizierung werden auch alle verschiedenen Datentypen klassifiziert, sodass Administratoren Daten nach Typ untersuchen und sehen können, welche Aktionen wann an den Daten ausgeführt wurden.
-
-
-
 === Bietet die BlueXP Klassifizierung Berichte?
 
 Ja. Die durch die Klassifizierung von BlueXP angebotenen Informationen können für andere Beteiligte in Ihrem Unternehmen relevant sein. Deshalb ermöglichen wir Ihnen die Erstellung von Berichten und die damit verbundene Nutzung. Die folgenden Berichte sind für die BlueXP Klassifizierung verfügbar:
@@ -154,7 +136,7 @@ NOTE: Durch die Aktivierung der BlueXP Klassifizierung einer Datenquelle wird ei
 
 === Wie deaktiviere ich die BlueXP-Klassifizierung?
 
-Sie können die BlueXP Klassifizierung für das Scannen einzelner Arbeitsumgebungen, Datenbanken, Dateifreigabegruppen, OneDrive Konten oder SharePoint Konten auf der Seite BlueXP Klassifizierungskonfiguration deaktivieren.
+Sie können die BlueXP Klassifizierung für das Scannen einzelner Arbeitsumgebungen, Datenbanken oder Dateifreigabegruppen auf der Seite BlueXP Klassifizierungskonfiguration deaktivieren.
 
 link:task-managing-compliance.html["Weitere Informationen ."^].
 
@@ -340,10 +322,10 @@ Der Connector ist eine Software, die auf einer Computing-Instanz entweder in Ihr
 
 === Wo muss der Connector installiert werden?
 
-* Beim Scannen von Daten in Cloud Volumes ONTAP in AWS, Amazon FSX für ONTAP oder in AWS S3 Buckets wird in AWS ein Connector verwendet.
+* Beim Scannen von Daten in Cloud Volumes ONTAP in AWS oder Amazon FSX für ONTAP verwenden Sie einen Connector in AWS.
 * Beim Scannen von Daten in Cloud Volumes ONTAP in Azure oder in Azure NetApp Files verwenden Sie einen Konnektor in Azure.
 * Beim Scannen von Daten in Cloud Volumes ONTAP in GCP wird ein Connector in GCP verwendet.
-* Beim Scannen von Daten in lokalen ONTAP Systemen, File Shares anderer Anbieter, generischer S3 Objekt-Storage, Datenbanken, OneDrive Ordner, SharePoint Konten und Google Drive Konten können Sie einen Konnektor in jedem dieser Cloud-Standorte verwenden.
+* Wenn Sie Daten in lokalen ONTAP Systemen, NetApp Dateifreigaben oder Datenbanken scannen, können Sie an jedem dieser Cloud-Standorte einen Connector verwenden.
 
 
 Wenn die Daten an vielen dieser Standorte gespeichert sind, müssen Sie eventuell verwenden https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["Mehrere Anschlüsse"^].

@@ -60,7 +60,7 @@ Es gibt einige Szenarien, in denen Sie einen Connector verwenden müssen, der be
 * Beim Scannen von Daten in Cloud Volumes ONTAP in GCP wird ein Connector in GCP verwendet.
 
 
-On-Premises-ONTAP-Systeme, NetApp-Dateifreigaben, generischer S3-Objektspeicher und Datenbanken können über eine dieser Cloud-Connectors gescannt werden.
+Lokale ONTAP-Systeme, NetApp-Dateifreigaben und Datenbanken können mit einem dieser Cloud Connectors gescannt werden.
 
 Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Installieren Sie den Steckverbinder vor Ort"^] Auf einem Linux-Host in Ihrem Netzwerk oder in der Cloud. Einige Benutzer, die die BlueXP Klassifizierung lokal installieren möchten, können den Connector möglicherweise auch On-Premises installieren.
 
