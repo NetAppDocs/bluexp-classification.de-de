@@ -16,7 +16,7 @@ summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten a
 [role="lead"]
 Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten.
 
-Wenn Sie Daten von On-Premises-Standorten in die Cloud migrieren möchten, können Sie vor der Verschiebung prüfen, ob einige der Daten vertrauliche Informationen beinhalten.
+Wenn Sie zudem Daten von lokalen Speicherorten in die Cloud migrieren möchten, können Sie die Größe der Daten und auch prüfen, ob sensible Daten vor dem Verschieben enthalten sind.
 
 
 
@@ -75,7 +75,7 @@ Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigs
 * Sensible personenbezogene Daten
 
 
-Sie können mit der Maus auf jeden Abschnitt zeigen, um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen.
+Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen.
 
 Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.
 
@@ -91,7 +91,7 @@ Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigu
 * Unbekannter Zugriff
 
 
-Sie können mit der Maus auf jeden Abschnitt zeigen, um die Gesamtzahl der Dateien jeder Kategorie anzuzeigen. Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.
+Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Dateien in jeder Kategorie anzuzeigen. Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.
 
 
 
@@ -99,7 +99,7 @@ Sie können mit der Maus auf jeden Abschnitt zeigen, um die Gesamtzahl der Datei
 
 Möglicherweise möchten Sie die Elemente in den Diagrammen _Age_ und _Size_ untersuchen, um zu sehen, ob Daten gelöscht oder in kostengünstigeren Objektspeicher verschoben werden sollten.
 
-Sie können den Mauszeiger über einen Punkt in den Diagrammen bewegen, um Details zum Alter oder zur Größe der Daten in dieser Kategorie anzuzeigen. Klicken Sie hier, um alle Dateien anzuzeigen, die nach diesem Alter oder Größenbereich gefiltert sind.
+Sie können den Cursor auf einen Punkt in den Diagrammen setzen, um Details über das Alter oder die Größe der Daten in dieser Kategorie anzuzeigen. Klicken Sie hier, um alle Dateien anzuzeigen, die nach diesem Alter oder Größenbereich gefiltert sind.
 
 * *Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.
 * *Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.
@@ -118,7 +118,7 @@ Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizier
 
 ==== Kategorien
 
-Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.
+Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
 Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
 
@@ -134,7 +134,7 @@ Siehe link:task-controlling-private-data.html#view-files-by-file-types["Anzeigen
 
 == Datenzuordnungsbericht
 
-Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und enthält dann eine Aufschlüsselung für jede Arbeitsumgebung.
+Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und liefert dann eine Analyse für jede Arbeitsumgebung.
 
 Der Bericht enthält die folgenden Informationen:
 
@@ -171,7 +171,7 @@ image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des G
 .Ergebnis
 Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
-Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-files["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
+Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-files["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
 
 Beachten Sie, dass Sie den Unternehmensnamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der BlueXP Klassifizierungsseite anpassen können, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.
 

@@ -437,8 +437,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">Der für jeden Cloud-Provider implementierte Instanztyp</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">Für jeden Cloud-Provider implementierte Instanztyp</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">Datentransferkosten</block>
-  <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS: Amazon EC2-Preisgestaltung</block>
-  <block id="865fef30627e082f6460395b15ac714b" category="list-text"><block ref="865fef30627e082f6460395b15ac714b" category="inline-link-rx"></block></block>
   <block id="ec41ccef0058f3bdb78fe38313b87456" category="inline-link">Microsoft Azure: Preisangaben Für Die Bandbreite</block>
   <block id="3be19ebc8415f831f4fbfc27b3e37f8e" category="list-text"><block ref="3be19ebc8415f831f4fbfc27b3e37f8e" category="inline-link-rx"></block></block>
   <block id="3b33b762bb5216176a14f853b1d711f2" category="inline-link">Google Cloud: Preis für Storage Transfer Service</block>
@@ -607,17 +605,14 @@
   <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">Datenüberblick</block>
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">Die wichtigsten Daten-Repositorys, die nach Sensibilität aufgeführt sind</block>
   <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">Sensible personenbezogene Daten</block>
-  <block id="43ec9a8f95b41a9a8648d4df5db2c7f1" category="paragraph">Sie können mit der Maus auf jeden Abschnitt zeigen, um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen.</block>
   <block id="9f3ca55177a9cff0208b29196f6a269a" category="paragraph">Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.</block>
   <block id="645e4f0b71c92a4a3810668742adff95" category="section-title">Daten, die nach Typen der offenen Berechtigungen aufgeführt sind</block>
   <block id="140692ffca26cf04b2ffe208e40614b6" category="paragraph">Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:</block>
   <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">Steht Unternehmen offen</block>
   <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">Öffentlich zugänglich</block>
   <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">Unbekannter Zugriff</block>
-  <block id="78c332986dbd1952b5fedb1405ea7ea1" category="paragraph">Sie können mit der Maus auf jeden Abschnitt zeigen, um die Gesamtzahl der Dateien jeder Kategorie anzuzeigen. Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.</block>
   <block id="f7610c6f6e541c5a2364ba4e2af4b7b2" category="section-title">Alter der Daten und Größe der Diagramme</block>
   <block id="3ec606c48dc49534660f77920d3af604" category="paragraph">Möglicherweise möchten Sie die Elemente in den Diagrammen _Age_ und _Size_ untersuchen, um zu sehen, ob Daten gelöscht oder in kostengünstigeren Objektspeicher verschoben werden sollten.</block>
-  <block id="ede4d419502ce502a02eed2521b13f7f" category="paragraph">Sie können den Mauszeiger über einen Punkt in den Diagrammen bewegen, um Details zum Alter oder zur Größe der Daten in dieser Kategorie anzuzeigen. Klicken Sie hier, um alle Dateien anzuzeigen, die nach diesem Alter oder Größenbereich gefiltert sind.</block>
   <block id="cbeed5582d295effbe84db6394c89a55" category="list-text">*Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.</block>
   <block id="1c7e3b4981e1a369ab27fd559df0e974" category="list-text">*Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.</block>
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">Die meisten ermittelten Datenklassifizierungen</block>
@@ -1381,7 +1376,6 @@
   <block id="8d94a2a96b8e10bd08c2af725fb9a422" category="inline-image-macro">Ein Screenshot des Dialogfelds sensible persönliche Dateien, in dem Sie auf das Symbol Ergebnisse untersuchen neben einem persönlichen Datentyp klicken können.</block>
   <block id="74186caba3373d78db8333ee67330575" category="paragraph"><block ref="74186caba3373d78db8333ee67330575" category="inline-image-macro-rx" type="image"></block></block>
   <block id="47b347a1f7b1686950802bcaa8f089d4" category="inline-link-macro">Siehe die Liste der Kategorien</block>
-  <block id="91f604faaf2806916a0c893987a95a74" category="paragraph">Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie Lebensläufe oder Mitarbeiterverträge sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.</block>
   <block id="768ab8a6971014c8ffceeccf0f73db14" category="admonition">Englisch, Deutsch und Spanisch werden für Kategorien unterstützt. Support für weitere Sprachen wird später hinzugefügt.</block>
   <block id="9aa9abf60f82df3e21d796f9168c36b0" category="list-text">Klicken Sie auf das Symbol *Ergebnisse untersuchen* für eine der 4 Top-Kategorien direkt im Hauptbildschirm oder klicken Sie auf *Alle anzeigen* und dann auf das Symbol für eine der Kategorien.</block>
   <block id="613f07741bbd9071b1b79a6196853b30" category="inline-image-macro">Ein Screenshot des Dialogfelds „Kategorien“, in dem Sie neben einer Kategorie auf das Symbol „Ergebnisse untersuchen“ klicken können.</block>
@@ -1543,8 +1537,6 @@
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">Auf der Konfigurationsseite können Sie die Datenquellen auswählen, die Sie scannen möchten - wenn Sie das noch nicht getan haben. Wenn Sie Scannergruppen erstellt haben, wird jede Datenquelle von den Scanner-Knoten in der jeweiligen Gruppe gescannt.</block>
   <block id="00c5c673cfa296bce54ec77743dbf5a5" category="paragraph">Der Name der Scannergruppe für jede Arbeitsumgebung wird auf der Konfigurationsseite angezeigt.</block>
   <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">Sie können auch die Liste aller Scannergruppen sowie die IP-Adresse und den Status für jeden Scannerknoten in der Gruppe unten auf der Konfigurationsseite anzeigen.</block>
-  <block id="e046fe016499c2584ccbc85ec4b21f9d" category="inline-image-macro">Ein Screenshot, in dem alle Scannergruppen zusammen mit der IP-Adresse für jeden Scannerknoten in der Gruppe aufgeführt sind.</block>
-  <block id="dace7436ca5a83360d9bbd7d056c44bd" category="paragraph"><block ref="dace7436ca5a83360d9bbd7d056c44bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">Weitere Informationen zum Tiering von Cloud Volumes ONTAP Systemen</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">Weitere Informationen zum Tiering von lokalen ONTAP Systemen</block>
   <block id="a33f1b61e65aad9cca86d3578cf3028a" category="cell">Wählen Sie den Berechtigungstyp innerhalb der Daten und in Ordnern/Shares aus.</block>
@@ -1606,16 +1598,13 @@
   <block id="657428712375fa5789abe7c6de9782a7" category="inline-image-macro">Über die Auswahl aller Dateien</block>
   <block id="f4b007384ec89845c9935758ba0063c6" category="list-text">Um alle Dateien auf allen Seiten auszuwählen, aktivieren Sie das Kontrollkästchen in der Titelzeile (<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>), und dann in der Pop-up-Nachricht <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block>Klicken Sie auf *Wählen Sie alle Einträge aus der Liste (xxx Elemente)*.</block>
   <block id="78f57849bdbd66782ef9877d36177fcb" category="list-text">Wählen Sie im Bereich Untersuchungsergebnisse alle Dateien auf allen Seiten aus, indem Sie das Kästchen in der Titelzeile ( aktivieren<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>), dann in der Pop-up-Nachricht <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block> Klicken Sie auf *Wählen Sie alle Elemente aus der Liste aus (xxx Elemente)*, und klicken Sie dann auf *Kopieren*.</block>
-  <block id="17dca911bcce42574615a9d04b2c26cd" category="paragraph">Wenn Sie Daten von On-Premises-Standorten in die Cloud migrieren möchten, können Sie vor der Verschiebung prüfen, ob einige der Daten vertrauliche Informationen beinhalten.</block>
   <block id="8eb1fec334dabbaf8e8ce1c5c57d9629" category="paragraph">Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt. Klicken Sie auf den Namen einer Richtlinie, um die Ergebnisse auf der Untersuchungsseite anzuzeigen. Klicken Sie auf *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.</block>
   <block id="c84e7df5fd818e5aa11d03239984b3bd" category="paragraph">Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgeführt, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:</block>
   <block id="c2587967478c7df25fe839d6f619f443" category="list-text">Nicht-sensible Daten</block>
-  <block id="e0247fb281ffe9cb88e8d27a1d7db85b" category="paragraph">Die Dateien werden anhand der Anzahl der Benutzer bewertet, die berechtigt sind, auf die Dateien auf der X-Achse (niedrigste bis höchste) zuzugreifen, und die Anzahl der sensiblen Kennungen innerhalb der Dateien auf der Y-Achse (niedrigste bis höchste). Die Blöcke stellen die Anzahl der Dateien dar, die mit den Elementen der X- und Y-Achsen übereinstimmen. Der hellere Block ist gut, da weniger Benutzer auf die Dateien zugreifen können und weniger sensible Kennungen pro Datei. Die dunkleren Blöcke sind die Elemente, die Sie untersuchen möchten. Auf dem folgenden Bildschirm wird beispielsweise der Mauszeiger für den dunkelblauen Block angezeigt. Es zeigt, dass Sie 1,500 Dateien haben, auf die 751-100 Benutzer zugreifen können und wo es 501-100 sensible Kennungen pro Datei gibt.</block>
   <block id="baf19cb0f888989db2710471a613fbd9" category="inline-image-macro">Ein Screenshot, in dem die Daten angezeigt werden, wenn Sie den Cursor über ein Element in diesem Fenster platzieren.</block>
   <block id="84bb65a316fae3e8d82ea950dc220467" category="paragraph"><block ref="84bb65a316fae3e8d82ea950dc220467" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">Sie können auf den Block klicken, für den Sie sich interessieren, um die gefilterten Ergebnisse der betroffenen Dateien auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen durchführen können.</block>
   <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">Keine Offenen Berechtigungen</block>
-  <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie die Ergebnisse untersuchen, können Sie feststellen, dass Mitarbeiterverträge an einem unsicheren Ort gespeichert sind. Sie können das Problem dann beheben.</block>
   <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">Stellen Sie sicher, dass Sie über qualifizierte Anmeldeinformationen zur Anmeldung beim SharePoint-Konto verfügen und dass Sie über die URLs für die SharePoint-Sites verfügen, die Sie scannen möchten.</block>
   <block id="6d3bb929d06fa3023ab7239f4567ed1a" category="paragraph">Melden Sie sich mit qualifizierten Benutzeranmeldeinformationen beim SharePoint-Konto an, auf das Sie zugreifen möchten, um es als neue Datenquelle/Arbeitsumgebung hinzuzufügen.</block>
   <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">Sie müssen über die Anmeldeinformationen des Admin-Benutzers für das SharePoint-Konto verfügen, das Lesezugriff auf alle SharePoint-Sites bietet.</block>
@@ -1754,7 +1743,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Fall anzeigen*: Vollständige Details zu einem bestimmten Fall anzeigen.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Ein Screenshot, der die Aktionen zeigt, die Sie nach Auswahl des Menüs in der letzten Spalte der Tabelle durchführen können.</block>
   <block id="99d97930418935683e2b318283d0dfe1" category="section-title">Zeitstempel der letzten Zugriffszeit</block>
-  <block id="b2d4384c1deeeb5068a47d9c4f7fecae" category="paragraph">Diese Funktionalität ist anwendbar auf On-Premises-ONTAP-Systeme, Cloud Volumes ONTAP, Azure NetApp Files, FSX for ONTAP und nicht-NetApp File Shares.</block>
   <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">Ein Screenshot des Filters, um zu sehen, welche Dateien gescannt und nicht gescannt wurden, basierend auf Schreibberechtigungen.</block>
   <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">Folgende Filteroptionen stehen zur Auswahl:</block>
@@ -1879,7 +1867,6 @@
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">*Mittel*</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">*Klein*</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">Siehe zusätzliche AWS-Instanztypen</block>
-  <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">*AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>.</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">Siehe zusätzliche Azure-Instanztypen</block>
   <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">*Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>.</block>
   <block id="02a3b057fd8df2afe74574d8ba4929b5" category="inline-link-macro">Weitere GCP-Instanztypen finden Sie unter</block>
@@ -1898,10 +1885,8 @@
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">3. April 2023 (Version 1.22)</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">Neuer Data Discovery Assessment Report</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Erfahren Sie, wie Sie den Data Discovery Assessment Report erstellen und verwenden</block>
-  <block id="5e4569f52e263bc5988dd871099065f5" category="paragraph">Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und enthält dann eine Aufschlüsselung für jede Arbeitsumgebung.</block>
   <block id="2d948e473e2d70b037f0549e51ba2a9d" category="list-text">Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Mapping Report*.</block>
   <block id="7ddeaa5e00e834742bed79816a143502" category="section-title">Data Discovery Assessment-Bericht</block>
-  <block id="d40936cf7a3a0b1e1def94efecb41182" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:</block>
   <block id="4fc6419c6a12af16883e770d99dbf849" category="cell">Bedenken hinsichtlich der Daten-Governance</block>
   <block id="29682fe2b70e1decc5fcddf7dc56bb80" category="cell">Ein detaillierter Überblick über alle Daten, die Sie besitzen, und Bereiche, in denen Sie die Datenmenge möglicherweise reduzieren und Kosten einsparen können.</block>
   <block id="e26970e3266bdd73a6217ce7b8af4c3e" category="cell">Risiken im Hinblick auf die Datensicherheit</block>
@@ -2077,7 +2062,6 @@
   <block id="5f7d2531317684863a8928345cd2c72a" category="paragraph">Nachdem Sie die BlueXP Klassifizierung für Ihren Objekt-Storage-Service aktiviert haben, müssen Sie im nächsten Schritt die Buckets konfigurieren, die Sie scannen möchten. Die BlueXP Klassifizierung erkennt diese Buckets und zeigt sie in der von Ihnen erstellten Arbeitsumgebung an.</block>
   <block id="37e611c0f6034e9d39537aca9c9331a7" category="paragraph">Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Buckets. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.</block>
   <block id="264b044bf416a5337d28443921b46791" category="list-text">Die BlueXP Klassifizierung wird auf einem Host, der mit anderen Applikationen gemeinsam genutzt wird, nicht unterstützt – der Host muss ein dedizierter Host sein.</block>
-  <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red hat Subscription Management*: Der Host muss bei Red hat Subscription Management registriert sein. Wenn es nicht registriert ist, kann das System während der Installation nicht auf Repositorys zugreifen, um erforderliche Drittanbietersoftware zu aktualisieren.</block>
   <block id="7299a589db31a0bc8b28dedaafe896cd" category="list-text">*Zusätzliche Software*: Sie müssen die folgende Software auf dem Host installieren, bevor Sie die BlueXP-Klassifizierung installieren:</block>
@@ -2203,12 +2187,10 @@
   <block id="59ebdcac794eeda1621f09a3ecc27439" category="inline-link-macro">Löschen Sie das gesamte SharePoint Konto aus der BlueXP Klassifizierung</block>
   <block id="6f59ca5f245fc8c3519e5b1002026165" category="summary">Sie können eine globale Active Directory-Klassifizierung mit BlueXP integrieren und so die Ergebnisse verbessern, die BlueXP Klassifizierungen von Dateieigentümern meldet und die Benutzer und Gruppen Zugriff auf Ihre Dateien haben.</block>
   <block id="0f4b94b9c8f266d8f84728edf8666d68" category="doc">Integrieren Sie Active Directory in die BlueXP Klassifizierung</block>
-  <block id="c06c60ce3256abb2eeb5ee0ee7195c2c" category="paragraph">Wenn Sie bestimmte (unten aufgeführte) Datenquellen einrichten, müssen Sie Active Directory-Anmeldeinformationen eingeben, um die BlueXP Klassifizierung zum Scannen von CIFS-Volumes zu ermöglichen. Diese Integration ermöglicht die Klassifizierung von BlueXP mit Angaben zu Dateieigentümerrechten und Berechtigungen für die Daten in diesen Datenquellen. Das für diese Datenquellen eingegebene Active Directory kann sich von den hier eingegebenen globalen Active Directory-Anmeldeinformationen unterscheiden. Die BlueXP Klassifizierung betrachtet in allen integrierten Active Directorys unter Angabe von Benutzer- und Berechtigungsdetails.</block>
   <block id="7e7d69dec0250fdcf96317ada370e511" category="paragraph">Diese Integration bietet zusätzliche Informationen an folgenden Standorten in der BlueXP Klassifizierung:</block>
   <block id="b4ec1c14ab4bd386dfefef45aa353ede" category="paragraph">Durch eine Active Directory Integration mit BlueXP Klassifizierung können Daten aus den folgenden Datenquellen identifiziert werden:</block>
   <block id="161492e147f9953ea294f077d7f3093b" category="paragraph">Nachdem Sie die BlueXP Klassifizierung implementiert und das Scannen Ihrer Datenquellen aktiviert haben, können Sie die BlueXP Klassifizierung in Ihr Active Directory integrieren. Auf Active Directory kann über eine DNS-Server-IP-Adresse oder eine LDAP-Server-IP-Adresse zugegriffen werden.</block>
   <block id="f6713c69bf16489b9255768e1e4aa54b" category="paragraph">Die Active Directory-Zugangsdaten können schreibgeschützt sein, allerdings ist durch die Angabe von Administratorberechtigungen sichergestellt, dass die BlueXP Klassifizierung alle Daten lesen kann, die erhöhte Berechtigungen erfordern. Die Zugangsdaten werden in der BlueXP Klassifizierungsinstanz gespeichert.</block>
-  <block id="abee1c7ea617ac0486284783521e443b" category="paragraph">Wenn Sie bei CIFS Volumes/Dateifreigaben sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs-Scans „zuletzt zugegriffen“ unverändert bleiben, empfehlen wir dem Benutzer die Berechtigung zum Schreiben von Attributen. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.</block>
   <block id="4b05a60d6cd8813d76fd85958d02d2dc" category="list-text">Die folgenden Ports müssen für Outbound-Kommunikation durch die BlueXP Klassifizierungsinstanz offen sein:</block>
   <block id="6ba5ae96727e23ab610dbb43f5eba89c" category="list-text">Klicken Sie auf der Seite BlueXP Classification Configuration auf *Add Active Directory*.</block>
   <block id="b2514742bc1fd53a05e15ba5d54bf10e" category="inline-image-macro">Ein Screenshot, der durch Klicken auf die Schaltfläche angezeigt wird, um einen Active Directory Server zur BlueXP Klassifizierung hinzuzufügen.</block>
@@ -2265,7 +2247,6 @@
   <block id="9c8ec203a4decddb8e9b0be1fb76ba06" category="admonition">Durch die Aktivierung der BlueXP Klassifizierung einer Datenquelle wird ein sofortiger erster Scan durchgeführt. Ergebnisse des Scans werden kurz danach angezeigt.</block>
   <block id="cf10ed09d1b432e00f7d40ae089eff17" category="section-title">Wie deaktiviere ich die BlueXP-Klassifizierung?</block>
   <block id="51da61c9b4199dc02176673546f1121d" category="admonition">Um die BlueXP Klassifizierungsinstanz vollständig zu entfernen, können Sie die BlueXP Klassifizierungsinstanz manuell aus dem Portal Ihres Cloud-Providers oder Ihrem lokalen Standort entfernen.</block>
-  <block id="65e3729b16ea2f0aa958f3b977a42b91" category="paragraph">Die BlueXP Klassifizierung bietet Ihnen sofort einsatzbereite Einblicke in Ihre Daten. Diese Erkenntnisse können extrahiert und für die Bedürfnisse Ihres Unternehmens verwendet werden.</block>
   <block id="b2a009fe641242daa8ff4cc2e848a015" category="paragraph">Darüber hinaus bietet die BlueXP Klassifizierung Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung in Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich potenziell sensible Daten in den Dateien Ihrer Unternehmen befinden.</block>
   <block id="3e54663a2ffb430b0a951b91fab46029" category="section-title">Kann ich die BlueXP Klassifizierungsinformationen auf bestimmte Benutzer beschränken?</block>
   <block id="b1cfb802271338af5bae746aee65d68f" category="paragraph">Ja, die BlueXP Klassifizierung ist vollständig in BlueXP integriert. BlueXP-Benutzer können nur Informationen für die Arbeitsumgebungen sehen, für die sie gemäß ihren Arbeitsbereichberechtigungen angezeigt werden können.</block>
@@ -2484,7 +2465,6 @@
   <block id="737ab30d4451f7b971d756cdcc6b7d6b" category="section-title">Informationen, die die BlueXP Klassifizierung indexiert</block>
   <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Kategorien zu. Die Daten, die die BlueXP Klassifizierung indiziert, umfassen die folgenden:</block>
   <block id="e1c6fd17dccbebfc440207f27d59459b" category="list-text">Die BlueXP Klassifizierung erfasst Standardmetadaten zu Dateien: Die Art der Datei, ihre Größe, das Erstellungsdatum und die Änderungsdaten usw.</block>
-  <block id="8546288939f901d3a1276b7f9e394f46" category="list-text">Die BlueXP Klassifizierung verwendet KI, um Namen natürlicher Personen aus Dokumenten zu extrahieren. <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>.</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXP implementiert die BlueXP Klassifizierungsinstanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.</block>
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">Ausgehende Regeln sind vollständig geöffnet. Zum Installieren und Aktualisieren der BlueXP Klassifizierungssoftware und zum Senden von Nutzungsmetriken ist ein Internetzugriff erforderlich.</block>
   <block id="def03cca1b6cd44fc1ef14e712a6c792" category="inline-link-macro">Erfahren Sie mehr über die Endpunkte, auf die BlueXP Klassifizierungen setzt</block>
@@ -2766,18 +2746,6 @@
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">Sie können auch Compliance-Scans für eine Arbeitsumgebung über die Konfigurationsseite aktivieren, indem Sie auf die klicken <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> Und dann *BlueXP Klassifizierung aktivieren*.</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Was ist neu</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 wurde als unterstütztes Betriebssystem für die BlueXP Klassifizierung qualifiziert. Sie können die BlueXP-Klassifizierung auf einem Ubuntu Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud installieren, wenn Sie Version 1.23 des Installers verwenden.<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>.</block>
-  <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500 gib SSD auf /, oder
-- 100 gib verfügbar auf /opt
-- 395 gib verfügbar auf /var/lib/docker
-- 5 gib auf /tmp</block>
-  <block id="7c2e343b426a44deea2cb9e6eb69e8af" category="cell">200 gib SSD auf /, oder
-- 50 gib verfügbar auf /opt
-- 145 gib verfügbar auf /var/lib/docker
-- 5 gib auf /tmp</block>
-  <block id="a8ec707d3d7dc0af4b9cce44343387b0" category="cell">100 gib SSD auf /, oder
-- 50 gib verfügbar auf /opt
-- 45 gib verfügbar auf /var/lib/docker
-- 5 gib auf /tmp</block>
   <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">Hier geht's zum Video</block>
   <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">Anforderungen prüfen und bei der Installation der BlueXP Klassifizierungssoftware auf einem einzelnen lokalen Host befolgen.</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">Wenn Sie die BlueXP Klassifizierungsinstanz nicht mehr verwenden möchten, können Sie sie deinstallieren oder aus der Cloud-Provider-Umgebung löschen.</block>
@@ -3026,7 +2994,6 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">Vorhandene Gruppen-IDs als „für Organisation offen“ definieren</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">Gehen Sie zu „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ und führen Sie das folgende Skript aus:</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Nun können Sie Gruppen-IDs in NFS so konfigurieren, dass sie direkt aus der BlueXP-Klassifizierung als „Open to Organization“ betrachtet werden, wenn die Gruppe ursprünglich nicht mit dieser Berechtigung festgelegt wurde. Alle Dateien und Ordner, denen diese Gruppen-IDs angehängt sind, werden auf der Seite „Untersuchungsdetails“ als „für Organisation offen“ angezeigt. Informieren Sie sich darüber<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
-  <block id="da4874b0888a9dafc160c24905184d23" category="section-title">Werden Snapshot-Kopien auf ONTAP Volumes gescannt?</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">Nein Durch die BlueXP Klassifizierung werden Snapshots nicht gescannt, da der Inhalt mit dem Inhalt des Volume identisch ist.</block>
   <block id="dce2a9642217836d54f614dfd625b753" category="cell">/Usr/lib/systemd/System</block>
   <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">Gelegentlich müssen Sie sich möglicherweise beim BlueXP Klassifizierungssystem anmelden, damit Sie auf Protokolldateien zugreifen oder Konfigurationsdateien bearbeiten können.</block>
@@ -3055,7 +3022,6 @@
   <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">Siehe <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="181332a3540aa1ea82fa85f6dc6f6625" category="paragraph">Siehe <block ref="831f3d64e1800ca5ef8e2c817b5a43b2" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="1ec26f1d39a398158aea4e2d5e31e150" category="section-title">Generieren Sie den Bericht zur Datenzuordnung</block>
-  <block id="69bf5c037f5606f34aefc52d8ef3628b" category="paragraph">Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und es wird eine Popup-Nachricht über den genauen Speicherort angezeigt. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine, die Sie in der Cloud implementiert haben, installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um eine PDF-Datei herunterzuladen. <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>.</block>
   <block id="1f409051045abcc9fdb719d7f375ac7a" category="section-title">Generieren Sie den Data Discovery Assessment Report</block>
   <block id="8d2b3a00bc0d44767cf3d5dfed11884d" category="section-title">Filtern Sie die Daten auf der Seite „Datenuntersuchung“</block>
   <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">Auf den Registerkarten der obersten Ebene können Sie Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) anzeigen.</block>
@@ -3236,7 +3202,6 @@
   <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">14. Dezember 2023 (Version 1.26.6)</block>
   <block id="a1663078538acf931413c4667ee4dc32" category="doc">Definieren Sie zusätzliche Gruppen-IDs als für die Organisation offen</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Die aktuelle Liste der Gruppen-IDs anzeigen</block>
-  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">Es ist möglich für den Inhalt des<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
   <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Erstellen Sie Richtlinien, um die Ergebnisse Ihrer Top-Suchen anzuzeigen</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Verzeichnisse vom Scannen ausschließen</block>
   <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">Unterstützung für extra große Instanzen ist jetzt qualifiziert</block>
@@ -3249,7 +3214,6 @@
   <block id="f15da40a9b4a1b9d1900476ba761ddf8" category="cell"><block ref="98fbfccb7d937f28be2761c9fd869045" category="inline-link-rx"></block> (Standard)</block>
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 CPUs, 128 GB RAM, BS-Festplatte (2,048 gib, min. 250 MB/s Durchsatz) und Datenfestplatte (1 tib SSD, min. 750 MB/s Durchsatz)</block>
   <block id="f3c46003464601608d44d2644affcce1" category="paragraph">Wenn Sie BlueXP im SaaS-Modus verwenden, wird die Verbindung zu BlueXP über HTTPS hergestellt. Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz gesendet werden, sind durch End-to-End-Verschlüsselung mit TLS 1.2 geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können.</block>
-  <block id="522910fcbd37d9f1fe242ff7c7cde8db" category="paragraph">Nein Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz übertragen werden, sind durch End-to-End-Verschlüsselung mit TLS 1.2 geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können. Die BlueXP Klassifizierung gibt keine Daten oder Ergebnisse an NetApp weiter, es sei denn, Sie beantragen und genehmigen den Zugriff.</block>
   <block id="f943db85a7c2edd799890ddb18f29cab" category="doc">BlueXP Klassifizierung auf einem Linux-Host ohne Internetzugang installieren</block>
   <block id="e920147793c6514a998387c74226605b" category="paragraph">Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-Host an einem lokalen Standort ohne Internetzugang zu installieren – auch als _Private Mode_ bezeichnet. Diese Art der Installation ist perfekt für Ihre sicheren Standorte.</block>
   <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">Die folgenden Betriebssysteme erfordern die Verwendung der Podman Container-Engine. Sie erfordern eine BlueXP Klassifikation der Version 1.30 oder höher:</block>
@@ -3520,4 +3484,97 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
   <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">Das Scannen von Daten aus nicht-NetApp-Dateifreigaben wird in der Kernversion der BlueXP Klassifizierung nicht unterstützt.</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">Die Shares können überall gehostet werden, auch in der Cloud oder vor Ort. CIFS-Freigaben von älteren NetApp 7-Mode Storage-Systemen können als Dateifreigaben gescannt werden.</block>
   <block id="8fedda70275ec7ba2bbf1cf099d2a559" category="paragraph"><block ref="8fedda70275ec7ba2bbf1cf099d2a559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1f976f12c87e7d413491bc2ea717ca3" category="inline-image-macro">Ein Screenshot, der alle Scannergruppen zusammen mit der IP-Adresse für jeden Scannerknoten in der Gruppe zeigt.</block>
+  <block id="254be716f61cb4173917688092391cd9" category="paragraph"><block ref="254be716f61cb4173917688092391cd9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d287499aa4821b39ee4c1fbee3fb8bf" category="paragraph">Die BlueXP Klassifizierung bietet Einblick in Ihre Daten. Diese Erkenntnisse können extrahiert und für die Bedürfnisse Ihres Unternehmens verwendet werden.</block>
+  <block id="7d3c06dd12cabb9dbaf2d41b93d148c7" category="section-title">Werden Snapshots gescannt, die sich auf ONTAP-Volumes befinden?</block>
+  <block id="d041b324ecbc035762393b90f89e331b" category="paragraph">Nein Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz übertragen werden, sind durch End-to-End-Verschlüsselung mit TLS 1.2 geschützt. Das bedeutet, dass NetApp und andere Anbieter die Daten nicht lesen können. Die BlueXP Klassifizierung gibt keine Daten oder Ergebnisse an NetApp weiter, es sei denn, Sie beantragen und genehmigen den Zugriff.</block>
+  <block id="94f9509960db4da7c33e447627040c36" category="paragraph">Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie Lebensläufe oder Mitarbeiterverträge sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.</block>
+  <block id="b01528e1880fb637601a6af0e12e237f" category="paragraph">Wenn Sie zudem Daten von lokalen Speicherorten in die Cloud migrieren möchten, können Sie die Größe der Daten und auch prüfen, ob sensible Daten vor dem Verschieben enthalten sind.</block>
+  <block id="0d6f87888ce8ecaae88101ac2ce74b99" category="paragraph">Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen.</block>
+  <block id="6dddb9855aff5ba938a803fad44cc45e" category="paragraph">Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Dateien in jeder Kategorie anzuzeigen. Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.</block>
+  <block id="7ae4efbbdd2f74c778120cfafe0d43a2" category="paragraph">Sie können den Cursor auf einen Punkt in den Diagrammen setzen, um Details über das Alter oder die Größe der Daten in dieser Kategorie anzuzeigen. Klicken Sie hier, um alle Dateien anzuzeigen, die nach diesem Alter oder Größenbereich gefiltert sind.</block>
+  <block id="9a5f838c2dd7ef4d943b30889f557531" category="paragraph">Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.</block>
+  <block id="781de2ced798a15ae10aba6c21cb05e7" category="paragraph">Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und liefert dann eine Analyse für jede Arbeitsumgebung.</block>
+  <block id="9fdf01a1261d4a4e788383c1af9adaf2" category="paragraph">Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.</block>
+  <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen. <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>.</block>
+  <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:</block>
+  <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">Diese Funktion ist anwendbar auf On-Premises-ONTAP-Systeme, Cloud Volumes ONTAP, Azure NetApp Files, FSX for ONTAP und File Shares von Drittanbietern.</block>
+  <block id="cd0e4d172a3c3cc49c7d48effd234198" category="list-text">Wenn Sie das Host-System an Ihrem Standort aufbauen, haben Sie die Wahl zwischen drei Systemgrößen, je nach Größe des Datensatzes, den Sie die BlueXP Klassifizierung scannen möchten.</block>
+  <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 gib SSD auf /, oder
+- 100 gib verfügbar auf /opt
+- 395 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers
+- 5 gib auf /tmp</block>
+  <block id="fb7aa8c3ffe50126e6eca8378926faad" category="cell">200 gib SSD auf /, oder
+- 50 gib verfügbar auf /opt
+- 145 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers
+- 5 gib auf /tmp</block>
+  <block id="276dee9bc704113bddf51474d12b15ff" category="cell">100 gib SSD auf /, oder
+- 50 gib verfügbar auf /opt
+- 45 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers
+- 5 gib auf /tmp</block>
+  <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">*Amazon Elastic Compute Cloud (Amazon EC2) Instanztyp*: Wir empfehlen "m6i.4xlarge". <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>.</block>
+  <block id="797b21f4662c52d1572473764912397d" category="paragraph">Es ist möglich für den Inhalt des<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> Konfigurationsdatei, die sich von dem unterscheidet, was nach der Ausführung des tatsächlich übertragen wurde<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
+  <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS – Amazon Elastic Compute Cloud (Amazon EC2) Preisstruktur</block>
+  <block id="8de1990a68818d4a3c6e1ae7c064bcf9" category="list-text"><block ref="8de1990a68818d4a3c6e1ae7c064bcf9" category="inline-link-rx"></block></block>
+  <block id="e22ac25b066b201473de7aa700ef5d92" category="cell">Preisgestaltung</block>
+  <block id="b24ce0cd392a5b0b8dedc66c25213594" category="cell">Kostenlos</block>
+  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="cell">Kapazität</block>
+  <block id="1210ad5d6a7beaf8ab7fd7d0808a95ca" category="cell">Begrenzt auf 500 TB</block>
+  <block id="a9cec06f0851d8f2722f032a0e63c115" category="cell">Fähigkeit, Metadaten aus Dateien zu sehen*</block>
+  <block id="4f40caf952f66945a674f638c61be8d9" category="paragraph">*Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert:</block>
+  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">Genutzte Kapazität</block>
+  <block id="18de356008c3efffac62590fd7849509" category="list-text">Anzahl der Dateien</block>
+  <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">Dateierstellung</block>
+  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">Letzter Zugriff auf die Datei</block>
+  <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">Datei zuletzt geändert</block>
+  <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">Erkannte Zeit der Datei</block>
+  <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">Extraktion von Berechtigungen</block>
+  <block id="e64f4699e3677ec83e92eb7fc517d88b" category="paragraph">*Unterschiede in der Governance-Konsole*:</block>
+  <block id="c8110422ac17b8559c40c507fe0bed65" category="cell">Zuordnen Und Klassifizieren</block>
+  <block id="46f3ea056caa3126b91f3f70beea068c" category="cell">Karte</block>
+  <block id="58f9985309ad441d05540492b96a7afd" category="cell">Veraltete Daten</block>
+  <block id="60ba2191f39b045b2e7dd2bc96654d1c" category="cell">Nichtgeschäftliche Daten</block>
+  <block id="959cab1cb99ef2d51c2197ef17b2105b" category="cell">Duplizierte Dateien</block>
+  <block id="0b0168bee54c0e61b8aa5a962967a322" category="cell">Benutzerdefinierte Richtlinien</block>
+  <block id="369cd14037692c6f09dcfda1b4ac8ed3" category="cell">DDA-Bericht</block>
+  <block id="ea8d76cdda2904dcca99873fc91b4643" category="cell">Zuordnungsbericht</block>
+  <block id="31b12a0b18d3e31cef5bf330060e1485" category="cell">Erkennung des Empfindlichkeitsniveaus</block>
+  <block id="eeb19f8ceecc074a02badf8ee06710b5" category="cell">Sensible Daten mit großen Berechtigungen</block>
+  <block id="6c8173b9fd1df4291ec6a95f705c54f4" category="cell">Alter der Daten</block>
+  <block id="f737cdef2fd67e0953a5953ca506b30c" category="cell">Datengröße</block>
+  <block id="5155139afba6f744102515d13f1c5578" category="paragraph">*Unterschiede im Compliance-Dashboard*:</block>
+  <block id="74a8dd8ef4ee037974b7843898eabfcd" category="cell">Bericht zur Risikoanalyse personenbezogener Daten</block>
+  <block id="ba7cad27cdcf17f7da95938585ca2071" category="paragraph">*Untersuchungsfilter Unterschiede*:</block>
+  <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">Letzter Zugriff</block>
+  <block id="4797f8fb709b9cdf801351bca3181105" category="cell">Dateiverzeichnispfad</block>
+  <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">Klassifizierungsstatus</block>
+  <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">Status ist immer „Eingeschränkte Einblicke“</block>
+  <block id="29344a3c58cf84dcf0144a3627f021d1" category="cell">Datei-Hash</block>
+  <block id="4df26807127a67f2d98166e4384eea07" category="cell">Benutzer-/Gruppenberechtigungen</block>
+  <block id="922dab0122736d5f9b503433210903c7" category="list-text">Die BlueXP Klassifizierung verwendet KI, um natürliche Namen von Personen aus Dokumenten zu extrahieren. <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>.</block>
+  <block id="c1de1b0548f24874b79874a91bd0f05a" category="paragraph">Die Dateien werden anhand der Anzahl der Benutzer bewertet, die berechtigt sind, auf die Dateien auf der X-Achse (niedrigste bis höchste) zuzugreifen, und die Anzahl der sensiblen Kennungen innerhalb der Dateien auf der Y-Achse (niedrigste bis höchste). Die Blöcke stellen die Anzahl der Dateien dar, die mit den Elementen der X- und Y-Achsen übereinstimmen. Der hellere Block ist gut, da weniger Benutzer auf die Dateien zugreifen können und weniger sensible Kennungen pro Datei. Die dunkleren Blöcke sind die Elemente, die Sie untersuchen möchten. Auf dem folgenden Bildschirm wird beispielsweise der QuickInfo-Text für den dunkelblauen Block angezeigt. Es zeigt, dass Sie 1,500 Dateien haben, auf die 751-100 Benutzer zugreifen können und wo es 501-100 sensible Kennungen pro Datei gibt.</block>
+  <block id="d4af8d75643e49d82b42b7eb654ed0c7" category="summary">Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen in der BlueXP Klassifizierung gescannt werden. Sie können die Änderungen auf „Repository“-Basis vornehmen, d. h., Sie können Änderungen für jedes Volume, jeden Bucket, jede Freigabe, jedes Schema, jeden Benutzer Usw. abhängig von der Art der Datenquelle, die Sie scannen.</block>
+  <block id="e415c7da5280de793049e6b59816274d" category="paragraph">Sie können den Scanstatus jeder Arbeitsumgebung auf der Konfigurationsseite anzeigen:</block>
+  <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">*Initialisieren* (hellblauer Punkt): Die Map- oder Klassifikationskonfiguration ist aktiviert. Dieser erscheint einige Sekunden lang, bevor der Status „Warteschlange ausstehend“ gestartet wird.</block>
+  <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">*Warteschlange ausstehend* (orangefarbener Punkt): Der Scan-Task wartet darauf, in der Scanwarteschlange aufgelistet zu werden.</block>
+  <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*Queued* (orangefarbener Punkt): Die Aufgabe wurde erfolgreich zur Scanwarteschlange hinzugefügt. Das System beginnt mit der Zuordnung oder Klassifizierung des Volumes, wenn es an der Reihe ist.</block>
+  <block id="863f25b6c394057a4286fa671cfd048b" category="list-text">*Running* (grüner Punkt): Die Scan-Aufgabe, die sich in der Warteschlange befand, wird nun im ausgewählten Speicher-Repository ausgeführt.</block>
+  <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*Finished* (grüner Punkt): Der Scan des Speicherarchivs ist abgeschlossen.</block>
+  <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">*Pause* (grauer Punkt): Sie haben die Option „Pause“ gewählt, um den Scanvorgang anzuhalten. Während die Änderungen im Volumen nicht im System angezeigt werden, werden die gescannten Erkenntnisse weiterhin angezeigt.</block>
+  <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*Fehler* (roter Punkt): Der Scan kann nicht abgeschlossen werden, da Probleme aufgetreten sind. Wenn Sie eine Aktion abschließen müssen, wird der Fehler in der QuickInfo unter der Spalte „erforderliche Aktion“ angezeigt.  Andernfalls zeigt das System einen „Fehler“-Status an und versucht wiederherzustellen. Nach Abschluss ändert sich der Status.</block>
+  <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*Not Scanning*: Die Volumenkonfiguration von "Off" wurde ausgewählt und das System scannt nicht das Volume.</block>
+  <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">5. Juni 2024 (Version 1.32)</block>
+  <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">Diese Version enthält die folgenden Updates.</block>
+  <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">Durch Mapping-Scans werden Metadaten erfasst</block>
+  <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert und auf den Dashboards Governance, Compliance und Investigation angezeigt:</block>
+  <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="section-title">Zusätzliche Daten in Dashboards</block>
+  <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">Diese Version aktualisiert, welche Daten während der Mapping-Scans in den Dashboards für Governance, Compliance und Untersuchung angezeigt werden.</block>
+  <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">Was ist der Unterschied zwischen Mapping- und Klassifikationsscans</block>
+  <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">Weitere Informationen finden Sie unter<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
+  <block id="7910c8307cac3d62eca8ac0d42301b38" category="section-title">Neue Zuordnungsstatus-Spalte auf der Seite Konfiguration</block>
+  <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">In diesem Release wird jetzt eine neue Zuordnungsstatus-Spalte auf der Seite Konfiguration angezeigt. Mit der neuen Spalte können Sie feststellen, ob die Zuordnung ausgeführt, in die Warteschlange gestellt, angehalten oder mehr ist.</block>
+  <block id="2f94c0116c501abdbd5c76ddef86d94a" category="paragraph">Erläuterungen zu den Status finden Sie unter<block ref="cacd3972a6d9bfb8b2d3cde3ba576e77" category="inline-link-rx"></block>.</block>
+  <block id="d37bdc46b0a428edd8f0ab35c24067ea" category="paragraph">Wenn Sie bestimmte (unten aufgeführte) Datenquellen einrichten, müssen Sie Active Directory-Anmeldeinformationen eingeben, um die BlueXP Klassifizierung zum Scannen von CIFS-Volumes zu ermöglichen. Diese Integration ermöglicht die Klassifizierung von BlueXP mit Angaben zu Dateieigentümerrechten und Berechtigungen für die Daten in diesen Datenquellen. Das für diese Datenquellen eingegebene Active Directory unterscheidet sich möglicherweise von den globalen Active Directory-Anmeldeinformationen, die Sie hier eingeben. Die BlueXP Klassifizierung betrachtet in allen integrierten Active Directorys unter Angabe von Benutzer- und Berechtigungsdetails.</block>
+  <block id="70f05bdab0f283eaffba98f53fceb776" category="paragraph">Wenn Sie bei CIFS Volumes/Dateifreigaben sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs-Scans „zuletzt zugegriffen“ unverändert bleiben, empfehlen wir dem Benutzer die Berechtigung zum Schreiben von Attributen. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.</block>
 </blocks>

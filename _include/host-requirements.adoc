@@ -18,19 +18,19 @@
 
 | *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder
 - 100 gib verfügbar auf /opt
-- 395 gib verfügbar auf /var/lib/docker
+- 395 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers
 - 5 gib auf /tmp 
 
 
 | *Mittel* | 8 CPUs | 32 GB RAM | 200 gib SSD auf /, oder
 - 50 gib verfügbar auf /opt
-- 145 gib verfügbar auf /var/lib/docker
+- 145 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers
 - 5 gib auf /tmp 
 
 
 | *Klein* | 8 CPUs | 16 GB RAM | 100 gib SSD auf /, oder
 - 50 gib verfügbar auf /opt
-- 45 gib verfügbar auf /var/lib/docker
+- 45 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers
 - 5 gib auf /tmp 
 |===
 +
@@ -38,7 +38,7 @@ Beachten Sie, dass es bei der Verwendung der kleineren Systeme Einschränkungen 
 
 * Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +
-** *AWS EC2 Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
+** *Amazon Elastic Compute Cloud (Amazon EC2) Instanztyp*: Wir empfehlen "m6i.4xlarge". link:reference-instance-types.html#aws-instance-types["Siehe zusätzliche AWS-Instanztypen"^].
 ** *Größe der Azure VM*: Wir empfehlen „Standard_D16s_v3“. link:reference-instance-types.html#azure-instance-types["Siehe zusätzliche Azure-Instanztypen"^].
 ** *GCP-Maschinentyp*: Wir empfehlen "n2-Standard-16". link:reference-instance-types.html#gcp-instance-types["Weitere GCP-Instanztypen finden Sie unter"^].
 

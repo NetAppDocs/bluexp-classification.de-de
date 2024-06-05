@@ -201,6 +201,6 @@ image:screenshot_work_env_id.png["Ein Screenshot der Arbeitsumgebungs-ID von der
 
 Sie können auch die Liste aller Scannergruppen sowie die IP-Adresse und den Status für jeden Scannerknoten in der Gruppe unten auf der Konfigurationsseite anzeigen.
 
-image:screenshot_scanner_groups.png["Ein Screenshot, in dem alle Scannergruppen zusammen mit der IP-Adresse für jeden Scannerknoten in der Gruppe aufgeführt sind."]
+image:screenshot_scanner_groups.png["Ein Screenshot, der alle Scannergruppen zusammen mit der IP-Adresse für jeden Scannerknoten in der Gruppe zeigt."]
 
 Das können Sie link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden erst nach Ablauf der 30-tägigen kostenlosen Testversion belastet.

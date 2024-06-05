@@ -52,6 +52,6 @@ Mit den gleichen Schritten können Sie die Liste der Gruppen-IDs bearbeiten und 
 
 == Die aktuelle Liste der Gruppen-IDs anzeigen
 
-Es ist möglich für den Inhalt des `data_provider.yaml` Die Konfigurationsdatei muss sich von der Datei unterscheiden, die nach dem Ausführen des festgelegt wurde `update_data_providers_from_config_file.sh` Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
+Es ist möglich für den Inhalt des `data_provider.yaml` Konfigurationsdatei, die sich von dem unterscheidet, was nach der Ausführung des tatsächlich übertragen wurde `update_data_providers_from_config_file.sh` Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:
 
  get_data_providers_configuration.sh
