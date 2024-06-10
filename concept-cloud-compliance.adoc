@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp, bluexp classification 
 summary: Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte. 
 ---
 = Mehr zur BlueXP Klassifizierung
@@ -280,7 +280,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Nichtgeschäftliche Daten | Ja. | Ja. 
 
 
-| Duplizierte Dateien | Ja. | Nein 
+| Duplizierte Dateien | Ja. | Ja. 
 
 
 | Vordefinierte Richtlinien | Ja. | Nein 
@@ -397,7 +397,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Betroffene Person | Ja. | Nein 
 
 
-| Duplikate | Ja. | Nein 
+| Duplikate | Ja. | Ja. 
 
 
 | Klassifizierungsstatus | Ja. | Status ist immer „Eingeschränkte Einblicke“ 

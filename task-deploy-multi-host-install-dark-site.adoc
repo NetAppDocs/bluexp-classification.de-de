@@ -85,5 +85,3 @@ Das BlueXP Klassifizierungs-Installationsprogramm schließt die Installation der
 
 .Nächste Schritte
 Auf der Konfigurationsseite können Sie das lokale auswählen link:task-getting-started-compliance.html["ONTAP-Cluster vor Ort"] Und lokal link:task-scanning-databases.html["Datenbanken"] Die Sie scannen möchten.
-
-Das können Sie auch link:task-licensing-datasense.html["Byol-Lizenzierung für die BlueXP Klassifizierung einrichten"] Von der BlueXP Digital-Wallet-Seite aus. Sie werden auch nach Ablauf der 30-tägigen kostenlosen Testversion nicht belastet.

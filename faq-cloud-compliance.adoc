@@ -298,7 +298,7 @@ Die BlueXP Klassifizierung greift über API-Aufrufe, die eine Authentifizierung 
 
 == Lizenzen und Kosten
 
-Die folgenden Fragen beziehen sich auf Lizenzierung und Kosten der Nutzung der BlueXP Klassifizierung.
+Die folgende Frage bezieht sich auf Lizenzierung und Kosten der Nutzung der BlueXP Klassifizierung.
 
 
 

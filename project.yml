@@ -52,8 +52,6 @@ sidebar:
         url: "/task-scanning-file-shares.html"
     - title: Integrieren Sie Active Directory
       url: "/task-add-active-directory-datasense.html"
-    - title: Lizenzierung einrichten
-      url: "/task-licensing-datasense.html"
     - title: Häufig gestellte Fragen
       url: "/faq-cloud-compliance.html"
   - title: BlueXP Klassifizierung nutzen
@@ -93,9 +91,6 @@ sidebar:
         url: "/task-deploy-multi-host-install-dark-site.html"
       - title: Fügen Sie Scannerknoten zu einer vorhandenen Implementierung hinzu
         url: "/task-deploy-add-scanner-nodes.html"
-      - title: Hier können Sie eine kostenlose Testversion einrichten oder Ihre eigene
-          Lizenz mitbringen
-        url: "/task-licensing-byol-freetrial.html"
     - title: Datenabschreibungen scannen
       entries:
       - title: Scannen von Amazon S3 Buckets

@@ -62,10 +62,6 @@ Außerdem benötigen Sie ein Linux-System, das die erfüllt <<Bereiten Sie das L
 [role="quick-margin-para"]
 Laden Sie die Cloud BlueXP Klassifizierungssoftware von der NetApp Support-Website herunter und kopieren Sie die Installer-Datei auf den geplanten Linux-Host. Starten Sie dann den Installationsassistenten und befolgen Sie die Anweisungen zur Implementierung der BlueXP Klassifizierungsinstanz.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Abonnieren Sie den BlueXP Klassifizierungsservice
-[role="quick-margin-para"]
-Hierfür ist ein Abonnement Ihres Cloud-Provider Marketplace erforderlich.
-
 
 
 == Einen Konnektor erstellen
@@ -428,5 +424,3 @@ Wenn Konnektivität über Port 8080 zwischen der Host-Maschine und der Connector
 
 .Nächste Schritte
 Auf der Seite Konfiguration können Sie die Datenquellen auswählen, die Sie scannen möchten.
-
-Das können Sie auch link:task-licensing-datasense.html["Lizenzierung für die BlueXP Klassifizierung einrichten"] Derzeit. Sie werden auch nach Ablauf der 30-tägigen kostenlosen Testversion nicht belastet.
