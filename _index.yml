@@ -54,8 +54,6 @@ indexpage:
       url: task-using-policies.html
     - title: Erstellen von Compliance-Berichten
       url: task-generating-compliance-reports.html
-    - title: Erstellen Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden
-      url: task-using-policies.html
     - title: Reaktion auf eine Anforderung für den Zugriff eines Betroffenen
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: Veraltete Funktionen
