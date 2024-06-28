@@ -18,6 +18,46 @@ Informieren Sie sich über die Neuerungen bei der BlueXP Klassifizierung (Cloud 
 
 
 
+== Juli 2024 (Version 1.33)
+
+Diese Version enthält die folgenden Updates.
+
+
+
+=== Ubuntu unterstützt
+
+Diese Version unterstützt die Ubuntu 24.04 Linux-Plattform.
+
+
+
+=== Durch Mapping-Scans werden Metadaten erfasst
+
+Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert und auf den Dashboards Governance, Compliance und Investigation angezeigt:
+
+* Arbeitsumgebung
+* Art der Arbeitsumgebung
+* Storage Repository
+* Dateityp
+* Genutzte Kapazität
+* Anzahl der Dateien
+* Dateigröße
+* Dateierstellung
+* Letzter Zugriff auf die Datei
+* Datei zuletzt geändert
+* Erkannte Zeit der Datei
+* Extraktion von Berechtigungen
+
+
+
+
+=== Zusätzliche Daten in Dashboards
+
+Diese Version aktualisiert, welche Daten während der Mapping-Scans in den Dashboards für Governance, Compliance und Untersuchung angezeigt werden.
+
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Was ist der Unterschied zwischen Mapping- und Klassifikationsscans"]
+
+
+
 == 5. Juni 2024 (Version 1.32)
 
 Diese Version enthält das folgende Update.

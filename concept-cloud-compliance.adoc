@@ -151,9 +151,9 @@ TIP: Die Instanz sollte immer ausgeführt werden, da die BlueXP Klassifizierung 
 
 
 
-=== Verwenden eines kleineren Instanztyps
+=== Implementierung auf verschiedenen Instanztypen
 
-Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen.
+Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren.
 
 [cols="18,31,51"]
 |===
@@ -164,16 +164,8 @@ Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und wen
 
 
 | Groß (Standard) | 16 CPUs, 64 GB RAM, 500 gib SSD | Kann bis zu 250 Millionen Dateien scannen. 
-
-
-| Mittel | 8 CPUs, 32 GB RAM, 200 gib SSD | Langsamer Scan und kann nur bis zu 1 Million Dateien scannen. 
-
-
-| Klein | 8 CPUs, 16 GB RAM, 100 gib SSD | Die gleichen Einschränkungen wie „Mittel“ und die Möglichkeit, sich zu identifizieren link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Namen der Betroffenen"] Innerhalb von Dateien ist deaktiviert. 
 |===
-Bei der Implementierung der BlueXP Klassifizierung in der Cloud auf AWS können Sie sich für eine große/mittlere/kleine Instanz entscheiden. Wenn Sie die BlueXP Klassifizierung in Azure oder GCP implementieren, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com, um Unterstützung zu erhalten, wenn Sie eines dieser alternativen Systeme verwenden möchten. Wir müssen mit Ihnen zusammenarbeiten, um diese anderen Cloud-Konfigurationen zu implementieren.
-
-Bei der Implementierung der BlueXP Klassifizierung vor Ort müssen Sie einfach einen Linux-Host mit den alternativen Spezifikationen verwenden. Sie müssen sich nicht an NetApp wenden, um Unterstützung zu erhalten.
+Bei der Implementierung der BlueXP Klassifizierung in Azure oder GCP können Sie eine E-Mail an ng-contact-data-sense@netapp.com senden, um Unterstützung zu erhalten, wenn Sie einen kleineren Instanztyp verwenden möchten.
 
 
 
@@ -436,12 +428,12 @@ Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkb
 
 Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Kategorien zu. Die Daten, die die BlueXP Klassifizierung indiziert, umfassen die folgenden:
 
-Standard-Metadaten:: Die BlueXP Klassifizierung erfasst Standardmetadaten zu Dateien: Die Art der Datei, ihre Größe, das Erstellungsdatum und die Änderungsdaten usw.
-Persönliche Daten:: Personenbezogene Informationen wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
-Sensible persönliche Daten:: Besondere Arten sensibler Daten, wie etwa Gesundheitsdaten, ethnische Herkunft oder politische Ansichten, wie in der DSGVO und anderen Datenschutzvorschriften definiert link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
-Kategorien:: Die BlueXP Klassifizierung unterteilt die gescannten Daten in unterschiedliche Kategorien. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#view-files-by-categories["Weitere Informationen zu Kategorien"^].
-Typen:: Die BlueXP Klassifizierung unterteilt die gescannten Daten nach Dateityp. link:task-controlling-private-data.html#view-files-by-file-types["Erfahren Sie mehr über Types"^].
-Name der Entität Anerkennung:: Die BlueXP Klassifizierung verwendet KI, um natürliche Namen von Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
+* *Standard-Metadaten* die BlueXP-Klassifizierung sammelt Standardmetadaten über Dateien: Dateityp, Größe, Erstellungsdatum und Änderungsdatum usw.
+* *Personenbezogene Daten*: Personenbezogene Daten (PII) wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
+* *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPii), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie durch die DSGVO und andere Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
+* *Categories*: Die BlueXP-Klassifizierung nimmt die gescannten Daten auf und teilt sie in verschiedene Kategorien auf. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#view-files-by-categories["Weitere Informationen zu Kategorien"^].
+* *Types*: Die BlueXP Klassifizierung erfasst die gescannten Daten und unterteilt sie nach Dateityp. link:task-controlling-private-data.html#view-files-by-file-types["Erfahren Sie mehr über Types"^].
+* *Name Entity Recognition*: BlueXP Klassifikation verwendet KI, um natürliche Namen von Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
 
 
 

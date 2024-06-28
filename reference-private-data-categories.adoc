@@ -14,7 +14,13 @@ summary: Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizi
 
 
 [role="lead"]
-Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes und Datenbanken identifiziert werden können. Sehen Sie sich die folgenden Kategorien an.
+Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes und Datenbanken identifiziert werden können.
+
+Durch die BlueXP Klassifizierung werden zwei Arten von personenbezogenen Daten identifiziert:
+
+* *Personenbezogene Informationen (PII)*
+* *Sensible personenbezogene Daten (SPii)*
+
 
 
 TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierung von BlueXP benötigen, z. B. zusätzliche nationale ID-Nummern oder Identifikatoren in Ihrem Gesundheitswesen, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com.
@@ -23,7 +29,7 @@ TIP: Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierun
 
 == Arten personenbezogener Daten
 
-Die in Dateien gefundenen personenbezogenen Daten können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
+Die in Dateien enthaltenen personenbezogenen Daten bzw. _personenbezogene Informationen_ (PII) können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
 
 Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
 
@@ -224,19 +230,19 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 
 == Arten sensibler personenbezogener Daten
 
-Die sensiblen personenbezogenen Daten, die die BlueXP Klassifizierung in Dateien finden kann, enthalten die folgende Liste.
+Die BlueXP Klassifizierung kann folgende sensible personenbezogene Daten (SPii) in Dateien finden.
 
 Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.
 
-Referenz Für Kriminelle Verfahren:: Daten zu strafrechtlichen Überzeugungen und Straftaten einer natürlichen Person.
-Ethnische Referenz:: Daten über die rassische oder ethnische Herkunft einer natürlichen Person.
-Systemzustand:: Daten über die Gesundheit einer natürlichen Person.
-ICD-9-CM-Ärztliche Codes:: Codes, die in der Medizin- und Gesundheitsbranche verwendet werden.
-ICD-10-CM-Ärztliche Codes:: Codes, die in der Medizin- und Gesundheitsbranche verwendet werden.
-Philosophische Überzeugungen Referenz:: Daten über die philosophischen Überzeugungen einer natürlichen Person.
-Politische Meinungen Referenz:: Daten über die politischen Meinungen einer natürlichen Person.
-Religiöse Überzeugungen Referenz:: Daten über die religiösen Überzeugungen einer natürlichen Person.
-Sexualleben oder Orientierung Referenz:: Daten über das Sexualleben einer natürlichen Person oder die sexuelle Orientierung.
+* *Strafprozessreferenz*: Daten über die strafrechtlichen Verurteilungen und Straftaten einer natürlichen Person.
+* *Ethnizitätsreferenz*: Daten über die rassische oder ethnische Herkunft einer natürlichen Person.
+* *Gesundheitsreferenz*: Daten über die Gesundheit einer natürlichen Person.
+* *ICD-9-CM Medical Codes*: Codes, die in der Medizin- und Gesundheitsbranche verwendet werden.
+* *ICD-10-CM Medical Codes*: Codes, die in der Medizin- und Gesundheitsbranche verwendet werden.
+* *Philosophische Überzeugungen Referenz*: Daten über die philosophischen Überzeugungen einer natürlichen Person.
+* *Politische Meinungen Referenz*: Daten über die politischen Meinungen einer natürlichen Person.
+* *Verweise auf religiöse Überzeugungen*: Daten über die religiösen Überzeugungen einer natürlichen Person.
+* *Sexualleben oder Orientierungsreferenz*: Daten über das Sexualleben oder die sexuelle Orientierung einer natürlichen Person.
 
 
 
@@ -319,12 +325,12 @@ Die folgenden Metadaten werden ebenfalls kategorisiert und in den gleichen unter
 * Applikationsdaten
 * Archivdateien
 * Audio
-* Daten Von Business-Applikationen
+* Breadcrumbs aus der BlueXP Klassifizierung
+Daten Von Business-Applikationen
 * CAD-Dateien
 * Codieren
 * Beschädigt
 * Datenbank- und Indexdateien
-* BlueXP Klassifizierungs-Breadcrumbs
 * Design-Dateien
 * E-Mail-Anwendungsdaten
 * Verschlüsselt (Dateien mit hohem Entropie-Wert)

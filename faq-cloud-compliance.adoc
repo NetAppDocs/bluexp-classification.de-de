@@ -238,17 +238,11 @@ Wenn die BlueXP Klassifizierung personenbezogene Daten erkennt oder eine DSAR-Su
 
 Die BlueXP Klassifizierung ermöglicht Ihnen die Durchführung eines allgemeinen „Mapping“-Scans oder eines vollständigen „Klassifizierungs“-Scans für Datenquellen. Das Mapping bietet nur einen Überblick über Ihre Daten auf hoher Ebene, während die Klassifizierung ein tiefes Scannen Ihrer Daten ermöglicht. Das Mapping kann auf Ihren Datenquellen sehr schnell durchgeführt werden, da es nicht auf Dateien zugegriffen wird, um die darin enthaltenen Daten zu sehen.
 
-* Scan der Datenzuordnung
-+
-Die BlueXP Klassifizierung scannt nur die Metadaten. Dies ist nützlich für das allgemeine Datenmanagement und die Datenverwaltung, für eine schnelle Projektabwicklung, für sehr große Bestände und für die Priorisierung. Die Datenzuordnung basiert auf Metadaten und gilt als *fast* Scan.
-
+* *Data Mapping Scan*: Die BlueXP Klassifizierung scannt nur die Metadaten. Dies ist nützlich für das allgemeine Datenmanagement und die Datenverwaltung, für eine schnelle Projektabwicklung, für sehr große Bestände und für die Priorisierung. Die Datenzuordnung basiert auf Metadaten und gilt als *fast* Scan.
 +
 Nach einem schnellen Scan können Sie einen Daten-Mapping-Bericht erstellen. Dieser Bericht bietet einen Überblick über die in Ihren Datenquellen gespeicherten Daten, um Sie bei Entscheidungen zu Ressourcenauslastung, Migration, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen.
 
-* Scan der Datenklassifizierung (Deep):
-+
-BlueXP Klassifizierungs-Scans mittels Standardprotokollen und schreibgeschützter Berechtigung in Ihrer gesamten Umgebung. Ausgewählte Dateien werden nach sensiblen Daten, privaten Informationen und Ransomware-Problemen geöffnet und gescannt, die damit verbunden sind.
-
+* *Datenklassifizierung (Deep) Scan*: BlueXP Klassifizierungsscans mit Standardprotokollen und Lesezugriff in Ihren gesamten Umgebungen. Ausgewählte Dateien werden nach sensiblen Daten, privaten Informationen und Ransomware-Problemen geöffnet und gescannt, die damit verbunden sind.
 +
 Nach einem vollständigen Scan gibt es zahlreiche zusätzliche BlueXP Klassifizierungsfunktionen, die Sie auf Ihre Daten anwenden können, beispielsweise das Anzeigen und Optimieren von Daten auf der Seite „Datenuntersuchung“, das Suchen nach Namen in Dateien, das Kopieren, Verschieben und Löschen von Quelldateien usw.
 
@@ -256,7 +250,7 @@ Nach einem vollständigen Scan gibt es zahlreiche zusätzliche BlueXP Klassifizi
 
 Die BlueXP Klassifizierung erfasst Metadaten wie z. B. Dateiname, -Berechtigungen, -Erstellungszeit, letzter Zugriff und letzte Änderung. Dies umfasst alle Metadaten, die auf der Seite „Datenermittlungsdetails“ und in „Datenermittlungsberichte“ angezeigt werden.
 
-Die BlueXP Klassifizierung kann viele Arten von privaten Daten identifizieren, wie beispielsweise personenbezogene und sensible personenbezogene Daten. Weitere Informationen zu privaten Daten finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten, die durch die BlueXP Klassifizierung gescannt werden"].
+Durch die BlueXP Klassifizierung können viele Arten von privaten Daten identifiziert werden, wie z. B. personenbezogene Daten (PII) und sensible personenbezogene Daten (SPii). Weitere Informationen zu privaten Daten finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Kategorien von privaten Daten, die durch die BlueXP Klassifizierung gescannt werden"].
 
 
 
