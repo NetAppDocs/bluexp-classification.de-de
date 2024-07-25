@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site, bluexp 
 summary: Vor der manuellen Installation der BlueXP Klassifizierung auf einem Linux-Host können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation der BlueXP Klassifizierung vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Website befinden, die keinen Internetzugang hat. 
 ---
 = Stellen Sie sicher, dass Ihr Linux Host bereit ist, die BlueXP Klassifizierung zu installieren
@@ -126,7 +126,7 @@ Beachten Sie, dass die folgenden Funktionen derzeit nicht unterstützt werden, w
 +
 https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Installation von Docker auf CentOS.
 
-*** Podman Version 4 oder höher. Um Podman zu installieren, aktualisieren Sie die Systempakete (`sudo yum update -y`), und installieren Sie dann Podman (`sudo yum install netavark -y`).
+*** Podman Version 4 oder höher. Um Podman zu installieren, geben Sie ) ein (`sudo yum install podman netavark -y`.
 
 
 

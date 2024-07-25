@@ -79,7 +79,7 @@ Beachten Sie, dass die folgenden Funktionen derzeit nicht unterstützt werden, w
 +
 https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Installation von Docker auf CentOS.
 
-*** Podman Version 4 oder höher. Um Podman zu installieren, aktualisieren Sie die Systempakete (`sudo yum update -y`), und installieren Sie dann Podman (`sudo yum install netavark -y`).
+*** Podman Version 4 oder höher. Um Podman zu installieren, geben Sie ) ein (`sudo yum install podman netavark -y`.
 
 
 
