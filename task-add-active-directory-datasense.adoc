@@ -16,9 +16,6 @@ summary: Sie können eine globale Active Directory-Klassifizierung mit BlueXP in
 [role="lead"]
 Sie können eine globale Active Directory-Klassifizierung mit BlueXP integrieren und so die Ergebnisse verbessern, die BlueXP Klassifizierungen von Dateieigentümern meldet und die Benutzer und Gruppen Zugriff auf Ihre Dateien haben.
 
-
-NOTE: Die Integration in Active Directory wird in der Kernversion der BlueXP Klassifizierung nicht unterstützt.
-
 Wenn Sie bestimmte (unten aufgeführte) Datenquellen einrichten, müssen Sie Active Directory-Anmeldeinformationen eingeben, um die BlueXP Klassifizierung zum Scannen von CIFS-Volumes zu ermöglichen. Diese Integration ermöglicht die Klassifizierung von BlueXP mit Angaben zu Dateieigentümerrechten und Berechtigungen für die Daten in diesen Datenquellen. Das für diese Datenquellen eingegebene Active Directory unterscheidet sich möglicherweise von den globalen Active Directory-Anmeldeinformationen, die Sie hier eingeben. Die BlueXP Klassifizierung betrachtet in allen integrierten Active Directorys unter Angabe von Benutzer- und Berechtigungsdetails.
 
 Diese Integration bietet zusätzliche Informationen an folgenden Standorten in der BlueXP Klassifizierung:
