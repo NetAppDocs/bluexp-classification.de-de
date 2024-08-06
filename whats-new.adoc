@@ -18,6 +18,20 @@ Informieren Sie sich über die Neuerungen bei der BlueXP Klassifizierung (Cloud 
 
 
 
+== 5 August 2024 (Version 1.34)
+
+Diese BlueXP -Klassifizierungsversion umfasst das folgende Update.
+
+
+
+=== Wechseln Sie von CentOS zu Ubuntu
+
+BlueXP  Classification hat sein Linux-Betriebssystem für Microsoft Azure und Google Cloud Platform (GCP) von CentOS 7.9 auf Ubuntu 22.04 aktualisiert.
+
+Einzelheiten zur Bereitstellung finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["Installieren Sie auf einem Linux-Host mit Internetzugang und bereiten Sie das Linux-Host-System vor"].
+
+
+
 == Juli 2024 (Version 1.33)
 
 Diese Version enthält die folgenden Updates.
