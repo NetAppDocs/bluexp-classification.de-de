@@ -1,7 +1,7 @@
 ---
-sidebar: sidebariance, privacy, compliance, object storage, data sense 
+sidebar: sidebar 
 permalink: task-scanning-storagegrid.html 
-keywords: cloud compliance, enable cloud compl 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID direkt mit BlueXP -Klassifizierung zu beginnen. 
 ---
 = Erste Schritte mit dem Scannen von StorageGRID-Daten
