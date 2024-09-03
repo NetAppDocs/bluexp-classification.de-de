@@ -1,0 +1,124 @@
+---
+sidebar: sidebariance, privacy, compliance, object storage, data sense 
+permalink: task-scanning-storagegrid.html 
+keywords: cloud compliance, enable cloud compl 
+summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID direkt mit BlueXP -Klassifizierung zu beginnen. 
+---
+= Erste Schritte mit dem Scannen von StorageGRID-Daten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID direkt mit BlueXP -Klassifizierung zu beginnen.
+
+
+
+== Schnellstart
+
+Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den verbleibenden Abschnitten, um ausführliche Informationen zu erhalten.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Prüfen Sie die Voraussetzungen für den Objekt-Storage
+[role="quick-margin-para"]
+Es muss die Endpunkt-URL vorhanden sein, um eine Verbindung mit dem Objekt-Storage-Service herzustellen.
+
+[role="quick-margin-para"]
+Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem StorageGRID verfügen, damit die BlueXP -Klassifizierung auf die Buckets zugreifen kann.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie den Objekt-Storage-Service hinzu
+[role="quick-margin-para"]
+Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Wählen Sie die zu scannenden Buckets aus
+[role="quick-margin-para"]
+Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierung beginnt mit dem Scannen.
+
+
+
+== StorageGRID-Anforderungen prüfen
+
+Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
+
+* Es muss die Endpunkt-URL vorhanden sein, um eine Verbindung mit dem Objekt-Storage-Service herzustellen.
+* Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem StorageGRID verfügen, damit die BlueXP -Klassifizierung auf die Buckets zugreifen kann.
+
+
+
+
+== Implementieren der BlueXP Klassifizierungsinstanz
+
+Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
+
+Wenn Sie Daten von StorageGRID scannen, die über das Internet zugänglich ist, können Sie link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in der Cloud"^]oder link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung an einem lokalen Standort mit Internetzugang"^].
+
+Wenn Sie Daten von StorageGRID scannen, die in einer dunklen Seite installiert wurde, die keinen Internetzugang hat, müssen Sie link:task-deploy-compliance-dark-site.html["Implementieren Sie die BlueXP Klassifizierung an demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
+
+Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+
+
+
+== Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu
+
+Fügen Sie den StorageGRID-Dienst hinzu.
+
+.Schritte
+. Klicken Sie auf der Seite Arbeitsumgebungen Konfiguration auf *Datenquelle hinzufügen* > *Objekt-Storage-Service hinzufügen*.
++
+image:screenshot_compliance_add_object_storage_button.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie auf die Schaltfläche Gruppe Dateifreigaben hinzufügen klicken können."]
+
+. Geben Sie im Dialogfeld Objektspeicherdienst hinzufügen die Details für den StorageGRID-Dienst ein und klicken Sie auf *Weiter*.
++
+.. Geben Sie den Namen ein, den Sie für die Arbeitsumgebung verwenden möchten. Dieser Name sollte den Namen des StorageGRID-Dienstes wiedergeben, mit dem Sie eine Verbindung herstellen.
+.. Geben Sie die Endpunkt-URL ein, um auf den Objekt-Storage-Service zuzugreifen.
+.. Geben Sie den Zugriffsschlüssel und den geheimen Schlüssel ein, damit die BlueXP -Klassifizierung auf die Buckets in StorageGRID zugreifen kann.
++
+image:screenshot_compliance_add_object_storage.png["Ein Screenshot des Dialogfelds, in dem Sie die Werte für den Zugriff auf den Objekt-Storage-Service eingeben."]
+
+
+
+
+
+.Ergebnis
+StorageGRID wird der Liste der Arbeitsumgebungen hinzugefügt.
+
+
+
+== Aktivieren und Deaktivieren von Compliance-Scans für StorageGRID Buckets
+
+Nachdem Sie die BlueXP -Klassifizierung auf StorageGRID aktiviert haben, konfigurieren Sie die Buckets, die Sie scannen möchten. Die BlueXP Klassifizierung erkennt diese Buckets und zeigt sie in der von Ihnen erstellten Arbeitsumgebung an.
+
+.Schritte
+. Klicken Sie auf der Seite Konfiguration in der StorageGRID-Arbeitsumgebung auf *Konfiguration*.
++
+image:screenshot_compliance_object_storage_config.png["Ein Screenshot, in dem Sie auf Konfiguration für die Arbeitsumgebung klicken, damit Sie die Buckets auswählen können, die Sie scannen möchten."]
+
+. Aktivieren Sie Scans, die nur mappen oder Scans zuordnen und klassifizieren, auf Ihren Buckets.
++
+image:screenshot_compliance_object_storage_select_buckets.png["Ein Screenshot, in dem Sie die zu scannenden Objekt-Speicher-Buckets auswählen."]
+
++
+[cols="45,45"]
+|===
+| An: | Tun Sie dies: 
+
+
+| Ermöglichen Sie Mapping-Only-Scans auf einem Bucket | Klicken Sie Auf *Karte* 
+
+
+| Aktivieren vollständiger Scans auf einem Bucket | Klicken Sie Auf *Karte & Klassieren* 
+
+
+| Deaktivieren des Scans auf einem Bucket | Klicken Sie Auf *Aus* 
+|===
+
+
+.Ergebnis
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Buckets. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.

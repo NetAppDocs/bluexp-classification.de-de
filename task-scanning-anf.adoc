@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: Führen Sie einige Schritte für den Einstieg in die BlueXP Klassifizierung für Azure NetApp Files durch. 
 ---
-= Erste Schritte mit der BlueXP Klassifizierung für Azure NetApp Files
+= Erste Schritte mit der BlueXP -Klassifizierung für Azure NetApp Files
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -59,7 +59,7 @@ Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie
 
 
 
-== Ermitteln des Azure NetApp Files-Systems, das Sie scannen möchten
+== Ermitteln Sie das Azure NetApp Files-System, das Sie scannen möchten
 
 Wenn sich das zu scannenden Azure NetApp Files-System nicht bereits in BlueXP als Arbeitsumgebung befindet, können Sie es zu diesem Zeitpunkt der Arbeitsfläche hinzufügen.
 
@@ -79,7 +79,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Ermöglichen der BlueXP Klassifizierung in Ihren Arbeitsumgebungen
+== Ermöglichen Sie die BlueXP -Klassifizierung in Ihren Arbeitsumgebungen
 
 Die BlueXP Klassifizierung für Ihre Azure NetApp Files Volumes kann aktiviert werden.
 
@@ -93,7 +93,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["Ein Screenshot der Regist
 ** Um alle Bände zu ordnen und zu klassifizieren, klicken Sie auf *Karte & alle Bände klassifizieren*.
 ** Um den Scan für jedes Volume anzupassen, klicken Sie auf *oder wählen Sie für jedes Volume* den Scantyp aus, und wählen Sie dann die Volumes aus, die Sie zuordnen und/oder klassifizieren möchten.
 +
-Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren und Deaktivieren von Compliance-Scans auf Volumes>> Entsprechende Details.
+Weitere Informationen finden Sie unter <<Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes,Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes>> .
 
 
 
@@ -112,7 +112,7 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsu
 ====
 
 
-== Überprüfung, ob die BlueXP Klassifizierung Zugriff auf Volumes hat
+== Vergewissern Sie sich, dass die BlueXP -Klassifizierung Zugriff auf Volumes hat
 
 Vergewissern Sie sich, dass die BlueXP Klassifizierung auf Volumes zugreifen kann, indem Sie Ihre Netzwerk-, Sicherheitsgruppen und Exportrichtlinien prüfen. Sie müssen BlueXP mit CIFS-Anmeldedaten klassifizieren, um auf CIFS Volumes zugreifen zu können.
 
@@ -161,7 +161,7 @@ image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „View
 
 
 
-== Aktivieren und Deaktivieren von Compliance-Scans auf Volumes
+== Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln. Wir empfehlen, alle Volumen zu scannen.
 

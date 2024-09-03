@@ -47,8 +47,6 @@ Beispielsweise können Sie Dateien _ohne_ spezifische personenbezogene Daten (PI
 ** Aktualisieren Sie die CIFS-Anmeldeinformationen
 ** Aktionen anzeigen und abbrechen
 ** Verzeichnisse erneut scannen
-** Löschen, Kopieren, Beschriften und Zuweisen von Benutzern zu Daten
-** Dateien klonen und kopieren
 ** Daten exportieren
 
 

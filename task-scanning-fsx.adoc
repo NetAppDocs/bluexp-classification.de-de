@@ -73,7 +73,7 @@ Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie
 
 
 
-== Erkennung des FSX für ONTAP-Dateisystems, das Sie scannen möchten
+== Entdecken Sie das FSX für ONTAP Dateisystem, das Sie scannen möchten
 
 Wenn das Dateisystem FSX für ONTAP, das Sie scannen möchten, nicht bereits in BlueXP als Arbeitsumgebung vorhanden ist, können Sie es zu diesem Zeitpunkt der Arbeitsfläche hinzufügen.
 
@@ -93,7 +93,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Ermöglichen der BlueXP Klassifizierung in Ihren Arbeitsumgebungen
+== Ermöglichen Sie die BlueXP -Klassifizierung in Ihren Arbeitsumgebungen
 
 Sie können die BlueXP Klassifizierung für FSX for ONTAP Volumes aktivieren.
 
@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["Ein Screenshot der Registerkarte Kon
 ** Um alle Bände zu ordnen und zu klassifizieren, klicken Sie auf *Karte & alle Bände klassifizieren*.
 ** Um den Scan für jedes Volume anzupassen, klicken Sie auf *oder wählen Sie für jedes Volume* den Scantyp aus, und wählen Sie dann die Volumes aus, die Sie zuordnen und/oder klassifizieren möchten.
 +
-Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren und Deaktivieren von Compliance-Scans auf Volumes>> Entsprechende Details.
+Weitere Informationen finden Sie unter <<Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes,Aktivieren und Deaktivieren von Compliance-Scans auf Volumes>> .
 
 
 
@@ -126,7 +126,7 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsu
 ====
 
 
-== Überprüfung, ob die BlueXP Klassifizierung Zugriff auf Volumes hat
+== Vergewissern Sie sich, dass die BlueXP -Klassifizierung Zugriff auf Volumes hat
 
 Sorgen Sie dafür, dass die BlueXP Klassifizierung auf Volumes zugreifen kann, indem Sie Ihre Netzwerk-, Sicherheitsgruppen und Exportrichtlinien prüfen.
 
@@ -171,7 +171,7 @@ Nach Eingabe der Anmeldedaten sollte eine Meldung angezeigt werden, dass alle CI
 
 
 
-== Aktivieren und Deaktivieren von Compliance-Scans auf Volumes
+== Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln. Wir empfehlen, alle Volumen zu scannen.
 
@@ -209,7 +209,7 @@ NOTE: Neue Volumen, die der Arbeitsumgebung hinzugefügt wurden, werden automati
 
 
 
-== Scannen von Datensicherungs-Volumes
+== Scannen Sie Datensicherungsvolumes
 
 Datensicherung-Volumes werden standardmäßig nicht gescannt, da sie nicht extern offengelegt werden und die BlueXP Klassifizierung kann nicht auf sie zugreifen. Dies sind die Ziel-Volumes für SnapMirror Vorgänge von einem FSX für ONTAP Filesystem.
 

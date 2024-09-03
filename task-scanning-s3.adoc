@@ -108,7 +108,7 @@ Sie müssen die Instanz mithilfe eines in AWS bereitgestellten Connectors implem
 
 *Hinweis:* die Implementierung der BlueXP Klassifizierung an einem lokalen Speicherort wird derzeit beim Scannen von S3-Buckets nicht unterstützt.
 
-Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 

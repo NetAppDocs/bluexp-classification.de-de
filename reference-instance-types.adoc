@@ -16,7 +16,7 @@ summary: Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt wer
 [role="lead"]
 Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der bestimmte Betriebssystemanforderungen, RAM-Anforderungen, Software-Anforderungen usw. erfüllt. Bei der Implementierung der BlueXP Klassifizierung in der Cloud empfehlen wir, ein System mit den „großen“ Merkmalen zu verwenden, um den vollen Funktionsumfang zu erhalten.
 
-Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Informieren Sie sich über diese Einschränkungen"^].
+Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren. Bei der Nutzung dieser weniger leistungsstarken Systeme bestehen jedoch einige Einschränkungen. link:concept-cloud-compliance.html["Informieren Sie sich über diese Einschränkungen"^].
 
 Wenn in den folgenden Tabellen das als „Standard“ markierte System in der Region, in der Sie die BlueXP-Klassifizierung installieren, nicht verfügbar ist, wird das nächste System in der Tabelle bereitgestellt.
 

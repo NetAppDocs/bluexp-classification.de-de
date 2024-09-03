@@ -4,7 +4,7 @@ permalink: task-scanning-object-storage.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: 'Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3 und vieles mehr.' 
 ---
-= Scannen von Objekt-Storage mithilfe des S3-Protokolls
+= Scannen von StorageGRID-Daten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerh
 
 []
 ====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
+*HINWEIS* mit der BlueXP -Klassifizierung, die Teil des Core BlueXP  ist, können Sie jetzt StorageGRID-Daten scannen. Siehe link:task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"]. Die übrigen Informationen hier sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
 
 ====
 

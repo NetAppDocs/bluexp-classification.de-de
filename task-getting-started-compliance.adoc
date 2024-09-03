@@ -4,7 +4,7 @@ permalink: task-getting-started-compliance.html
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
 summary: Führen Sie ein paar Schritte durch und beginnen Sie mit der Überprüfung Ihrer Cloud Volumes ONTAP und lokalen ONTAP Volumes mithilfe der BlueXP Klassifizierung. 
 ---
-= Erste Schritte mit der BlueXP Klassifizierung für Cloud Volumes ONTAP und lokale ONTAP
+= Erste Schritte mit der BlueXP -Klassifizierung für Cloud Volumes ONTAP und lokale ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -65,7 +65,7 @@ Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie
 
 
 
-== Ermitteln der Datenquellen, die gescannt werden sollen
+== Ermitteln Sie die Datenquellen, die Sie scannen möchten
 
 Wenn sich die zu scannenden Datenquellen nicht bereits in Ihrer BlueXP-Umgebung befinden, können Sie diese zu diesem Zeitpunkt zur Leinwand hinzufügen.
 
@@ -85,7 +85,7 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 
 
-== Ermöglichen der BlueXP Klassifizierung in Ihren Arbeitsumgebungen
+== Ermöglichen Sie die BlueXP -Klassifizierung in Ihren Arbeitsumgebungen
 
 Sie können die BlueXP Klassifizierung auf Cloud Volumes ONTAP Systemen auf jedem unterstützten Cloud-Provider oder auf lokalen ONTAP Clustern aktivieren.
 
@@ -99,7 +99,7 @@ image:screenshot_cloud_compliance_we_scan_config.png["Ein Screenshot der Registe
 ** Um alle Bände zu ordnen und zu klassifizieren, klicken Sie auf *Karte & alle Bände klassifizieren*.
 ** Um den Scan für jedes Volume anzupassen, klicken Sie auf *oder wählen Sie für jedes Volume* den Scantyp aus, und wählen Sie dann die Volumes aus, die Sie zuordnen und/oder klassifizieren möchten.
 +
-Siehe <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Aktivieren und Deaktivieren von Compliance-Scans auf Volumes>> Entsprechende Details.
+Weitere Informationen finden Sie unter <<Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes,Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes>> .
 
 
 
@@ -118,7 +118,7 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsu
 ====
 
 
-== Überprüfung, ob die BlueXP Klassifizierung Zugriff auf Volumes hat
+== Vergewissern Sie sich, dass die BlueXP -Klassifizierung Zugriff auf Volumes hat
 
 Vergewissern Sie sich, dass die BlueXP Klassifizierung auf Volumes zugreifen kann, indem Sie Ihre Netzwerk-, Sicherheitsgruppen und Exportrichtlinien prüfen. Sie müssen BlueXP mit CIFS-Anmeldedaten klassifizieren, um auf CIFS Volumes zugreifen zu können.
 
@@ -167,7 +167,7 @@ image:screenshot_compliance_volume_details.gif["Ein Screenshot der Seite „View
 
 
 
-== Aktivieren und Deaktivieren von Compliance-Scans auf Volumes
+== Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes
 
 Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuordnungen oder Klassifizierungen in einer Arbeitsumgebung starten oder stoppen. Sie können auch von mappingonly Scans zu Mapping- und Klassifizierungsscans und umgekehrt wechseln. Wir empfehlen, alle Volumen zu scannen.
 
@@ -205,7 +205,7 @@ NOTE: Neue Volumen, die der Arbeitsumgebung hinzugefügt wurden, werden automati
 
 
 
-== Scannen von Datensicherungs-Volumes
+== Scannen Sie Datensicherungsvolumes
 
 Datensicherung-Volumes werden standardmäßig nicht gescannt, da sie nicht extern offengelegt werden und die BlueXP Klassifizierung kann nicht auf sie zugreifen. Es handelt sich dabei um Ziel-Volumes für SnapMirror Vorgänge von einem ONTAP System vor Ort oder von einem Cloud Volumes ONTAP System aus.
 

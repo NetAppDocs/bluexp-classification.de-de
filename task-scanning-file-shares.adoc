@@ -43,7 +43,7 @@ Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den 
 
 
 
-== Prüfen der Anforderungen für die Dateifreigabe
+== Prüfen Sie die Anforderungen für die Dateifreigabe
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
@@ -72,11 +72,11 @@ Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs
 
 Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
-Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
+Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
 
 
-== Erstellen der Gruppe für die Dateifreigaben
+== Erstellen Sie die Gruppe für die Dateifreigaben
 
 Sie müssen eine „Gruppe“ von Dateifreigaben für Dateien hinzufügen, bevor Sie Ihre Dateifreigaben hinzufügen können. Die Gruppe ist ein Container für die zu scannenden Dateifreigaben, und der Gruppenname wird als Name der Arbeitsumgebung für diese Dateifreigaben verwendet.
 
@@ -94,7 +94,7 @@ Die neue File Shares-Gruppe wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 
 
-== Hinzufügen von Dateifreigaben zu einer Gruppe
+== Fügen Sie einer Gruppe Dateifreigaben hinzu
 
 Sie fügen der Dateifreigaben-Gruppe Dateifreigaben hinzu, damit die Dateien in diesen Freigaben durch die BlueXP-Klassifizierung gescannt werden. Sie fügen die Freigaben im Format hinzu `<host_name>:/<share_path>`.
 
