@@ -22,9 +22,9 @@ Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID
 
 Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den verbleibenden Abschnitten, um ausführliche Informationen zu erhalten.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Prüfen Sie die Voraussetzungen für den Objekt-Storage
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Prüfen Sie die StorageGRID Prerequisites
 [role="quick-margin-para"]
-Es muss die Endpunkt-URL vorhanden sein, um eine Verbindung mit dem Objekt-Storage-Service herzustellen.
+Sie benötigen die Endpunkt-URL, um eine Verbindung zum StorageGRID-Service herzustellen.
 
 [role="quick-margin-para"]
 Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem StorageGRID verfügen, damit die BlueXP -Klassifizierung auf die Buckets zugreifen kann.
@@ -33,7 +33,7 @@ Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem Sto
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie den Objekt-Storage-Service hinzu
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie den StorageGRID-Dienst hinzu
 [role="quick-margin-para"]
 Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu.
 
@@ -70,17 +70,17 @@ Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die
 Fügen Sie den StorageGRID-Dienst hinzu.
 
 .Schritte
-. Klicken Sie auf der Seite Arbeitsumgebungen Konfiguration auf *Datenquelle hinzufügen* > *Objekt-Storage-Service hinzufügen*.
+. Klicken Sie auf der Seite Konfiguration der Arbeitsumgebung auf *Datenquelle hinzufügen* > *StorageGRID hinzufügen*.
 +
-image:screenshot_compliance_add_object_storage_button.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie auf die Schaltfläche Gruppe Dateifreigaben hinzufügen klicken können."]
+image:screenshot-scanning-add-storagegrid.png["Ein Screenshot der Seite Scankonfiguration, in dem Sie auf die Schaltfläche StorageGRID hinzufügen klicken können."]
 
-. Geben Sie im Dialogfeld Objektspeicherdienst hinzufügen die Details für den StorageGRID-Dienst ein und klicken Sie auf *Weiter*.
+. Geben Sie im Dialogfeld StorageGRID-Dienst hinzufügen die Details für den StorageGRID-Dienst ein und klicken Sie auf *Weiter*.
 +
 .. Geben Sie den Namen ein, den Sie für die Arbeitsumgebung verwenden möchten. Dieser Name sollte den Namen des StorageGRID-Dienstes wiedergeben, mit dem Sie eine Verbindung herstellen.
 .. Geben Sie die Endpunkt-URL ein, um auf den Objekt-Storage-Service zuzugreifen.
 .. Geben Sie den Zugriffsschlüssel und den geheimen Schlüssel ein, damit die BlueXP -Klassifizierung auf die Buckets in StorageGRID zugreifen kann.
 +
-image:screenshot_compliance_add_object_storage.png["Ein Screenshot des Dialogfelds, in dem Sie die Werte für den Zugriff auf den Objekt-Storage-Service eingeben."]
+image:screenshot-scanning-storagegrid-add.png["Ein Screenshot des Dialogfelds, in dem Sie die Werte für den Zugriff auf den StorageGRID-Service eingeben."]
 
 
 
@@ -98,11 +98,11 @@ Nachdem Sie die BlueXP -Klassifizierung auf StorageGRID aktiviert haben, konfig
 .Schritte
 . Klicken Sie auf der Seite Konfiguration in der StorageGRID-Arbeitsumgebung auf *Konfiguration*.
 +
-image:screenshot_compliance_object_storage_config.png["Ein Screenshot, in dem Sie auf Konfiguration für die Arbeitsumgebung klicken, damit Sie die Buckets auswählen können, die Sie scannen möchten."]
+image:screenshot-scanning-storagegrid-configuration.png["Ein Screenshot, in dem Sie auf Konfiguration für die Arbeitsumgebung klicken, damit Sie die Buckets auswählen können, die Sie scannen möchten."]
 
 . Aktivieren Sie Scans, die nur mappen oder Scans zuordnen und klassifizieren, auf Ihren Buckets.
 +
-image:screenshot_compliance_object_storage_select_buckets.png["Ein Screenshot, in dem Sie die zu scannenden Objekt-Speicher-Buckets auswählen."]
+image:screenshot-scanning-add-storagegrid-buckets.png["Ein Screenshot der Auswahl der StorageGRID-Buckets, die Sie scannen möchten."]
 
 +
 [cols="45,45"]

@@ -182,7 +182,7 @@ Weitere Informationen zu vCPU Limits finden Sie in den folgenden Links:
 
 Führen Sie diese Schritte aus, um eine Instanz der BlueXP Klassifizierung in der Cloud zu implementieren. Der Connector implementiert die Instanz in der Cloud und installiert dann die BlueXP Klassifizierungssoftware auf dieser Instanz.
 
-Hinweis: Wenn Sie die BlueXP Klassifizierung aus einem BlueXP Connector in einer AWS-Umgebung implementieren, können Sie die Standardgröße der Instanzen auswählen oder zwischen zwei kleineren Instanztypen wählen. link:concept-cloud-compliance.html#using-a-smaller-instance-type["Anzeigen der verfügbaren Instanztypen und Einschränkungen"]. In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird die BlueXP Klassifizierung auf einem ausgeführt link:reference-instance-types.html["Alternativer Instanztyp"].
+In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird die BlueXP -Klassifizierung auf einem ausgeführtlink:reference-instance-types.html["Alternativer Instanztyp"].
 
 [role="tabbed-block"]
 ====
