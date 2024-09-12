@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von nicht-NetApp NFS- oder CIFS-Dateifreigaben direkt mit der BlueXP Klassifizierung zu beginnen. Diese Dateifreigaben können lokal oder in der Cloud gespeichert werden. 
 ---
-= Scannen von Dateifreigaben
+= Scannen Sie Dateifreigaben mit BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

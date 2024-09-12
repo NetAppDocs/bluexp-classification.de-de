@@ -1945,7 +1945,6 @@
   <block id="589613ebded30ccfc7919805e48604f7" category="list-text">*Download DSAR Report*: Eine formelle Antwort auf die Zugriffsanfrage, die Sie an den Betroffenen senden können. Dieser Bericht enthält automatisch generierte Informationen, die auf Daten basieren, deren BlueXP-Klassifizierung für den Betroffenen gefunden wurde und als Vorlage dienen. Füllen Sie das Formular aus und überprüfen Sie es intern, bevor Sie es an den Betroffenen senden.</block>
   <block id="7c92d233233cf7ce5aafb02b9fc01c89" category="paragraph">Sie können die Inhalte des BlueXP Klassifizierungs-Compliance-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.</block>
   <block id="65f7d3315d8640ef3d8c452f389f943f" category="summary">Führen Sie ein paar Schritte durch, um zu beginnen, Amazon FSX für ONTAP Volumes mit BlueXP Klassifizierung zu scannen.</block>
-  <block id="4639bfb0440fe9f0921957654faaa847" category="doc">Erste Schritte mit der BlueXP Klassifizierung für Amazon FSX for ONTAP</block>
   <block id="ee226c8d12b49c169ecda644ad808139" category="list-text">Sie benötigen einen aktiven Connector in AWS für die Implementierung und das Management der BlueXP Klassifizierung.</block>
   <block id="e8b81a0a7fb72885e122ca44791572fb" category="list-text">Die beim Erstellen der Arbeitsumgebung ausgewählte Sicherheitsgruppe muss Datenverkehr von der BlueXP Klassifizierungsinstanz zulassen. Sie können die zugehörige Sicherheitsgruppe mithilfe der ENI finden, die mit dem FSX für ONTAP-Dateisystem verbunden ist, und es mit der AWS-Verwaltungskonsole bearbeiten.</block>
   <block id="0a1d05c09ebe4e90b8b31f3bbb2b6119" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Aktivieren Sie die BlueXP Klassifizierung und wählen Sie die zu scannenden Volumes aus</block>
@@ -2991,7 +2990,6 @@
   <block id="8a5ea9dc53c4c86f4aed7ef4b4da982c" category="section-title">Dateien nach Kategorien anzeigen</block>
   <block id="ecb953672f3305298a86f0569c18d178" category="section-title">Dateien nach Dateitypen anzeigen</block>
   <block id="303b0a57019c624c482fb5d775729281" category="section-title">Anzeigen von Dashboard-Daten für bestimmte Arbeitsumgebungen</block>
-  <block id="50c07d396e4bf402b72ebf82cfaadea1" category="doc">Datenbankschemas scannen</block>
   <block id="846eb83e821481bdeafbcc34c9138401" category="section-title">Implementieren der BlueXP Klassifizierungsinstanz</block>
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">Fügen Sie den Datenbankserver hinzu</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">Aktivieren und deaktivieren Sie Compliance-Scans für Datenbankschemas</block>
@@ -3496,16 +3494,13 @@ Daten Von Business-Applikationen</block>
   <block id="2c68446a47623409683fed996b7df333" category="cell">Wird für interne Prozesse innerhalb eines Ubuntu-Servers benötigt.</block>
   <block id="f0fd47ef2ed43479969d8e3e0d0df156" category="cell">8080 (TCP), 443 (TCP) und 80. 9000</block>
   <block id="1ed8980e59fe9f96e77c5a7b123780d1" category="cell">Die Firewall- oder Routing-Regeln für den Connector müssen ein- und ausgehenden Datenverkehr über Port 443 zur und von der BlueXP Klassifizierungsinstanz ermöglichen. Stellen Sie sicher, dass Port 8080 geöffnet ist, damit Sie den Installationsfortschritt in BlueXP sehen können. Wenn eine Firewall auf dem Linux-Host verwendet wird, ist Port 9000 für interne Prozesse innerhalb eines Ubuntu-Servers erforderlich.</block>
-  <block id="b228a09a75efeade7f59510b5c5b6da0" category="doc">Erste Schritte mit der BlueXP -Klassifizierung für Cloud Volumes ONTAP und lokale ONTAP</block>
   <block id="effe342ed6fdd5b79625bb273c6f43da" category="section-title">Ermitteln Sie die Datenquellen, die Sie scannen möchten</block>
   <block id="3e07df694cbf4c604aed3e0514e35653" category="section-title">Ermöglichen Sie die BlueXP -Klassifizierung in Ihren Arbeitsumgebungen</block>
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">Weitere Informationen finden Sie unter <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> .</block>
   <block id="5ede9806a5e8e360f81d3184f388f33b" category="section-title">Vergewissern Sie sich, dass die BlueXP -Klassifizierung Zugriff auf Volumes hat</block>
   <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">Scannen Sie Datensicherungsvolumes</block>
-  <block id="03013e116c1ce41f3b557b2caaef3575" category="doc">Erste Schritte mit der BlueXP -Klassifizierung für Azure NetApp Files</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">Ermitteln Sie das Azure NetApp Files-System, das Sie scannen möchten</block>
-  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="doc">Scannen von Dateifreigaben</block>
   <block id="9850feff1aac1d886b7a010236318d49" category="section-title">Prüfen Sie die Anforderungen für die Dateifreigabe</block>
   <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.</block>
   <block id="763e254befdcc246f3e8569877b63340" category="section-title">Erstellen Sie die Gruppe für die Dateifreigaben</block>
@@ -3516,7 +3511,6 @@ Daten Von Business-Applikationen</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">Scannen von StorageGRID-Daten</block>
   <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">*HINWEIS* mit der BlueXP -Klassifizierung, die Teil des Core BlueXP  ist, können Sie jetzt StorageGRID-Daten scannen. Siehe <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>. Die übrigen Informationen hier sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.</block>
   <block id="c44712318b0c4e33e9d361583871c49c" category="summary">Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID direkt mit BlueXP -Klassifizierung zu beginnen.</block>
-  <block id="301b54ac16625023c7d40dcc0122ef17" category="doc">Erste Schritte mit dem Scannen von StorageGRID-Daten</block>
   <block id="62756ad365a0397e368bc1fff7694d09" category="paragraph">Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem StorageGRID verfügen, damit die BlueXP -Klassifizierung auf die Buckets zugreifen kann.</block>
   <block id="a1a191ce069b9cd9855c29e830e5edb1" category="paragraph">Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu.</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">StorageGRID-Anforderungen prüfen</block>
@@ -3549,4 +3543,10 @@ Daten Von Business-Applikationen</block>
   <block id="83a1ac14de85f87d0324d9f2a2d89105" category="paragraph"><block ref="83a1ac14de85f87d0324d9f2a2d89105" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48e1eb4f3a8c9056e5dc0d4943a84ada" category="inline-image-macro">Ein Screenshot der Auswahl der StorageGRID-Buckets, die Sie scannen möchten.</block>
   <block id="d63ea5297bdc582794b89a4fc7b492d8" category="paragraph"><block ref="d63ea5297bdc582794b89a4fc7b492d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e285296eea347aa1a2f1fe8f2397693" category="doc">Scannen Sie Cloud Volumes ONTAP und lokale ONTAP Volumes mit BlueXP -Klassifizierung</block>
+  <block id="cd459404fa850adef50a1d5a0b9fb8e7" category="doc">Scannen Sie Azure NetApp Files Volumes mit BlueXP -Klassifizierung</block>
+  <block id="2cac5148836fcc4449c2a57f4d2f787c" category="doc">Datenbankschemas mit BlueXP -Klassifizierung scannen</block>
+  <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">Scannen Sie Dateifreigaben mit BlueXP -Klassifizierung</block>
+  <block id="7265eae2a2b23f32087dc3e5083938a2" category="doc">Scannen Sie Amazon FSX nach ONTAP Volumes mit BlueXP -Klassifizierung</block>
+  <block id="98e210281b17a386ae53922f3fb716a8" category="doc">Scannen Sie StorageGRID-Daten mit BlueXP -Klassifizierung</block>
 </blocks>

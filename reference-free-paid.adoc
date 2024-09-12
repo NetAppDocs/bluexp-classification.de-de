@@ -33,7 +33,7 @@ Es gibt einige Funktionen, die in der BlueXP Kernversion ab Version 1.31 veralte
 | On-Premises ONTAP Cluster | Ja. | Ja. 
 
 
-| StorageGRID | Ja. | Nein 
+| StorageGRID | Ja. | Ja. 
 
 
 | Azure NetApp Dateien | Ja. | Ja. 
