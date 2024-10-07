@@ -74,9 +74,9 @@ Die BlueXP Klassifizierung unterstützt AIP-Labels innerhalb der folgenden Datei
 ====
 
 
-=== Integrieren Sie AIP-Beschriftungen in Ihren Arbeitsbereich
+=== Integrieren Sie AIP-Beschriftungen in Ihr Projekt oder Ihren Arbeitsbereich
 
-Bevor Sie AIP-Labels managen können, müssen Sie die AIP-Label-Funktionalität in die BlueXP Klassifizierung integrieren, indem Sie sich in Ihr bestehendes Azure Konto anmelden. Nach der Aktivierung können Sie AIP-Beschriftungen in Dateien für alle verwalten link:concept-cloud-compliance.html["Datenquellen"^] In Ihrem BlueXP Workspace.
+Bevor Sie AIP-Labels managen können, müssen Sie die AIP-Label-Funktionalität in die BlueXP Klassifizierung integrieren, indem Sie sich in Ihr bestehendes Azure Konto anmelden. Nach der Aktivierung können Sie AIP-Beschriftungen in Dateien für alle  in Ihrem BlueXP -Projekt oder -Arbeitsbereich verwaltenlink:concept-cloud-compliance.html["Datenquellen"^].
 
 .Anforderungen
 * Sie benötigen ein Konto und eine Azure Information Protection-Lizenz.

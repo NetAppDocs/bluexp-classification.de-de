@@ -256,9 +256,9 @@ Durch die BlueXP Klassifizierung können viele Arten von privaten Daten identifi
 
 === Kann ich die BlueXP Klassifizierungsinformationen auf bestimmte Benutzer beschränken?
 
-Ja, die BlueXP Klassifizierung ist vollständig in BlueXP integriert. BlueXP-Benutzer können nur Informationen für die Arbeitsumgebungen sehen, für die sie gemäß ihren Arbeitsbereichberechtigungen angezeigt werden können.
+Ja, die BlueXP Klassifizierung ist vollständig in BlueXP integriert. BlueXP -Benutzer können nur Informationen zu den Arbeitsumgebungen sehen, die sie gemäß ihren Berechtigungen anzeigen können.
 
-Wenn Sie bestimmten Benutzern darüber hinaus erlauben möchten, die Ergebnisse der BlueXP Klassifizierungsüberprüfung einfach anzuzeigen, ohne BlueXP Klassifizierungseinstellungen zu managen, können Sie diesen Benutzern die Rolle der Cloud Compliance Viewer zuweisen.
+Wenn Sie bestimmten Benutzern erlauben möchten, die BlueXP -Klassifikations-Scanergebnisse einfach anzuzeigen, ohne die Möglichkeit zu haben, die BlueXP -Klassifizierungseinstellungen zu verwalten, können Sie diesen Benutzern die Rolle *Klassifikations-Viewer* zuweisen (bei Verwendung von BlueXP  im Standardmodus) oder die Rolle *Compliance-Viewer* (bei Verwendung von BlueXP  im eingeschränkten Modus).
 
 link:concept-cloud-compliance.html["Weitere Informationen ."^].
 

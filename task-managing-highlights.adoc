@@ -65,7 +65,7 @@ Sie können Quelldateien, die von der BlueXP Klassifizierung gescannt werden, au
 TIP: Sie können keine Dateien kopieren, die sich in Datenbanken befinden.
 
 .Anforderungen
-* Sie müssen über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen, um Dateien zu kopieren.
+* Sie müssen über Berechtigungen zum Kopieren von Dateien verfügen. link:concept-cloud-compliance.html#user-roles["Erfahren Sie mehr über den Benutzerzugriff auf Compliance-Informationen"].
 * Für das Kopieren von Dateien muss die NFS-Zielfreigabe den Zugriff über die BlueXP Klassifizierungsinstanz ermöglichen.
 * Sie können zwischen 1 und 100,000 Dateien gleichzeitig kopieren.
 
@@ -108,7 +108,7 @@ Das neue Volume wird im selben Aggregat erstellt wie das Quell-Volume. Stellen S
 *Hinweis:* FlexGroup Volumes können nicht geklont werden, da sie nicht von FlexClone unterstützt werden.
 
 .Anforderungen
-* Sie müssen über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen, um Dateien zu kopieren.
+* Sie müssen über Berechtigungen zum Kopieren von Dateien verfügen. link:concept-cloud-compliance.html#user-roles["Erfahren Sie mehr über den Benutzerzugriff auf Compliance-Informationen"].
 * Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen sich vom selben Volume befinden, und das Volume muss online sein.
 * Das Volume muss aus einem Cloud Volumes ONTAP oder einem lokalen ONTAP System stammen. Derzeit werden keine anderen Datenquellen unterstützt.
@@ -162,7 +162,7 @@ Dies ist besonders nützlich, wenn Sie Daten von einem Quellsystem zu einem ande
 TIP: Dateien, die sich in Datenbanken, OneDrive-Konten oder SharePoint Konten befinden, können nicht kopiert und synchronisiert werden.
 
 .Anforderungen
-* Zum Kopieren und Synchronisieren von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen.
+* Sie müssen über Berechtigungen zum Kopieren und Synchronisieren von Dateien verfügen. link:concept-cloud-compliance.html#user-roles["Erfahren Sie mehr über den Benutzerzugriff auf Compliance-Informationen"].
 * Sie müssen mindestens 20 Dateien auswählen.
 * Alle ausgewählten Dateien müssen aus demselben Quell-Repository stammen (ONTAP Volume, S3 Bucket, NFS oder CIFS-Freigabe usw.).
 * Sie müssen den BlueXP Kopier- und Synchronisierungsservice aktivieren und mindestens einen Daten-Broker konfigurieren, mit dem Dateien zwischen Quell- und Zielsystemen übertragen werden können. Prüfen Sie die BlueXP Kopier- und Synchronisierungsanforderungen beginnend mit https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["Kurzanleitung"^].
@@ -220,7 +220,7 @@ Beachten Sie, dass die Unterverzeichnisstruktur aus der Quelldatei beim Verschie
 TIP: Sie können keine Dateien verschieben, die sich in Datenbanken befinden.
 
 .Anforderungen
-* Sie müssen über die Rolle „Kontoadministrator“ oder „Arbeitsbereichsadministrator“ verfügen, um Dateien zu verschieben.
+* Sie müssen über Berechtigungen zum Verschieben von Dateien verfügen. link:concept-cloud-compliance.html#user-roles["Erfahren Sie mehr über den Benutzerzugriff auf Compliance-Informationen"].
 * Die Quelldateien lassen sich in den folgenden Datenquellen befinden: On-Premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, File Shares und SharePoint Online.
 * Sie können maximal 15 Millionen Dateien gleichzeitig verschieben.
 * Es werden nur Dateien verschoben, die 50 MB oder kleiner sind.
@@ -274,7 +274,7 @@ Das Löschen von Dateien erfordert die folgenden Berechtigungen:
 === Quelldateien manuell löschen
 
 .Anforderungen
-* Zum Löschen von Dateien müssen Sie über die Rolle „Kontoadministrator“ oder „Workspace-Admin“ verfügen.
+* Sie müssen über Berechtigungen zum Löschen von Dateien verfügen. link:concept-cloud-compliance.html#user-roles["Erfahren Sie mehr über den Benutzerzugriff auf Compliance-Informationen"].
 * Sie können maximal 100,000 Dateien gleichzeitig löschen.
 
 
