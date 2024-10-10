@@ -129,8 +129,8 @@ image:diagram_cloud_compliance_instance.png["Ein Diagramm zeigt eine BlueXP Inst
 Beachten Sie Folgendes über die Standardinstanz:
 
 * In AWS wird die BlueXP Klassifizierung auf einer ausgeführt https://aws.amazon.com/ec2/instance-types/m6i/["M6i.4xlarge-Instanz"^] Mit einer GP2-Festplatte mit 500 gib. Das Betriebssystem-Image ist Amazon Linux 2. Bei der Implementierung in AWS können Sie eine kleinere Instanzgröße wählen, wenn Sie eine kleine Datenmenge scannen.
-* In Azure wird die BlueXP Klassifizierung auf einer ausgeführt link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] Auf einer Festplatte mit 500 gib. Das Betriebssystem-Image ist CentOS 7.9.
-* In GCP wird die BlueXP Klassifizierung auf einer ausgeführt link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^] Mit einer persistenten Festplatte mit 500 gib Standard. Das Betriebssystem-Image ist CentOS 7.9.
+* In Azure wird die BlueXP -Klassifizierung auf einem  mit einer Festplatte von 500 gib ausgeführtlink:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]. Das Betriebssystem-Image ist Ubuntu 22.04.
+* In GCP wird die BlueXP -Klassifizierung auf einer persistenten Standardfestplatte mit 500 gib ausgeführtlink:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16-VM"^]. Das Betriebssystem-Image ist Ubuntu 22.04.
 * In Regionen, in denen die Standardinstanz nicht verfügbar ist, wird die BlueXP Klassifizierung auf einer alternativen Instanz ausgeführt. link:reference-instance-types.html["Sehen Sie sich die alternativen Instanztypen an"].
 * Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * Pro Connector wird nur eine BlueXP Klassifizierungsinstanz implementiert.

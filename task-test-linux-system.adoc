@@ -104,15 +104,7 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 
 ** Die folgenden Betriebssysteme erfordern die Verwendung der Podman Container-Engine. Sie erfordern eine BlueXP Klassifikation der Version 1.30 oder höher:
 +
-*** Red hat Enterprise Linux Version 8.8, 9.0, 9.1, 9.2 und 9.3
-+
-Beachten Sie, dass die folgenden Funktionen derzeit nicht unterstützt werden, wenn RHEL 8.x und RHEL 9.x verwendet werden:
-
-+
-**** Installation an einem dunklen Ort
-**** Verteiltes Scannen; Verwendung eines Master-Scanner-Knotens und Remote-Scanner-Knoten
-
-
+*** Red hat Enterprise Linux Version 8.8, 9.0, 9.1, 9.2, 9.3, 9.4
 
 
 
@@ -123,9 +115,6 @@ Beachten Sie, dass die folgenden Funktionen derzeit nicht unterstützt werden, w
 ** Je nach verwendetem Betriebssystem müssen Sie eine der Container-Engines installieren:
 +
 *** Docker Engine ab Version 19.3.1. https://docs.docker.com/engine/install/["Installationsanweisungen anzeigen"^].
-+
-https://youtu.be/Ogoufel1q6c["Hier geht's zum Video"^] Eine kurze Demo zur Installation von Docker auf CentOS.
-
 *** Podman Version 4 oder höher. Um Podman zu installieren, geben Sie ) ein (`sudo yum install podman netavark -y`.
 
 
@@ -190,9 +179,6 @@ TIP: Dieser Abschnitt ist für Hostsysteme, die an Standorten ohne Internetverbi
 
 
 | \https://github.com/docker \https://download.docker.com | Enthält die erforderlichen Pakete für die Installation von Dockern. 
-
-
-| \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | Enthält die erforderlichen Pakete für die CentOS-Installation. 
 
 
 | \http://packages.ubuntu.com/
