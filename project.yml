@@ -10,7 +10,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  langs: de-de,us-en,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
+  langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: BlueXP Klassifizierungs-Dokumente
@@ -91,8 +91,6 @@ sidebar:
       - title: Installieren Sie die BlueXP Klassifizierung auf mehreren Hosts ohne
           Internetzugang
         url: "/task-deploy-multi-host-install-dark-site.html"
-      - title: Fügen Sie Scannerknoten zu einer vorhandenen Implementierung hinzu
-        url: "/task-deploy-add-scanner-nodes.html"
     - title: Datenabschreibungen scannen
       entries:
       - title: Scannen von Amazon S3 Buckets

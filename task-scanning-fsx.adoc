@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["Ein Screenshot der Registerkarte Kon
 ** Um alle Bände zu ordnen und zu klassifizieren, klicken Sie auf *Karte & alle Bände klassifizieren*.
 ** Um den Scan für jedes Volume anzupassen, klicken Sie auf *oder wählen Sie für jedes Volume* den Scantyp aus, und wählen Sie dann die Volumes aus, die Sie zuordnen und/oder klassifizieren möchten.
 +
-Weitere Informationen finden Sie unter <<Aktivieren und deaktivieren Sie Compliance-Scans auf Volumes,Aktivieren und Deaktivieren von Compliance-Scans auf Volumes>> .
+Weitere Informationen finden Sie unter Aktivieren und Deaktivieren von Compliance-Scans auf Volumes.
 
 
 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Ein Screenshot der beiden Optio
 
 
 
-. Aktivieren Sie jedes zu scannenden DP-Volume <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Auf die gleiche Weise haben Sie andere Volumes aktiviert>>.
+. Aktivieren Sie jedes DP-Volume, das Sie scannen möchten.
 
 
 .Ergebnis

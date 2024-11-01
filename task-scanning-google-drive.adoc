@@ -97,8 +97,7 @@ Wählen Sie die Art des Scans aus, die die BlueXP Klassifizierung für die Benut
 
 .Schritte
 . Klicken Sie auf der Seite _Configuration_ auf die Schaltfläche *Konfiguration* für das Google Drive-Konto.
-+
-image:screenshot_compliance_google_drive_add_sites.png["Ein Screenshot der Konfigurationsseite, auf der Sie die Schaltfläche Konfiguration auswählen können."]
+
 
 . Aktivieren Sie mapping-only Scans oder Mapping- und Klassifizierungsscans auf den Dateien im Google Drive-Konto.
 +

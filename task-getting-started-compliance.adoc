@@ -226,7 +226,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Ein Screenshot der beiden Optio
 
 
 
-. Aktivieren Sie jedes zu scannenden DP-Volume <<Aktivieren und Deaktivieren von Compliance-Scans auf Volumes,Auf die gleiche Weise haben Sie andere Volumes aktiviert>>.
+. Aktivieren Sie jedes DP-Volume, das Sie scannen möchten.
 
 
 .Ergebnis

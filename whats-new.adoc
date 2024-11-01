@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung. 
 ---
-= Neuerungen bei der BlueXP Klassifizierung
+= Neuerungen bei der BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,49 @@ summary: Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 [role="lead"]
-Informieren Sie sich über die Neuerungen bei der BlueXP Klassifizierung (Cloud Data Sense).
+Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
-== 10. Oktober 2024 (Version 1.36)
+== Bis 4. November 2024
+
+
+
+=== Version 1.37
 
 Diese BlueXP -Klassifizierungsversion umfasst die folgenden Updates.
 
 
 
-=== Unterstützung für RHEL 9.4
+==== Unterstützung für RHEL 8.10
+
+Diese Version bietet zusätzlich zu den zuvor unterstützten Versionen Unterstützung für Red hat Enterprise Linux 8.10. Dies gilt für alle manuellen On-Premises-Installationen von BlueXP -Klassifizierungen und Dark-Site-Bereitstellungen.
+
+Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engine erforderlich, und sie erfordern eine BlueXP -Klassifizierung der Version 1.30 oder höher: Red hat Enterprise Linux der Version 8.8, 9.2, 9.0, 9.1, 8.10, 9.3 und 9.4.
+
+Erfahren Sie mehr über https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP Klassifizierung"].
+
+
+
+==== Unterstützung für NFS v4.1
+
+Diese Version bietet zusätzlich zu den zuvor unterstützten Versionen Unterstützung für NFS v4.1.
+
+Erfahren Sie mehr über https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP Klassifizierung"].
+
+
+
+== 10 Oktober 2024
+
+
+
+=== Version 1.36
+
+Diese BlueXP -Klassifizierungsversion umfasst die folgenden Updates.
+
+
+
+==== Unterstützung für RHEL 9.4
 
 Diese Version bietet zusätzlich zu den zuvor unterstützten Versionen Unterstützung für Red hat Enterprise Linux 9.4. Dies gilt für alle manuellen On-Premises-Installationen von BlueXP -Klassifizierungen und Dark-Site-Bereitstellungen.
 
@@ -34,23 +66,27 @@ Weitere Informationen zu https://docs.netapp.com/us-en/bluexp-classification/tas
 
 
 
-=== Verbesserte Scanleistung
+==== Verbesserte Scanleistung
 
 Diese Version bietet eine verbesserte Scanleistung.
 
 
 
-== 2. September 2024 (Version 1.35)
+== 2 September 2024
+
+
+
+=== Version 1.35
 
 Diese BlueXP -Klassifizierungsversion umfasst das folgende Update.
 
 
 
-=== Scannen von StorageGRID-Daten
+==== Scannen von StorageGRID-Daten
 
 Mit der BlueXP -Klassifizierung können Daten jetzt in StorageGRID gescannt werden.
 
-Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"].
+Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"].
 
 
 
@@ -331,7 +367,7 @@ Sie können Audit-Protokolle für den Dateizugriff in Ihrem BlueXP Klassifizieru
 
 === Data Sense BYOL-Lizenzen werden nun in Dark Sites unterstützt
 
-Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet von BlueXP auf einer Dark Site hochladen, sodass Sie bei einer geringen Lizenzierungsbeschränkung benachrichtigt werden. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Hier erfahren Sie, wie Sie Ihre Data Sense BYOL-Lizenz erwerben und hochladen"].
+Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet von BlueXP auf einer Dark Site hochladen, sodass Sie bei einer geringen Lizenzierungsbeschränkung benachrichtigt werden.
 
 
 

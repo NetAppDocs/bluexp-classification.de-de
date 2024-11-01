@@ -36,9 +36,6 @@ NOTE: Informationen zu älteren Versionen 1.30 und älteren Versionen finden Sie
 Das können Sie auch link:task-deploy-compliance-dark-site.html["Installieren Sie die BlueXP Klassifizierung auf einer lokalen Website ohne Internetzugang"] Für vollständig sichere Standorte.
 
 
-NOTE: Informationen zum Hinzufügen von Scannerknoten für ältere Versionen 1.30 und früher finden Sie unter link:task-deploy-add-scanner-nodes.html["Fügen Sie Scannerknoten zu einer vorhandenen Implementierung hinzu"].
-
-
 
 == Schnellstart
 
