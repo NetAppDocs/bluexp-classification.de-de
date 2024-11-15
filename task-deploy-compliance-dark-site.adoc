@@ -14,7 +14,7 @@ summary: Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf eine
 
 
 [role="lead"]
-Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-Host an einem lokalen Standort ohne Internetzugang zu installieren – auch als _Private Mode_ bezeichnet. Diese Art der Installation ist perfekt für Ihre sicheren Standorte.
+Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-Host an einem lokalen Standort ohne Internetzugang zu installieren – auch als _Private Mode_ bezeichnet. Bei diesem Installationstyp, der ein Installationsskript verwendet, besteht keine Verbindung zur BlueXP -SaaS-Schicht.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informieren Sie sich über die verschiedenen Implementierungsmodi für die BlueXP Connector und BlueXP Klassifizierung"^].
 
@@ -254,8 +254,6 @@ Sie müssen über die folgenden Informationen für das Active Directory verfüge
 
 | Wenn eine Firewall auf Linux-Host verwendet wird | 9000 | Wird für interne Prozesse innerhalb eines Ubuntu-Servers benötigt. 
 |===
-Wenn Sie mehrere BlueXP Klassifizierungs-Hosts nutzen, um eine zusätzliche Rechenleistung zum Scannen Ihrer Datenquellen zu bieten, müssen Sie zusätzliche Ports/Protokolle aktivieren. link:task-deploy-compliance-dark-site.html["Siehe zusätzliche Anschlussanforderungen"].
-
 
 
 == BlueXP Klassifizierung auf dem lokalen Linux-Host installieren
@@ -263,8 +261,6 @@ Wenn Sie mehrere BlueXP Klassifizierungs-Hosts nutzen, um eine zusätzliche Rech
 Für typische Konfigurationen installieren Sie die Software auf einem einzigen Host-System.
 
 image:diagram_deploy_onprem_single_host_no_internet.png["Ein Diagramm mit dem Speicherort der Datenquellen, die Sie scannen können, wenn Sie eine einzelne lokale BlueXP Klassifizierungsinstanz ohne Internetzugang verwenden."]
-
-image:diagram_deploy_onprem_multi_host_no_internet.png["Ein Diagramm mit dem Speicherort der Datenquellen, die Sie scannen können, wenn mehrere lokale BlueXP Klassifizierungsinstanzen ohne Internetzugang genutzt werden."]
 
 
 
