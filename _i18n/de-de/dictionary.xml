@@ -3488,4 +3488,7 @@ Daten Von Business-Applikationen</block>
   <block id="d201913c731a2c485562d2197234ff40" category="paragraph">Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-Host an einem lokalen Standort ohne Internetzugang zu installieren – auch als _Private Mode_ bezeichnet. Bei diesem Installationstyp, der ein Installationsskript verwendet, besteht keine Verbindung zur BlueXP -SaaS-Schicht.</block>
   <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">Sie können auch <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>.</block>
   <block id="6ff9945c9b8d3c1700dad8f9a06d2ab2" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>, Auch bekannt als _privater Modus._ Diese Art der Installation, die ein Installationsskript verwendet, hat keine Verbindung zur BlueXP  SaaS Schicht.</block>
+  <block id="5ae300808387123005a76abbd5a99f46" category="doc">Version 1.38</block>
+  <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen.</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">Bis 16. Dezember 2024</block>
 </blocks>

@@ -18,6 +18,16 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== Bis 16. Dezember 2024
+
+
+
+=== Version 1.38
+
+Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen.
+
+
+
 == Bis 4. November 2024
 
 
