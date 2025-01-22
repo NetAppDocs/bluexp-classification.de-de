@@ -14,7 +14,7 @@ summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details
 
 
 [role="lead"]
-Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards.
+Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. Sie können die Daten in eine CSV- oder JSON-Datei exportieren, um sie weiter zu analysieren oder mit anderen zu teilen.
 
 
 NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
@@ -238,17 +238,13 @@ Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu
 
 Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können link:task-managing-highlights.html#delete-source-files["Löschen Sie die Datei"] Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.
 
-
-
-=== Alle duplizierten Dateien anzeigen
+*Alle duplizierten Dateien anzeigen*
 
 Wenn Sie eine Liste aller Dateien wünschen, die in den Arbeitsumgebungen und Datenquellen, die Sie scannen, dupliziert werden, können Sie den Filter *Duplicates > has Dubletten* auf der Seite Data Investigation verwenden.
 
 Alle duplizierten Dateien werden auf der Ergebnisseite angezeigt.
 
-
-
-=== Anzeigen, ob eine bestimmte Datei dupliziert wurde
+*Anzeigen, wenn eine bestimmte Datei dupliziert ist*
 
 Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für jede einzelne Datei, um die Dateimetadaten anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.
 
@@ -265,28 +261,11 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Der Bericht ist als . CSV-Datei, die Sie auf dem lokalen Computer speichern können.
+Der Bericht ist als CSV- oder JSON-Datei verfügbar, die Sie auf dem lokalen Computer speichern können.
 
 Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
 
-
-
-=== Generieren Sie den Bericht zur Datenermittlung
-
-.Schritte
-. Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
-. Wählen Sie aus, um einen herunterzuladen. CSV-Bericht der Daten, und klicken Sie auf *Download Report*.
-+
-image:screenshot_compliance_investigation_report.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
-
-
-
-.Ergebnis
-Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.
-
-
-
-=== Was ist im Untersuchungsbericht enthalten
+*Was ist im Untersuchungsbericht enthalten*
 
 Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ihren Dateien:
 
@@ -339,3 +318,14 @@ Der *Structured Data Report* enthält die folgenden Informationen zu Ihren Daten
 * Persönliche Angaben
 * Sensible persönliche Daten
 
+
+.Schritte zum Generieren des Berichts
+. Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
+. Wählen Sie aus, um einen CSV- oder JSON-Bericht der Daten herunterzuladen, und klicken Sie auf *Bericht herunterladen*.
++
+image:screenshot_compliance_investigation_report2.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
+
+
+
+.Ergebnis
+Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.

@@ -385,7 +385,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Dateien</block>
   <block id="18cf072964a583150dd247485ba75b92" category="list-text">Amazon FSX für ONTAP</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
-  <block id="34a23f91ee1733d5151d67d6f922e573" category="list-text">File Shares von anderen Anbietern</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">Gibt es Einschränkungen bei der Bereitstellung in einer Regierungsregion?</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">OneDrive-Konten, SharePoint-Konten und Google-Laufwerk Konten können nicht gescannt werden.</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Die Funktionalität der Microsoft Azure Information Protection (AIP)-Etiketten kann nicht integriert werden.</block>
@@ -1170,7 +1169,6 @@
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">Klicken Sie auf der Seite „Untersuchung von Daten“ auf <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> Oben rechts auf der Seite klicken.</block>
   <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">Wählen Sie aus, ob Sie einen .CSV-Bericht oder einen JSON-Bericht der Daten herunterladen möchten, und klicken Sie auf *Bericht herunterladen*.</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen.</block>
-  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">Geben Sie bei Auswahl eines JSON-Berichts den Namen der NFS-Freigabe ein, auf die der Bericht im Format heruntergeladen werden soll<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>.</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">Sie können den Fortschritt der JSON-Berichterstellung in anzeigen <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>.</block>
@@ -1806,7 +1804,6 @@
   <block id="81242ae208378634d2437d68837ba560" category="paragraph">Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
   <block id="07ada1e73188e64ef4fd43b06b4a2a48" category="paragraph">Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.</block>
   <block id="6b3a75b3808f31da6754be1d099cbe3f" category="summary">Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in Ihren Volumes, Amazon S3 Buckets, Datenbanken, OneDrive-Ordnern, SharePoint-Konten identifiziert werden können. Und Google Drive-Konten.</block>
-  <block id="092e6dee95258860d663bccecea3a137" category="admonition">Wenn Sie zur Identifizierung anderer privater Datentypen die Klassifizierung von BlueXP benötigen, z. B. zusätzliche nationale ID-Nummern oder Identifikatoren in Ihrem Gesundheitswesen, senden Sie eine E-Mail an ng-contact-data-sense@netapp.com.</block>
   <block id="b7dea65f9a155deeb2a423a4459776ee" category="paragraph">Die BlueXP Klassifizierung kategorisiert Ihre Daten wie folgt.</block>
   <block id="e28941ad3ee4450d4e082c1ed4ac7223" category="paragraph">Die BlueXP Klassifizierung scannt alle Dateien nach Kategorien- und Metadaten und zeigt alle Dateitypen im Abschnitt „Dateitypen“ des Dashboards an.</block>
   <block id="e4ef3ccfa363c6ab883bef97f62feda4" category="paragraph">Wenn jedoch die BlueXP Klassifizierung personenbezogene Daten erkennt oder eine DSAR-Suche durchführt, werden nur die folgenden Dateiformate unterstützt:</block>
@@ -2556,7 +2553,6 @@
   <block id="7b608a074398a486bc744655598680ea" category="list-text">Geben Sie im Dialogfeld _Uninstall Data Sense_ *uninstall* ein, um zu bestätigen, dass Sie die BlueXP-Klassifikationsinstanz vom BlueXP Connector trennen möchten, und klicken Sie dann auf *Uninstall*.</block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">Rufen Sie die Konsole Ihres Cloud-Providers auf und löschen Sie die BlueXP Klassifizierungsinstanz. Der Name der Instanz ist _CloudCompliance_ mit einem generierten Hash (UUID), der verknüpft ist. Beispiel: _CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">Damit werden die Instanz und alle zugehörigen Daten, die durch die BlueXP Klassifizierung erfasst wurden, gelöscht.</block>
-  <block id="2c81bcce32daace3a1e27ca8e62dfd40" category="list-text">Um die Software vom Host zu deinstallieren, führen Sie den aus<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block> Skript auf dem Host-Rechner, z. B.:</block>
   <block id="e1add3649abfc02bc2a83bd64183210e" category="summary">Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-Host auf einer lokalen Site ohne Internetzugang – auch als „privater Modus“ bezeichnet – zu installieren. Diese Art der Installation ist perfekt für Ihre sicheren Standorte.</block>
   <block id="05e22c2c931d6a4218f029a72eeb9206" category="inline-link">Informieren Sie sich über die verschiedenen Implementierungsmodi für die BlueXP Connector und BlueXP Klassifizierung</block>
   <block id="3c86f5b7f0c9db7841cc30ae9d32c2c2" category="paragraph"><block ref="a9635649936a46cf7723db5b3c00a913" category="inline-link-rx"></block>.</block>
@@ -2819,9 +2815,6 @@
   <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">Berechtigungen für Dateien und Verzeichnisse anzeigen</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">Überprüfen Sie auf doppelte Dateien in Ihren Speichersystemen</block>
   <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können <block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block> Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.</block>
-  <block id="11b431a799ad33cee933ceccc5de850c" category="section-title">Alle duplizierten Dateien anzeigen</block>
-  <block id="3c4c508b343b43aeeceba1d0993025fc" category="section-title">Anzeigen, ob eine bestimmte Datei dupliziert wurde</block>
-  <block id="d9f65abd84f27877cbba1b5ea828d53d" category="section-title">Generieren Sie den Bericht zur Datenermittlung</block>
   <block id="13b1a6e1bb1b3f8696189ada6b422170" category="list-text">Sie können den „Dateieigentümer“ verwenden. <block ref="8f117870d9a34eabfa5286947f602d95" category="inline-link-macro-rx"></block> Und siehe die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.</block>
   <block id="cd4d01ef1bbc41dd6c1a648ca6b131c3" category="list-text">Sie sehen <block ref="bb7ccaeb199c0a6d94b809bfbddc428e" category="inline-link-macro-rx"></block> Klicken Sie für jede Datei und jedes Verzeichnis auf die Schaltfläche „Alle Berechtigungen anzeigen“.</block>
   <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">Stellen Sie eine Verbindung zu Ihrem Active Directory-Server her</block>
@@ -3071,9 +3064,6 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
   <block id="d2b1e6329082b8cf29999896b3d3d744" category="paragraph">Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind hilfreich, wenn Sie Vorhaben <block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block> Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.</block>
   <block id="9538e6335cc9662b264dd0870f2ca091" category="paragraph">Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.</block>
   <block id="6fa893a1485524675ae044e22dd04d02" category="paragraph">Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche ist nur für Daten in CIFS-Freigaben verfügbar.</block>
-  <block id="fbc24f64c5cfaa3ec5851bea3459db25" category="paragraph">Der Bericht ist als . CSV-Datei, die Sie auf dem lokalen Computer speichern können.</block>
-  <block id="707592628336b767af6468130ccb5f10" category="list-text">Wählen Sie aus, um einen herunterzuladen. CSV-Bericht der Daten, und klicken Sie auf *Download Report*.</block>
-  <block id="376c2577995f32a4c8892e8aefb140ba" category="section-title">Was ist im Untersuchungsbericht enthalten</block>
   <block id="6d6f3f8c3e87f4e41fd51dc3695310ba" category="doc">Scannen von SharePoint-Konten</block>
   <block id="16976b9bcf6240cdf0301678ba12a525" category="section-title">SharePoint-Anforderungen prüfen</block>
   <block id="13fed9c014904fd1b4e1eb85a98610e8" category="section-title">Fügen Sie ein SharePoint Online-Konto hinzu</block>
@@ -3491,4 +3481,28 @@ Daten Von Business-Applikationen</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="doc">Version 1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Diese BlueXP -Klassifizierungsversion enthält allgemeine Verbesserungen und Fehlerbehebungen.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">Bis 16. Dezember 2024</block>
+  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">Version 1.39</block>
+  <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Diese BlueXP -Klassifizierungsversion aktualisiert den Exportprozess für den Datenuntersuchungsbericht. Diese Exportaktualisierung ist nützlich, um zusätzliche Analysen Ihrer Daten durchzuführen, zusätzliche Visualisierungen der Daten zu erstellen oder die Ergebnisse Ihrer Datenuntersuchung mit anderen zu teilen.</block>
+  <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">Zuvor war der Export des Berichts zur Untersuchung von Daten auf 10,000 Zeilen beschränkt. Mit dieser Version wurde das Limit entfernt, sodass Sie alle Ihre Daten exportieren können. Durch diese Änderung können Sie mehr Daten aus Ihren Datenermittlungsberichten exportieren, was Ihnen mehr Flexibilität bei der Datenanalyse bietet.</block>
+  <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">Sie können die Arbeitsumgebung, die Volumes, den Zielordner und entweder das JSON- oder CSV-Format auswählen. Der exportierte Dateiname enthält einen Zeitstempel, mit dem Sie den Zeitpunkt des Exportes der Daten identifizieren können.</block>
+  <block id="7afa5ec6a3f715e47b3c6fa2655f18b0" category="paragraph">Zu den unterstützten Arbeitsumgebungen gehören:</block>
+  <block id="253b40ae359ba25b56231803430c4873" category="list-text">ONTAP</block>
+  <block id="a512cd9b163bcb1be6bf96aa95fdfe74" category="list-text">Gruppe freigeben</block>
+  <block id="d3fdc77553ad7d05684cea9b7806dac8" category="paragraph">Das Exportieren von Daten aus dem Bericht zur Datenuntersuchung hat folgende Einschränkungen:</block>
+  <block id="d33a90467b78849917ec44b3e694a192" category="list-text">Die maximale Anzahl der herunterzuladenen Datensätze beträgt 500 Millionen. Pro Typ (Dateien, Verzeichnisse und Tabellen)</block>
+  <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">Eine Million Datensätze werden voraussichtlich etwa 35 Minuten für den Export benötigen.</block>
+  <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten</block>
+  <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">Einzelheiten zur Datenermittlung und zum Bericht finden Sie unter<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>.</block>
+  <block id="251452e49ab5b88b5d8545e58cd46509" category="admonition">Wenn Sie zur Identifizierung anderer privater Datentypen eine BlueXP -Klassifizierung benötigen, z. B. zusätzliche nationale ID-Nummern oder Kennungen für das Gesundheitswesen, wenden Sie sich an Ihren Account Manager.</block>
+  <block id="2a09f412ecce26a24c17d782c064aa73" category="paragraph">Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. Sie können die Daten in eine CSV- oder JSON-Datei exportieren, um sie weiter zu analysieren oder mit anderen zu teilen.</block>
+  <block id="b995ac679338c896401b451552e5d419" category="paragraph">*Alle duplizierten Dateien anzeigen*</block>
+  <block id="ee27fa3e6dfe09f89a9d57742c167aa9" category="paragraph">*Anzeigen, wenn eine bestimmte Datei dupliziert ist*</block>
+  <block id="47b72e580332bb9da872607466b406bc" category="paragraph">Der Bericht ist als CSV- oder JSON-Datei verfügbar, die Sie auf dem lokalen Computer speichern können.</block>
+  <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">*Was ist im Untersuchungsbericht enthalten*</block>
+  <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">Schritte zum Generieren des Berichts</block>
+  <block id="868f49e80cf5d3f7ac26cbec13a8d0be" category="list-text">Wählen Sie aus, um einen CSV- oder JSON-Bericht der Daten herunterzuladen, und klicken Sie auf *Bericht herunterladen*.</block>
+  <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">Um die Software vom Host zu deinstallieren, führen Sie das Skript auf dem Host-Rechner für die BlueXP -Klassifizierung aus<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block>, z. B.:</block>
+  <block id="009d2060a609114df262eff04e83f241" category="section-title">22 Januar 2025</block>
+  <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">Dateifreigaben (CIFS, NFS)</block>
 </blocks>
