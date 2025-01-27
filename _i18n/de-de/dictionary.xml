@@ -2220,7 +2220,6 @@
   <block id="eb069b124d02b06908e1071cc2edae80" category="summary">Datenscans haben keine nennenswerten Auswirkungen auf Ihre Storage-Systeme und Ihre Daten. Wenn Sie jedoch auch nur geringe Auswirkungen haben, können Sie die BlueXP-Klassifizierung für „langsame“ Scans konfigurieren.</block>
   <block id="97ef33fd9429f1df7d0c8f2bd514652f" category="doc">Reduzierung der Scan-Geschwindigkeit der BlueXP Klassifizierung</block>
   <block id="4f7157701d2db96edcc01457067a6771" category="inline-link-macro">Implementieren Sie die BlueXP Klassifizierung auf einer lokalen Website mit Internetzugang</block>
-  <block id="90815e3d99ff61b4887b2f941fff4e46" category="paragraph">Beachten Sie, dass Sie auch können <block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>.</block>
   <block id="e883a1e45b8fba8675ed0e79f4a46200" category="paragraph">Das BlueXP Klassifizierungs-Installationsskript wird zunächst überprüft, ob das System und die Umgebung die erforderlichen Voraussetzungen erfüllen. Wenn alle Voraussetzungen erfüllt sind, wird die Installation gestartet. Wenn Sie die Voraussetzungen unabhängig vom Ausführen der BlueXP Klassifizierungssysteminstallation überprüfen möchten, steht Ihnen ein separates Softwarepaket zur Verfügung, das nur auf die Voraussetzungen testet. <block ref="18e558c0c5f7db863c39638301013423" category="inline-link-macro-rx"></block>.</block>
   <block id="00c4bd00ffe3dc5bd31127d620af994f" category="paragraph">Die meisten BlueXP Klassifizierungsfunktionen sind verfügbar, wenn sie an einem Standort ohne Internetzugang implementiert werden. Bestimmte Funktionen, für die ein Internetzugang erforderlich ist, werden jedoch nicht unterstützt, z. B.:</block>
   <block id="3810a01b94974a043d567ab2db7a696e" category="list-text">Quelldateien werden mittels BlueXP Kopier- und Synchronisierungsfunktion kopiert und synchronisiert</block>
@@ -2312,7 +2311,6 @@
   <block id="9ea11244a8e35bf5161f9201266edc49" category="paragraph">Während die BlueXP Klassifizierung Ihre Dateien scannt, werden Labels fortlaufend in Dateien hinzugefügt oder aktualisiert.</block>
   <block id="7d2b76399031094bccc00e1ddb38ac56" category="summary">Führen Sie einige Schritte durch, um die BlueXP Klassifizierung auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud mit Internetzugang zu installieren. Im Rahmen dieser Installation müssen Sie den Linux-Host manuell in Ihrem Netzwerk oder in der Cloud bereitstellen.</block>
   <block id="0989b495229f449df36968cf973306ca" category="doc">Installieren Sie die BlueXP Klassifizierung auf einem Host mit Internetzugang</block>
-  <block id="945fde4f1ebdd85f6388e97e6bcab270" category="paragraph">Die On-Premises-Installation ist möglicherweise eine gute Option, wenn Sie On-Premises-ONTAP Systeme mit einer BlueXP Klassifizierungsinstanz scannen möchten, die sich auch vor Ort befindet – dies ist jedoch keine Anforderung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.</block>
   <block id="84055ee6e3998954234f68ebc7991766" category="inline-link-macro">Installieren Sie die BlueXP Klassifizierung auf einer lokalen Website ohne Internetzugang</block>
   <block id="336bcdf5ccce2f7faf69504d6bb691bc" category="paragraph">Stellen Sie sicher, dass Ihre Umgebung die Voraussetzungen erfüllen kann. Dazu gehören abgehender Internetzugang für die Instanz, Konnektivität zwischen dem Connector und BlueXP Klassifizierung über Port 443 und mehr. <block ref="ccadfe94f5aed3b0ce58eed3720936a8" category="inline-xref-macro-rx"></block>.</block>
   <block id="6645e3ab4db2a6af0367cff31c9d8e9f" category="paragraph">Laden Sie die Cloud BlueXP Klassifizierungssoftware von der NetApp Support-Website herunter und kopieren Sie die Installer-Datei auf den geplanten Linux-Host. Starten Sie dann den Installationsassistenten und befolgen Sie die Anweisungen zur Implementierung der BlueXP Klassifizierungsinstanz.</block>
@@ -2829,10 +2827,6 @@
   <block id="acff74627293e3e739a3c24e5fec03c2" category="cell">*Extra Groß*</block>
   <block id="8a0a1142229b3b639f68556794cbd985" category="cell">32 CPUs</block>
   <block id="228d50520d6c2a627ecce76f2775d5e1" category="cell">128 GB RAM</block>
-  <block id="92194a80ea376740e10d5ee7343f171c" category="cell">1 tib SSD auf /, oder
-- 100 gib verfügbar auf /opt
-- 895 gib verfügbar auf /var/lib/docker
-- 5 gib auf /tmp</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="section-title">Kategorisieren Sie Ihre Daten mit AIP-Etiketten</block>
   <block id="dc868ca3e5d8a2a78f0a032d630be98e" category="section-title">AIP-Etiketten in Ihren Dateien anzeigen</block>
   <block id="a63feced797847158dd7b93ba9ec1c9c" category="section-title">Weisen Sie AIP-Beschriftungen manuell zu</block>
@@ -2982,7 +2976,6 @@
   <block id="7add4f4508f6a065e3f94f770f4bac2d" category="paragraph">Die BlueXP Klassifizierung verwendet Daten-Ebenen-Anmeldedaten, zum Beispiel CIFS-Zugangsdaten, um Freigaben vor dem Scannen zu mounten.</block>
   <block id="6ff26ca67814a870d6ad78d3687ba1a9" category="section-title">Verwendet die Kommunikation zwischen dem Dienst und dem Connector HTTP?</block>
   <block id="421bab1ab5399669513b071e1e856dca" category="paragraph">Ja, die BlueXP Klassifizierung kommuniziert über HTTP mit dem BlueXP Connector.</block>
-  <block id="5f0111c9b1c6f9cd6124c008eaaa60d2" category="paragraph">Bevor Sie die BlueXP-Klassifizierung manuell auf einem Linux-Host installieren, können Sie ein Skript auf dem Host ausführen, um zu überprüfen, ob alle Voraussetzungen für die Installation der BlueXP Klassifizierung vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Site befinden, die keinen Internetzugang hat (eine _dunkle Seite_).</block>
   <block id="0acb6de298fd251ec0fab09f46d78a47" category="summary">Planen Sie, welche Implementierung der BlueXP Klassifizierung Ihre Anforderungen erfüllt.</block>
   <block id="7ac7bc027539aa6045c98c020acd30a2" category="doc">Welche BlueXP Klassifizierungs-Implementierung sollten Sie verwenden?</block>
   <block id="6f3a66c40c100d6b6795bf6321152c15" category="paragraph">Die BlueXP Klassifizierung kann auf unterschiedliche Weise implementiert werden. Erfahren Sie, welche Methode Ihren Anforderungen entspricht.</block>
@@ -3214,10 +3207,6 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
   <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen. <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>.</block>
   <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:</block>
   <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">Diese Funktion ist anwendbar auf On-Premises-ONTAP-Systeme, Cloud Volumes ONTAP, Azure NetApp Files, FSX for ONTAP und File Shares von Drittanbietern.</block>
-  <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 gib SSD auf /, oder
-- 100 gib verfügbar auf /opt
-- 395 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers
-- 5 gib auf /tmp</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">*Amazon Elastic Compute Cloud (Amazon EC2) Instanztyp*: Wir empfehlen "m6i.4xlarge". <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>.</block>
   <block id="797b21f4662c52d1572473764912397d" category="paragraph">Es ist möglich für den Inhalt des<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> Konfigurationsdatei, die sich von dem unterscheidet, was nach der Ausführung des tatsächlich übertragen wurde<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> Skript: Um die aktuelle Liste der Gruppen-IDs anzuzeigen, die Sie der BlueXP Klassifizierung hinzugefügt haben, führen Sie den folgenden Befehl von „/opt/netapp/Datense/Tools/Customer_Configuration/Data_Providers“ aus:</block>
   <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS – Amazon Elastic Compute Cloud (Amazon EC2) Preisstruktur</block>
@@ -3506,4 +3495,16 @@ Daten Von Business-Applikationen</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 Januar 2025</block>
   <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">Dateifreigaben (CIFS, NFS)</block>
   <block id="0476d890c406400d4a4b0337b0492ab6" category="paragraph">Das Skript befindet sich im<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block> Verzeichnis.</block>
+  <block id="74110511ebf4f8eea597c953392110f9" category="list-text">1 tib SSD auf / oder 100 gib auf /opt verfügbar</block>
+  <block id="4056804c808441484593a6cd5998f06e" category="list-text">895 gib verfügbar für /var/lib/Docker</block>
+  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 gib auf /tmp</block>
+  <block id="79d1a6d2ec5f279b488952c279f36449" category="list-text">*Für Podman, 5 GB auf /tmp*</block>
+  <block id="0e1cb4b06a070e11230e1c8de75a1db8" category="list-text">*Für Podman, 30 GB auf /var/tmp*</block>
+  <block id="16b9e4a3843d82aedd78ddf5568f32cc" category="list-text">500 gib SSD auf / oder 100 gib auf /opt verfügbar</block>
+  <block id="7d5ad3bf21c571c611eed766c4a188c1" category="list-text">395 gib verfügbar auf /var/lib/Docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers</block>
+  <block id="155acacab86f1c55608330de83b4e05f" category="paragraph">Sie können auch <block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>.</block>
+  <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">Die On-Premises-Installation ist möglicherweise eine gute Option, wenn Sie lokale ONTAP Systeme lieber mit einer BlueXP  Klassifizierungsinstanz scannen möchten, die sich auch vor Ort befindet - dies ist jedoch keine Anforderung. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise.</block>
+  <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten.</block>
+  <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">Führen Sie vor der manuellen Installation der BlueXP -Klassifizierung auf einem Linux-Host optional ein Skript auf dem Host aus, um zu überprüfen, ob alle Voraussetzungen für die Installation der BlueXP -Klassifizierung vorhanden sind. Sie können dieses Skript auf einem Linux-Host in Ihrem Netzwerk oder auf einem Linux-Host in der Cloud ausführen. Der Host kann mit dem Internet verbunden werden, oder der Host kann sich auf einer Site befinden, die keinen Internetzugang hat (eine _dunkle Seite_).</block>
+  <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">Deinstallieren Sie die BlueXP -Klassifizierungssoftware, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Wenn Sie die Instanz löschen, werden auch die zugehörigen Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die die BlueXP Klassifizierung gescannt hat, werden dauerhaft gelöscht.</block>
 </blocks>

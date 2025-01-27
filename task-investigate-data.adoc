@@ -23,7 +23,7 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 == Filtern Sie die Daten auf der Seite „Datenuntersuchung“
 
-Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten. Dies ist eine sehr leistungsstarke Funktion, denn nachdem Sie die Daten verfeinert haben, können Sie die Buttonleiste oben auf der Seite verwenden, um eine Vielzahl von Aktionen durchzuführen, wie das Kopieren von Dateien, Verschieben von Dateien, Hinzufügen eines Tags oder AIP-Label zu den Dateien und vieles mehr.
+Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten.
 
 Wenn Sie den Inhalt der Seite nach der Verarbeitung als Bericht herunterladen möchten, klicken Sie auf die Schaltfläche image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Bericht Zur Datenuntersuchung,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
 

@@ -18,7 +18,7 @@ Führen Sie einige Schritte aus, um die BlueXP Klassifizierung auf einem Linux-H
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informieren Sie sich über die verschiedenen Implementierungsmodi für die BlueXP Connector und BlueXP Klassifizierung"^].
 
-Beachten Sie, dass Sie auch können link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung auf einer lokalen Website mit Internetzugang"].
+Sie können auch link:task-deploy-compliance-onprem.html["Implementieren Sie die BlueXP Klassifizierung auf einer lokalen Website mit Internetzugang"].
 
 Das BlueXP Klassifizierungs-Installationsskript wird zunächst überprüft, ob das System und die Umgebung die erforderlichen Voraussetzungen erfüllen. Wenn alle Voraussetzungen erfüllt sind, wird die Installation gestartet. Wenn Sie die Voraussetzungen unabhängig vom Ausführen der BlueXP Klassifizierungssysteminstallation überprüfen möchten, steht Ihnen ein separates Softwarepaket zur Verfügung, das nur auf die Voraussetzungen testet. link:task-test-linux-system.html["Erfahren Sie, wie Sie überprüfen können, ob Ihr Linux-Host bereit ist, die BlueXP Klassifizierung zu installieren"].
 
@@ -89,16 +89,24 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 | Systemgröße | CPU | RAM (Swap-Speicher muss deaktiviert sein) | Festplatte 
 
 
-| *Extra Groß* | 32 CPUs | 128 GB RAM | 1 tib SSD auf /, oder
-- 100 gib verfügbar auf /opt
-- 895 gib verfügbar auf /var/lib/docker
-- 5 gib auf /tmp 
+| *Extra Groß* | 32 CPUs | 128 GB RAM  a| 
+** 1 tib SSD auf / oder 100 gib auf /opt verfügbar
+** 895 gib verfügbar für /var/lib/Docker
+** 5 gib auf /tmp
+** *Für Podman, 5 GB auf /tmp*
+** *Für Podman, 30 GB auf /var/tmp*
 
 
-| *Groß* | 16 CPUs | 64 GB RAM | 500 gib SSD auf /, oder
-- 100 gib verfügbar auf /opt
-- 395 gib verfügbar auf /var/lib/docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers
-- 5 gib auf /tmp 
+
+
+| *Groß* | 16 CPUs | 64 GB RAM  a| 
+** 500 gib SSD auf / oder 100 gib auf /opt verfügbar
+** 395 gib verfügbar auf /var/lib/Docker oder für Podman /var/lib/Containers oder für Podman /var/lib/Containers
+** 5 gib auf /tmp
+** *Für Podman, 5 GB auf /tmp*
+** *Für Podman, 30 GB auf /var/tmp*
+
+
 |===
 * Bei der Implementierung einer Computing-Instanz in der Cloud für Ihre BlueXP Klassifizierungsinstallation empfehlen wir ein System, das die oben genannten „großen“ Systemanforderungen erfüllt:
 +

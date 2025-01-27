@@ -14,7 +14,7 @@ summary: Sie können die BlueXP Klassifizierungssoftware deinstallieren, um Prob
 
 
 [role="lead"]
-Sie können die BlueXP Klassifizierungssoftware deinstallieren, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Wenn Sie die Instanz löschen, werden auch die zugehörigen Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die die BlueXP Klassifizierung gescannt hat, werden dauerhaft gelöscht.
+Deinstallieren Sie die BlueXP -Klassifizierungssoftware, um Probleme zu beheben oder die Software dauerhaft vom Host zu entfernen. Wenn Sie die Instanz löschen, werden auch die zugehörigen Festplatten gelöscht, auf denen sich die indizierten Daten befinden. Alle Informationen, die die BlueXP Klassifizierung gescannt hat, werden dauerhaft gelöscht.
 
 Die erforderlichen Schritte hängen davon ab, ob Sie die BlueXP Klassifizierung in der Cloud oder auf einem lokalen Host implementiert haben.
 
