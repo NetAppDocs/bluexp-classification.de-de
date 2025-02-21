@@ -186,15 +186,19 @@ Sie können Scans auf Volume-Ebene oder auf Datenbankschemaebene aktivieren und 
 
 === Was ist der Unterschied zwischen Mapping und Classification Scans
 
-Die BlueXP Klassifizierung ermöglicht Ihnen die Durchführung eines allgemeinen „Mapping“-Scans für ausgewählte Datenquellen. Das Mapping bietet nur einen Überblick über Ihre Daten auf hoher Ebene, während die Klassifizierung ein tiefes Scannen Ihrer Daten ermöglicht. Das Mapping kann auf Ihren Datenquellen sehr schnell durchgeführt werden, da es nicht auf Dateien zugegriffen wird, um die darin enthaltenen Daten zu sehen.
+Sie können zwei Arten von Scans in der BlueXP -Klassifizierung durchführen:
 
-Viele Benutzer mögen diese Funktionalität, weil sie ihre Daten schnell scannen möchten, um die Datenquellen zu identifizieren, die mehr Forschungsarbeiten benötigen. Sie können dann Scans nur auf die erforderlichen Datenquellen oder Volumes klassifizieren.
+* **Nur Mapping** Scans bieten nur einen allgemeinen Überblick über Ihre Daten und werden an ausgewählten Datenquellen durchgeführt. Nur-Mapping-Scans benötigen weniger Zeit als Map und klassifizieren Scans, da die nicht auf Dateien zugreifen, um die Daten darin zu sehen.
+* **Karten- und Klassify**-Scans ermöglichen ein tiefes Scannen Ihrer Daten.
+
+
+Mit nur-Mapping-Scans können Sie Ihre Daten schnell scannen und Datenquellen identifizieren, die möglicherweise mehr Forschung erfordern. Anschließend können Sie einen Map & Classify-Scan durchführen.
 
 In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
 [cols="47,18,18"]
 |===
-| Merkmal | Klassifizierung | Zuordnung 
+| Merkmal | Scans zuordnen und klassifizieren | Nur-Mapping-Scans 
 
 
 | Scangeschgeschwindigkeit | Langsam | Schnell 
@@ -413,8 +417,8 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
 Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
 
-* Bei der Durchführung von Mapping-Scans kann die BlueXP Klassifizierung zwischen 100-150 TIBS Daten pro Tag scannen.
-* Bei der Durchführung von Classification Scans können mit der BlueXP Klassifizierung Daten zwischen 15-40 TIBS pro Tag gescannt werden.
+* Bei der Durchführung von nur-Mapping-Scans kann die BlueXP -Klassifizierung zwischen 100-150 TIBS Daten pro Tag scannen.
+* Bei der Durchführung von Map & Classify Scans kann die BlueXP -Klassifizierung zwischen 15-40 TIBS Daten pro Tag scannen.
 
 
 

@@ -21,28 +21,6 @@ NOTE: Das Scannen von Daten aus nicht-NetApp-Dateifreigaben wird in der Kernvers
 
 
 
-== Schnellstart
-
-Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den verbleibenden Abschnitten, um ausführliche Informationen zu erhalten.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Prüfen Sie die Voraussetzungen für die Dateifreigabe
-[role="quick-margin-para"]
-Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Anmeldeinformationen für den Zugriff auf Freigaben verfügen.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Erstellen Sie eine Gruppe, um die Dateifreigaben zu halten
-[role="quick-margin-para"]
-Die Gruppe ist ein Container für die Dateifreigaben, die Sie scannen möchten, und er wird als Name der Arbeitsumgebung für diese Dateifreigaben verwendet.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Fügen Sie die Dateifreigaben der Gruppe hinzu
-[role="quick-margin-para"]
-Fügen Sie die Liste der zu scannenden Dateifreigaben hinzu und wählen Sie den Scantyp aus. Sie können bis zu 100 Dateifreigaben gleichzeitig hinzufügen.
-
-
-
 == Prüfen Sie die Anforderungen für die Dateifreigabe
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
@@ -72,8 +50,6 @@ Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs
 
 Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
-Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
-
 
 
 == Erstellen Sie die Gruppe für die Dateifreigaben
@@ -83,13 +59,12 @@ Sie müssen eine „Gruppe“ von Dateifreigaben für Dateien hinzufügen, bevor
 Sie können NFS- und CIFS-Freigaben in einer Gruppe kombinieren. Allerdings müssen alle CIFS-Dateifreigaben in einer Gruppe dieselben Active Directory-Anmeldedaten verwenden. Wenn Sie CIFS-Freigaben hinzufügen möchten, die unterschiedliche Anmeldedaten verwenden, müssen Sie für jeden eindeutigen Satz von Anmeldeinformationen eine separate Gruppe erstellen.
 
 .Schritte
-. Klicken Sie auf der Seite Arbeitsumgebungen Konfiguration auf *Datenquelle hinzufügen* > *Datei-Shares-Gruppe hinzufügen*.
-+
-image:screenshot_compliance_add_fileshares_button.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie auf die Schaltfläche Gruppe Dateifreigaben hinzufügen klicken können."]
-
-. Geben Sie im Dialogfeld „Gruppe Dateien hinzufügen“ den Namen für die Gruppe der Freigaben ein, und klicken Sie auf *Weiter*.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Konfigurationsseite *Arbeitsumgebung hinzufügen* > *Gruppe mit Dateifreigaben hinzufügen*.
+. Geben Sie im Dialogfeld Add Files Shares Group den Namen für die Gruppe der Freigaben ein, und wählen Sie *Weiter*.
 
 
+.Ergebnis
 Die neue File Shares-Gruppe wird der Liste der Arbeitsumgebungen hinzugefügt.
 
 
@@ -103,21 +78,22 @@ Sie können einzelne Dateifreigaben hinzufügen, oder Sie können eine Liste der
 Wenn Sie in einer einzelnen Gruppe sowohl NFS- als auch CIFS-Freigaben hinzufügen, müssen Sie diesen Prozess zweimal durchlaufen: Sobald Sie NFS-Freigaben hinzufügen, und dann erneut CIFS-Freigaben hinzufügen.
 
 .Schritte
-. Klicken Sie auf der Seite _Working Environments_ auf die Schaltfläche *Konfiguration* für die File Shares Group.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Seite Konfiguration in der Kachel Arbeitsumgebungen die Schaltfläche *Konfiguration* für die Gruppe Dateifreigaben aus.
 +
 image:screenshot_compliance_fileshares_add_shares.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie die Schaltfläche Konfiguration auswählen können."]
 
-. Wenn dies das erste Mal ist, um Dateifreigaben für diese File Shares-Gruppe hinzuzufügen, klicken Sie auf *erste Shares hinzufügen*.
+. Wenn dies das erste Mal ist, dass Sie Dateifreigaben für diese Fileshares-Gruppe hinzufügen, wählen Sie *erste Freigaben hinzufügen*.
 +
 image:screenshot_compliance_fileshares_add_initial_shares.png["Ein Screenshot mit der Schaltfläche erste Freigaben hinzufügen, um erste Shares zur Gruppe hinzuzufügen."]
 
 +
-Wenn Sie einer vorhandenen Gruppe File Shares hinzufügen, klicken Sie auf *Add Shares*.
+Wenn Sie Dateifreigaben zu einer bestehenden Gruppe hinzufügen, wählen Sie *Freigaben hinzufügen*.
 
 +
 image:screenshot_compliance_fileshares_add_more_shares2.png["Ein Screenshot mit der Schaltfläche „Shares hinzufügen“, um der Gruppe weitere Freigaben hinzuzufügen."]
 
-. Wählen Sie das Protokoll für die File Shares aus, die Sie hinzufügen, fügen Sie die File Shares hinzu, die Sie scannen möchten - eine Dateifreigabe pro Zeile - und klicken Sie auf *Weiter*.
+. Wählen Sie das Protokoll für die hinzuzufügenden Dateifreigaben aus, fügen Sie die zu scannenden Dateifreigaben hinzu (eine Dateifreigabe pro Zeile) und wählen Sie *Weiter* aus.
 +
 Beim Hinzufügen von CIFS (SMB)-Freigaben müssen Sie die Active Directory-Anmeldeinformationen eingeben, die Lesezugriff auf die Freigaben bieten. Anmeldedaten für Admin werden bevorzugt.
 
@@ -131,24 +107,16 @@ Ein Bestätigungsdialogfeld zeigt die Anzahl der hinzugefügten Freigaben an.
 Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden konnten, erfassen Sie diese Informationen, damit Sie das Problem beheben können. In einigen Fällen können Sie die Freigabe mit einem korrigierten Hostnamen oder Freigabennamen erneut hinzufügen.
 
 . Aktivieren Sie für jede Dateifreigabe nur mappingbare Scans oder Mappings und Klassifizierungen.
+. Führen Sie einen der folgenden Schritte aus, um Scans zu aktivieren oder zu deaktivieren:
 +
-[cols="45,45"]
-|===
-| An: | Tun Sie dies: 
+** Um Mapping-only-Scans auf Dateifreigaben zu aktivieren, wählen Sie *Karte*.
+** Um vollständige Scans auf Dateifreigaben zu aktivieren, wählen Sie *Map & Classify*.
+** Um das Scannen auf Dateifreigaben zu deaktivieren, wählen Sie *aus*.
 
 
-| Aktivieren Sie Mapping-Only-Scans auf File Shares | Klicken Sie Auf *Karte* 
 
 
-| Vollständige Scans auf Dateifreigaben ermöglichen | Klicken Sie Auf *Karte & Klassieren* 
-
-
-| Deaktivieren Sie das Scannen von Dateifreigaben | Klicken Sie Auf *Aus* 
-|===
-+
 Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
-
-
 
 .Ergebnis
 Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
@@ -157,6 +125,12 @@ Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen 
 
 == Entfernen einer Dateifreigabe aus Compliance-Scans
 
-Wenn Sie bestimmte Dateifreigaben nicht mehr scannen müssen, können Sie einzelne Dateifreigaben jederzeit aus dem Scannen ihrer Dateien entfernen. Klicken Sie einfach auf der Konfigurationsseite auf *Share entfernen*.
+Wenn Sie bestimmte Dateifreigaben nicht mehr scannen müssen, können Sie einzelne Dateifreigaben jederzeit aus dem Scannen ihrer Dateien entfernen.
 
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Konfigurationsseite *Freigabe entfernen*.
++
 image:screenshot_compliance_fileshares_remove_share.png["Ein Screenshot zeigt, wie eine einzelne Dateifreigabe aus dem Scannen ihrer Dateien entfernt wird."]
+
+

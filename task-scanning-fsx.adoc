@@ -31,53 +31,13 @@ https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Elastische AWS Netzwerkschnittstellen (ENI)"^]
 
-
-
-
-
-== Schnellstart
-
-Führen Sie die folgenden Schritte aus, oder scrollen Sie nach unten, um weitere Informationen zu erhalten.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Entdecken Sie die FSX für ONTAP-Dateisysteme, die Sie scannen möchten
-[role="quick-margin-para"]
-Bevor Sie FSX für ONTAP Volumes scannen können, https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["Sie benötigen eine FSX-Arbeitsumgebung mit konfigurierten Volumes"^].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung in BlueXP"^] Falls noch keine Instanz implementiert wurde.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Aktivieren Sie die BlueXP Klassifizierung und wählen Sie die zu scannenden Volumes aus
-[role="quick-margin-para"]
-Wählen Sie die Registerkarte *Configuration* und aktivieren Sie Compliance-Scans nach Volumes in bestimmten Arbeitsumgebungen.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Zugriff auf Volumes sicherstellen
-[role="quick-margin-para"]
-Nachdem die BlueXP Klassifizierung aktiviert ist, vergewissern Sie sich jetzt, dass sie auf alle Volumes zugreifen kann.
-
-[role="quick-margin-list"]
-* Die BlueXP Klassifizierungsinstanz benötigt eine Netzwerkverbindung zu jedem FSX for ONTAP Subnetz.
 * Stellen Sie sicher, dass die folgenden Ports für die BlueXP Klassifizierungsinstanz offen sind:
 +
 ** Für NFS – die Ports 111 und 2049.
 ** Für CIFS – die Ports 139 und 445.
 
 
-* NFS-Volume-Exportrichtlinien müssen den Zugriff von der BlueXP Klassifizierungsinstanz ermöglichen.
-* Die BlueXP Klassifizierung erfordert Active Directory Zugangsdaten, um CIFS-Volumes zu scannen. + Klicken Sie auf *Compliance* > *Konfiguration* > *CIFS-Anmeldeinformationen bearbeiten* und geben Sie die Anmeldeinformationen an.
 
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Fünf"] Verwalten Sie die Volumes, die Sie scannen möchten
-[role="quick-margin-para"]
-Wählen Sie die Volumes aus, die Sie scannen möchten, oder deaktivieren Sie sie. Die BlueXP Klassifizierung startet bzw. stoppt ihre Suche.
-
-
-
-== Entdecken Sie das FSX für ONTAP Dateisystem, das Sie scannen möchten
-
-Wenn das Dateisystem FSX für ONTAP, das Sie scannen möchten, nicht bereits in BlueXP als Arbeitsumgebung vorhanden ist, können Sie es zu diesem Zeitpunkt der Arbeitsfläche hinzufügen.
-
-https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["Lesen Sie, wie Sie das Dateisystem FSX für ONTAP in BlueXP erkennen oder erstellen"^].
 
 
 
@@ -97,7 +57,8 @@ Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange d
 
 Sie können die BlueXP Klassifizierung für FSX for ONTAP Volumes aktivieren.
 
-. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung* und dann auf die Registerkarte *Konfiguration*.
+. Wählen Sie im linken Navigationsmenü von BlueXP  *Governance > Klassifizierung*.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
 +
 image:screenshot_fsx_scanning_activate.png["Ein Screenshot der Registerkarte Konfiguration unmittelbar nach der Implementierung der BlueXP Klassifizierungsinstanz."]
 
@@ -106,9 +67,6 @@ image:screenshot_fsx_scanning_activate.png["Ein Screenshot der Registerkarte Kon
 ** Um alle Volumes zuzuordnen, klicken Sie auf *Alle Volumes zuordnen*.
 ** Um alle Bände zu ordnen und zu klassifizieren, klicken Sie auf *Karte & alle Bände klassifizieren*.
 ** Um den Scan für jedes Volume anzupassen, klicken Sie auf *oder wählen Sie für jedes Volume* den Scantyp aus, und wählen Sie dann die Volumes aus, die Sie zuordnen und/oder klassifizieren möchten.
-+
-Weitere Informationen finden Sie unter Aktivieren und Deaktivieren von Compliance-Scans auf Volumes.
-
 
 
 . Klicken Sie im Bestätigungsdialogfeld auf *approve*, damit die BlueXP Klassifizierung mit dem Scannen Ihrer Volumes beginnt.
@@ -133,7 +91,8 @@ Sorgen Sie dafür, dass die BlueXP Klassifizierung auf Volumes zugreifen kann, i
 Sie müssen BlueXP mit CIFS-Anmeldedaten klassifizieren, um auf CIFS Volumes zugreifen zu können.
 
 .Schritte
-. Klicken Sie auf der Seite _Configuration_ auf *Details anzeigen*, um den Status zu überprüfen und Fehler zu beheben.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Konfigurationsseite *Details anzeigen* aus, um den Status zu überprüfen und etwaige Fehler zu korrigieren.
 +
 Das folgende Bild zeigt beispielsweise, dass eine Klassifizierung von Volume BlueXP aufgrund von Netzwerkverbindungsproblemen zwischen der BlueXP Klassifizierungsinstanz und dem Volume nicht scannen kann.
 
@@ -145,17 +104,11 @@ image:screenshot_fsx_scanning_no_network_error.png["Screenshot der Seite „View
 
 NOTE: Bei FSX for ONTAP kann die BlueXP Klassifizierung Volumes nur in derselben Region wie BlueXP scannen.
 
-. Stellen Sie sicher, dass die folgenden Ports für die BlueXP Klassifizierungsinstanz offen sind.
-+
-** Für NFS – die Ports 111 und 2049.
-** Für CIFS – die Ports 139 und 445.
-
-
 . Vergewissern Sie sich, dass die Richtlinien für den Export von NFS Volumes die IP-Adresse der BlueXP Klassifizierungsinstanz enthalten, damit sie auf die Daten auf jedem Volume zugreifen können.
 . Wenn Sie CIFS verwenden, bieten Sie BlueXP Klassifizierung mit Active Directory Anmeldeinformationen, um CIFS Volumes zu scannen.
 +
-.. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung* und dann auf die Registerkarte *Konfiguration*.
-.. Klicken Sie für jede Arbeitsumgebung auf *Edit CIFS Credentials* und geben Sie den Benutzernamen und das Passwort ein, die die BlueXP Klassifizierung für den Zugriff auf CIFS Volumes auf dem System benötigt.
+.. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+.. Wählen Sie für jede Arbeitsumgebung *Edit CIFS Credentials* aus und geben Sie den Benutzernamen und das Passwort ein, den die BlueXP -Klassifizierung für den Zugriff auf CIFS-Volumes auf dem System benötigt.
 +
 Die Zugangsdaten können schreibgeschützt sein, aber durch die Angabe von Administratorberechtigungen wird sichergestellt, dass die BlueXP Klassifizierung alle Daten lesen kann, die erhöhte Berechtigungen erfordern. Die Zugangsdaten werden in der BlueXP Klassifizierungsinstanz gespeichert.
 
@@ -179,31 +132,16 @@ Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Ber
 
 image:screenshot_volume_compliance_selection.png["Ein Screenshot der Konfigurationsseite, auf der Sie das Scannen einzelner Volumes aktivieren oder deaktivieren können."]
 
-[cols="45,45"]
-|===
-| An: | Tun Sie dies: 
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Suchen Sie auf der Seite Konfiguration die Arbeitsumgebung mit den Volumes, die Sie scannen möchten.
+. Führen Sie einen der folgenden Schritte aus:
++
+** Um nur-Mapping-Scans auf einem Volume zu aktivieren, wählen Sie im Volume-Bereich *Map*. Oder, um auf allen Volumes zu aktivieren, wählen Sie im Überschriftenbereich *Karte*. Um das vollständige Scannen auf einem Volume zu aktivieren, wählen Sie im Volumenbereich *Zuordnen & Klassifizieren*. Oder, um auf allen Volumes zu aktivieren, wählen Sie im Überschriftenbereich *Map & Classify*.
+** Um das Scannen auf einem Volume zu deaktivieren, wählen Sie im Lautstärkebereich *aus*. Um das Scannen auf allen Volumes zu deaktivieren, wählen Sie im Überschriftenbereich *aus*.
 
 
-| Aktivieren von mappinggeschützten Scans auf einem Volume | Klicken Sie im Volumenbereich auf *Karte* 
 
 
-| Aktivieren Sie das vollständige Scannen auf einem Volume | Klicken Sie im Volumenbereich auf *Karte & Klassieren* 
-
-
-| Deaktivieren Sie das Scannen auf einem Volume | Klicken Sie im Volumenbereich auf *aus* 
-
-
-|  |  
-
-
-| Aktivieren Sie ausschließlich mappingbare Scans auf allen Volumes | Klicken Sie im Steuerkursbereich auf *Karte* 
-
-
-| Aktivieren Sie das vollständige Scannen auf allen Volumes | Klicken Sie im Bereich Überschrift auf *Karte & Klassieren* 
-
-
-| Deaktivieren Sie das Scannen auf allen Volumes | Klicken Sie im Bereich Überschrift auf *aus* 
-|===
 
 NOTE: Neue Volumen, die der Arbeitsumgebung hinzugefügt wurden, werden automatisch nur gescannt, wenn Sie die Einstellung *Karte* oder *Karte & Klassieren* im Steuerkursbereich festgelegt haben. Wenn Sie im Bereich Überschrift auf *Benutzerdefiniert* oder *aus* eingestellt sind, müssen Sie für jedes neue Volumen, das Sie in der Arbeitsumgebung hinzufügen, das Mapping und/oder das vollständige Scannen aktivieren.
 
@@ -220,8 +158,9 @@ image:screenshot_cloud_compliance_dp_volumes.png["Ein Screenshot mit der Schaltf
 .Schritte
 Wenn Sie diese Datensicherungs-Volumes scannen möchten:
 
-. Klicken Sie oben auf der Seite auf *Zugriff auf DP-Volumes aktivieren*.
-. Überprüfen Sie die Bestätigungsmeldung und klicken Sie erneut auf *Zugriff auf DP-Volumes*.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie *Zugriff auf DP-Volumes aktivieren* oben auf der Seite aus.
+. Überprüfen Sie die Bestätigungsmeldung und wählen Sie erneut *Zugriff auf DP-Volumes aktivieren*.
 +
 ** Volumes, die ursprünglich als NFS-Volumes im Quell-FSX für ONTAP erstellt wurden, sind aktiviert.
 ** Für Volumes, die ursprünglich als CIFS Volumes im Quell-FSX für ONTAP erstellt wurden, müssen Sie CIFS-Anmeldeinformationen eingeben, um diese DP-Volumes zu scannen. Wenn Sie bereits Active Directory-Anmeldedaten eingegeben haben, sodass die BlueXP Klassifizierung CIFS-Volumes scannen kann, können Sie diese Anmeldedaten verwenden oder einen anderen Satz von Admin-Anmeldedaten angeben.
@@ -236,7 +175,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["Ein Screenshot der beiden Optio
 .Ergebnis
 Nach Aktivierung erstellt die BlueXP Klassifizierung von jedem DP-Volume, das zum Scannen aktiviert wurde, eine NFS-Freigabe. Die Richtlinien für den Export von Freigaben sind nur für den Zugriff aus der BlueXP Klassifizierungsinstanz zulässig.
 
-*Hinweis:* Wenn Sie beim ersten Aktivieren des Zugriffs auf DP-Volumes keine CIFS-Datenschutzvolumes hatten und später noch etwas hinzufügen, erscheint oben auf der Konfigurationsseite die Schaltfläche *Zugriff auf CIFS DP aktivieren*. Klicken Sie auf diese Schaltfläche, und fügen Sie CIFS-Anmeldeinformationen hinzu, um den Zugriff auf diese CIFS-DP-Volumes zu ermöglichen.
+Wenn Sie keine CIFS Data Protection Volumes hatten, als Sie den Zugriff auf DP-Volumes aktiviert haben, und später einige hinzufügen, wird oben auf der Konfigurationsseite die Schaltfläche *Enable Access to CIFS DP* angezeigt. Wählen Sie diese Schaltfläche aus, und fügen Sie CIFS-Anmeldeinformationen hinzu, um den Zugriff auf diese CIFS-DP-Volumes zu aktivieren.
 
 
-NOTE: Active Directory – Zugangsdaten sind nur in der Storage-VM des ersten CIFS-DP Volumes registriert. Somit werden alle DP-Volumes auf dieser SVM gescannt. Auf allen Volumes, die sich auf anderen SVMs befinden, sind keine Active Directory Anmeldedaten registriert, daher werden diese DP-Volumes nicht gescannt.
+NOTE: Active Directory-Anmeldeinformationen sind nur in der Storage-VM des ersten CIFS DP Volumes registriert. Daher werden alle DP-Volumes auf dieser SVM geprüft. Auf allen Volumes, die sich auf anderen SVMs befinden, sind keine Active Directory Anmeldedaten registriert, daher werden diese DP-Volumes nicht gescannt.

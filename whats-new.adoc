@@ -18,6 +18,48 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== 19 Februar 2025
+
+
+
+=== Version 1.40
+
+Diese BlueXP -Klassifizierungsversion umfasst die folgenden Updates.
+
+.Unterstützung für RHEL 9.5
+Diese Version bietet zusätzlich zu den zuvor unterstützten Versionen Unterstützung für Red hat Enterprise Linux 9.5. Dies gilt für alle manuellen On-Premises-Installationen von BlueXP -Klassifizierungen und Dark-Site-Bereitstellungen.
+
+Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engine erforderlich, und sie erfordern eine BlueXP -Klassifizierung der Version 1.30 oder höher: Red hat Enterprise Linux der Version 8.8, 9.2, 9.0, 9.1, 8.10, 9.3, 9.4 und 9.5.
+
+.Priorisieren Sie Scans
+Beim Durchführen von nur-Mapping-Scans können Sie die wichtigsten Scans priorisieren. Diese Funktion hilft Ihnen, wenn Sie viele Arbeitsumgebungen haben und sicherstellen möchten, dass zuerst Scans mit hoher Priorität abgeschlossen werden.
+
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
+
+Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
+
+Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["Nur-Mapping-Scans"]; es ist nicht verfügbar für die Zuordnung und Klassifizierung von Scans.
+
+So ändern Sie die Priorität:
+
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie die Ressourcen aus, die Sie priorisieren möchten.
+. Wählen Sie aus der Option Aktionen ... die Option *Suche priorisieren*.
+
+
+.Wiederholen Sie alle Scans
+Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
+
+Mit der Funktion **Alle wiederholen** können Sie jetzt Scans in einem Batch-Vorgang erneut versuchen. Wenn Klassifikationsscans aufgrund eines vorübergehenden Problems, wie z. B. eines Netzwerkausfalls, fehlschlagen, können Sie alle Scans gleichzeitig mit einer Taste wiederholen, anstatt sie einzeln erneut zu versuchen. Scans können so oft wie nötig wiederholt werden.
+
+So wiederholen Sie alle Scans:
+
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Um alle fehlgeschlagenen Scans erneut zu versuchen, wählen Sie *Alle Scans wiederholen*.
+
+
+
+
 == 22 Januar 2025
 
 
@@ -155,7 +197,7 @@ Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert
 .Zusätzliche Daten in Dashboards
 Diese Version aktualisiert, welche Daten während der Mapping-Scans in den Dashboards für Governance, Compliance und Untersuchung angezeigt werden.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Was ist der Unterschied zwischen Mapping- und Klassifikationsscans"]
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Was ist der Unterschied zwischen Mapping- und Klassifikationsscans"]
 
 
 
@@ -353,7 +395,7 @@ Diese Versionen werden bei neuen Bereitstellungen nicht unterstützt, da Red hat
 Sie können Audit-Protokolle für den Dateizugriff in Ihrem BlueXP Klassifizierungssystem für Dateizugriffsereignisse auf Volumes in Ihren Arbeitsumgebungen erfassen. Die BlueXP Klassifizierung kann die folgenden Arten von FPolicy Ereignissen und die Benutzer erfassen, die die Aktionen an Ihren Dateien durchgeführt haben: Erstellen, Lesen, Schreiben, Löschen, Umbenennen, Eigentümer/Berechtigungen ändern und SACL/DACL ändern.
 
 .Data Sense BYOL-Lizenzen werden nun in Dark Sites unterstützt
-Sie können jetzt Ihre Data Sense BYOL-Lizenz in das BlueXP  Digital Wallet auf einer Dark Site hochladen, sodass Sie benachrichtigt werden, wenn Ihre Lizenz zu niedrig wird. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Hier erfahren Sie, wie Sie Ihre Data Sense BYOL-Lizenz erwerben und hochladen"].
+Sie können jetzt Ihre Data Sense BYOL-Lizenz in das BlueXP  Digital Wallet auf einer Dark Site hochladen, sodass Sie benachrichtigt werden, wenn Ihre Lizenz zu niedrig wird. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["Hier erfahren Sie, wie Sie Ihre Data Sense BYOL-Lizenz erwerben und hochladen"].
 
 
 

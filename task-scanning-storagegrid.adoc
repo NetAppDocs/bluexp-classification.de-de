@@ -18,31 +18,6 @@ Führen Sie ein paar Schritte durch, um mit dem Scannen von Daten in StorageGRID
 
 
 
-== Schnellstart
-
-Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den verbleibenden Abschnitten, um ausführliche Informationen zu erhalten.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Eins"] Prüfen Sie die StorageGRID Prerequisites
-[role="quick-margin-para"]
-Sie benötigen die Endpunkt-URL, um eine Verbindung zum StorageGRID-Service herzustellen.
-
-[role="quick-margin-para"]
-Sie müssen über den Zugriffsschlüssel und den geheimen Schlüssel aus dem StorageGRID verfügen, damit die BlueXP -Klassifizierung auf die Buckets zugreifen kann.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Zwei"] Implementieren der BlueXP Klassifizierungsinstanz
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["Implementieren Sie die BlueXP Klassifizierung"^] Falls noch keine Instanz implementiert wurde.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Drittens"] Fügen Sie den StorageGRID-Dienst hinzu
-[role="quick-margin-para"]
-Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Vier"] Wählen Sie die zu scannenden Buckets aus
-[role="quick-margin-para"]
-Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierung beginnt mit dem Scannen.
-
-
-
 == StorageGRID-Anforderungen prüfen
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
@@ -61,8 +36,6 @@ Wenn Sie Daten von StorageGRID scannen, die über das Internet zugänglich ist, 
 
 Wenn Sie Daten von StorageGRID scannen, die in einer dunklen Seite installiert wurde, die keinen Internetzugang hat, müssen Sie link:task-deploy-compliance-dark-site.html["Implementieren Sie die BlueXP Klassifizierung an demselben lokalen Standort ohne Internetzugang"^]. Dazu ist auch die Implementierung des BlueXP Connectors am selben Standort erforderlich.
 
-Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die Instanz über eine Internetverbindung verfügt.
-
 
 
 == Fügen Sie den StorageGRID-Service der BlueXP -Klassifizierung hinzu
@@ -70,10 +43,8 @@ Upgrades auf BlueXP  Klassifizierungssoftware werden automatisiert, solange die
 Fügen Sie den StorageGRID-Dienst hinzu.
 
 .Schritte
-. Klicken Sie auf der Seite Konfiguration der Arbeitsumgebung auf *Datenquelle hinzufügen* > *StorageGRID hinzufügen*.
-+
-image:screenshot-scanning-add-storagegrid.png["Ein Screenshot der Seite Scankonfiguration, in dem Sie auf die Schaltfläche StorageGRID hinzufügen klicken können."]
-
+. Wählen Sie im BlueXP -Klassifizierungsmenü die Option *Konfiguration*.
+. Wählen Sie auf der Konfigurationsseite *Arbeitsumgebung hinzufügen* > *StorageGRID hinzufügen*.
 . Geben Sie im Dialogfeld StorageGRID-Dienst hinzufügen die Details für den StorageGRID-Dienst ein und klicken Sie auf *Weiter*.
 +
 .. Geben Sie den Namen ein, den Sie für die Arbeitsumgebung verwenden möchten. Dieser Name sollte den Namen des StorageGRID-Dienstes wiedergeben, mit dem Sie eine Verbindung herstellen.
@@ -96,28 +67,18 @@ StorageGRID wird der Liste der Arbeitsumgebungen hinzugefügt.
 Nachdem Sie die BlueXP -Klassifizierung auf StorageGRID aktiviert haben, konfigurieren Sie die Buckets, die Sie scannen möchten. Die BlueXP Klassifizierung erkennt diese Buckets und zeigt sie in der von Ihnen erstellten Arbeitsumgebung an.
 
 .Schritte
-. Klicken Sie auf der Seite Konfiguration in der StorageGRID-Arbeitsumgebung auf *Konfiguration*.
-+
-image:screenshot-scanning-storagegrid-configuration.png["Ein Screenshot, in dem Sie auf Konfiguration für die Arbeitsumgebung klicken, damit Sie die Buckets auswählen können, die Sie scannen möchten."]
-
-. Aktivieren Sie Scans, die nur mappen oder Scans zuordnen und klassifizieren, auf Ihren Buckets.
+. Suchen Sie auf der Seite Konfiguration nach der StorageGRID-Arbeitsumgebung.
+. Wählen Sie auf der Kachel StorageGRID-Arbeitsumgebung *Konfiguration* aus.
 +
 image:screenshot-scanning-add-storagegrid-buckets.png["Ein Screenshot der Auswahl der StorageGRID-Buckets, die Sie scannen möchten."]
 
+. Führen Sie einen der folgenden Schritte aus, um den Scanvorgang zu aktivieren oder zu deaktivieren:
 +
-[cols="45,45"]
-|===
-| An: | Tun Sie dies: 
+** Um nur-Mapping-Scans auf einem Bucket zu aktivieren, wählen Sie *Karte*.
+** Um vollständige Scans auf einem Bucket zu aktivieren, wählen Sie *Karte & klassifizieren*.
+** Um das Scannen auf einem Bucket zu deaktivieren, wählen Sie *aus*.
 
 
-| Ermöglichen Sie Mapping-Only-Scans auf einem Bucket | Klicken Sie Auf *Karte* 
-
-
-| Aktivieren vollständiger Scans auf einem Bucket | Klicken Sie Auf *Karte & Klassieren* 
-
-
-| Deaktivieren des Scans auf einem Bucket | Klicken Sie Auf *Aus* 
-|===
 
 
 .Ergebnis

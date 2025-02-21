@@ -1,0 +1,52 @@
+= Version 1.40
+:allow-uri-read: 
+
+
+
+
+=== Version 1.40
+
+Diese BlueXP -Klassifizierungsversion umfasst die folgenden Updates.
+
+.Unterstützung für RHEL 9.5
+Diese Version bietet zusätzlich zu den zuvor unterstützten Versionen Unterstützung für Red hat Enterprise Linux 9.5. Dies gilt für alle manuellen On-Premises-Installationen von BlueXP -Klassifizierungen und Dark-Site-Bereitstellungen.
+
+Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engine erforderlich, und sie erfordern eine BlueXP -Klassifizierung der Version 1.30 oder höher: Red hat Enterprise Linux der Version 8.8, 9.2, 9.0, 9.1, 8.10, 9.3, 9.4 und 9.5.
+
+.Priorisieren Sie Scans
+Beim Scannen der Konfiguration können Sie die wichtigsten Scans so priorisieren, dass sie vor anderen Scans durchgeführt werden. Diese Funktion hilft Ihnen, wenn Sie viele Arbeitsumgebungen haben und sicherstellen möchten, dass die Scans mit hoher Priorität zuerst erfolgreich durchgeführt werden.
+
+Es gibt zwei Arten von Scans:
+
+* *Nur-Mapping-Scans* bieten nur einen allgemeinen Überblick über Ihre Daten. Das Mapping kann auf Ihren Datenquellen sehr schnell durchgeführt werden, da es nicht auf Dateien zugegriffen wird, um die darin enthaltenen Daten zu sehen.
+* *Map und Klassifizieren*-Scans ermöglichen ein tiefes Scannen Ihrer Daten.
+
+
+Möglicherweise profitieren Sie davon, wenn Sie nur Mapping-Scans verwenden, um Ihre Daten schnell zu scannen, um die Datenquellen zu identifizieren, die mehr Forschung erfordern, und später Scans nur auf den erforderlichen Datenquellen oder Volumes zuordnen und klassifizieren.
+
+Die Priorität wird nur Mapping-only-Scans zugewiesen, nicht Map-Scans und Klassifikationsmessungen.
+
+Die Priorität ist standardmäßig auf 1 festgelegt, und Sie können sie auf eine beliebige Zahl zwischen 1 und 10 ändern. Je niedriger die Zahl, desto höher die Priorität. Wenn Sie keine Priorität festlegen, wird dem Scan eine Priorität von 5 zugewiesen.
+
+Gehen Sie wie folgt vor, um die Priorität zu ändern:
+
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie die Ressourcen aus, die Sie priorisieren möchten.
+. Wählen Sie aus der Option Aktionen ... die Option *Suche priorisieren*.
+
+
+.Scans wiederholen
+Mit dieser Version können Sie fehlgeschlagene Scans erneut versuchen. Diese Funktion ist nützlich, wenn Sie einen Scan haben, der aufgrund eines vorübergehenden Problems, z. B. eines Netzwerkausfalls, fehlgeschlagen ist. Sie können den Scan wiederholen, ohne ihn neu konfigurieren zu müssen.
+
+Um einen Scan erneut zu versuchen, gehen Sie wie folgt vor:
+
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Führen Sie einen der folgenden Schritte aus:
++
+** Um alle fehlgeschlagenen Scans erneut zu versuchen, wählen Sie *Alle Scans wiederholen*.
+** Um einen bestimmten Scan erneut zu versuchen, wählen Sie die Ressource aus und wählen Sie *Scan wiederholen* aus der Option Aktionen ... aus.
+
+
+
+
+Der Scanvorgang wird mit der gleichen Konfiguration wie der ursprüngliche Scan wiederholt. Wenn der Scan erneut fehlschlägt, können Sie ihn so oft wie nötig wiederholen.
