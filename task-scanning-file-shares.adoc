@@ -119,7 +119,7 @@ Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden k
 Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 .Ergebnis
-Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt. Sie können den Fortschritt der ersten Messung verfolgen, indem Sie zum Menü **Konfiguration** navigieren und dann die Konfiguration **Arbeitsumgebung** auswählen. Der Fortschritt jeder Messung wird als Fortschrittsbalken angezeigt. Sie können auch den Mauszeiger über die Fortschrittsleiste bewegen, um die Anzahl der gescannten Dateien im Verhältnis zur Gesamtzahl der Dateien im Volume anzuzeigen.
 
 
 

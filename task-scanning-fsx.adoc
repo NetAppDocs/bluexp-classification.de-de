@@ -73,7 +73,7 @@ image:screenshot_fsx_scanning_activate.png["Ein Screenshot der Registerkarte Kon
 
 
 .Ergebnis
-Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsumgebung ausgewählten Volumes. Sobald die ersten Scans durch die BlueXP-Klassifizierung abgeschlossen sind, werden die Ergebnisse im Compliance-Dashboard verfügbar sein. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen in der Arbeitsumgebung ausgewählten Volumes. Sobald die ersten Scans durch die BlueXP-Klassifizierung abgeschlossen sind, werden die Ergebnisse im Compliance-Dashboard verfügbar sein. Die Dauer, die von der Datenmenge abhängt, kann ein paar Minuten oder Stunden betragen. Sie können den Fortschritt der ersten Messung verfolgen, indem Sie zum Menü **Konfiguration** navigieren und dann die Konfiguration **Arbeitsumgebung** auswählen. Der Fortschritt jeder Messung wird als Fortschrittsbalken angezeigt. Sie können auch den Mauszeiger über die Fortschrittsleiste bewegen, um die Anzahl der gescannten Dateien im Verhältnis zur Gesamtzahl der Dateien im Volume anzuzeigen.
 
 [NOTE]
 ====

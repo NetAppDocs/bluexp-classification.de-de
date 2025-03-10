@@ -111,6 +111,6 @@ image:screenshot_compliance_select_schemas.png["Ein Screenshot der Seite Scankon
 
 
 .Ergebnis
-Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Datenbankschemas. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Datenbankschemas. Sie können den Fortschritt der ersten Messung verfolgen, indem Sie zum Menü **Konfiguration** navigieren und dann die Konfiguration **Arbeitsumgebung** auswählen. Der Fortschritt jeder Messung wird als Fortschrittsbalken angezeigt. Sie können auch den Mauszeiger über die Fortschrittsleiste bewegen, um die Anzahl der gescannten Dateien im Verhältnis zur Gesamtzahl der Dateien im Volume anzuzeigen. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
 
 Die BlueXP -Klassifizierung scannt Ihre Datenbanken einmal pro Tag, Datenbanken werden nicht wie andere Datenquellen kontinuierlich gescannt.
