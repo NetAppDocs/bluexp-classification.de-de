@@ -25,7 +25,7 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten.
 
-Wenn Sie den Inhalt der Seite nach der Verarbeitung als Bericht herunterladen möchten, klicken Sie auf die Schaltfläche image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Bericht Zur Datenuntersuchung,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
+Wenn Sie den Inhalt der Seite nach der Verfeinern als Bericht herunterladen möchten, wählen Sie die image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Bericht Zur Datenuntersuchung,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
 
 image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verfügbaren Filter, wenn die Ergebnisse auf der Untersuchungsseite verfeinert werden."]
 
@@ -33,6 +33,9 @@ image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verf�
 * Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.
 * Mit den Filtern im linken Fensterbereich können Sie die Ergebnisse verfeinern, indem Sie die in den nächsten Abschnitten beschriebenen Attribute auswählen.
 
+
+
+NOTE: Auf der Seite „Datenuntersuchung“ können Sie nur die ersten 10,000 Ergebnisse oder 500 Seiten für einen Scan anzeigen.
 
 
 
@@ -204,7 +207,7 @@ Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupli
 
 == Anzeigen von Datei-Metadaten
 
-Klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für jede einzelne Datei, um die Dateimetadaten anzuzeigen.
+Wählen Sie im Bereich Ergebnisse der Datenuntersuchung die Schaltfläche Down-Caret für eine einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen.
 
 image:screenshot_compliance_file_details.png["Ein Screenshot mit den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“."]
 
@@ -216,15 +219,15 @@ Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar si
 
 == Berechtigungen für Dateien und Verzeichnisse anzeigen
 
-Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, klicken Sie auf *Alle Berechtigungen anzeigen*. Diese Schaltfläche ist nur für Daten in CIFS-Freigaben verfügbar.
+Wenn Sie eine Liste aller Benutzer oder Gruppen anzeigen möchten, die Zugriff auf eine Datei oder ein Verzeichnis haben, wählen Sie *Alle Berechtigungen anzeigen*. Diese Schaltfläche ist nur für Daten in CIFS-Freigaben verfügbar.
 
 Wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen, sollten Sie Ihr Active Directory in die BlueXP Klassifizierung integrieren. link:task-add-active-directory-datasense.html["So geht's"].
 
 image:screenshot_compliance_permissions.png["Ein Screenshot mit detaillierten Dateiberechtigungen."]
 
-Klicken Sie auf image:button_down_caret.png["Vorsicht"] Für jede Gruppe, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.
+Wählen Sie die Schaltfläche Down-Caret image:button_down_caret.png["Vorsicht"]für jede Gruppe aus, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.
 
-Darüber Hinaus Sie können auf den Namen eines Benutzers oder einer Gruppe klicken und die Untersuchungsseite wird mit dem Namen dieses Benutzers oder dieser Gruppe angezeigt, der im Filter „Benutzer-/Gruppenberechtigungen“ ausgefüllt ist, sodass Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.
+Wenn Sie den Namen eines Benutzers oder einer Gruppe auswählen, wird die Untersuchungsseite aktualisiert, sodass Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.
 
 
 
@@ -246,9 +249,9 @@ Alle duplizierten Dateien werden auf der Ergebnisseite angezeigt.
 
 *Anzeigen, wenn eine bestimmte Datei dupliziert ist*
 
-Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, klicken Sie im Bereich „Untersuchungsergebnisse“ auf image:button_down_caret.png["Vorsicht"] Für jede einzelne Datei, um die Dateimetadaten anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.
+Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, wählen Sie im Bereich Ergebnisse der Datenuntersuchung für jede einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.
 
-Klicken Sie auf *Details anzeigen*, um die Liste der duplizierten Dateien anzuzeigen und wo sie sich befinden. Klicken Sie auf der nächsten Seite auf *Duplicates anzeigen*, um die Dateien auf der Untersuchungsseite anzuzeigen.
+Um die Liste der doppelten Dateien anzuzeigen und wo sie sich befinden, wählen Sie *Details anzeigen*. Wählen Sie auf der nächsten Seite *Duplikate anzeigen*, um die Dateien auf der Seite Untersuchung anzuzeigen.
 
 image:screenshot_compliance_duplicate_file.png["Ein Screenshot zeigt, wo sich doppelte Dateien befinden."]
 
@@ -320,8 +323,9 @@ Der *Structured Data Report* enthält die folgenden Informationen zu Ihren Daten
 
 
 .Schritte zum Generieren des Berichts
-. Klicken Sie auf der Seite „Untersuchung von Daten“ auf image:button_download.png["Schaltfläche „Download“"] Oben rechts auf der Seite klicken.
-. Wählen Sie aus, um einen CSV- oder JSON-Bericht der Daten herunterzuladen, und klicken Sie auf *Bericht herunterladen*.
+. Wählen Sie auf der Seite Datenuntersuchung die image:button_download.png["Schaltfläche „Download“"] Schaltfläche oben rechts auf der Seite aus.
+. Wählen Sie den Berichtstyp CSV oder JSON und geben Sie einen **Berichtnamen** an. Wählen Sie eine **Arbeitsumgebung** und **Volume** und geben Sie dann einen ** Zielordner-Pfad** an.
+. Wählen Sie **Bericht Herunterladen**.
 +
 image:screenshot_compliance_investigation_report2.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
 
