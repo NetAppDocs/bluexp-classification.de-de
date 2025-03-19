@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: 'Wenn Gruppen-IDs an Dateien oder Ordner in NFS-Dateifreigaben angehängt werden, definieren sie die Berechtigungen für die Datei oder den Ordner, z. B. ob sie „für die Organisation geöffnet“ sind. Wenn einige Gruppen-IDs (GIDs) zunächst nicht mit der Berechtigungsebene „für Organisation öffnen“ eingerichtet wurden, können Sie diese Berechtigung zur GID hinzufügen, sodass alle Dateien und Ordner, die mit dieser GID verknüpft sind, als „für die Organisation offen“ gelten.' 
 ---
-= Definieren Sie zusätzliche Gruppen-IDs als für die Organisation offen
+= Definieren Sie zusätzliche Gruppen-IDs, die für die Organisation in der BlueXP -Klassifizierung offen sind
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

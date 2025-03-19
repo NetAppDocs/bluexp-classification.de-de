@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning-deprecated.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen gescannt werden. Sie können die Änderungen auf „Repository“-Basis vornehmen, d. h., Sie können Änderungen für jedes Volume, jeden Bucket, jede Freigabe, jedes Schema, jeden Benutzer Usw. abhängig von der Art der Datenquelle, die Sie scannen. 
+summary: Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen gescannt werden. Sie können die Änderungen auf Repository-Basis vornehmen, d. h. Sie können je nach Art der zu scannenden Datenquelle Änderungen für jedes Volume, Bucket, jede Freigabe, jedes Schema, jeden Benutzer usw. vornehmen. 
 ---
-= Daten für ein vorhandenes Repository erneut scannen
+= Erneutes Scannen von Daten für ein vorhandenes Repository mit BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: reference-db-capabilities.html
 keywords: database actions, database filters, supported, unsupported 
 summary: Einige Funktionen sind bei der BlueXP Klassifizierung beim Scannen von Datenbankschemas nicht verfügbar. 
 ---
-= Unterstützte und nicht unterstützte Datenbankfunktionen
+= Unterstützte und nicht unterstützte Datenbankfunktionen in der BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

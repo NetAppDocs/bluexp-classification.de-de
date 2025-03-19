@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification, bluexp 
 summary: Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen in der BlueXP Klassifizierung gescannt werden. Sie können die Änderungen auf „Repository“-Basis vornehmen, d. h., Sie können Änderungen für jedes Volume, jeden Bucket, jede Freigabe, jedes Schema, jeden Benutzer Usw. abhängig von der Art der Datenquelle, die Sie scannen. 
 ---
-= Ändern Sie die Scaneinstellungen für Ihre Repositorys
+= Ändern Sie die Scaneinstellungen für die BlueXP -Klassifizierung für Ihre Repositorys
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

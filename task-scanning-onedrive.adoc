@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit der BlueXP Klassifizierung von Dateien in den OneDrive Ordnern eines Benutzers zu scannen. 
 ---
-= Scannen Sie OneDrive-Konten
+= Scannen Sie OneDrive-Konten mit BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

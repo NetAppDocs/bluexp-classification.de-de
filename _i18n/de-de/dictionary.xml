@@ -510,7 +510,6 @@
   <block id="5b9fb0ae0b4de0994505f2df03117498" category="paragraph"><block ref="5b9fb0ae0b4de0994505f2df03117498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8afeb311b4ff23155bae9b80ec79273f" category="list-text">Sie können das langsame Scannen deaktivieren, indem Sie in dieser Meldung auf *Deaktivieren* klicken.</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">Wenn Sie eine Aktion aus dem Bereich „Untersuchungsergebnisse“ über viele Dateien ausführen, z. B. das Löschen von 100 Dateien, kann der Prozess einige Zeit in Anspruch nehmen. Sie können den Status dieser asynchronen Aktionen im Fensterbereich „Aktionsstatus“ überwachen, sodass Sie wissen, wann sie auf alle Dateien angewendet wurden.</block>
-  <block id="43ed2558da29e111d7b394e516d927d4" category="doc">Anzeigen des Status Ihrer Compliance-Aktionen</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">Der Status kann lauten:</block>
   <block id="5cbd1d911aa6ea79882837fdb136a33c" category="paragraph">Beachten Sie, dass Sie alle Aktionen mit dem Status „in Bearbeitung“ oder „in Bearbeitung“ abbrechen können.</block>
   <block id="b39cf2037c78736a4277e9a0bce85338" category="list-text">Klicken Sie auf diese Schaltfläche, und die letzten 20 Aktionen werden aufgelistet.</block>
@@ -2402,7 +2401,6 @@
   <block id="c28fe179e2385f26eb310f2d32183eea" category="list-text">Ab der BlueXP Klassifizierungsversion 1.24 können Sie Upgrades auf jede beliebige zukünftige Softwareversion durchführen.</block>
   <block id="6d1c16ac15ccc187094a216f48771131" category="paragraph">Wenn Ihre BlueXP Klassifizierungssoftware eine Version vor 1.24 verwendet, können Sie jeweils nur eine Hauptversion aktualisieren. Wenn Sie beispielsweise Version 1.21.x installiert haben, können Sie nur auf 1.22.x aktualisieren Wenn Sie einige Hauptversionen hinter sich haben, müssen Sie die Software mehrmals aktualisieren.</block>
   <block id="f02bee48d510d4c39a70c57e295d5f38" category="summary">Einige Funktionen sind bei der BlueXP Klassifizierung beim Scannen von Datenbankschemas nicht verfügbar.</block>
-  <block id="7aa098aa616e23b53a2f4243de4e4a07" category="doc">Unterstützte und nicht unterstützte Datenbankfunktionen</block>
   <block id="f0061c0ade9d240d09f9bbadc2b27aa3" category="paragraph">Einige Funktionen sind bei der BlueXP Klassifizierung beim Scannen von Datenbankschemas nicht verfügbar. Siehe Liste unten.</block>
   <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">Wie hier beschrieben</block>
   <block id="f408878c9c22bd52607fe08b497546a4" category="paragraph">Sie können Ihre Datenbankschemas zur BlueXP Klassifizierung hinzufügen, um sie zu scannen <block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block>.</block>
@@ -2505,8 +2503,6 @@
   <block id="0ac331cece7c559ed07957dfa637e510" category="paragraph">Wir erstellen die Kopieraktion:</block>
   <block id="8ad0c8a225121bfff89f847893f0d610" category="paragraph">Diese nächste API ist die AktionAPI, und es ermöglicht Ihnen, mehrere Aktionen zu erstellen.</block>
   <block id="87d1cd52d2ec66c4978b4d90f9069a04" category="paragraph">Die Antwort gibt das Aktionsobjekt zurück, sodass Sie mit den APIs get and delete den Status der Aktion abrufen oder abbrechen können.</block>
-  <block id="fda538fb93989725ef231d5f156d3ee9" category="summary">Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen gescannt werden. Sie können die Änderungen auf „Repository“-Basis vornehmen, d. h., Sie können Änderungen für jedes Volume, jeden Bucket, jede Freigabe, jedes Schema, jeden Benutzer Usw. abhängig von der Art der Datenquelle, die Sie scannen.</block>
-  <block id="43ec96609274e10e69e4ef1f50473aba" category="doc">Ändern Sie die Scaneinstellungen für Ihre Repositorys</block>
   <block id="926f6a4e85f1593fffa7270c143e3ddb" category="paragraph">Sie können sich unter anderem ändern, ob ein Repository gescannt wird oder nicht, und ob die BlueXP Klassifizierung eine ausführt <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>. Sie können den Scanvorgang auch anhalten und fortsetzen, beispielsweise, wenn Sie das Scannen eines Volumens für einen bestimmten Zeitraum beenden müssen.</block>
   <block id="5c7952df3d9c0233217acae5c6f1153d" category="list-text">Auf der Seite Scankonfiguration können Sie jedes der Repositories (in diesem Beispiel Buckets) so ändern, dass *Map* oder *Map &amp; Classify* Scans durchgeführt werden.</block>
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">Sie können das Scannen eines Repositorys (z. B. eines Volumes) beenden, wenn Sie es nicht mehr auf Compliance-Anforderungen überwachen müssen. Dazu schalten Sie das Scannen aus. Wenn der Scanvorgang deaktiviert ist, werden alle Indexierungen und Informationen zu diesem Volumen aus dem System entfernt, und der Ladevorgang zum Scannen der Daten wird angehalten.</block>
@@ -2612,7 +2608,6 @@
   <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">Wie wird auf die Daten zugegriffen?</block>
   <block id="9e52028c48600512f13df2884f1ec709" category="paragraph">Die BlueXP Klassifizierung greift über API-Aufrufe, die eine Authentifizierung erfordern und mit AES-128 verschlüsselt sind, auf in Elasticsearch gespeicherte Daten zu. Für den direkten Zugriff auf Elasticsearch ist Root-Zugriff erforderlich.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp verwendet Microsoft Entra ID als Identitätsanbieter für Authentifizierungsservices, die speziell auf Support und Lizenzierung zugeschnitten sind.</block>
-  <block id="b97835ec7267635dbdb6a030bb594b9b" category="doc">Zeigen Sie Governance-Details zu den in Ihrer Organisation gespeicherten Daten an</block>
   <block id="137856a117db72a4c07a63ed4622372f" category="section-title">Speichern Sie Opportunitys</block>
   <block id="747fb24cd2b94a7b0fc7076c4af2f2c2" category="paragraph">Siehe <block ref="3648d3c4c92bd601fe477d66a90a40cd" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
   <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">Siehe <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
@@ -2661,7 +2656,6 @@
   <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">Quelldateien manuell löschen</block>
   <block id="a83bc0aa2bd876d7cc5a350879bd008c" category="section-title">Greifen Sie auf die Protokolldateien zu</block>
   <block id="ed6f72ce35fa37960b096efc305078ca" category="paragraph">Die Scan-Ergebnisse werden in Elasticsearch innerhalb der BlueXP Klassifizierungsinstanz gespeichert.</block>
-  <block id="07b74cfb8b148331baaaa74d89dd4cec" category="doc">Anzeigen von Compliance-Berichten</block>
   <block id="8932e9435ce03fbb7ecf0b2f738ce66a" category="paragraph">Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <block ref="200c05d79644e6ad09afbf686b752513" category="inline-xref-macro-rx"></block>.</block>
   <block id="8fe6204e46726000832b41b57a8682fa" category="section-title">Erstellen Sie den Bericht zur Risikoanalyse für den Datenschutz</block>
   <block id="a278deb1b004bff80e79de1e339663d8" category="section-title">Erstellen Sie den PCI DSS-Bericht</block>
@@ -2686,7 +2680,6 @@
   <block id="1a24f136700e7d996dbc845dbf267e7f" category="paragraph">In der Vergangenheit können Sie durch die BlueXP Klassifizierung maximal 100,000 Quelldateien auf eine beliebige NFS-Freigabe verschieben. Sie können jetzt bis zu 15 Millionen Dateien gleichzeitig verschieben.<block ref="51df0b03dbf1aa6425434a76a39934ae" category="inline-link-rx"></block>.</block>
   <block id="e8c2efb8e9d3b045395cb04412e0a901" category="paragraph"><block ref="3cbb63227aae75adda769f4ce4856356" category="inline-link-rx"></block>.</block>
   <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">Zeigen Sie die Ergebnisse der Richtlinie auf der Seite Untersuchung an</block>
-  <block id="d78b3e7832ff9a2bb5655d9088bc9162" category="section-title">Senden Sie E-Mail-Warnungen, wenn nicht konforme Daten gefunden werden</block>
   <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">Richtlinien Bearbeiten</block>
   <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">Richtlinien Löschen</block>
   <block id="ea8e3558520841b9ad476460d59b798b" category="doc">Ergänzen Sie Ihre BlueXP Klassifizierungs-Scans um persönliche Daten-IDs</block>
@@ -2696,7 +2689,6 @@
   <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">Ändern Sie den Typ der Suche nach einem Repository</block>
   <block id="74a477b7e0bb4c7103127e1c4536e606" category="section-title">Beenden Sie die Suche nach einem Repository</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">Halten Sie die Suche nach einem Repository an und setzen Sie sie fort</block>
-  <block id="86e9fad25d6f638eb7f7e437763b425e" category="section-title">Daten für ein vorhandenes Repository erneut scannen</block>
   <block id="e3a146b1e8e087acabb6e5959293dcd8" category="sidebar">Die BlueXP Klassifizierung (Cloud Data Sense) ermöglicht Ihnen das Scannen und Klassifizieren von Daten in der gesamten Hybrid-Multi-Cloud Ihres Unternehmens. Die BlueXP Klassifizierung nutzt KI-gestützte Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) für die kontextbezogene Datenanalyse und -Kategorisierung. Sie bietet Ihnen so verwertbare Einblicke in Ihre Daten, um Compliance-Anforderungen zu erfüllen, Sicherheitslücken zu erkennen, Kosten zu optimieren und die Migration zu beschleunigen.</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">Was ist neu</block>
   <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">BlueXP Klassifizierung auf einem Linux-Host mit Internet installieren</block>
@@ -2771,7 +2763,6 @@
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Jetzt können Sie Scandaten ausschließen, die sich in bestimmten Datenquellen-Verzeichnissen befinden</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Wenn die BlueXP Klassifizierung Scandaten in bestimmten Quellverzeichnissen ausschließen soll, können Sie diese Verzeichnisnamen zu einer Konfigurationsdatei hinzufügen, die durch die BlueXP Klassifizierung verarbeitet wird. Mit dieser Funktion können Sie verhindern, dass Verzeichnisse gescannt werden, die unnötig sind oder zu falsch positiven Ergebnissen von persönlichen Daten führen würden.</block>
   <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
-  <block id="a1663078538acf931413c4667ee4dc32" category="doc">Definieren Sie zusätzliche Gruppen-IDs als für die Organisation offen</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">Die aktuelle Liste der Gruppen-IDs anzeigen</block>
   <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">Erstellen Sie Richtlinien, um die Ergebnisse Ihrer Top-Suchen anzuzeigen</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">Verzeichnisse vom Scannen ausschließen</block>
@@ -2944,12 +2935,10 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
   <block id="6848f77eb8f7353d0c3236059ebaaf21" category="inline-image-macro">Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird. Die BlueXP Klassifizierungs-Instanz ist mit NFS- und CIFS-Volumes und Datenbanken verbunden, um sie zu scannen.</block>
   <block id="f31407ab57663d0b8405a252cf603c20" category="paragraph"><block ref="f31407ab57663d0b8405a252cf603c20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b40a529e19b349b56269e632043e4fe8" category="paragraph">Sie können Scans auf Volume-Ebene oder auf Datenbankschemaebene aktivieren und deaktivieren.</block>
-  <block id="493287f21a2aa7f90cebc83c869352a4" category="doc">Untersuchen Sie die auf der Seite „Datenermittlung“ gespeicherten Daten</block>
   <block id="df49368049d4a11c63d1acd4766aae12" category="paragraph">Verwenden Sie die folgenden Filter, um Daten nach Tags, AIP-Etiketten, zugewiesenen Benutzern oder Richtlinien anzuzeigen.</block>
   <block id="3bebc15b7ececd939dbb2e1037e2bd21" category="paragraph">*HINWEIS* die Möglichkeit, nach Tags, Labels und zugewiesenen Benutzern zu filtern, ist nur für die BlueXP-Klassifizierungsversionen 1.30 und früher relevant.</block>
   <block id="f14bc34b4556666076ab4085c418beac" category="section-title">Erstellen Sie den Datenermittlungsbericht</block>
   <block id="895e384b0c43f21c0943fc3c1bf729a0" category="paragraph">*HINWEIS* die Möglichkeit, den Bericht in zu generieren. Das JSON-Format ist nur für die BlueXP Klassifizierungsversionen 1.30 und früher relevant.</block>
-  <block id="c5ba748f583fe4223c75a9034de9dce2" category="doc">Zeigen Sie Governance-Details zu Ihren Daten über das Governance-Dashboard an</block>
   <block id="adcf97e371b51b3ef5db6975bde3d5f6" category="section-title">Daten, die im Governance-Dashboard nach Sensitivität und weiten Berechtigungen aufgelistet sind</block>
   <block id="c931a13b5b1b3b46f4605e5202c47eb9" category="paragraph">Der Bereich _sensible Daten und weite Berechtigungen_ auf dem Governance-Dashboard bietet eine Heatmap von Dateien, die sensible Daten (einschließlich sensibler und sensibler personenbezogener Daten) enthalten und übermäßig permissiv sind. So erkennen Sie, wo Sie möglicherweise Risiken mit sensiblen Daten haben.</block>
   <block id="b532da7497718d74daf0199075ee34b0" category="admonition">Dies gilt für die BlueXP Klassifizierungsversionen 1.30 und früher.</block>
@@ -3102,7 +3091,6 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
   <block id="f614278f8ed5632a7d1b8328e4f9380e" category="list-text">*Sexualleben oder Orientierungsreferenz*: Daten über das Sexualleben oder die sexuelle Orientierung einer natürlichen Person.</block>
   <block id="374b37a5e415f7edd5cf6f52521389b8" category="list-text">Breadcrumbs aus der BlueXP Klassifizierung
 Daten Von Business-Applikationen</block>
-  <block id="1903cd6e75503b7859268e96d356ea13" category="doc">Zeigen Sie Compliance-Details zu den in Ihrem Unternehmen gespeicherten privaten Daten an</block>
   <block id="aa7740206cc512120060a1c060de9543" category="paragraph">Verschaffen Sie sich die Kontrolle über Ihre privaten Daten, indem Sie Details zu den persönlichen Daten (PII) und sensiblen persönlichen Daten (SPii) in Ihrem Unternehmen einsehen. Zusätzlich können Sie sich Sichtbarkeit verschaffen, indem Sie die Kategorien und Dateitypen überprüfen, die in Ihren Daten für die BlueXP Klassifizierung gefunden wurden.</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">Ubuntu unterstützt</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">Diese Version unterstützt die Ubuntu 24.04 Linux-Plattform.</block>
@@ -3412,4 +3400,29 @@ Daten Von Business-Applikationen</block>
   <block id="9dbaf2723509754918929e09594f8800" category="list-text">Wählen Sie auf der Seite Datenuntersuchung die <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> Schaltfläche oben rechts auf der Seite aus.</block>
   <block id="c290efd7814d022961f943c1af408a6f" category="list-text">Wählen Sie den Berichtstyp CSV oder JSON und geben Sie einen **Berichtnamen** an. Wählen Sie eine **Arbeitsumgebung** und **Volume** und geben Sie dann einen ** Zielordner-Pfad** an.</block>
   <block id="8c574751ceb947fcd2a71198a9109d98" category="list-text">Wählen Sie **Bericht Herunterladen**.</block>
+  <block id="ac388a00980404a1045abf70041973da" category="doc">Metadaten, die aus Datenquellen in BlueXP -Klassifizierung erfasst wurden</block>
+  <block id="ded3f24219262642ca838641453e4d1b" category="doc">Unterstützte und nicht unterstützte Datenbankfunktionen in der BlueXP -Klassifizierung</block>
+  <block id="1c7cd9818fa418a74067072fbf72688f" category="doc">Bekannte Einschränkungen in der BlueXP -Klassifizierung</block>
+  <block id="05dfdacc680b9436fb78de4fb656af88" category="doc">Kategorien von privaten Daten in BlueXP -Klassifizierung</block>
+  <block id="e8a464a220840b352197594e04661f3e" category="doc">Definieren Sie zusätzliche Gruppen-IDs, die für die Organisation in der BlueXP -Klassifizierung offen sind</block>
+  <block id="b5ec1360131f1e423a75324d0efc44f0" category="doc">Mit dem BlueXP  Classification Governance Dashboard können Sie Governance-Details zu Ihren Daten anzeigen</block>
+  <block id="76ef2414276f8879430858a21291789c" category="doc">Anzeigen von Governance-Details zu den in Ihrem Unternehmen mit BlueXP -Klassifizierung gespeicherten Daten</block>
+  <block id="511cd9560854198c9959a180d13c7867" category="doc">Anzeigen von Compliance-Details zu den in Ihrem Unternehmen mit BlueXP  Klassifizierung gespeicherten privaten Daten</block>
+  <block id="b5d93be173a184a4fb6db8a39efd574d" category="doc">Anzeigen von Compliance-Berichten zur BlueXP -Klassifizierung</block>
+  <block id="85d2f6a5391a9076821c031dc32f719c" category="doc">Hilfe zur BlueXP -Klassifizierung</block>
+  <block id="bc4afc67652efc7bb46ea216ef816335" category="doc">Untersuchen Sie die Daten, die auf der Seite BlueXP  Classification Data Investigation gespeichert sind</block>
+  <block id="6b41c846432704bbeebdc71cd92e0ac2" category="doc">Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten mit der BlueXP -Klassifizierung</block>
+  <block id="26518067b705171b7a519040ef4d3e8d" category="doc">Management privater Daten mit BlueXP -Klassifizierung</block>
+  <block id="f9a1c072a8a2ed1caed0ec764af24540" category="summary">Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen gescannt werden. Sie können die Änderungen auf Repository-Basis vornehmen, d. h. Sie können je nach Art der zu scannenden Datenquelle Änderungen für jedes Volume, Bucket, jede Freigabe, jedes Schema, jeden Benutzer usw. vornehmen.</block>
+  <block id="a57cc3ea6135535b80c7952038f60bd1" category="doc">Erneutes Scannen von Daten für ein vorhandenes Repository mit BlueXP -Klassifizierung</block>
+  <block id="183d7397a151f6a26c073f1c6074c9ee" category="doc">Ändern Sie die Scaneinstellungen für die BlueXP -Klassifizierung für Ihre Repositorys</block>
+  <block id="c1d1bad1e287161eaa040e61fdc83bf4" category="doc">Private Daten mit BlueXP -Klassifizierung ordnen und</block>
+  <block id="6a518a4dfd914c13784b960912600ad9" category="doc">Scannen Sie Google-Drive-Konten mit BlueXP -Klassifizierung</block>
+  <block id="2dbd2a514d84b364607087d77e299402" category="doc">Scannen Sie OneDrive-Konten mit BlueXP -Klassifizierung</block>
+  <block id="87df97a3437e4de140c071b1660bff5f" category="doc">Scannen von Amazon S3 Buckets mit BlueXP -Klassifizierung</block>
+  <block id="6915401740d9460ed0e142b3fd0b402c" category="doc">Scannen Sie SharePoint-Konten mit BlueXP -Klassifizierung</block>
+  <block id="df3ac8bd169a771ea350cd5cc533e873" category="doc">Melden Sie sich an, um BlueXP  Support zu erhalten</block>
+  <block id="c0a6118312ef4878e08365a032d30e38" category="doc">Senden Sie E-Mail-Benachrichtigungen, wenn nach der BlueXP -Klassifizierung nicht konforme Daten gefunden werden</block>
+  <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">Weisen Sie Ihren Daten Richtlinien mit BlueXP -Klassifizierung zu</block>
+  <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">Anzeigen des Status Ihrer Compliance-Aktionen in der BlueXP -Klassifizierung</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: task-view-compliance-actions.html
 keywords: compliance, actions, view progress 
 summary: Wenn Sie eine Aktion aus dem Bereich „Untersuchungsergebnisse“ über viele Dateien ausführen, z. B. das Löschen von 100 Dateien, kann der Prozess einige Zeit in Anspruch nehmen. Sie können den Status dieser asynchronen Aktionen im Fensterbereich „Aktionsstatus“ überwachen, sodass Sie wissen, wann sie auf alle Dateien angewendet wurden. 
 ---
-= Anzeigen des Status Ihrer Compliance-Aktionen
+= Anzeigen des Status Ihrer Compliance-Aktionen in der BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

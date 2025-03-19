@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
 ---
-= Weisen Sie Daten Richtlinien zu
+= Weisen Sie Ihren Daten Richtlinien mit BlueXP -Klassifizierung zu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

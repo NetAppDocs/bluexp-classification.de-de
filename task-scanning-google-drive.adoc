@@ -4,7 +4,7 @@ permalink: task-scanning-google-drive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
 summary: Führen Sie ein paar Schritte durch, um mit dem Scannen von Benutzerdateien in Ihren Google-Laufwerkskonten mit BlueXP Klassifizierung zu beginnen. 
 ---
-= Scannen Sie Google Drive-Konten
+= Scannen Sie Google-Drive-Konten mit BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

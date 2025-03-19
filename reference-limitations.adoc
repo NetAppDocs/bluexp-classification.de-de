@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, data sense, classification, bluexp, scan shares 
 summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
-= Bekannte Einschränkungen
+= Bekannte Einschränkungen in der BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
