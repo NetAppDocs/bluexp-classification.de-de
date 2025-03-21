@@ -2808,7 +2808,6 @@
   <block id="e733fac5486f188071518c3c8ce9b02a" category="cell">Weisen Sie den Benutzern Dateien zu</block>
   <block id="6505506a35d1d959ffb20a74a4238de6" category="cell">Daten nach Bedarf erneut scannen</block>
   <block id="5f571f0f56802124061d64f7f5dac503" category="cell">Erstellen Sie benutzerdefinierte Klassifikatoren</block>
-  <block id="46771ec1582c3b0b4aebfc19d6356451" category="cell">Daten aus der Untersuchung in NFS exportieren</block>
   <block id="5b161cf169bcf6263a5f04b0a0b391d6" category="cell">Unterstützung mehrerer Scanner</block>
   <block id="8c141aa1a70ce21adac81217b9589d0d" category="cell">Verwenden Sie die Berechtigungsanalyse und Filter</block>
   <block id="dc9ece481b86d8d5c76d638da3baebab" category="cell">Verwenden Sie die Speicherkarte</block>
@@ -3441,4 +3440,5 @@ Daten Von Business-Applikationen</block>
   <block id="ca304384fad03eae82a8e99a165128d0" category="section-title">Überprüfen Sie die am häufigsten identifizierten Dateitypen</block>
   <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">Wählen Sie im Dashboard „Governance“ &gt; „Klassifizierung“ &gt; „Dateitypen“ im Dashboard „Governance“ im Bereich „Dateitypen“ des Dashboards „Governance“ Details zu einem Dateityp aus. Die Seite Untersuchung enthält Daten, die nur für diesen Dateityp gefiltert werden.</block>
   <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">Um alle Dateitypen anzuzeigen, wählen Sie *Alle anzeigen*.</block>
+  <block id="93a41f9744586b4edf90898527b71531" category="cell">Exportieren von Daten aus der Untersuchung in NFS/CIFS</block>
 </blocks>

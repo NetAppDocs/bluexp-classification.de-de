@@ -130,7 +130,7 @@ Es gibt einige Funktionen, die in der BlueXP Kernversion ab Version 1.31 veralte
 | Suche nach Namen in Dateien | Ja. | Ja. 
 
 
-| Daten aus der Untersuchung in NFS exportieren | Ja. | Nein 
+| Exportieren von Daten aus der Untersuchung in NFS/CIFS | Ja. | Ja. 
 
 
 | Daten aus der Untersuchung in CSV exportieren | Ja. | Ja. 
