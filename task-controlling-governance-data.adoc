@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten. 
 ---
 = Anzeigen von Governance-Details zu den in Ihrem Unternehmen mit BlueXP -Klassifizierung gespeicherten Daten
@@ -20,121 +20,106 @@ Wenn Sie zudem Daten von lokalen Speicherorten in die Cloud migrieren möchten, 
 
 
 
-== Dashboard für Governance
+== Überprüfen Sie das Dashboard „Governance“
 
 Das Governance-Dashboard liefert Informationen, mit denen Sie die Effizienz steigern und die Kosten für die in Ihren Storage-Ressourcen gespeicherten Daten kontrollieren können.
 
 image:screenshot_compliance_governance_dashboard.png["Ein Screenshot des BlueXP Klassifizierungs-Governance-Dashboards."]
 
-
-
-=== Speichern Sie Opportunitys
-
-Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten. Klicken Sie auf die einzelnen Elemente, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen.
-
-* *Veraltete Daten* - Daten die zuletzt vor über 3 Jahren geändert wurden.
-* *Nicht-Geschäftsdaten* - Daten, die aufgrund ihrer Kategorie oder ihres Dateityps als nicht geschäftsbezogen gelten. Hierzu zählen folgende Optionen:
+.Schritte
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Governance*.
 +
-** Applikationsdaten
-** Audio
-** Ausführbare Dateien
-** Bilder
-** Protokolle
-** Videos
-** Sonstiges (allgemeine Kategorie „Sonstige“)
-
-
-* *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#filter-data-by-duplicates["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
+Das Dashboard „Governance“ wird angezeigt.
 
 
 
-NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, werden alte Daten, die sich bereits im Objektspeicher befinden, möglicherweise in der Kategorie „veraltete Daten“ identifiziert.
+
+
+=== Prüfen Sie die Einsparmöglichkeiten
+
+Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten.
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie in jeder Kachel „Einsparungsmöglichkeiten“ des Governance-Dashboards *Speicher optimieren* aus, um die gefilterten Ergebnisse auf der Seite „Untersuchung“ anzuzeigen.
++
+** *Veraltete Daten* - Daten die zuletzt vor über 3 Jahren geändert wurden.
+** *Nicht-Geschäftsdaten* - Daten, die aufgrund ihrer Kategorie oder ihres Dateityps als nicht geschäftsbezogen gelten. Hierzu zählen folgende Optionen:
++
+*** Applikationsdaten
+*** Audio
+*** Ausführbare Dateien
+*** Bilder
+*** Protokolle
+*** Videos
+*** Sonstiges (allgemeine Kategorie „Sonstige“)
+
+
+** *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#filter-data-by-duplicates["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
 
 
 
-=== Politik mit der größten Anzahl von Ergebnissen
 
-Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt. Klicken Sie auf den Namen einer Richtlinie, um die Ergebnisse auf der Untersuchungsseite anzuzeigen. Klicken Sie auf *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.
 
-Klicken Sie Auf link:task-using-policies.html["Hier"] Um mehr über Richtlinien zu erfahren.
+NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können alte Daten, die sich bereits im Objekt-Storage befinden, in der Kategorie „veraltete Daten“ identifiziert werden.
 
 
 
-=== Datenüberblick
+=== Überprüfen Sie die Richtlinien mit der größten Anzahl von Ergebnissen
 
-Der Abschnitt _Data Overview_ bietet einen schnellen Überblick über alle zu scannenden Daten. Klicken Sie auf die Schaltfläche, um einen vollständigen Bericht zur Datenzuordnung herunterzuladen, der Nutzungskapazität, Alter der Daten, Datengröße und Dateitypen für alle Arbeitsumgebungen und Datenquellen enthält. Siehe <<Datenzuordnungsbericht,Datenzuordnungsbericht>> Alle Details zu diesem Bericht.
+Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt.
 
-
-
-=== Die wichtigsten Daten-Repositorys, die nach Sensibilität aufgeführt sind
-
-Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgeführt, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
-
-* Nicht-sensible Daten
-* Persönliche Daten
-* Sensible personenbezogene Daten
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie im Dashboard „Verwaltung“ > auf der Kachel „Richtlinien“ den Namen einer Richtlinie im aus, um die Ergebnisse auf der Seite „Untersuchung“ anzuzeigen.
+. Wählen Sie *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen.
 
 
-Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen.
-
-Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.
+Weitere Informationen zu Richtlinien finden Sie unter link:task-using-policies.html["Weisen Sie Daten Richtlinien zu"].
 
 
 
-=== Daten, die nach Typen der offenen Berechtigungen aufgeführt sind
+== Erstellen Sie den Data Discovery Assessment Report
 
-Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
+Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:
 
-* Keine Offenen Berechtigungen
-* Steht Unternehmen offen
-* Öffentlich zugänglich
-* Unbekannter Zugriff
-
-
-Sie können den Cursor über jeden Abschnitt bewegen, um die Gesamtanzahl der Dateien in jeder Kategorie anzuzeigen. Klicken Sie auf die einzelnen Bereiche, um die gefilterten Ergebnisse auf der Untersuchungsseite anzuzeigen, damit Sie weitere Untersuchungen machen können.
+[cols="25,65"]
+|===
+| Merkmal | Beschreibung 
 
 
-
-=== Alter der Daten und Größe der Diagramme
-
-Möglicherweise möchten Sie die Elemente in den Diagrammen _Age_ und _Size_ untersuchen, um zu sehen, ob Daten gelöscht oder in kostengünstigeren Objektspeicher verschoben werden sollten.
-
-Sie können den Cursor auf einen Punkt in den Diagrammen setzen, um Details über das Alter oder die Größe der Daten in dieser Kategorie anzuzeigen. Klicken Sie hier, um alle Dateien anzuzeigen, die nach diesem Alter oder Größenbereich gefiltert sind.
-
-* *Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.
-* *Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.
+| Bedenken hinsichtlich der Daten-Governance | Ein detaillierter Überblick über alle Daten, die Sie besitzen, und Bereiche, in denen Sie die Datenmenge möglicherweise reduzieren und Kosten einsparen können. 
 
 
-
-NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagramm „_Age of Data“ alte Daten, die sich bereits im Objektspeicher befinden, identifiziert werden.
-
+| Risiken im Hinblick auf die Datensicherheit | Bereiche, in denen Daten aufgrund umfassender Zugriffsberechtigungen für interne oder externe Angriffe verfügbar sind. 
 
 
-=== Die meisten ermittelten Datenklassifizierungen
+| Lücken in der Daten-Compliance | Ihre personenbezogenen oder sensiblen personenbezogenen Daten sind sowohl aus Sicherheitsgründen als auch für DSLR-Zwecke (Zugriffsanfragen von Betroffenen) gespeichert. 
+|===
+Mit diesem Bericht können Sie folgende Maßnahmen ergreifen:
 
-Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^] Und link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^] In den gescannten Daten.
+* Senkung der Storage-Kosten durch Ändern der Aufbewahrungsrichtlinie oder durch Verschieben oder Löschen bestimmter Daten (veraltete, doppelte oder nicht geschäftsfremde Daten)
+* Schützen Sie Ihre berechtigen Daten durch eine Überarbeitung der globalen Richtlinien für das Gruppenmanagement.
+* Schützen Sie Ihre persönlichen oder sensiblen Daten, indem Sie personenbezogene Daten in sicherere Datenspeicher verlagern.
+
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie im Bereich Governance Dashboard > Data Overview die Schaltfläche *Data Discovery Assessment Report* aus.
++
+image:screenshot-compliance-report-buttons.png["Ein Screenshot des Governance Dashboards zeigt, wie der Data Discovery Assessment Report gestartet wird."]
 
 
 
-==== Kategorien
-
-Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.
-
-Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
+.Ergebnis
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
 
 
-==== Dateitypen
+== Erstellen Sie den Übersichtsbericht zur Datenzuordnung
 
-Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind.
-
-Siehe link:task-controlling-private-data.html#view-files-by-file-types["Anzeigen von Dateitypen"^] Finden Sie weitere Informationen.
-
-
-
-== Datenzuordnungsbericht
-
-Der Daten-Mapping-Bericht bietet einen Überblick über die Daten, die in Ihren Datenquellen gespeichert werden, um Sie bei Entscheidungen zu Migrations-, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und liefert dann eine Analyse für jede Arbeitsumgebung.
+Der Data Mapping Overview Report bietet einen Überblick über die Daten, die in Ihren Unternehmensdatenquellen gespeichert werden, um Sie bei Entscheidungen über Migration, Backup, Sicherheit und Compliance-Prozesse zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und liefert dann eine Analyse für jede Arbeitsumgebung.
 
 Der Bericht enthält die folgenden Informationen:
 
@@ -154,18 +139,13 @@ Der Bericht enthält die folgenden Informationen:
 
 | Dateitypen | Listet die Gesamtzahl der Dateien und die genutzte Kapazität für jeden Dateityp auf, der in Ihren Arbeitsumgebungen gespeichert ist. 
 |===
-
-
-=== Generieren Sie den Bericht zur Datenzuordnung
-
-Sie generieren diesen Bericht über die Registerkarte Governance in der BlueXP Klassifizierung.
-
 .Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Mapping Report*.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie im Bereich Governance-Dashboard > Datenübersicht die Schaltfläche *Full Data Mapping Overview Report* aus.
 +
-image:screenshot_compliance_data_mapping_report_button.png["Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird."]
+image:screenshot-compliance-report-buttons.png["Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird."]
 
+. Um den Unternehmensnamen anzupassen, der auf der ersten Seite des Berichts angezeigt wird, wählen Sie oben auf der Seite „BlueXP -Klassifizierungimage:screenshot_gallery_options.gif["Die Schaltfläche Mehr"]“ die Option . Wählen Sie dann *Firmennamen ändern*. Wenn Sie den Bericht das nächste Mal erstellen, wird er den neuen Namen enthalten.
 
 
 .Ergebnis
@@ -173,47 +153,107 @@ Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prü
 
 Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-files["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
 
-Beachten Sie, dass Sie den Unternehmensnamen, der auf der ersten Seite des Berichts angezeigt wird, oben auf der BlueXP Klassifizierungsseite anpassen können, indem Sie auf klicken image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"] Und dann auf *Firmenname ändern* klicken. Wenn Sie den Bericht das nächste Mal generieren, wird er den neuen Namen enthalten.
 
 
+== Prüfen Sie die wichtigsten Daten-Repositorys nach Datensensibilität
 
-== Data Discovery Assessment-Bericht
+Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgeführt, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
 
-Der Data Discovery Assessment Report bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen. Die Ergebnisse basieren sowohl auf der Zuordnung als auch auf der Klassifizierung Ihrer Daten. Mit diesem Bericht soll das Bewusstsein für drei wesentliche Aspekte Ihres Datensatzes gestärkt werden:
+* Nicht-sensible Daten
+* Persönliche Daten
+* Sensible personenbezogene Daten
 
-[cols="25,65"]
-|===
-| Merkmal | Beschreibung 
-
-
-| Bedenken hinsichtlich der Daten-Governance | Ein detaillierter Überblick über alle Daten, die Sie besitzen, und Bereiche, in denen Sie die Datenmenge möglicherweise reduzieren und Kosten einsparen können. 
-
-
-| Risiken im Hinblick auf die Datensicherheit | Bereiche, in denen Daten aufgrund umfassender Zugriffsberechtigungen für interne oder externe Angriffe verfügbar sind. 
-
-
-| Lücken in der Daten-Compliance | Ihre personenbezogenen oder sensiblen personenbezogenen Daten sind sowohl aus Sicherheitsgründen als auch für DSLR-Zwecke (Zugriffsanfragen von Betroffenen) gespeichert. 
-|===
-Nach der Bewertung enthält dieser Bericht Bereiche, in denen Sie:
-
-* Senkung der Storage-Kosten durch Ändern der Aufbewahrungsrichtlinie oder durch Verschieben oder Löschen bestimmter Daten (veraltete, doppelte oder nicht geschäftsfremde Daten)
-* Schützen Sie Ihre berechtigen Daten durch eine Überarbeitung der globalen Richtlinien für das Gruppenmanagement
-* Schützen Sie Ihre persönlichen oder sensiblen Daten, indem Sie personenbezogene Daten in sicherere Datenspeicher verlagern
-
-
-
-
-=== Generieren Sie den Data Discovery Assessment Report
-
-Sie generieren diesen Bericht über die Registerkarte Governance in der BlueXP Klassifizierung.
 
 .Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Discovery Assessment Report*.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Um die Gesamtanzahl der Elemente in den einzelnen Kategorien anzuzeigen, setzen Sie den Mauszeiger im Dashboard „Governance“ > „Datenübersicht“ über jeden Abschnitt der Leiste.
+. Um die Ergebnisse zu filtern, die auf der Untersuchungsseite angezeigt werden, wählen Sie die einzelnen Bereiche der Leiste aus, und untersuchen Sie die Ergebnisse weiter.
+
+
+
+
+== Überprüfung sensibler Daten und breiter Berechtigungen
+
+Der Bereich „_sensible Daten“ und „ Wide Permissions_“ zeigt den Prozentsatz der Dateien an, die sensible Daten enthalten und über umfassende Berechtigungen verfügen. Das Diagramm zeigt die folgenden Berechtigungstypen:
+
+* Von den restriktiven Genehmigungen zu den freizügigsten Beschränkungen auf dem horizontalen Axix.
+* Von den empfindlichsten Daten bis zu den sensibelsten Daten auf der vertikalen Achse.
+
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Um die Gesamtanzahl der Dateien in den einzelnen Kategorien anzuzeigen, bewegen Sie den Mauszeiger im Dashboard „Governance“ > „sensible Daten und weite Berechtigungen“ über jedes Feld.
+. Um die Ergebnisse zu filtern, die auf der Untersuchungsseite angezeigt werden, wählen Sie ein Feld aus, und untersuchen Sie es weiter.
+
+
+
+
+== Überprüfen Sie die Daten, die nach Typen offener Berechtigungen aufgelistet sind
+
+Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
+
+* Keine Offenen Berechtigungen
+* Steht Unternehmen offen
+* Öffentlich zugänglich
+* Unbekannter Zugriff
+
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Um die Gesamtzahl der Dateien in jeder Kategorie anzuzeigen, setzen Sie den Cursor im Dashboard „Governance“ > „Berechtigungen öffnen“ über jedes Feld.
+. Um die Ergebnisse zu filtern, die auf der Untersuchungsseite angezeigt werden, wählen Sie ein Feld aus, und untersuchen Sie es weiter.
+
+
+
+
+== Überprüfen Sie das Alter und die Größe der Daten
+
+Vielleicht sollten Sie die Elemente in den Diagrammen _Alter_ und _Größe_ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder auf kostengünstigeren Objektspeicher verschieben sollten.
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Um Details zum Alter der Daten anzuzeigen, bewegen Sie den Cursor im Diagramm im Diagramm auf einen Punkt.
+. Um nach einem Alter oder Größenbereich zu filtern, wählen Sie dieses Alter oder diese Größe aus.
 +
-image:screenshot_compliance_data_discovery_report_button.png["Ein Screenshot des Governance Dashboards zeigt, wie der Data Discovery Assessment Report gestartet wird."]
+** *Alter der Daten Graph* - kategorisiert Daten basierend auf dem Zeitpunkt der Erstellung, dem letzten Zugriff oder der letzten Änderung.
+** *Größe des Datengraphen* - kategorisiert Daten basierend auf der Größe.
 
 
 
-.Ergebnis
-Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+
+
+NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagramm „_Age of Data“ alte Daten, die sich bereits im Objektspeicher befinden, identifiziert werden.
+
+
+
+== Prüfen Sie die am häufigsten identifizierten Datenklassifizierungen in Ihren Daten
+
+Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^] Und link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^] In den gescannten Daten.
+
+
+
+=== Überprüfen Sie die am häufigsten identifizierten Klassifizierungskategorien
+
+Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.
+
+Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie im Dashboard „Governance“ > „Klassifizierung“ > „Kategorien“ die Option aus, um Details zu einer Kategorie anzuzeigen. Die Seite Untersuchung enthält Daten, die nur für diese Kategorie gefiltert werden.
+. Um alle Kategorien anzuzeigen, wählen Sie *Alle anzeigen*.
+
+
+
+
+=== Überprüfen Sie die am häufigsten identifizierten Dateitypen
+
+Die Überprüfung Ihrer Dateitypen kann Ihnen helfen, Ihre sensiblen Daten zu kontrollieren, da Sie möglicherweise feststellen können, dass bestimmte Dateitypen nicht richtig gespeichert sind.
+
+Siehe link:task-controlling-private-data.html#view-files-by-file-types["Anzeigen von Dateitypen"^] Finden Sie weitere Informationen.
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
+. Wählen Sie im Dashboard „Governance“ > „Klassifizierung“ > „Dateitypen“ im Dashboard „Governance“ im Bereich „Dateitypen“ des Dashboards „Governance“ Details zu einem Dateityp aus. Die Seite Untersuchung enthält Daten, die nur für diesen Dateityp gefiltert werden.
+. Um alle Dateitypen anzuzeigen, wählen Sie *Alle anzeigen*.
+
