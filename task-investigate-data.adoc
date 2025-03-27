@@ -268,6 +268,12 @@ Der Bericht ist als CSV- oder JSON-Datei verfügbar, die Sie auf dem lokalen Com
 
 Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
 
+Die Dateien werden in Dateien mit einer festen Anzahl von Zeilen oder Datensätzen aufgeteilt:
+
+* CSV - 200,000 Datensätze
+* JSON - 100,000 Einträge
+
+
 *Was ist im Untersuchungsbericht enthalten*
 
 Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ihren Dateien:

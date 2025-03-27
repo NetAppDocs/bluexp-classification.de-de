@@ -3441,4 +3441,7 @@ Daten Von Business-Applikationen</block>
   <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">Wählen Sie im Dashboard „Governance“ &gt; „Klassifizierung“ &gt; „Dateitypen“ im Dashboard „Governance“ im Bereich „Dateitypen“ des Dashboards „Governance“ Details zu einem Dateityp aus. Die Seite Untersuchung enthält Daten, die nur für diesen Dateityp gefiltert werden.</block>
   <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">Um alle Dateitypen anzuzeigen, wählen Sie *Alle anzeigen*.</block>
   <block id="93a41f9744586b4edf90898527b71531" category="cell">Exportieren von Daten aus der Untersuchung in NFS/CIFS</block>
+  <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">Die Dateien werden in Dateien mit einer festen Anzahl von Zeilen oder Datensätzen aufgeteilt:</block>
+  <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000 Datensätze</block>
+  <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100,000 Einträge</block>
 </blocks>
