@@ -16,7 +16,7 @@ summary: Die BlueXP Klassifizierung bietet Berichte, die Sie verwenden können, 
 [role="lead"]
 Die BlueXP Klassifizierung bietet Berichte, die Sie verwenden können, um besseren Einblick in den Status Ihres Unternehmenskonzepts zum Datenschutz zu erhalten.
 
-Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die Daten nur für einige Arbeitsumgebungen enthalten, <<Wählen Sie die Arbeitsumgebungen für Berichte aus,Wählen Sie diese Arbeitsumgebungen aus>>.
+Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Governance-Daten für alle Arbeitsumgebungen, Datenbanken und Datenquellen an. Wenn Sie Berichte anzeigen möchten, die nur Daten für einige Arbeitsumgebungen enthalten, können Sie nach Filtern filtern, um nur diese anzuzeigen.
 
 [NOTE]
 ====
@@ -25,28 +25,110 @@ Standardmäßig zeigen die BlueXP Klassifizierungs-Dashboards Compliance- und Go
 
 
 ====
+Die folgenden Berichte sind für die BlueXP Klassifizierung verfügbar:
+
+* *Data Discovery Assessment Report*: Bietet eine allgemeine Analyse der gescannten Umgebung, um die Ergebnisse des Systems hervorzuheben und Problembereiche und mögliche Schritte zur Problembehebung aufzuzeigen.
+* *Data Mapping Report*: Liefert Informationen über die Größe und Anzahl der Dateien in Ihren Arbeitsumgebungen. Dazu zählen Nutzungskapazität, Alter der Daten, Größe der Daten und Dateitypen.
+* *Data Subject Access Request Report*: Ermöglicht es Ihnen, einen Bericht aller Dateien zu extrahieren, die Informationen über den spezifischen Namen oder die persönliche Kennung einer betroffenen Person enthalten.
+* *HIPAA-Bericht*: Hilft Ihnen, die Verteilung von Gesundheitsinformationen in Ihren Dateien zu identifizieren.
+* *PCI DSS-Bericht*: Hilft Ihnen, die Verteilung von Kreditkarteninformationen in Ihren Dateien zu identifizieren.
+* *Privacy Risk Assessment Report*: Bietet Einblicke in den Datenschutz aus Ihren Daten und eine Bewertung des Datenschutzrisikos.
+* *Berichte über einen bestimmten Informationstyp*: Es sind Berichte verfügbar, die Angaben zu den identifizierten Dateien enthalten, die personenbezogene Daten und sensible personenbezogene Daten enthalten. Sie können auch Dateien nach Kategorie und Dateityp aufgeschlüsselt sehen.
 
 
-== Datenschutzrisiko-Assessment-Bericht
-
-Der Datenschutzrisiko-Assessment-Bericht bietet einen Überblick über den Datenschutz-Risikostatus Ihres Unternehmens, wie durch Datenschutzvorschriften wie DSGVO und CCPA erforderlich. Der Bericht enthält die folgenden Informationen:
-
-Compliance-Status:: A <<Schweregrad,Schweregrad>> Und die Verteilung von Daten, ganz gleich, ob es sich um unempfindliche, personenbezogene oder sensible Daten handelt.
-Assessment-Übersicht:: Eine Aufschlüsselung der gefundenen Arten von personenbezogenen Daten sowie der Kategorien von Daten.
-Betroffene in dieser Beurteilung:: Die Anzahl der Personen, nach Ort, für die nationale Kennungen gefunden wurden.
 
 
+== Wählen Sie die Arbeitsumgebungen für Berichte aus
+
+Sie können die Inhalte des BlueXP Klassifizierungs-Compliance-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.
+
+Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.
+
+.Schritte
+. Wählen Sie die Dropdown-Liste Filter aus, und wählen Sie die Arbeitsumgebung aus.
+. Wählen Sie *Ansicht*.
++
+image:screenshot_cloud_compliance_filter.gif["Ein Screenshot zur Auswahl der Arbeitsumgebungen für die Berichte, die ausgeführt werden sollen."]
 
 
-=== Erstellen Sie den Bericht zur Risikoanalyse für den Datenschutz
+
+
+
+== Zugriffsanfrage Für Betroffene
+
+Datenschutzvorschriften wie die Europäische DSGVO erteilen Betroffenen (wie Kunden oder Mitarbeitern) das Recht, auf ihre personenbezogenen Daten zuzugreifen. Wenn eine betroffene Person diese Informationen anfordert, wird dies als DSAR (Zugriffsanfrage für betroffene Person) bezeichnet. Unternehmen sind verpflichtet, auf diese Anfragen „ohne übermäßige Verzögerung“ und spätestens innerhalb eines Monats nach Eingang zu reagieren.
+
+Sie können auf einen DSAR antworten, indem Sie nach dem vollständigen Namen eines Studienteilnehmers oder einer bekannten Kennung (z. B. einer E-Mail-Adresse) suchen und dann einen Bericht herunterladen. Der Bericht soll Ihrem Unternehmen helfen, die Vorgaben der DSGVO oder ähnlicher Datenschutzgesetze einzuhalten.
+
+*Wie kann die BlueXP -Klassifizierung Ihnen helfen, auf eine DSAR zu reagieren?*
+
+Wenn Sie eine Suche nach einer bestimmten Person durchführen, findet die BlueXP Klassifizierung alle Dateien, Buckets, OneDrive und SharePoint Konten, die den Namen oder die Kennung dieser Person enthalten. Die BlueXP Klassifizierung überprüft die aktuellsten vorab indizierten Daten nach dem Namen oder der Kennung. Es wird kein neuer Scan gestartet.
+
+Nachdem die Suche abgeschlossen ist, können Sie die Liste der Dateien für einen Bericht für die Anforderung von Datensubjekten herunterladen. Der Bericht sammelt Erkenntnisse aus den Daten und stellt die Daten zu rechtlichen Bedingungen bereit, die Sie an die Person zurücksenden können.
+
+
+NOTE: Die Suche nach Betroffenen wird derzeit in Datenbanken nicht unterstützt.
+
+*Suche nach Datensubjekten und Download von Berichten*
+
+Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen, und laden Sie dann einen Dateilistenbericht oder einen DSAR-Bericht herunter. Sie können nach suchenlink:reference-private-data-categories.html#types-of-personal-data["Alle persönlichen Informationstypen"].
+
+
+NOTE: Bei der Suche nach den Namen der betroffenen Personen werden Englisch, Deutsch, Japanisch und Spanisch unterstützt. Support für weitere Sprachen wird später hinzugefügt.
+
+.Schritte
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Datensubjekte*.
+. Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen.
++
+Hier ein Beispiel, das eine Suche nach dem Namen _john doe_ zeigt:
+
++
+image:screenshot_dsar_search.gif["Ein Screenshot, der eine Suche nach dem Namen \"John Doe\" nach einem DSAR zeigt."]
+
+. Wählen Sie eine der folgenden Optionen:
++
+** *Download DSAR Report*: Eine formelle Antwort auf die Zugriffsanfrage, die Sie an den Betroffenen senden können. Dieser Bericht enthält automatisch generierte Informationen, die auf Daten basieren, deren BlueXP-Klassifizierung für den Betroffenen gefunden wurde und als Vorlage dienen. Füllen Sie das Formular aus und überprüfen Sie es intern, bevor Sie es an den Betroffenen senden.
+** *Ergebnisse untersuchen*: Eine Seite, auf der Sie die Daten untersuchen können, indem Sie nach einer bestimmten Datei suchen, sortieren, Details erweitern und die Dateiliste herunterladen.
++
+
+NOTE: Wenn es mehr als 10,000 Ergebnisse gibt, werden nur die Top 10,000 in der Dateiliste angezeigt.
+
+
+
+
+
+
+
+== Bericht zum Health Insurance Portability and Accountability Act (HIPAA)
+
+Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Er unterstützt Ihr Unternehmen bei der Einhaltung der HIPAA-Datenschutzgesetze. Die Informationen, für die die BlueXP Klassifizierung geeignet ist, umfassen:
+
+* Zustandsreferenzmuster
+* ICD-10 CM medizinischer Code
+* ICD-9 CM medizinischer Code
+* HR – Kategorie Gesundheit
+* Datenkategorie für Gesundheitsanwendungen
+
+
+Der Bericht enthält die folgenden Informationen:
+
+* Übersicht: Wie viele Dateien Gesundheitsinformationen enthalten und in welchen Arbeitsumgebungen.
+* Verschlüsselung: Der Prozentsatz der Dateien, die Gesundheitsinformationen enthalten, die sich in verschlüsselten oder unverschlüsselten Arbeitsumgebungen befinden. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
+* Ransomware-Schutz: Der Prozentsatz an Dateien, die Gesundheitsinformationen enthalten und sich in Arbeitsumgebungen befinden, in denen der Ransomware-Schutz aktiviert ist oder nicht. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
+* Aufbewahrung: Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Gesundheitsinformationen nicht länger aufbewahren sollten, als Sie sie verarbeiten müssen.
+* Verteilung von Gesundheitsinformationen: Die Arbeitsumgebungen, in denen die Gesundheitsinformationen gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.
+
+
+*Erstellen Sie den HIPAA-Bericht*
 
 Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *Privacy Risk Assessment* unter *Reports*.
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Compliance* und dann das Download-Symbol neben *HIPAA-Bericht* unter *Berichte*.
 +
-image:screenshot_privacy_risk_assessment.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
+image:screenshot_hipaa.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf HIPAA klicken können."]
 
 
 
@@ -55,7 +137,63 @@ Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prü
 
 
 
-=== Schweregrad
+== Bericht zum Payment Card Industry Data Security Standard (PCI DSS)
+
+Der PCI DSS-Bericht (Payment Card Industry Data Security Standard) hilft Ihnen bei der Identifizierung der Verteilung von Kreditkarteninformationen über Ihre Dateien hinweg.
+
+Der Bericht enthält die folgenden Informationen:
+
+* Übersicht: Wie viele Dateien Kreditkarteninformationen enthalten und in welchen Arbeitsumgebungen.
+* Verschlüsselung: Der Prozentsatz der Dateien, die Kreditkarteninformationen enthalten, die in verschlüsselten oder unverschlüsselten Arbeitsumgebungen gespeichert sind. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
+* Ransomware-Schutz: Der Prozentsatz an Dateien, die Kreditkarteninformationen enthalten und sich in Arbeitsumgebungen befinden, in denen Ransomware-Schutz aktiviert ist oder nicht. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
+* Aufbewahrung: Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Ihre Kreditkartendaten nicht länger aufbewahren sollten, als Sie sie bearbeiten müssen.
+* Verteilung von Kreditkarteninformationen: Die Arbeitsumgebungen, in denen Kreditkarteninformationen gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.
+
+
+*Generieren Sie den PCI DSS Report*
+
+Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Compliance* und dann das Download-Symbol neben *PCI DSS Report* unter *Reports*.
++
+image:screenshot_pci_dss.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
+
+
+
+.Ergebnis
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+
+
+
+== Datenschutzrisiko-Assessment-Bericht
+
+Der Datenschutzrisiko-Assessment-Bericht bietet einen Überblick über den Datenschutz-Risikostatus Ihres Unternehmens, wie durch Datenschutzvorschriften wie DSGVO und CCPA erforderlich.
+
+Der Bericht enthält die folgenden Informationen:
+
+* Compliance-Status: Bewertung des Schweregrads und Verteilung von Daten – egal, ob es sich um nicht sensible, persönliche oder sensible Personen handelt.
+* Bewertungsübersicht: Eine Aufschlüsselung der gefundenen personenbezogenen Daten sowie der Datenkategorien.
+* Betroffene in dieser Bewertung: Die Anzahl der Personen, nach Standort, für die nationale Kennungen gefunden wurden.
+
+
+*Generieren Sie den Privacy Risk Assessment Report*
+
+Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Compliance*, und wählen Sie dann das Download-Symbol neben *Privacy Risk Assessment* unter *Reports*.
++
+image:screenshot_privacy_risk_assessment.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
+
+
+
+.Ergebnis
+Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
+
+*Schweregrad*
 
 Die BlueXP Klassifizierung berechnet die Bewertung des Schweregrads für den Bericht zur Risikoanalyse personenbezogener Daten auf der Basis von drei Variablen:
 
@@ -103,136 +241,3 @@ Die folgende Logik dient zur Ermittlung der Punktzahl:
 
 | 10 | Drei der Variablen sind größer als 15 % 
 |===
-
-
-== PCI DSS-Bericht
-
-Der PCI DSS-Bericht (Payment Card Industry Data Security Standard) hilft Ihnen bei der Identifizierung der Verteilung von Kreditkarteninformationen über Ihre Dateien hinweg. Der Bericht enthält die folgenden Informationen:
-
-Überblick:: Wie viele Dateien enthalten Kreditkarteninformationen und in welchen Arbeitsumgebungen.
-Verschlüsselung:: Der Prozentsatz der Dateien, die Kreditkartendaten in verschlüsselten oder nicht verschlüsselten Arbeitsumgebungen enthalten. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
-Schutz Vor Ransomware:: Der Prozentsatz von Dateien mit Kreditkarteninformationen, die in Arbeitsumgebungen gespeichert sind, für die der Ransomware-Schutz aktiviert ist oder nicht. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
-Aufbewahrung:: Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Ihre Kreditkartendaten nicht länger aufbewahren sollten, als Sie sie bearbeiten müssen.
-Verteilung der Kreditkarteninformationen:: Die Arbeitsumgebungen, in denen Kreditkartendaten gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.
-
-
-
-
-=== Erstellen Sie den PCI DSS-Bericht
-
-Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
-
-.Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *PCI DSS Report* unter *Reports*.
-+
-image:screenshot_pci_dss.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
-
-
-
-.Ergebnis
-Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
-
-
-
-== HIPAA-Bericht
-
-Der HIPAA-Bericht (Health Insurance Portability and Accountability Act) hilft Ihnen bei der Identifizierung von Dateien, die Gesundheitsdaten enthalten. Er unterstützt Ihr Unternehmen bei der Einhaltung der HIPAA-Datenschutzgesetze. Die Informationen, für die die BlueXP Klassifizierung geeignet ist, umfassen:
-
-* Zustandsreferenzmuster
-* ICD-10 CM medizinischer Code
-* ICD-9 CM medizinischer Code
-* HR – Kategorie Gesundheit
-* Datenkategorie für Gesundheitsanwendungen
-
-
-Der Bericht enthält die folgenden Informationen:
-
-Überblick:: Wie viele Dateien enthalten Gesundheitsinformationen und in welchen Arbeitsumgebungen.
-Verschlüsselung:: Der Prozentsatz der Dateien, die Gesundheitsinformationen in verschlüsselten oder nicht verschlüsselten Arbeitsumgebungen enthalten. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
-Schutz Vor Ransomware:: Der Prozentsatz von Dateien mit Gesundheitsinformationen in Arbeitsumgebungen, in denen Ransomware-Schutz aktiviert ist oder nicht. Diese Informationen sind spezifisch für Cloud Volumes ONTAP.
-Aufbewahrung:: Der Zeitrahmen, in dem die Dateien zuletzt geändert wurden. Dies ist hilfreich, weil Sie Gesundheitsinformationen nicht länger aufbewahren sollten, als Sie sie verarbeiten müssen.
-Verteilung von Gesundheitsinformationen:: In den Arbeitsumgebungen, in denen die Gesundheitsdaten gefunden wurden und ob Verschlüsselung und Ransomware-Schutz aktiviert sind.
-
-
-
-
-=== Erstellen Sie den HIPAA-Bericht
-
-Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
-
-.Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Compliance* und dann auf das Download-Symbol neben *HIPAA Report* unter *Reports*.
-+
-image:screenshot_hipaa.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf HIPAA klicken können."]
-
-
-
-.Ergebnis
-Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
-
-
-
-== Was ist ein Antrag auf Zugang für betroffene Person?
-
-Datenschutzvorschriften wie die Europäische DSGVO erteilen Betroffenen (wie Kunden oder Mitarbeitern) das Recht, auf ihre personenbezogenen Daten zuzugreifen. Wenn eine betroffene Person diese Informationen anfordert, wird dies als DSAR (Zugriffsanfrage für betroffene Person) bezeichnet. Unternehmen sind verpflichtet, auf diese Anfragen „ohne übermäßige Verzögerung“ und spätestens innerhalb eines Monats nach Eingang zu reagieren.
-
-Sie können auf einen DSAR antworten, indem Sie nach dem vollständigen Namen eines Studienteilnehmers oder einer bekannten Kennung (z. B. einer E-Mail-Adresse) suchen und dann einen Bericht herunterladen. Der Bericht soll Ihrem Unternehmen helfen, die Vorgaben der DSGVO oder ähnlicher Datenschutzgesetze einzuhalten.
-
-
-
-=== Wie kann die BlueXP Klassifizierung Ihnen helfen, auf eine DSAR zu reagieren?
-
-Wenn Sie eine Suche nach einer bestimmten Person durchführen, findet die BlueXP Klassifizierung alle Dateien, Buckets, OneDrive und SharePoint Konten, die den Namen oder die Kennung dieser Person enthalten. Die BlueXP Klassifizierung überprüft die aktuellsten vorab indizierten Daten nach dem Namen oder der Kennung. Es wird kein neuer Scan gestartet.
-
-Nachdem die Suche abgeschlossen ist, können Sie die Liste der Dateien für einen Bericht für die Anforderung von Datensubjekten herunterladen. Der Bericht sammelt Erkenntnisse aus den Daten und stellt die Daten zu rechtlichen Bedingungen bereit, die Sie an die Person zurücksenden können.
-
-
-NOTE: Die Suche nach Betroffenen wird derzeit in Datenbanken nicht unterstützt.
-
-
-
-=== Suche nach betroffenen Personen und Download von Berichten
-
-Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen, und laden Sie dann einen Dateilistenbericht oder einen DSAR-Bericht herunter. Suchen Sie nach link:reference-private-data-categories.html#types-of-personal-data["Alle persönlichen Informationstypen"^].
-
-
-NOTE: Bei der Suche nach den Namen der betroffenen Personen werden Englisch, Deutsch, Japanisch und Spanisch unterstützt. Support für weitere Sprachen wird später hinzugefügt.
-
-.Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie Auf *Data Subjects*.
-. Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen.
-+
-Hier ein Beispiel, das eine Suche nach dem Namen _john doe_ zeigt:
-
-+
-image:screenshot_dsar_search.gif["Ein Screenshot, der eine Suche nach dem Namen \"John Doe\" nach einem DSAR zeigt."]
-
-. Wählen Sie eine der folgenden Optionen:
-+
-** *Download DSAR Report*: Eine formelle Antwort auf die Zugriffsanfrage, die Sie an den Betroffenen senden können. Dieser Bericht enthält automatisch generierte Informationen, die auf Daten basieren, deren BlueXP-Klassifizierung für den Betroffenen gefunden wurde und als Vorlage dienen. Füllen Sie das Formular aus und überprüfen Sie es intern, bevor Sie es an den Betroffenen senden.
-** *Ergebnisse untersuchen*: Eine Seite, auf der Sie die Daten untersuchen können, indem Sie nach einer bestimmten Datei suchen, sortieren, Details erweitern und die Dateiliste herunterladen.
-+
-
-NOTE: Wenn es mehr als 10,000 Ergebnisse gibt, werden nur die Top 10,000 in der Dateiliste angezeigt.
-
-
-
-
-
-
-
-== Wählen Sie die Arbeitsumgebungen für Berichte aus
-
-Sie können die Inhalte des BlueXP Klassifizierungs-Compliance-Dashboards filtern, um Compliance-Daten für alle Arbeitsumgebungen und Datenbanken oder nur für bestimmte Arbeitsumgebungen einzusehen.
-
-Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.
-
-.Schritte
-. Klicken Sie auf das Dropdown-Menü Filter, wählen Sie die Arbeitsumgebungen aus, für die Sie Daten anzeigen möchten, und klicken Sie auf *Ansicht*.
-+
-image:screenshot_cloud_compliance_filter.gif["Ein Screenshot zur Auswahl der Arbeitsumgebungen für die Berichte, die ausgeführt werden sollen."]
-
-

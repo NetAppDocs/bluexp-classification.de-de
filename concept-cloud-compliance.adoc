@@ -20,7 +20,7 @@ Die BlueXP Klassifizierung (Cloud Data Sense) ist ein Daten-Governance-Service f
 ====
 WICHTIG
 
-Ab Mai 2024 mit Version 1.31 ist die BlueXP Klassifizierung als zentrale Funktion in BlueXP ohne Aufpreis verfügbar. Es ist keine Lizenz zur Klassifizierung oder kein Abonnement erforderlich. Wir haben die BlueXP Klassifizierungsfunktionen auch auf NetApp Storage-Systeme fokussiert, sodass einige nicht genutzte oder nicht ausgelastete Funktionen veraltet sind.
+Ab Mai 2024 mit Version 1.31 ist die BlueXP Klassifizierung als zentrale Funktion in BlueXP ohne Aufpreis verfügbar. Es ist keine Lizenz zur Klassifizierung oder kein Abonnement erforderlich. Wir haben die BlueXP  Klassifizierungsfunktion auf NetApp Storage-Systeme fokussiert, sodass einige nicht genutzte oder nicht ausgelastete Funktionen veraltet sind.
 
 link:reference-free-paid.html["Siehe eine Liste der veralteten Features"].
 
@@ -158,19 +158,15 @@ Bei der Implementierung der BlueXP Klassifizierung in Azure oder GCP können Sie
 
 
 
-== Funktionsweise der BlueXP Klassifizierung
+== So funktioniert das Scannen der BlueXP -Klassifizierung
 
-Die allgemeine BlueXP Klassifizierung funktioniert wie folgt:
+Auf hoher Ebene funktioniert das Scannen der BlueXP -Klassifizierung wie folgt:
 
 . Sie implementieren eine Instanz der BlueXP Klassifizierung in BlueXP.
-. Sie ermöglichen ein hohes Mapping oder tiefes Scannen auf einer oder mehreren Datenquellen.
+. Sie aktivieren High-Level-Mapping (nur _Mapping_ Scans genannt) oder Deep-Level-Scan (_Map & Classify_ Scans genannt) für eine oder mehrere Datenquellen.
 . Bei der BlueXP Klassifizierung werden die Daten mithilfe eines KI-Lernprozesses gescannt.
 . Sie nutzen die bereitgestellten Dashboards und Berichterstellungs-Tools, um Ihre Compliance- und Governance-Bemühungen zu unterstützen.
 
-
-
-
-=== Funktionsweise von Scans
 
 Nachdem die BlueXP Klassifizierung aktiviert und die Repositorys ausgewählt wurden, die gescannt werden sollen (dies sind die Volumes, Datenbankschemas oder andere Benutzerdaten), beginnt der Service sofort mit dem Scannen der Daten, um persönliche und sensible Daten zu identifizieren. Sie sollten sich in den meisten Fällen auf die Scans von Live-Produktionsdaten konzentrieren und nicht auf Backups, Spiegelungen oder DR-Standorte. Die BlueXP Klassifizierung ordnet anschließend Ihre Unternehmensdaten zu, kategorisiert jede Datei und identifiziert und extrahiert Entitäten und vordefinierte Muster in den Daten. Das Ergebnis des Scans ist ein Index von persönlichen Daten, sensiblen persönlichen Daten, Datenkategorien und Dateitypen.
 
@@ -178,248 +174,21 @@ Wie bei jedem anderen Client lässt sich die BlueXP Klassifizierung mit den Date
 
 image:diagram_cloud_compliance_scan.png["Ein Diagramm zeigt eine BlueXP Instanz und eine BlueXP Klassifizierungsinstanz, die bei Ihrem Cloud-Provider ausgeführt wird. Die BlueXP Klassifizierungs-Instanz ist mit NFS- und CIFS-Volumes und Datenbanken verbunden, um sie zu scannen."]
 
-Nach dem ersten Scan scannt die BlueXP Klassifizierung Ihre Daten fortlaufend und nach Round Robin-Verfahren, um inkrementelle Änderungen zu erkennen (aus diesem Grund ist es wichtig, die Instanz weiterhin auszuführen).
+Nach dem ersten Scan scannt die BlueXP -Klassifizierung Ihre Daten fortlaufend und nach dem Round Robin-Verfahren, um inkrementelle Änderungen zu erkennen. Aus diesem Grund ist es wichtig, dass die Instanz weiterhin ausgeführt wird.
 
 Sie können Scans auf Volume-Ebene oder auf Datenbankschemaebene aktivieren und deaktivieren.
 
 
 
-=== Was ist der Unterschied zwischen Mapping und Classification Scans
+== Was ist der Unterschied zwischen Mapping und Classification Scans
 
 Sie können zwei Arten von Scans in der BlueXP -Klassifizierung durchführen:
 
-* **Nur Mapping** Scans bieten nur einen allgemeinen Überblick über Ihre Daten und werden an ausgewählten Datenquellen durchgeführt. Nur-Mapping-Scans benötigen weniger Zeit als Map und klassifizieren Scans, da die nicht auf Dateien zugreifen, um die Daten darin zu sehen.
-* **Karten- und Klassify**-Scans ermöglichen ein tiefes Scannen Ihrer Daten.
+* **Nur Mapping-Scans** bieten nur einen allgemeinen Überblick über Ihre Daten und werden an ausgewählten Datenquellen durchgeführt. Nur-Mapping-Scans benötigen weniger Zeit als Map und klassifizieren Scans, da die nicht auf Dateien zugreifen, um die Daten darin zu sehen. Sie sollten dies zunächst tun, um Forschungsbereiche zu identifizieren und dann einen Map & Classify-Scan für diese Bereiche durchzuführen.
+* **Map & Classify Scans** ermöglichen ein tiefes Scannen Ihrer Daten.
 
 
-Mit nur-Mapping-Scans können Sie Ihre Daten schnell scannen und Datenquellen identifizieren, die möglicherweise mehr Forschung erfordern. Anschließend können Sie einen Map & Classify-Scan durchführen.
-
-In der folgenden Tabelle sind einige Unterschiede aufgeführt:
-
-[cols="47,18,18"]
-|===
-| Merkmal | Scans zuordnen und klassifizieren | Nur-Mapping-Scans 
-
-
-| Scangeschgeschwindigkeit | Langsam | Schnell 
-
-
-| Preisgestaltung | Kostenlos | Kostenlos 
-
-
-| Kapazität | Begrenzt auf 500 TB | Begrenzt auf 500 TB 
-
-
-| Liste der Dateitypen und der genutzten Kapazität | Ja. | Ja. 
-
-
-| Anzahl der Dateien und genutzte Kapazität | Ja. | Ja. 
-
-
-| Alter und Größe der Dateien | Ja. | Ja. 
-
-
-| Fähigkeit, ein auszuführen link:task-controlling-governance-data.html#data-mapping-report["Datenzuordnungsbericht"] | Ja. | Ja. 
-
-
-| Datenuntersuchung, um Dateidetails anzuzeigen | Ja. | Nein 
-
-
-| Suche nach Namen in Dateien | Ja. | Nein 
-
-
-| Erstellen link:task-using-policies.html["Richtlinien"] Die benutzerdefinierte Suchergebnisse liefern | Ja. | Nein 
-
-
-| Möglichkeit zur Ausführung anderer Berichte | Ja. | Nein 
-
-
-| Fähigkeit, Metadaten aus Dateien zu sehen* | Nein | Ja. 
-|===
-*Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert:
-
-* Arbeitsumgebung
-* Art der Arbeitsumgebung
-* Storage Repository
-* Dateityp
-* Genutzte Kapazität
-* Anzahl der Dateien
-* Dateigröße
-* Dateierstellung
-* Letzter Zugriff auf die Datei
-* Datei zuletzt geändert
-* Erkannte Zeit der Datei
-* Extraktion von Berechtigungen
-
-
-.Unterschiede in der Governance-Konsole:
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Merkmal | Zuordnen Und Klassifizieren | Karte 
-
-
-| Veraltete Daten | Ja. | Ja. 
-
-
-| Nichtgeschäftliche Daten | Ja. | Ja. 
-
-
-| Duplizierte Dateien | Ja. | Ja. 
-
-
-| Vordefinierte Richtlinien | Ja. | Nein 
-
-
-| Benutzerdefinierte Richtlinien | Ja. | Ja. 
-
-
-| DDA-Bericht | Ja. | Ja. 
-
-
-| Zuordnungsbericht | Ja. | Ja. 
-
-
-| Erkennung des Empfindlichkeitsniveaus | Ja. | Nein 
-
-
-| Sensible Daten mit großen Berechtigungen | Ja. | Nein 
-
-
-| Berechtigungen öffnen | Ja. | Ja. 
-
-
-| Alter der Daten | Ja. | Ja. 
-
-
-| Datengröße | Ja. | Ja. 
-
-
-| Kategorien | Ja. | Nein 
-
-
-| Dateitypen | Ja. | Ja. 
-|===
-====
-.Unterschiede in der Compliance-Konsole:
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Merkmal | Zuordnen Und Klassifizieren | Karte 
-
-
-| Persönliche Angaben | Ja. | Nein 
-
-
-| Sensible persönliche Daten | Ja. | Nein 
-
-
-| Bericht zur Risikoanalyse personenbezogener Daten | Ja. | Nein 
-
-
-| HIPAA-Bericht | Ja. | Nein 
-
-
-| PCI DSS-Bericht | Ja. | Nein 
-|===
-====
-.Unterschiede bei den Untersuchungsfiltern:
-[%collapsible]
-====
-[cols="40,25,25"]
-|===
-| Merkmal | Zuordnen Und Klassifizieren | Karte 
-
-
-| Richtlinien | Ja. | Ja. 
-
-
-| Art der Arbeitsumgebung | Ja. | Ja. 
-
-
-| Arbeitsumgebung | Ja. | Ja. 
-
-
-| Storage Repository | Ja. | Ja. 
-
-
-| Dateityp | Ja. | Ja. 
-
-
-| Dateigröße | Ja. | Ja. 
-
-
-| Erstellungszeit | Ja. | Ja. 
-
-
-| Entdeckte Zeit | Ja. | Ja. 
-
-
-| Zuletzt geändert | Ja. | Ja. 
-
-
-| Letzter Zugriff | Ja. | Ja. 
-
-
-| Berechtigungen öffnen | Ja. | Ja. 
-
-
-| Dateiverzeichnispfad | Ja. | Ja. 
-
-
-| Kategorie | Ja. | Nein 
-
-
-| Empfindlichkeitsstufe | Ja. | Nein 
-
-
-| Anzahl der Kennungen | Ja. | Nein 
-
-
-| Persönliche Daten | Ja. | Nein 
-
-
-| Sensible persönliche Daten | Ja. | Nein 
-
-
-| Betroffene Person | Ja. | Nein 
-
-
-| Duplikate | Ja. | Ja. 
-
-
-| Klassifizierungsstatus | Ja. | Status ist immer „Eingeschränkte Einblicke“ 
-
-
-| Analyseereignis scannen | Ja. | Ja. 
-
-
-| Datei-Hash | Ja. | Ja. 
-
-
-| Anzahl der Benutzer mit Zugriff | Ja. | Ja. 
-
-
-| Benutzer-/Gruppenberechtigungen | Ja. | Ja. 
-
-
-| Dateibesitzer | Ja. | Ja. 
-
-
-| Verzeichnistyp | Ja. | Ja. 
-|===
-====
-
-
-=== Wie schnell scannt die BlueXP Klassifizierung Daten
-
-Die Scan-Geschwindigkeit wird durch Netzwerklatenz, Festplattenlatenz, Netzwerkbandbreite, Umgebungsgröße und Dateiverteilungsgrößen beeinflusst.
-
-* Bei der Durchführung von nur-Mapping-Scans kann die BlueXP -Klassifizierung zwischen 100-150 TIBS Daten pro Tag scannen.
-* Bei der Durchführung von Map & Classify Scans kann die BlueXP -Klassifizierung zwischen 15-40 TIBS Daten pro Tag scannen.
-
+Einzelheiten zu den Unterschieden zwischen Mapping- und Classification-Scans finden Sie unter link:task-scanning-overview.html["Was ist der Unterschied zwischen Mapping- und Classification-Scans?"].
 
 
 
@@ -429,7 +198,7 @@ Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Ka
 
 * *Standardmetadaten* über Dateien: Der Dateityp, seine Größe, Erstellungs- und Änderungsdaten, und so weiter.
 * *Personenbezogene Daten*: Personenbezogene Daten (PII) wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
-* *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPii), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie durch die DSGVO und andere Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
+* *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPII), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie in der DSGVO und anderen Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
 * *Categories*: Die BlueXP-Klassifizierung nimmt die gescannten Daten auf und teilt sie in verschiedene Kategorien auf. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#view-files-by-categories["Weitere Informationen zu Kategorien"^].
 * *Types*: Die BlueXP Klassifizierung erfasst die gescannten Daten und unterteilt sie nach Dateityp. link:task-controlling-private-data.html#view-files-by-file-types["Erfahren Sie mehr über Types"^].
 * *Name Entity Recognition*: BlueXP Klassifikation verwendet KI, um natürliche Namen von Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
@@ -439,9 +208,11 @@ Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Ka
 
 == Netzwerkübersicht
 
+Die BlueXP Klassifizierung implementiert einen einzelnen Server oder Cluster unabhängig von Ihrer Wahl – in der Cloud oder lokal. Die Server verbinden sich über Standardprotokolle mit den Datenquellen und indizieren die Ergebnisse in einem Elasticsearch-Cluster, der ebenfalls auf denselben Servern implementiert wird. Dadurch wird eine Unterstützung für Multi-Cloud-, Cloud-, Private-Cloud- und On-Premises-Umgebungen möglich.
+
 BlueXP implementiert die BlueXP Klassifizierungsinstanz mit einer Sicherheitsgruppe, die eingehende HTTP-Verbindungen von der Connector-Instanz ermöglicht.
 
-Wenn Sie BlueXP im SaaS-Modus verwenden, wird die Verbindung zu BlueXP über HTTPS hergestellt. Die privaten Daten, die zwischen Ihrem Browser und der BlueXP Klassifizierungsinstanz gesendet werden, sind durch End-to-End-Verschlüsselung mit TLS 1.2 geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können.
+Wenn Sie BlueXP  im SaaS-Modus verwenden, wird die Verbindung zu BlueXP  über HTTPS hergestellt, und die privaten Daten, die zwischen Ihrem Browser und der BlueXP -Klassifizierungsinstanz gesendet werden, sind durch End-to-End-Verschlüsselung mit TLS 1.2 geschützt. Dies bedeutet, dass NetApp und Drittanbieter die Daten nicht lesen können.
 
 Ausgehende Regeln sind vollständig geöffnet. Zum Installieren und Aktualisieren der BlueXP Klassifizierungssoftware und zum Senden von Nutzungsmetriken ist ein Internetzugriff erforderlich.
 

@@ -40,6 +40,8 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: Aktivieren Sie das Scannen Ihrer Datenquellen
       entries:
+      - title: Überprüfen Sie die Übersicht über Ihre Datenquellen
+        url: "/task-scanning-overview.html"
       - title: Azure NetApp Dateien
         url: "/task-scanning-anf.html"
       - title: Amazon FSX für ONTAP

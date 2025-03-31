@@ -21,7 +21,7 @@ NOTE: Das Scannen von Daten aus nicht-NetApp-Dateifreigaben wird in der Kernvers
 
 
 
-== Prüfen Sie die Anforderungen für die Dateifreigabe
+== Voraussetzungen
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
@@ -30,12 +30,6 @@ NOTE: Das Scannen von Daten aus nicht-NetApp-Dateifreigaben wird in der Kernvers
 Beachten Sie, dass die BlueXP Klassifizierung keine Berechtigungen oder die „Zeit des letzten Zugriffs“ aus 7-Mode Systemen extrahieren kann. Aufgrund eines bekannten Problems zwischen einigen Linux-Versionen und CIFS-Freigaben auf 7-Mode-Systemen müssen Sie die Freigabe zudem so konfigurieren, dass nur SMB v1 mit aktivierter NTLM-Authentifizierung verwendet wird.
 
 * Zwischen der BlueXP Klassifizierungsinstanz und den Freigaben muss eine Netzwerkverbindung bestehen.
-* Stellen Sie sicher, dass die Ports für die BlueXP Klassifizierungsinstanz offen sind:
-+
-** Für NFS – die Ports 111 und 2049.
-** Für CIFS – die Ports 139 und 445.
-
-
 * Sie können eine DFS-Freigabe (Distributed File System) als reguläre CIFS-Freigabe hinzufügen. Da die BlueXP Klassifizierung jedoch nicht bewusst ist, dass die Freigabe auf mehreren Servern/Volumes basiert, die als einzelne CIFS-Freigabe kombiniert werden, erhalten Sie möglicherweise Berechtigungen oder Verbindungsfehler bezüglich der Freigabe, wenn die Nachricht sich wirklich nur auf einen der Ordner/Freigaben bezieht, die sich auf einem anderen Server/Volume befinden.
 * Stellen Sie für CIFS-Freigaben (SMB) sicher, dass Sie über Active Directory-Anmeldeinformationen verfügen, die Lesezugriff auf die Freigaben bieten. Anmeldedaten als Administrator sind bevorzugt, wenn die BlueXP Klassifizierung alle Daten scannt, die erhöhte Berechtigungen erfordern.
 +
@@ -46,17 +40,11 @@ Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs
 
 
 
-== Implementieren der BlueXP Klassifizierungsinstanz
-
-Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
-
-
-
 == Erstellen Sie die Gruppe für die Dateifreigaben
 
 Sie müssen eine „Gruppe“ von Dateifreigaben für Dateien hinzufügen, bevor Sie Ihre Dateifreigaben hinzufügen können. Die Gruppe ist ein Container für die zu scannenden Dateifreigaben, und der Gruppenname wird als Name der Arbeitsumgebung für diese Dateifreigaben verwendet.
 
-Sie können NFS- und CIFS-Freigaben in einer Gruppe kombinieren. Allerdings müssen alle CIFS-Dateifreigaben in einer Gruppe dieselben Active Directory-Anmeldedaten verwenden. Wenn Sie CIFS-Freigaben hinzufügen möchten, die unterschiedliche Anmeldedaten verwenden, müssen Sie für jeden eindeutigen Satz von Anmeldeinformationen eine separate Gruppe erstellen.
+Sie können NFS- und CIFS-Freigaben in derselben Gruppe kombinieren. Alle CIFS-Dateifreigaben in einer Gruppe müssen jedoch dieselben Active Directory-Anmeldeinformationen verwenden. Wenn Sie CIFS-Freigaben hinzufügen möchten, die unterschiedliche Anmeldedaten verwenden, müssen Sie für jeden eindeutigen Satz von Anmeldeinformationen eine separate Gruppe erstellen.
 
 .Schritte
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
@@ -81,32 +69,30 @@ Wenn Sie in einer einzelnen Gruppe sowohl NFS- als auch CIFS-Freigaben hinzufüg
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
 . Wählen Sie auf der Seite Konfiguration in der Kachel Arbeitsumgebungen die Schaltfläche *Konfiguration* für die Gruppe Dateifreigaben aus.
 +
-image:screenshot_compliance_fileshares_add_shares.png["Ein Screenshot der Seite Scankonfiguration, auf der Sie die Schaltfläche Konfiguration auswählen können."]
+image:screen-cl-config-file-shares.png["Ein Screenshot mit der Schaltfläche „Konfiguration“ für die Gruppe „Dateifreigaben“."]
 
 . Wenn dies das erste Mal ist, dass Sie Dateifreigaben für diese Fileshares-Gruppe hinzufügen, wählen Sie *erste Freigaben hinzufügen*.
 +
-image:screenshot_compliance_fileshares_add_initial_shares.png["Ein Screenshot mit der Schaltfläche erste Freigaben hinzufügen, um erste Shares zur Gruppe hinzuzufügen."]
+image:screen-cl-config-file-shares-addshares.png["Ein Screenshot mit der Schaltfläche erste Freigaben hinzufügen, um erste Shares zur Gruppe hinzuzufügen."]
 
 +
-Wenn Sie Dateifreigaben zu einer bestehenden Gruppe hinzufügen, wählen Sie *Freigaben hinzufügen*.
+Wenn Sie Dateifreigaben zu einer bestehenden Gruppe hinzufügen, wählen Sie die Gruppe aus, wählen Sie *Konfiguration* aus und wählen Sie *Freigaben hinzufügen* aus.
 
+. Wählen Sie das Protokoll für die Dateifreigaben aus, die Sie hinzufügen möchten.
 +
-image:screenshot_compliance_fileshares_add_more_shares2.png["Ein Screenshot mit der Schaltfläche „Shares hinzufügen“, um der Gruppe weitere Freigaben hinzuzufügen."]
+image:screen-cl-config-shares-add.png["Ein Screenshot mit den Optionen zum Hinzufügen von NFS- oder CIFS-Freigaben zur Gruppe"]
 
-. Wählen Sie das Protokoll für die hinzuzufügenden Dateifreigaben aus, fügen Sie die zu scannenden Dateifreigaben hinzu (eine Dateifreigabe pro Zeile) und wählen Sie *Weiter* aus.
+. Fügen Sie die zu scannenden Dateifreigaben hinzu (eine Dateifreigabe pro Zeile).
 +
 Beim Hinzufügen von CIFS (SMB)-Freigaben müssen Sie die Active Directory-Anmeldeinformationen eingeben, die Lesezugriff auf die Freigaben bieten. Anmeldedaten für Admin werden bevorzugt.
 
-+
-image:screenshot_compliance_fileshares_add_file_shares.png["Ein Screenshot der Seite „Dateifreigaben hinzufügen“, auf der Sie die zu scannenden Freigaben hinzufügen können."]
-
+. Wählen Sie *Weiter*.
 +
 Ein Bestätigungsdialogfeld zeigt die Anzahl der hinzugefügten Freigaben an.
 
 +
 Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden konnten, erfassen Sie diese Informationen, damit Sie das Problem beheben können. In einigen Fällen können Sie die Freigabe mit einem korrigierten Hostnamen oder Freigabennamen erneut hinzufügen.
 
-. Aktivieren Sie für jede Dateifreigabe nur mappingbare Scans oder Mappings und Klassifizierungen.
 . Führen Sie einen der folgenden Schritte aus, um Scans zu aktivieren oder zu deaktivieren:
 +
 ** Um Mapping-only-Scans auf Dateifreigaben zu aktivieren, wählen Sie *Karte*.
@@ -114,12 +100,28 @@ Wenn im Dialogfeld Freigaben aufgeführt werden, die nicht hinzugefügt werden k
 ** Um das Scannen auf Dateifreigaben zu deaktivieren, wählen Sie *aus*.
 
 
+. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter *Scan bei fehlenden "Schreibattributen"-Berechtigungen* EIN und alle Dateien werden unabhängig von den Berechtigungen gescannt.
++
+Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 
-Der Schalter oben auf der Seite für *Scan bei fehlenden "Schreibattributen"-Berechtigungen* ist standardmäßig deaktiviert. Das bedeutet, wenn die BlueXP Klassifizierung keine Schreibattributen-Berechtigungen in CIFS oder Schreibberechtigungen in NFS hat, dann wird das System die Dateien nicht scannen, da die BlueXP Klassifizierung die „letzte Zugriffszeit“ nicht auf den ursprünglichen Zeitstempel zurücksetzen kann. Wenn es Ihnen egal ist, ob die letzte Zugriffszeit zurückgesetzt wird, schalten Sie den Schalter EIN, und alle Dateien werden unabhängig von den Berechtigungen gescannt. link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen ."^].
 
 .Ergebnis
-Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt. Sie können den Fortschritt der ersten Messung verfolgen, indem Sie zum Menü **Konfiguration** navigieren und dann die Konfiguration **Arbeitsumgebung** auswählen. Der Fortschritt jeder Messung wird als Fortschrittsbalken angezeigt. Sie können auch den Mauszeiger über die Fortschrittsleiste bewegen, um die Anzahl der gescannten Dateien im Verhältnis zur Gesamtzahl der Dateien im Volume anzuzeigen.
+Die BlueXP Klassifizierung beginnt mit dem Scannen der Dateien in den von Ihnen hinzugefügten Dateifreigaben. Die Ergebnisse werden im Dashboard und an anderen Orten angezeigt.
+
+
+
+== Verfolgen Sie den Scanfortschritt
+
+Sie können den Fortschritt der ersten Messung verfolgen.
+
+. Wählen Sie das Menü **Konfiguration**.
+. Wählen Sie die **Konfiguration der Arbeitsumgebung**.
++
+Der Fortschritt jeder Messung wird als Fortschrittsbalken angezeigt.
+
+. Bewegen Sie den Mauszeiger über die Fortschrittsleiste, um die Anzahl der gescannten Dateien im Verhältnis zur Gesamtzahl der Dateien im Volume anzuzeigen.
+
 
 
 
@@ -129,8 +131,8 @@ Wenn Sie bestimmte Dateifreigaben nicht mehr scannen müssen, können Sie einzel
 
 .Schritte
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
-. Wählen Sie auf der Konfigurationsseite *Freigabe entfernen*.
-+
-image:screenshot_compliance_fileshares_remove_share.png["Ein Screenshot zeigt, wie eine einzelne Dateifreigabe aus dem Scannen ihrer Dateien entfernt wird."]
-
+. Wählen Sie die Arbeitsumgebung aus.
+. Wählen Sie *Konfiguration*.
+. Wählen Sie auf der Seite Konfiguration die Aktionen  für die Dateifreigabe ausimage:button-actions-horizontal.png["Aktionssymbol"], die Sie entfernen möchten.
+. Wählen Sie im Menü Aktionen die Option *Freigabe entfernen*.
 
