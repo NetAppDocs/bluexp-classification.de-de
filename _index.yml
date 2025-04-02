@@ -57,7 +57,7 @@ indexpage:
     - title: Erstellen von Compliance-Berichten
       url: task-generating-compliance-reports.html
     - title: Reaktion auf eine Anforderung für den Zugriff eines Betroffenen
-      url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+      url: task-generating-compliance-reports.html
   - title: Veraltete Funktionen
     links:
     - title: Liste der veralteten Features

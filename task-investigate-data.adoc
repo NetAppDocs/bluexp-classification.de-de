@@ -65,7 +65,7 @@ HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option
 | Sensible Personenbezogene Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-sensitive-personal-data["Arten sensibler personenbezogener Daten"^]. 
 
 
-| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["Weitere Informationen zu Datensubjekten finden Sie hier"^]. 
+| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. link:task-generating-compliance-reports.html["Weitere Informationen zu Datensubjekten finden Sie hier"^]. 
 |===
 
 

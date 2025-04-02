@@ -55,7 +55,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Alter und Größe der Dateien | Ja. | Ja. 
 
 
-| Fähigkeit, ein auszuführen link:task-controlling-governance-data.html#data-mapping-report["Datenzuordnungsbericht"] | Ja. | Ja. 
+| Fähigkeit, eine auszuführen link:task-controlling-governance-data.html["Datenzuordnungsbericht"] | Ja. | Ja. 
 
 
 | Datenuntersuchung, um Dateidetails anzuzeigen | Ja. | Nein 

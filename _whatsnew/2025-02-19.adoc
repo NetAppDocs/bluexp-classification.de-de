@@ -20,7 +20,7 @@ Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 
-Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["Nur-Mapping-Scans"]; es ist nicht verfügbar für die Zuordnung und Klassifizierung von Scans.
+Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.html["Nur-Mapping-Scans"]; es ist nicht verfügbar für die Zuordnung und Klassifizierung von Scans.
 
 So ändern Sie die Priorität:
 

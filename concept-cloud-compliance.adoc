@@ -201,7 +201,7 @@ Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Ka
 * *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPII), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie in der DSGVO und anderen Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
 * *Categories*: Die BlueXP-Klassifizierung nimmt die gescannten Daten auf und teilt sie in verschiedene Kategorien auf. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#view-files-by-categories["Weitere Informationen zu Kategorien"^].
 * *Types*: Die BlueXP Klassifizierung erfasst die gescannten Daten und unterteilt sie nach Dateityp. link:task-controlling-private-data.html#view-files-by-file-types["Erfahren Sie mehr über Types"^].
-* *Name Entity Recognition*: BlueXP Klassifikation verwendet KI, um natürliche Namen von Personen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
+* *Namensentity Recognition*: BlueXP  Classification verwendet KI, um natürliche Namen von Menschen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].
 
 
 
@@ -222,8 +222,4 @@ Wenn Sie strenge Netzwerkanforderungen erfüllen, link:task-deploy-cloud-complia
 
 == Benutzerrollen in der BlueXP -Klassifizierung
 
-Die Rolle, die jeder Benutzer zugewiesen wurde, bietet innerhalb von BlueXP  und innerhalb der BlueXP -Klassifizierung unterschiedliche Funktionen. Weitere Informationen finden Sie unter:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM-Rollen"] (Bei Verwendung von BlueXP  im Standardmodus)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["Rollen von BlueXP  Accounts"^] (Bei Verwendung von BlueXP  im eingeschränkten oder privaten Modus)
-
+Die Rolle, die jeder Benutzer zugewiesen wurde, bietet innerhalb von BlueXP  und innerhalb der BlueXP -Klassifizierung unterschiedliche Funktionen. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM-Rollen"] (bei Verwendung von BlueXP  im Standardmodus).
