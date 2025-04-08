@@ -16,7 +16,7 @@ summary: Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen un
 [role="lead"]
 Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen und Datenquellen gescannt werden. Sie können die Änderungen auf Repository-Basis vornehmen. Dies bedeutet, dass Sie je nach Art der zu scannenden Datenquelle Änderungen für jedes Volume, Schema, jeden Benutzer usw. vornehmen können.
 
-Sie können sich unter anderem ändern, ob ein Repository gescannt wird oder nicht, und ob die BlueXP Klassifizierung eine ausführt link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Mapping-Scan oder Mapping  Klassifizierungsscan"]. Sie können den Scanvorgang auch anhalten und fortsetzen, beispielsweise, wenn Sie das Scannen eines Volumens für einen bestimmten Zeitraum beenden müssen.
+Einige der Dinge, die Sie ändern können, sind, ob ein Repository gescannt wird oder nicht, und ob BlueXP  Klassifizierung führt eine link:concept-cloud-compliance.html["Mapping-Scan oder Mapping  Klassifizierungsscan"]. Sie können den Scanvorgang auch anhalten und fortsetzen, beispielsweise, wenn Sie das Scannen eines Volumens für einen bestimmten Zeitraum beenden müssen.
 
 
 
@@ -37,17 +37,17 @@ Sie können den Scanstatus jeder Arbeitsumgebung auf der Konfigurationsseite anz
 
 
 .Schritte
-. Klicken Sie auf der Registerkarte Konfiguration auf die Schaltfläche *Konfiguration* für die Arbeitsumgebung.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
 +
 image:screenshot_compliance_config_button.png["Ein Screenshot zeigt, wie Sie auf die Schaltfläche Konfiguration für eine Arbeitsumgebung klicken."]
 
-. Auf der Seite Scankonfiguration können Sie die Scaneinstellungen für alle Repositories anzeigen.
+. Wählen Sie auf der Registerkarte Konfiguration die Schaltfläche *Konfiguration* für die Arbeitsumgebung aus.
+. Zeigen Sie auf der Seite Scankonfiguration die Scaneinstellungen für alle Repositorys an.
 +
 image:screenshot_compliance_repo_scan_settings.png["Ein Screenshot, in dem angezeigt wird, ob Ihre Buckets gescannt werden, und der aktuelle Scanstatus."]
 
+. Bewegen Sie den Mauszeiger über das Diagramm in der Spalte _Mapping Status_, um die Anzahl der Dateien anzuzeigen, die in jedem Repository (Bucket in diesem Beispiel) noch zugeordnet oder klassifiziert werden sollen.
 
-
-Sie können den Mauszeiger über das Diagramm in der Spalte _Mapping Status_ bewegen, um die Anzahl der Dateien anzuzeigen, die in jedem Repository (Bucket in diesem Beispiel) noch zugeordnet oder klassifiziert werden sollen.
 
 
 
@@ -59,21 +59,25 @@ Sie können jederzeit auf der Konfigurationsseite Scans oder Scans von nur-Zuord
 TIP: Datenbanken können nicht auf mapping-only Scans gesetzt werden. Das Scannen von Datenbanken kann deaktiviert oder aktiviert sein; wobei ein dem Kartenwert und Klassifizieren entspricht.
 
 .Schritte
-. Klicken Sie auf der Registerkarte Konfiguration auf die Schaltfläche *Konfiguration* für die Arbeitsumgebung.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Registerkarte Konfiguration die Schaltfläche *Konfiguration* für die Arbeitsumgebung aus.
 +
 image:screenshot_compliance_config_button.png["Ein Screenshot zeigt, wie Sie auf die Schaltfläche Konfiguration für eine Arbeitsumgebung klicken."]
 
-. Auf der Seite Scankonfiguration können Sie jedes der Repositories (in diesem Beispiel Buckets) so ändern, dass *Map* oder *Map & Classify* Scans durchgeführt werden.
+. Ändern Sie auf der Seite Scankonfiguration eines der Repositories (in diesem Beispiel Buckets), um *Map* oder *Map & Classify*-Scans durchzuführen.
 +
 image:screenshot_compliance_repo_scan_settings.png["Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird."]
 
-
-
++
 Bestimmte Arbeitsumgebungen ermöglichen es Ihnen, den Scantyp global für alle Repositories über eine Tastenleiste oben auf der Seite zu ändern. Dies gilt für Cloud Volumes ONTAP, On-Premises ONTAP, Azure NetApp Files und Amazon FSX für ONTAP Systeme.
 
++
 Das folgende Beispiel zeigt diese Tastenleiste für ein Azure NetApp Files System.
 
++
 image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie die gleiche Scaneinstellung für alle Volumes in einer Arbeitsumgebung konfiguriert wird."]
+
+
 
 
 
@@ -82,13 +86,14 @@ image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie di
 Sie können das Scannen eines Repositorys (z. B. eines Volumes) beenden, wenn Sie es nicht mehr auf Compliance-Anforderungen überwachen müssen. Dazu schalten Sie das Scannen aus. Wenn der Scanvorgang deaktiviert ist, werden alle Indexierungen und Informationen zu diesem Volumen aus dem System entfernt, und der Ladevorgang zum Scannen der Daten wird angehalten.
 
 .Schritte
-. Klicken Sie auf der Registerkarte Konfiguration auf die Schaltfläche *Konfiguration* für die Arbeitsumgebung.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Registerkarte Konfiguration die Schaltfläche *Konfiguration* für die Arbeitsumgebung aus.
 +
 image:screenshot_compliance_config_button.png["Ein Screenshot zeigt, wie Sie auf die Schaltfläche Konfiguration für eine Arbeitsumgebung klicken."]
 
 . Wählen Sie auf der Seite Scankonfiguration die Option *aus*, um die Suche nach einem bestimmten Bucket zu beenden.
 +
-image:screenshot_compliance_stop_repo_scanning.png["Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird."]
+image:screenshot_compliance_repo_scan_settings.png["Ein Screenshot, in dem gezeigt wird, wie der Scantyp für einen Bucket ausgewählt wird."]
 
 
 
@@ -101,18 +106,11 @@ Sie können das Scannen in einem Repository „anhalten“, wenn Sie vorübergeh
 Sie können den Scanvorgang jederzeit fortsetzen.
 
 .Schritte
-. Klicken Sie auf der Registerkarte Konfiguration auf die Schaltfläche *Konfiguration* für die Arbeitsumgebung.
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie auf der Registerkarte Konfiguration die Schaltfläche *Konfiguration* für die Arbeitsumgebung aus.
 +
 image:screenshot_compliance_config_button.png["Ein Screenshot zeigt, wie Sie auf die Schaltfläche Konfiguration für eine Arbeitsumgebung klicken."]
 
-. Klicken Sie auf der Seite Scankonfiguration auf die Schaltfläche Pause, um den Scanvorgang für ein Volume anzuhalten, oder drücken Sie die Wiederaufnahmetaste, um den Scanvorgang für ein zuvor angehaltenes Volume fortzusetzen.
-+
-image:screenshot_compliance_repo_pause_resume.png["Ein Screenshot, der zeigt, wie das Scannen auf einem Volume angehalten und fortgesetzt werden kann."]
-
-+
-Beachten Sie, dass einige Datenquellen die Funktion „Pause und Wiederaufnehmen“ in einem Menü bereitstellen, wie unten für SharePoint-Sites gezeigt.
-
-+
-image:screenshot_compliance_repo_pause_resume2.png["Ein Screenshot, der zeigt, wie das Scannen auf einer SharePoint-Website angehalten und fortgesetzt wird."]
-
+. Wählen Sie auf der Seite Scankonfiguration das Symbol Aktionen image:button-actions-horizontal.png["Aktionssymbol"]aus.
+. Wählen Sie *Pause*, um die Suche nach einem Volume anzuhalten, oder wählen Sie *Fortsetzen*, um die Suche nach einem Volume fortzusetzen, das zuvor angehalten wurde.
 

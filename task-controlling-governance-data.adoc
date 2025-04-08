@@ -155,13 +155,13 @@ image:screenshot-compliance-report-buttons.png["Ein Screenshot des Governance Da
 .Ergebnis
 Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
-Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen. link:task-audit-data-sense-actions.html#access-the-log-files["Informationen zum Zugriff auf Daten auf der Klassifikationsinstanz finden Sie unter"^].
+Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen.
 
 
 
 === Prüfen Sie die wichtigsten Daten-Repositorys nach Datensensibilität
 
-Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgeführt, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
+Im Bereich _Top Data Repositories by Sensitivity Level_ des Berichts Data Mapping Overview werden die vier wichtigsten Daten-Repositorys (Arbeitsumgebungen und Datenquellen) aufgelistet, die die sensibelsten Elemente enthalten. Das Balkendiagramm für jede Arbeitsumgebung ist in folgende Kategorien unterteilt:
 
 * Nicht-sensible Daten
 * Persönliche Daten
@@ -177,7 +177,7 @@ Im Bereich _Top Data Repositories by Sensitivity Level_ werden die vier wichtigs
 
 === Überprüfung sensibler Daten und breiter Berechtigungen
 
-Der Bereich „_sensible Daten“ und „ Wide Permissions_“ zeigt den Prozentsatz der Dateien an, die sensible Daten enthalten und über umfassende Berechtigungen verfügen. Das Diagramm zeigt die folgenden Berechtigungstypen:
+Der Bereich _sensible Daten und weite Berechtigungen_ des Berichts Data Mapping Overview zeigt den Prozentsatz der Dateien an, die sensible Daten enthalten und über breite Berechtigungen verfügen. Das Diagramm zeigt die folgenden Berechtigungstypen:
 
 * Von den restriktiven Genehmigungen zu den freizügigsten Beschränkungen auf dem horizontalen Axix.
 * Von den empfindlichsten Daten bis zu den sensibelsten Daten auf der vertikalen Achse.
@@ -192,7 +192,7 @@ Der Bereich „_sensible Daten“ und „ Wide Permissions_“ zeigt den Prozent
 
 === Überprüfen Sie die Daten, die nach Typen offener Berechtigungen aufgelistet sind
 
-Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigungstyp an, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
+Im Bereich _Open Permissions_ des Berichts Data Mapping Overview wird der Prozentsatz für jeden Berechtigungstyp angezeigt, der für alle Dateien vorhanden ist, die gescannt werden. Das Diagramm zeigt die folgenden Berechtigungstypen:
 
 * Keine Offenen Berechtigungen
 * Steht Unternehmen offen
@@ -209,7 +209,7 @@ Der Bereich „_Open Permissions_“ zeigt den Prozentsatz für jeden Berechtigu
 
 === Überprüfen Sie das Alter und die Größe der Daten
 
-Vielleicht sollten Sie die Elemente in den Diagrammen _Alter_ und _Größe_ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder auf kostengünstigeren Objektspeicher verschieben sollten.
+Vielleicht sollten Sie die Elemente in den Diagrammen _Alter_ und _Größe_ im Bericht Data Mapping Overview untersuchen, um zu ermitteln, ob Daten gelöscht werden sollten oder in einen kostengünstigeren Objektspeicher verschoben werden sollten.
 
 .Schritte
 . Um Details über das Alter der Daten anzuzeigen, bewegen Sie den Cursor im Diagramm über einen Punkt.
@@ -228,11 +228,11 @@ NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können im Diagr
 
 === Prüfen Sie die am häufigsten identifizierten Datenklassifizierungen in Ihren Daten
 
-Der Bereich _Classification_ enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html#view-files-by-categories["Kategorien"^] Und link:task-controlling-private-data.html#view-files-by-file-types["Dateitypen"^] In den gescannten Daten.
+Der _Classification_-Bereich des Berichts Data Mapping Overview enthält eine Liste der am häufigsten identifizierten link:task-controlling-private-data.html["Kategorien"] und link:task-controlling-private-data.html["Dateitypen"]gescannten Daten.
 
 Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert, indem Sie die Arten von Informationen anzeigen, die Sie haben. Beispielsweise kann eine Kategorie wie „Bewerbungen“ oder „Mitarbeiterverträge“ sensible Daten enthalten. Wenn Sie sich die Ergebnisse genauer anschauen, stellen Sie möglicherweise fest, dass Mitarbeiterverträge an einem nicht sicheren Ort gespeichert sind. Sie können das Problem dann beheben.
 
-Siehe link:task-controlling-private-data.html#view-files-by-categories["Anzeigen von Dateien nach Kategorien"^] Finden Sie weitere Informationen.
+Weitere Informationen finden Sie unter link:task-controlling-private-data.html["Anzeigen von Dateien nach Kategorien"] .
 
 .Schritte
 . Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.

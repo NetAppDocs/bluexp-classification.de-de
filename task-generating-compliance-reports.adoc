@@ -45,10 +45,11 @@ Sie können die Inhalte des BlueXP Klassifizierungs-Compliance-Dashboards filter
 Wenn Sie das Dashboard filtern, erfasst die BlueXP Klassifizierung die Compliance-Daten und Berichte nur an die von Ihnen ausgewählten Applikationsumgebungen.
 
 .Schritte
-. Wählen Sie die Dropdown-Liste Filter aus, und wählen Sie die Arbeitsumgebung aus.
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option „*Compliance*“.
+. Wählen Sie die Dropdown-Liste Arbeitsumgebungen aus, und wählen Sie die Arbeitsumgebungen aus.
 . Wählen Sie *Ansicht*.
 +
-image:screenshot_cloud_compliance_filter.gif["Ein Screenshot zur Auswahl der Arbeitsumgebungen für die Berichte, die ausgeführt werden sollen."]
+image:screenshot_cloud_compliance_filter.png["Ein Screenshot zur Auswahl der Arbeitsumgebungen für die Berichte, die ausgeführt werden sollen."]
 
 
 
@@ -77,8 +78,8 @@ Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffe
 NOTE: Bei der Suche nach den Namen der betroffenen Personen werden Englisch, Deutsch, Japanisch und Spanisch unterstützt. Support für weitere Sprachen wird später hinzugefügt.
 
 .Schritte
-. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
-. Wählen Sie *Datensubjekte*.
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option „*Compliance*“.
+. Scrollen Sie auf der Compliance-Seite nach unten und wählen Sie *Data Subjects* aus.
 . Suchen Sie nach dem vollständigen Namen oder der bekannten Kennung des Betroffenen.
 +
 Hier ein Beispiel, das eine Suche nach dem Namen _john doe_ zeigt:
@@ -125,8 +126,9 @@ Der Bericht enthält die folgenden Informationen:
 Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
-. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
-. Wählen Sie *Compliance* und dann das Download-Symbol neben *HIPAA-Bericht* unter *Berichte*.
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option „*Compliance*“.
+. Scrollen Sie nach unten und suchen Sie den Bereich *Reports*.
+. Klicken Sie auf das Download-Symbol neben *HIPAA Report*.
 +
 image:screenshot_hipaa.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf HIPAA klicken können."]
 
@@ -155,8 +157,9 @@ Der Bericht enthält die folgenden Informationen:
 Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
-. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
-. Wählen Sie *Compliance* und dann das Download-Symbol neben *PCI DSS Report* unter *Reports*.
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option „*Compliance*“.
+. Scrollen Sie nach unten und suchen Sie den Bereich *Reports*.
+. Wählen Sie das Download-Symbol neben *PCI DSS Report*.
 +
 image:screenshot_pci_dss.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
 
@@ -183,8 +186,9 @@ Der Bericht enthält die folgenden Informationen:
 Rufen Sie die Registerkarte Compliance auf, um den Bericht zu erstellen.
 
 .Schritte
-. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
-. Wählen Sie *Compliance*, und wählen Sie dann das Download-Symbol neben *Privacy Risk Assessment* unter *Reports*.
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option „*Compliance*“.
+. Scrollen Sie nach unten und suchen Sie den Bereich *Reports*.
+. Klicken Sie auf das Download-Symbol neben *Privacy Risk Assessment*.
 +
 image:screenshot_privacy_risk_assessment.gif["Ein Screenshot der Registerkarte Compliance in BlueXP, in dem der Bereich Berichte angezeigt wird, in dem Sie auf Privacy Risk Assessment klicken können."]
 

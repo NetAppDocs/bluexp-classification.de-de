@@ -71,7 +71,7 @@ sidebar:
     - title: Weisen Sie Daten Richtlinien zu
       url: "/task-using-policies.html"
     - title: Scaneinstellungen ändern
-      url: task-managing-repo-scanning.html
+      url: "/task-managing-repo-scanning.html"
     - title: Erstellen von Compliance-Berichten
       url: "/task-generating-compliance-reports.html"
   - title: BlueXP Klassifizierung managen
