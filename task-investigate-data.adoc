@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-investigate-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. 
+summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Hier können Sie Ihre Recherche fortsetzen, nachdem Sie sich das Governance Dashboard ansehen. 
 ---
 = Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten mit der BlueXP -Klassifizierung
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details
 
 
 [role="lead"]
-Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Sie können diese Seite aus vielen Bereichen der BlueXP Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards. Sie können die Daten in eine CSV- oder JSON-Datei exportieren, um sie weiter zu analysieren oder mit anderen zu teilen.
+Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Hier können Sie Ihre Recherche fortsetzen, nachdem Sie sich das Governance Dashboard ansehen. Auf der Seite Untersuchung können Sie die Daten mithilfe eines der vielen Filter filtern, um nur die Ergebnisse anzuzeigen, die Sie anzeigen möchten. Darüber hinaus können Sie Dateimetadaten und Berechtigungen für Dateien und Verzeichnisse anzeigen und nach doppelten Dateien in Ihren Storage-Systemen suchen.
+
+Sie können diese Seite aus vielen Bereichen der BlueXP -Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards mit den bereits auf diesen Seiten ausgewählten Filtern. Sie können die Daten in eine CSV- oder JSON-Datei exportieren, um sie weiter zu analysieren oder mit anderen zu teilen.
 
 
 NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn Sie eine vollständige Klassifizierungsprüfung Ihrer Datenquellen durchgeführt haben. Datenquellen, bei denen nur ein Mapping-Scan vorliegt, zeigen keine Details auf Dateiebene an.
@@ -25,21 +27,22 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anzuzeigen, die Sie sehen möchten.
 
-Wenn Sie den Inhalt der Seite nach der Verfeinern als Bericht herunterladen möchten, wählen Sie die image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Bericht Zur Datenuntersuchung,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
-
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Führen Sie auf der Seite Datenuntersuchung einen der folgenden Schritte aus:
+. Um den Inhalt der Seite nach der Refinierung als Bericht herunterzuladen, klicken Sie auf die image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Data Investigation Report,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
++
 image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verfügbaren Filter, wenn die Ergebnisse auf der Untersuchungsseite verfeinert werden."]
 
-* Auf den Registerkarten der obersten Ebene können Sie Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) anzeigen.
-* Mit den Steuerelementen oben in jeder Spalte können Sie die Ergebnisse in numerischer oder alphabetischer Reihenfolge sortieren.
-* Mit den Filtern im linken Fensterbereich können Sie die Ergebnisse verfeinern, indem Sie die in den nächsten Abschnitten beschriebenen Attribute auswählen.
+. Um die Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) anzuzeigen, wählen Sie oben eine der Registerkarten aus.
+. Um die Ergebnisse in numerischer oder alphabetischer Reihenfolge zu sortieren, wählen Sie das Steuerelement oben in jeder Spalte aus.
+. Um die Ergebnisse noch weiter zu verfeinern, wählen Sie einen der vielen Filter im linken Filterfenster aus.
 
 
 
 NOTE: Auf der Seite „Datenuntersuchung“ können Sie nur die ersten 10,000 Ergebnisse oder 500 Seiten für einen Scan anzeigen.
 
-
-
-=== Filtern von Daten nach Sensitivität und Inhalt
+*Filtern Sie Daten nach Sensitivität und Inhalt*
 
 Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Informationen in Ihren Daten enthalten sind.
 
@@ -48,28 +51,24 @@ Mithilfe der folgenden Filter können Sie anzeigen, wie viele vertrauliche Infor
 | Filtern | Details 
 
 
-| Kategorie | Wählen Sie die aus link:reference-private-data-categories.html#types-of-categories["Arten von Kategorien"^]. 
+| Kategorie | Wählen Sie die link:reference-private-data-categories.html["Arten von Kategorien"]. 
 
 
 | Empfindlichkeitsstufe | Wählen Sie die Empfindlichkeitsstufe aus: Persönlich, sensibel persönlich oder nicht empfindlich. 
 
 
-| Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern).
-
-HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen entfernt. 
+| Anzahl der Kennungen | Wählen Sie den Bereich der erkannten empfindlichen Kennungen pro Datei aus. Hierzu zählen personenbezogene Daten und sensible personenbezogene Daten. Beim Filtern in Verzeichnissen ergibt die BlueXP Klassifizierung insgesamt die Treffer aus allen Dateien in jedem Ordner (und in Unterordnern). HINWEIS: Die Veröffentlichung von Dezember 2023 (Version 1.26.6) hat die Option zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen entfernt. 
 
 
-| Persönliche Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-personal-data["Arten personenbezogener Daten"^]. 
+| Persönliche Daten | Wählen Sie die link:reference-private-data-categories.html["Arten personenbezogener Daten"]. 
 
 
-| Sensible Personenbezogene Daten | Wählen Sie die aus link:reference-private-data-categories.html#types-of-sensitive-personal-data["Arten sensibler personenbezogener Daten"^]. 
+| Sensible Personenbezogene Daten | Wählen Sie die link:reference-private-data-categories.html["Arten sensibler personenbezogener Daten"]. 
 
 
-| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. link:task-generating-compliance-reports.html["Weitere Informationen zu Datensubjekten finden Sie hier"^]. 
+| Betroffene Person | Geben Sie den vollständigen Namen oder die bekannte Kennung eines Betroffenen ein. link:task-generating-compliance-reports.html["Weitere Informationen zu Datensubjekten finden Sie hier"]. 
 |===
-
-
-=== Filtern Sie Daten nach Benutzereigern und Benutzerberechtigungen
+*Filtern von Daten nach Benutzereigentümerberechtigungen*
 
 Verwenden Sie die folgenden Filter, um Dateibesitzer und Berechtigungen für den Zugriff auf Ihre Daten anzuzeigen.
 
@@ -89,9 +88,7 @@ Verwenden Sie die folgenden Filter, um Dateibesitzer und Berechtigungen für den
 
 | Anzahl der Benutzer mit Zugriff | Wählen Sie einen oder mehrere Kategoriebereiche aus, um anzuzeigen, welche Dateien und Ordner für eine bestimmte Anzahl von Benutzern geöffnet sind. 
 |===
-
-
-=== Filtern Sie Daten nach Zeit
+*Daten nach Zeit filtern*
 
 Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anzuzeigen.
 
@@ -112,12 +109,10 @@ Verwenden Sie die folgenden Filter, um Daten basierend auf den Zeitkriterien anz
 | Zuletzt Aufgerufen  a| 
 Wählen Sie einen Zeitraum aus, in dem zuletzt auf die Datei oder das Verzeichnis (nur CIFS oder NFS) zugegriffen wurde. Sie können auch einen benutzerdefinierten Zeitbereich angeben, um die Suchergebnisse weiter zu verfeinern. Für die Dateitypen, die die BlueXP Klassifizierung scannt, wurde die Datei zuletzt durch die BlueXP Klassifizierung gescannt.
 
-Beachten Sie, dass die Klassifizierung durch BlueXP nicht zur Zeit des letzten Zugriffs aus den folgenden Datenquellen herangezogen wird: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.
+Die BlueXP Klassifizierung extrahiert nicht den „Zeitpunkt des letzten Zugriffs“ aus den folgenden Datenquellen: SharePoint Online, SharePoint On-Premises (SharePoint Server), OneDrive, Google Drive und Amazon S3.
 
 |===
-
-
-=== Filtern Sie Daten nach Metadaten
+*Daten nach Metadaten filtern*
 
 Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, Größe und Verzeichnis oder Dateityp anzuzeigen.
 
@@ -132,7 +127,7 @@ Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, 
 | Verzeichnistyp | Wählen Sie den Verzeichnistyp aus, entweder „Share“ oder „Folder“. 
 
 
-| Dateityp | Wählen Sie die aus link:reference-private-data-categories.html#types-of-files["Dateitypen"^]. 
+| Dateityp | Wählen Sie die link:reference-private-data-categories.html["Dateitypen"]. 
 
 
 | Dateigröße | Wählen Sie den Dateigrößenbereich aus. 
@@ -140,9 +135,7 @@ Verwenden Sie die folgenden Filter, um Daten auf der Grundlage von Speicherort, 
 
 | Datei-Hash | Geben Sie den Hash der Datei ein, um eine bestimmte Datei zu finden, selbst wenn der Name anders ist. 
 |===
-
-
-=== Filtern Sie Ihre Daten nach Storage-Typ
+*Daten nach Speichertyp filtern*
 
 Verwenden Sie die folgenden Filter, um Daten nach Speichertyp anzuzeigen.
 
@@ -159,9 +152,7 @@ Verwenden Sie die folgenden Filter, um Daten nach Speichertyp anzuzeigen.
 
 | Storage Repository | Wählen Sie das Speicher-Repository aus, z. B. ein Volume oder ein Schema. 
 |===
-
-
-=== Filtern von Daten nach Richtlinien
+*Daten nach Richtlinien filtern*
 
 Verwenden Sie den folgenden Filter, um Daten nach Richtlinien anzuzeigen.
 
@@ -172,9 +163,7 @@ Verwenden Sie den folgenden Filter, um Daten nach Richtlinien anzuzeigen.
 
 | Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
 |===
-
-
-=== Filtern Sie Daten nach Analysestatus
+*Daten nach Analysestatus filtern*
 
 Verwenden Sie den folgenden Filter, um Daten nach dem BlueXP Klassifizierungs-Scan-Status anzuzeigen.
 
@@ -188,11 +177,9 @@ Verwenden Sie den folgenden Filter, um Daten nach dem BlueXP Klassifizierungs-Sc
 
 | Analyseereignis Scannen | Wählen Sie aus, ob Dateien angezeigt werden sollen, die nicht klassifiziert wurden, weil die BlueXP-Klassifizierung die Uhrzeit des letzten Zugriffs nicht rückgängig machen konnte, oder Dateien, die klassifiziert wurden, obwohl die BlueXP-Klassifizierung die Zeit des letzten Zugriffs nicht rückgängig machen konnte. 
 |===
-link:reference-collected-metadata.html#last-access-time-timestamp["Weitere Informationen zum Zeitstempel des letzten Zugriffs"] Weitere Informationen zu den Elementen, die beim Filtern mit dem Ereignis Scananalyse auf der Seite Untersuchung angezeigt werden.
+link:reference-collected-metadata.html["Weitere Informationen zum Zeitstempel des letzten Zugriffs"] Weitere Informationen zu den Elementen, die beim Filtern mit dem Ereignis Scananalyse auf der Seite Untersuchung angezeigt werden.
 
-
-
-=== Daten nach Duplikaten filtern
+*Daten nach Duplikaten filtern*
 
 Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupliziert wurden.
 
@@ -207,27 +194,44 @@ Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupli
 
 == Anzeigen von Datei-Metadaten
 
-Wählen Sie im Bereich Ergebnisse der Datenuntersuchung die Schaltfläche Down-Caret für eine einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen.
+Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind nützlich, wenn Sie planenlink:task-using-policies.html["Erstellen von Richtlinien"], weil Sie alle Informationen sehen können, die Sie zum Filtern Ihrer Daten verwenden können.
 
+Nicht alle Informationen stehen für alle Datenquellen zur Verfügung - genau das, was für diese Datenquelle angemessen ist. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.
+
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Wählen Sie in der Liste Datenuntersuchung auf der rechten Seite das Down-Caret für jede einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen.
++
 image:screenshot_compliance_file_details.png["Ein Screenshot mit den Metadatendetails für eine Datei auf der Seite „Datenuntersuchung“."]
 
-Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind hilfreich, wenn Sie Vorhaben link:task-using-policies.html#create-custom-policies["Erstellen von Richtlinien"] Da Sie alle Informationen anzeigen können, die Sie zum Filtern Ihrer Daten verwenden können.
-
-Beachten Sie, dass nicht alle Informationen für alle Datenquellen verfügbar sind – und genau die Informationen, die sich für diese Datenquelle eignen. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.
 
 
 
-== Berechtigungen für Dateien und Verzeichnisse anzeigen
+
+== Benutzerberechtigungen für Dateien und Verzeichnisse anzeigen
 
 Wenn Sie eine Liste aller Benutzer oder Gruppen anzeigen möchten, die Zugriff auf eine Datei oder ein Verzeichnis haben, wählen Sie *Alle Berechtigungen anzeigen*. Diese Schaltfläche ist nur für Daten in CIFS-Freigaben verfügbar.
 
 Wenn Sie SIDs (Security Identifiers) anstelle von Benutzer- und Gruppennamen sehen, sollten Sie Ihr Active Directory in die BlueXP Klassifizierung integrieren. link:task-add-active-directory-datasense.html["So geht's"].
 
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Wählen Sie in der Liste Datenuntersuchung auf der rechten Seite das Down-Caret für jede einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen.
+. Um eine Liste aller Benutzer oder Gruppen anzuzeigen, die Zugriff auf eine Datei oder ein Verzeichnis haben, und die Arten von Berechtigungen, die sie haben, wählen Sie im Feld Offene Berechtigungen die Option *Alle Berechtigungen anzeigen*.
++
+
+NOTE: Die BlueXP -Klassifizierung zeigt bis zu 100 Benutzer in der Liste.
+
++
 image:screenshot_compliance_permissions.png["Ein Screenshot mit detaillierten Dateiberechtigungen."]
 
-Wählen Sie die Schaltfläche Down-Caret image:button_down_caret.png["Vorsicht"]für jede Gruppe aus, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.
+. Wählen Sie die Schaltfläche Down-Caret image:button_down_caret.png["Vorsicht"]für jede Gruppe aus, um die Liste der Benutzer anzuzeigen, die Teil der Gruppe sind.
++
 
-Wenn Sie den Namen eines Benutzers oder einer Gruppe auswählen, wird die Untersuchungsseite aktualisiert, sodass Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.
+TIP: Sie können eine Ebene der Gruppe erweitern, um die Benutzer anzuzeigen, die Teil der Gruppe sind.
+
+. Wählen Sie den Namen eines Benutzers oder einer Gruppe aus, um die Untersuchungsseite zu aktualisieren, damit Sie alle Dateien und Verzeichnisse sehen können, auf die der Benutzer oder die Gruppe Zugriff hat.
+
 
 
 
@@ -235,32 +239,41 @@ Wenn Sie den Namen eines Benutzers oder einer Gruppe auswählen, wird die Unters
 
 Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.
 
-Alle Ihre Dateien (ohne Datenbanken), die 1 MB oder größer sind und persönliche oder sensible personenbezogene Daten enthalten, werden verglichen, um zu sehen, ob es Duplikate gibt. Sie können die Filter auf der Untersuchungsseite „Dateigröße“ zusammen mit „Duplikate“ verwenden, um zu sehen, welche Dateien eines bestimmten Größenbereichs in Ihrer Umgebung dupliziert werden.
+Alle Ihre Dateien (ohne Datenbanken), die 1 MB oder größer sind oder persönliche oder sensible personenbezogene Daten enthalten, werden verglichen, um zu sehen, ob es Duplikate gibt.
 
 Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
 
-Sie können die Liste mit doppelten Dateien herunterladen und an Ihren Storage-Administrator senden, damit er jederzeit entscheiden kann, welche Dateien gelöscht werden können. Oder Sie können link:task-managing-highlights.html#delete-source-files["Löschen Sie die Datei"] Wenn Sie sicher sind, dass keine bestimmte Version der Datei benötigt wird.
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Wählen Sie im Bereich Filter auf der Seite Untersuchung links „Dateigröße“ zusammen mit „Duplikate“ („hat Duplikate“) aus, um zu sehen, welche Dateien eines bestimmten Größenbereichs in Ihrer Umgebung dupliziert werden.
+. Optional laden Sie die Liste der doppelten Dateien herunter und senden Sie sie an Ihren Speicheradministrator, damit Sie entscheiden können, welche Dateien, falls vorhanden, gelöscht werden können.
+. Sie können sich auch link:task-managing-highlights.html["Löschen Sie die Datei"]selbst dann selbst darum kümmern, wenn Sie sicher sind, dass eine bestimmte Version der Datei nicht benötigt wird.
 
-*Alle duplizierten Dateien anzeigen*
-
-Wenn Sie eine Liste aller Dateien wünschen, die in den Arbeitsumgebungen und Datenquellen, die Sie scannen, dupliziert werden, können Sie den Filter *Duplicates > has Dubletten* auf der Seite Data Investigation verwenden.
-
-Alle duplizierten Dateien werden auf der Ergebnisseite angezeigt.
 
 *Anzeigen, wenn eine bestimmte Datei dupliziert ist*
 
-Wenn Sie sehen möchten, ob eine einzelne Datei Duplikate enthält, wählen Sie im Bereich Ergebnisse der Datenuntersuchung für jede einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Metadaten der Datei anzuzeigen. Wenn es Duplikate einer bestimmten Datei gibt, werden diese Informationen neben dem Feld _Duplicates_ angezeigt.
+Sie können sehen, ob eine einzelne Datei Duplikate enthält.
 
-Um die Liste der doppelten Dateien anzuzeigen und wo sie sich befinden, wählen Sie *Details anzeigen*. Wählen Sie auf der nächsten Seite *Duplikate anzeigen*, um die Dateien auf der Seite Untersuchung anzuzeigen.
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Wählen Sie in der Liste Datenuntersuchung rechts für eine einzelne Datei ausimage:button_down_caret.png["Vorsicht"], um die Dateimetadaten anzuzeigen.
++
+Wenn für eine Datei Duplikate vorhanden sind, wird diese Information neben dem Feld _Duplikate_ angezeigt.
 
+. Um die Liste der doppelten Dateien anzuzeigen und wo sie sich befinden, wählen Sie *Details anzeigen*.
+. Wählen Sie auf der nächsten Seite *Duplikate anzeigen*, um die Dateien auf der Seite Untersuchung anzuzeigen.
++
 image:screenshot_compliance_duplicate_file.png["Ein Screenshot zeigt, wo sich doppelte Dateien befinden."]
 
++
 
 TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden und direkt auf der Untersuchungsseite eingeben, um jederzeit nach einer bestimmten doppelten Datei zu suchen - oder Sie können sie in einer Richtlinie verwenden.
 
 
 
-== Bericht Zur Datenuntersuchung
+
+
+== Erstellen Sie den Datenermittlungsbericht
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
@@ -330,7 +343,10 @@ Der *Structured Data Report* enthält die folgenden Informationen zu Ihren Daten
 
 .Schritte zum Generieren des Berichts
 . Wählen Sie auf der Seite Datenuntersuchung die image:button_download.png["Schaltfläche „Download“"] Schaltfläche oben rechts auf der Seite aus.
-. Wählen Sie den Berichtstyp CSV oder JSON und geben Sie einen **Berichtnamen** an. Wählen Sie eine **Arbeitsumgebung** und **Volume** und geben Sie dann einen ** Zielordner-Pfad** an.
+. Wählen Sie den Berichtstyp: CSV oder JSON.
+. Geben Sie einen **Berichtsnamen ein**.
+. Wählen Sie A **Arbeitsumgebung** und **Volumen**
+. Geben Sie einen Pfad für den Zielordner** an.
 . Wählen Sie **Bericht Herunterladen**.
 +
 image:screenshot_compliance_investigation_report2.png["Ein Screenshot der Seite „Untersuchungsbericht herunterladen“ mit mehreren Optionen."]
@@ -339,3 +355,27 @@ image:screenshot_compliance_investigation_report2.png["Ein Screenshot der Seite 
 
 .Ergebnis
 Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.
+
+
+
+== Erstellen Sie eine Policy auf der Basis ausgewählter Filter
+
+Es könnte hilfreich sein, dass Sie die Filter, die Sie auf der Seite „Datenuntersuchung“ ausgewählt haben, als Richtlinie speichern. Auf diese Weise können Sie die gleichen Filter jederzeit ausführen, ohne sie erneut auswählen zu müssen.
+
+.Schritte
+. Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
+. Wählen Sie auf der Seite Datenuntersuchung die Filter aus, die Sie zum Erstellen einer Richtlinie verwenden möchten.
+. Wählen Sie im unteren Bereich des Filterfensters *Create Policy from this search* aus.
+. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein.
+. Wählen Sie eine der folgenden Optionen:
++
+** *Dateien, die dieser Richtlinie entsprechen, automatisch löschen (jeden Tag): Wählen Sie diese Option aus, wenn Sie die Dateien löschen möchten, die der Richtlinie entsprechen.
+** *E-Mail-Updates zu dieser Richtlinie an BlueXP -Benutzer zu diesem Konto senden Jeden <day/week/month>*: Wählen Sie diese Option, wenn Sie E-Mail-Updates zu dieser Richtlinie an BlueXP -Benutzer zu diesem Konto senden möchten.
+** *E-Mail senden Every <Day> to <email address>*: Wählen Sie diese Option, wenn Sie eine E-Mail an jede <Day> an eine bestimmte E-Mail-Adresse senden möchten.
+
+
+. Wählen Sie *Create Policy*.
+
+
+
+TIP: Es kann bis zu 15 Minuten dauern, bis die Ergebnisse auf der Seite „Richtlinien“ angezeigt werden.

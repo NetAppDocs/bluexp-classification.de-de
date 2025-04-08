@@ -164,7 +164,7 @@ Die BlueXP Klassifizierung ermöglicht Ihnen die Durchführung eines allgemeinen
 +
 Nach einem schnellen Scan können Sie einen Daten-Mapping-Bericht erstellen. Dieser Bericht bietet einen Überblick über die in Ihren Datenquellen gespeicherten Daten, um Sie bei Entscheidungen zu Ressourcenauslastung, Migration, Backup-, Sicherheits- und Compliance-Prozessen zu unterstützen.
 
-* *Data Classification (Deep) Scan (Map & Classify Scan)*: BlueXP  Classification Scans mit Standard-Protokollen und nur-Lese-Berechtigung in Ihren Umgebungen. Ausgewählte Dateien werden nach sensiblen Daten, privaten Informationen und Ransomware-Problemen geöffnet und gescannt, die damit verbunden sind.
+* *Data classification Deep Scan (Map & Classify Scan)*: BlueXP -Klassifikations-Scans mit Standardprotokollen und nur-Lese-Berechtigung in Ihren Umgebungen. Ausgewählte Dateien werden nach sensiblen Daten, privaten Informationen und Ransomware-Problemen geöffnet und gescannt, die damit verbunden sind.
 +
 Nach einem vollständigen Scan gibt es zahlreiche zusätzliche BlueXP Klassifizierungsfunktionen, die Sie auf Ihre Daten anwenden können, beispielsweise das Anzeigen und Optimieren von Daten auf der Seite „Datenuntersuchung“, das Suchen nach Namen in Dateien, das Kopieren, Verschieben und Löschen von Quelldateien usw.
 
