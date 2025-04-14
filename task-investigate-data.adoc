@@ -349,9 +349,9 @@ Der *Structured Data Report* enthält die folgenden Informationen zu Ihren Daten
 . Wählen Sie auf der Seite Datenuntersuchung die image:button_download.png["Schaltfläche „Download“"] Schaltfläche oben rechts auf der Seite aus.
 . Wählen Sie den Berichtstyp: CSV oder JSON.
 . Geben Sie einen **Berichtsnamen** ein.
-. Wenn Sie als Berichtstyp CSV ausgewählt haben, wählen Sie **Lokal**, um den Bericht im Browser herunterzuladen. Beachten Sie, dass diese Option den Bericht auf die ersten 10,000 Zeilen beschränkt. Für diese Option sind keine weiteren Optionen erforderlich.
+. Um den vollständigen Bericht herunterzuladen, wählen Sie **Arbeitsumgebung** und dann die Optionen **Arbeitsumgebung** und **Volumen** aus den jeweiligen Dropdown-Menüs. Geben Sie einen Pfad für den Zielordner** an.
 +
-Wählen Sie für den vollständigen Bericht **Arbeitsumgebung** aus, und wählen Sie dann aus den entsprechenden Dropdown-Menüs die Optionen **Arbeitsumgebung** und **Volumen**. Geben Sie einen Pfad für den Zielordner** an.
+Um den Bericht im Browser herunterzuladen, wählen Sie **Lokal** . Beachten Sie, dass diese Option den Bericht auf die ersten 10,000 Zeilen beschränkt und auf das Format **CSV** beschränkt ist. Sie müssen keine anderen Felder ausfüllen, wenn Sie **Lokal** auswählen.
 
 . Wählen Sie **Bericht Herunterladen**.
 +
