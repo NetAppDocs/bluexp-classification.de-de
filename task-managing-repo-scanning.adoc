@@ -81,6 +81,22 @@ image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie di
 
 
 
+== Priorisieren Sie Scans
+
+Sie können die wichtigsten Scans priorisieren - nur Mapping oder Map und Classification. Durch die Möglichkeit, Scans zu priorisieren, können Sie sicherstellen, dass Scans mit hoher Priorität zuerst abgeschlossen werden.
+
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
+
+Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
+
+.Schritte
+. Wählen Sie im BlueXP -Klassifizierungsmenü *Konfiguration*.
+. Wählen Sie die Ressourcen aus, die Sie priorisieren möchten.
+. Wählen Sie aus der Option Aktionen `...` die Option *priorisiere Scan*.
+
+
+
+
 == Beenden Sie die Suche nach einem Repository
 
 Sie können das Scannen eines Repositorys (z. B. eines Volumes) beenden, wenn Sie es nicht mehr auf Compliance-Anforderungen überwachen müssen. Dazu schalten Sie das Scannen aus. Wenn der Scanvorgang deaktiviert ist, werden alle Indexierungen und Informationen zu diesem Volumen aus dem System entfernt, und der Ladevorgang zum Scannen der Daten wird angehalten.
