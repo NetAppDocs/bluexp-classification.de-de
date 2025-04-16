@@ -58,7 +58,7 @@ Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_�
 *** Sonstiges (allgemeine Kategorie „Sonstige“)
 
 
-** *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html#filter-data-by-duplicates["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
+** *Doppelte Dateien* - Dateien, die an anderen Orten in den Datenquellen, die Sie scannen, dupliziert werden. link:task-investigate-data.html["Sehen Sie, welche Arten von duplizierten Dateien angezeigt werden"].
 
 
 

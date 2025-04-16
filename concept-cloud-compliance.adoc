@@ -194,11 +194,11 @@ Einzelheiten zu den Unterschieden zwischen Mapping- und Classification-Scans fin
 
 == Informationen, die durch die BlueXP -Klassifizierung kategorisiert werden
 
-Die BlueXP Klassifizierung erfasst, indiziert und weist Ihren Daten (Dateien) Kategorien zu. Die Daten, die die BlueXP Klassifizierung indiziert, umfassen die folgenden:
+Die BlueXP -Klassifizierung erfasst, indiziert und weist den folgenden Daten Kategorien zu:
 
 * *Standardmetadaten* über Dateien: Der Dateityp, seine Größe, Erstellungs- und Änderungsdaten, und so weiter.
-* *Personenbezogene Daten*: Personenbezogene Daten (PII) wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
-* *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPII), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie in der DSGVO und anderen Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
+* *Personenbezogene Daten*: Personenbezogene Daten (PII) wie E-Mail-Adressen, Identifikationsnummern oder Kreditkartennummern, die durch die BlueXP -Klassifizierung anhand bestimmter Wörter, Zeichenfolgen und Muster in den Dateien identifiziert werden. link:task-controlling-private-data.html#view-files-that-contain-personal-data["Weitere Informationen zu personenbezogenen Daten"^].
+* *Sensible personenbezogene Daten*: Besondere Arten von sensiblen personenbezogenen Daten (SPII), wie Gesundheitsdaten, ethnische Herkunft oder politische Meinungen, wie sie in der Datenschutz-Grundverordnung (DSGVO) und anderen Datenschutzvorschriften definiert sind. link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["Erfahren Sie mehr über sensible persönliche Daten"^].
 * *Categories*: Die BlueXP-Klassifizierung nimmt die gescannten Daten auf und teilt sie in verschiedene Kategorien auf. Kategorien sind Themen, die auf der KI-Analyse des Inhalts und der Metadaten jeder Datei basieren. link:task-controlling-private-data.html#view-files-by-categories["Weitere Informationen zu Kategorien"^].
 * *Types*: Die BlueXP Klassifizierung erfasst die gescannten Daten und unterteilt sie nach Dateityp. link:task-controlling-private-data.html#view-files-by-file-types["Erfahren Sie mehr über Types"^].
 * *Namensentity Recognition*: BlueXP  Classification verwendet KI, um natürliche Namen von Menschen aus Dokumenten zu extrahieren. link:task-generating-compliance-reports.html["Informieren Sie sich über die Reaktion auf Zugriffsanfragen von Betroffenen"^].

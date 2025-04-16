@@ -329,7 +329,7 @@ Diese Version enthält einige kleinere Verbesserungen.
 Die Version hat außerdem die folgenden Optionen entfernt:
 
 * Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.
-* Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"].
+* Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung. Siehe link:task-investigate-data.html["Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten"].
 * Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert. Siehe link:task-org-private-data.html["Private Daten organisieren"].
 
 

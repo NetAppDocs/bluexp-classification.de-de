@@ -30,7 +30,7 @@ Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anz
 .Schritte
 . Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
 . Führen Sie auf der Seite Datenuntersuchung einen der folgenden Schritte aus:
-. Um den Inhalt der Seite nach der Refinierung als Bericht herunterzuladen, klicken Sie auf die image:button_download.png["Schaltfläche „Download“"] Schaltfläche. <<Data Investigation Report,Einzelheiten zum Untersuchungsbericht zu Daten finden Sie hier>>.
+. Um den Inhalt der Seite nach der Refinierung als Bericht herunterzuladen, klicken Sie auf die image:button_download.png["Schaltfläche „Download“"] Schaltfläche.
 +
 image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verfügbaren Filter, wenn die Ergebnisse auf der Untersuchungsseite verfeinert werden."]
 
@@ -161,7 +161,7 @@ Verwenden Sie den folgenden Filter, um Daten nach Richtlinien anzuzeigen.
 | Filtern | Details 
 
 
-| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
+| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Rufen Sie link:task-using-policies.html["Hier"]die Liste der vorhandenen Richtlinien auf, und erstellen Sie Ihre eigenen benutzerdefinierten Richtlinien. 
 |===
 *Daten nach Analysestatus filtern*
 
