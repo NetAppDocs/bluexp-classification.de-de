@@ -56,7 +56,7 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 | Passwort | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
-.57+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
+.88+| Nationale Kennungen | Australischer TFN (Steuerdateinummer) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | Australische Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
@@ -87,6 +87,99 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 
 
 | Bulgarische ID (UCN) | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| Canadian Banking Information Numbers – Kontonummer | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Banking Information Numbers - Transitnummer | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Citizenship/Permanent Resident Number - PR Card Number (UCI) | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Alberta | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - British Columbia | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - Manitoba | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - New Brunswick | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Neufundland und Labrador | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Northwest Territories | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - Nova Scotia | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - Nunavut | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Ontario | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - Prince Edward Island | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Quebec | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Driver's License - Saskatchewan | Ja. | ✓ |  |  |  |  
+
+
+| Kanadischer Führerschein - Yukon | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Alberta PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - British Columbia PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Kanadische Gesundheitskartennummer - Manitoba PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Neufundland und Labrador PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Northwest Territories PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Nova Scotia PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Nunavut PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Ontario PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Prince Edward Island PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Quebec PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Saskatchewan PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Canadian Health Card Number - Yukon PHIN | Ja. | ✓ |  |  |  |  
+
+
+| Kanadische Passnummer | Ja. | ✓ |  |  |  |  
+
+
+| Kanadische Sozialversicherungsnummer (SIN) | Ja. | ✓ |  |  |  |  
 
 
 | Kroatische ID (OIB) | Ja. | ✓ | ✓ | ✓ |  |  
@@ -209,10 +302,7 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 | Schwedische ID | Ja. | ✓ | ✓ | ✓ |  |  
 
 
-| Texas Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
-
-
-| GROSSBRITANNIEN ID (NINO) | Ja. | ✓ | ✓ | ✓ |  |  
+| UK-ID (NINO) | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | USA California Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
@@ -222,6 +312,9 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 
 
 | USA New York Führerschein | Ja. | ✓ | ✓ | ✓ |  |  
+
+
+| USA Texas Driver's License | Ja. | ✓ | ✓ | ✓ |  |  
 
 
 | USA Sozialversicherungsnummer (SSN) | Ja. | ✓ | ✓ | ✓ |  |  
