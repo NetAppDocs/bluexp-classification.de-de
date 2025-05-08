@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis allgemeiner Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für die Suche liefern, die speziell auf Ihr Unternehmen zugeschnitten sind. 
+summary: Richtlinien stellen Benutzerfilter dar, die Suchergebnisse auf der Seite „Untersuchung“ für häufig angeforderte Compliance-Anfragen bereitstellen. Die BlueXP -Klassifizierung bietet Ihnen eine Reihe von vordefinierten Richtlinien auf der Basis von allgemeinen Anfragen oder Sie können Ihre eigenen erstellen. 
 ---
 = Weisen Sie Ihren Daten Richtlinien mit BlueXP -Klassifizierung zu
 :hardbreaks:
@@ -25,15 +25,15 @@ Richtlinien bieten folgende Funktionen:
 
 Auf der Registerkarte *Policies* im Compliance Dashboard sind alle vordefinierten und benutzerdefinierten Richtlinien aufgeführt, die in dieser Instanz der BlueXP Klassifizierung verfügbar sind.
 
-image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte „Richtlinien“ im BlueXP Klassifizierungs-Dashboard"]
+Richtlinien werden auch in der Liste der Filter auf der Seite Untersuchung angezeigt.
 
-Außerdem werden Richtlinien in der Liste der Filter auf der Seite Untersuchung angezeigt.
+image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte „Richtlinien“ im BlueXP Klassifizierungs-Dashboard"]
 
 
 
 == Zeigen Sie die Ergebnisse der Richtlinie auf der Seite Untersuchung an
 
-Um die Ergebnisse für eine Richtlinie auf der Seite Untersuchung anzuzeigen, klicken Sie auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.
+Um die Ergebnisse für eine Richtlinie auf der Seite Untersuchung anzuzeigen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.
 
 image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Richtlinie auf der Registerkarte „Richtlinien“."]
 
@@ -44,16 +44,16 @@ image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswa
 Sie können eigene benutzerdefinierte Richtlinien erstellen, die Ergebnisse für spezifische Suchen in Ihrem Unternehmen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.
 
 .Schritte
-. Definieren Sie auf der Seite „Untersuchung von Daten“ die Suche, indem Sie alle Filter auswählen, die Sie verwenden möchten. Siehe link:task-investigate-data.html["Filtern von Daten auf der Seite „Datenuntersuchung“"^] Entsprechende Details.
-. Wenn Sie alle Filtereigenschaften genau so haben, wie Sie sie wollen, klicken Sie auf *Create Policy von dieser Suche*.
+. Definieren Sie auf der Registerkarte Untersuchung eine Suche, indem Sie die gewünschten Filter auswählen. Weitere Informationen finden Sie unter link:task-investigate-data.html["Filtern von Daten auf der Untersuchungsseite"] .
+. Sobald Sie alle Filtereigenschaften nach Ihren Wünschen eingestellt haben, wählen Sie *Richtlinie erstellen aus dieser Suche*.
 +
-image:screenshot_compliance_save_as_highlight.png["Ein Screenshot zeigt, wie eine gefilterte Abfrage als Richtlinie gespeichert wird."]
+image:screenshot_compliance_save_as_highlight.png["Screenshot, der zeigt, wie eine gefilterte Abfrage als Richtlinie gespeichert wird."]
 
 . Benennen Sie die Richtlinie, und wählen Sie andere Aktionen aus, die von der Richtlinie ausgeführt werden können:
 +
 .. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
 .. Aktivieren Sie optional das Kontrollkästchen, um Dateien zu löschen, die mit den Richtlinienparametern übereinstimmen.
-.. Klicken Sie Auf *Create Policy*.
+.. Wählen Sie *Create Policy*.
 +
 image:screenshot_compliance_save_highlight2.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
 
@@ -68,30 +68,27 @@ Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.
 
 == Richtlinien Bearbeiten
 
-Sie können alle Kriterien für eine vorhandene Richtlinie ändern, die Sie zuvor erstellt haben. Dies kann besonders nützlich sein, wenn Sie die Abfrage (die Elemente, die Sie mit Filtern definiert haben) ändern möchten, um bestimmte Parameter hinzuzufügen oder zu entfernen.
+Sie können die Kriterien für eine vorhandene Richtlinie ändern, um die Abfrage (die Elemente, die Sie mit Filtern definiert haben) zu ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.
 
-Für vordefinierte Richtlinien können Sie nur ändern, ob E-Mail-Benachrichtigungen gesendet werden und ob AIP-Etiketten hinzugefügt werden. Andere Werte können nicht geändert werden.
+Vordefinierte Richtlinien können nicht geändert werden.
 
 .Schritte
-. Klicken Sie auf der Liste Richtlinien auf *Bearbeiten* für die Richtlinie, die Sie ändern möchten.
+. Wählen Sie auf der Seite „Richtlinienliste“ die Option *Richtlinie bearbeiten* für die Richtlinie aus, die Sie ändern möchten.
 +
 image:screenshot_compliance_edit_policy_button.png["Ein Screenshot, in dem gezeigt wird, wie eine Bearbeitung an einer vorhandenen Richtlinie initiiert wird."]
 
-. Wenn Sie nur die Elemente auf dieser Seite ändern möchten (Name, Beschreibung, ob E-Mail-Benachrichtigungen gesendet werden, und ob AIP-Beschriftungen hinzugefügt werden), ändern Sie die Änderung und klicken Sie auf *Richtlinie speichern*.
+. Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur diese Felder zu ändern, wählen Sie *Richtlinie speichern*.
 +
-Wenn Sie die Filter für die gespeicherte Abfrage ändern möchten, klicken Sie auf *Abfrage bearbeiten*.
+Um die Filter für die gespeicherte Abfrage zu ändern, wählen Sie *Abfrage bearbeiten*.
 
 +
 image:screenshot_compliance_edit_policy_dialog.png["Ein Screenshot der Auswahl der Schaltfläche „Abfrage bearbeiten“ auf der Seite „Richtlinie bearbeiten“."]
 
-. Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage durch Hinzufügen, Entfernen oder Anpassen der Filter und klicken Sie auf *Änderungen speichern* .
+. Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage, indem Sie die Filter hinzufügen, entfernen oder anpassen, und wählen Sie dann *Änderungen speichern* .
 +
 image:screenshot_compliance_edit_policy_query.png["Ein Screenshot zeigt, wie die Abfrage durch Ändern der Filtereinstellungen bearbeitet wird."]
 
 
-
-.Ergebnis
-Die Richtlinie wird sofort geändert. Alle Aktionen, die für diese Richtlinie zum Senden einer E-Mail, Hinzufügen von AIP-Etiketten oder Löschen von Dateien definiert sind, werden im nächsten internen ausgeführt.
 
 
 
@@ -99,7 +96,7 @@ Die Richtlinie wird sofort geändert. Alle Aktionen, die für diese Richtlinie z
 
 Sie können alle erstellten benutzerdefinierten Richtlinien löschen, wenn sie nicht mehr benötigt werden. Vordefinierte Richtlinien können nicht gelöscht werden.
 
-Um eine Richtlinie zu löschen, klicken Sie auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie für eine bestimmte Richtlinie auf *Richtlinie löschen*, und klicken Sie dann im Bestätigungsdialogfeld erneut auf *Richtlinie löschen*.
+Um eine Richtlinie zu löschen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Richtlinie, wählen Sie *Richtlinie löschen*, und wählen Sie dann im Bestätigungsdialogfeld erneut *Richtlinie löschen* aus.
 
 
 

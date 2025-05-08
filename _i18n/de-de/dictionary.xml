@@ -178,8 +178,6 @@
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">Sie können eigene benutzerdefinierte Richtlinien erstellen, die Ergebnisse für spezifische Suchen in Ihrem Unternehmen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">Filtern von Daten auf der Seite „Datenuntersuchung“</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">Wenn Sie alle Filtereigenschaften genau so haben, wie Sie sie wollen, klicken Sie auf *Create Policy von dieser Suche*.</block>
-  <block id="96a46d654233ac39fd6e31dda8fc4dae" category="inline-image-macro">Ein Screenshot zeigt, wie eine gefilterte Abfrage als Richtlinie gespeichert wird.</block>
-  <block id="9f769a1d4cd3d0c8d7378f6050100e35" category="paragraph"><block ref="9f769a1d4cd3d0c8d7378f6050100e35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP-Etiketten</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">Klicken Sie Auf *Create Policy*.</block>
@@ -187,18 +185,12 @@
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie die E-Mail-Kriterien für die Richtlinie ausgewählt werden.</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">Sie können alle Kriterien für eine vorhandene Richtlinie ändern, die Sie zuvor erstellt haben. Dies kann besonders nützlich sein, wenn Sie die Abfrage (die Elemente, die Sie mit Filtern definiert haben) ändern möchten, um bestimmte Parameter hinzuzufügen oder zu entfernen.</block>
-  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">Klicken Sie auf der Liste Richtlinien auf *Bearbeiten* für die Richtlinie, die Sie ändern möchten.</block>
   <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">Ein Screenshot, in dem gezeigt wird, wie eine Bearbeitung an einer vorhandenen Richtlinie initiiert wird.</block>
   <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">Wenn Sie nur die Elemente auf dieser Seite ändern möchten (Name, Beschreibung, ob E-Mail-Benachrichtigungen gesendet werden, und ob AIP-Beschriftungen hinzugefügt werden), ändern Sie die Änderung und klicken Sie auf *Richtlinie speichern*.</block>
-  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">Wenn Sie die Filter für die gespeicherte Abfrage ändern möchten, klicken Sie auf *Abfrage bearbeiten*.</block>
   <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">Ein Screenshot der Auswahl der Schaltfläche „Abfrage bearbeiten“ auf der Seite „Richtlinie bearbeiten“.</block>
   <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage durch Hinzufügen, Entfernen oder Anpassen der Filter und klicken Sie auf *Änderungen speichern* .</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">Ein Screenshot zeigt, wie die Abfrage durch Ändern der Filtereinstellungen bearbeitet wird.</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">Die Richtlinie wird sofort geändert. Alle Aktionen, die für diese Richtlinie zum Senden einer E-Mail, Hinzufügen von AIP-Etiketten oder Löschen von Dateien definiert sind, werden im nächsten internen ausgeführt.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">Name</block>
   <block id="35ba1271dff4019593d3034c929e1bbc" category="cell">Logik</block>
   <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">Dateien mit persönlichen oder sensiblen persönlichen Daten, zuletzt geändert vor über 7 Jahren.</block>
@@ -2637,15 +2629,11 @@
   <block id="223d722e1cb33bb8a31e8cc8d6efcb10" category="list-text"><block ref="3708ee7d5604e21bcf79306c2b6928c3" category="inline-xref-macro-rx"></block> Von NetApp basierend auf Benutzeranfragen</block>
   <block id="649da6c1fa710a382a388e465871a680" category="list-text">Möglichkeit zur Erstellung eigener benutzerdefinierter Richtlinien</block>
   <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">Auf der Registerkarte *Policies* im Compliance Dashboard sind alle vordefinierten und benutzerdefinierten Richtlinien aufgeführt, die in dieser Instanz der BlueXP Klassifizierung verfügbar sind.</block>
-  <block id="351501516e0a13df2ed4813f5d93864d" category="paragraph">Außerdem werden Richtlinien in der Liste der Filter auf der Seite Untersuchung angezeigt.</block>
-  <block id="fb5c8861ae16ebacc4ef4cf4a3f9746a" category="paragraph">Um die Ergebnisse für eine Richtlinie auf der Seite Untersuchung anzuzeigen, klicken Sie auf <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.</block>
   <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Richtlinie auf der Registerkarte „Richtlinien“.</block>
   <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">Erstellen benutzerdefinierter Richtlinien</block>
   <block id="19948385b78770f8de2200aa21288a6a" category="list-text">Aktivieren Sie optional das Kontrollkästchen, um Dateien zu löschen, die mit den Richtlinienparametern übereinstimmen.</block>
-  <block id="7037cf1f24072122891243e88abfb12e" category="paragraph">Für vordefinierte Richtlinien können Sie nur ändern, ob E-Mail-Benachrichtigungen gesendet werden und ob AIP-Etiketten hinzugefügt werden. Andere Werte können nicht geändert werden.</block>
   <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">Sie können alle erstellten benutzerdefinierten Richtlinien löschen, wenn sie nicht mehr benötigt werden. Vordefinierte Richtlinien können nicht gelöscht werden.</block>
-  <block id="19d4814f3bce80460384b97290bb64be" category="paragraph">Um eine Richtlinie zu löschen, klicken Sie auf <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Klicken Sie für eine bestimmte Richtlinie auf *Richtlinie löschen*, und klicken Sie dann im Bestätigungsdialogfeld erneut auf *Richtlinie löschen*.</block>
   <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">Liste vordefinierter Richtlinien</block>
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">Die BlueXP Klassifizierung bietet die folgenden systemdefinierten Richtlinien:</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">Scannen Sie Google Drive-Konten</block>
@@ -3471,4 +3459,19 @@ Daten Von Business-Applikationen</block>
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">Kanadische Sozialversicherungsnummer (SIN)</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">UK-ID (NINO)</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">USA Texas Driver's License</block>
+  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">Richtlinien stellen Benutzerfilter dar, die Suchergebnisse auf der Seite „Untersuchung“ für häufig angeforderte Compliance-Anfragen bereitstellen. Die BlueXP -Klassifizierung bietet Ihnen eine Reihe von vordefinierten Richtlinien auf der Basis von allgemeinen Anfragen oder Sie können Ihre eigenen erstellen.</block>
+  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">Richtlinien werden auch in der Liste der Filter auf der Seite Untersuchung angezeigt.</block>
+  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">Um die Ergebnisse für eine Richtlinie auf der Seite Untersuchung anzuzeigen, klicken Sie auf die <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Schaltfläche für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.</block>
+  <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">Filtern von Daten auf der Untersuchungsseite</block>
+  <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">Definieren Sie auf der Registerkarte Untersuchung eine Suche, indem Sie die gewünschten Filter auswählen. Weitere Informationen finden Sie unter <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> .</block>
+  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">Sobald Sie alle Filtereigenschaften nach Ihren Wünschen eingestellt haben, wählen Sie *Richtlinie erstellen aus dieser Suche*.</block>
+  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">Screenshot, der zeigt, wie eine gefilterte Abfrage als Richtlinie gespeichert wird.</block>
+  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">Sie können die Kriterien für eine vorhandene Richtlinie ändern, um die Abfrage (die Elemente, die Sie mit Filtern definiert haben) zu ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.</block>
+  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">Vordefinierte Richtlinien können nicht geändert werden.</block>
+  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">Wählen Sie auf der Seite „Richtlinienliste“ die Option *Richtlinie bearbeiten* für die Richtlinie aus, die Sie ändern möchten.</block>
+  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur diese Felder zu ändern, wählen Sie *Richtlinie speichern*.</block>
+  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">Um die Filter für die gespeicherte Abfrage zu ändern, wählen Sie *Abfrage bearbeiten*.</block>
+  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage, indem Sie die Filter hinzufügen, entfernen oder anpassen, und wählen Sie dann *Änderungen speichern* .</block>
+  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">Um eine Richtlinie zu löschen, klicken Sie auf die <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> Schaltfläche für eine bestimmte Richtlinie, wählen Sie *Richtlinie löschen*, und wählen Sie dann im Bestätigungsdialogfeld erneut *Richtlinie löschen* aus.</block>
 </blocks>
