@@ -83,9 +83,9 @@ image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie di
 
 == Priorisieren Sie Scans
 
-Sie können die wichtigsten nur-Mapping-Scans priorisieren, um sicherzustellen, dass die Scans mit hoher Priorität zuerst abgeschlossen werden.
+Sie können die wichtigsten nur-Mapping-Scans priorisieren oder Scans zuordnen und klassifizieren, um sicherzustellen, dass Scans mit hoher Priorität zuerst abgeschlossen werden.
 
-Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter. Diese Funktion ist auf Scans beschränkt, die nur das Mapping ermöglichen. Es ist nicht für Karten- und Klassify-Scans verfügbar.
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 

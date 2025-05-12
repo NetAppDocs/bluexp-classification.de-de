@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: Richtlinien stellen Benutzerfilter dar, die Suchergebnisse auf der Seite „Untersuchung“ für häufig angeforderte Compliance-Anfragen bereitstellen. Die BlueXP -Klassifizierung bietet Ihnen eine Reihe von vordefinierten Richtlinien auf der Basis von allgemeinen Anfragen oder Sie können Ihre eigenen erstellen. 
+summary: Gespeicherte Suchvorgänge sind benutzerdefinierte Filter, die Suchergebnisse auf der Seite „Untersuchung“ für häufig angeforderte Compliance-Anfragen liefern. Die BlueXP -Klassifizierung bietet eine Reihe von standardmäßig gespeicherten Suchen, die auf gemeinsamen Anforderungen basieren, oder Sie können eigene erstellen. 
 ---
-= Weisen Sie Ihren Daten Richtlinien mit BlueXP -Klassifizierung zu
+= Verwalten Sie gespeicherte Suchen mit BlueXP -Klassifizierung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,75 +14,66 @@ summary: Richtlinien stellen Benutzerfilter dar, die Suchergebnisse auf der Seit
 
 
 [role="lead"]
-Richtlinien sind wie eine Favoritenliste mit benutzerdefinierten Filtern, die Suchergebnisse auf der Untersuchungsseite für häufig angeforderte Compliance-Abfragen liefern. Die BlueXP Klassifizierung bietet einen Satz vordefinierter Richtlinien auf der Basis von allgemeinen Kundenanfragen. Sie können benutzerdefinierte Richtlinien erstellen, die Ergebnisse für Suchen liefern, die speziell auf Ihre Organisation zugeschnitten sind.
-
-Richtlinien bieten folgende Funktionen:
-
-* <<Liste vordefinierter Richtlinien,Vordefinierte Richtlinien>> Von NetApp basierend auf Benutzeranfragen
-* Möglichkeit zur Erstellung eigener benutzerdefinierter Richtlinien
-* Starten Sie die Untersuchungsseite mit den Ergebnissen Ihrer Richtlinien mit nur einem Klick
+Die BlueXP -Klassifizierung unterstützt das Speichern Ihrer Suchanfragen. Mit einer gespeicherten Suche können Sie benutzerdefinierte Filter erstellen, um häufige Abfragen Ihrer Datenermittlungsseite zu durchsuchen. Die BlueXP -Klassifizierung umfasst außerdem vordefinierte gespeicherte Suchen auf der Basis gängiger Anforderungen.
 
 
-Auf der Registerkarte *Policies* im Compliance Dashboard sind alle vordefinierten und benutzerdefinierten Richtlinien aufgeführt, die in dieser Instanz der BlueXP Klassifizierung verfügbar sind.
+NOTE: In Versionen der BlueXP -Klassifizierung vor 1.43 wurden gespeicherte Suchen aufgerufenxref:task-using-policies-deprecated.adoc[Richtlinien].
 
-Richtlinien werden auch in der Liste der Filter auf der Seite Untersuchung angezeigt.
+Auf der Registerkarte *gespeicherte Suchen* im Compliance-Dashboard werden alle vordefinierten und benutzerdefinierten gespeicherten Suchen aufgelistet, die für diese Instanz der BlueXP -Klassifizierung verfügbar sind.
 
-image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte „Richtlinien“ im BlueXP Klassifizierungs-Dashboard"]
+Gespeicherte Suchen werden auch in der Liste der Filter auf der Seite Untersuchung angezeigt.
+
+image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte gespeicherte Suchen im BlueXP -Klassifikations-Dashboard."]
 
 
 
-== Zeigen Sie die Ergebnisse der Richtlinie auf der Seite Untersuchung an
+== Zeigen Sie die gespeicherten Suchergebnisse auf der Seite Untersuchung an
 
-Um die Ergebnisse für eine Richtlinie auf der Seite Untersuchung anzuzeigen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Richtlinie, und wählen Sie dann *Ergebnisse untersuchen*.
+Um die Ergebnisse für eine gespeicherte Suche auf der Untersuchungsseite anzuzeigen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche und wählen Sie dann *Ergebnisse untersuchen*.
 
-image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Richtlinie auf der Registerkarte „Richtlinien“."]
+image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Suche auf der Registerkarte 'Sceied Search'."]
 
 
 
-== Erstellen benutzerdefinierter Richtlinien
+== Erstellen Sie benutzerdefinierte gespeicherte Suchen
 
-Sie können eigene benutzerdefinierte Richtlinien erstellen, die Ergebnisse für spezifische Suchen in Ihrem Unternehmen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.
+Sie können Ihre eigenen benutzerdefinierten gespeicherten Suchen erstellen, die Ergebnisse für die für Ihr Unternehmen spezifischen Abfragen liefern. Die Ergebnisse werden für alle Dateien und Verzeichnisse (Freigaben und Ordner) zurückgegeben, die den Suchkriterien entsprechen.
 
 .Schritte
 . Definieren Sie auf der Registerkarte Untersuchung eine Suche, indem Sie die gewünschten Filter auswählen. Weitere Informationen finden Sie unter link:task-investigate-data.html["Filtern von Daten auf der Untersuchungsseite"] .
-. Sobald Sie alle Filtereigenschaften nach Ihren Wünschen eingestellt haben, wählen Sie *Richtlinie erstellen aus dieser Suche*.
+. Wenn Sie alle Filtereigenschaften nach Ihren Wünschen eingestellt haben, wählen Sie *gespeicherte Suche erstellen*.
 +
-image:screenshot_compliance_save_as_highlight.png["Screenshot, der zeigt, wie eine gefilterte Abfrage als Richtlinie gespeichert wird."]
+image:screenshot_compliance_save_as_highlight.png["Screenshot zeigt, wie eine gefilterte Abfrage als gespeicherte Suche gespeichert wird."]
 
-. Benennen Sie die Richtlinie, und wählen Sie andere Aktionen aus, die von der Richtlinie ausgeführt werden können:
+. Benennen Sie die gespeicherte Suche und fügen Sie eine Beschreibung hinzu. Der Name muss eindeutig sein.
+. Wählen Sie *Gespeicherte Suche Erstellen*.
 +
-.. Geben Sie einen eindeutigen Namen und eine eindeutige Beschreibung ein.
-.. Aktivieren Sie optional das Kontrollkästchen, um Dateien zu löschen, die mit den Richtlinienparametern übereinstimmen.
-.. Wählen Sie *Create Policy*.
-+
-image:screenshot_compliance_save_highlight2.png["Ein Screenshot, der zeigt, wie die Richtlinie konfiguriert und gespeichert wird."]
-
-
+image:screenshot_compliance_save_highlight2.png["Ein Screenshot, der zeigt, wie die gespeicherte Suche konfiguriert und gespeichert wird."]
 
 
 
 .Ergebnis
-Die neue Richtlinie wird auf der Registerkarte Richtlinien angezeigt.
+Die neue gespeicherte Suche wird auf der Registerkarte gespeicherte Suchen angezeigt.
 
 
 
-== Richtlinien Bearbeiten
+== Bearbeiten Sie gespeicherte Suchen
 
-Sie können die Kriterien für eine vorhandene Richtlinie ändern, um die Abfrage (die Elemente, die Sie mit Filtern definiert haben) zu ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.
+Sie können die Kriterien für eine benutzerdefinierte gespeicherte Suche ändern, um die Abfrage (die Elemente, die Sie mit Filtern definiert haben) zu ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.
 
-Vordefinierte Richtlinien können nicht geändert werden.
+Standardmäßig gespeicherte Suchen können nicht geändert werden.
 
 .Schritte
-. Wählen Sie auf der Seite „Richtlinienliste“ die Option *Richtlinie bearbeiten* für die Richtlinie aus, die Sie ändern möchten.
+. Wählen Sie auf der Seite gespeicherte Suchen die Option *gespeicherte Suche bearbeiten* für die Suche, die Sie ändern möchten.
 +
-image:screenshot_compliance_edit_policy_button.png["Ein Screenshot, in dem gezeigt wird, wie eine Bearbeitung an einer vorhandenen Richtlinie initiiert wird."]
+image:screenshot_compliance_edit_policy_button.png["Ein Screenshot, der die gespeicherte Suche bearbeiten zeigt."]
 
-. Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur diese Felder zu ändern, wählen Sie *Richtlinie speichern*.
+. Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur diese Felder zu ändern, wählen Sie *Speichern*.
 +
 Um die Filter für die gespeicherte Abfrage zu ändern, wählen Sie *Abfrage bearbeiten*.
 
 +
-image:screenshot_compliance_edit_policy_dialog.png["Ein Screenshot der Auswahl der Schaltfläche „Abfrage bearbeiten“ auf der Seite „Richtlinie bearbeiten“."]
+image:screenshot_compliance_edit_policy_dialog.png["Ein Screenshot der Auswahl der Schaltfläche Abfrage bearbeiten auf der Seite gespeicherte Suche bearbeiten."]
 
 . Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage, indem Sie die Filter hinzufügen, entfernen oder anpassen, und wählen Sie dann *Änderungen speichern* .
 +
@@ -92,34 +83,48 @@ image:screenshot_compliance_edit_policy_query.png["Ein Screenshot zeigt, wie die
 
 
 
-== Richtlinien Löschen
+== Löschen Sie gespeicherte Suchen
 
-Sie können alle erstellten benutzerdefinierten Richtlinien löschen, wenn sie nicht mehr benötigt werden. Vordefinierte Richtlinien können nicht gelöscht werden.
+Sie können jede benutzerdefinierte gespeicherte Suche löschen, wenn Sie sie nicht mehr benötigen. Standardmäßig gespeicherte Suchen können nicht gelöscht werden
 
-Um eine Richtlinie zu löschen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Richtlinie, wählen Sie *Richtlinie löschen*, und wählen Sie dann im Bestätigungsdialogfeld erneut *Richtlinie löschen* aus.
-
-
-
-== Liste vordefinierter Richtlinien
-
-Die BlueXP Klassifizierung bietet die folgenden systemdefinierten Richtlinien:
-
-[cols="25,40,40"]
-|===
-| Name | Beschreibung | Logik 
+Um eine gespeicherte Suche zu löschen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche, wählen Sie *gespeicherte Suche löschen*, und wählen Sie dann im Bestätigungsdialog erneut *Suche löschen* aus.
 
 
-| Private Daten - veraltet über 7 Jahre | Dateien mit persönlichen oder sensiblen persönlichen Daten, zuletzt geändert vor über 7 Jahren. | Dateien mit persönlichen oder sensiblen persönlichen Daten, zuletzt geändert vor über 7 Jahren 
+
+== Standardsuche
+
+BlueXP  Classification bietet die folgenden systemdefinierten Suchabfragen:
+
+* **Namen der betroffenen Personen - hohes Risiko**
++
+Dateien mit mehr als 50 betroffenen Personen
+
+* **E-Mail-Adressen - hohes Risiko**
++
+Dateien mit mehr als 50 E-Mail-Adressen oder Datenbankspalten mit mehr als 50 % ihrer Zeilen, die E-Mail-Adressen enthalten
+
+* **Persönliche Daten - hohes Risiko**
++
+Dateien mit mehr als 20 Kennungen persönlicher Daten oder Datenbankspalten mit mehr als 50 % ihrer Zeilen, die persönliche Daten-Kennungen enthalten
+
+* **Private Daten - seit 7 Jahren veraltet**
++
+Dateien, die persönliche oder sensible personenbezogene Daten enthalten, zuletzt vor mehr als 7 Jahren geändert
+
+* **Schutz - Hoch**
++
+Dateien oder Datenbankspalten, die ein Passwort, Kreditkarteninformationen, IBAN-Nummer oder Sozialversicherungsnummer enthalten
+
+* **Schutz - Niedrig**
++
+Dateien, auf die seit mehr als 3 Jahren nicht mehr zugegriffen wird
+
+* **Protect - Mittel**
++
+Dateien, die Dateien oder Datenbankspalten mit persönlichen Datenkennungen enthalten, einschließlich ID-Nummern, Steueridentifikationsnummern, Führerscheinnummern, medizinische IDs oder Passnummern
+
+* **Sensible personenbezogene Daten - hohes Risiko**
++
+Dateien mit mehr als 20 Identifikatoren für sensible personenbezogene Daten oder Datenbankspalten mit mehr als 50 % ihrer Zeilen, die sensible personenbezogene Daten enthalten
 
 
-| Namen der Betroffenen - hohes Risiko | Dateien mit mehr als 50 Namen des Betroffenen. | Dateien mit mehr als 50 Namen des Betroffenen 
-
-
-| E-Mail-Adressen – hohes Risiko | Dateien mit über 50 E-Mail-Adressen oder DB-Spalten mit über 50 % ihrer Zeilen, die E-Mail-Adressen enthalten | Dateien mit über 50 E-Mail-Adressen oder DB-Spalten mit über 50 % ihrer Zeilen, die E-Mail-Adressen enthalten 
-
-
-| Personenbezogene Daten - hohes Risiko | Dateien mit mehr als 20 Identifikatoren für persönliche Daten oder Datenbankspalten mit über 50 % ihrer Zeilen, die Identifikatoren für persönliche Daten enthalten. | Dateien mit über 20 persönlichen oder DB-Spalten mit über 50% ihrer Zeilen, die persönliche enthalten 
-
-
-| Sensible personenbezogene Daten - hohes Risiko | Dateien mit über 20 vertraulichen personenbezogenen Daten-IDs oder DB-Spalten mit über 50 % ihrer Zeilen, die vertrauliche personenbezogene Daten enthalten. | Dateien mit über 20 sensiblen persönlichen oder DB-Spalten mit über 50% ihrer Zeilen, die sensible persönliche Daten enthalten 
-|===

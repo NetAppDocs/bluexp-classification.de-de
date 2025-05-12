@@ -19,7 +19,7 @@ Es gibt viele Arten von privaten Daten, die durch die BlueXP Klassifizierung in 
 Durch die BlueXP Klassifizierung werden zwei Arten von personenbezogenen Daten identifiziert:
 
 * *Personenbezogene Informationen (PII)*
-* *Sensible personenbezogene Daten (SPii)*
+* *Sensible personenbezogene Daten (SPII)*
 
 
 
@@ -29,7 +29,7 @@ TIP: Wenn Sie zur Identifizierung anderer privater Datentypen eine BlueXP -Klas
 
 == Arten personenbezogener Daten
 
-Die in Dateien enthaltenen personenbezogenen Daten bzw. _personenbezogene Informationen_ (PII) können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der Tabelle unten wird angegeben, ob die BlueXP Klassifizierung verwendet link:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^] Zum Validieren seiner Ergebnisse für die Kennung.
+Die in Dateien enthaltenen personenbezogenen Daten bzw. _personenbezogene Informationen_ (PII) können allgemeine personenbezogene Daten oder nationale Kennungen sein. In der dritten Spalte der folgenden Tabelle wird angegeben, ob die BlueXP -Klassifizierung zur Validierung der Ergebnisse für die Kennung verwendetlink:task-controlling-private-data.html#view-files-that-contain-personal-data["Prüfung der Nähe"^].
 
 Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabelle aufgeführt.
 
@@ -323,7 +323,7 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 
 == Arten sensibler personenbezogener Daten
 
-Die BlueXP Klassifizierung kann folgende sensible personenbezogene Daten (SPii) in Dateien finden.
+Die BlueXP -Klassifizierung kann folgende sensible personenbezogene Daten (SPII) in Dateien finden.
 
 Die Artikel in dieser Kategorie können derzeit nur auf Englisch erkannt werden.
 

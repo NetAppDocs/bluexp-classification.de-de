@@ -21,11 +21,9 @@ Wenn diese Option aktiviert ist, wird langsames Scannen auf allen Datenquellen v
 
 TIP: Die Scan-Geschwindigkeit kann beim Scannen von Datenbanken nicht verringert werden.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
+NOTE: Diese Informationen sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
+
 .Schritte
 . Bewegen Sie den Schieberegler von unten auf der Seite _Configuration_ nach rechts, um den langsamen Scan zu aktivieren.
 +

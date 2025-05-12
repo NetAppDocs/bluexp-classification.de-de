@@ -16,11 +16,9 @@ summary: Sie können managen, wie Ihre Daten in jeder Ihrer Arbeitsumgebungen un
 [role="lead"]
 Die BlueXP Klassifizierung durchsucht Ihre Daten kontinuierlich, um inkrementelle Änderungen der hinzugefügten Repositorys zu erkennen. Das System benötigt jedoch Zeit, um alle Umgebungen zu scannen, und es gibt keine Möglichkeit, die Reihenfolge der gescannten Repositories zu steuern. Wenn Sie ein bestimmtes Repository sofort erneut scannen müssen, damit Änderungen im System angezeigt werden, können Sie das Repository auswählen und erneut scannen. So können Sie das Scannen bestimmter Daten vor anderen Daten priorisieren. Nach der erneuten Überprüfung kehrt das ausgewählte Repository unter dem normalen BlueXP-Klassifizierungszeitplan wieder zum Scannen zurück.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
+NOTE: Diese Informationen sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
+
 Die BlueXP Klassifizierung unterstützt Scanverzeichnisse für alle Datenquelltypen, ausgenommen Amazon S3 und Datenbanken. Derzeit unterstützen wir das erneute Scannen von einzelnen Verzeichnissen (Ordnern oder Shares) oder mehreren Verzeichnissen. Zu der künftigen Unterstützung werden zusätzliche Repository-Typen (Dateien, Datenbanken usw.) neu durchsucht.
 
 * Beim erneuten Scannen eines Verzeichnisses werden alle Dateien im Verzeichnis erneut gescannt, die Unterordner im Verzeichnis werden jedoch nicht erneut gescannt.

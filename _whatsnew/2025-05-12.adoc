@@ -1,0 +1,41 @@
+= Version 1.43
+:allow-uri-read: 
+
+
+
+
+=== Version 1.43
+
+Diese BlueXP -Klassifizierungsversion umfasst:
+
+.Priorisieren Sie Klassifizierungs-Scans
+Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, neben den nur-Mapping-Scans auch Karten- und Klassifizierungen zu priorisieren, wodurch Sie auswählen können, welche Scans zuerst abgeschlossen werden. Die Priorisierung von Map & Classify-Scans wird während und vor Beginn der Scans unterstützt. Wenn Sie einen Scan priorisieren möchten, während er gerade läuft, werden sowohl die Mapping- als auch die Klassifikationsscans priorisiert.
+
+Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
+
+.Unterstützung für kanadische Datenkategorien für personenbezogene Daten (PII)
+BlueXP  Klassifikations-Scans identifizieren jetzt kanadische PII-Datenkategorien für Bankdaten, Passnummer, Sozialversicherungsnummer, Führerschein-Nummer und Krankenversicherungsnummer für alle Provinzen und Gebiete.
+
+Weitere Informationen finden Sie unter xref:reference-private-data-categories.adoc#types-of-personal-data[Kategorien personenbezogener Daten].
+
+.Benutzerdefinierte Klassifizierung (Vorschau)
+Die BlueXP -Klassifizierung unterstützt jetzt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifikationen können Sie BlueXP -Scans so anpassen, dass Daten für Ihr Unternehmen erfasst werden, um die Einhaltung von regulären Ausdrücken zu gewährleisten. Diese Funktion befindet sich derzeit in der Vorschau.
+
+Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Fügen Sie benutzerdefinierte Klassifizierungen hinzu].
+
+.Registerkarte gespeicherte Suchen
+Die Registerkarte **Policen** wurde umbenanntxref:task-using-policies.html[**Gespeicherte Suchen**]. Die Funktionalität ist die gleiche.
+
+.Scan-Ereignisse an Überwachungsprotokoll senden
+BlueXP -Scan-Ereignisse können jetzt an den gesendet werdenxref:task-audit-data-sense-actions.html[Prüfprotokoll]. BlueXP  Classification unterstützt auch das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wenn er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^]. Das Senden von Klassifizierungsscan-Ereignissen an die BlueXP -Zeitachse wird nur in Arbeitsumgebungen unterstützt.
+
+.Sicherheitsupdates
+* Das Keras-Paket wurde aktualisiert, um Schwachstellen zu beheben (BDSA-2025-0107 und BDSA-2025-1984).
+* Die Konfiguration der Docker Container wurde aktualisiert. Der Container hat keinen Zugriff mehr auf die Netzwerkschnittstellen des Hosts, um rohe Netzwerkpakete zu erstellen. Durch die Reduzierung unnötiger Zugriffe verringert das Update potenzielle Sicherheitsrisiken.
+
+
+.Performance-Verbesserungen
+Codeverbesserungen wurden implementiert, um die RAM-Nutzung zu reduzieren und die Gesamtleistung der BlueXP -Klassifizierung zu verbessern.
+
+.Fehlerbehebungen
+Fehler, die dazu geführt haben, dass StorageGRID-Scans fehlschlagen, dass die Filteroptionen für die Untersuchungsseite nicht geladen werden und die Datenermittlung, die für Prüfungen mit hohem Volumen nicht heruntergeladen werden sollte, wurden behoben.

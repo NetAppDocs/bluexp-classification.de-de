@@ -16,11 +16,12 @@ summary: Die BlueXP Klassifizierung bietet Ihnen verschiedene Möglichkeiten, ei
 [role="lead"]
 Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten, eine benutzerdefinierte Liste mit „personenbezogenen Daten“ hinzuzufügen, die durch die BlueXP Klassifizierung bei zukünftigen Scans identifiziert werden. So haben Sie alle Informationen darüber, wo sich möglicherweise sensible Daten in den Dateien Ihrer Unternehmen befinden.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
+IMPORTANT: Informationen zum Erstellen einer benutzerdefinierten Klassifizierung in Version 1.43 und höher finden Sie unter xref:task-custom-classification.adoc[Erstellen Sie eine benutzerdefinierte Klassifizierung].
+
+
+NOTE: Diese Informationen sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
+
 * Sie können eindeutige Kennungen basierend auf bestimmten Spalten in Datenbanken hinzufügen, die Sie scannen.
 * Sie können benutzerdefinierte Schlüsselwörter aus einer Textdatei hinzufügen - diese Wörter werden in Ihren Daten identifiziert.
 * Sie können ein persönliches Muster mit einem regulären Ausdruck (regex) hinzufügen -- der Regex wird den bestehenden vordefinierten Mustern hinzugefügt.
@@ -36,7 +37,7 @@ NOTE: Die in diesem Abschnitt beschriebenen Funktionen sind nur verfügbar, wenn
 
 == Fügen Sie benutzerdefinierte ID-Daten aus Ihren Datenbanken hinzu
 
-Eine Funktion, die wir _Data Fusion_ nennen, ermöglicht Ihnen, die Daten Ihres Unternehmens zu überprüfen, um zu ermitteln, ob eindeutige IDs aus Ihren Datenbanken in einer Ihrer anderen Datenquellen gefunden werden. Sie können die zusätzlichen Identifikatoren auswählen, nach denen die BlueXP Klassifizierung in ihren Scans suchen soll, indem Sie eine bestimmte Spalte oder Spalte in einer Datenbanktabelle auswählen. Das folgende Diagramm zeigt beispielsweise, wie Daten-Fusion zur Überprüfung von Volumes, Buckets und Datenbanken eingesetzt wird, um vor allen Kunden-IDs aus der Oracle Datenbank zu kommen.
+_Data Fusion_ ermöglicht es Ihnen, die Daten Ihrer Organisation zu scannen, um festzustellen, ob eindeutige Kennungen aus Ihren Datenbanken in einer Ihrer anderen Datenquellen gefunden werden. Sie können die zusätzlichen Kennungen auswählen, nach denen die BlueXP -Klassifizierung in ihren Scans suchen soll, indem Sie eine bestimmte Spalte oder Spalten in einer Datenbanktabelle auswählen. Das folgende Diagramm zeigt beispielsweise, wie Daten-Fusion zur Überprüfung von Volumes, Buckets und Datenbanken eingesetzt wird, um vor allen Kunden-IDs aus der Oracle Datenbank zu kommen.
 
 image:diagram_compliance_data_fusion.png["Ein Diagramm, das zeigt, wie Inhalte aus Ihren Datenbanken als Quelle verwendet werden können, um Dateien zu identifizieren, die dieselben Daten enthalten."]
 

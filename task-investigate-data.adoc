@@ -152,16 +152,16 @@ Verwenden Sie die folgenden Filter, um Daten nach Speichertyp anzuzeigen.
 
 | Storage Repository | Wählen Sie das Speicher-Repository aus, z. B. ein Volume oder ein Schema. 
 |===
-*Daten nach Richtlinien filtern*
+*Filtern von Daten nach gespeicherten Suchen*
 
-Verwenden Sie den folgenden Filter, um Daten nach Richtlinien anzuzeigen.
+Verwenden Sie den folgenden Filter, um Daten nach gespeicherten Suchen anzuzeigen.
 
 [cols="30,60"]
 |===
 | Filtern | Details 
 
 
-| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Rufen Sie link:task-using-policies.html["Hier"]die Liste der vorhandenen Richtlinien auf, und erstellen Sie Ihre eigenen benutzerdefinierten Richtlinien. 
+| Gespeicherte Suche | Wählen Sie eine gespeicherte Suche oder ein Vielfaches aus. Gehen Sie zumlink:task-using-policies.html["Registerkarte gespeicherte Suchen"], um die Liste der vorhandenen gespeicherten Suchen anzuzeigen und neue zu erstellen. 
 |===
 *Daten nach Analysestatus filtern*
 
@@ -194,7 +194,7 @@ Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupli
 
 == Anzeigen von Datei-Metadaten
 
-Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind nützlich, wenn Sie planenlink:task-using-policies.html["Erstellen von Richtlinien"], weil Sie alle Informationen sehen können, die Sie zum Filtern Ihrer Daten verwenden können.
+Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind nützlich, wenn Sie planenlink:task-using-policies.html["Erstellen Sie gespeicherte Suchen"], weil Sie alle Informationen sehen können, die Sie zum Filtern Ihrer Daten verwenden können.
 
 Nicht alle Informationen stehen für alle Datenquellen zur Verfügung - genau das, was für diese Datenquelle angemessen ist. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.
 
@@ -267,7 +267,7 @@ image:screenshot_compliance_duplicate_file.png["Ein Screenshot zeigt, wo sich do
 
 +
 
-TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden und direkt auf der Untersuchungsseite eingeben, um jederzeit nach einer bestimmten doppelten Datei zu suchen - oder Sie können sie in einer Richtlinie verwenden.
+TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden und direkt auf der Untersuchungsseite eingeben, um jederzeit nach einer bestimmten doppelten Datei zu suchen - oder Sie können diese in einer gespeicherten Suche verwenden.
 
 
 
@@ -364,24 +364,18 @@ Ein Dialogfeld zeigt eine Meldung an, dass die Berichte heruntergeladen werden.
 
 
 
-== Erstellen Sie eine Policy auf der Basis ausgewählter Filter
+== Erstellen Sie eine gespeicherte Suche basierend auf ausgewählten Filtern
 
-Es könnte hilfreich sein, dass Sie die Filter, die Sie auf der Seite „Datenuntersuchung“ ausgewählt haben, als Richtlinie speichern. Auf diese Weise können Sie die gleichen Filter jederzeit ausführen, ohne sie erneut auswählen zu müssen.
+Sie können auf der Seite „Datenuntersuchung“ eine gespeicherte Suche nach häufig verwendeten Suchfiltern erstellen, um diese Suchabfragen problemlos zu replizieren.
 
 .Schritte
 . Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
-. Wählen Sie auf der Seite Datenuntersuchung die Filter aus, die Sie zum Erstellen einer Richtlinie verwenden möchten.
-. Wählen Sie im unteren Bereich des Filterfensters *Create Policy from this search* aus.
-. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein.
+. Wählen Sie auf der Seite Datenuntersuchung die Filter aus, die Sie zum Erstellen einer gespeicherten Suche verwenden möchten.
+. Wählen Sie unten im Filterfenster *gespeicherte Suche aus dieser Suche erstellen*.
+. Geben Sie einen Namen und eine Beschreibung für die gespeicherte Suche ein.
 . Wählen Sie eine der folgenden Optionen:
-+
-** *Dateien, die dieser Richtlinie entsprechen, automatisch löschen (jeden Tag): Wählen Sie diese Option aus, wenn Sie die Dateien löschen möchten, die der Richtlinie entsprechen.
-** *E-Mail-Updates zu dieser Richtlinie an BlueXP -Benutzer zu diesem Konto senden Jeden <day/week/month>*: Wählen Sie diese Option, wenn Sie E-Mail-Updates zu dieser Richtlinie an BlueXP -Benutzer zu diesem Konto senden möchten.
-** *E-Mail senden Every <Day> to <email address>*: Wählen Sie diese Option, wenn Sie eine E-Mail an jede <Day> an eine bestimmte E-Mail-Adresse senden möchten.
-
-
-. Wählen Sie *Create Policy*.
+. Wählen Sie *Gespeicherte Suche Erstellen*.
 
 
 
-TIP: Es kann bis zu 15 Minuten dauern, bis die Ergebnisse auf der Seite „Richtlinien“ angezeigt werden.
+TIP: Es kann bis zu 15 Minuten dauern, bis die Ergebnisse auf der Seite „gespeicherte Suchen“ angezeigt werden.

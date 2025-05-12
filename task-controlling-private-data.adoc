@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
-keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
 summary: 'Behalten Sie die Kontrolle über Ihre privaten Daten, indem Sie sich Details zu den persönlichen Daten (PII) und sensiblen persönlichen Daten (SPII) in Ihrem Unternehmen ansehen. Zusätzlich können Sie sich Sichtbarkeit verschaffen, indem Sie die Kategorien und Dateitypen überprüfen, die in Ihren Daten für die BlueXP Klassifizierung gefunden wurden.' 
 ---
 = Anzeigen von Compliance-Details zu den in Ihrem Unternehmen mit BlueXP  Klassifizierung gespeicherten privaten Daten
@@ -31,7 +31,7 @@ Filtern Sie die Ergebnisse auf der Seite „Datenuntersuchung“, und laden Sie 
 
 Durch die BlueXP Klassifizierung werden automatisch bestimmte Wörter, Strings und Muster (Regex) innerhalb der Daten identifiziert. Beispielsweise personenbezogene Daten (Personal Identification Information, PII), Kreditkartennummern, Sozialversicherungsnummern, Kontonummern, Passwörter, Und vieles mehr. link:reference-private-data-categories.html["Die vollständige Liste finden Sie hier"]. Durch die BlueXP Klassifizierung wird diese Art von Informationen in einzelnen Dateien, in Dateien innerhalb von Verzeichnissen (Freigaben und Ordner) oder in Datenbanktabellen identifiziert.
 
-Wenn Sie einen zu scannenden Datenbankserver hinzugefügt haben, durchsucht die Funktion _Data Fusion_ Ihre Dateien, um zu ermitteln, ob eindeutige Kennungen aus Ihren Datenbanken in diesen Dateien oder anderen Datenbanken gefunden werden. Weitere Informationen finden Sie unter link:task-managing-data-fusion.html["Hinzufügen von ID-Kennungen unter Verwendung von Data Fusion"] .
+Sie können auch benutzerdefinierte Suchbegriffe erstellen, um personenbezogene Daten für Ihr Unternehmen zu identifizieren. Weitere Informationen finden Sie unter link:task-custom-classification.html["Erstellen Sie eine benutzerdefinierte Klassifizierung"].
 
 Für einige Arten von personenbezogenen Daten verwendet die BlueXP Klassifizierung _Proximity Validation_, um ihre Ergebnisse zu validieren. Die Validierung erfolgt, indem ein oder mehrere vordefinierte Schlüsselwörter in der Nähe der gefundenen personenbezogenen Daten gesucht werden. So identifiziert die BlueXP -Klassifikation beispielsweise eine US-Sozialversicherungsnummer (SSN) als SSN, wenn sie ein Nachbarschaftswort daneben sieht, z. B. _SSN_ oder _soziale Sicherheit_. link:reference-private-data-categories.html["Der Tisch der personenbezogenen Daten"] Zeigt an, wann die BlueXP -Klassifizierung die Annäherungsvalidierung verwendet.
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten. 
 ---
 = Anzeigen von Governance-Details zu den in Ihrem Unternehmen mit BlueXP -Klassifizierung gespeicherten Daten
@@ -68,16 +68,16 @@ NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können alte Dat
 
 
 
-=== Überprüfen Sie die Richtlinien mit der größten Anzahl von Ergebnissen
+=== Überprüfen Sie gespeicherte Suchen mit der größten Anzahl von Ergebnissen
 
-Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt.
+Auf der Registerkarte _Saved searches_ werden die Suchen mit der größten Anzahl von Ergebnissen am Anfang der Liste angezeigt.
 
-Weitere Informationen zu Richtlinien finden Sie unter link:task-using-policies.html["Weisen Sie Daten Richtlinien zu"].
+Weitere Informationen zu gespeicherten Suchen finden Sie unter link:task-using-policies.html["Erstellen Sie gespeicherte Suchen"].
 
 .Schritte
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
-. Wählen Sie im Dashboard „Verwaltung“ > „Richtlinien“ den Namen einer Richtlinie aus, um die Ergebnisse auf der Seite „Untersuchung“ anzuzeigen.
-. Wählen Sie *Alle anzeigen*, um die Liste aller verfügbaren Richtlinien anzuzeigen. Im Bereich _Policies_ werden die Richtlinien mit der größten Anzahl von Ergebnissen oben in der Liste angezeigt.
+. Suchen Sie im Dashboard der Verwaltung die Kachel gespeicherte Suchen. Wählen Sie den Namen einer gespeicherten Suche aus, um die Ergebnisse auf der Seite Untersuchung anzuzeigen.
+. Wählen Sie *Alle anzeigen*, um die Liste aller verfügbaren gespeicherten Suchen anzuzeigen. Im Bereich _Saved searches_ werden die Suchen mit der größten Anzahl von Ergebnissen am Anfang der Liste angezeigt.
 
 
 

@@ -16,11 +16,9 @@ summary: Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten für das M
 [role="lead"]
 Die BlueXP Klassifizierung bietet Ihnen viele Möglichkeiten für das Management Ihrer privaten Daten. Einige Funktionen erleichtern die Vorbereitung auf die Migration Ihrer Daten, während andere Funktionen können Sie Änderungen an den Daten.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
+NOTE: Diese Informationen sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
+
 * Sie können Dateien in eine Ziel-NFS-Freigabe kopieren, wenn Sie eine Kopie bestimmter Daten erstellen und sie an einen anderen NFS-Speicherort verschieben möchten.
 * Sie können ein ONTAP Volume auf einem neuen Volume klonen und dabei nur ausgewählte Dateien aus dem Quell-Volume im neuen geklonten Volume eingeschlossen. Dies ist nützlich für Situationen, in denen Sie Daten migrieren und bestimmte Dateien vom ursprünglichen Volume ausschließen möchten.
 * Sie können Dateien aus einem Quell-Repository in ein Verzeichnis an einem bestimmten Zielspeicherort kopieren und synchronisieren. Dies ist nützlich in Situationen, in denen Sie Daten von einem Quellsystem zu einem anderen migrieren, während noch einige letzte Aktivitäten in den Quelldateien vorliegen.
@@ -256,8 +254,6 @@ image:screenshot_compliance_move_file.png["Ein Screenshot, in dem die Auswahl de
 == Quelldateien löschen
 
 Sie können Quelldateien dauerhaft entfernen, die unsicher oder zu riskant erscheinen, um in Ihrem Speichersystem zu verbleiben, oder dass Sie als Duplikat identifiziert haben. Diese Aktion ist permanent und es gibt kein Rückgängigmachen oder Wiederherstellen.
-
-Sie können Dateien manuell aus dem Untersuchungsbereich löschen, oder link:task-using-policies.html["Automatische Verwendung von Richtlinien"^].
 
 
 TIP: Sie können keine Dateien löschen, die sich in Datenbanken befinden. Alle anderen Datenquellen werden unterstützt.

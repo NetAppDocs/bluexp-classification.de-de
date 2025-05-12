@@ -64,7 +64,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Suche nach Namen in Dateien | Ja. | Nein 
 
 
-| Erstellen link:task-using-policies.html["Richtlinien"] Die benutzerdefinierte Suchergebnisse liefern | Ja. | Nein 
+| Erstellenlink:task-using-policies.html["Gespeicherte Suchvorgänge"], die benutzerdefinierte Suchergebnisse liefern | Ja. | Nein 
 
 
 | Möglichkeit zur Ausführung anderer Berichte | Ja. | Nein 
@@ -105,10 +105,10 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Duplizierte Dateien | Ja. | Ja. 
 
 
-| Vordefinierte Richtlinien | Ja. | Nein 
+| Vordefinierte gespeicherte Suchen | Ja. | Nein 
 
 
-| Benutzerdefinierte Richtlinien | Ja. | Ja. 
+| Standardmäßig gespeicherte Suchen | Ja. | Ja. 
 
 
 | DDA-Bericht | Ja. | Ja. 
@@ -169,7 +169,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Merkmal | Zuordnen Und Klassifizieren | Karte 
 
 
-| Richtlinien | Ja. | Ja. 
+| Gespeicherte Suchvorgänge | Ja. | Ja. 
 
 
 | Art der Arbeitsumgebung | Ja. | Ja. 

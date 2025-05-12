@@ -23,7 +23,7 @@ Sie können Ihre Datenbankschemas zur BlueXP Klassifizierung hinzufügen, um sie
 | Typ | Beschreibung | MongoDB | SQL Server geschult sind | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
 
 
-.9+| Aktionen | Erstellen einer Richtlinie | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.9+| Aktionen | Erstellen Sie eine gespeicherte Suche | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | Tag | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
@@ -50,7 +50,7 @@ Sie können Ihre Datenbankschemas zur BlueXP Klassifizierung hinzufügen, um sie
 | Etikett | X | X | X | X | X | X | X 
 
 
-.25+| Filter | Richtlinien | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+.25+| Filter | Gespeicherte Suchvorgänge | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
 
 
 | Status der Scananalyse | ✓ | ✓ | ✓ | ✓ | ✓ |  |  

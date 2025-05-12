@@ -18,11 +18,9 @@ Die BlueXP Klassifizierungs-Logs managen-Aktivitäten, die an Dateien aus allen 
 
 Sie können den Inhalt der BlueXP Klassifizierungs-Audit-Protokolldateien anzeigen oder herunterladen, um festzustellen, welche Dateiänderungen wann vorgenommen wurden. Beispielsweise können Sie sehen, welche Anfrage erstellt wurde, wann die Anfrage gestellt wurde, und Details wie den Quellspeicherort für das Löschen einer Datei oder den Quell- und Zielstandort, falls eine Datei verschoben wurde.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
+NOTE: Diese Informationen sind nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher relevant.
+
 
 
 == Inhalt der Protokolldatei protokollieren
@@ -33,11 +31,11 @@ Jede Zeile im Auditprotokoll enthält Informationen in diesem Format:
 
 * Datum und Uhrzeit: Vollständiger Zeitstempel für das Ereignis
 * Status - INFO, WARNUNG
-* Aktionstyp (Löschen, Kopieren, Verschieben, Erstellen einer Richtlinie, Aktualisieren der Richtlinie, Dateien erneut scannen, JSON-Bericht herunterladen usw.)
+* Aktionstyp (löschen, kopieren, verschieben, gespeicherte Suche erstellen, gespeicherte Suche aktualisieren, Dateien erneut scannen, JSON-Bericht herunterladen usw.)
 * Dateiname (wenn die Aktion für eine Datei relevant ist)
 * Details zur Aktion - was getan wurde: Hängt von der Aktion ab
 +
-** Name der Richtlinie
+** Name der gespeicherten Suche
 ** Für Move - Quelle und Ziel
 ** Für Copy - Quelle und Ziel
 ** Für Tag - Tag-Name

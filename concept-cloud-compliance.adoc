@@ -49,7 +49,7 @@ Mit der BlueXP Klassifizierung können Daten identifiziert werden, die potenziel
 * Ermitteln Sie alle Dateien und Verzeichnisse (Shares und Ordner) mit offenen Berechtigungen, die Ihrem gesamten Unternehmen oder der Öffentlichkeit zugänglich sind.
 * Identifizieren Sie sensible Daten, die sich außerhalb des ursprünglichen dedizierten Standorts befinden.
 * Einhaltung von Richtlinien zur Datenaufbewahrung.
-* Verwenden Sie _Policies_, um automatisch neue Sicherheitsprobleme zu erkennen, damit Sicherheitspersonal sofort Maßnahmen ergreifen kann.
+* Verwenden Sie __Policies_, um automatisch neue Sicherheitsprobleme zu erkennen, damit Sicherheitspersonal sofort Maßnahmen ergreifen kann.
 
 
 .Optimieren Sie die Storage-Auslastung

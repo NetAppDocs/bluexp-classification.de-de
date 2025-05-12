@@ -27,9 +27,9 @@ Sie können den Inhalt der Untersuchungsseite filtern, um nur die Ergebnisse anz
 
 
 
-=== Filtern Sie Daten nach Tags, Labels, zugewiesenen Benutzern und Richtlinien
+=== Filtern Sie Daten nach Tags, Beschriftungen, zugewiesenen Benutzern und gespeicherten Suchen
 
-Verwenden Sie die folgenden Filter, um Daten nach Tags, AIP-Etiketten, zugewiesenen Benutzern oder Richtlinien anzuzeigen.
+Verwenden Sie die folgenden Filter, um Daten nach Tags, AIP-Etiketten, zugewiesenen Benutzern oder gespeicherten Suchen anzuzeigen.
 
 []
 ====
@@ -41,7 +41,7 @@ Verwenden Sie die folgenden Filter, um Daten nach Tags, AIP-Etiketten, zugewiese
 | Filtern | Details 
 
 
-| Richtlinien | Wählen Sie eine Richtlinie oder Richtlinien aus. Los link:task-using-policies.html["Hier"^] Um die Liste der vorhandenen Richtlinien anzuzeigen und eigene Richtlinien zu erstellen. 
+| Gespeicherte Suchvorgänge | Wählen Sie eine oder mehrere gespeicherte Suche aus. Rufen link:task-using-policies.html["Hier"^] Sie die Liste der vorhandenen Suchen auf, oder erstellen Sie eine neue. 
 
 
 | Etikett | Wählen Sie link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP-Etiketten"] Die Ihren Dateien zugewiesen sind. 
