@@ -321,7 +321,7 @@ Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueX
 +
 ** Sie benötigen die Proxy-Server-Informationen (IP-Adresse oder Hostname, Verbindungsport, Verbindungsschema: https oder http, Benutzername und Passwort).
 ** Wenn der Proxy TLS abfängt, müssen Sie den Pfad auf dem BlueXP Klassifizierungs-Linux-System kennen, auf dem die TLS-CA-Zertifikate gespeichert sind.
-** Der Proxy muss nicht transparent sein - wir unterstützen derzeit keine transparenten Proxys.
+** Der Proxy muss nicht transparent sein. BlueXP  classificaiton unterstützt derzeit keine transparenten Proxys.
 ** Der Benutzer muss ein lokaler Benutzer sein. Domänenbenutzer werden nicht unterstützt.
 
 

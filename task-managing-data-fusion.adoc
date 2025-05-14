@@ -144,7 +144,7 @@ Nach Hinzufügen des regex wird die BlueXP Klassifizierung neu gestartet und sca
 Wenn Sie beim Erstellen des regulären Ausdrucks Hilfe benötigen, lesen Sie https://regex101.com/["Reguläre Ausdrücke 101"^]. Wählen Sie *Python* für den Geschmack, um zu sehen, welche Arten von Ergebnissen die BlueXP-Klassifikation vom regulären Ausdruck entspricht. Der https://pythonium.net/regex["Seite „Python Regex Tester“"^] Ist auch nützlich, indem Sie eine grafische Darstellung Ihrer Muster anzeigen.
 
 
-NOTE: Derzeit erlauben wir die Verwendung von Pattern Flags beim Erstellen eines Regex nicht - das bedeutet, dass Sie "/" nicht verwenden sollten.
+NOTE: Die BlueXP -Klassifizierung unterstützt keine Muster-Flags beim Erstellen eines Regex. Das bedeutet, dass Sie "/" nicht verwenden sollten.
 
 .Schritte
 . Klicken Sie auf der Registerkarte _Classification settings_ auf *Add New Classifier*, um den Assistenten _Add Custom Classifier_ zu starten.

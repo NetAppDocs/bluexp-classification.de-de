@@ -29,7 +29,7 @@ Sie können den Scanstatus jeder Arbeitsumgebung auf der Konfigurationsseite anz
 * *Initialisieren* (hellblauer Punkt): Die Map- oder Klassifikationskonfiguration ist aktiviert. Dieser erscheint einige Sekunden lang, bevor der Status „Warteschlange ausstehend“ gestartet wird.
 * *Warteschlange ausstehend* (orangefarbener Punkt): Der Scan-Task wartet darauf, in der Scanwarteschlange aufgelistet zu werden.
 * *Queued* (orangefarbener Punkt): Die Aufgabe wurde erfolgreich zur Scanwarteschlange hinzugefügt. Das System beginnt mit der Zuordnung oder Klassifizierung des Volumes, wenn es an der Reihe ist.
-* *Running* (grüner Punkt): Die Scan-Aufgabe, die sich in der Warteschlange befand, wird nun im ausgewählten Speicher-Repository ausgeführt.
+* *Running* (grüner Punkt): Der Scan-Task, der sich in der Warteschlange befand, wird im ausgewählten Speicher-Repository aktiv ausgeführt.
 * *Finished* (grüner Punkt): Der Scan des Speicherarchivs ist abgeschlossen.
 * *Pause* (grauer Punkt): Sie haben die Option „Pause“ gewählt, um den Scanvorgang anzuhalten. Während die Änderungen im Volumen nicht im System angezeigt werden, werden die gescannten Erkenntnisse weiterhin angezeigt.
 * *Fehler* (roter Punkt): Der Scan kann nicht abgeschlossen werden, da Probleme aufgetreten sind. Wenn Sie eine Aktion abschließen müssen, wird der Fehler in der QuickInfo unter der Spalte „erforderliche Aktion“ angezeigt.  Andernfalls zeigt das System einen „Fehler“-Status an und versucht wiederherzustellen. Nach Abschluss ändert sich der Status.
@@ -85,7 +85,7 @@ image:screenshot_compliance_repo_scan_all.png["Ein Screenshot, der zeigt, wie di
 
 Sie können die wichtigsten nur-Mapping-Scans priorisieren oder Scans zuordnen und klassifizieren, um sicherzustellen, dass Scans mit hoher Priorität zuerst abgeschlossen werden.
 
-Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 

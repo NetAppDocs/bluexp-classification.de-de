@@ -16,7 +16,7 @@ Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engin
 .Priorisieren Sie nur Mapping-Scans
 Bei der Durchführung von nur-Mapping-Scans können Sie die wichtigsten Scans priorisieren. Diese Funktion hilft Ihnen, wenn Sie viele Arbeitsumgebungen haben und sicherstellen möchten, dass zuerst Scans mit hoher Priorität abgeschlossen werden.
 
-Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie jetzt Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
+Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert werden, in die Warteschlange gestellt. Mit der Möglichkeit, Scans zu priorisieren, können Sie Scans an die Vorderseite der Warteschlange verschieben. Mehrere Scans können priorisiert werden. Die Priorität wird in der Reihenfolge „First-in“, „First-Out“ festgelegt. Das bedeutet, dass der erste von Ihnen priorisierte Scan an den Anfang der Warteschlange geht. Der zweite priorisierte Scan wird in der Warteschlange und so weiter.
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 
@@ -25,9 +25,9 @@ Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.html["Nur-Map
 Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
 
 .Wiederholen Sie alle Scans
-Die BlueXP -Klassifizierung unterstützt jetzt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
+Die BlueXP -Klassifizierung unterstützt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
 
-Mit der Funktion **Alle wiederholen** können Sie jetzt Scans in einem Batch-Vorgang erneut versuchen. Wenn Klassifikationsscans aufgrund eines vorübergehenden Problems, wie z. B. eines Netzwerkausfalls, fehlschlagen, können Sie alle Scans gleichzeitig mit einer Taste wiederholen, anstatt sie einzeln erneut zu versuchen. Scans können so oft wie nötig wiederholt werden.
+Sie können Scans in einem Batch-Vorgang mit der Funktion **Alle wiederholen** erneut versuchen. Wenn Klassifikationsscans aufgrund eines vorübergehenden Problems, wie z. B. eines Netzwerkausfalls, fehlschlagen, können Sie alle Scans gleichzeitig mit einer Taste wiederholen, anstatt sie einzeln erneut zu versuchen. Scans können so oft wie nötig wiederholt werden.
 
 So wiederholen Sie alle Scans:
 

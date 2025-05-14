@@ -21,7 +21,7 @@ Sie können diese Einstellung beim Erstellen der Richtlinie oder beim Bearbeiten
 Führen Sie die folgenden Schritte aus, um einer vorhandenen Richtlinie E-Mail-Updates hinzuzufügen.
 
 .Schritte
-. Klicken Sie auf der Seite „Richtlinienliste“ für die Richtlinie, in der Sie die E-Mail-Einstellung hinzufügen (oder ändern) möchten, auf *Bearbeiten*.
+. Wählen Sie auf der Seite „Richtlinienliste“ die Option *Bearbeiten* für die Richtlinie aus, in der Sie die E-Mail-Einstellung hinzufügen (oder ändern) möchten.
 +
 image:screenshot_compliance_add_email_alert_1.png["Ein Screenshot, der zeigt, wie eine vorhandene Richtlinie bearbeitet wird."]
 
@@ -34,11 +34,11 @@ image:screenshot_compliance_add_email_alert_2.png["Ein Screenshot, in dem gezeig
 
 
 
-. Klicken Sie auf *Richtlinie speichern* und das Intervall, in dem die E-Mail gesendet wird, wird in der Richtlinienbeschreibung angezeigt.
+. Wählen Sie *Richtlinie speichern*, und das Intervall, in dem die E-Mail gesendet wird, wird in der Richtlinienbeschreibung angezeigt.
 
 
 .Ergebnis
-Die erste E-Mail wird jetzt gesendet, wenn Ergebnisse aus der Richtlinie vorliegen - aber nur, wenn Dateien die Richtlinienkriterien erfüllen. Es werden keine personenbezogenen Daten in die Benachrichtigungs-E-Mails gesendet. Die E-Mail zeigt an, dass Dateien vorhanden sind, die den Richtlinienkriterien entsprechen, und sie enthält einen Link zu den Richtlinienergebnissen.
+Wenn Dateien die Richtlinienkriterien erfüllen, wird eine E-Mail gesendet. Es werden keine personenbezogenen Daten in die Benachrichtigungs-E-Mails gesendet. Die E-Mail zeigt an, dass Dateien vorhanden sind, die den Richtlinienkriterien entsprechen, und sie enthält einen Link zu den Richtlinienergebnissen.
 
 
 
