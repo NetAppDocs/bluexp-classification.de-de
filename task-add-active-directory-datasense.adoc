@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["Ein Screenshot aus dem n
 
 Wenn Sie Werte in Ihrer Active Directory-Integration ändern müssen, klicken Sie auf die Schaltfläche *Bearbeiten* und nehmen Sie die Änderungen vor.
 
-Sie können die Integration auch löschen, wenn Sie sie nicht mehr benötigen, indem Sie auf die klicken image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Und dann *Active Directory entfernen*.
+Sie können die Integration auch löschen, indem Sie auf die image:button-gallery-options.gif["Schaltfläche „Mehr“"] Schaltfläche dann *Active Directory entfernen* klicken.

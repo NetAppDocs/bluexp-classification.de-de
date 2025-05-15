@@ -22,7 +22,7 @@ Falls erforderlich können Sie die BlueXP Klassifizierung davon abhalten, eine o
 
 Wenn Sie Scans deaktivieren, scannt die BlueXP Klassifizierung die Daten nicht mehr in der Arbeitsumgebung und entfernt die indizierten Compliance-Einblicke aus der BlueXP Klassifizierungsinstanz (die Daten aus der Arbeitsumgebung werden nicht gelöscht).
 
-. Klicken Sie auf der Seite _Configuration_ auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie in der Zeile für die Arbeitsumgebung auf *Data Sense deaktivieren*.
+. Wählen Sie auf der Seite _Configuration_ die image:button-gallery-options.gif["Schaltfläche „Mehr“"] Schaltfläche in der Zeile für die Arbeitsumgebung und dann *Data Sense deaktivieren*.
 
 
 image:screenshot_deactivate_compliance_scan.png["Ein Screenshot des Aktionssymbols, in dem Sie BlueXP Klassifizierung deaktivieren auswählen können. Diese Option ist verfügbar, nachdem Sie eine Arbeitsumgebung auf der Seite Arbeitsfläche ausgewählt haben."]
@@ -36,7 +36,7 @@ TIP: Sie können bei der Auswahl der Arbeitsumgebung auch die Compliance-Scans f
 
 Wenn Sie eine bestimmte Datenbank nicht mehr scannen möchten, können Sie sie aus der BlueXP Klassifizierungs-Schnittstelle löschen und alle Scans anhalten.
 
-. Klicken Sie auf der Seite _Configuration_ auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie in der Zeile der Datenbank auf *DB Server entfernen*.
+. Wählen Sie auf der Seite _Configuration_ die  Schaltfläche in der Zeile für die Datenbank und dann *DB Server entfernen* ausimage:button-gallery-options.gif["Schaltfläche „Mehr“"].
 
 
 image:screenshot_compliance_remove_db.png["Ein Screenshot der Schaltfläche DB Server entfernen auf der Seite Scankonfiguration."]
@@ -48,7 +48,7 @@ image:screenshot_compliance_remove_db.png["Ein Screenshot der Schaltfläche DB S
 Wenn Sie Benutzerdateien nicht mehr aus einer Dateifreigaben-Gruppe scannen möchten, können Sie die File Shares Group aus der BlueXP Klassifizierungs-Schnittstelle löschen und alle Scans anhalten.
 
 .Schritte
-. Klicken Sie auf der Seite _Configuration_ auf image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Klicken Sie in der Zeile für die Datei-Shares-Gruppe und dann auf *Datei-Shares-Gruppe entfernen*.
+. Wählen Sie auf der Seite _Configuration_ die image:button-gallery-options.gif["Schaltfläche „Mehr“"] Schaltfläche in der Zeile für die Gruppe Fileshares und dann *Remove File Shares Group* aus.
 +
 image:screenshot_compliance_remove_fileshare_group.png["Ein Screenshot der Schaltfläche „Gruppe der Dateifreigabe entfernen“ auf der Seite „Scankonfiguration“."]
 

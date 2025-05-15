@@ -13,7 +13,7 @@ summary: Mit der BlueXP -Klassifizierung können Sie die Suche nach vertraulich
 
 
 [role="lead"]
-Mit der BlueXP -Klassifizierung können Sie eine benutzerdefinierte Suche nach sensiblen Informationen erstellen. Die Suche kann auf einen regulären Ausdruck oder eine Reihe von Schlüsselwörtern für die Nähe festgelegt werden.
+Mit der BlueXP -Klassifizierung können Sie eine benutzerdefinierte Suche nach sensiblen Informationen erstellen. Die Suche kann auf einen regulären Ausdruck (regex) übertragen werden.
 
 
 
@@ -22,14 +22,12 @@ Mit der BlueXP -Klassifizierung können Sie eine benutzerdefinierte Suche nach 
 Benutzerdefinierte Klassifizierung ist nur für Karten- und Klassifikations-Scans verfügbar, nicht für nur-Mapping-Scans. Diese Funktion befindet sich derzeit in der Vorschau.
 
 .Schritte
-. Wählen Sie die Registerkarte **Benutzerdefinierte Klassifizierung**.
-. Wählen Sie den **Neuen Klassifikator hinzufügen**.
-. Fügen Sie Namen und Beschreibung für den neuen Klassifikator hinzu.
+. Wählen Sie die Registerkarte **Benutzerdefinierte Klassifizierung**. image:screenshot-custom-classification-tab.png["Ein Screenshot der Seite „Benutzerdefinierte Klassifizierung“."]
+. Klicken Sie auf die Schaltfläche **Neuen Klassierer hinzufügen**.
+. Fügen Sie einen Namen und eine Beschreibung für den neuen Klassifikator hinzu.
 . Um die Anpassung als regulärer Ausdruck hinzuzufügen, wählen Sie **Benutzerdefinierter regulärer Ausdruck** und dann **Weiter**.
-+
-.. Fügen Sie für einen regulären Ausdruck das Muster hinzu, um die spezifischen Informationen Ihrer Daten zu erkennen. Zum Beispiel wäre die 12-stellige ID, die mit 201 beginnt, \b201\f\d(9)B. Wählen Sie **Validieren**, um die Syntax Ihres Eintrags zu bestätigen.
-
-
+. Fügen Sie ein Muster hinzu, um die spezifischen Informationen Ihrer Daten zu erkennen. Wählen Sie **Validieren**, um die Syntax Ihres Eintrags zu bestätigen. image:screenshot-create-logic-regex.png["Ein Screenshot des Dialogfelds, um einen regulären Ausdruck zu erstellen."]
+. Wählen Sie **Fertig**, um die benutzerdefinierte Klassifizierung zu erstellen.
 
 
 Die neue Anpassung wird beim nächsten geplanten Scan erfasst. Informationen zum Anzeigen der Ergebnisse finden Sie unter xref:task-generating-compliance-reports.html[Erstellen von Compliance-Berichten].

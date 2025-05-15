@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-using-policies.html 
-keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
+keywords: compliance, privacy, filter data, highlights, policies, notifications, saved search, tags, data sense, edit query 
 summary: Gespeicherte Suchvorgänge sind benutzerdefinierte Filter, die Suchergebnisse auf der Seite „Untersuchung“ für häufig angeforderte Compliance-Anfragen liefern. Die BlueXP -Klassifizierung bietet eine Reihe von standardmäßig gespeicherten Suchen, die auf gemeinsamen Anforderungen basieren, oder Sie können eigene erstellen. 
 ---
 = Verwalten Sie gespeicherte Suchen mit BlueXP -Klassifizierung
@@ -29,9 +29,9 @@ image:screenshot_compliance_highlights_tab.png["Ein Screenshot der Registerkarte
 
 == Zeigen Sie die gespeicherten Suchergebnisse auf der Seite Untersuchung an
 
-Um die Ergebnisse für eine gespeicherte Suche auf der Untersuchungsseite anzuzeigen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche und wählen Sie dann *Ergebnisse untersuchen*.
+Um die Ergebnisse für eine gespeicherte Suche auf der Untersuchungsseite anzuzeigen, klicken Sie auf die image:button-gallery-options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche und wählen Sie dann *Ergebnisse untersuchen*.
 
-image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Suche auf der Registerkarte 'Sceied Search'."]
+image:screenshot_compliance_highlights_investigate.png["Ein Screenshot der Auswahl von Untersuchungsergebnissen für eine bestimmte Suche auf der Registerkarte gespeicherte Suche."]
 
 
 
@@ -52,32 +52,31 @@ image:screenshot_compliance_save_highlight2.png["Ein Screenshot, der zeigt, wie 
 
 
 
-.Ergebnis
-Die neue gespeicherte Suche wird auf der Registerkarte gespeicherte Suchen angezeigt.
+Nachdem Sie die Suche erstellt haben, können Sie sie auf der Registerkarte **gespeicherte Suchen** anzeigen.
 
 
 
 == Bearbeiten Sie gespeicherte Suchen
 
-Sie können die Kriterien für eine benutzerdefinierte gespeicherte Suche ändern, um die Abfrage (die Elemente, die Sie mit Filtern definiert haben) zu ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.
+Sie können die Abfragekriterien für eine gespeicherte Suche (d. h. die definierten Filter) ändern, um bestimmte Parameter hinzuzufügen oder zu entfernen.
 
 Standardmäßig gespeicherte Suchen können nicht geändert werden.
 
 .Schritte
-. Wählen Sie auf der Seite gespeicherte Suchen die Option *gespeicherte Suche bearbeiten* für die Suche, die Sie ändern möchten.
+. Wählen Sie auf der Seite gespeicherte Suchen die Option *Suche bearbeiten* für die Suche aus, die Sie ändern möchten.
 +
-image:screenshot_compliance_edit_policy_button.png["Ein Screenshot, der die gespeicherte Suche bearbeiten zeigt."]
+image:screenshot-edit-search.png["Ein Screenshot, der die gespeicherte Suche bearbeiten zeigt."]
 
-. Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur diese Felder zu ändern, wählen Sie *Speichern*.
+. Nehmen Sie die Änderungen an den Feldern Name und Beschreibung vor. Um nur die Namen- und Beschreibungsfelder zu ändern, wählen Sie *Suche speichern*.
 +
-Um die Filter für die gespeicherte Abfrage zu ändern, wählen Sie *Abfrage bearbeiten*.
+Um die Filter für die gespeicherte Suche zu ändern, wählen Sie *Abfrage bearbeiten*.
 
 +
-image:screenshot_compliance_edit_policy_dialog.png["Ein Screenshot der Auswahl der Schaltfläche Abfrage bearbeiten auf der Seite gespeicherte Suche bearbeiten."]
+image:screenshot-edit-search-dialog.png["Ein Screenshot der Schaltfläche Abfrage bearbeiten auf der Seite gespeicherte Suche bearbeiten."]
 
-. Bearbeiten Sie auf der Untersuchungsseite, die diese Abfrage definiert, die Abfrage, indem Sie die Filter hinzufügen, entfernen oder anpassen, und wählen Sie dann *Änderungen speichern* .
+. Bearbeiten Sie die Abfrage auf der Seite Untersuchung. Sie können Filter hinzufügen, entfernen oder ändern. Um Ihre Änderungen abzuschließen, wählen Sie *Abfrage für diese Suche speichern*.
 +
-image:screenshot_compliance_edit_policy_query.png["Ein Screenshot zeigt, wie die Abfrage durch Ändern der Filtereinstellungen bearbeitet wird."]
+image:screenshot-edit-query.png["Ein Screenshot zeigt, wie die Abfrage durch Ändern der Filtereinstellungen bearbeitet wird."]
 
 
 
@@ -85,9 +84,9 @@ image:screenshot_compliance_edit_policy_query.png["Ein Screenshot zeigt, wie die
 
 == Löschen Sie gespeicherte Suchen
 
-Sie können jede benutzerdefinierte gespeicherte Suche löschen, wenn Sie sie nicht mehr benötigen. Standardmäßig gespeicherte Suchen können nicht gelöscht werden
+Sie können jede benutzerdefinierte gespeicherte Suche löschen, wenn Sie sie nicht mehr benötigen. Standardmäßig gespeicherte Suchen können nicht gelöscht werden.
 
-Um eine gespeicherte Suche zu löschen, klicken Sie auf die image:screenshot_gallery_options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche, wählen Sie *gespeicherte Suche löschen*, und wählen Sie dann im Bestätigungsdialog erneut *Suche löschen* aus.
+Um eine gespeicherte Suche zu löschen, klicken Sie auf die image:button-gallery-options.gif["Schaltfläche „Mehr“"] Schaltfläche für eine bestimmte Suche, wählen Sie *Suche löschen*, und wählen Sie dann im Bestätigungsdialog erneut *Suche löschen* aus.
 
 
 

@@ -149,7 +149,7 @@ Der Bericht enthält die folgenden Informationen:
 +
 image:screenshot-compliance-report-buttons.png["Ein Screenshot des Governance Dashboard, in dem gezeigt wird, wie der Datenzuordnungsbericht gestartet wird."]
 
-. Um den Unternehmensnamen anzupassen, der auf der ersten Seite des Berichts angezeigt wird, wählen Sie oben rechts auf der Seite BlueXP -Klassifizierung die Option image:screenshot_gallery_options.gif["Die Schaltfläche Mehr"]. Wählen Sie dann *Firmennamen ändern*. Wenn Sie den Bericht das nächste Mal erstellen, wird er den neuen Namen enthalten.
+. Um den Unternehmensnamen anzupassen, der auf der ersten Seite des Berichts angezeigt wird, wählen Sie oben rechts auf der Seite BlueXP -Klassifizierung die Option image:button-gallery-options.gif["Die Schaltfläche Mehr"]. Wählen Sie dann *Firmennamen ändern*. Wenn Sie den Bericht das nächste Mal erstellen, wird er den neuen Namen enthalten.
 
 
 .Ergebnis

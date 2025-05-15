@@ -14,12 +14,12 @@ Die BlueXP -Klassifizierung unterstützt die Möglichkeit, neben den nur-Mappin
 Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
 
 .Unterstützung für kanadische Datenkategorien für personenbezogene Daten (PII)
-BlueXP  Klassifikations-Scans identifizieren kanadische PII-Datenkategorien für Bankdaten, Reisepassnummer, Sozialversicherungsnummer, Führerschein-Nummer und Krankenversicherungsnummer für alle Provinzen und Gebiete.
+BlueXP -Klassifikations-Scans identifizieren kanadische PII-Datenkategorien. Diese Kategorien umfassen Bankdaten, Passnummern, Sozialversicherungsnummern, Führerscheinnummern und Krankenkartennummern für alle kanadischen Provinzen und Gebiete.
 
 Weitere Informationen finden Sie unter xref:reference-private-data-categories.adoc#types-of-personal-data[Kategorien personenbezogener Daten].
 
 .Benutzerdefinierte Klassifizierung (Vorschau)
-Die BlueXP -Klassifizierung unterstützt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifikationen können Sie BlueXP -Scans so anpassen, dass Daten für Ihr Unternehmen erfasst werden, um die Einhaltung von regulären Ausdrücken zu gewährleisten. Diese Funktion befindet sich derzeit in der Vorschau.
+Die BlueXP -Klassifizierung unterstützt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifizierungen können Sie BlueXP -Scans so anpassen, dass sie Daten erfassen, die speziell auf Ihr Unternehmen zugeschnitten sind, und dabei reguläre Ausdrücke verwenden. Diese Funktion befindet sich derzeit in der Vorschau.
 
 Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Fügen Sie benutzerdefinierte Klassifizierungen hinzu].
 

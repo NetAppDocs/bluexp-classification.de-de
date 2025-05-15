@@ -21,8 +21,8 @@ IMPORTANT: Die folgenden Informationen gelten nur für die BlueXP -Klassifizier
 
 + ab Version 1.31 ist die BlueXP -Klassifizierung Teil des Kernangebots von BlueXP . Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"].
 
-[]
-====
+
+
 == Schnellstart
 
 Führen Sie diese Schritte schnell durch, oder scrollen Sie nach unten zu den verbleibenden Abschnitten, um ausführliche Informationen zu erhalten.
@@ -46,7 +46,9 @@ Fügen Sie den Objekt-Storage-Service zur BlueXP Klassifizierung hinzu.
 [role="quick-margin-para"]
 Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierung beginnt mit dem Scannen.
 
-== Überprüfung der Anforderungen an den Objektspeicher
+
+
+== Überprüfung der Objekt-Storage-Anforderungen
 
 Überprüfen Sie die folgenden Voraussetzungen, um sicherzustellen, dass eine unterstützte Konfiguration vorhanden ist, bevor Sie die BlueXP Klassifizierung aktivieren.
 
@@ -54,7 +56,9 @@ Wählen Sie die Buckets aus, die Sie scannen möchten. Die BlueXP Klassifizierun
 * Sie müssen den Zugriffsschlüssel und den geheimen Schlüssel vom Objekt-Storage-Provider besitzen, damit die BlueXP Klassifizierung auf die Buckets zugreifen kann.
 
 
-== Bereitstellung der BlueXP -Klassifizierungsinstanz
+
+
+== Implementieren der BlueXP Klassifizierungsinstanz
 
 Implementieren Sie die BlueXP Klassifizierung, falls noch keine Instanz implementiert ist.
 
@@ -64,7 +68,9 @@ Wenn Sie Daten vom S3 Objekt-Storage scannen, der auf einem dunklen Standort ohn
 
 Ein Upgrade auf die BlueXP Klassifizierungssoftware ist automatisiert, solange die Instanz über eine Internetverbindung verfügt.
 
-== Hinzufügen des Objekt-Storage-Service zur BlueXP -Klassifizierung
+
+
+== Hinzufügen des Objekt-Storage-Service zur BlueXP Klassifizierung
 
 Fügen Sie den Objekt-Storage-Service hinzu.
 
@@ -88,7 +94,9 @@ image:screenshot_compliance_add_object_storage.png["Ein Screenshot des Dialogfel
 .Ergebnis
 Der neue Objekt-Speicherdienst wird der Liste der Arbeitsumgebungen hinzugefügt.
 
-== Aktivieren und Deaktivieren von Compliance-Scans für Objekt-Storage-Buckets
+
+
+== Aktivieren und Deaktivieren von Compliance-Scans an Objekt-Storage-Buckets
 
 Nachdem Sie die BlueXP Klassifizierung für Ihren Objekt-Storage-Service aktiviert haben, müssen Sie im nächsten Schritt die Buckets konfigurieren, die Sie scannen möchten. Die BlueXP Klassifizierung erkennt diese Buckets und zeigt sie in der von Ihnen erstellten Arbeitsumgebung an.
 
@@ -119,5 +127,3 @@ image:screenshot_compliance_object_storage_select_buckets.png["Ein Screenshot, i
 
 .Ergebnis
 Die BlueXP Klassifizierung beginnt mit dem Scannen der von Ihnen aktivierten Buckets. Wenn Fehler auftreten, werden sie neben der erforderlichen Aktion zur Behebung des Fehlers in der Spalte Status angezeigt.
-
-====
