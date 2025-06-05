@@ -17,9 +17,7 @@ summary: 'Führen Sie ein paar Schritte durch und starten Sie das Scannen von Da
 Führen Sie ein paar Schritte durch und starten Sie das Scannen von Daten innerhalb von Objekt-Storage direkt mit der BlueXP Klassifizierung. Die BlueXP Klassifizierung kann Daten von jedem beliebigen Objekt-Storage-Service scannen, der das S3-Protokoll (Simple Storage Service) verwendet. Dazu zählen NetApp StorageGRID, IBM Cloud Object Store, Linode, B2 Cloud Storage, Amazon S3 und vieles mehr.
 
 
-IMPORTANT: Die folgenden Informationen gelten nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher.
-
-+ ab Version 1.31 ist die BlueXP -Klassifizierung Teil des Kernangebots von BlueXP . Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"].
+IMPORTANT: Die folgenden Informationen gelten nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher. + ab Version 1.31 ist die BlueXP -Klassifizierung Teil des Kernangebots von BlueXP . Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scannen von StorageGRID-Daten"].
 
 
 

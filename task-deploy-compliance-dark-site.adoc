@@ -281,7 +281,7 @@ Folgen Sie diesen Schritten, wenn Sie die BlueXP Klassifizierungssoftware auf ei
 
 Beachten Sie, dass alle Installationsaktivitäten bei der Installation der BlueXP Klassifizierung protokolliert werden. Wenn während der Installation Probleme auftreten, können Sie den Inhalt des Audit-Protokolls für die Installation anzeigen. Es ist geschrieben `/opt/netapp/install_logs/`. link:task-audit-data-sense-actions.html["Weitere Details finden Sie hier"].
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Bereiten Sie das Linux-Hostsystem vor,Host-Anforderungen erfüllt>>.
 * Überprüfen Sie, ob Sie die beiden erforderlichen Softwarepakete (Docker Engine oder Podman und Python 3) installiert haben.
 * Stellen Sie sicher, dass Sie über Root-Rechte auf dem Linux-System verfügen.

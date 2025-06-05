@@ -20,12 +20,10 @@ Bei sehr großen Konfigurationen, bei denen an Standorten ohne Internetzugang Da
 
 Befolgen Sie diese Schritte, wenn Sie die BlueXP Klassifizierungssoftware auf mehreren lokalen Hosts in einer Offline-Umgebung installieren.
 
-[]
-====
-*HINWEIS* Diese Informationen sind nur für die BlueXP-Klassifikation der älteren Versionen 1.30 und früher relevant.
 
-====
-.Was Sie benötigen
+NOTE: Die folgenden Informationen gelten nur für die BlueXP -Klassifizierung von älteren Versionen 1.30 und früher.
+
+.Bevor Sie beginnen
 * Überprüfen Sie, ob alle Linux-Systeme für die Knoten Manager und Scanner die Host-Anforderungen erfüllen.
 * Überprüfen Sie, ob Sie die beiden erforderlichen Softwarepakete (Docker Engine oder Podman und Python 3) installiert haben.
 * Stellen Sie sicher, dass Sie auf den Linux-Systemen über Root-Rechte verfügen.

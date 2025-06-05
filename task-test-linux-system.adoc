@@ -221,7 +221,7 @@ Führen Sie diese Schritte aus, um das Skript für die Voraussetzungen der BlueX
 
 https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["Hier geht's zum Video"^] Anleitung zum Ausführen des Skripts „Voraussetzungen“ und zum Interpretieren der Ergebnisse.
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 * Vergewissern Sie sich, dass Ihr Linux-System die erfüllt <<Host-Anforderungen prüfen,Host-Anforderungen erfüllt>>.
 * Überprüfen Sie, ob auf dem System die beiden erforderlichen Softwarepakete installiert sind (Docker Engine oder Podman und Python 3).
 * Stellen Sie sicher, dass Sie über Root-Rechte auf dem Linux-System verfügen.

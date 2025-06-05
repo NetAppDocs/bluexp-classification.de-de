@@ -5,8 +5,8 @@ keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, perso
 summary: Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren und private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte. 
 ---
 = Mehr zur BlueXP Klassifizierung
-:hardbreaks:
 :allow-uri-read: 
+:no-hardbreaks: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -17,9 +17,7 @@ summary: Die BlueXP Klassifizierung ist ein Daten-Governance-Service für BlueXP
 Die BlueXP Klassifizierung (Cloud Data Sense) ist ein Daten-Governance-Service für BlueXP. Er scannt Ihre lokalen und Cloud-Datenquellen Ihres Unternehmens, um Daten zuzuordnen und zu klassifizieren sowie private Informationen zu identifizieren. Auf diese Weise reduzieren Sie Sicherheits- und Compliance-Risiken, senken die Storage-Kosten und unterstützen Ihre Datenmigrationsprojekte.
 
 
-IMPORTANT: Ab Version 1.31 ist die BlueXP -Klassifizierung als Kernfunktion bei BlueXP  verfügbar. Es fallen keine zusätzlichen Gebühren an. Es ist keine Lizenz zur Klassifizierung oder kein Abonnement erforderlich.
-
-+ Wenn Sie die ältere Version 1.30 oder eine frühere Version verwendet haben, ist diese Version verfügbar, bis Ihr Abonnement abläuft. link:reference-free-paid.html["Siehe eine Liste der veralteten Features"].
+IMPORTANT: Ab Version 1.31 ist die BlueXP -Klassifizierung als Kernfunktion bei BlueXP  verfügbar. Es fallen keine zusätzlichen Gebühren an. Es ist keine Lizenz zur Klassifizierung oder kein Abonnement erforderlich. + Wenn Sie die ältere Version 1.30 oder eine frühere Version verwendet haben, ist diese Version verfügbar, bis Ihr Abonnement abläuft. link:reference-free-paid.html["Siehe eine Liste der veralteten Features"].
 
 
 
