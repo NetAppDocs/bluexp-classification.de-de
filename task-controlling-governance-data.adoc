@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten. 
 ---
 = Anzeigen von Governance-Details zu den in Ihrem Unternehmen mit BlueXP -Klassifizierung gespeicherten Daten
@@ -14,7 +14,7 @@ summary: Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten a
 
 
 [role="lead"]
-Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit Daten auf den Storage-Ressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten.
+Behalten Sie die Kontrolle über die Kosten im Zusammenhang mit den Daten auf den Speicherressourcen Ihres Unternehmens. Die BlueXP Klassifizierung ermittelt die Menge veralteter Daten, nicht geschäftsferner Daten, mehrfach vorhandener Dateien und sehr großer Dateien auf Ihren Systemen. So können Sie entscheiden, ob Sie einige Dateien entfernen oder auf kostengünstigeren Objekt-Storage verschieben möchten.
 
 Dies ist, wo Sie Ihre Forschung beginnen sollten. Im Dashboard „Governance“ können Sie einen Bereich für weitere Untersuchungen auswählen.
 
@@ -40,11 +40,11 @@ Das Dashboard „Governance“ wird angezeigt.
 
 === Prüfen Sie die Einsparmöglichkeiten
 
-Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten.
+Die Komponente „Einsparmöglichkeiten“ zeigt Daten an, die Sie löschen oder in einen kostengünstigeren Objektspeicher verschieben können. Die Daten in „Einsparmöglichkeiten“ werden alle zwei Stunden aktualisiert und können manuell aktualisiert werden.
 
 .Schritte
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
-. Wählen Sie in jeder Kachel „Einsparungsmöglichkeiten“ des Governance-Dashboards *Speicher optimieren* aus, um die gefilterten Ergebnisse auf der Seite „Untersuchung“ anzuzeigen. Möglicherweise möchten Sie die Elemente im Bereich „_Saving Opportunities_“ untersuchen, um zu sehen, ob es Daten gibt, die Sie löschen oder zu kostengünstigerem Objekt-Storage Tier verschieben sollten.
+. Wählen Sie in jeder Kachel „Einsparungsmöglichkeiten“ des Governance-Dashboards *Speicher optimieren* aus, um die gefilterten Ergebnisse auf der Seite „Untersuchung“ anzuzeigen. Um herauszufinden, welche Daten Sie löschen oder auf einen günstigeren Speicher verschieben sollten, untersuchen Sie die _Sparmöglichkeiten_.
 +
 ** *Veraltete Daten* - Daten die zuletzt vor über 3 Jahren geändert wurden.
 ** *Nicht-Geschäftsdaten* - Daten, die aufgrund ihrer Kategorie oder ihres Dateityps als nicht geschäftsbezogen gelten. Hierzu zählen folgende Optionen:
@@ -70,13 +70,13 @@ NOTE: Wenn eine Ihrer Datenquellen Daten-Tiering implementiert, können alte Dat
 
 === Überprüfen Sie gespeicherte Suchen mit der größten Anzahl von Ergebnissen
 
-Auf der Registerkarte _Saved searches_ werden die Suchen mit der größten Anzahl von Ergebnissen am Anfang der Liste angezeigt.
+Auf der Registerkarte _Saved searches_ werden die Suchen mit der größten Anzahl von Ergebnissen am Anfang der Liste angezeigt. Diese Daten werden alle zwei Stunden aktualisiert.
 
 Weitere Informationen zu gespeicherten Suchen finden Sie unter link:task-using-policies.html["Erstellen Sie gespeicherte Suchen"].
 
 .Schritte
 . Wählen Sie im BlueXP -Klassifizierungsmenü *Governance*.
-. Suchen Sie im Dashboard der Verwaltung die Kachel gespeicherte Suchen. Wählen Sie den Namen einer gespeicherten Suche aus, um die Ergebnisse auf der Seite Untersuchung anzuzeigen.
+. Suchen Sie im Governance-Dashboard nach der Kachel „Gespeicherte Suchvorgänge“. Wählen Sie den Namen einer gespeicherten Suche aus, um die Ergebnisse auf der Seite Untersuchung anzuzeigen.
 . Wählen Sie *Alle anzeigen*, um die Liste aller verfügbaren gespeicherten Suchen anzuzeigen. Im Bereich _Saved searches_ werden die Suchen mit der größten Anzahl von Ergebnissen am Anfang der Liste angezeigt.
 
 
@@ -122,7 +122,7 @@ Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prü
 
 == Erstellen Sie den Übersichtsbericht zur Datenzuordnung
 
-Der Data Mapping Overview Report bietet einen Überblick über die Daten, die in Ihren Unternehmensdatenquellen gespeichert werden, um Sie bei Entscheidungen über Migration, Backup, Sicherheit und Compliance-Prozesse zu unterstützen. Der Bericht enthält zunächst eine Übersicht, in der alle Arbeitsumgebungen und Datenquellen zusammengefasst sind, und liefert dann eine Analyse für jede Arbeitsumgebung.
+Der Data Mapping Overview Report bietet einen Überblick über die Daten, die in Ihren Unternehmensdatenquellen gespeichert werden, um Sie bei Entscheidungen über Migration, Backup, Sicherheit und Compliance-Prozesse zu unterstützen. Der Bericht fasst alle Arbeitsumgebungen und Datenquellen zusammen. Außerdem bietet er eine Analyse für jede Arbeitsumgebung.
 
 Der Bericht enthält die folgenden Informationen:
 
@@ -155,7 +155,7 @@ image:screenshot-compliance-report-buttons.png["Ein Screenshot des Governance Da
 .Ergebnis
 Die BlueXP Klassifizierung generiert einen PDF-Bericht, den Sie nach Bedarf prüfen und an andere Gruppen senden können.
 
-Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP Klassifizierung in der Cloud implementiert wird, müssen Sie SSH zur BlueXP Klassifizierungsinstanz verwenden, um die .pdf-Datei herunterzuladen.
+Wenn der Bericht größer als 1 MB ist, wird die PDF-Datei auf der BlueXP Klassifizierungsinstanz beibehalten, und Sie werden eine Popup-Meldung über den genauen Speicherort sehen. Wenn die BlueXP Klassifizierung auf einer lokalen Linux-Maschine oder auf einer Linux-Maschine in der Cloud installiert ist, können Sie direkt zur PDF-Datei navigieren. Wenn die BlueXP-Klassifizierung in der Cloud bereitgestellt wird, müssen Sie per SSH eine Verbindung zur BlueXP-Klassifizierungsinstanz herstellen, um die PDF-Datei herunterzuladen.
 
 
 
@@ -168,9 +168,11 @@ Im Bereich _Top Data Repositories by Sensitivity Level_ des Berichts Data Mappin
 * Sensible personenbezogene Daten
 
 
+Diese Daten werden alle zwei Stunden aktualisiert und können manuell aktualisiert werden.
+
 .Schritte
 . Um die Gesamtanzahl der Elemente in jeder Kategorie anzuzeigen, setzen Sie den Cursor über die einzelnen Bereiche der Leiste.
-. Um die Ergebnisse zu filtern, die auf der Untersuchungsseite angezeigt werden, wählen Sie die einzelnen Bereiche der Leiste aus, und untersuchen Sie die Ergebnisse weiter.
+. Um die Ergebnisse zu filtern, die auf der Untersuchungsseite angezeigt werden, wählen Sie jeden Bereich in der Leiste aus und untersuchen Sie ihn weiter.
 
 
 
@@ -179,8 +181,8 @@ Im Bereich _Top Data Repositories by Sensitivity Level_ des Berichts Data Mappin
 
 Der Bereich _sensible Daten und weite Berechtigungen_ des Berichts Data Mapping Overview zeigt den Prozentsatz der Dateien an, die sensible Daten enthalten und über breite Berechtigungen verfügen. Das Diagramm zeigt die folgenden Berechtigungstypen:
 
-* Von den restriktiven Genehmigungen zu den freizügigsten Beschränkungen auf dem horizontalen Axix.
-* Von den empfindlichsten Daten bis zu den sensibelsten Daten auf der vertikalen Achse.
+* Von den restriktivsten Berechtigungen bis zu den freizügigsten Einschränkungen auf der horizontalen Achse.
+* Von den am wenigsten sensiblen Daten zu den sensibelsten Daten auf der vertikalen Achse.
 
 
 .Schritte
@@ -235,8 +237,8 @@ Kategorien können Ihnen dabei helfen zu verstehen, was mit Ihren Daten passiert
 Weitere Informationen finden Sie unter link:task-controlling-private-data.html["Anzeigen von Dateien nach Kategorien"] .
 
 .Schritte
-. Klicken Sie im BlueXP-Menü auf *Governance > Klassifizierung*.
-. Klicken Sie auf *Governance* und dann auf die Schaltfläche *Data Discovery Assessment Report*.
+. Wählen Sie im Menü BlueXP  die Option *Steuerung > Klassifizierung*.
+. Wählen Sie *Governance* und dann die Schaltfläche *Data Discovery Assessment Report*.
 
 
 .Ergebnis
