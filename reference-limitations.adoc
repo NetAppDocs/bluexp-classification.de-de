@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-limitations.html 
 keywords: limitations, data sense, classification, bluexp, scan shares 
-summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch. 
+summary: Bekannte Einschränkungen kennzeichnen Funktionen, die von dieser Produktversion nicht unterstützt werden oder nicht ordnungsgemäß mit ihr interagieren. Lesen Sie diese Einschränkungen sorgfältig durch. 
 ---
 = Bekannte Einschränkungen in der BlueXP -Klassifizierung
 :hardbreaks:
@@ -14,22 +14,24 @@ summary: Bekannte Einschränkungen identifizieren Funktionen, die von dieser Ver
 
 
 [role="lead"]
-Bekannte Einschränkungen identifizieren Funktionen, die von dieser Version des Produkts nicht unterstützt werden oder nicht korrekt mit ihr zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
+Bekannte Einschränkungen kennzeichnen Funktionen, die in dieser Version nicht unterstützt werden oder nicht ordnungsgemäß zusammenarbeiten. Lesen Sie diese Einschränkungen sorgfältig durch.
 
 
 
-== BlueXP Klassifizierung hat Optionen entfernt
+== Optionen für deaktivierte BlueXP-Klassifizierung
 
 Mit der Version Dezember 2023 (Version 1.26.6) wurden die folgenden Optionen entfernt:
 
 * Die Option zum Aktivieren der Überwachungsprotokollsammlung wurde deaktiviert.
-* Bei der Untersuchung der Verzeichnisse steht die Möglichkeit zur Berechnung der Anzahl der personenbezogenen Daten (PII) nach Verzeichnissen nicht zur Verfügung.
+* Während der Verzeichnisuntersuchung ist die Option zum Berechnen der Anzahl personenbezogener Daten (PII) durch Verzeichnisse nicht verfügbar.
 * Die Option zur Integration von Daten mit AIP-Labels (Azure Information Protection) wurde deaktiviert.
 
 
 
 
-== Einschränkungen beim Scannen der BlueXP Klassifizierung
+== BlueXP-Klassifizierungsscan
+
+Bei BlueXP-Klassifizierungsscans treten die folgenden Einschränkungen auf.
 
 
 
@@ -43,7 +45,7 @@ Wenn Sie mehrere File Shares unter einem einzelnen Volume haben, scannt die Blue
 * /D/E
 
 
-Anschließend werden die Daten in /A gescannt. Die Daten in /C und /D werden nicht gescannt.
+In dieser Konfiguration werden nur die Daten in /A gescannt. Die Daten in /C und /D werden nicht gescannt.
 
 .Behelfslösung
 Es gibt eine Problemumgehung, um sicherzustellen, dass Sie Daten von allen Freigaben in Ihrem Volume scannen. Führen Sie hierzu folgende Schritte aus:
@@ -51,12 +53,12 @@ Es gibt eine Problemumgehung, um sicherzustellen, dass Sie Daten von allen Freig
 . Fügen Sie in der Arbeitsumgebung das zu scannende Volumen hinzu.
 . Nachdem die BlueXP Klassifizierung das Scannen des Volumes abgeschlossen hat, öffnen Sie die Seite „_Data Investigation_“ und erstellen Sie einen Filter, um zu sehen, welche Freigabe gescannt wird:
 +
-Sie filtern die Daten nach „Name der Arbeitsumgebung“ und „Verzeichnistyp = Freigabe“, um zu sehen, welche Freigabe gescannt wird.
+Filtern Sie die Daten nach „Name der Arbeitsumgebung“ und „Verzeichnistyp = Freigabe“, um zu sehen, welche Freigabe gescannt wird.
 
 . Rufen Sie die vollständige Liste der Freigaben auf, die im Volume vorhanden sind, damit Sie sehen können, welche Freigaben nicht gescannt werden.
 . link:task-scanning-file-shares.html["Fügen Sie die restlichen Freigaben einer Freigabengruppe hinzu"].
 +
-Sie müssen alle Freigaben einzeln hinzufügen, zum Beispiel:
+Fügen Sie alle Anteile einzeln hinzu, zum Beispiel:
 
 +
 ....
@@ -65,3 +67,9 @@ Sie müssen alle Freigaben einzeln hinzufügen, zum Beispiel:
 ....
 . Führen Sie diese Schritte für jedes Volume in der Arbeitsumgebung aus, die über mehrere Shares verfügt.
 
+
+
+
+=== Zeitstempel des letzten Zugriffs
+
+Wenn die BlueXP-Klassifizierung einen Verzeichnisscan durchführt, wirkt sich dieser Scan auf das Feld **Letzter Zugriff** des Verzeichnisses aus. Wenn Sie das Feld **Letzter Zugriff** anzeigen, spiegeln die Metadaten entweder Datum und Uhrzeit des Scans oder den letzten Zugriff eines Benutzers auf das Verzeichnis wider.
