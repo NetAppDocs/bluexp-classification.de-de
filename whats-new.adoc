@@ -18,7 +18,7 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
-== 09 Juni 2025
+== 10 Juni 2025
 
 
 
@@ -287,7 +287,7 @@ Weitere Informationen finden Sie unter link:task-scanning-storagegrid.html["Scan
 
 
 
-== 5 August 2024
+== 05 August 2024
 
 
 
@@ -302,7 +302,7 @@ Einzelheiten zur Bereitstellung finden Sie unter https://docs.netapp.com/us-en/b
 
 
 
-== 1 Juli 2024
+== 01 Juli 2024
 
 
 
@@ -335,7 +335,7 @@ Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp
 
 
 
-== 5 Juni 2024
+== 05 Juni 2024
 
 
 
@@ -361,7 +361,7 @@ link:reference-free-paid.html["Erfahren Sie mehr über die veralteten Funktionen
 
 
 
-== April 2024
+== 01. April 2024
 
 
 
@@ -389,7 +389,7 @@ Wenn Sie die BlueXP Klassifizierung ohne Internetzugang implementiert haben, mü
 
 
 
-== 4 März 2024
+== 04 März 2024
 
 
 
@@ -438,7 +438,7 @@ Die Version hat außerdem die folgenden Optionen entfernt:
 
 
 
-== Bis 6. November 2023
+== 06. November 2023
 
 
 
@@ -452,7 +452,7 @@ Die folgenden Probleme wurden in dieser Version behoben
 
 
 
-== 4 Oktober 2023
+== 04 Oktober 2023
 
 
 
@@ -465,7 +465,7 @@ Derzeit werden bei Verwendung von RHEL 9.x. keine Dark-Site-Installationen oder 
 
 
 
-== 5 September 2023
+== 05 September 2023
 
 
 
@@ -510,7 +510,7 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Erf
 
 
 
-== 6 Juni 2023
+== 06 Juni 2023
 
 
 
@@ -533,7 +533,7 @@ Sie können jetzt Ihre Data Sense BYOL-Lizenz in das Digital Wallet von BlueXP a
 
 
 
-== Bis 3. April 2023
+== 03. April 2023
 
 
 
@@ -550,7 +550,7 @@ Wenn Sie unabhängig von der Ausführung der BlueXP Klassifizierungssysteminstal
 
 
 
-== 7 März 2023
+== 07 März 2023
 
 
 
@@ -595,7 +595,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-== 5 Februar 2023
+== 05 Februar 2023
 
 
 
@@ -622,7 +622,7 @@ Der neue Status „Teilsuccess“ zeigt an, dass eine BlueXP-Klassifizierungsakt
 
 
 
-== 9 Januar 2023
+== 09 Januar 2023
 
 
 

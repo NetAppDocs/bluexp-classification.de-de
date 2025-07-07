@@ -38,7 +38,7 @@ Die Sprachen, in denen diese Elemente erkannt werden können, sind in der Tabell
 | Typ | Kennung | Näherungsvalidierung? | Englisch | Deutsch | Spanisch | Französisch | Japanisch 
 
 
-.6+| Allgemein | Kreditkartennummer | Nein | ✓ | ✓ | ✓ |  | ✓ 
+.6+| Allgemein | Kreditkartennummer | Ja. | ✓ | ✓ | ✓ |  | ✓ 
 
 
 | Betroffenen | Nein | ✓ | ✓ | ✓ |  |  
@@ -413,7 +413,7 @@ Die meisten dieser Kategorien können in Englisch, Deutsch und Spanisch anerkann
 
 | Unterstützung | Reklamationen und Tickets | ✓ | ✓ | ✓ 
 |===
-Die folgenden Metadaten werden ebenfalls kategorisiert und in den gleichen unterstützten Sprachen identifiziert:
+Die folgenden Metadaten werden ebenfalls in denselben unterstützten Sprachen kategorisiert und identifiziert:
 
 * Applikationsdaten
 * Archivdateien
@@ -446,9 +446,7 @@ Daten Von Business-Applikationen
 
 == Dateitypen
 
-Die BlueXP Klassifizierung scannt alle Dateien nach Kategorien- und Metadaten und zeigt alle Dateitypen im Abschnitt „Dateitypen“ des Dashboards an.
-
-Wenn jedoch die BlueXP Klassifizierung personenbezogene Daten erkennt oder eine DSAR-Suche durchführt, werden nur die folgenden Dateiformate unterstützt:
+Die BlueXP Klassifizierung scannt alle Dateien nach Kategorien- und Metadaten und zeigt alle Dateitypen im Abschnitt „Dateitypen“ des Dashboards an. Wenn die BlueXP-Klassifizierung personenbezogene Daten (PII) erkennt oder eine DSAR-Suche durchführt, werden nur die folgenden Dateiformate unterstützt:
 
 `+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
