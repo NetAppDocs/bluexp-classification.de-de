@@ -127,14 +127,14 @@ Beachten Sie Folgendes über die Standardinstanz:
 * Pro Connector wird nur eine BlueXP Klassifizierungsinstanz implementiert.
 
 
-Sie können die BlueXP Klassifizierung auch auf einem Linux-Host vor Ort oder auf einem Host in Ihrem bevorzugten Cloud-Provider implementieren. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der BlueXP Klassifizierungs-Software werden automatisiert, solange die Instanz einen Internetzugang hat.
+Sie können die BlueXP Klassifizierung auch auf einem Linux-Host vor Ort oder auf einem Host in Ihrem bevorzugten Cloud-Provider implementieren. Die Software funktioniert unabhängig von der gewählten Installationsmethode genau auf die gleiche Weise. Upgrades der BlueXP-Klassifizierungssoftware werden automatisiert, solange die Instanz über Internetzugang verfügt.
 
 
 TIP: Die Instanz sollte immer ausgeführt werden, da die BlueXP Klassifizierung die Daten kontinuierlich scannt.
 
 *Einsatz auf verschiedenen Instanztypen*
 
-Sie können die BlueXP Klassifizierung auf einem System mit weniger CPUs und weniger RAM implementieren.
+Überprüfen Sie die folgenden Spezifikationen für Instanztypen:
 
 [cols="18,31,51"]
 |===
@@ -168,7 +168,7 @@ image:diagram_cloud_compliance_scan.png["Ein Diagramm zeigt eine BlueXP Instanz 
 
 Nach dem ersten Scan scannt die BlueXP -Klassifizierung Ihre Daten fortlaufend und nach dem Round Robin-Verfahren, um inkrementelle Änderungen zu erkennen. Aus diesem Grund ist es wichtig, dass die Instanz weiterhin ausgeführt wird.
 
-Sie können Scans auf Volume-Ebene oder auf Datenbankschemaebene aktivieren und deaktivieren.
+Sie können Scans auf Volume- oder Datenbankschemaebene aktivieren und deaktivieren.
 
 
 
@@ -176,7 +176,7 @@ Sie können Scans auf Volume-Ebene oder auf Datenbankschemaebene aktivieren und 
 
 Sie können zwei Arten von Scans in der BlueXP -Klassifizierung durchführen:
 
-* **Nur Mapping-Scans** bieten nur einen allgemeinen Überblick über Ihre Daten und werden an ausgewählten Datenquellen durchgeführt. Nur-Mapping-Scans benötigen weniger Zeit als Map und klassifizieren Scans, da die nicht auf Dateien zugreifen, um die Daten darin zu sehen. Sie sollten dies zunächst tun, um Forschungsbereiche zu identifizieren und dann einen Map & Classify-Scan für diese Bereiche durchzuführen.
+* **Nur Mapping-Scans** bieten nur einen allgemeinen Überblick über Ihre Daten und werden an ausgewählten Datenquellen durchgeführt. Reine Mapping-Scans benötigen weniger Zeit als Mapping- und Klassifizierungs-Scans, da sie nicht auf Dateien zugreifen, um die darin enthaltenen Daten anzuzeigen. Sie sollten dies zunächst tun, um Forschungsbereiche zu identifizieren und dann einen Map & Classify-Scan für diese Bereiche durchzuführen.
 * **Map & Classify Scans** ermöglichen ein tiefes Scannen Ihrer Daten.
 
 
