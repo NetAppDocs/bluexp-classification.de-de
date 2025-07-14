@@ -36,7 +36,7 @@ image:screenshot_compliance_investigation_filtered.png["Ein Screenshot der verf�
 
 . Um die Daten aus Dateien (unstrukturierte Daten), Verzeichnissen (Ordner und Dateifreigaben) oder Datenbanken (strukturierte Daten) anzuzeigen, wählen Sie oben eine der Registerkarten aus.
 . Um die Ergebnisse in numerischer oder alphabetischer Reihenfolge zu sortieren, wählen Sie das Steuerelement oben in jeder Spalte aus.
-. Um die Ergebnisse noch weiter zu verfeinern, wählen Sie einen der vielen Filter im linken Filterfenster aus.
+. Um die Ergebnisse noch weiter zu verfeinern, wählen Sie einen der Filter im Filterbereich aus.
 
 
 
@@ -196,7 +196,7 @@ Verwenden Sie den folgenden Filter, um Dateien anzuzeigen, die im Speicher dupli
 
 Sie sehen nicht nur die Arbeitsumgebung und das Volume, in dem sich die Datei befindet, sondern auch viel mehr Informationen, wie etwa die Dateiberechtigungen oder der Dateieigentümer und ob Duplikate dieser Datei vorliegen. Diese Informationen sind nützlich, wenn Sie planenlink:task-using-policies.html["Erstellen Sie gespeicherte Suchen"], weil Sie alle Informationen sehen können, die Sie zum Filtern Ihrer Daten verwenden können.
 
-Nicht alle Informationen stehen für alle Datenquellen zur Verfügung - genau das, was für diese Datenquelle angemessen ist. Beispielsweise sind der Name und die Berechtigungen des Volumes für Datenbankdateien nicht relevant.
+Die Verfügbarkeit von Informationen hängt von der Datenquelle ab. Beispielsweise werden Volumename und Berechtigungen für Datenbankdateien nicht freigegeben.
 
 .Schritte
 . Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
@@ -237,11 +237,11 @@ TIP: Sie können eine Ebene der Gruppe erweitern, um die Benutzer anzuzeigen, di
 
 == Überprüfen Sie auf doppelte Dateien in Ihren Speichersystemen
 
-Sie können sehen, ob doppelte Dateien auf Ihren Storage-Systemen gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Zudem ist es hilfreich, sicherzustellen, dass Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen in Ihren Speichersystemen nicht unnötig dupliziert werden.
+Sie können überprüfen, ob in Ihren Speichersystemen doppelte Dateien gespeichert werden. Dies ist nützlich, wenn Sie Bereiche ermitteln möchten, in denen Sie Speicherplatz einsparen können. Stellen Sie außerdem sicher, dass bestimmte Dateien mit bestimmten Berechtigungen oder vertraulichen Informationen nicht unnötig dupliziert werden.
 
 Alle Ihre Dateien (ohne Datenbanken), die 1 MB oder größer sind oder persönliche oder sensible personenbezogene Daten enthalten, werden verglichen, um zu sehen, ob es Duplikate gibt.
 
-Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei den gleichen Hash-Code wie eine andere Datei hat, können wir zu 100% sicher sein, dass die Dateien exakte Duplikate sind - auch wenn die Dateinamen unterschiedlich sind.
+Die BlueXP Klassifizierung verwendet Hashing-Technologie, um doppelte Dateien zu ermitteln. Wenn eine Datei denselben Hashcode wie eine andere Datei hat, können Sie 100 % sicher sein, dass es sich bei den Dateien um exakte Duplikate handelt – auch wenn die Dateinamen unterschiedlich sind.
 
 .Schritte
 . Wählen Sie im Menü BlueXP -Klassifizierung die Option *Untersuchung*.
@@ -277,7 +277,7 @@ TIP: Sie können den auf dieser Seite angegebenen "Datei-Hash"-Wert verwenden un
 
 Der Untersuchungsbericht ist ein Download des gefilterten Inhalts der Seite Datenuntersuchung.
 
-Der Bericht ist als CSV- oder JSON-Datei verfügbar, die Sie auf dem lokalen Computer speichern können.
+Der Bericht ist als CSV- oder JSON-Datei verfügbar, die Sie auf Ihrem lokalen Computer speichern können.
 
 Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP Klassifizierung Dateien (unstrukturierte Daten), Verzeichnisse (Ordner und Dateifreigaben) und Datenbanken (strukturierte Daten) scannt.
 
@@ -307,6 +307,10 @@ Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ih
 * Zuletzt geändert
 * Zuletzt aufgerufen
 * Dateibesitzer
++
+** Die Dateieigentümerdaten umfassen den Kontonamen, den SAM-Kontonamen und die E-Mail-Adresse, wenn Active Directory konfiguriert ist.
+
+
 * Kategorie
 * Persönliche Angaben
 * Sensible persönliche Daten
@@ -314,7 +318,7 @@ Der Datenbericht *unstrukturierte Dateien* enthält folgende Informationen zu Ih
 * Fehler Bei Der Scananalyse
 * Löscherkennung Datum
 +
-Ein Löscherkennungsdatum gibt das Datum an, an dem die Datei gelöscht oder verschoben wurde. So können Sie feststellen, wann sensible Dateien verschoben wurden. Gelöschte Dateien sind nicht Teil der Anzahl der Dateinummern, die im Dashboard oder auf der Untersuchungsseite angezeigt wird. Die Dateien werden nur in den CSV-Berichten angezeigt.
+Das Löscherkennungsdatum gibt das Datum an, an dem die Datei gelöscht oder verschoben wurde. So können Sie feststellen, wann sensible Dateien verschoben wurden. Gelöschte Dateien werden nicht in die Dateianzahl im Dashboard oder auf der Seite „Untersuchung“ einbezogen. Die Dateien werden nur in den CSV-Berichten angezeigt.
 
 
 

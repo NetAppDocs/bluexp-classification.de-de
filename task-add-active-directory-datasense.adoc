@@ -21,6 +21,9 @@ Wenn Sie bestimmte (unten aufgeführte) Datenquellen einrichten, müssen Sie Act
 Diese Integration bietet zusätzliche Informationen an folgenden Standorten in der BlueXP Klassifizierung:
 
 * Sie können den „Dateieigentümer“ verwenden link:task-investigate-data.html["Filtern"]und die Ergebnisse in den Metadaten der Datei im Untersuchungsbereich anzeigen. Anstelle des Dateieigentümers, der den SID (Security Identifier) enthält, wird er mit dem tatsächlichen Benutzernamen gefüllt.
++
+Sie können auch weitere Details zum Dateibesitzer anzeigen: Kontoname, E-Mail-Adresse und SAM-Kontoname oder Elemente anzeigen, die diesem Benutzer gehören.
+
 * Sie können für jede Datei und jedes Verzeichnis sehenlink:task-investigate-data.html["Volldateiberechtigungen"], wenn Sie auf die Schaltfläche „Alle Berechtigungen anzeigen“ klicken.
 * Im link:task-controlling-governance-data.html["Governance-Dashboard"], Das Fenster „Offene Berechtigungen“ zeigt eine größere Detailebene über Ihre Daten an.
 

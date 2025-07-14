@@ -113,7 +113,7 @@ NOTE: Bei FSX for ONTAP kann die BlueXP Klassifizierung Volumes nur in derselben
 Die Zugangsdaten können schreibgeschützt sein, aber durch die Angabe von Administratorberechtigungen wird sichergestellt, dass die BlueXP Klassifizierung alle Daten lesen kann, die erhöhte Berechtigungen erfordern. Die Zugangsdaten werden in der BlueXP Klassifizierungsinstanz gespeichert.
 
 +
-Wenn Sie sicherstellen möchten, dass Ihre Dateien durch BlueXP Klassifizierungs-Scans „Zeiten des letzten Zugriffs“ unverändert bleiben, empfehlen wir dem Benutzer Schreibattribute-Berechtigungen in CIFS oder Schreibberechtigungen in NFS. Wenn möglich, empfehlen wir, den Active Directory-konfigurierten Benutzer in eine übergeordnete Gruppe in der Organisation mit Berechtigungen für alle Dateien zu integrieren.
+Um sicherzustellen, dass die Zugriffszeiten Ihrer Dateien durch BlueXP classification Klassifizierungsscans unverändert bleiben, empfiehlt es sich, dass der Benutzer über Schreibberechtigungen für Attribute in CIFS oder Schreibberechtigungen in NFS verfügt. Konfigurieren Sie den Active Directory-Benutzer nach Möglichkeit als Teil einer übergeordneten Gruppe in der Organisation, die über Berechtigungen für alle Dateien verfügt.
 
 +
 Nach Eingabe der Anmeldedaten sollte eine Meldung angezeigt werden, dass alle CIFS-Volumes erfolgreich authentifiziert wurden.
