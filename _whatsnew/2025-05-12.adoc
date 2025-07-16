@@ -11,20 +11,20 @@ Diese BlueXP -Klassifizierungsversion umfasst:
 .Priorisieren Sie Klassifizierungs-Scans
 Die BlueXP -Klassifizierung unterstützt die Möglichkeit, neben den nur-Mapping-Scans auch Karten- und Klassifikationsscans zu priorisieren, wodurch Sie auswählen können, welche Scans zuerst abgeschlossen werden. Die Priorisierung von Map & Classify-Scans wird während und vor Beginn der Scans unterstützt. Wenn Sie einen Scan priorisieren möchten, während er gerade läuft, werden sowohl die Mapping- als auch die Klassifikationsscans priorisiert.
 
-Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
 
 .Unterstützung für kanadische Datenkategorien für personenbezogene Daten (PII)
 BlueXP -Klassifikations-Scans identifizieren kanadische PII-Datenkategorien. Diese Kategorien umfassen Bankdaten, Passnummern, Sozialversicherungsnummern, Führerscheinnummern und Krankenkartennummern für alle kanadischen Provinzen und Gebiete.
 
-Weitere Informationen finden Sie unter xref:reference-private-data-categories.adoc#types-of-personal-data[Kategorien personenbezogener Daten].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Kategorien personenbezogener Daten"].
 
 .Benutzerdefinierte Klassifizierung (Vorschau)
 Die BlueXP -Klassifizierung unterstützt benutzerdefinierte Klassifizierungen für Karten- und Klassifikations-Scans. Mit benutzerdefinierten Klassifizierungen können Sie BlueXP -Scans so anpassen, dass sie Daten erfassen, die speziell auf Ihr Unternehmen zugeschnitten sind, und dabei reguläre Ausdrücke verwenden. Diese Funktion befindet sich derzeit in der Vorschau.
 
-Weitere Informationen finden Sie unter xref:task-custom-classification.adoc[Fügen Sie benutzerdefinierte Klassifizierungen hinzu].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Fügen Sie benutzerdefinierte Klassifizierungen hinzu"].
 
 .Registerkarte gespeicherte Suchen
-Die Registerkarte **Policen** wurde umbenanntxref:task-using-policies.html[**Gespeicherte Suchen**]. Die Funktionalität ist die gleiche.
+Die Registerkarte **Policen** wurde umbenanntlink:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Gespeicherte Suchen**"]. Die Funktionalität bleibt unverändert.
 
 .Senden Sie Scanereignisse an die BlueXP  Timeline
 BlueXP  Classification unterstützt das Senden von Klassifikationsereignissen (wenn ein Scan initiiert wird und wann er endet) an den link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  Zeitplan"^].

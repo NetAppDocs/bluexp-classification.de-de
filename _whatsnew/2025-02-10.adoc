@@ -26,7 +26,7 @@ Möglicherweise profitieren Sie davon, wenn Sie nur Mapping-Scans verwenden, um 
 
 Die Priorität wird nur Mapping-only-Scans zugewiesen, nicht Map-Scans und Klassifikationsmessungen.
 
-Die Priorität ist standardmäßig auf 1 festgelegt, und Sie können sie auf eine beliebige Zahl zwischen 1 und 10 ändern. Je niedriger die Zahl, desto höher die Priorität. Wenn Sie keine Priorität festlegen, wird dem Scan eine Priorität von 5 zugewiesen.
+Die Priorität ist standardmäßig auf 1 festgelegt, und Sie können sie auf eine beliebige Zahl zwischen 1 und 10 ändern. Je niedriger die Zahl, desto höher die Priorität. Wenn Sie keine Priorität festlegen, wird dem Scan die Priorität 5 zugewiesen.
 
 Gehen Sie wie folgt vor, um die Priorität zu ändern:
 

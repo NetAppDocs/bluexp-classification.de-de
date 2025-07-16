@@ -20,9 +20,9 @@ Standardmäßig werden Scans basierend auf der Reihenfolge, in der sie initiiert
 
 Die Prioritätsachse wird einmalig vergeben. Automatische Neuscans von Zuordnungsdaten erfolgen in der Standardreihenfolge.
 
-Die Priorisierung ist beschränkt auflink:concept-cloud-compliance.html["Nur-Mapping-Scans"]; es ist nicht verfügbar für die Zuordnung und Klassifizierung von Scans.
+Die Priorisierung ist beschränkt auflink:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Nur-Mapping-Scans"^]; es ist nicht verfügbar für die Zuordnung und Klassifizierung von Scans.
 
-Weitere Informationen finden Sie unter link:task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"].
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Priorisieren Sie Scans"^].
 
 .Wiederholen Sie alle Scans
 Die BlueXP -Klassifizierung unterstützt die Möglichkeit, alle fehlgeschlagenen Scans im Batch-Modus erneut zu versuchen.
