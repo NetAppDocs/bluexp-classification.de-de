@@ -63,6 +63,9 @@ Beachten Sie, dass Sie auch können https://docs.netapp.com/us-en/bluexp-setup-a
 Wie Sie sehen können, gibt es einige Situationen, in denen Sie verwenden müssen https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["Mehrere Anschlüsse"].
 
 
+TIP: Die BlueXP classification begrenzt die Datenmenge nicht. Jeder Connector unterstützt das Scannen und Anzeigen von 500 TiB Daten. Um mehr als 500 TiB Daten zu scannen, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["einen anderen Connector installieren"^] Dann link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["eine weitere Klassifizierungsinstanz bereitstellen"] . + Die BlueXP -Benutzeroberfläche zeigt Daten eines einzelnen Konnektors an. Tipps zur Anzeige von Daten mehrerer Konnektoren finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Arbeiten Sie mit mehreren Anschlüssen"^] .
+
+
 
 === Unterstützung für Regierungsregionen
 

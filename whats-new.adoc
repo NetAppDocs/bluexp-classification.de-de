@@ -375,7 +375,10 @@ Erläuterungen zu den Status finden Sie unter https://docs.netapp.com/us-en/blue
 === Version 1.31
 
 .Klassifizierung ist als zentraler Service in BlueXP erhältlich
-Die BlueXP Klassifizierung ist jetzt als zentrale Funktion in BlueXP ohne Aufpreis für bis zu 500 tib gescannte Daten verfügbar. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Da wir uns bei der BlueXP Klassifizierungsfunktion auf das Scannen von NetApp Storage-Systemen mit dieser neuen Version konzentrieren, stehen einige ältere Funktionen nur Kunden zur Verfügung, die zuvor für eine Lizenz bezahlt hatten. Die Nutzung dieser älteren Funktionen läuft ab, wenn der bezahlte Vertrag sein Enddatum erreicht.
+Die BlueXP classification ist jetzt als Kernfunktion innerhalb von BlueXP ohne zusätzliche Kosten für bis zu 500 TiB gescannter Daten pro Connector verfügbar. Es ist keine Klassifizierungslizenz oder kostenpflichtiges Abonnement erforderlich. Da wir uns bei der BlueXP Klassifizierungsfunktion auf das Scannen von NetApp Storage-Systemen mit dieser neuen Version konzentrieren, stehen einige ältere Funktionen nur Kunden zur Verfügung, die zuvor für eine Lizenz bezahlt hatten. Die Nutzung dieser älteren Funktionen läuft ab, wenn der bezahlte Vertrag sein Enddatum erreicht.
+
+
+NOTE: Die BlueXP classification begrenzt die Datenmenge nicht. Jeder Connector unterstützt das Scannen und Anzeigen von 500 TiB Daten. Um mehr als 500 TiB Daten zu scannen, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["einen anderen Connector installieren"^] Dann link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["eine weitere Klassifizierungsinstanz bereitstellen"] . + Die BlueXP -Benutzeroberfläche zeigt Daten eines einzelnen Konnektors an. Tipps zur Anzeige von Daten mehrerer Konnektoren finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Arbeiten Sie mit mehreren Anschlüssen"^] .
 
 link:reference-free-paid.html["Erfahren Sie mehr über die veralteten Funktionen"].
 

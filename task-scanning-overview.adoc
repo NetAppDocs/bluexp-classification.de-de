@@ -43,7 +43,7 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 | Preisgestaltung | Kostenlos | Kostenlos 
 
 
-| Kapazität | Begrenzt auf 500 TB | Begrenzt auf 500 TB 
+| Kapazität | Begrenzt auf 500 TiB* | Begrenzt auf 500 TiB* 
 
 
 | Liste der Dateitypen und der genutzten Kapazität | Ja. | Ja. 
@@ -72,6 +72,8 @@ In der folgenden Tabelle sind einige Unterschiede aufgeführt:
 
 | Fähigkeit, Metadaten aus Dateien zu sehen* | Nein | Ja. 
 |===
+{Sternchen} include::_include/connector-limit.adoc[]
+
 *Die folgenden Metadaten werden während der Mapping-Scans aus Dateien extrahiert:
 
 * Arbeitsumgebung
