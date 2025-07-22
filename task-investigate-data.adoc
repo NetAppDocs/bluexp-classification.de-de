@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-investigate-data.html 
-keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies,json, csv, data investigation, data investigation report, download report, file metadata, file permissions, duplicate files, saved search 
 summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Hier können Sie Ihre Recherche fortsetzen, nachdem Sie sich das Governance Dashboard ansehen. 
 ---
 = Untersuchen Sie die in Ihrem Unternehmen gespeicherten Daten mit der BlueXP -Klassifizierung
@@ -14,7 +14,7 @@ summary: Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details
 
 
 [role="lead"]
-Sie können die Daten Ihres Unternehmens untersuchen, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Hier können Sie Ihre Recherche fortsetzen, nachdem Sie sich das Governance Dashboard ansehen. Auf der Seite Untersuchung können Sie die Daten mithilfe eines der vielen Filter filtern, um nur die Ergebnisse anzuzeigen, die Sie anzeigen möchten. Darüber hinaus können Sie Dateimetadaten und Berechtigungen für Dateien und Verzeichnisse anzeigen und nach doppelten Dateien in Ihren Storage-Systemen suchen.
+Untersuchen Sie die Daten Ihrer Organisation, indem Sie Details auf der Seite „Datenuntersuchung“ anzeigen. Hier können Sie Ihre Recherche fortsetzen, nachdem Sie sich das Governance Dashboard ansehen. Auf der Seite Untersuchung können Sie die Daten mithilfe eines der vielen Filter filtern, um nur die Ergebnisse anzuzeigen, die Sie anzeigen möchten. Darüber hinaus können Sie Dateimetadaten und Berechtigungen für Dateien und Verzeichnisse anzeigen und nach doppelten Dateien in Ihren Storage-Systemen suchen.
 
 Sie können diese Seite aus vielen Bereichen der BlueXP -Klassifizierungs-UI aufrufen, einschließlich der Governance- und Compliance-Dashboards mit den bereits auf diesen Seiten ausgewählten Filtern. Sie können die Daten in eine CSV- oder JSON-Datei exportieren, um sie weiter zu analysieren oder mit anderen zu teilen.
 
@@ -283,8 +283,8 @@ Es können bis zu drei Berichtsdateien heruntergeladen werden, wenn die BlueXP K
 
 Die Dateien werden in Dateien mit einer festen Anzahl von Zeilen oder Datensätzen aufgeteilt:
 
-* JSON - 100,000 Einträge
-* CSV - 200,000 Datensätze
+* JSON – 100.000 Datensätze pro Bericht, dessen Generierung etwa 5 Minuten dauert
+* CSV – 200.000 Datensätze pro Bericht, dessen Generierung etwa 4 Minuten dauert
 +
 
 NOTE: Sie können eine Version der CSV-Datei herunterladen, um sie in diesem Browser anzuzeigen. Diese Version ist auf 10,000 Datensätze beschränkt.
