@@ -307,9 +307,9 @@ Diese extrahiert erforderliche Software und die eigentliche Installationsdatei *
 tar -xzf cc_onprem_installer.tar.gz
 ----
 . Starten Sie BlueXP, und wählen Sie *Governance > Klassifizierung*.
-. Klicken Sie Auf *Datensense Aktivieren*.
+. Wählen Sie *Klassifizierung vor Ort oder in der Cloud bereitstellen*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
+image:screenshot-deploy-classification.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
 . Klicken Sie auf *Deploy*, um die On-Premises-Installation zu starten.
 +

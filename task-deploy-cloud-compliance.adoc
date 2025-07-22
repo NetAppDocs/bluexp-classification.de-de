@@ -192,29 +192,29 @@ In Regionen, in denen der Standardinstanztyp nicht verfügbar ist, wird die Blue
 .Implementieren in AWS
 --
 .Schritte
-. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
+. Wählen Sie im linken Navigationsmenü von BlueXP  *Governance > Klassifizierung*.
+. Wählen Sie *Klassifizierung vor Ort oder in der Cloud bereitstellen*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
+image:screenshot-deploy-classification.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
-. Klicken Sie Auf *Datensense Aktivieren*.
-. Klicken Sie auf der Seite _Installation_ auf *Deploy > Deploy*, um die „große“ Instanzgröße zu verwenden und den Cloud-Bereitstellungsassistenten zu starten.
+. Wählen Sie auf der Seite „Installation“ die Option „Bereitstellen > Bereitstellen“ aus, um die Instanzgröße „Groß“ zu verwenden und den Cloud-Bereitstellungsassistenten zu starten.
 . Der Assistent zeigt den Fortschritt während der Bereitstellungsschritte an. Es wird angehalten und zur Eingabe aufgefordert, wenn Probleme auftreten.
 +
 image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP classification installiert ist, wählen Sie *Weiter zur Konfiguration*, um zur Seite _Konfiguration_ zu gelangen.
 
 
 --
 .Implementieren in Azure
 --
 .Schritte
-. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
-. Klicken Sie Auf *Datensense Aktivieren*.
+. Wählen Sie im linken Navigationsmenü von BlueXP  *Governance > Klassifizierung*.
+. Wählen Sie *Klassifizierung vor Ort oder in der Cloud bereitstellen*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
+image:screenshot-deploy-classification.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
-. Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
+. Wählen Sie *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
 
@@ -222,19 +222,19 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die 
 +
 image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP classification installiert ist, wählen Sie *Weiter zur Konfiguration*, um zur Seite _Konfiguration_ zu gelangen.
 
 
 --
 .Implementieren in Google Cloud
 --
 .Schritte
-. Klicken Sie im Navigationsmenü von BlueXP links auf *Governance > Klassifizierung*.
-. Klicken Sie Auf *Datensense Aktivieren*.
+. Wählen Sie im linken Navigationsmenü von BlueXP  *Governance > Klassifizierung*.
+. Wählen Sie *Klassifizierung vor Ort oder in der Cloud bereitstellen*.
 +
-image:screenshot_cloud_compliance_deploy_start.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
+image:screenshot-deploy-classification.png["Ein Screenshot durch Klicken auf die Schaltfläche zur Aktivierung der BlueXP Klassifizierung."]
 
-. Klicken Sie auf *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
+. Wählen Sie *Bereitstellen*, um den Cloud-Bereitstellungsassistenten zu starten.
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die Schaltfläche anklicken, um die BlueXP Klassifizierung in der Cloud zu implementieren."]
 
@@ -242,7 +242,7 @@ image:screenshot_cloud_compliance_deploy_cloud.png["Ein Screenshot, wie Sie die 
 +
 image:screenshot_cloud_compliance_wizard_start.png["Ein Screenshot des BlueXP Klassifizierungsassistenten zur Implementierung einer neuen Instanz"]
 
-. Wenn die Instanz bereitgestellt und die BlueXP-Klassifizierung installiert ist, klicken Sie auf *Weiter zur Konfiguration*, um zur Seite _Configuration_ zu gelangen.
+. Wenn die Instanz bereitgestellt und die BlueXP classification installiert ist, wählen Sie *Weiter zur Konfiguration*, um zur Seite _Konfiguration_ zu gelangen.
 
 
 --
