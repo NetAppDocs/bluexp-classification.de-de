@@ -150,7 +150,15 @@ Je nachdem, ob Sie die BlueXP Klassifizierung in AWS, Azure oder GCP implementie
 |===
 --
 ====
-Stellen Sie sicher, dass BlueXP über die erforderlichen Berechtigungen verfügt:: Stellen Sie sicher, dass BlueXP über Berechtigungen zum Implementieren von Ressourcen und zum Erstellen von Sicherheitsgruppen für die BlueXP Klassifizierungsinstanz verfügt. Die neuesten BlueXP-Berechtigungen finden Sie in https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Die von NetApp bereitgestellten Richtlinien"^].
+Stellen Sie sicher, dass BlueXP über die erforderlichen Berechtigungen verfügt:: Stellen Sie sicher, dass BlueXP über die Berechtigung zum Bereitstellen von Ressourcen und Erstellen von Sicherheitsgruppen für die BlueXP classification verfügt.
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud-Berechtigungen"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS-Berechtigungen"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure-Berechtigungen"^]
+
+
+--
 Sicherstellen, dass der BlueXP Connector auf die BlueXP Klassifizierung zugreifen kann:: Stellen Sie die Konnektivität zwischen dem Connector und der BlueXP Klassifizierungsinstanz sicher. Die Sicherheitsgruppe für den Connector muss ein- und ausgehenden Datenverkehr über Port 443 zur und von der BlueXP Klassifizierungsinstanz zulassen. Über diese Verbindung wird die Bereitstellung der BlueXP Klassifizierungsinstanz ermöglicht und Sie können Informationen auf der Registerkarte für Compliance und Governance einsehen. Die BlueXP Klassifizierung wird in Regierungsregionen in AWS und Azure unterstützt.
 +
 --
