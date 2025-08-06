@@ -8,7 +8,7 @@ summary: Beginnen Sie mit der BlueXP classification , indem Sie in BlueXP auf de
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/get-started/
+:imagesdir: ./media/
 
 
 [role="lead"]
