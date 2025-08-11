@@ -18,6 +18,26 @@ Erfahren Sie mehr über die Neuerungen bei der BlueXP Klassifizierung.
 
 
 
+== 11. August 2025
+
+
+
+=== Version 1.46
+
+Diese BlueXP classification Klassifizierungsversion enthält Fehlerbehebungen und die folgenden Updates:
+
+.Verbesserte Einblicke in Scan-Ereignisse in der BlueXP -Zeitleiste
+Die BlueXP Zeitleiste unterstützt jetzt erweiterte Einblicke in Scan-Ereignisse für die BlueXP classification.  Die Zeitleiste zeigt jetzt an, wann der Scan einer Arbeitsumgebung beginnt, den Status der Arbeitsumgebungen und etwaige Probleme.  Status für Freigaben und Arbeitsumgebungen sind nur für Mapping-Scans verfügbar.
+
+Weitere Informationen zur BlueXP -Zeitleiste finden Sie unterlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Überwachen Sie BlueXP -Vorgänge"^] .
+
+.Unterstützung für RHEL 9.6
+Diese Version fügt Unterstützung für Red Hat Enterprise Linux v9.6 für die manuelle Vor-Ort-Installation der BlueXP classification hinzu, einschließlich Dark Site-Bereitstellungen.
+
+Für die folgenden Betriebssysteme ist die Verwendung der Podman-Container-Engine erforderlich, und sie erfordern eine BlueXP -Klassifizierung der Version 1.30 oder höher: Red hat Enterprise Linux der Version 8.8, 9.2, 9.0, 9.1, 8.10, 9.3, 9.4 und 9.5.
+
+
+
 == 14 Juli 2025
 
 

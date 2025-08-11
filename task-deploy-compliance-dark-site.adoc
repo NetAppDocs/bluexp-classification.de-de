@@ -144,7 +144,7 @@ Die BlueXP Klassifizierungssoftware muss auf einem Host ausgeführt werden, der 
 
 ** Die folgenden Betriebssysteme erfordern die Verwendung der Podman Container-Engine. Sie erfordern eine BlueXP Klassifikation der Version 1.30 oder höher:
 +
-*** Red hat Enterprise Linux Version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4 und 9.5
+*** Red Hat Enterprise Linux Version 8.8, 8.10, 9.0, 9.1, 9.2, 9.3, 9.4, 9.5 und 9.6.
 
 
 ** Advanced Vector Extensions (AVX2) muss auf dem Hostsystem aktiviert sein.
