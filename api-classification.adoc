@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: api-classification.html 
 keywords: api, apis, rest, restful, authorization, classification, data sense, swagger, body, header, list apis 
-summary: Die über die Web-UI verfügbaren BlueXP Klassifizierungsfunktionen sind auch über die Swagger-API verfügbar. 
+summary: Die über die Web-Benutzeroberfläche verfügbaren BlueXP classification sind auch über die REST-API verfügbar. 
 ---
 = BlueXP Klassifizierungs-APIs
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Die über die Web-UI verfügbaren BlueXP Klassifizierungsfunktionen sin
 
 
 [role="lead"]
-Die über die Web-UI verfügbaren BlueXP Klassifizierungsfunktionen sind auch über die Swagger-API verfügbar.
+Die über die Web-Benutzeroberfläche verfügbaren BlueXP classification sind auch über die REST-API verfügbar.
 
 Die BlueXP Klassifizierung umfasst vier Kategorien, die den Registerkarten in der UI entsprechen:
 
@@ -52,13 +52,13 @@ Beispielsweise können Sie Dateien _ohne_ spezifische personenbezogene Daten (PI
 
 
 
-Die API ist sicher und verwendet die gleiche Authentifizierungsmethode wie die UI. Informationen zur Authentifizierung finden Sie unter: https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html[]
+Die API ist sicher und verwendet dieselbe Authentifizierungsmethode wie die Benutzeroberfläche.  Informationen zur Authentifizierung finden Sie imlink:https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html["REST API-Dokumentation"^] .
 
 
 
 == Zugriff auf die Swagger-API-Referenz
 
-Um in Swagger zu kommen, benötigen Sie die IP-Adresse der BlueXP Klassifizierungsinstanz. Bei einer Cloud-Bereitstellung verwenden Sie die öffentliche IP-Adresse. Dann müssen Sie zu diesem Endpunkt gelangen:
+Um auf die API-Referenz zuzugreifen, benötigen Sie die IP-Adresse Ihrer BlueXP classification .  Wenn Sie über eine Cloud-Bereitstellung verfügen, verwenden Sie die öffentliche ID-Adresse. Beispiel:
 
 \Https://<classification_ip>/Dokumentation
 

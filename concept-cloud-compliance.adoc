@@ -171,7 +171,7 @@ Nach dem ersten Scan scannt die BlueXP -Klassifizierung Ihre Daten fortlaufend 
 Sie können Scans auf Volume- oder Datenbankschemaebene aktivieren und deaktivieren.
 
 
-NOTE: Die BlueXP classification begrenzt die Datenmenge nicht. Jeder Connector unterstützt das Scannen und Anzeigen von 500 TiB Daten. Um mehr als 500 TiB Daten zu scannen, link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["einen anderen Connector installieren"^] Dann link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["eine weitere Klassifizierungsinstanz bereitstellen"] . + Die BlueXP -Benutzeroberfläche zeigt Daten eines einzelnen Konnektors an. Tipps zur Anzeige von Daten mehrerer Konnektoren finden Sie unter link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Arbeiten Sie mit mehreren Anschlüssen"^] .
+NOTE: Die BlueXP classification setzt keine Begrenzung für die Menge der zu scannenden Daten.  Jeder Connector unterstützt das Scannen und Anzeigen von 500 TiB Daten.  Um mehr als 500 TiB Daten zu scannen,link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["einen anderen Connector installieren"^] Dannlink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Stellen Sie eine weitere Instanz der BlueXP classification bereit"] .  Die BlueXP -Benutzeroberfläche zeigt Daten von einem einzelnen Connector an.  Tipps zum Anzeigen von Daten aus mehreren Connectors finden Sie unterlink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["Arbeiten Sie mit mehreren Anschlüssen"^] .
 
 
 
